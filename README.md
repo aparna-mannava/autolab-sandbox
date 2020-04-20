@@ -69,6 +69,3 @@ output "app_server_1" {
 Note that you are responsible for locating a valid available hostname or hostnames to use in your code.  There is a hostname generation utility available [Hostname Gen](https://us-pr-stash.saas-p.com/projects/INFAPP/repos/hostgen/browse).
 
 Please see [Terraform Documentation on the Wiki](https://confluence.bottomline.tech/display/CEA/Terraform) for additional information about using Terraform.
-
-## Warning
-Do not touch the `templates` or `reaper` directories.
