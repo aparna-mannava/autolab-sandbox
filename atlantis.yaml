@@ -1,0 +1,10 @@
+---
+version: 3
+automerge: false
+projects:
+- name: example-1
+  dir: example/1
+- name: example2
+  dir: example/test/2
+- name: test-project-1
+  dir: testdir
