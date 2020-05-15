@@ -2,3 +2,5 @@
 version: 3
 automerge: true
 projects:
+- name: josh-test-01
+  dir: josh.grancell/test_01
