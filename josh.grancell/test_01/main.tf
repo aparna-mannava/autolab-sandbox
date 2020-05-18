@@ -19,7 +19,7 @@ module "test_002" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vljgtest002"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
-  bt_infra_network     = "ny2-autolab-app"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "4096"
