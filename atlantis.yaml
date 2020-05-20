@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 - name: josh-test-01
   dir: josh.grancell/test_01
