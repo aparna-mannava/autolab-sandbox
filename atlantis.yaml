@@ -6,3 +6,5 @@ projects:
   dir: josh.grancell/test_01
 - name: josh-test-02
   dir: josh.grancell/test_02
+- name: josh-test-03
+  dir: josh.grancell/test_03
