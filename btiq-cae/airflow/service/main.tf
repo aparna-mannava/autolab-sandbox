@@ -7,7 +7,7 @@ locals {
   product       = "air"
   image         = "rhel8"
   environment   = "feature_BTIQ_191_provision_and_configure_airflow"
-  hostgroup     = "BTIQ CAE Airflow Service"
+  hostgroup     = "BTIQ CAE Airflow"
   datacenter    = "ny2"
   cluster       = "ny2-aza-vmw-autolab"
   network       = "ny2-autolab-app"
