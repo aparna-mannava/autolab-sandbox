@@ -22,7 +22,7 @@ locals {
   }
 }
 
-module "data-ingestion" {
+module "airflow-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname_base}btiq${local.product}01"
   alias                = "btiq-cae-${local.product}-01"
@@ -38,7 +38,7 @@ module "data-ingestion" {
   memory               = local.memory
 }
 
-output "data-ingestion" {
+output "airflow-service" {
   value = {
     "fqdn"  = module.data-ingestion.fqdn,
     "alias" = module.data-ingestion.alias,
