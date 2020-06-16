@@ -40,8 +40,8 @@ module "airflow-service" {
 
 output "airflow-service" {
   value = {
-    "fqdn"  = module.data-ingestion.fqdn,
-    "alias" = module.data-ingestion.alias,
-    "ip"    = module.data-ingestion.ip,
+    "fqdn"  = module.airflow-service.fqdn,
+    "alias" = module.airflow-service.alias,
+    "ip"    = module.airflow-service.ip,
   }
 }
