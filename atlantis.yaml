@@ -2,3 +2,5 @@
 version: 3
 automerge: true
 projects:
+- name: btiq-cae-airflow
+  dir: btiq-cae/airflow/service
