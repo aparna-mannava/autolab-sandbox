@@ -2,3 +2,5 @@
 version: 3
 automerge: true
 projects:
+- name: richard-test-01
+  dir: richard.grainger/test_01
