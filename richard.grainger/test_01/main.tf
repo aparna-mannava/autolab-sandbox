@@ -13,6 +13,9 @@ module "test_101" {
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
   lob                  = "CEA"
+  external_facts       = {
+    "bt_product" = "cloud"
+  }
 }
 
 output "test_servers" {
