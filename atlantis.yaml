@@ -2,5 +2,7 @@
 version: 3
 automerge: true
 projects:
+- name: btiq-cae-airflow
+  dir: btiq-cae/airflow/service
 - name: richard-test-01
   dir: richard.grainger/test_01
