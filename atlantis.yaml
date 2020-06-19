@@ -4,5 +4,7 @@ automerge: true
 projects:
 - name: btiq-cae-airflow
   dir: btiq-cae/airflow/service
+- name: btiq-cae-airflow-nfs-server
+  dir: btiq-cae/airflow/nfs-server
 - name: richard-test-01
   dir: richard.grainger/test_01

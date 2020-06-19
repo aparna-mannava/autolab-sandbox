@@ -4,7 +4,7 @@ terraform {
 
 locals {
   lob           = "BTIQ-CAE"
-  product       = "air"
+  product       = "afs"
   image         = "rhel8"
   environment   = "feature_BTIQ_191_Provision_and_configure_Airflow"
   hostgroup     = "BTIQ CAE Airflow"
@@ -12,21 +12,17 @@ locals {
   cluster       = "ny2-aza-vmw-autolab"
   network       = "ny2-autolab-app"
   hostname_base = "us01vl"
-  cpu           = "2"
-  memory        = "8192"
+  cpu           = "1"
+  memory        = "4096"
   facts         = {
     "bt_product"       = "btiq-cae"
     "bt_tier"          = "dev"
     "bt_env"           = ""
-    "bt_role"          = "airflow"
-  }
-  additional_disks     = {
-      1 = "50",
-      2 = "310",
+    "bt_role"          = "airflow-nfs-server"
   }
 }
 
-module "airflow-service" {
+module "airflow-nfs-server" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname_base}btiq${local.product}01"
   alias                = "btiq-cae-${local.product}-01"
@@ -40,14 +36,12 @@ module "airflow-service" {
   external_facts       = local.facts
   cpus                 = local.cpu
   memory               = local.memory
-  additional_disks     = local.additional_disks
 }
 
-output "airflow-service" {
+output "nfs-server" {
   value = {
-    "fqdn"  = module.airflow-service.fqdn,
-    "alias" = module.airflow-service.alias,
-    "ip"    = module.airflow-service.ip,
+    "fqdn"  = module.airflow-nfs-server.fqdn,
+    "alias" = module.airflow-nfs-server.alias,
+    "ip"    = module.airflow-nfs-server.ip,
   }
 }
-
