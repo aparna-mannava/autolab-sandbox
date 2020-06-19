@@ -15,7 +15,7 @@ locals {
   cpu           = "2"
   memory        = "8192"
   facts         = {
-    "bt_product"       = "btiq-cae"
+    "bt_product"       = "btiq_cae"
     "bt_tier"          = "dev"
     "bt_env"           = ""
     "bt_role"          = "airflow"
@@ -50,4 +50,3 @@ output "airflow-service" {
     "ip"    = module.airflow-service.ip,
   }
 }
-
