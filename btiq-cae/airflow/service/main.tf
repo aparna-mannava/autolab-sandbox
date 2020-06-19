@@ -20,6 +20,10 @@ locals {
     "bt_env"           = ""
     "bt_role"          = "airflow"
   }
+  additional_disks     = {
+      1 = "50",
+      2 = "310",
+  }
 }
 
 module "airflow-service" {
@@ -36,6 +40,7 @@ module "airflow-service" {
   external_facts       = local.facts
   cpus                 = local.cpu
   memory               = local.memory
+  additional_disks     = local.additional_disks
 }
 
 output "airflow-service" {
@@ -45,3 +50,4 @@ output "airflow-service" {
     "ip"    = module.airflow-service.ip,
   }
 }
+
