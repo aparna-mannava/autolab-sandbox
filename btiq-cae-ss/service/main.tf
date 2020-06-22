@@ -11,8 +11,8 @@ module "streamset-service" {
   foreman_environment  = "btiq_cae_streamset_dev"
   foreman_hostgroup    = "BTIQ CAE Streamset"
   datacenter           = "ny2"
-  lob                  = "btiq-cae",
-  alias                = "btiq-cae-streamset-01" .
+  lob                  = "btiq-cae"
+  alias                = "btiq-cae-streamset-01"
   cpus                 = "2"
   memory        	   = "2048"
   additional_disks     = {
