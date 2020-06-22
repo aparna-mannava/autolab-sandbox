@@ -4,7 +4,9 @@ terraform {
 module "streamset-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcaesset01.auto.saas-n.com"
-  bt_infra_environment = "ny2-autolab-app"
+  bt_infra_environment = "ny2-autolab-app"  
+  bt_infra_cluster     = "ny2-aza-vmw-autolab"
+  bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
