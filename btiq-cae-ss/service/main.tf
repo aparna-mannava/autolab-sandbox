@@ -28,11 +28,11 @@ module "streamset-service" {
   }
 }
 
-output "app_server_1" {
+output "streamset-service" {
   value = {
-    "fqdn"  = "${module.app_server_1.fqdn}",
-    "alias" = "${module.app_server_1.alias}",
-    "ip"    = "${module.app_server_1.ip}",
+    "fqdn"  = "${module.streamset-service.fqdn}",
+    "alias" = "${module.streamset-service.alias}",
+    "ip"    = "${module.streamset-service.ip}",
   }
 }
 
