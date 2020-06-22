@@ -10,7 +10,6 @@ module "streamset-service" {
   foreman_hostgroup    = "BT Base Server"
   datacenter           = "ny2"
   lob                  = "btiq-cae"
-  alias                = "btiq-cae-streamset-01"
   cpus                 = "2"
   memory        	   = "2048"
   additional_disks     = {
@@ -19,11 +18,8 @@ module "streamset-service" {
   external_facts       = {
     "bt_tier" = "dev",
     "bt_product"       = "btiq_cae"
-    "bt_env"           = ""
     "bt_role"          = "streamset"
-
-    
-  }
+ }
 }
 
 output "streamset-service" {
