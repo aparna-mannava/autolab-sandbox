@@ -9,4 +9,4 @@ projects:
 - name: richard-test-01
   dir: richard.grainger/test_01
 - name: btiq-cae-streamset
-  dir: btiq-cae/streamset/service
+  dir: btiq-cae/streamset
