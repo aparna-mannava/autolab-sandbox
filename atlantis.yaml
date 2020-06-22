@@ -8,5 +8,5 @@ projects:
   dir: btiq-cae/airflow/nfs-server
 - name: richard-test-01
   dir: richard.grainger/test_01
-- name: btiq-cae-streamset
-  dir: btiq-cae/streamset
+- name: btiq-cae-strset
+  dir: btiq-cae-ss/service
