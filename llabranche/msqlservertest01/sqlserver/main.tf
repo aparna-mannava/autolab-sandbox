@@ -1,37 +1,22 @@
 terraform {
   backend "http" {}
 }
-
-locals {
-  product        = "mssql"
-  environment    = "master"
-  datacenter     = "ny2"
-  hostname       = "us01vwmssl0097"
-  hostgroup      = "BT MSSQL 2016 Server"
-  facts          = {
-    "bt_tier"         = "dev"
-    "bt_bfs_timezone" = "Eastern Standard Time"
-  }
-}
-
-
 module "mssql_winpm_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hostname}"
-  alias                = ""
-  bt_infra_cluster     = "ny2-aza-vmw-autolab"
-  bt_infra_network     = "ny2-autolab-db"
-  lob                  = "cloud"
+  hostname             = "us01vwmssl0097"
+  bt_infra_environment = "ny2-autolab-app"
   os_version           = "win2016"
-  cpus                 = "2"
-  memory               = "4096"
-  external_facts       = "${local.facts}"
-  foreman_environment  = "${local.environment}"
-  foreman_hostgroup    = "${local.hostgroup}"
-  datacenter           = "${local.datacenter}"
+  foreman_environment  = "master"
+  foreman_hostgroup    = "BT MSSQL 2016 Server"
+  datacenter           = "ny2"
+  lob                  = "CLOUD"
   additional_disks     = {
     1 = "200",
-    2 = "100"
+    2 = "200"
+  }
+  external_facts       = {
+    "bt_tier" = "dev"
+    "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
 
