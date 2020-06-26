@@ -4,13 +4,13 @@ terraform {
 
 locals {
   product        = "mssql"
-  environment    = "master"
+  environment    = "nonprod"
   datacenter     = "ny2"
   hostname       = "us01vwmssl0097"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_tier"         = "dev"
-	"bt_bfs_timezone" = "Eastern Standard Time"
+    "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
 
