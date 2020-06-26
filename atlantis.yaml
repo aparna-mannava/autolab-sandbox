@@ -10,6 +10,6 @@ projects:
   dir: richard.grainger/test_01
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
-- name: llabranche-msqlservertest01
-  dir: llabranche/msqlservertest01
+- name: llabranche-msqlservertest01-sqlserver
+  dir: llabranche/msqlservertest01/sqlserver
 
