@@ -29,5 +29,6 @@ output "streamset-service" {
     "alias" = "${module.streamset-service.alias}",
     "ip"    = "${module.streamset-service.ip}",
   }
+  
 }
 
