@@ -21,7 +21,7 @@ module "mssql_winpr_1" {
   alias                = ""
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-db"
-  lob                  = "cloud"
+  lob                  = "bfs"
   os_version           = "win2016"
   cpus                 = "2"
   memory               = "4096"
