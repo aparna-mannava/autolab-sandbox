@@ -4,7 +4,7 @@ terraform {
 module "auto_winsql_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vwmssl007"
-  bt_infra_environment = "ny2-autolab-app"
+  bt_infra_environment = "ny2-autolab-db"
   os_version           = "win2016"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT MSSQL 2016 Server"
@@ -16,6 +16,7 @@ module "auto_winsql_1" {
   }
   external_facts       = {
     "bt_tier" = "dev"
+    "bt_env"  = ""
   }
 }
 
