@@ -6,7 +6,7 @@ locals {
   product        = "mssql"
   environment    = "nonprod"
   datacenter     = "ny2"
-  hostname       = "us01vwmssl0097"
+  hostname       = "us01vwmsql0093"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_tier"         = "dev"
