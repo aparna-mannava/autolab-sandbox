@@ -12,3 +12,5 @@ projects:
   dir: btiq-cae-ss/service
 - name: llabranche-mssqltest2
   dir: llabranche/mssqltest2
+- name: adgitops
+  dir: aarvelo/adgitops
