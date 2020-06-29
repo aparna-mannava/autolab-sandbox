@@ -26,7 +26,7 @@ module "mssql_winpr_1" {
   cpus                 = "2"
   memory               = "4096"
   external_facts       = "${local.facts}"
-  foreman_environment  = "${ilocal.environment}"
+  foreman_environment  = "${local.environment}"
   foreman_hostgroup    = "${local.hostgroup}"
   datacenter           = "${local.datacenter}"
   additional_disks     = {
