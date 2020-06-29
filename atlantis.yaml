@@ -10,5 +10,12 @@ projects:
   dir: richard.grainger/test_01
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
+<<<<<<< HEAD
 - name: llabranche-prometheus
   dir: llabranche/prometheus
+=======
+- name: llabranche-mssqltest2
+  dir: llabranche/mssqltest2
+- name: adgitops
+  dir: aarvelo/adgitops
+>>>>>>> cc8d8dd840d112abf580abb7fb17bab5d8a7481e
