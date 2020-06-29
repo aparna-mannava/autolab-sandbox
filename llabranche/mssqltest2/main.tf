@@ -31,7 +31,11 @@ module "mssql_winpm_1" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "100"
+    2 = "100",
+    3 = "100",
+    4 = "100",
+    5 = "100",
+    6 = "100"
   }
 }
 
