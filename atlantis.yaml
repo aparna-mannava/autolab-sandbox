@@ -10,5 +10,5 @@ projects:
   dir: richard.grainger/test_01
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
-- name: llabranche-mssqltest2
-  dir: llabranche/mssqltest2
+- name: llabranche-prometheus
+  dir: llabranche/prometheus
