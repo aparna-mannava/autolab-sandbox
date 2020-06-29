@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  product        = "mssql"
+  product        = "autolab"
   environment    = "nonprod"
   datacenter     = "ny2"
   hostname       = "us01vwmsql0093"
@@ -21,12 +21,12 @@ module "mssql_winpr_1" {
   alias                = ""
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-db"
-  lob                  = "bfs"
+  lob                  = "autolab"
   os_version           = "win2016"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = "${local.facts}"
-  foreman_environment  = "${local.environment}"
+  foreman_environment  = "${ilocal.environment}"
   foreman_hostgroup    = "${local.hostgroup}"
   datacenter           = "${local.datacenter}"
   additional_disks     = {
