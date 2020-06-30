@@ -9,7 +9,7 @@ locals {
   hostgroup     = "BT FM Cloud Repo Server"
   datacenter    = "ny2"
   image         = "rhel7"
-  infra_cluster = "ny2-aze-ntnx-11"
+  infra_cluster = "ny2-aza-vmw-autolab"
   infra_network = "ny2-autolab-app"
   facts         = {
     "bt_product"        = "fmcloud"
