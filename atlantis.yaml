@@ -20,3 +20,5 @@ projects:
   dir: ydelanoe/repo
 - name: ydelanoe-es
   dir: ydelanoe/es
+- name: ydelanoe-essnap
+  dir: ydelanoe/essnap
