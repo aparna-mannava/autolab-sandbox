@@ -18,3 +18,5 @@ projects:
   dir: aarvelo/adgitops
 - name: ydelanoe-repo
   dir: ydelanoe/repo
+- name: ydelanoe-es
+  dir: ydelanoe/es
