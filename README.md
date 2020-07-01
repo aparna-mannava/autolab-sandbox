@@ -9,6 +9,11 @@ cadence.
 first of the month.**
 
 ## Repo Usage
+Note - builds in this repo need to use one opf the enabled Nutanix cluster in NY2.  At this time, this
+is **ny2-aze-ntnx-11** however this does change.  Check the 
+[BT Terraform Infrastructure Module README](https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse)
+for the latest information about what Nutanix clusters are currently enabled in NY2.
+
 Since this is a shared repository, you must create a directory with your unix login/username.
 Within that directory, you can create subdirectories for any Atlantis projects you wish
 to build.
@@ -41,7 +46,8 @@ terraform {
 module "app_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlsndbxdmo1"
-  bt_infra_environment = "ny2-autolab-app"
+  bt_infra_cluster     = "ny2-aze-ntnx-11"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
