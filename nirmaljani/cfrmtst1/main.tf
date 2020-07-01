@@ -20,7 +20,7 @@ module "cfrm_dbserver_1" {
   hostname             = "us01vlcfrmsbx81"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-db81"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
-  bt_infra_environment = "ny2-autolab-app"
+  bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
@@ -34,7 +34,7 @@ module "cfrm_dbserver_1" {
     2 = "200",
     3 = "50",
     4 = "50",
-	  5 = "50"
+	5 = "50"
   }
 }
 
