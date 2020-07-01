@@ -26,3 +26,6 @@ projects:
   dir: ydelanoe/essnap
 - name: lsm-bamboo
   dir: lsm/bamboo
+- name: llabranche-mytest00
+  dir: llabranche/mytest00
+
