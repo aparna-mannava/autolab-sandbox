@@ -41,7 +41,8 @@ terraform {
 module "app_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlsndbxdmo1"
-  bt_infra_environment = "ny2-autolab-app"
+  bt_infra_cluster     = "ny2-aze-ntnx-11"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
