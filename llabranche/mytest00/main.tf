@@ -6,7 +6,7 @@ locals {
   product        = "autolab"
   environment    = "nonprod"
   datacenter     = "ny2"
-  hostname       = "us01vwmytstl0003"
+  hostname       = "us01vwpmsql0193"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_tier"         = "dev"
