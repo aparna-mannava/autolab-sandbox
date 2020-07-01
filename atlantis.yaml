@@ -24,3 +24,5 @@ projects:
   dir: ydelanoe/es
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
+- name: lsm-bamboo
+  dir: lsm/bamboo
