@@ -5,7 +5,7 @@ terraform {
 locals {
   facts       = {
     "bt_tier" = "dev"
-    "bt_env"  = "10"
+    "bt_env"  = "1"
     "bt_product" = "inf"
   }
 }
