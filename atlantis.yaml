@@ -4,6 +4,8 @@ automerge: true
 projects:
 - name: cdrew-dev1
   dir: cdrew/dev1
+- name: cdrew-dev2
+  dir: cdrew/dev2
 - name: btiq-cae-airflow
   dir: btiq-cae/airflow/service
 - name: btiq-cae-airflow-nfs-server
