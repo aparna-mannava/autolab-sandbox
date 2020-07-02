@@ -30,3 +30,5 @@ projects:
   dir: llabranche/mytest00
 - name: nirmal-cfrmtst1
   dir: nirmaljani/cfrmtst1
+- name: saumilp-dgb
+  dir: saumilp/dgb
