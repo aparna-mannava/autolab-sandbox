@@ -28,4 +28,5 @@ projects:
   dir: lsm/bamboo
 - name: llabranche-mytest00
   dir: llabranche/mytest00
-
+- name: nirmal-cfrmtst1
+  dir: nirmaljani/cfrmtst1
