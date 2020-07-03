@@ -42,3 +42,5 @@ projects:
   dir: savula/mirror
 - name: savula-mirror1
   dir: savula/mirror1
+- name: savula-mirror2
+  dir: savula/mirror2
