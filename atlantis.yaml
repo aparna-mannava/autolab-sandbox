@@ -38,3 +38,5 @@ projects:
   dir: llabranche1/testexpt01
 - name: suresh-test
   dir: skola/test
+- name: savula-mirror
+  dir: savula/mirror
