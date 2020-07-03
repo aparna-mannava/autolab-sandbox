@@ -40,3 +40,5 @@ projects:
   dir: skola/test
 - name: savula-mirror
   dir: savula/mirror
+- name: savula-mirror1
+  dir: savula/mirror1
