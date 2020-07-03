@@ -21,7 +21,7 @@ module "tfm_disallow_os" {
   bt_infra_cluster    = "ny2-aza-vmw-autolab"
   bt_infra_network    = "ny2-autolab-app"
   lob                 = "CLOUD"
-  os_version          = "rhel6"
+  os_version          = "rhel7"
   cpus                = "2"
   memory              = "2048"
   external_facts      = "${local.facts}"
