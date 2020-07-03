@@ -24,6 +24,8 @@ projects:
   dir: ydelanoe/repo
 - name: ydelanoe-es
   dir: ydelanoe/es
+- name: disallow-os-test
+  dir: gnewbury/disallow-os
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
