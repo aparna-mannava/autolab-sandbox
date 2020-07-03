@@ -36,3 +36,5 @@ projects:
   dir: saumilp/dgb
 - name: llabranche1-testexpt01
   dir: llabranche1/testexpt01
+- name: suresh-test
+  dir: skola/test
