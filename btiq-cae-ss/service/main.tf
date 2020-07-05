@@ -25,7 +25,6 @@ module "streamset-service" {
   }
   external_facts       = local.facts
 }
-
 output "streamset-service" {
   value = {
     "fqdn"  = "${module.streamset-service.fqdn}",
