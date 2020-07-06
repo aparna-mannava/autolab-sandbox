@@ -36,8 +36,8 @@ projects:
   dir: nirmaljani/cfrmtst1
 - name: saumilp-dgb
   dir: saumilp/dgb
-- name: llabranche1-testexpt01
-  dir: llabranche1/testexpt01
+- name: llabranche1-testexpt01-testexpt02-main.tf
+  dir: llabranche1/testexpt01/testexpt02/main.tf
 - name: suresh-test
   dir: skola/test
 - name: savula-mirror
@@ -46,3 +46,4 @@ projects:
   dir: savula/mirror1
 - name: savula-mirror2
   dir: savula/mirror2
+
