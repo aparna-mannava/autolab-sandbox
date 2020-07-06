@@ -46,4 +46,5 @@ projects:
   dir: savula/mirror1
 - name: savula-mirror2
   dir: savula/mirror2
-
+- name: treed-sitrt
+  dir: treed/sitrt
