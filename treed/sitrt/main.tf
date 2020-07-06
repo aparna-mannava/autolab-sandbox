@@ -22,6 +22,9 @@ module "sisensepoc_server_1" {
   foreman_environment  = "feature_CLOUD_66005"
   foreman_hostgroup    = "BTIQ Sisense Server"
   datacenter           = "ny2"
+  additional_disks     = {
+    1 = "100",
+  }
 }
 
 output "sisensepoc_server_1" {
