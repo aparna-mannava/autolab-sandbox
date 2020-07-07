@@ -48,3 +48,5 @@ projects:
   dir: savula/mirror2
 - name: treed-sitrt
   dir: treed/sitrt
+- name: suresh-test2
+  dir: skola/test2
