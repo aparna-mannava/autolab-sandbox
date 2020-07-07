@@ -50,3 +50,5 @@ projects:
   dir: treed/sitrt
 - name: suresh-test2
   dir: skola/test2
+- name: suresh-test3
+  dir: skola/test3
