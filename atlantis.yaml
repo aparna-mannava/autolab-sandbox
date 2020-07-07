@@ -52,3 +52,5 @@ projects:
   dir: skola/test2
 - name: suresh-test3
   dir: skola/test3
+- name: rkumar-mirror
+  dir: rkumar/mirror
