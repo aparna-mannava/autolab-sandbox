@@ -30,6 +30,8 @@ projects:
   dir: ydelanoe/essnap
 - name: lsm-bamboo
   dir: lsm/bamboo
+- name: lsm-rpt
+  dir: lsm/rpt
 - name: llabranche-mytest00
   dir: llabranche/mytest00
 - name: nirmal-cfrmtst1
