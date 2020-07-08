@@ -30,12 +30,13 @@ locals {
 
 module "rpt01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hostname_base}${local.facts.bt_tier}${local.facts.bt_env}rpt01"
-  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-rpt01"
+  hostname             = "us01vlsmrpt01"
+  alias                = "lsm-rpt01"
 
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
+  lob                  = local.lob
   foreman_environment  = local.environment
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
