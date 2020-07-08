@@ -9,7 +9,7 @@ locals {
   hostgroup   = "BT Base Server"
   facts = {
     "bt_product" = "inf"
-    "bt_role"    = "os-test"
+    "bt_role"    = "bstn"
     "bt_tier"    = "test"
   }
 }
@@ -32,8 +32,8 @@ module "tfm_disallow_os" {
 
 output "tfm_disallow_os" {
   value = {
-    "fqdn"  = "${module.tfm_disallow_os.fqdn}",
-    "alias" = "${module.tfm_disallow_os.alias}",
-    "ip"    = "${module.tfm_disallow_os.ip}",
+    "fqdn"  = "${module.bstfwpoc.fqdn}",
+    "alias" = "${module.bstfwpoc.alias}",
+    "ip"    = "${module.bstfwpoc.ip}",
   }
 }
