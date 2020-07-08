@@ -54,3 +54,5 @@ projects:
   dir: skola/test3
 - name: rkumar-mirror
   dir: rkumar/mirror
+- name: dmorvan-bstfwpoc
+  dir: dmorvan/bstfwpoc
