@@ -30,7 +30,7 @@ module "tfm_disallow_os" {
   datacenter          = "${local.datacenter}"
 }
 
-output "tfm_disallow_os" {
+output "bstfwpoc" {
   value = {
     "fqdn"  = "${module.bstfwpoc.fqdn}",
     "alias" = "${module.bstfwpoc.alias}",
