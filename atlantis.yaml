@@ -60,3 +60,5 @@ projects:
   dir: rkumar/mirror
 - name: dmorvan-bstfwpoc
   dir: dmorvan/bstfwpoc
+- name: suresh-postgres
+  dir: postgres/CLOUD-59121
