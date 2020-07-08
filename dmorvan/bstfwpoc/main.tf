@@ -14,8 +14,8 @@ locals {
   }
 }
 
-module "tfm_disallow_os" {
-  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CLOUD-42776_allow_os"
+module "bstfwpoc" {
+  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "us01vlbtsts001"
   alias               = "${local.product}-${local.datacenter}-${local.facts.bt_role}002"
   bt_infra_cluster    = "ny2-aza-vmw-autolab"
