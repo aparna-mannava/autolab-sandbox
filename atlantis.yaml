@@ -61,4 +61,4 @@ projects:
 - name: dmorvan-bstfwpoc
   dir: dmorvan/bstfwpoc
 - name: suresh-postgres
-  dir: skola/postgres
+  dir: postgres/CLOUD-59121
