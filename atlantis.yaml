@@ -34,14 +34,10 @@ projects:
   dir: lsm/bamboo
 - name: lsm-rpt
   dir: lsm/rpt
-- name: llabranche-mytest00
-  dir: llabranche/mytest00
 - name: nirmal-cfrmtst1
   dir: nirmaljani/cfrmtst1
 - name: saumilp-dgb
   dir: saumilp/dgb
-- name: llabranche1-testexpt01-testexpt02
-  dir: llabranche1/testexpt01/testexpt02
 - name: suresh-test
   dir: skola/test
 - name: savula-mirror
