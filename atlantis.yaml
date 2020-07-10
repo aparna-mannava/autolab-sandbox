@@ -60,12 +60,9 @@ projects:
   dir: dmorvan/bstfwpoc
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
-<<<<<<< HEAD
 - name: llabranche1-msqlmet01
   dir: llabranche1/msqlmet01
-=======
 - name: saumilp-postgres
   dir: saumilp/postgres
 - name: postgres-CLOUD-66715
   dir: postgres/CLOUD-66715
->>>>>>> 7e12930eb8f526ba0eb66e6f3bc444e39d726e72
