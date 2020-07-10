@@ -58,3 +58,5 @@ projects:
   dir: dmorvan/bstfwpoc
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
+- name: llabranche1-msqlmet01
+  dir: llabranche1/msqlmet01
