@@ -64,3 +64,5 @@ projects:
   dir: dmorvan/bstfwpoc
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
+- name: saumilp-postgres
+  dir: saumilp/postgres

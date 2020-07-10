@@ -3,7 +3,7 @@ terraform {
 }
 module "postgres_server1" {
   source                = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname              = "us01vltfdemo23"
+  hostname              = "us01vltfdemo24"
   alias                 = "tf-pg-mstr63"
   bt_infra_cluster      = "ny2-aze-ntnx-11"
   bt_infra_network      = "ny2-autolab-db-ahv"
@@ -29,7 +29,7 @@ output "postgres_server1" {
 }
 module "postgres_server2" {
   source                = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname              = "us01vltfdemo24"
+  hostname              = "us01vltfdemo25"
   alias                 = "tf-pg-slv64"
   bt_infra_cluster      = "ny2-aze-ntnx-11"
   bt_infra_network      = "ny2-autolab-db-ahv"
