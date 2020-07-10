@@ -10,7 +10,7 @@ locals {
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_tier"         = "dev"
-	"bt_bfs_timezone" = "Eastern Standard Time"
+    "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
 
@@ -32,17 +32,17 @@ module "test_server_msql1" {
   additional_disks     = {
     1 = "200",
     2 = "100",
-	3 = "100",
-	4 = "100",
-	5 = "100",
-	6 = "100"
+    3 = "100",
+    4 = "100",
+    5 = "100",
+    6 = "100"
   }
 }
 
 output "test_server_msql1" {
   value = {
-    "fqdn"  = "${test_server_msql1.fqdn}",
-    "alias" = "${test_server_msql1.alias}",
-    "ip"    = "${test_server_msql1.ip}",
+    "fqdn"  = "${module.test_server_msql1.fqdn}",
+    "alias" = "${module.test_server_msql1.alias}",
+    "ip"    = "${module.test_server_msql1.ip}",
   }
 }
