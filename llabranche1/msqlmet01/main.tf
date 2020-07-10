@@ -15,7 +15,7 @@ locals {
 }
 
 
-module "test_server_msql1" {
+module "mssql_winex_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
@@ -39,10 +39,10 @@ module "test_server_msql1" {
   }
 }
 
-output "test_server_msql1" {
+output "mssql_winex_1" {
   value = {
-    "fqdn"  = "${module.test_server_msql1.fqdn}",
-    "alias" = "${module.test_server_msql1.alias}",
-    "ip"    = "${module.test_server_msql1.ip}",
+    "fqdn"  = "${module.mssql_winex_1.fqdn}",
+    "alias" = "${module.mssql_winex_1.alias}",
+    "ip"    = "${module.mssql_winex_1.ip}",
   }
 }
