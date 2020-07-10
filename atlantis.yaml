@@ -38,6 +38,8 @@ projects:
   dir: llabranche/mytest00
 - name: nirmal-cfrmtst1
   dir: nirmaljani/cfrmtst1
+- name: nirmal-cfrmtst2
+  dir: nirmaljani/cfrmtst2
 - name: saumilp-dgb
   dir: saumilp/dgb
 - name: llabranche1-testexpt01-testexpt02
