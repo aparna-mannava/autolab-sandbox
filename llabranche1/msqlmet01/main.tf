@@ -6,7 +6,7 @@ locals {
   product        = "autolab"
   environment    = "nonprod"
   datacenter     = "ny2"
-  hostname       = "us01vwmsql0071"
+  hostname       = "us01vwcldm0039"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_tier"         = "dev"
@@ -15,13 +15,13 @@ locals {
 }
 
 
-module "mssql_promsv_1" {
+module "mssql_winex_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-db"
-  lob                  = "autolab"
+  lob                  = "cloud"
   os_version           = "win2016"
   cpus                 = "2"
   memory               = "4096"
@@ -39,10 +39,10 @@ module "mssql_promsv_1" {
   }
 }
 
-output "mssql_promsv_1" {
+output "mssql_winex_1" {
   value = {
-    "fqdn"  = "${module.mssql_promsv_1.fqdn}",
-    "alias" = "${module.mssql_promsv_1.alias}",
-    "ip"    = "${module.mssql_promsv_1.ip}",
+    "fqdn"  = "${module.mssql_winex_1.fqdn}",
+    "alias" = "${module.mssql_winex_1.alias}",
+    "ip"    = "${module.mssql_winex_1.ip}",
   }
 }

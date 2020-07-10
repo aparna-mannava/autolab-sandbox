@@ -34,16 +34,12 @@ projects:
   dir: lsm/bamboo
 - name: lsm-rpt
   dir: lsm/rpt
-- name: llabranche-mytest00
-  dir: llabranche/mytest00
 - name: nirmal-cfrmtst1
   dir: nirmaljani/cfrmtst1
 - name: nirmal-cfrmtst2
   dir: nirmaljani/cfrmtst2
 - name: saumilp-dgb
   dir: saumilp/dgb
-- name: llabranche1-testexpt01-testexpt02
-  dir: llabranche1/testexpt01/testexpt02
 - name: suresh-test
   dir: skola/test
 - name: savula-mirror
@@ -64,6 +60,8 @@ projects:
   dir: dmorvan/bstfwpoc
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
+- name: llabranche1-msqlmet01
+  dir: llabranche1/msqlmet01
 - name: saumilp-postgres
   dir: saumilp/postgres
 - name: postgres-CLOUD-66715
