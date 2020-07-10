@@ -66,3 +66,5 @@ projects:
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
   dir: saumilp/postgres
+- name: postgres-CLOUD-66715
+  dir: postgres/CLOUD-66715
