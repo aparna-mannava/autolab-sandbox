@@ -4,8 +4,8 @@ terraform {
 locals {
   facts       = {
     "bt_tier"    = "dev"
-    "bt_product" = "btiq_cae"
-    "bt_role"    = "streamset"
+    "bt_product" = "inf"
+    "bt_env"    = "10"
   }
 }
 module "streamset-service" {
@@ -14,7 +14,7 @@ module "streamset-service" {
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
-  foreman_environment  = "feature_btiq_cae_ss"
+  foreman_environment  = "master"
   foreman_hostgroup    = "BTIQ CAE Streamsets"
   datacenter           = "ny2"
   lob                  = "btiq_cae"
