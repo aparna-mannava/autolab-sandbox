@@ -4,20 +4,20 @@ terraform {
 locals {
   facts       = {
     "bt_tier"    = "dev"
-    "bt_product" = "btiq_cae"
-    "bt_role"    = "streamset"
+    "bt_product" = "inf"
+    "bt_env"    = "1"
   }
 }
 module "streamset-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcaesset01" 
+  bt_infra_network     = "ny2-autolab-db"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
-  bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
-  foreman_environment  = "feature_btiq_cae_ss"
+  foreman_environment  = "master"
   foreman_hostgroup    = "BTIQ CAE Streamsets"
   datacenter           = "ny2"
-  lob                  = "btiq_cae"
+  lob                  = "dev"
   cpus                 = "2"
   memory        	   = "2048"
   additional_disks     = {
@@ -35,4 +35,3 @@ output "streamset-service" {
   
   
 }
-
