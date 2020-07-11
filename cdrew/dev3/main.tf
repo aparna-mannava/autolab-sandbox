@@ -10,7 +10,7 @@ locals {
   etcd_hosts_p    = ["'us01vldved001.saas-n.com','us01vldved002.saas-n.com','us01vldved003.saas-n.com'"]
   domain          = "saas-n.com"
   tier            = "dev"
-  bt_env          = "3"
+  bt_env          = "4"
   bt_product      = "pbscap"
   lob             = "pbscap"
   hostgroup       = "BT ETCD for PostgreSQL Server"
