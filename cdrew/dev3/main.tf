@@ -7,8 +7,8 @@ locals {
   hapg_servers    = ["us01vldvpg1","us01vldvpg2","us01vldvpg3"]
   haproxy_server  = ["us01vldvpxy1"]
   backrest_server = ["us01vldvbkp1"]
-  etcd_hosts_p    = ["'us01vldved001.saas-n.com','us01vldved002.saas-n.com','us01vldved003.saas-n.com'"]
-  domain          = "saas-n.com"
+  etcd_hosts_p    = ["'us01vldved001.auto.saas-n.com','us01vldved002.auto.saas-n.com','us01vldved003.auto.saas-n.com'"]
+  domain          = "auto.saas-n.com"
   tier            = "dev"
   bt_env          = "5"
   bt_product      = "pbscap"
