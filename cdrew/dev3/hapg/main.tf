@@ -13,7 +13,7 @@ locals {
   bt_env          = "5"
   bt_product      = "pbscap"
   lob             = "pbscap"
-  hostgroup       = "BT ETCD for PostgreSQL Server"
+  hostgroup       = "BT HA PG Server"
   environment     = "feature_CEA_8102_keys"
   cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-db-ahv"
@@ -27,60 +27,6 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-  }
-}
-
-module "ny2_autolab_etcd_0" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.etcd_servers[0]}"
-  bt_infra_cluster     = local.cluster
-  bt_infra_network     = local.network
-  lob                  = local.lob
-  foreman_hostgroup    = local.hostgroup
-  foreman_environment  = local.environment
-  os_version           = "rhel7"
-  cpus                 = "1"
-  memory               = "4096"
-  external_facts       = local.facts
-  datacenter           = "ny2"
-  additional_disks     = {
-    1 = "100",
-  }
-}
-
-module "ny2_autolab_etcd_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.etcd_servers[1]}"
-  bt_infra_cluster     = local.cluster
-  bt_infra_network     = local.network
-  foreman_hostgroup    = local.hostgroup
-  foreman_environment  = local.environment
-  lob                  = local.lob
-  os_version           = "rhel7"
-  cpus                 = "1"
-  memory               = "4096"
-  external_facts       = local.facts
-  datacenter           = "ny2"
-  additional_disks     = {
-    1 = "100",
-  }
-}
-
-module "ny2_autolab_etcd_2" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.etcd_servers[2]}"
-  bt_infra_cluster     = local.cluster
-  bt_infra_network     = local.network
-  foreman_hostgroup    = local.hostgroup
-  lob                  = local.lob
-  foreman_environment  = local.environment
-  os_version           = "rhel7"
-  cpus                 = "1"
-  memory               = "4096"
-  external_facts       = local.facts
-  datacenter           = "ny2"
-  additional_disks     = {
-    1 = "100",
   }
 }
 
@@ -160,59 +106,6 @@ module "ny2_autolab_haproxy_1" {
   additional_disks     = {
     1 = "50",
     2 = "10",
-  }
-}
-
-module "ny2_autolab_backrest_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.backrest_server[0]}"
-  bt_infra_cluster     = local.cluster
-  bt_infra_network     = local.network
-  foreman_hostgroup    = "BT PG Backrest Server"
-  foreman_environment  = local.environment
-  lob                  = local.lob
-  os_version           = "rhel7"
-  cpus                 = "2"
-  memory               = "4096"
-  external_facts       = local.facts
-  datacenter           = "ny2"
-  additional_disks     = {
-    1 = "100",
-    2 = "400",
-  }
-}
-
-output "ny2_autolab_backrest_1" {
-  value = {
-    "fqdn"  = "${module.ny2_autolab_backrest_1.fqdn}",
-    "alias" = "${module.ny2_autolab_backrest_1.alias}",
-    "ip"    = "${module.ny2_autolab_backrest_1.ip}",
-  }
-}
-
-
-
-output "ny2_autolab_etcd_0" {
-  value = {
-    "fqdn"  = "${module.ny2_autolab_etcd_0.fqdn}",
-    "alias" = "${module.ny2_autolab_etcd_0.alias}",
-    "ip"    = "${module.ny2_autolab_etcd_0.ip}",
-  }
-}
-
-output "ny2_autolab_etcd_1" {
-  value = {
-    "fqdn"  = "${module.ny2_autolab_etcd_1.fqdn}",
-    "alias" = "${module.ny2_autolab_etcd_1.alias}",
-    "ip"    = "${module.ny2_autolab_etcd_1.ip}",
-  }
-}
-
-output "ny2_autolab_etcd_2" {
-  value = {
-    "fqdn"  = "${module.ny2_autolab_etcd_2.fqdn}",
-    "alias" = "${module.ny2_autolab_etcd_2.alias}",
-    "ip"    = "${module.ny2_autolab_etcd_2.ip}",
   }
 }
 
