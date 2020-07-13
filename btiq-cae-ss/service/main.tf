@@ -11,12 +11,12 @@ locals {
 
 module "streamset-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcaesset01" 
+  hostname             = "us01vlcaesset02" 
   bt_infra_network     = "ny2-autolab-db"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   os_version           = "rhel7"
   foreman_environment  = "master"
-  foreman_hostgroup    = "BTIQ CAE Streamsets"
+  foreman_hostgroup    = "BT Streamsets Server"
   datacenter           = "ny2"
   lob                  = "dev"
   cpus                 = "2"
