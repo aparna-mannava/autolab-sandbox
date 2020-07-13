@@ -22,7 +22,7 @@ module "streamset-service" {
   cpus                 = "2"
   memory        	   = "2048"
   additional_disks     = {
-    1 = "20"
+    1 = "200"
   }
   external_facts       = local.facts
 }
