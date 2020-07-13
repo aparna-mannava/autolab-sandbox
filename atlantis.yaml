@@ -2,8 +2,12 @@
 version: 3
 automerge: true
 projects:
-- name: cdrew-dev3
-  dir: cdrew/dev3
+- name: cdrew-dev3-etcd
+  dir: cdrew/dev3/etcd
+- name: cdrew-dev3-hapg
+  dir: cdrew/dev3/hapg
+- name: cdrew-dev3-backrest
+  dir: cdrew/dev3/backrest
 - name: windows_firewall
   dir: aarvelo/firewall
 - name: cdrew-dev1
