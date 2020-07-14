@@ -41,8 +41,8 @@ module "test_server_msql2" {
 
 output "test_server_msql2" {
   value = {
-    "fqdn"  = "${test_server_msql2.fqdn}",
-    "alias" = "${test_server_msql2.alias}",
-    "ip"    = "${test_server_msql2.ip}",
+    "fqdn"  = "${module.test_server_msql2.fqdn}",
+    "alias" = "${module.test_server_msql2.alias}",
+    "ip"    = "${module.test_server_msql2.ip}",
   }
 }
