@@ -3,10 +3,11 @@ terraform {
 }
 
 locals {
-  product     = "inf"
-  environment = "feature_CLOUD_66563_inf_gitlab_aws"
-  datacenter  = "ny2"
-  hostgroup   = "BT INF Gitlab Server"
+  product       = "inf"
+  environment   = "feature_CLOUD_66563_inf_gitlab_aws"
+  datacenter    = "ny2"
+  hostgroup     = "BT INF Gitlab Server"
+  hostname_part = "us01vlglab"
   facts = {
     "bt_product" = local.product
     "bt_role"    = "gitlab"
@@ -21,7 +22,7 @@ locals {
 
   inf_ny2_gitlab01 = {
     hostname = "${local.hostname_part}001"
-    alias    = "${local.product}-${local.datacenter}-${local.role}01"
+    alias    = "${local.product}-${local.datacenter}-${local.facts.bt_role}01"
   }
 
 }
