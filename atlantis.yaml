@@ -2,6 +2,8 @@
 version: 3
 automerge: true
 projects:
+- name: cdrew-dev4-backrest
+  dir: cdrew/dev4/backrest
 - name: cdrew-dev4-hapg
   dir: cdrew/dev4/hapg
 - name: cdrew-dev3-etcd
