@@ -41,6 +41,9 @@ module "inf_ny2_packer03" {
   foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter
   lob                 = local.lob
+  additional_disks {
+      1 = "60",
+  }
 }
 
 output "inf_ny2_packer03" {
