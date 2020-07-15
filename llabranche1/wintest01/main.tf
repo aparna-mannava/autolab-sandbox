@@ -7,11 +7,11 @@ locals {
   environment    = "nonprod"
   datacenter     = "ny2"
   domain        = "auto.saas-n.com"
+  role        = "mssql"
   hostname       = "us01vwssaut013"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_tier"  = "dev"
-    "bt_role"  = "mssql"
     "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
