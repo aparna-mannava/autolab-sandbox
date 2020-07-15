@@ -21,7 +21,7 @@ module "test_server_ssql2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
-  bt_infra_cluster     = "ny2-aze-ntnx-10"
+  bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-db-ahv"
   lob                  = "cloud"
   os_version           = "win2016"
