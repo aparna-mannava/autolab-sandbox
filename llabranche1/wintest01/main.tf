@@ -6,11 +6,12 @@ locals {
   product        = "autolab"
   environment    = "nonprod"
   datacenter     = "ny2"
+  domain        = "auto.saas-n.com"
   hostname       = "us01vwssaut013"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
-    "bt_role"         = "mssql"
-    "bt_tier"         = "dev"
+    "bt_tier"  = "dev"
+    "bt_role"  = "mssql"
     "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
@@ -22,7 +23,6 @@ module "test_server_ssql1" {
   alias                = ""
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-db-ahv"
-  lob                  = "cloud"
   os_version           = "win2016"
   cpus                 = "2"
   memory               = "4096"
