@@ -23,7 +23,6 @@ module "test_server_ssql2" {
   alias                = ""
   bt_infra_cluster     = "ny2-aze-ntnx-10"
   bt_infra_network     = "ny2-autolab-db-ahv"
-  bt_role                  = "mssql"
   lob                  = "cloud"
   os_version           = "win2016"
   cpus                 = "2"
