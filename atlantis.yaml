@@ -77,4 +77,4 @@ projects:
 - name: postgres-CLOUD-66715
   dir: postgres/CLOUD-66715
 - name: llabranche1-wintest01
-  dir: llabranche/wintest01
+  dir: llabranche1/wintest01
