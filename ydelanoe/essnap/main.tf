@@ -51,7 +51,6 @@ output "es_snap" {
   }
 }
 
-
 module "es_snap2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlfmessnap2"
