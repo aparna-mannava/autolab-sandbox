@@ -76,5 +76,5 @@ projects:
   dir: saumilp/postgres
 - name: postgres-CLOUD-66715
   dir: postgres/CLOUD-66715
-- name: llabranche1-prom02
-  dir: llabranche1/prom02
+- name: llabranche1-wintest01
+  dir: llabranche/wintest01
