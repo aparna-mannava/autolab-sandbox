@@ -2,6 +2,8 @@
 version: 3
 automerge: true
 projects:
+- name: aarvelo-fixrhel8
+  dir: aarvelo/fixrhel8
 - name: cdrew-dev4-backrest
   dir: cdrew/dev4/backrest
 - name: cdrew-dev4-hapg
