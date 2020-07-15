@@ -9,7 +9,7 @@ locals {
   hostgroup     = "BT Packer Server"
   hostname_part = "us01vlpacker"
   facts = {
-    "bt_product" = local.product
+    "bt_product" = "cloud"
     "bt_role"    = "packer"
     "bt_tier"    = "test"
   }
