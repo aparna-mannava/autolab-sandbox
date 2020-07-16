@@ -80,3 +80,4 @@ projects:
   dir: postgres/CLOUD-66715
 - name: llabranche1-cloud_02
   dir: llabranche1/cloud_02
+  workflow: nutanix-backend
