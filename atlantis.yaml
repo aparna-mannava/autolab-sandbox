@@ -78,5 +78,6 @@ projects:
   dir: saumilp/postgres
 - name: postgres-CLOUD-66715
   dir: postgres/CLOUD-66715
-- name: llabranche1-winsql01
-  dir: llabranche1/winsql01
+- name: llabranche1-cloud_02
+  dir: llabranche1/cloud_02
+  workflow: nutanix-backend
