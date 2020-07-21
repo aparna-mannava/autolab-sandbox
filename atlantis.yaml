@@ -34,8 +34,6 @@ projects:
   dir: ydelanoe/es
 - name: disallow-os-test
   dir: gnewbury/disallow-os
-- name: gnewbury-gitlab
-  dir: gnewbury/gitlab
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
