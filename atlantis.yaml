@@ -38,8 +38,8 @@ projects:
   dir: ydelanoe/repo
 - name: ydelanoe-es
   dir: ydelanoe/es
-- name: gnewbury-packer-windows
-  dir: gnewbury/packer-windows
+- name: gnewbury-packer-partitions
+  dir: gnewbury/packer-partitions
 - name: disallow-os-test
   dir: gnewbury/disallow-os
 - name: ydelanoe-essnap

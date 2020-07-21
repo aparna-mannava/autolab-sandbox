@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product       = "inf"
-  environment   = "feature_CLOUD_66662_packer_windows"
+  environment   = "feature_CLOUD_67177_packer_template_partitions"
   datacenter    = "ny2"
   hostgroup     = "BT Packer Server"
   hostname_part = "us01vlpacker"
