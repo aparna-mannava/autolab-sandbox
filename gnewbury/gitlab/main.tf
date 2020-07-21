@@ -24,6 +24,7 @@ locals {
     hostname = "${local.hostname_part}001"
     alias    = "${local.product}-${local.datacenter}-${local.facts.bt_role}01"
   }
+  modify_to_destroy = 1
 
 }
 
