@@ -81,3 +81,5 @@ projects:
 - name: llabranche1-cloud_02
   dir: llabranche1/cloud_02
   workflow: nutanix-backend
+- name: rkumar-postgres
+  dir: rkumar/postgres
