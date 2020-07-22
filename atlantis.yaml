@@ -2,6 +2,8 @@
 version: 3
 automerge: true
 projects:
+- name: aarvelo-ciscat-test
+  dir: aarvelo/ciscat-test
 - name: aarvelo-fixrhel8
   dir: aarvelo/fixrhel8
 - name: cdrew-dev4-backrest
