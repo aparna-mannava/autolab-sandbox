@@ -91,3 +91,5 @@ projects:
   dir: rkumar/postgres1
 - name: rkumar-postgres2
   dir: rkumar/postgres2
+- name: smurali-mirror2
+  dir: smurali/mirror2
