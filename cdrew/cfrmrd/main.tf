@@ -23,7 +23,7 @@ module "cfrm_dbserver_1" {
   bt_infra_network     = "ny2-autolab-db-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
-  memory               = "8192"
+  memory               = "16384"
   foreman_environment  = local.environment
   lob                  = "cfrmrd"
   foreman_hostgroup    = "CFRMRD Oracle Server"
