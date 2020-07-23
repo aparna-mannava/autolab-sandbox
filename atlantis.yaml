@@ -83,3 +83,5 @@ projects:
   workflow: nutanix-backend
 - name: rkumar-postgres
   dir: rkumar/postgres
+- name: smurali-mirror
+  dir: smurali/mirror
