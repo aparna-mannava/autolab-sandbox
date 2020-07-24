@@ -97,3 +97,5 @@ projects:
   dir: smurali/mirror3
 - name: narendra-sql1
   dir: narendra/sql1
+- name: rkumar-mirror1
+  dir: rkumar/mirror1
