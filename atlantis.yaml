@@ -10,6 +10,8 @@ projects:
   dir: cdrew/dev4/backrest
 - name: cdrew-dev4-hapg
   dir: cdrew/dev4/hapg
+- name: cdrew-cfrmrd
+  dir: cdrew/cfrmrd
 - name: cdrew-dev3-etcd
   dir: cdrew/dev3/etcd
 - name: cdrew-dev3-hapg
