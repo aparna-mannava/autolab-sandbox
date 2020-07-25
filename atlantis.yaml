@@ -101,3 +101,5 @@ projects:
   dir: narendra/sql1
 - name: rkumar-mirror1
   dir: rkumar/mirror1
+- name: saumilp-cfrm
+  dir: saumilp/cfrm
