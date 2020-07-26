@@ -103,3 +103,5 @@ projects:
   dir: rkumar/mirror1
 - name: saumilp-cfrm
   dir: saumilp/cfrm
+- name: rkumar-mirror001
+  dir: rkumar/mirror001
