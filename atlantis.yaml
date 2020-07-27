@@ -115,3 +115,5 @@ projects:
   dir: narendra/sql05
 - name: rkumar-mirror005
   dir: rkumar/mirror005
+- name: narendra-postgresql
+  dir: narendra/postgresql
