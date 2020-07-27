@@ -111,3 +111,5 @@ projects:
   dir: narendra/sql07
 - name: rkumar-mirror002
   dir: rkumar/mirror002
+- name: narendra-sql05
+  dir: narendra/sql05
