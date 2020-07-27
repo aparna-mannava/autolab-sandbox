@@ -32,10 +32,10 @@ module "inf_windns_n7" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "50",
-    2 = "100",
-    3 = "100",
-    4 = "100",
-    5 = "100",
+    2 = "50",
+    3 = "50",
+    4 = "50",
+    5 = "50",
     6 = "50"
   }
 }
