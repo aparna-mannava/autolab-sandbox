@@ -25,7 +25,7 @@ module "inf_windns_n7" {
   lob                  = "inf"
   os_version           = "win2016"
   cpus                 = "2"
-  memory               = "4096"
+  memory               = "1024"
   external_facts       = "${local.facts}"
   foreman_environment  = "${local.environment}"
   foreman_hostgroup    = "${local.hostgroup}"
