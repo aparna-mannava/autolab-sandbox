@@ -45,6 +45,7 @@ module "ciscat_win_server_1" {
 }
 
 
+
 output "ciscat_nix_server_1" {
   value = {
     "fqdn"  = "${module.ciscat_nix_server_1.fqdn}",
