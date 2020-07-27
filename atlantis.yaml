@@ -32,6 +32,7 @@ projects:
   dir: richard.grainger/test_01
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
+  workflow: nutanix-backend
 - name: llabranche-prometheus
   dir: llabranche/prometheus
 - name: llabranche-mssqltest2
@@ -115,3 +116,6 @@ projects:
   dir: narendra/sql05
 - name: rkumar-mirror005
   dir: rkumar/mirror005
+- name: btiq-cae-strset
+  dir: btiq-cae-ss/service
+  workflow: nutanix-backend
