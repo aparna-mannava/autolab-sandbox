@@ -35,5 +35,4 @@ output "streamset-service" {
     "ip"    = "${module.streamset-service.ip}",
   }
   
-  
 }
