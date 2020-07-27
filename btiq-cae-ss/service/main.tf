@@ -4,7 +4,7 @@ terraform {
 locals {
   facts       = {
     "bt_tier"    = "dev"
-    "bt_product" = "inf"
+    "bt_product" = "btiq"
     "bt_env"    = "1"
   }
 }
@@ -26,7 +26,6 @@ module "streamset-service" {
   }
   external_facts       = local.facts
 }
-
 
 output "streamset-service" {
   value = {
