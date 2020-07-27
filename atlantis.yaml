@@ -109,3 +109,5 @@ projects:
   dir: savula/postg2
 - name: narendra-sql07
   dir: narendra/sql07
+- name: rkumar-mirror002
+  dir: rkumar/mirror002
