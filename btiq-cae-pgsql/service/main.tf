@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-module "postgre_btiq" {
+module "db_server1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlbtiqpgs01"
   alias                = "btiq-ingest-db"
@@ -20,10 +20,10 @@ module "postgre_btiq" {
   }
 }
 
-output "postgre_btiq" {
+output "db_server1" {
   value = {
-    "fqdn"  = "${module.postgre_btiq.fqdn}",
-    "alias" = "${module.postgre_btiq.alias}",
-    "ip"    = "${module.postgre_btiq.ip}",
+    "fqdn"  = "${module.db_server1.fqdn}",
+    "alias" = "${module.db_server1.alias}",
+    "ip"    = "${module.db_server1.ip}",
   }
 }
