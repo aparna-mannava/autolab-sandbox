@@ -14,6 +14,7 @@ module "db_server1" {
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = "ny2"
+  lob                  = "dev"
   additional_disks     = {
     1 = "50",
     2 = "50",
