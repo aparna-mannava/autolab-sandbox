@@ -128,3 +128,7 @@ projects:
   dir: dnani/postgres01
 - name: dnani-postgres02
   dir: dnani/postgres02
+- name: btiq-cae-pgsql
+  dir: btiq-cae-pgsql/service
+  workflow: nutanix-backend
+  
