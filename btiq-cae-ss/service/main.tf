@@ -8,7 +8,6 @@ locals {
     "bt_env"    = "1"
   }
 }
-n
 module "streamset-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcaesset03" 
@@ -20,7 +19,7 @@ module "streamset-service" {
   datacenter           = "ny2"
   lob                  = "dev"
   cpus                 = "2"
-  memory        	   = "2048"
+  memory               = "2048"
   additional_disks     = {
     1 = "200"
   }
