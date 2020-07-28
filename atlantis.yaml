@@ -118,3 +118,5 @@ projects:
   dir: rkumar/mirror005
 - name: narendra-postgresql
   dir: narendra/postgresql
+- name: dnani-sqlmirror01
+  dir: dnani/sqlmirror01
