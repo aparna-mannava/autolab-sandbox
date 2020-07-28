@@ -126,3 +126,5 @@ projects:
   dir: dnani/sqlmirror03
 - name: dnani-postgres01
   dir: dnani/postgres01
+- name: dnani-postgres02
+  dir: dnani/postgres02
