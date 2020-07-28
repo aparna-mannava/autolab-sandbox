@@ -20,10 +20,10 @@ module "postgre_btiq" {
   }
 }
 
-output "db_server1" {
+output "postgre_btiq" {
   value = {
-    "fqdn"  = "${module.db_server1.fqdn}",
-    "alias" = "${module.db_server1.alias}",
-    "ip"    = "${module.db_server1.ip}",
+    "fqdn"  = "${module.postgre_btiq.fqdn}",
+    "alias" = "${module.postgre_btiq.alias}",
+    "ip"    = "${module.postgre_btiq.ip}",
   }
 }
