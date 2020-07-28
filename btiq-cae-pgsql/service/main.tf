@@ -1,7 +1,6 @@
 terraform {
   backend "s3" {}
 }
-
 module "db_server1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlbtiqpgs01"
@@ -14,7 +13,7 @@ module "db_server1" {
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = "ny2"
-  lob                  = "dev"
+   lob                  = "dev"
   additional_disks     = {
     1 = "50",
     2 = "50",
