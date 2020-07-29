@@ -5,7 +5,7 @@ locals {
   facts       = {
     "bt_tier"    = "dev"
     "bt_product" = "btiq_cae"
-    "bt_role"    = "streamsets"
+    "bt_role"    = "streamset"
   }
 }
 module "streamset-service" {
