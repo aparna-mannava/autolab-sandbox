@@ -131,4 +131,7 @@ projects:
 - name: btiq-cae-pgsql
   dir: btiq-cae-pgsql/service
   workflow: nutanix-backend
+- name: btiq-demo-streamsets
+  dir: btiq-cae-ss/demo
+  
   
