@@ -8,7 +8,6 @@ locals {
     "bt_role"    = "streamsets"
   }
 }
-
 module "streamset-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcaesset01" 
