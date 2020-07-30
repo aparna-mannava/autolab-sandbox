@@ -5,14 +5,14 @@ locals {
   facts       = {
     "bt_tier"    = "dev"
     "bt_product" = "cae"
+    "bt_role" = "streamsets"
     "bt_env"    = ""
   }
 }
 
-
 module "streamset-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlbtiqset05" 
+  hostname             = "us01vlbtiqset06" 
   bt_infra_network     = "ny2-autolab-db"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   os_version           = "rhel7"
