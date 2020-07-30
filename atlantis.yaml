@@ -133,5 +133,6 @@ projects:
   workflow: nutanix-backend
 - name: btiq-demo-streamsets
   dir: btiq-cae-ss/demo
-  
-  
+- name: aa-tf-test
+  dir: aarvelo/tf-test
+  workflow: nutanix-backend
