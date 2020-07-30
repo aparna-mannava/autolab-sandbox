@@ -9,7 +9,7 @@ locals {
 }
 
 module "wintf_server_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature_CLOUD_67012_Windows_Waits"
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CLOUD-67012-Windows-Waits"
   hostname             = "us01vwtft00101"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
@@ -27,7 +27,7 @@ module "wintf_server_1" {
 }
 
 module "nixtf_server_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature_CLOUD_67012_Windows_Waits"
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CLOUD-67012-Windows-Waits"
   hostname             = "us01vltft00101"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
