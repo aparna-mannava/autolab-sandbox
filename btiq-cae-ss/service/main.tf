@@ -5,7 +5,7 @@ locals {
   facts       = {
     "bt_tier"    = "dev"
     "bt_product" = "cae"
-    "bt_env"    = "1"
+    "bt_env"    = ""
   }
 }
 
