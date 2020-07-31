@@ -2,6 +2,9 @@
 version: 3
 automerge: true
 projects:
+- name: aa-tf-test
+  dir: aarvelo/tf-test
+  workflow: nutanix-backend
 - name: aarvelo-ciscat-test
   dir: aarvelo/ciscat-test
 - name: aarvelo-fixrhel8
