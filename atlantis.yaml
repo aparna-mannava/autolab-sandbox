@@ -33,6 +33,9 @@ projects:
   dir: btiq-cae/airflow/nfs-server
 - name: richard-test-01
   dir: richard.grainger/test_01
+- name: lemery-deferred_poc
+  dir: lemery/deferred_poc
+  workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
   workflow: nutanix-backend
