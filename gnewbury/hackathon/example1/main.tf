@@ -1,3 +1,4 @@
+#comment
 terraform {
   backend "http" {}
 }
