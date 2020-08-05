@@ -91,6 +91,10 @@ projects:
   dir: rkumar/mirror
 - name: dmorvan-bstfwpoc
   dir: dmorvan/bstfwpoc
+- name: rmarke-Hackathon-Linux
+  dir:  rmarke/Hackathon/Linux
+- name: rmarke-Hackathon-Windows
+  dir:  rmarke/Hackathon/Windows
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
