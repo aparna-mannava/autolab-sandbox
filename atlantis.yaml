@@ -146,6 +146,6 @@ projects:
 - name: savula-jenkins
   dir: savula/jenkins
 - name: zvaliji-hackathon-example1
-  dir: zvaliji/hackathon/example1
+  dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
-  dir: zvaliji/hackathon/example2
+  dir: zvaliji/hackathon/windows
