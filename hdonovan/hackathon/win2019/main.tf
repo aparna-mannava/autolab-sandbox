@@ -16,7 +16,7 @@ module "example_module" {
     "bt_product" = "fml"
   }
   foreman_environment = "master"
-  foreman_hostgroup   = "BT Base Server"
+  foreman_hostgroup   = "BT Base Windows Server"
   datacenter          = "ny2"
   lob                 = "fml"
 }
