@@ -87,7 +87,7 @@ projects:
   dir: rkumar/mirror
 - name: dmorvan-bstfwpoc
   dir: dmorvan/bstfwpoc
-- name: stevek/hackathon/skexample1
+- name: stevek-hackathon-skexample1
   dir: stevek/hackathon/skexample1
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
