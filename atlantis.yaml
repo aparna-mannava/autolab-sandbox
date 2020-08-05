@@ -2,6 +2,9 @@
 version: 3
 automerge: true
 projects:
+- name: aa-tf-test
+  dir: aarvelo/tf-test
+  workflow: nutanix-backend
 - name: aarvelo-ciscat-test
   dir: aarvelo/ciscat-test
 - name: aarvelo-fixrhel8
@@ -30,6 +33,9 @@ projects:
   dir: btiq-cae/airflow/nfs-server
 - name: richard-test-01
   dir: richard.grainger/test_01
+- name: lemery-deferred_poc
+  dir: lemery/deferred_poc
+  workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
   workflow: nutanix-backend
@@ -47,6 +53,8 @@ projects:
   dir: gnewbury/packer-partitions
 - name: disallow-os-test
   dir: gnewbury/disallow-os
+- name: gnewbury-hackathon-example1
+  dir: gnewbury/hackathon/example1
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
@@ -133,5 +141,7 @@ projects:
   workflow: nutanix-backend
 - name: btiq-demo-streamsets
   dir: btiq-cae-ss/demo
+- name: savula-jenkins
+  dir: savula/jenkins  
 - name: genady-cfrmrd-artemis
   dir: cfrmrd/artemis
