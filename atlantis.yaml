@@ -145,3 +145,5 @@ projects:
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
   dir: savula/jenkins  
+- name: genady-cfrmrd-artemis
+  dir: cfrmrd/artemis
