@@ -87,6 +87,8 @@ projects:
   dir: rkumar/mirror
 - name: dmorvan-bstfwpoc
   dir: dmorvan/bstfwpoc
+- name stevek/hackathon/skexample01
+  dir: stevek/hackathon/skexample01
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
@@ -144,4 +146,4 @@ projects:
 - name: btiq-demo-streamsets
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
-  dir: savula/jenkins  
+  dir: savula/jenkins
