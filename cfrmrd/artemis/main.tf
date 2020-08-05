@@ -32,3 +32,5 @@ output "artemis_1" {
     "fqdn"  = "${module.artemis_1.fqdn}",
     "alias" = "${module.artemis_1.alias}",
     "ip"    = "${module.artemis_1.ip}",
+   }
+}   
