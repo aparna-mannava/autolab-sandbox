@@ -133,5 +133,5 @@ projects:
   workflow: nutanix-backend
 - name: btiq-demo-streamsets
   dir: btiq-cae-ss/demo
-  
-  
+- name: genady-cfrmrd-artemis
+  dir: cfrmrd/artemis
