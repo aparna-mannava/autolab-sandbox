@@ -11,6 +11,8 @@ projects:
   dir: aarvelo/fixrhel8
 - name: cdrew-dev4-backrest
   dir: cdrew/dev4/backrest
+- name: cdrew-fmpg-hapg
+  dir: cdrew/fmpg/hapg
 - name: cdrew-dev4-hapg
   dir: cdrew/dev4/hapg
 - name: cdrew-cfrmrd
