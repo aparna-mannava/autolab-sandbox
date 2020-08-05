@@ -55,6 +55,8 @@ projects:
   dir: gnewbury/disallow-os
 - name: gnewbury-hackathon-example1
   dir: gnewbury/hackathon/example1
+- name: gnewbury-hackathon-example2
+  dir: gnewbury/hackathon/example2
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
