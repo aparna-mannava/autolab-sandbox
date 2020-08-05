@@ -153,3 +153,7 @@ projects:
   dir: savula/jenkins
 - name: genady-cfrmrd-artemis
   dir: cfrmrd/artemis
+- name: zvaliji-hackathon-example1
+  dir: zvaliji/hackathon/linux/
+- name: zvaliji-hackathon-example2
+  dir: zvaliji/hackathon/windows
