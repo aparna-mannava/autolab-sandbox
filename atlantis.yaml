@@ -87,6 +87,12 @@ projects:
   dir: rkumar/mirror
 - name: dmorvan-bstfwpoc
   dir: dmorvan/bstfwpoc
+- name: rmarke-Hackathon-Linux
+  dir:  rmarke/Hackathon/Linux
+- name: rmarke-Hackathon-Windows
+  dir:  rmarke/Hackathon/Windows
+- name: stevek-hackathon-skexample1
+  dir: stevek/hackathon/example1
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
@@ -145,6 +151,8 @@ projects:
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
   dir: savula/jenkins
+- name: genady-cfrmrd-artemis
+  dir: cfrmrd/artemis
 - name: zvaliji-hackathon-example1
   dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
