@@ -14,6 +14,7 @@ module "artemis_1" {
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
+  lob                  = "CFRMRD"
   foreman_environment  = "feature_CFRMX_1193_artemis"
   foreman_hostgroup    = "CFRMRD Artemis Server"
   datacenter           = "ny2"
