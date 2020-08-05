@@ -144,4 +144,8 @@ projects:
 - name: btiq-demo-streamsets
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
-  dir: savula/jenkins  
+  dir: savula/jenkins
+- name: zvaliji-hackathon-example1
+  dir: zvaliji/hackathon/example1
+- name: zvaliji-hackathon-example2
+  dir: zvaliji/hackathon/example2
