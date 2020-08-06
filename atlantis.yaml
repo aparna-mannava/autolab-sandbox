@@ -51,6 +51,10 @@ projects:
   dir: ydelanoe/repo
 - name: ydelanoe-es
   dir: ydelanoe/es
+- name: hdonovan-hackathon-win2019
+  dir: hdonovan/hackathon/win2019
+- name: hdonovan-hackathon-rhel
+  dir: hdonovan/hackathon/rhel
 - name: gnewbury-packer-partitions
   dir: gnewbury/packer-partitions
 - name: disallow-os-test
