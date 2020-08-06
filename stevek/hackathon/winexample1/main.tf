@@ -21,7 +21,7 @@ locals {
 module "example_module1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "us01vwexpl123"
-  alias               = "fml-ny2-skexample01"
+  alias               = "fml-ny2-skwexample01"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   os_version          = local.os
