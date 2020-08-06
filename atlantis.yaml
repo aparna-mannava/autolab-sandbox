@@ -93,6 +93,8 @@ projects:
   dir:  rmarke/Hackathon/Windows
 - name: stevek-hackathon-skexample1
   dir: stevek/hackathon/example1
+- name: stevek-hackathon-winexample1
+  dir: stevek/hackathon/winexample1
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
