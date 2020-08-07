@@ -14,7 +14,7 @@ locals {
   bt_product      = "fmcloud"
   lob             = "fmcloud"
   hostgroup       = "BT HA PG Server"
-  environment     = "feature_CEA_8322"
+  environment     = "master"
   cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-db-ahv"
   facts           = {

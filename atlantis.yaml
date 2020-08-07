@@ -9,6 +9,9 @@ projects:
   dir: aarvelo/ciscat-test
 - name: aarvelo-fixrhel8
   dir: aarvelo/fixrhel8
+- name: cdrew-btiq-test
+  dir: cdrew/btiq
+  workflow: nutanix-backend
 - name: cdrew-dev4-backrest
   dir: cdrew/dev4/backrest
 - name: cdrew-fmpg-hapg
