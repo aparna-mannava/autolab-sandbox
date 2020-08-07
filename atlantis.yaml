@@ -165,3 +165,7 @@ projects:
   dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
   dir: zvaliji/hackathon/windows
+- name: btiq-pgdb
+  dir: btiq-cae-pgsql/db
+  workflow: nutanix-backend
+
