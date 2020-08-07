@@ -12,7 +12,7 @@ locals {
 module "pg-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlbtiqpgd02" 
-  alias                = "btiq_cae_pg_alabs_01" 
+  alias                = "btiq_cae_pg_auto_01" 
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
