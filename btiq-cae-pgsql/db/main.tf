@@ -12,8 +12,8 @@ locals {
 module "pg-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlbtiqpgd02" 
-  bt_infra_network     = "ny2-autolab-db"
-  bt_infra_cluster     = "ny2-aza-vmw-autolab"
+  bt_infra_cluster     = "ny2-azd-ntnx-10"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   foreman_environment  = "feature_btiq_pg_198"
   foreman_hostgroup    = "BT BTIQ PG Server"
