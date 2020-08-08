@@ -14,6 +14,9 @@ projects:
   workflow: nutanix-backend
 - name: cdrew-dev4-backrest
   dir: cdrew/dev4/backrest
+- name: cdrew-lx-keycloak
+  dir: cdrew/lx/dev8
+  workflow: nutanix-backend
 - name: cdrew-fmpg-hapg
   dir: cdrew/fmpg/hapg
 - name: cdrew-dev4-hapg
