@@ -9,10 +9,11 @@ locals {
     "bt_env"    = ""
   }
 }
+
 module "pg-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlbtiqpgd10" 
-  alias                = "btiq_cae_pg_auto_01" 
+  hostname             = "us01vlbtiqdb02" 
+  alias                = "btiq_cae_pgrz_auto_01" 
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
@@ -23,7 +24,8 @@ module "pg-service" {
   cpus                 = "4"
   memory               = "4098"
   additional_disks     = {
-    1 = "200"
+    1 = "100"
+    2 = "200"
   }
   external_facts       = local.facts
 }
