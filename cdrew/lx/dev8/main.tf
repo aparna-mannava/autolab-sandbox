@@ -17,7 +17,7 @@ module "pg-service" {
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  foreman_environment  = "master"
+  foreman_environment  = "feature_CEA_8322_lsm"
   foreman_hostgroup    = "BT LX Keycloak PG standalone"
   datacenter           = "ny2"
   lob                  = "dev"
