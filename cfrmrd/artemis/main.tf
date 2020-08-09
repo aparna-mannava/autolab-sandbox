@@ -5,6 +5,8 @@ locals {
   facts       = {
     "bt_product" = "cfrmrd"
     "bt_role"    = "standalone"
+    "bt_tier"    = "dev"
+    "bt_lob"     = "CFRMRD"
   }
 }
 
