@@ -13,7 +13,7 @@ locals {
 
 module "mysql-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlbtiqmysql01"
+  hostname             = "us01vlmysql01"
   alias                = "btiq_ovalegde_mysql_auto_01"
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
