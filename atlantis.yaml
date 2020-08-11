@@ -178,3 +178,6 @@ projects:
   dir: saumilp/bbva
 - name: sriramvaradhan-btiq
   dir: sriramvaradhan/btiq
+- name: btiq-nfs-streamsets
+  dir: btiq-cae-ss/nfs
+  workflow: nutanix-backend
