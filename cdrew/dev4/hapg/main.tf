@@ -10,11 +10,11 @@ locals {
   etcd_hosts_p    = ["'us01vldved001.auto.saas-n.com','us01vldved002.auto.saas-n.com','us01vldved003.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
-  bt_env          = "5"
+  bt_env          = "4"
   bt_product      = "pbscap"
   lob             = "pbscap"
   hostgroup       = "BT HA PG Server"
-  environment     = "feature_CEA_8102_keys"
+  environment     = "master"
   cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-db-ahv"
   facts           = {
