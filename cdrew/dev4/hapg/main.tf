@@ -26,7 +26,7 @@ locals {
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "dev5cluster"
+    "bt_cluster_name"         = "dev10cluster"
   }
 }
 
