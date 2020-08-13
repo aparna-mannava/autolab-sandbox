@@ -27,6 +27,7 @@ module "winfw_server_1" {
 }
 
 
+
 output "winfw_server_1" {
   value = {
     "fqdn"  = "${module.winfw_server_1.fqdn}",
