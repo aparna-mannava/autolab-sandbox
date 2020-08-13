@@ -18,7 +18,7 @@ module "winfw_server_1" {
   memory               = "4096"
   external_facts       = local.facts
   os_version           = "win2016"
-  foreman_environment  = "master"
+  foreman_environment  = "feature_CLOUD_66869_Win_FW"
   foreman_hostgroup    = "BT Base Windows Server"
   datacenter           = "ny2"
   additional_disks     = {
