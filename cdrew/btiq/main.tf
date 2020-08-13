@@ -22,7 +22,7 @@ module "pg-service" {
   foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = "ny2"
   lob                  = "dev"
-  cpus                 = "2"
+  cpus                 = "4"
   memory               = "4098"
   additional_disks     = {
     1 = "100"
