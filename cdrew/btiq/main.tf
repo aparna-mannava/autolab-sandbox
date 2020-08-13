@@ -4,28 +4,29 @@ terraform {
 locals {
   facts       = {
     "bt_tier"    = "dev"
-    "bt_product" = "btiq"
+    "bt_product" = "shared"
     "bt_role" = "postgresql"
     "bt_env"    = "1"
+    "bt_pg_version" = "12"
   }
 }
 
 module "pg-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlbtiqdb11" 
-  alias                = "btiq_cae_pg_auto_02" 
+  hostname             = "us01vlpgverdb11" 
+  alias                = "pgversion-test" 
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  foreman_environment  = "feature_btiq_pg_198"
-  foreman_hostgroup    = "BT BTIQ PG Server"
+  foreman_environment  = "feature_CEA_8322_pgversion"
+  foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = "ny2"
   lob                  = "dev"
-  cpus                 = "4"
+  cpus                 = "2"
   memory               = "4098"
   additional_disks     = {
     1 = "100"
-    2 = "200"
+    2 = "50"
   }
   external_facts       = local.facts
 }
