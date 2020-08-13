@@ -36,4 +36,4 @@ output "artemis_1" {
     "alias" = "${module.artemis_1.alias}",
     "ip"    = "${module.artemis_1.ip}",
    }
-}   
+}
