@@ -186,3 +186,5 @@ projects:
 - name: btiq-nfsad-streamsets
   dir: btiq-cae-ss/nfs-newad
   workflow: nutanix-backend
+- name: cagso-pg12
+  dir: sriramvaradhan/cagso
