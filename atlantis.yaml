@@ -181,3 +181,6 @@ projects:
 - name: btiq-nfs-streamsets
   dir: btiq-cae-ss/nfs
   workflow: nutanix-backend
+- name: btiq-nfsad-streamsets
+  dir: btiq-cae-ss/nfs-newad
+  workflow: nutanix-backend
