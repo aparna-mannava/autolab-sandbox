@@ -29,7 +29,6 @@ module "elastic_1" {
   }
 }
 
-
 output "elastic_1" {
   value = {
     "fqdn"  = "${module.elastic_1.fqdn}",
