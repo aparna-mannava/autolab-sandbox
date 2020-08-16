@@ -188,3 +188,5 @@ projects:
   workflow: nutanix-backend
 - name: cagso-pg12
   dir: sriramvaradhan/cagso
+- name: genady-cfrmrd-elastic
+  dir: cfrmrd/elastic
