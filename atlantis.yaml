@@ -145,3 +145,5 @@ projects:
   dir: savula/jenkins  
 - name: genady-cfrmrd-artemis
   dir: cfrmrd/artemis
+- name: genady-cfrmrd-elastic
+  dir: cfrmrd/elastic
