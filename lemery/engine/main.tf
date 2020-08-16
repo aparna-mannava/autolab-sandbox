@@ -1,5 +1,5 @@
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
 
 locals {
@@ -8,30 +8,28 @@ locals {
   }
 }
 
-module "winfw_server_1" {
+module "engine_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vwfw01"
+  hostname             = "us01vleng01"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   lob                  = "INF"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
-  os_version           = "win2016"
-  foreman_environment  = "feature_CLOUD_66869_Win_FW"
-  foreman_hostgroup    = "BT Base Windows Server"
+  os_version           = "rhel7"
+  foreman_environment  = "master"
+  foreman_hostgroup    = "BT Base Server"
   datacenter           = "ny2"
   additional_disks     = {
     1 = "100",
   }
 }
 
-
-
-output "winfw_server_1" {
+output "engine_server_1" {
   value = {
-    "fqdn"  = "${module.winfw_server_1.fqdn}",
-    "alias" = "${module.winfw_server_1.alias}",
-    "ip"    = "${module.winfw_server_1.ip}",
+    "fqdn"  = "${module.engine_server_1.fqdn}",
+    "alias" = "${module.engine_server_1.alias}",
+    "ip"    = "${module.engine_server_1.ip}",
   }
 }

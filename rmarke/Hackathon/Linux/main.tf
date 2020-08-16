@@ -5,8 +5,8 @@ terraform {
 
 module "example_module" {
   source           = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname         = "us01vlexpl001"
-  alias            = "fml-ny2-example01"
+  hostname         = "us01vlctxl001"
+  alias            = "fml-ny2-vl-citrix01"
   bt_infra_cluster = "ny2-azd-ntnx-10"
   bt_infra_network = "ny2-autolab-app-ahv"
   os_version       = "rhel8"

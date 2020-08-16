@@ -9,8 +9,16 @@ projects:
   dir: aarvelo/ciscat-test
 - name: aarvelo-fixrhel8
   dir: aarvelo/fixrhel8
+- name: cdrew-btiq-test
+  dir: cdrew/btiq
+  workflow: nutanix-backend
 - name: cdrew-dev4-backrest
   dir: cdrew/dev4/backrest
+- name: cdrew-lx-keycloak
+  dir: cdrew/lx/dev8
+  workflow: nutanix-backend
+- name: cdrew-fmpg-hapg
+  dir: cdrew/fmpg/hapg
 - name: cdrew-dev4-hapg
   dir: cdrew/dev4/hapg
 - name: cdrew-cfrmrd
@@ -35,6 +43,8 @@ projects:
   dir: richard.grainger/test_01
 - name: lemery-deferred_poc
   dir: lemery/deferred_poc
+- name: lemery-engine
+  dir: lemery/engine
   workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
@@ -49,12 +59,18 @@ projects:
   dir: ydelanoe/repo
 - name: ydelanoe-es
   dir: ydelanoe/es
+- name: hdonovan-hackathon-win2019
+  dir: hdonovan/hackathon/win2019
+- name: hdonovan-hackathon-rhel-second
+  dir: hdonovan/hackathon/rhel
 - name: gnewbury-packer-partitions
   dir: gnewbury/packer-partitions
 - name: disallow-os-test
   dir: gnewbury/disallow-os
 - name: gnewbury-hackathon-example1
   dir: gnewbury/hackathon/example1
+- name: gnewbury-hackathon-example2
+  dir: gnewbury/hackathon/example2
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
@@ -85,6 +101,14 @@ projects:
   dir: rkumar/mirror
 - name: dmorvan-bstfwpoc
   dir: dmorvan/bstfwpoc
+- name: rmarke-Hackathon-Linux
+  dir:  rmarke/Hackathon/Linux
+- name: rmarke-Hackathon-Windows
+  dir:  rmarke/Hackathon/Windows
+- name: stevek-hackathon-skexample1
+  dir: stevek/hackathon/example1
+- name: stevek-hackathon-winexample1
+  dir: stevek/hackathon/winexample1
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
@@ -142,8 +166,27 @@ projects:
 - name: btiq-demo-streamsets
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
-  dir: savula/jenkins  
+  dir: savula/jenkins
 - name: genady-cfrmrd-artemis
   dir: cfrmrd/artemis
+- name: zvaliji-hackathon-example1
+  dir: zvaliji/hackathon/linux/
+- name: zvaliji-hackathon-example2
+  dir: zvaliji/hackathon/windows
+- name: btiq-pgdb
+  dir: btiq-cae-pgsql/db
+  workflow: nutanix-backend
+- name: saumilp-bbva-demo
+  dir: saumilp/bbva
+- name: sriramvaradhan-btiq
+  dir: sriramvaradhan/btiq
+- name: btiq-nfs-streamsets
+  dir: btiq-cae-ss/nfs
+  workflow: nutanix-backend
+- name: btiq-nfsad-streamsets
+  dir: btiq-cae-ss/nfs-newad
+  workflow: nutanix-backend
+- name: cagso-pg12
+  dir: sriramvaradhan/cagso
 - name: genady-cfrmrd-elastic
   dir: cfrmrd/elastic

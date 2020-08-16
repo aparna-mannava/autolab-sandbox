@@ -44,6 +44,24 @@ module "puppet_agent_1" {
   }
 }
 
+module "vault_server_1" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlvls01"
+  bt_infra_cluster     = "ny2-aza-vmw-autolab"
+  bt_infra_network     = "ny2-autolab-app"
+  lob                  = "INF"
+  cpus                 = "2"
+  memory               = "4096"
+  external_facts       = local.facts
+  os_version           = "rhel7"
+  foreman_environment  = "master"
+  foreman_hostgroup    = "BT Base Server"
+  datacenter           = "ny2"
+  additional_disks     = {
+    1 = "100",
+  }
+}
+
 output "puppet_server_1" {
   value = {
     "fqdn"  = "${module.puppet_server_1.fqdn}",
@@ -60,3 +78,10 @@ output "puppet_agent_1" {
   }
 }
 
+output "vault_server_1" {
+  value = {
+    "fqdn"  = "${module.vault_server_1.fqdn}",
+    "alias" = "${module.vault_server_1.alias}",
+    "ip"    = "${module.vault_server_1.ip}",
+  }
+}
