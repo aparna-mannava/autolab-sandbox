@@ -10,7 +10,7 @@ locals {
   }
 }
 
-module "artemis_1" {
+module "elastic_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd017" 
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
@@ -30,10 +30,10 @@ module "artemis_1" {
 }
 
 
-output "artemis_1" {
+output "elastic_1" {
   value = {
-    "fqdn"  = "${module.artemis_1.fqdn}",
-    "alias" = "${module.artemis_1.alias}",
-    "ip"    = "${module.artemis_1.ip}",
+    "fqdn"  = "${module.elastic_1.fqdn}",
+    "alias" = "${module.elastic_1.alias}",
+    "ip"    = "${module.elastic_1.ip}",
    }
 }   
