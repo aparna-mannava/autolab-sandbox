@@ -35,4 +35,4 @@ output "elastic_1" {
     "alias" = "${module.elastic_1.alias}",
     "ip"    = "${module.elastic_1.ip}",
    }
-}  
+} 
