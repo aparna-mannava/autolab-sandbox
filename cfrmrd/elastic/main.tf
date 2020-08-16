@@ -19,7 +19,7 @@ module "elastic_1" {
   external_facts       = local.facts
   lob                  = "CFRMRD"
   foreman_environment  = "feature_CFRMX_1192_elastic"
-  foreman_hostgroup    = "CFRMRD Elastic Server"
+  foreman_hostgroup    = "CFRMRD ElasticSearch Server"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
