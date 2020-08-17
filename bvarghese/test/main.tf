@@ -20,7 +20,7 @@ module "oradb_server_1" {
   hostname             = "us01vltestdev01"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-dev01"
   bt_infra_cluster     = "ny2-azd-ntnx-10"
-  bt_infra_network     = "ny2-autolab-app"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
