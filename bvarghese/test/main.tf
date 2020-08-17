@@ -3,13 +3,13 @@ terraform {
 }
 
 locals {
-  product     = "cloud"
+  product     = "dgb"
   environment = "feature/ora19cupgrade"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "dev"
     "bt_env"  = "2"
-    "bt_customer" = "dgb"
+    "bt_customer" = "fi1001"
 	"bt_product" = "cfrm"
 	"bt_role" = "oradb"
   }
@@ -19,7 +19,7 @@ module "oradb_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltestdev01"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-dev01"
-  bt_infra_cluster     = "ny2-aza-vmw-autolab"
+  bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
   cpus                 = "2"
