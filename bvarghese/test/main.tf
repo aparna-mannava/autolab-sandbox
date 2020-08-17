@@ -3,40 +3,45 @@ terraform {
 }
 
 locals {
+  product     = "cfrm"
+  environment = "feature_CLOUD_65915"
+  datacenter  = "ny2"
   facts       = {
-    "bt_tier"    = "dev"
-    "bt_product" = "cagso"
-    "bt_role" = "postgresql"
-    "bt_env"    = "1"
+    "bt_tier" = "dev"
+    "bt_env"  = "2"
+    "bt_customer" = "dgbcs"
+	"bt_product" = "cfrm"
+	"bt_role" = "oradb"
   }
 }
 
-module "cagso-pg12" {
+module "cfrm_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcagspg21"
-  alias                = "cagso_pg_12_auto_21"
-  bt_infra_cluster     = "ny2-azd-ntnx-10"
-  bt_infra_network     = "ny2-autolab-app-ahv"
+  hostname             = "us01vlcfrmdevdb11"
+  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-db11"
+  bt_infra_cluster     = "ny2-aza-vmw-autolab"
+  bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
-  foreman_environment  = "feature_CLOUD_65915"
-  foreman_hostgroup    = "BT CFRM SP Oracle Server"
-  datacenter           = "ny2"
-  lob                  = "dev"
   cpus                 = "2"
-  memory               = "4098"
-  additional_disks     = {
-    1 = "100"
-    2 = "100"
-    3 = "100"
-  }
+  memory               = "8192"
+  foreman_environment  = local.environment
+  lob                  = "CLOUD"
+  foreman_hostgroup    = "BT CFRM SP Oracle Server"
+  datacenter           = local.datacenter
   external_facts       = local.facts
+  additional_disks     = {
+    1 = "200",
+    2 = "200",
+    3 = "50",
+    4 = "50",
+	5 = "50"
+  }
 }
 
-output "cagso-pg12" {
+output "cfrm_dbserver_1" {
   value = {
-    "fqdn"  = "${module.cagso-pg12.fqdn}",
-    "alias" = "${module.cagso-pg12.alias}",
-    "ip"    = "${module.cagso-pg12.ip}",
+    "fqdn"  = "${module.cfrm_dbserver_1.fqdn}",
+    "alias" = "${module.cfrm_dbserver_1.alias}",
+    "ip"    = "${module.cfrm_dbserver_1.ip}",
   }
-
 }
