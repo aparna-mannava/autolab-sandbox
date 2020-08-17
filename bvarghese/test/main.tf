@@ -3,21 +3,17 @@ terraform {
 }
 
 locals {
-  product     = "dgb"
-  environment = "feature/ora19cupgrade"
-  datacenter  = "ny2"
   facts       = {
-    "bt_tier" = "dev"
-    "bt_env"  = "2"
-    "bt_customer" = "fi1001"
-	"bt_product" = "dgb"
-	"bt_role" = "oradb"
+    "bt_tier"    = "dev"
+    "bt_product" = "cagso"
+    "bt_role" = "postgresql"
+    "bt_env"    = "1"
   }
 }
 
 module "oradb_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vltestdev01"
+  hostname             = "us01vltestdb01"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-db01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-db-ahv"
@@ -27,7 +23,8 @@ module "oradb_server_1" {
   foreman_environment  = "feature/ora19cupgrade"
   lob                  = "CLOUD"
   foreman_hostgroup    = "BT DGB Oradb Server"
-  datacenter           = local.datacenter
+  datacenter           = "ny2"
+  lob                  = "dev"
   external_facts       = local.facts
   additional_disks     = {
     1 = "200",
