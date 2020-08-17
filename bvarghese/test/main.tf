@@ -17,7 +17,7 @@ locals {
 
 module "cfrm_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmdevdb11"
+  hostname             = "us01vldevdb11"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-db11"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
