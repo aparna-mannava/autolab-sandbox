@@ -3,42 +3,45 @@ terraform {
 }
 
 locals {
+  product     = "cfrm"
+  environment = "feature/ora19cupgrade"
+  datacenter  = "ny2"
   facts       = {
-    "lob"       = "cloud"
-    "bt_tier"    = "dev"
-    "bt_product" = "cagso"
-    "bt_role" = "postgresql"
-    "bt_env"    = "1"
+    "bt_tier" = "sbx"
+    "bt_env"  = "2"
+    "bt_customer" = "dgbcs"
+	"bt_product" = "cfrm"
+	"bt_role" = "oradb"
   }
 }
 
-module "oradb_server_1" {
+module "cfrm_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltestdb01"
-  alias                = "${local.facts.bt_tier}${local.facts.bt_env}-db01"
+  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-db81"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-db-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
-  foreman_environment  = "feature/ora19cupgrade"
+  foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT DGB Oradb Server"
-  datacenter           = "ny2"
+  foreman_hostgroup    = "BT CFRM SP Oracle Server"
+  datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
     1 = "200",
     2 = "200",
     3 = "50",
     4 = "50",
-	  5 = "50"
+	5 = "50"
   }
 }
 
-output "oradb_server_1" {
+output "cfrm_dbserver_1" {
   value = {
-    "fqdn"  = "${module.oradb_server_1.fqdn}",
-    "alias" = "${module.oradb_server_1.alias}",
-    "ip"    = "${module.oradb_server_1.ip}",
+    "fqdn"  = "${module.cfrm_dbserver_1.fqdn}",
+    "alias" = "${module.cfrm_dbserver_1.alias}",
+    "ip"    = "${module.cfrm_dbserver_1.ip}",
   }
 }
