@@ -4,6 +4,7 @@ terraform {
 
 locals {
   facts       = {
+    "lob"       = "cloud"
     "bt_tier"    = "dev"
     "bt_product" = "cagso"
     "bt_role" = "postgresql"
@@ -24,7 +25,6 @@ module "oradb_server_1" {
   lob                  = "CLOUD"
   foreman_hostgroup    = "BT DGB Oradb Server"
   datacenter           = "ny2"
-  lob                  = "dev"
   external_facts       = local.facts
   additional_disks     = {
     1 = "200",
