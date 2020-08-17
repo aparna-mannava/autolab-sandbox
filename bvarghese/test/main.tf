@@ -6,15 +6,15 @@ locals {
   facts       = {
     "bt_tier"    = "dev"
     "bt_product" = "cagso"
-    "bt_role" = "oracle"
+    "bt_role" = "postgresql"
     "bt_env"    = "1"
   }
 }
 
-module "cagso-oradb" {
+module "cagso-pg12" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcagsora01"
-  alias                = "cagso_oracle_12_auto_01"
+  hostname             = "us01vlcagspg21"
+  alias                = "cagso_pg_12_auto_21"
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
@@ -23,20 +23,20 @@ module "cagso-oradb" {
   datacenter           = "ny2"
   lob                  = "dev"
   cpus                 = "2"
-  memory               = "8192"
+  memory               = "4098"
   additional_disks     = {
-  1 = "200",
-  2 = "200",
-  3 = "50",
-  4 = "50",
-  5 = "50"
+    1 = "100"
+    2 = "100"
+    3 = "100"
+  }
+  external_facts       = local.facts
 }
 
-output "cagso-oradb" {
+output "cagso-pg12" {
   value = {
-    "fqdn"  = "${module.cagso-oradb.fqdn}",
-    "alias" = "${module.cagso-oradb.alias}",
-    "ip"    = "${module.cagso-oradb.ip}",
+    "fqdn"  = "${module.cagso-pg12.fqdn}",
+    "alias" = "${module.cagso-pg12.alias}",
+    "ip"    = "${module.cagso-pg12.ip}",
   }
 
 }
