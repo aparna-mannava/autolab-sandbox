@@ -10,7 +10,7 @@ locals {
     "bt_tier" = "dev"
     "bt_env"  = "2"
     "bt_customer" = "fi1001"
-	"bt_product" = "cfrm"
+	"bt_product" = "dgb"
 	"bt_role" = "oradb"
   }
 }
@@ -18,15 +18,15 @@ locals {
 module "oradb_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltestdev01"
-  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-dev01"
+  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-db01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-db-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
-  foreman_environment  = local.environment
+  foreman_environment  = "feature/ora19cupgrade"
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT CFRM SP Oracle Server"
+  foreman_hostgroup    = "BT DGB Oradb Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
