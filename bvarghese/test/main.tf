@@ -40,8 +40,8 @@ module "oradb_server_1" {
 
 output "oradb_server_1" {
   value = {
-    "fqdn"  = "${module.cfrm_dbserver_1.fqdn}",
-    "alias" = "${module.cfrm_dbserver_1.alias}",
-    "ip"    = "${module.cfrm_dbserver_1.ip}",
+    "fqdn"  = "${module.oradb_server_1.fqdn}",
+    "alias" = "${module.oradb_server_1.alias}",
+    "ip"    = "${module.oradb_server_1.ip}",
   }
 }
