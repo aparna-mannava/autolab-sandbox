@@ -195,3 +195,5 @@ projects:
   dir: cfrmrd/elastic
 - name: bvarghese-test
   dir: bvarghese/test
+- name: genady-cfrmrd-standalone
+  dir: cfrmrd/standalone
