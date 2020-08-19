@@ -29,7 +29,7 @@ module "standalone_1" {
   }
 }
 
-output "elastic_1" {
+output "standalone_1" {
   value = {
     "fqdn"  = "${module.standalone_1.fqdn}",
     "alias" = "${module.standalone_1.alias}",
