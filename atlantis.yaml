@@ -197,3 +197,5 @@ projects:
   dir: bvarghese/test
 - name: genady-cfrmrd-standalone
   dir: cfrmrd/standalone
+- name: bhthakkar-cfrmpsu
+  dir: bthakkar/oradb/cfrm
