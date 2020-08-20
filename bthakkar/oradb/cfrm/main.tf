@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrm"
-  environment = "feature_CLOUD_62253_1"
+  environment = "master"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "sbx"
