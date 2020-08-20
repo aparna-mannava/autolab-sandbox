@@ -199,3 +199,5 @@ projects:
   dir: cfrmrd/standalone
 - name: bhthakkar-cfrmpsu
   dir: bthakkar/oradb/cfrm
+- name: njani-WSJJLL
+  dir: nirmaljani/wsjjll
