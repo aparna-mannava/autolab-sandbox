@@ -98,7 +98,7 @@ module "elasticsearch_3" {
     1 = "50",
     2 = "100"
   }
-}
+} 
 
 output "elasticsearch_1" {
   value = {
