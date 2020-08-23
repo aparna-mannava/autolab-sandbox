@@ -64,11 +64,11 @@ module "elasticsearch_1" {
 
 module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd023"
+  hostname             = "us01vlcfrmrd022"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
-  external_facts       = local.es03facts
+  external_facts       = local.es02facts
   lob                  = "CFRMRD"
   foreman_environment  = "CFRMX_2470_artemis_elasticsearch_cluster"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
