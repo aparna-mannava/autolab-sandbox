@@ -201,3 +201,5 @@ projects:
   dir: bthakkar/oradb/cfrm
 - name: njani-WSJJLL
   dir: nirmaljani/wsjjll
+- name: genady-cfrmrd-cluster
+  dir: cfrmrd/cluster
