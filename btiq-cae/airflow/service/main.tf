@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob           = "BTIQ-CAE"
+  lob           = "BTIQ"
   product       = "air"
   image         = "rhel7"
   environment   = "feature_BTIQ_191_Provision_and_configure_Airflow"
