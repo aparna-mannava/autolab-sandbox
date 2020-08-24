@@ -18,7 +18,7 @@ locals {
     "bt_product"       = "btiq-cae"
     "bt_tier"          = "dev"
     "bt_env"           = ""
-    "bt_role"          = "airflow-nfs-server"
+    "bt_role"          = "airflow_nfs"
   }
 }
 
