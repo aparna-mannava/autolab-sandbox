@@ -5,7 +5,7 @@ terraform {
 locals {
   lob           = "BTIQ"
   product       = "afs"
-  image         = "rhel7"
+  image         = "rhel8"
   environment   = "feature_BTIQ_191_Provision_and_configure_Airflow"
   hostgroup     = "BTIQ CAE Airflow"
   datacenter    = "ny2"
