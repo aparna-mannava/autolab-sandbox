@@ -21,7 +21,7 @@ locals {
     "bt_role"          = "airflow"
   }
   additional_disks     = {
-      1 = "50",
+      1 = "75",
       2 = "310",
   }
 }
