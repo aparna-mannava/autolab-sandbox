@@ -48,6 +48,8 @@ projects:
   dir: lemery/deferred_poc
 - name: lemery-engine
   dir: lemery/engine
+- name: lemery-jira
+  dir: lemery/jira
   workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
