@@ -3,9 +3,9 @@ terraform {
 }
 
 locals {
-  lob           = "BTIQ"
+  lob           = "dev"
   product       = "air"
-  image         = "rhel7"
+  image         = "rhel8"
   environment   = "feature_BTIQ_191_Provision_and_configure_Airflow"
   hostgroup     = "BTIQ CAE Airflow"
   datacenter    = "ny2"
@@ -21,7 +21,7 @@ locals {
     "bt_role"          = "airflow"
   }
   additional_disks     = {
-      1 = "50",
+      1 = "75",
       2 = "310",
   }
 }
