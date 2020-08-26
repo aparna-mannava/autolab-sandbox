@@ -7,7 +7,6 @@ locals {
     "bt_product" = "ea"
     "bt_role" = "jira"
     "bt_tier" = "dev"
-    "bt_foo" = "bar"
   }
 }
 
