@@ -25,6 +25,7 @@ module "engine_server_1" {
   datacenter           = "ny2"
   additional_disks     = {
     1 = "100",
+    2 = "100",
   }
 }
 
