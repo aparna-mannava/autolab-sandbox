@@ -21,7 +21,7 @@ module "pg-service" {
   foreman_environment  = "feature_CEA_8439_fdw"
   foreman_hostgroup    = "BT PMX PG Database Server"
   datacenter           = "ny2"
-  lob                  = "dev"
+  lob                  = "cloud"
   cpus                 = "4"
   memory               = "4098"
   additional_disks     = {
