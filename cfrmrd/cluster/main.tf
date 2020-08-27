@@ -50,7 +50,7 @@ module "elasticsearch_1" {
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
   external_facts       = local.es01facts
-  lob                  = "CFRMRD"
+  lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
@@ -69,7 +69,7 @@ module "elasticsearch_2" {
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
   external_facts       = local.es02facts
-  lob                  = "CFRMRD"
+  lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
@@ -88,7 +88,7 @@ module "elasticsearch_3" {
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
   external_facts       = local.es03facts
-  lob                  = "CFRMRD"
+  lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
