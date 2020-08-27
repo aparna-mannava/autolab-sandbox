@@ -4,15 +4,12 @@ terraform {
 
 locals {
   etcd_servers    = ["us01vldved10","us01vldved11","us01vldved12"]
-  hapg_servers    = ["us01vldvpg10","us01vldvpg20"]
-  haproxy_server  = ["us01vldvpxy10"]
-  backrest_server = ["us01vldvbkp10"]
   etcd_hosts_p    = ["'us01vldved10.auto.saas-n.com','us01vldved11.auto.saas-n.com','us01vldved12.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
   bt_env          = "1"
   bt_product      = "shared"
-  lob             = "shared"
+  lob             = "cloud"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "master"
   cluster         = "ny2-azd-ntnx-10"
@@ -23,10 +20,6 @@ locals {
     "bt_product"              = "${local.bt_product}"
     "bt_pg_version"           = "12"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
-    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}"]
-    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
-    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-    "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
   }
 }
 
