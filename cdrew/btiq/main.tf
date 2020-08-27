@@ -19,7 +19,7 @@ module "pg-service" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   foreman_environment  = "feature_CEA_8439_fdw"
-  foreman_hostgroup    = "BT Postgresql DB Server"
+  foreman_hostgroup    = "BT PMX PG Database Server"
   datacenter           = "ny2"
   lob                  = "dev"
   cpus                 = "4"
