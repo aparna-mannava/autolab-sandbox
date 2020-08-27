@@ -203,3 +203,6 @@ projects:
   dir: nirmaljani/wsjjll
 - name: genady-cfrmrd-cluster
   dir: cfrmrd/cluster
+- name: mzahorik-new_masters
+  dir: mzahorik/new_masters
+  workflow: nutanix-backend
