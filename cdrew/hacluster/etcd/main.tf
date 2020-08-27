@@ -18,7 +18,6 @@ locals {
     "bt_env"                  = "${local.bt_env}"
     "bt_tier"                 = "${local.tier}"
     "bt_product"              = "${local.bt_product}"
-    "bt_pg_version"           = "12"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
   }
 }
