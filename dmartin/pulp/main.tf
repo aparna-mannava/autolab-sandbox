@@ -5,6 +5,8 @@ terraform {
 locals {
   facts       = {
     "bt_product" = "cea"
+    "bt_tier" = "dev"
+    "bt_lob" = "cea"
   }
 }
 
@@ -23,6 +25,7 @@ module "pulp" {
   datacenter           = "ny2"
   additional_disks     = {
     1 = "500",
+    2 = "500",
   }
 }
 
