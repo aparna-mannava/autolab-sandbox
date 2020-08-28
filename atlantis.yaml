@@ -9,6 +9,9 @@ projects:
   dir: aarvelo/ciscat-test
 - name: aarvelo-fixrhel8
   dir: aarvelo/fixrhel8
+- name: cdrew-hacluster-demo-backrest
+  dir: cdrew/hacluster/backrest
+  workflow: nutanix-backend
 - name: cdrew-hacluster-demo-hapg
   dir: cdrew/hacluster/hapg
   workflow: nutanix-backend
