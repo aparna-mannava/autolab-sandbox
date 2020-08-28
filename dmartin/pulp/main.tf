@@ -22,7 +22,7 @@ module "pulp" {
   foreman_hostgroup    = "BT Base Server"
   datacenter           = "ny2"
   additional_disks     = {
-    1 = "100",
+    1 = "500",
   }
 }
 
