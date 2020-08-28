@@ -10,7 +10,7 @@ locals {
   etcd_hosts_p    = ["'us01vldved10.auto.saas-n.com','us01vldved11.auto.saas-n.com','us01vldved12.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "auto"
-  bt_env          = "1"
+  bt_env          = "2"
   bt_product      = "shared"
   lob             = "cloud"
   hostgroup       = "BT HA PG Server"
