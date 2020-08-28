@@ -211,3 +211,5 @@ projects:
 - name: mzahorik-new_masters
   dir: mzahorik/new_masters
   workflow: nutanix-backend
+- name: dmartin-pulp
+  dir: dmartin/pulp
