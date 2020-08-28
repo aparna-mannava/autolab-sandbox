@@ -12,7 +12,7 @@ locals {
   tier            = "auto"
   bt_env          = "1"
   bt_product      = "cloud"
-  lob             = "shared"
+  lob             = "cloud"
   hostgroup       = "BT PG Backrest Server"
   environment     = "master"
   cluster         = "ny2-azd-ntnx-10"
