@@ -14,7 +14,7 @@ locals {
   bt_product      = "cloud"
   lob             = "cloud"
   hostgroup       = "BT PG Backrest Server"
-  environment     = "master"
+  environment     = "feature_CEA_8439_fdw"
   cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-db-ahv"
   facts           = {
