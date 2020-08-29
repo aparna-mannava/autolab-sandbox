@@ -6,7 +6,7 @@ locals {
     "bt_tier"    = "auto"
     "bt_product" = "shared"
     "bt_role" = "postgresql"
-    "bt_env"    = "1"
+    "bt_env"    = "2"
     "bt_pg_version" = "12"
   }
 }
