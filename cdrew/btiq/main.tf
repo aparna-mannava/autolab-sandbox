@@ -3,7 +3,7 @@ terraform {
 }
 locals {
   facts       = {
-    "bt_tier"    = "dev"
+    "bt_tier"    = "auto"
     "bt_product" = "shared"
     "bt_role" = "postgresql"
     "bt_env"    = "1"
