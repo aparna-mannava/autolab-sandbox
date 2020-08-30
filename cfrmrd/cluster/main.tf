@@ -13,7 +13,6 @@ locals {
       "bt_es_version" = "7.8.0"
     }
     es01facts    = {
-      "bt_server_number" = "01"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
@@ -32,7 +31,6 @@ locals {
       "bt_role" = "${local.facts.bt_role}"
      }
     es03facts    = {
-      "bt_server_number" = "03"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
@@ -122,4 +120,4 @@ output "elasticsearch_3" {
     "alias" = "${module.elasticsearch_3.alias}",
     "ip"    = "${module.elasticsearch_3.ip}",
   }
-}
+} 
