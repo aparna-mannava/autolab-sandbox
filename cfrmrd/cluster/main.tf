@@ -45,7 +45,7 @@ locals {
 
 module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd021"
+  hostname             = "us01vlcfrmrd121"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
@@ -64,7 +64,7 @@ module "elasticsearch_1" {
 
 module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd022"
+  hostname             = "us01vlcfrmrd122"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
@@ -83,7 +83,7 @@ module "elasticsearch_2" {
 
 module "elasticsearch_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd023"
+  hostname             = "us01vlcfrmrd123"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
