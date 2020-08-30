@@ -60,7 +60,7 @@ module "elasticsearch_1" {
     1 = "50",
     2 = "100"
   }
-}
+} 
 
 module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
