@@ -9,6 +9,18 @@ projects:
   dir: aarvelo/ciscat-test
 - name: aarvelo-fixrhel8
   dir: aarvelo/fixrhel8
+- name: cdrew-pmxtestcluster
+  dir: cdrew/dev5/hapg
+  workflow: nutanix-backend
+- name: cdrew-hacluster-demo-backrest
+  dir: cdrew/hacluster/backrest
+  workflow: nutanix-backend
+- name: cdrew-hacluster-demo-hapg
+  dir: cdrew/hacluster/hapg
+  workflow: nutanix-backend
+- name: cdrew-hacluster-demo-etcd
+  dir: cdrew/hacluster/etcd
+  workflow: nutanix-backend
 - name: cdrew-btiq-test
   dir: cdrew/btiq
   workflow: nutanix-backend
@@ -48,6 +60,8 @@ projects:
   dir: lemery/deferred_poc
 - name: lemery-engine
   dir: lemery/engine
+- name: lemery-jira
+  dir: lemery/jira
   workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
@@ -198,3 +212,16 @@ projects:
   dir: cfrmrd/elastic
 - name: bvarghese-test
   dir: bvarghese/test
+- name: genady-cfrmrd-standalone
+  dir: cfrmrd/standalone
+- name: bhthakkar-cfrmpsu
+  dir: bthakkar/oradb/cfrm
+- name: njani-WSJJLL
+  dir: nirmaljani/wsjjll
+- name: genady-cfrmrd-cluster
+  dir: cfrmrd/cluster
+- name: mzahorik-new_masters
+  dir: mzahorik/new_masters
+  workflow: nutanix-backend
+- name: dmartin-pulp
+  dir: dmartin/pulp

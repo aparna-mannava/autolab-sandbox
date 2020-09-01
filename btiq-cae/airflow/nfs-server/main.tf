@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob           = "BTIQ-CAE"
+  lob           = "BTIQ"
   product       = "afs"
   image         = "rhel8"
   environment   = "feature_BTIQ_191_Provision_and_configure_Airflow"
@@ -15,10 +15,14 @@ locals {
   cpu           = "1"
   memory        = "4096"
   facts         = {
-    "bt_product"       = "btiq-cae"
+    "bt_product"       = "btiq_cae"
     "bt_tier"          = "dev"
     "bt_env"           = ""
-    "bt_role"          = "airflow-nfs-server"
+    "bt_role"          = "airflow_nfs"
+  }
+  additional_disks     = {
+      1 = "75",
+      2 = "310",
   }
 }
 
@@ -36,6 +40,7 @@ module "airflow-nfs-server" {
   external_facts       = local.facts
   cpus                 = local.cpu
   memory               = local.memory
+  additional_disks     = local.additional_disks
 }
 
 output "nfs-server" {

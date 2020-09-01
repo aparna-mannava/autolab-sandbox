@@ -3,7 +3,7 @@ terraform {
 }
 locals {
   facts       = {
-    "bt_tier"    = "dev"
+    "bt_tier"    = "auto"
     "bt_product" = "shared"
     "bt_role" = "postgresql"
     "bt_env"    = "2"
@@ -18,10 +18,10 @@ module "pg-service" {
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  foreman_environment  = "feature_CEA_8322_lsm"
-  foreman_hostgroup    = "BT Postgresql DB Server"
+  foreman_environment  = "feature_CEA_8439_fdw"
+  foreman_hostgroup    = "BT PMX PG Database Server"
   datacenter           = "ny2"
-  lob                  = "dev"
+  lob                  = "cloud"
   cpus                 = "4"
   memory               = "4098"
   additional_disks     = {
