@@ -19,7 +19,7 @@ module "cagso-pg12" {
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  foreman_environment  = "feature_CLOUD_69307"
+  foreman_environment  = "master"
   foreman_hostgroup    = "BT CAGSO Postgres Dev Server"
   datacenter           = "ny2"
   lob                  = "cloud"
