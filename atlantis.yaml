@@ -225,3 +225,5 @@ projects:
   workflow: nutanix-backend
 - name: dmartin-pulp
   dir: dmartin/pulp
+- name: dgb-test
+  dir: krunal/dgb
