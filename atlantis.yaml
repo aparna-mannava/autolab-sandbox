@@ -227,3 +227,5 @@ projects:
   dir: dmartin/pulp
 - name: dgb-test
   dir: krunal/dgb
+- name: vm-test
+  dir: bkumar/vm
