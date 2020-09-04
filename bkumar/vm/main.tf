@@ -1,7 +1,7 @@
 #
 # Building VMs for Testing
 terraform {
-  backend "s3" {}
+  backend "http" {}
 }
 
 locals {
