@@ -6,8 +6,7 @@ terraform {
 
 locals {
   lob           = "BTIQ"
-  product       = "afs"
-  image         = "rhel8"
+  image         = "rhel7"
   environment   = "feature_BTIQ_77_jenkins"
   hostgroup     = "BTIQ Development"
   datacenter    = "ny2"
