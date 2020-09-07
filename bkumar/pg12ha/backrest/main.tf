@@ -14,7 +14,7 @@ locals {
   bt_product      = "btiq"
   lob             = "btiq"
   hostgroup       = "BT PG Backrest Server"
-  environment     = "feature/BTIQ-1428"
+  environment     = "master"
   cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-db-ahv"
   facts           = {
