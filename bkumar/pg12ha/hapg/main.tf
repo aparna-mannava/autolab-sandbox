@@ -47,8 +47,8 @@ module "ny2_autolab_hapg_0" {
   datacenter           = "ny2"
   additional_disks     = {
   1 = "100",
-  2 = "150",
-  3 = "150",
+  2 = "160",
+  3 = "160",
   }
 }
 
