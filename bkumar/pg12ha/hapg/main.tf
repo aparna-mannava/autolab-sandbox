@@ -10,7 +10,7 @@ locals {
   etcd_hosts_p    = ["'us01vlbtiqed01.auto.saas-n.com','us01vlbtiqed02.auto.saas-n.com','us01vlbtiqed03.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
-  bt_env          = "2"
+  bt_env          = "5"
   bt_product      = "btiq"
   lob             = "btiq"
   hostgroup       = "BT HA PG Server"
