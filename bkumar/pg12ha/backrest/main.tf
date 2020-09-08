@@ -45,7 +45,7 @@ module "ny2_autolab_backrest_1" {
   datacenter           = "ny2"
   additional_disks     = {
     1 = "100",
-    2 = "400",
+    2 = "500",
   }
 }
 
