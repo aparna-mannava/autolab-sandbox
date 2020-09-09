@@ -233,11 +233,11 @@ projects:
 - name: vm-test
   dir: bkumar/vm
 - name: pg12ha-etcd
-  dir: bkumar/pg12ha/etcd
+  dir: bkumar/iqpgcluster/etcd
 - name: pg12ha-hapg
-  dir: bkumar/pg12ha/hapg
+  dir: bkumar/iqpgcluster/hapg
 - name: pg12ha-backrest
-  dir: bkumar/pg12ha/backrest
+  dir: bkumar/iqpgcluster/backrest
 - name: iqcluster
   dir: bkumar/iqpgcluster
 - name: pgins
