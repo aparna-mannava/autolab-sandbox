@@ -35,4 +35,4 @@ output "standalone_1" {
     "alias" = "${module.standalone_1.alias}",
     "ip"    = "${module.standalone_1.ip}",
    }
-} 
+}   
