@@ -238,5 +238,5 @@ projects:
   dir: bkumar/pg12ha/hapg
 - name: pg12ha-backrest
   dir: bkumar/pg12ha/backrest
-- name: genady-cfrmrd-application
-  dir: cfrmrd/app
+- name: iqcluster
+  dir: bkumar/iqpgcluster
