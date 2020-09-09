@@ -10,12 +10,12 @@ locals {
   etcd_hosts_p    = ["'us01vliqaued01.auto.saas-n.com','us01vliqaued02.auto.saas-n.com','us01vliqaued03.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
-  bt_env          = "2"
+  bt_env          = "5"
   bt_product      = "btiq"
   lob             = "btiq"
   hostgroup       = "BT HA PG Server"
   environment     = "master"
-  cluster         = "ny2-aze-ntnx-11"
+  cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-db-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
