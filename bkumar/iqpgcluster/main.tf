@@ -243,6 +243,7 @@ output "hapg_2" {
   }
 }
 
+
 output "ny2_autolab_haproxy_1" {
   value = {
     "fqdn"  = "${module.ny2_autolab_haproxy_1.fqdn}",
