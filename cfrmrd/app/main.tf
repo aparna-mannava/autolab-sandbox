@@ -4,9 +4,9 @@ terraform {
 locals {
   facts       = {
     "bt_product" = "cfrmrd"
-    "bt_role"    = "standalone"
+    "bt_role"    = "app"
     "bt_tier"    = "dev"
-    "bt_lob"     = "CFRMRD"
+    "bt_lob"     = "CFRM"
   }
 }
 
