@@ -240,3 +240,5 @@ projects:
   dir: bkumar/pg12ha/backrest
 - name: iqcluster
   dir: bkumar/iqpgcluster
+- name: pgins
+  dir: bkumar/pgins
