@@ -15,7 +15,7 @@ locals {
   lob             = "btiq"
   hostgroup       = "BT HA PG Server"
   environment     = "master"
-  cluster         = "ny2-aze-ntnx-12"
+  cluster         = "ny2-aze-ntnx-11"
   network         = "ny2-autolab-db-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
