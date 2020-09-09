@@ -4,7 +4,7 @@ terraform {
  
 locals {
   product     = "autolab"
-  lob         = "autolab"
+  lob         = "dev"
   environment = "nonprod"
   datacenter  = "ny2"
   facts       = {
@@ -17,7 +17,7 @@ locals {
 module "dbps_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltdps010"
-  alias                = "${local.product}${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}${local.facts.bt_pg_version}-db01"
+  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}${local.facts.bt_pg_version}-db01"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
@@ -26,6 +26,7 @@ module "dbps_server_1" {
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = local.datacenter
+  lob                  = local.lob
   external_facts       = local.facts
   additional_disks     = {
     1 = "100",
