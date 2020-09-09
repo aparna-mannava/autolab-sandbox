@@ -4,7 +4,7 @@ terraform {
  
 locals {
   product     = "autolab"
-  lob         = "dev"
+  lob         = "cloud"
   environment = "nonprod"
   datacenter  = "ny2"
   facts       = {
