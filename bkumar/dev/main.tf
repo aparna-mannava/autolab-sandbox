@@ -5,10 +5,10 @@ terraform {
 locals {
   cluster             = "ny2-azd-ntnx-10"
   network             = "ny2-autolab-db-ahv"
+  lob                 = "btiq"
   facts = {
     "bt_tier"         = "dev"
     "bt_product"      = "btiq"
-    "lob"             = "btiq"
   }
 }
 
