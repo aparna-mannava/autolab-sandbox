@@ -24,8 +24,8 @@ module "pg_db01" {
 
 output "pg_db01" {
   value = {
-    "fqdn"  = "${module.app_server_1.fqdn}",
-    "alias" = "${module.app_server_1.alias}",
-    "ip"    = "${module.app_server_1.ip}",
+    "fqdn"  = "${module.pg_db01.fqdn}",
+    "alias" = "${module.pg_db01.alias}",
+    "ip"    = "${module.pg_db01.ip}",
   }
 }
