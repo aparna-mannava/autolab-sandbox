@@ -10,7 +10,7 @@ locals {
   etcd_hosts_p    = ["'us01vlbtiqed01.auto.saas-n.com','us01vlbtiqed02.auto.saas-n.com','us01vlbtiqed03.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
-  bt_env          = "2"
+  bt_env          = "5"
   bt_product      = "btiq"
   lob             = "btiq"
   hostgroup       = "BT HA PG Server"
@@ -27,7 +27,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_pg_version"           = "11"
+    "bt_pg_version"           = "12"
     "bt_cluster_name"         = "iqcluster"
   }
 }
