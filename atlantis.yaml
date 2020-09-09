@@ -240,3 +240,6 @@ projects:
   dir: bkumar/pg12ha/backrest
 - name: iqcluster
   dir: bkumar/iqpgcluster
+- name: llabranche1-sparx
+  dir: llabranche1/sparx
+  workflow: nutanix-backend
