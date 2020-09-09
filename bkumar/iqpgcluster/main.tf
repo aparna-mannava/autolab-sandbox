@@ -15,7 +15,7 @@ locals {
   lob             = "btiq"
   hostgroup       = "BT HA PG Server"
   environment     = "master"
-  cluster         = "ny2-azd-ntnx-10"
+  cluster         = "ny2-aze-ntnx-12"
   network         = "ny2-autolab-db-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
@@ -27,7 +27,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_pg_version"           = "12"
-    "bt_cluster_name"         = "iqpgcluster"
+    "bt_cluster_name"         = "pgcluster"
   }
 }
 
