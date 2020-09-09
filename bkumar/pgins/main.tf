@@ -14,8 +14,11 @@ module "pg_db01" {
   datacenter           = "ny2"
   lob                  = "btiq"
   additional_disks     = {
-    1 = "50"
+    1 = "100",
+    2 = "50",
+    3 = "50",
   }
+
   external_facts       = {
     "bt_product"       = "btiq"
     "bt_tier"          = "dev"
