@@ -28,7 +28,7 @@ locals {
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_pg_version"           = "12"
-    "bt_cluster_name"         = "iqcluster"
+    "bt_cluster_name"         = "iqpgcluster"
   }
 }
 
@@ -45,11 +45,10 @@ module "ny2_autolab_hapg_0" {
   memory               = "4096"
   external_facts       = local.facts
   datacenter           = "ny2"
-
   additional_disks     = {
-  1 = "100",
-  2 = "160",
-  3 = "160",
+    1 = "100",
+    2 = "160",
+    3 = "160",
   }
 }
 
