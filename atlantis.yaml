@@ -243,3 +243,5 @@ projects:
 - name: llabranche1-sparx
   dir: llabranche1/sparx
   workflow: nutanix-backend
+- name: pbscap-pg
+  dir: sriramvaradhan/pbscap
