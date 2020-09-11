@@ -11,7 +11,7 @@ locals {
 module "pbscap_db_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlpbspg01"
-  bt_infra_cluster     = "ny2-azd-ntnx-10"
+  bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = 2
@@ -42,7 +42,7 @@ output "pbscap_db_1" {
 module "pbscap_db_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlpbspg02"
-  bt_infra_cluster     = "ny2-azd-ntnx-10"
+  bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = 2
