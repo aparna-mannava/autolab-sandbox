@@ -20,7 +20,7 @@ locals {
       "bt_artemis_version" = "${local.facts.bt_artemis_version}"
       "bt_es_version" = "${local.facts.bt_es_version}"
       "bt_role" = "${local.facts.bt_role}"
-     }   
+     }
 }
 
 module "elasticsearch_1" {
@@ -41,7 +41,7 @@ module "elasticsearch_1" {
     2 = "100"
   }
 } 
- 
+
 output "elasticsearch_1" {
   value = {
     "fqdn"  = "${module.elasticsearch_1.fqdn}",
