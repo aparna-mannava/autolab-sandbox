@@ -12,24 +12,15 @@ locals {
       "bt_artemis_version" = "2.11.0"
       "bt_es_version" = "7.8.0"
     }
-    es01facts    = {
-      "bt_customer" = "${local.facts.bt_customer}"
-      "bt_product" = "${local.facts.bt_product}"
-      "bt_tier" = "${local.facts.bt_tier}"
-      "bt_env" = "${local.facts.bt_env}"
-      "bt_artemis_version" = "${local.facts.bt_artemis_version}"
-      "bt_es_version" = "${local.facts.bt_es_version}"
-      "bt_role" = "${local.facts.bt_role}"
-     }
 }
 
-module "elasticsearch_1" {
+module "elasticsearch_100" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd200"
   bt_infra_cluster     = "ny2-azb-ntnx-08"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  external_facts       = local.es01facts
+  external_facts       = local.facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
@@ -42,10 +33,10 @@ module "elasticsearch_1" {
   }
 } 
 
-output "elasticsearch_1" {
+output "elasticsearch_100" {
   value = {
-    "fqdn"  = "${module.elasticsearch_1.fqdn}",
-    "alias" = "${module.elasticsearch_1.alias}",
-    "ip"    = "${module.elasticsearch_1.ip}",
+    "fqdn"  = "${module.elasticsearch_100.fqdn}",
+    "alias" = "${module.elasticsearch_100.alias}",
+    "ip"    = "${module.elasticsearch_100.ip}",
   }
 }
