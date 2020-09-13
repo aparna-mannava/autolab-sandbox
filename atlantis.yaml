@@ -211,7 +211,7 @@ projects:
   dir: sriramvaradhan/cagso
 - name: bvarghese-test
   dir: bvarghese/test
-- name: genady-cfrmrd-standalone
+- name: genady-cfrmrd-es-standalone
   dir: cfrmrd/elastic/standalone
 - name: bhthakkar-cfrmpsu
   dir: bthakkar/oradb/cfrm
