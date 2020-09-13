@@ -190,8 +190,6 @@ projects:
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
   dir: savula/jenkins
-- name: genady-cfrmrd-artemis
-  dir: cfrmrd/artemis
 - name: zvaliji-hackathon-example1
   dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
@@ -211,18 +209,16 @@ projects:
   workflow: nutanix-backend
 - name: cagso-pg12
   dir: sriramvaradhan/cagso
-- name: genady-cfrmrd-elastic
-  dir: cfrmrd/elastic
 - name: bvarghese-test
   dir: bvarghese/test
 - name: genady-cfrmrd-standalone
-  dir: cfrmrd/standalone
+  dir: cfrmrd/elastic/standalone
 - name: bhthakkar-cfrmpsu
   dir: bthakkar/oradb/cfrm
 - name: njani-WSJJLL
   dir: nirmaljani/wsjjll
 - name: genady-cfrmrd-cluster
-  dir: cfrmrd/cluster
+  dir: cfrmrd/elastic/cluster
 - name: mzahorik-new_masters
   dir: mzahorik/new_masters
   workflow: nutanix-backend
