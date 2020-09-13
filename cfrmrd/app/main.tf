@@ -12,7 +12,7 @@ locals {
 
 module "standalone_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd100" 
+  hostname             = "us01vlcfrmrd101" 
   bt_infra_cluster     = "ny2-azb-ntnx-08"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
