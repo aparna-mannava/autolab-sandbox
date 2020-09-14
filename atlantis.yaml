@@ -240,5 +240,5 @@ projects:
   workflow: nutanix-backend
 - name: pbscap-pg
   dir: sriramvaradhan/pbscap
-- name: genady-cfrmrd-application
+- name: genady-cfrmrd-integration
   dir: cfrmrd/integration
