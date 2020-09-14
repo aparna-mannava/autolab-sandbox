@@ -241,4 +241,4 @@ projects:
 - name: pbscap-pg
   dir: sriramvaradhan/pbscap
 - name: genady-cfrmrd-application
-  dir: cfrmrd/app
+  dir: cfrmrd/integration
