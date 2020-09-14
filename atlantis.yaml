@@ -65,6 +65,9 @@ projects:
 - name: lemery-harbor2
   dir: lemery/harbor2
   workflow: nutanix-backend
+- name: lemery-metabase
+  dir: lemery/metabase
+  workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
   workflow: nutanix-backend
