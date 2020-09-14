@@ -10,7 +10,6 @@ locals {
       "bt_role" = "app"
     }
     app01facts    = {
-      "bt_customer" = ""
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
       "bt_env" = "${local.facts.bt_env}"
