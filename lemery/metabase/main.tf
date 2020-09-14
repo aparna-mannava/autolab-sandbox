@@ -7,6 +7,7 @@ locals {
     "bt_product" = "dgb"
     "bt_role" = "metabase"
     "bt_tier" = "dev"
+    "bt_env"  = "2"
   }
 }
 
