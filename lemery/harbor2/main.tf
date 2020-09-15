@@ -24,7 +24,7 @@ module "engine_server_1" {
   foreman_hostgroup    = "BT CLOUD Harbor Server"
   datacenter           = "ny2"
   additional_disks     = {
-    1 = "500",
+    1 = "499",
   }
 }
 
