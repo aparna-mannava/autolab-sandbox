@@ -7,7 +7,7 @@ locals {
       "bt_product" = "cfrmrd"
       "bt_tier" = "dev"
       "bt_env" = ""
-      "bt_role" = "nfs_server"
+      "bt_role" = "nfs"
     }
     app01facts    = {
       "bt_product" = "${local.facts.bt_product}"
