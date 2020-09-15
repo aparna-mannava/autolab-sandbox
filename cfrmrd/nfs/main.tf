@@ -42,4 +42,4 @@ output "nfs_1" {
     "alias" = "${module.nfs_1.alias}",
     "ip"    = "${module.nfs_1.ip}",
   }
-}     
+}    
