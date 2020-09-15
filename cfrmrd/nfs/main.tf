@@ -25,7 +25,7 @@ module "nfs_1" {
   os_version           = "rhel7"
   external_facts       = local.app01facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_2872_Add_NFS_Server"
+  foreman_environment  = "feature_CFRMX_2872_Add_NFS_Server"
   foreman_hostgroup    = "CFRMRD NFS Server"
   datacenter           = "ny2"
   cpus                 = "2"
