@@ -242,3 +242,5 @@ projects:
   dir: sriramvaradhan/pbscap
 - name: genady-cfrmrd-integration
   dir: cfrmrd/integration
+- name: genady-cfrmrd-nfs
+  dir: cfrmrd/nfs
