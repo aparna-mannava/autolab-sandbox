@@ -35,11 +35,11 @@ module "nfs_1" {
     2 = "100"
   }
 } 
- 
+
 output "nfs_1" {
   value = {
     "fqdn"  = "${module.nfs_1.fqdn}",
     "alias" = "${module.nfs_1.alias}",
     "ip"    = "${module.nfs_1.ip}",
   }
-}       
+}     
