@@ -8,7 +8,6 @@ locals {
     "bt_role" = "metabase"
     "bt_tier" = "dev"
     "bt_env"  = "2"
-    "bt_foo"  = "bar"
   }
 }
 
