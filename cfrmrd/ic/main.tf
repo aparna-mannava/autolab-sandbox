@@ -7,7 +7,7 @@ locals {
       "bt_product" = "cfrmrd"
       "bt_tier" = "dev"
       "bt_env" = ""
-      "bt_role" = "app"
+      "bt_role" = "ic"
     }
     app01facts    = {
       "bt_customer" = "saasn"
