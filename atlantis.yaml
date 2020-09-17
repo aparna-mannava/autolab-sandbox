@@ -247,3 +247,5 @@ projects:
   dir: cfrmrd/integration
 - name: genady-cfrmrd-nfs
   dir: cfrmrd/nfs
+- name: genady-cfrmrd-ic
+  dir: cfrmrd/ic
