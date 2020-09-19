@@ -253,3 +253,5 @@ projects:
   dir: saumilp/bitbucket
 - name: saumil-btbkt19c
   dir: saumilp/bitbkt19c
+- name: bbt-ora19
+  dir: sriramvaradhan/bbt
