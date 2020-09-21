@@ -26,7 +26,7 @@ module "app_1" {
   os_version           = "rhel7"
   external_facts       = local.app01facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMRD_24317_add_nfs"
+  foreman_environment  = "feature_CFRMX_1194_IC_installation"
   foreman_hostgroup    = "CFRMRD IC"
   datacenter           = "ny2"
   cpus                 = "2"
