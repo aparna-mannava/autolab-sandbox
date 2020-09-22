@@ -15,6 +15,7 @@ locals {
 }
  
 module "dbps_server_1" {
+source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltdps010"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}${local.facts.bt_pg_version}-db01"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
