@@ -10,7 +10,7 @@ locals {
   facts       = {
     "bt_tier" = "dev"
     "bt_env"  = "1"
-    "bt_pg_version" = "12"
+    "bt_pg_version" = "11"
   }
 }
  
