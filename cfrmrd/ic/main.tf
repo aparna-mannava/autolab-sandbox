@@ -15,6 +15,7 @@ locals {
       "bt_tier" = "${local.facts.bt_tier}"
       "bt_env" = "${local.facts.bt_env}"
       "bt_role" = "${local.facts.bt_role}"
+      "bt_ic_mode" = "STANDALONE"
      }
 }
 
@@ -43,4 +44,4 @@ output "app_1" {
     "alias" = "${module.app_1.alias}",
     "ip"    = "${module.app_1.ip}",
   }
-}  
+} 
