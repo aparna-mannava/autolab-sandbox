@@ -21,14 +21,14 @@ locals {
 
 module "app_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd51"
+  hostname             = "us01vlcfrmrd52"
   bt_infra_cluster     = "ny2-azb-ntnx-08"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.app01facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_1194_IC_installation"
-  foreman_hostgroup    = "CFRMRD IC"
+  foreman_hostgroup    = "CFRMRD IC2"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
