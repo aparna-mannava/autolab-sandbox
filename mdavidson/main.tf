@@ -54,3 +54,5 @@ output "rhel7-bastion" {
    "ip"    = "${module.rhel7-bastion.ip}",
  }
 }
+
+
