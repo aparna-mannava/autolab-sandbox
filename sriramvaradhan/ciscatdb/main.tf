@@ -29,8 +29,8 @@ module "oradb_dbserver_1" {
   external_facts       = local.facts
   additional_disks     = {
     1 = "200",
-    2 = "100",
-    3 = "100",
+    2 = "200",
+    3 = "200",
     4 = "100"
   }
 }
