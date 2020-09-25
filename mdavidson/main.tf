@@ -35,14 +35,14 @@ module "rhel8-bastion" {
 
 output "rhel8-bastion" {
  value = {
-   "fqdn"  = "${module.app_server_1.fqdn}",
-   "ip"    = "${module.app_server_1.ip}",
+   "fqdn"  = "${module.rhel8-bastion.fqdn}",
+   "ip"    = "${module.rhel8-bastion.ip}",
  }
 }
 
 output "rhel7-bastion" {
  value = {
-   "fqdn"  = "${module.app_server_1.fqdn}",
-   "ip"    = "${module.app_server_1.ip}",
+   "fqdn"  = "${module.rhel7-bastion.fqdn}",
+   "ip"    = "${module.rhel7-bastion.ip}",
  }
 }
