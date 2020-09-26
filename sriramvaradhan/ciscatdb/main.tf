@@ -16,22 +16,21 @@ locals {
 
 module "oradb_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcisdb99"
-  bt_infra_cluster     = "ny2-azb-ntnx-08"
+  hostname             = "us01vlcisdb95"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
-  memory               = "4096"
+  memory               = "8192"
   lob                  = "CLOUD"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CLOUD ORADB ciscat"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "200",
-    2 = "200",
-    3 = "200",
-    4 = "100"
+    1 = "300",
+    2 = "100",
+    3 = "100"
   }
 }
 
