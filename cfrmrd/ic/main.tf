@@ -22,7 +22,7 @@ locals {
 module "app_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd52"
-  bt_infra_cluster     = "ny2-azb-ntnx-09"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.app01facts
