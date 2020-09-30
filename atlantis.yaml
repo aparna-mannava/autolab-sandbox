@@ -249,3 +249,5 @@ projects:
   dir: cfrmrd/nfs
 - name: genady-cfrmrd-ic
   dir: cfrmrd/ic
+- name: genady-cfrmrd-postgres
+  dir: cfrmrd/postgres
