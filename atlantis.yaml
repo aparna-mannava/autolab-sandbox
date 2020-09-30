@@ -272,3 +272,5 @@ projects:
   dir: cloud72774/oracle
 - name: genady-cfrmrd-postgres
   dir: cfrmrd/postgres
+- name: areid-btc-hackathon
+  dir: areid/btc-hackathon
