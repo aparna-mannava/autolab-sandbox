@@ -266,3 +266,5 @@ projects:
   dir: saumilp/test
 - name: mdavidson
   dir: mdavidson
+- name: cfrmtst
+  dir: cloud72774/oracle
