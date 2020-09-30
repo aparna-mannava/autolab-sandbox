@@ -98,6 +98,8 @@ projects:
   dir: gnewbury/hackathon/example2
 - name: gnewbury-patching-test
   dir: gnewbury/patching-test
+- name: gnewbury-btc-hackathon
+  dir: gnewbury/btc-hackathon
   workflow: nutanix-backend
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
