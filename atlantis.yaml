@@ -267,4 +267,4 @@ projects:
 - name: mdavidson
   dir: mdavidson
 - name: cfrmtst
-  dir: CLOUD-72774/oracle
+  dir: CLOUD72774/oracle
