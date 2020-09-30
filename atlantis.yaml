@@ -270,3 +270,5 @@ projects:
   dir: mdavidson
 - name: cfrmtst
   dir: cloud72774/oracle
+- name: genady-cfrmrd-postgres
+  dir: cfrmrd/postgres
