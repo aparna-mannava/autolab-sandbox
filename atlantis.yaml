@@ -276,3 +276,5 @@ projects:
   dir: cfrmrd/postgres
 - name: areid-btc-hackathon
   dir: areid/btc-hackathon
+- name: dgbdb
+  dir: bthakkar/oradb/dgb
