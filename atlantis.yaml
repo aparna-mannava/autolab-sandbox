@@ -111,6 +111,8 @@ projects:
   dir: nirmaljani/cfrmtst1
 - name: nirmal-cfrmtst2
   dir: nirmaljani/cfrmtst2
+- name: nirmal-omr
+  dir: nirmaljani/omr
 - name: saumilp-dgb
   dir: saumilp/dgb
 - name: suresh-test
