@@ -14,7 +14,7 @@ locals {
     "bt_product"  = "cloud"
     "bt_tier"     = "pr"
     "bt_role"     = "oradb"
-	  "bt_env"      = 1
+	"bt_env"      = 1
   }
 }
 
@@ -22,7 +22,7 @@ module "oradb_server_pr01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlomr099"
   alias                = "${local.product}-omr${local.facts.bt_env}-db01"
-  bt_infra_cluster     = "ny2-azb-ntnx-09"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   cpus                 = "4"
   memory               = "8192"
