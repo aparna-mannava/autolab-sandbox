@@ -278,3 +278,5 @@ projects:
   dir: areid/btc-hackathon
 - name: dgbdb
   dir: bthakkar/oradb/dgb
+- name: ora19c
+  dir: oracle19c/oracle
