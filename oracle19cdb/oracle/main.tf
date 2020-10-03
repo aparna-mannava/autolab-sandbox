@@ -6,8 +6,8 @@ locals {
   environment = "feature_CLOUD_73533"
   datacenter  = "ny2"
   facts       = {
-    "bt_tier" = "pr"
-    "bt_env"  = "1"
+    "bt_tier" = "dev"
+    "bt_env"  = "3"
   }
 }
 
