@@ -280,3 +280,5 @@ projects:
   dir: bthakkar/oradb/dgb
 - name: ora19c
   dir: oracle19c/oracle
+- name: oracle19cdb
+  dir: oracle19cdb/oracle
