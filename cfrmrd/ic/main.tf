@@ -13,7 +13,7 @@ locals {
       "bt_ic_version" = "6.3"
     }
     app01facts    = {
-      "lob" = "${lob}"
+      "lob" = "${local.facts.lob}"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
@@ -24,6 +24,7 @@ locals {
      }
 
      app02facts    = {
+      "lob" = "${local.facts.lob}"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
