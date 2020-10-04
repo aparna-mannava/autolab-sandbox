@@ -4,7 +4,6 @@ terraform {
 
 locals {
     facts       = {
-      "lob" = "CFRM"
       "bt_customer" = "saasn"
       "bt_product" = "cfrmrd"
       "bt_tier" = "dev"
@@ -13,7 +12,6 @@ locals {
       "bt_ic_version" = "6.3"
     }
     app01facts    = {
-      "lob" = "${local.facts.lob}"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
@@ -24,7 +22,6 @@ locals {
      }
 
      app02facts    = {
-      "lob" = "${local.facts.lob}"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
@@ -44,6 +41,7 @@ module "app_1" {
   external_facts       = local.app01facts
   foreman_environment  = "feature_CFRMX_1194_IC"
   foreman_hostgroup    = "CFRMRD IC APP"
+  lob                  = "CFRM"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -62,6 +60,7 @@ module "app_2" {
   external_facts       = local.app02facts
   foreman_environment  = "feature_CFRMX_1194_IC"
   foreman_hostgroup    = "CFRMRD IC APP"
+  lob                  = "CFRM"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
