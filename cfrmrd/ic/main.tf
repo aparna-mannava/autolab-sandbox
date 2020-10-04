@@ -40,7 +40,7 @@ module "app_1" {
   os_version           = "rhel7"
   external_facts       = local.app01facts
   foreman_environment  = "feature_CFRMX_1194_IC"
-  foreman_hostgroup    = "CFRMRD IC APP"
+  foreman_hostgroup    = "CFRMRD IC"
   lob                  = "CFRM"
   datacenter           = "ny2"
   cpus                 = "2"
@@ -59,7 +59,7 @@ module "app_2" {
   os_version           = "rhel7"
   external_facts       = local.app02facts
   foreman_environment  = "feature_CFRMX_1194_IC"
-  foreman_hostgroup    = "CFRMRD IC APP"
+  foreman_hostgroup    = "CFRMRD IC"
   lob                  = "CFRM"
   datacenter           = "ny2"
   cpus                 = "2"
