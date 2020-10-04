@@ -4,6 +4,7 @@ terraform {
 
 locals {
     facts       = {
+      "lob" = "CFRM"
       "bt_customer" = "saasn"
       "bt_product" = "cfrmrd"
       "bt_tier" = "dev"
@@ -12,6 +13,7 @@ locals {
       "bt_ic_version" = "6.3"
     }
     app01facts    = {
+      "lob" = "${lob}"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
@@ -39,7 +41,6 @@ module "app_1" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.app01facts
-  lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_1194_IC"
   foreman_hostgroup    = "CFRMRD IC APP"
   datacenter           = "ny2"
