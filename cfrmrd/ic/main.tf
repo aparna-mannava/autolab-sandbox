@@ -39,9 +39,9 @@ module "app_1" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.app01facts
-  lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_1194_IC"
   foreman_hostgroup    = "CFRMRD IC APP"
+  lob                  = "CFRM"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -60,6 +60,7 @@ module "app_2" {
   external_facts       = local.app02facts
   foreman_environment  = "feature_CFRMX_1194_IC"
   foreman_hostgroup    = "CFRMRD IC APP"
+  lob                  = "CFRM"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -83,4 +84,4 @@ output "app_2" {
     "alias" = "${module.app_2.alias}",
     "ip"    = "${module.app_2.ip}",
   }
-} 
+}   
