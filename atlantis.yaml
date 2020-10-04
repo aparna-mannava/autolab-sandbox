@@ -99,6 +99,8 @@ projects:
 - name: gnewbury-patching-test
   dir: gnewbury/patching-test
   workflow: nutanix-backend
+- name: gnewbury-btc-hackathon
+  dir: gnewbury/btc-hackathon
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
@@ -109,6 +111,8 @@ projects:
   dir: nirmaljani/cfrmtst1
 - name: nirmal-cfrmtst2
   dir: nirmaljani/cfrmtst2
+- name: nirmal-omr
+  dir: nirmaljani/omr
 - name: saumilp-dgb
   dir: saumilp/dgb
 - name: suresh-test
@@ -270,3 +274,11 @@ projects:
   dir: cloud72774/oracle
 - name: genady-cfrmrd-postgres
   dir: cfrmrd/postgres
+- name: areid-btc-hackathon
+  dir: areid/btc-hackathon
+- name: dgbdb
+  dir: bthakkar/oradb/dgb
+- name: ora19c
+  dir: oracle19c/oracle
+- name: oracle19cdb
+  dir: oracle19cdb/oracle
