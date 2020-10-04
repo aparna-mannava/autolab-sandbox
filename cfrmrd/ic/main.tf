@@ -58,7 +58,6 @@ module "app_2" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.app02facts
-  bt_ic_mode           = "FRONTEND"
   foreman_environment  = "feature_CFRMX_1194_IC"
   foreman_hostgroup    = "CFRMRD IC APP"
   datacenter           = "ny2"
