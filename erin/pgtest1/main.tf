@@ -30,10 +30,3 @@ module "erinpgserver1" {
   external_facts       = local.facts
 }
 
-output "erinpgserver1" {
-  value = {
-    "fqdn"  = "${module.pg-service.fqdn}",
-    "ip"    = "${module.pg-service.ip}",
-  }
-  
-}
