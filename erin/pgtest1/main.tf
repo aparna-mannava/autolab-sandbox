@@ -27,6 +27,7 @@ module "erinpgserver1" {
     1 = "100"
     2 = "100"
     3 = "50"
+    4 = "50"
   }
   external_facts       = local.facts
 }
