@@ -26,6 +26,7 @@ module "erinpgserver1" {
   additional_disks     = {
     1 = "100"
     2 = "50"
+    3 = "50"
   }
   external_facts       = local.facts
 }
