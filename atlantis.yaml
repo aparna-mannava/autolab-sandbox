@@ -46,6 +46,9 @@ projects:
   dir: cdrew/dev1
 - name: cdrew-dev2
   dir: cdrew/dev2
+- name: erin-pgtest1
+  dir: erin/pgtest1
+  workflow: nutanix-backend
 - name: btiq-cae-airflow
   dir: btiq-cae/airflow/service
 - name: btiq-cae-airflow-nfs-server
