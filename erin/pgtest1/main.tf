@@ -33,7 +33,6 @@ module "erinpgserver1" {
 output "erinpgserver1" {
   value = {
     "fqdn"  = "${module.pg-service.fqdn}",
-    "alias" = "${module.pg-service.alias}",
     "ip"    = "${module.pg-service.ip}",
   }
   
