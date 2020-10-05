@@ -285,3 +285,6 @@ projects:
   dir: oracle19c/oracle
 - name: oracle19cdb
   dir: oracle19cdb/oracle
+- name: llabranche1-OEM
+  dir: llabranche1/OEM
+  workflow: nutanix-backend
