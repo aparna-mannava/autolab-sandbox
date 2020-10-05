@@ -288,3 +288,5 @@ projects:
 - name: llabranche1-OEM
   dir: llabranche1/OEM
   workflow: nutanix-backend
+- name: sridgb
+  dir: sriramvaradhan/dgb
