@@ -24,7 +24,7 @@ module "elasticsearch_100" {
   external_facts       = local.facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone2"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
