@@ -294,3 +294,5 @@ projects:
   dir: saumilp/fsfo
 - name: dgboemtest
   dir: saumilp/test2
+- name: stephendjenkins
+  dir: stephen.daconceicao/jenkins
