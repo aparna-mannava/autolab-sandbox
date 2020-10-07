@@ -16,15 +16,15 @@ locals {
 
 module "elasticsearch_100" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd200"
+  hostname             = "us01vlcfrmrd500"
   alias                = "cfrmrd-autolab-es01-standalone"
-  bt_infra_cluster     = "ny2-azb-ntnx-08"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone2"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
