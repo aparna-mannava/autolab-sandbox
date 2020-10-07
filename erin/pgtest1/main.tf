@@ -38,7 +38,7 @@ module "erinpgserver2" {
   bt_infra_cluster     = "ny2-aza-ntnx-05"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  foreman_environment  = "master"
+  foreman_environment  = "feature_CEA_8582_pg_lvm"
   foreman_hostgroup    = "BT PMX PG Database Server"
   datacenter           = "ny2"
   lob                  = "cloud"
@@ -47,6 +47,7 @@ module "erinpgserver2" {
   additional_disks     = {
     1 = "100"
     2 = "50"
+    3 = "50"
   }
   external_facts       = local.facts
 }
