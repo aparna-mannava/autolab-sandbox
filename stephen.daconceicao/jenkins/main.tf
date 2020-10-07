@@ -20,14 +20,14 @@ locals {
         2 = "200"
     }
     environment = "feature_GLU_3502"
-    hostgroup   = "BT Base Server"
+    hostgroup   = "Glu Jenkins"
     datacenter  = "ny2"
     lob         = "CLOUD"
 }
 
 module "jenkins" {
     source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-    hostname            = "us01vwglujen001"
+    hostname            = "us01vwglujen002"
     alias = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-jenkins"
     bt_infra_cluster    = local.cluster
     bt_infra_network    = local.network
