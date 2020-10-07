@@ -9,8 +9,8 @@ locals {
       "bt_tier" = "dev"
       "bt_env" = ""
       "bt_role" = "standalone"
-      "bt_artemis_version" = "2.11.0"
-      "bt_es_version" = "7.8.0"
+      "bt_artemis_version" = "2.13.0"
+      "bt_es_version" = "7.8.1"
     }
 }
 
