@@ -17,6 +17,7 @@ locals {
 module "elasticsearch_100" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd500"
+  alias                = "cfrmrd-autolab-es01-standalone"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
