@@ -27,7 +27,7 @@ locals {
 
 module "jenkins" {
     source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-    hostname            = "us01vlglujenkins01"
+    hostname            = "us01vlglujenkman01"
     alias = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-jenkins"
     bt_infra_cluster    = local.cluster
     bt_infra_network    = local.network
