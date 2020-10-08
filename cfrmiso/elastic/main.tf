@@ -5,7 +5,7 @@ terraform {
 locals {
   product     = "cfrmiso"
   environment = "CFRMSUP_1528_create_CFRMISO_namespace" #  Change to nonprod after 2020-02-11 Puppet release
-  hostname    = "ny2vlcf"
+  hostname    = "us01vlcf"
   hostgroup   = "CFRM BT ISO IL Elastic Servers"
   facts = {
     "bt_tier" = "autolab"
