@@ -15,7 +15,7 @@ locals {
     #"bt_artemis_version" = "2.11.0"
     #"bt_es_version" = "7.8.0"
   }
-  datacenter = ny2 #{
+  datacenter = "ny2" #{
   #   name = "colt"
   #   id   = "gb03"
   # }
