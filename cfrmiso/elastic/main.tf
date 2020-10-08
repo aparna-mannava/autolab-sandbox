@@ -12,8 +12,8 @@ locals {
     "bt_customer" = "saasn-fml-uk"
     "bt_product" = "cfrmiso"
 	  "bt_role" = "elastic"
-    #"bt_artemis_version" = "2.11.0"
-    #"bt_es_version" = "7.8.0"
+    "bt_artemis_version" = "2.11.0"
+    "bt_es_version" = "7.8.0"
   }
   datacenter = {
     name = "ny2"
