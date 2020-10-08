@@ -44,10 +44,10 @@ module "cfel01" {
   }
 }
 
-output "cfel002" {
+output "cfel01" {
   value = {
-    "fqdn"  = "${module.cfel002.fqdn}",
-    "alias" = "${module.cfel002.alias}",
-    "ip"    = "${module.cfel002.ip}",
+    "fqdn"  = "${module.cfel01.fqdn}",
+    "alias" = "${module.cfel01.alias}",
+    "ip"    = "${module.cfel01.ip}",
   }
 }
