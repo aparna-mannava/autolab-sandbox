@@ -300,3 +300,5 @@ projects:
   dir: cfrmiso/elastic
 - name: omrtest
   dir: saumilp/omr
+- name: omrtestdb
+  dir: krunal/oem
