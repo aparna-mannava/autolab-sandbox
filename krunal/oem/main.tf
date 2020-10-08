@@ -52,7 +52,7 @@ module "oradb_server_pr02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlomr115"
   alias                = "${local.product}-omr${local.facts.bt_env}-db29"
-  bt_infra_cluster     = "ny2-aza-ntnx-07"
+  bt_infra_cluster     = "ny2-aza-ntnx-05"
   bt_infra_network     = "ny2-autolab-app-ahv"
   cpus                 = "4"
   memory               = "8192"
