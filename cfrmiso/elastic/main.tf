@@ -4,9 +4,9 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "master" # Change to nonprod after 2020-02-11 Puppet release
-  hostname    = "gb03vlcfel"
-  hostgroup   = "BT FML CFRM ELK Server"
+  environment = "CFRMSUP_1528_create_CFRMISO_namespace" # Change to nonprod after 2020-02-11 Puppet release
+  hostname    = "us01vlcf"
+  hostgroup   = "CFRM BT ISO IL Elastic Servers"
   facts = {
     "bt_tier" = "uat"
     "bt_customer" = "saasn-fml-uk"
@@ -19,18 +19,18 @@ locals {
     name = "colt"
     id   = "gb03"
   }
-  cfel002 = {
-    hostname = "${local.hostname}002"
+  cfel01 = {
+    hostname = "${local.hostname}el01"
     silo     = "dev"
   }
 }
 
-module "cfel002" {
+module "cfel01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.cfel002.hostname}"
+  hostname            = "${local.cfel01.hostname}"
   alias               = "${local.product}-${local.datacenter.id}-${local.cfel002.silo}-${local.facts.bt_role}-${local.cfel002.hostname}"
-  bt_infra_cluster    = "gb03-azc-ntnx-03"
-  bt_infra_network    = "gb03-saas-n-dev-2"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "4"
   memory              = "16192"
