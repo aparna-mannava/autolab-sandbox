@@ -32,15 +32,16 @@ module "cfel01" {
   bt_infra_cluster    = "ny2-aza-ntnx-07"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "4"
-  memory              = "16192"
+  cpus                = "2"
+  memory              = "8096"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "150"
+     1 = "50",
+    2 = "100"
   }
 }
 
