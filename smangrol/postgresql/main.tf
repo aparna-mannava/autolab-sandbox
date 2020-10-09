@@ -27,7 +27,7 @@ value = {
 "ip" = "${module.postgres_server1.ip}",
 }
 }
-module "postgres_server1" {
+module "postgres_server2" {
 source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
 hostname = "us01vltfdemo290"
 alias = "tf-pg-demo-db222"
@@ -46,7 +46,7 @@ additional_disks = {
 3 = "320",
 }
 }
-output "postgres_server1" {
+output "postgres_server2" {
 value = {
 "fqdn" = "${module.postgres_server1.fqdn}",
 "alias" = "${module.postgres_server1.alias}",
