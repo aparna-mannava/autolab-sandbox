@@ -302,3 +302,5 @@ projects:
   dir: saumilp/omr
 - name: omrtestdb
   dir: krunal/oem
+- name: postgrestst
+  dir: smangrol/postgresql
