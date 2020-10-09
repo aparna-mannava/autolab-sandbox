@@ -115,7 +115,7 @@ output "oradb_server_pr03" {
 
 module "oradb_server_pr04" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlomr118"
+  hostname             = "us01vlomr116"
   alias                = "${local.product}-omr${local.facts.bt_env}-db84"
   bt_infra_cluster     = "ny2-aza-ntnx-05"
   bt_infra_network     = "ny2-autolab-db-ahv"
