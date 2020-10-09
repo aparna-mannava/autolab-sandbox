@@ -30,7 +30,7 @@ value = {
 module "postgres_server2" {
 source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
 hostname = "us01vltfdemo290"
-alias = "tf-pg-demo-db289"
+alias = "tf-pg-demo-db290"
 bt_infra_cluster     = "ny2-aze-ntnx-11"
 bt_infra_network     = "ny2-autolab-db-ahv"
 cpus = 2
