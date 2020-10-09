@@ -1,6 +1,17 @@
 terraform {
 backend "http" {}
 }
+
+locals {
+  facts       = {
+    "bt_tier"       = "dev"
+    "bt_product"    = "cagso"
+    "bt_role"       = "postgresql"
+    "bt_env"        = "1"
+    "bt_pg_version" = "12"
+  }
+  }
+
 module "postgres_server1" {
 source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
 hostname = "us01vltfdemo289"
