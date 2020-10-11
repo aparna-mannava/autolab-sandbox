@@ -14,6 +14,7 @@ locals {
 	  "bt_role" = "elastic"
     "bt_artemis_version" = "2.11.0"
     "bt_es_version" = "7.8.0"
+    "bt_apacheds_version" = "2.0.0_M22"
   }
   datacenter = {
     name = "ny2"
