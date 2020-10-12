@@ -7,10 +7,8 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product" = "cfrmrd"
       "bt_tier" = "dev"
-      "bt_env" = ""
+      "bt_env" = "qa2"
       "bt_role" = "standalone"
-      "bt_artemis_version" = "2.11.0"
-      "bt_es_version" = "7.8.0"
     }
 }
 
