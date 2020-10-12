@@ -38,4 +38,4 @@ output "elasticsearch_100" {
     "alias" = "${module.elasticsearch_100.alias}",
     "ip"    = "${module.elasticsearch_100.ip}",
   }
-} 
+}  
