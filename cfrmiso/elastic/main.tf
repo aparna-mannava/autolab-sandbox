@@ -41,8 +41,8 @@ module "cfel01" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "50",  // disk 1
-    2 = "100"  //disk 2
+    1 = "50",   // disk 1
+    2 = "100"   //disk 2
   }
 }
 
