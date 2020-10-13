@@ -305,4 +305,6 @@ projects:
 - name: postgrestst
   dir: smangrol/postgresql
 - name: pg12tst
-  dir: /smangrol/pg_1
+  dir: /smangrol/pg_G1
+- name: pgtst
+  dir: smangrol/pgtest
