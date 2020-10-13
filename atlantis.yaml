@@ -304,3 +304,5 @@ projects:
   dir: krunal/oem
 - name: postgrestst
   dir: smangrol/postgresql
+- name: pg12tst
+  dir: /smangrol/pg_1
