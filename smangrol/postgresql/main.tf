@@ -15,7 +15,7 @@ locals {
 
 module "oflows_pg_poc_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbpgo031"
+  hostname             = "us01vldbpgo53"
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-dgb-cagso-dev-imp-db"
   os_version           = "rhel7"
@@ -41,5 +41,3 @@ output "oflows_pg_poc_server_1" {
     "ip"    = "${module.oflows_pg_poc_server_1.ip}",
   }
 }
-
-
