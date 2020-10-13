@@ -1,66 +1,45 @@
 terraform {
-backend "http" {}
+  backend "http" {}
 }
 
 locals {
+  product     = "cagso"
+  environment = "master"
+  datacenter  = "ny2"
   facts       = {
-    "bt_tier"       = "dev"
-    "bt_product"    = "cagso"
-    "bt_role"       = "postgresql"
-    "bt_env"        = "1"
-    "bt_pg_version" = "12"
+    "bt_tier" = "qa"
+    "bt_env"  = "2"
+    "bt_product" = "cagso"
   }
-  }
+}
 
-module "postgres_server1" {
-source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-hostname = "us01vltfdemo289"
-alias = "tf-pg-demo-db289"
-bt_infra_cluster     = "ny2-aza-vmw-autolab"
-bt_infra_network     = "ny2-autolab-app"
-cpus = 2
-memory = 8096
-os_version = "rhel7"
-foreman_environment = "nonprod"
-foreman_hostgroup = "BT Postgresql DB Server"
-datacenter = "ny2"
-lob        = "CLOUD"
-additional_disks = {
-1 = "200",
-2 = "320",
-3 = "320",
+module "oflows_pg_poc_server_1" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vldbpgo031"
+  bt_infra_cluster     = "ny2-azd-ntnx-10"
+  bt_infra_network     = "ny2-dgb-cagso-dev-imp-db"
+  os_version           = "rhel7"
+  cpus                 = "4"
+  memory               = "16384"
+  foreman_environment  = local.environment
+  foreman_hostgroup    = "BT Postgresql DB Server"
+  datacenter           = local.datacenter
+  lob                  = "CLOUD"
+  external_facts       = local.facts
+  additional_disks     = {
+    1 = "200",
+    2 = "200",
+    3 = "200",
+    4 = "200",
+    5 = "200"
+  }
 }
+
+output "oflows_pg_poc_server_1" {
+  value = {
+    "fqdn"  = "${module.oflows_pg_poc_server_1.fqdn}",
+    "ip"    = "${module.oflows_pg_poc_server_1.ip}",
+  }
 }
-output "postgres_server1" {
-value = {
-"fqdn" = "${module.postgres_server1.fqdn}",
-"alias" = "${module.postgres_server1.alias}",
-"ip" = "${module.postgres_server1.ip}",
-}
-}
-module "postgres_server2" {
-source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-hostname = "us01vltfdemo290"
-alias = "tf-pg-demo-db290"
-bt_infra_cluster     = "ny2-aza-vmw-autolab"
-bt_infra_network     = "ny2-autolab-app"
-cpus = 2
-memory = 8096
-os_version = "rhel7"
-foreman_environment = "nonprod"
-foreman_hostgroup = "BT Postgresql DB Server"
-datacenter = "ny2"
-lob        = "CLOUD"
-additional_disks = {
-1 = "200",
-2 = "320",
-3 = "320",
-}
-}
-output "postgres_server2" {
-value = {
-"fqdn" = "${module.postgres_server1.fqdn}",
-"alias" = "${module.postgres_server1.alias}",
-"ip" = "${module.postgres_server1.ip}",
-}
-}
+
+
