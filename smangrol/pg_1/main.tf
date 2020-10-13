@@ -22,7 +22,7 @@ module "cagso-pg12" {
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = "ny2"
-  lob                  = "cloud"
+  lob                  = "CLOUD"
   cpus                 = "2"
   memory               = "4098"
   additional_disks     = {
