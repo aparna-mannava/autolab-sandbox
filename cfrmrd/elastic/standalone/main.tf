@@ -23,7 +23,7 @@ locals {
       "bt_tier" = "${local.facts.bt_tier}"
       "bt_env" = "qa2"
      }
-}
+} 
 
 module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
