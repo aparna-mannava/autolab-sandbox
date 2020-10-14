@@ -22,7 +22,7 @@ locals {
   }
   cfel01 = {
     hostname = "${local.hostname}el01"
-    silo     = "autolablab"
+    silo     = "autolab"
   }
 }
 
