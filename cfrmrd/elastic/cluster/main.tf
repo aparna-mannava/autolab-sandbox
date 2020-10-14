@@ -13,7 +13,6 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
-      "bt_env" = "${local.facts.bt_env}"
       "bt_role" = "${local.facts.bt_role}"
       "bt_env" = "qa2"
      }
@@ -21,7 +20,6 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
-      "bt_env" = "${local.facts.bt_env}"
       "bt_role" = "${local.facts.bt_role}"
       "bt_env" = "qa2"
      }
@@ -29,7 +27,6 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
-      "bt_env" = "${local.facts.bt_env}"
       "bt_role" = "${local.facts.bt_role}"
       "bt_env" = "qa2"
     }
