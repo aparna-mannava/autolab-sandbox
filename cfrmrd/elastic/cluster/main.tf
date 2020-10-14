@@ -41,7 +41,7 @@ module "elasticsearch_1" {
   os_version           = "rhel7"
   external_facts       = local.es01facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
+  foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
   datacenter           = "ny2"
   cpus                 = "2"
@@ -61,7 +61,7 @@ module "elasticsearch_2" {
   os_version           = "rhel7"
   external_facts       = local.es02facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
+  foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
   datacenter           = "ny2"
   cpus                 = "2"
@@ -81,7 +81,7 @@ module "elasticsearch_3" {
   os_version           = "rhel7"
   external_facts       = local.es03facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
+  foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
   datacenter           = "ny2"
   cpus                 = "2"
