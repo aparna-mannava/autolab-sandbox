@@ -4,14 +4,14 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMSUP_1528_create_CFRMISO_namespace" # Change to nonprod after 2020-02-11 Puppet release
+  environment = "CFRMSUP_1565_automate_oracledb" # Change to nonprod after 2020-02-11 Puppet release
   hostname    = "us01vlcfdb"
-  hostgroup   = "BT FML CFRM Oracle DB"
+  hostgroup   = "CFRM BT ISO IL Oracle DB Servers"
   facts = {
     "bt_tier" = "autolab"
     "bt_env"  = "4"
-    "bt_customer" = "cfrmrd"
-    "bt_product" = "cfrmrd"
+    "bt_customer" = "cfrmiso"
+    "bt_product" = "cfrmiso"
 	  "bt_role" = "oradb"
     "bt_cfrm_version" = "6.1_SP1"
   }
