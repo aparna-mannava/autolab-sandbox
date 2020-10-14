@@ -22,6 +22,7 @@ locals {
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
       "bt_env" = "qa2"
+      "bt_ic_mode" = "MASTER"
      }
 } 
 
@@ -79,4 +80,4 @@ output "elasticsearch_2" {
     "alias" = "${module.elasticsearch_2.alias}",
     "ip"    = "${module.elasticsearch_2.ip}",
   }
-}  
+}
