@@ -298,6 +298,8 @@ projects:
   dir: stephen.daconceicao/jenkins
 - name: cfrmiso
   dir: cfrmiso/elastic
+- name: cfrmiso-oradb
+  dir: cfrmiso/oradb/autolab
 - name: omrtest
   dir: saumilp/omr
 - name: omrtestdb
