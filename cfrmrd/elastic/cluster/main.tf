@@ -7,50 +7,42 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product" = "cfrmrd"
       "bt_tier" = "dev"
-      "bt_env" = ""
       "bt_role" = "elasticsearch"
-      "bt_artemis_version" = "2.11.0"
-      "bt_es_version" = "7.8.0"
     }
     es01facts    = {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
-      "bt_env" = "${local.facts.bt_env}"
-      "bt_artemis_version" = "${local.facts.bt_artemis_version}"
-      "bt_es_version" = "${local.facts.bt_es_version}"
       "bt_role" = "${local.facts.bt_role}"
+      "bt_env" = "qa2"
      }
     es02facts    = {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
-      "bt_env" = "${local.facts.bt_env}"
-      "bt_artemis_version" = "${local.facts.bt_artemis_version}"
-      "bt_es_version" = "${local.facts.bt_es_version}"
       "bt_role" = "${local.facts.bt_role}"
+      "bt_env" = "qa2"
      }
     es03facts    = {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
-      "bt_env" = "${local.facts.bt_env}"
-      "bt_artemis_version" = "${local.facts.bt_artemis_version}"
-      "bt_es_version" = "${local.facts.bt_es_version}"
       "bt_role" = "${local.facts.bt_role}"
+      "bt_env" = "qa2"
     }
 }
 
 module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd021"
-  bt_infra_cluster     = "ny2-aze-ntnx-12"
+  alias                = "cfrmrd-autolab-es1-cluster"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.es01facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -63,13 +55,14 @@ module "elasticsearch_1" {
 module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd022"
-  bt_infra_cluster     = "ny2-aze-ntnx-12"
+  alias                = "cfrmrd-autolab-es2-cluster"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.es02facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -82,13 +75,14 @@ module "elasticsearch_2" {
 module "elasticsearch_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd023"
-  bt_infra_cluster     = "ny2-aze-ntnx-12"
+  alias                = "cfrmrd-autolab-es3-cluster"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.es03facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2470_artemis_elasticsearch_cluster"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
