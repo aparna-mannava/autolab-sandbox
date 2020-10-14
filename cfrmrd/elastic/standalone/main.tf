@@ -41,8 +41,8 @@ module "elasticsearch_1" {
   cpus                 = "2"
   memory         	   = "4096"
   additional_disks     = {
-    1 = "50",
-    2 = "100"
+    1 = "50", // Disk 1
+    2 = "100" //Disk 2
   }
 } 
 

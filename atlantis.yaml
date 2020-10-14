@@ -294,3 +294,17 @@ projects:
   dir: saumilp/fsfo
 - name: dgboemtest
   dir: saumilp/test2
+- name: stephendjenkins
+  dir: stephen.daconceicao/jenkins
+- name: cfrmiso
+  dir: cfrmiso/elastic
+- name: omrtest
+  dir: saumilp/omr
+- name: omrtestdb
+  dir: krunal/oem
+- name: postgrestst
+  dir: smangrol/postgresql
+- name: pg12tst
+  dir: /smangrol/pg_G1
+- name: pgtst
+  dir: smangrol/pgtest

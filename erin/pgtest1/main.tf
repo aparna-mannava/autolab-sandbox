@@ -32,3 +32,22 @@ module "erinpgserver1" {
   external_facts       = local.facts
 }
 
+module "erinpgserver2" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlerinpg2"
+  bt_infra_cluster     = "ny2-aza-ntnx-05"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  os_version           = "rhel7"
+  foreman_environment  = "feature_CEA_8582_pg_lvm"
+  foreman_hostgroup    = "BT PMX PG Database Server"
+  datacenter           = "ny2"
+  lob                  = "cloud"
+  cpus                 = "4"
+  memory               = "4098"
+  additional_disks     = {
+    1 = "100"
+    2 = "50"
+    3 = "50"
+  }
+  external_facts       = local.facts
+}
