@@ -22,6 +22,7 @@ locals {
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
       "bt_env" = "qa2"
+      "bt_ic_mode = "MASTER"
      }
 } 
 
