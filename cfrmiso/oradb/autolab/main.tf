@@ -41,7 +41,7 @@ module "cfdb001" {
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
     1 = "250", //disk1
-	  2 = "250", //disk2
+	  2 = "250", // disk2
 	  3 = "250", // disk3
 	  4 = "250"  // disk4
   }
