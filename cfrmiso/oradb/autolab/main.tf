@@ -8,7 +8,7 @@ locals {
   hostname    = "us01vlcfdb"
   hostgroup   = "CFRM BT ISO IL Oracle DB Servers"
   facts = {
-    "bt_tier" = "autolab"
+    "bt_tier" = "auto"
     "bt_env"  = "4"
     "bt_customer" = "cfrmiso"
     "bt_product" = "cfrmiso"
