@@ -7,7 +7,7 @@ locals {
     facts = {
         "bt_tier" = "dev"
         "bt_env" = "1",
-        "bt_product" = "ux"
+        "bt_product" = "glu"
         "bt_role" = "jenkins"
     }
     cluster = "ny2-aza-ntnx-05"
@@ -26,8 +26,8 @@ locals {
 
 module "jenkins" {
     source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-    hostname            = "us01vwuxjen002"
-    alias               = "${local.product}-${local.facts.bt_tier}-jenkins"
+    hostname            = "us01vwuxjen003"
+    alias               = "ux-${local.facts.bt_tier}-jenkins"
     bt_infra_cluster    = local.cluster
     bt_infra_network    = local.network
     os_version          = local.os
