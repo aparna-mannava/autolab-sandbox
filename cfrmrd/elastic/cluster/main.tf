@@ -34,7 +34,7 @@ locals {
 
 module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd021"
+  hostname             = "us01vlcfrmrd921"
   alias                = "cfrmrd-autolab-es1-cluster"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -42,7 +42,7 @@ module "elasticsearch_1" {
   external_facts       = local.es01facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -54,7 +54,7 @@ module "elasticsearch_1" {
 
 module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd022"
+  hostname             = "us01vlcfrmrd922"
   alias                = "cfrmrd-autolab-es2-cluster"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -62,7 +62,7 @@ module "elasticsearch_2" {
   external_facts       = local.es02facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -74,7 +74,7 @@ module "elasticsearch_2" {
 
 module "elasticsearch_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd023"
+  hostname             = "us01vlcfrmrd923"
   alias                = "cfrmrd-autolab-es3-cluster"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -82,7 +82,7 @@ module "elasticsearch_3" {
   external_facts       = local.es03facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster2"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
