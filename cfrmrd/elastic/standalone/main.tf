@@ -36,7 +36,7 @@ module "elasticsearch_1" {
   external_facts       = local.es01facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone2"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -56,7 +56,7 @@ module "elasticsearch_2" {
   external_facts       = local.es02facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_2451_artemis_elasticsearch_standalone"
-  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone2"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -73,11 +73,11 @@ output "elasticsearch_1" {
     "ip"    = "${module.elasticsearch_1.ip}",
   }
 }
-
+ 
 output "elasticsearch_2" {
   value = {
     "fqdn"  = "${module.elasticsearch_2.fqdn}",
     "alias" = "${module.elasticsearch_2.alias}",
     "ip"    = "${module.elasticsearch_2.ip}",
   }
-} 
+}    

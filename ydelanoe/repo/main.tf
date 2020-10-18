@@ -2,7 +2,6 @@ terraform {
   backend "http" {}
 }
 
-
 locals {
   product       = "fmcloud"
   environment   = "master"

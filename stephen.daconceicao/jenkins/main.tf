@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-    product = "glu"
+    product = "ux"
     facts = {
         "bt_tier" = "dev"
         "bt_env" = "1",
@@ -13,22 +13,21 @@ locals {
     cluster = "ny2-aza-ntnx-05"
     network = "ny2-autolab-app-ahv"
     os      = "rhel8"
-    cpus    = "4"
-    memory  = "4098"
+    cpus    = "8"
+    memory  = "8192"
     additional_disks = {
-        1 = "100"
-        2 = "200"
+        1 = "500"
     }
     environment = "feature_GLU_3502"
-    hostgroup   = "BT Base Server"
+    hostgroup   = "UX Jenkins"
     datacenter  = "ny2"
     lob         = "CLOUD"
 }
 
 module "jenkins" {
     source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-    hostname            = "us01vwglujen001"
-    alias = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-jenkins"
+    hostname            = "us01vwuxjen003"
+    alias               = "ux-${local.facts.bt_tier}-jenkins"
     bt_infra_cluster    = local.cluster
     bt_infra_network    = local.network
     os_version          = local.os
