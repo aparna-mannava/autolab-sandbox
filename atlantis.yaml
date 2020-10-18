@@ -310,5 +310,7 @@ projects:
   dir: /smangrol/pg_G1
 - name: pgtst
   dir: smangrol/pgtest
+- name: genady-cfrmrd-postgres
+  dir: cfrmrd/postgres
 - name: hapostgres
   dir: cfrmrd/hapostgres
