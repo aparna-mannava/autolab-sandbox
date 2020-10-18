@@ -34,7 +34,7 @@ locals {
 
 module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd921"
+  hostname             = "us01vlcfrmrd021"
   alias                = "cfrmrd-autolab-es1-cluster"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -54,7 +54,7 @@ module "elasticsearch_1" {
 
 module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd922"
+  hostname             = "us01vlcfrmrd022"
   alias                = "cfrmrd-autolab-es2-cluster"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -74,7 +74,7 @@ module "elasticsearch_2" {
 
 module "elasticsearch_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd923"
+  hostname             = "us01vlcfrmrd023"
   alias                = "cfrmrd-autolab-es3-cluster"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -114,4 +114,4 @@ output "elasticsearch_3" {
     "alias" = "${module.elasticsearch_3.alias}",
     "ip"    = "${module.elasticsearch_3.ip}",
   }
-}  
+}
