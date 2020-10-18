@@ -17,8 +17,6 @@ locals {
   bt_env          = "1"
   bt_product      = "cfrmrd"
   lob             = "CFRM"
-  hostgroup       = "BT HA PG Server"
-  environment     = "CFRMX-3466-HA-Postgres"
   cluster         = "ny2-aza-ntnx-07"
   network         = "ny2-autolab-app-ahv"
   facts           = {
@@ -31,7 +29,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "dev8cluster"
+    "bt_cluster_name"         = "cfrmrd_cluster"
   }
 }
 
@@ -43,7 +41,7 @@ module "etcd_0" {
   bt_infra_network     = local.network
   lob                  = local.lob
   foreman_hostgroup    = "BT ETCD for PostgreSQL Server"
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   os_version           = "rhel7"
   cpus                 = "1"
   memory               = "4096"
@@ -61,7 +59,7 @@ module "etcd_1" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT ETCD for PostgreSQL Server"
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   lob                  = local.lob
   os_version           = "rhel7"
   cpus                 = "1"
@@ -81,7 +79,7 @@ module "etcd_2" {
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT ETCD for PostgreSQL Server"
   lob                  = local.lob
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   os_version           = "rhel7"
   cpus                 = "1"
   memory               = "4096"
@@ -100,7 +98,7 @@ module "hapg_0" {
   bt_infra_network     = local.network
   lob                  = local.lob
   foreman_hostgroup    = "BT HA PG Server"
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
@@ -120,7 +118,7 @@ module "hapg_1" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT HA PG Server"
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   lob                  = local.lob
   os_version           = "rhel7"
   cpus                 = "2"
@@ -141,7 +139,7 @@ module "hapg_2" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT HA PG Server"
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   lob                  = local.lob
   os_version           = "rhel7"
   cpus                 = "2"
@@ -162,7 +160,7 @@ module "haproxy_1" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT Patroni HA Proxy"
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   lob                  = local.lob
   os_version           = "rhel7"
   cpus                 = "2"
@@ -182,7 +180,7 @@ module "backrest_1" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT PG Backrest Server"
-  foreman_environment  = local.environment
+  foreman_environment  = "CFRMX-3466-HA-Postgres"
   lob                  = local.lob
   os_version           = "rhel7"
   cpus                 = "2"
