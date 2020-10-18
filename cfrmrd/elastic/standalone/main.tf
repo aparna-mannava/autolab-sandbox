@@ -73,7 +73,7 @@ output "elasticsearch_1" {
     "ip"    = "${module.elasticsearch_1.ip}",
   }
 }
-
+ 
 output "elasticsearch_2" {
   value = {
     "fqdn"  = "${module.elasticsearch_2.fqdn}",
