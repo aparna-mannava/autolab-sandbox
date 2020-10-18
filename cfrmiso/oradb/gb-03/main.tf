@@ -13,10 +13,11 @@ locals {
     "bt_customer" = "cfrmrd"
     "bt_product" = "cfrmrd"
 	  "bt_role" = "oradb"
+    "bt_cfrm_version" = "6.1_SP1"
   }
-  datacenter = {
-    name = "colt"
-    id   = "gb03"
+   datacenter = {
+    name = "ny2"
+    id   = "ny2"
   }
   cfdb001 = {
     hostname = "${local.hostname}001"
