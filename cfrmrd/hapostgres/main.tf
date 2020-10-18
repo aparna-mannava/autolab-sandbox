@@ -7,12 +7,10 @@ locals {
   hapg_servers    = ["us01vlcfrmrd604","us01vlcfrmrd605","us01vlcfrmrd606"]
   haproxy_server  = ["us01vlcfrmrd600"]
   backrest_server = ["us01vlcfrmrd666"]
- 
   etcd_aliases    = ["cfrmrd-etcd1","cfrmrd-etcd2","cfrmrd-etcd3"]
   hapg_aliases    = ["cfrmrd-hapg1","cfrmrd-hapg2","cfrmrd-hapg3"]
   haproxy_alias   = ["cfrmrd-proxy"]
   backrest_alias  = ["cfrmrd-backrest"]
-      
   etcd_hosts_p    = ["'us01vlcfrmrd601.auto.saas-n.com','us01vlcfrmrd602.auto.saas-n.com','us01vlcfrmrd603.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "autolab"
