@@ -258,4 +258,4 @@ output "haproxy_1" {
     "alias" = "${module.haproxy_1.alias}",
     "ip"    = "${module.haproxy_1.ip}",
   }
-} 
+}  
