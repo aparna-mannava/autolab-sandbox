@@ -15,7 +15,7 @@ locals {
   bt_env          = "1"
   bt_product      = "cfrmrd"
   lob             = "CFRM"
-  hostgroup       = "BT HA PG Server"
+  hostgroup       = "CFRMRD HA PG Server"
   environment     = "feature_CFRMX_3466_HA_Postgres"
   cluster         = "ny2-aza-ntnx-07"
   network         = "ny2-autolab-app-ahv"
@@ -40,7 +40,7 @@ module "ny2_autolab_hapg_0" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   lob                  = local.lob
-  foreman_hostgroup    = "BT HA PG Server"
+  foreman_hostgroup    = "CFRMRD HA PG Server"
   foreman_environment  = local.environment
   os_version           = "rhel7"
   cpus                 = "2"
@@ -59,7 +59,7 @@ module "ny2_autolab_hapg_1" {
   alias                = "${local.hapg_aliases[1]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
-  foreman_hostgroup    = "BT HA PG Server"
+  foreman_hostgroup    = "CFRMRD HA PG Server"
   foreman_environment  = local.environment
   lob                  = local.lob
   os_version           = "rhel7"
@@ -79,7 +79,7 @@ module "ny2_autolab_hapg_2" {
   alias                = "${local.hapg_aliases[2]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
-  foreman_hostgroup    = "BT HA PG Server"
+  foreman_hostgroup    = "CFRMRD HA PG Server"
   foreman_environment  = local.environment
   lob                  = local.lob
   os_version           = "rhel7"
@@ -96,10 +96,10 @@ module "ny2_autolab_hapg_2" {
 module "ny2_autolab_haproxy_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
-  alias                = "${local.hapg_aliases[0]}"
+  alias                = "${local.haproxy_alias[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
-  foreman_hostgroup    = "BT Patroni HA Proxy"
+  foreman_hostgroup    = "CFRMRD Patroni HA Proxy"
   foreman_environment  = local.environment
   lob                  = local.lob
   os_version           = "rhel7"
@@ -143,4 +143,4 @@ output "ny2_autolab_haproxy_1" {
     "alias" = "${module.ny2_autolab_haproxy_1.alias}",
     "ip"    = "${module.ny2_autolab_haproxy_1.ip}",
   }
-}
+} 
