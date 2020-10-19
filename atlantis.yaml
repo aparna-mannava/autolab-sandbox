@@ -310,3 +310,5 @@ projects:
   dir: /smangrol/pg_G1
 - name: pgtst
   dir: smangrol/pgtest
+- name: hapostgres
+  dir: cfrmrd/hapostgres
