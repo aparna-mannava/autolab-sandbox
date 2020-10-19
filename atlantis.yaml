@@ -312,3 +312,5 @@ projects:
   dir: smangrol/pgtest
 - name: hapostgres
   dir: cfrmrd/hapostgres
+- name: hapostgres-etcd
+  dir: cfrmrd/hapostgres/etcd
