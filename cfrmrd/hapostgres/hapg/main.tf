@@ -29,8 +29,6 @@ locals {
     "bt_cluster_name"         = "cfrmrd_cluster"
   }
   facts_proxy      = {
-    "bt_env"                  = "${local.bt_env}"
-    "bt_tier"                 = "${local.tier}"
     "bt_product"              = "${local.bt_product}"
     "bt_role"                 = "haproxy"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
