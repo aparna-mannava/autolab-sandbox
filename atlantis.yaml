@@ -296,6 +296,10 @@ projects:
   dir: saumilp/test2
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
+- name: stephendjenkins2
+  dir: stephen.daconceicao/jenkins2
+- name: stephendjenkins3
+  dir: stephen.daconceicao/jenkins3
 - name: cfrmiso
   dir: cfrmiso/elastic
 - name: cfrmiso-oradb
