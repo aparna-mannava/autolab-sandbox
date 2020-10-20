@@ -7,8 +7,6 @@ locals {
   etcd_hosts_p    = ["'us01vlcfrmrd601.auto.saas-n.com','us01vlcfrmrd602.auto.saas-n.com','us01vlcfrmrd603.auto.saas-n.com'"]
   etcd_aliases    = ["cfrmrd-etcd1","cfrmrd-etcd2","cfrmrd-etcd3"]
   domain          = "auto.saas-n.com"
-  tier            = "dev"
-  bt_env          = "1"
   bt_product      = "cfrmrd"
   lob             = "CFRM"
   hostgroup       = "CFRMRD ETCD for PostgreSQL Server"
@@ -16,8 +14,6 @@ locals {
   cluster         = "ny2-aza-ntnx-07"
   network         = "ny2-autolab-app-ahv"
   facts           = {
-    "bt_env"                  = "${local.bt_env}"
-    "bt_tier"                 = "${local.tier}"
     "bt_product"              = "${local.bt_product}"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
     "bt_cluster_name"         = "cfrmrd_cluster"
