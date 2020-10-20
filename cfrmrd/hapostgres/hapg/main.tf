@@ -114,7 +114,7 @@ module "ny2_autolab_haproxy_1" {
   additional_disks     = {
     1 = "50",
     2 = "10",
-  }
+  }     
 }
 
 output "ny2_autolab_hapg_0" {
