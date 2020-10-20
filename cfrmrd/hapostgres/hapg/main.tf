@@ -157,4 +157,4 @@ output "ny2_autolab_haproxy_1" {
     "alias" = "${module.ny2_autolab_haproxy_1.alias}",
     "ip"    = "${module.ny2_autolab_haproxy_1.ip}",
   }
-}   
+}    
