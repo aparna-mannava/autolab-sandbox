@@ -296,10 +296,13 @@ projects:
   dir: saumilp/test2
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
+  workflow: nutanix-backend
 - name: stephendjenkins2
   dir: stephen.daconceicao/jenkins2
+  workflow: nutanix-backend
 - name: stephendjenkins3
   dir: stephen.daconceicao/jenkins3
+  workflow: nutanix-backend
 - name: cfrmiso
   dir: cfrmiso/elastic
 - name: cfrmiso-oradb
