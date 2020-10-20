@@ -40,6 +40,7 @@ module "ny2_autolab_hapg_0" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   lob                  = local.lob
+  bt_role              = "postgresql"
   foreman_hostgroup    = "CFRMRD HA PG Server"
   foreman_environment  = local.environment
   os_version           = "rhel7"
@@ -62,6 +63,7 @@ module "ny2_autolab_hapg_1" {
   foreman_hostgroup    = "CFRMRD HA PG Server"
   foreman_environment  = local.environment
   lob                  = local.lob
+  bt_role              = "postgresql"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
@@ -82,6 +84,7 @@ module "ny2_autolab_hapg_2" {
   foreman_hostgroup    = "CFRMRD HA PG Server"
   foreman_environment  = local.environment
   lob                  = local.lob
+  bt_role              = "postgresql"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
@@ -102,6 +105,7 @@ module "ny2_autolab_haproxy_1" {
   foreman_hostgroup    = "CFRMRD Patroni HA Proxy"
   foreman_environment  = local.environment
   lob                  = local.lob
+  bt_role              = "haproxy"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
