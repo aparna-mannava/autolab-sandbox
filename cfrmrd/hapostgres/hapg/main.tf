@@ -19,10 +19,24 @@ locals {
   environment     = "feature_CFRMX_3466_HA_Postgres"
   cluster         = "ny2-aza-ntnx-07"
   network         = "ny2-autolab-app-ahv"
-  facts           = {
+  facts_hapg      = {
     "bt_env"                  = "${local.bt_env}"
     "bt_tier"                 = "${local.tier}"
     "bt_product"              = "${local.bt_product}"
+     bt_role                  = "postgresql"
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
+    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}"]
+    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
+    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
+    "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
+    "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
+    "bt_cluster_name"         = "cfrmrd_cluster"
+  }
+  facts_proxy      = {
+    "bt_env"                  = "${local.bt_env}"
+    "bt_tier"                 = "${local.tier}"
+    "bt_product"              = "${local.bt_product}"
+     bt_role                  = "haproxy"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
@@ -45,7 +59,7 @@ module "ny2_autolab_hapg_0" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
-  external_facts       = local.facts
+  external_facts       = local.facts_hapg
   datacenter           = "ny2"
   additional_disks     = {
   1 = "100",
@@ -65,7 +79,7 @@ module "ny2_autolab_hapg_1" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
-  external_facts       = local.facts
+  external_facts       = local.facts_hapg
   datacenter           = "ny2"
   additional_disks     = {
   1 = "100",
@@ -85,7 +99,7 @@ module "ny2_autolab_hapg_2" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
-  external_facts       = local.facts
+  external_facts       = local.facts_hapg
   datacenter           = "ny2"
   additional_disks     = {
   1 = "100",
@@ -105,12 +119,12 @@ module "ny2_autolab_haproxy_1" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
-  external_facts       = local.facts
+  external_facts       = local.facts_proxy
   datacenter           = "ny2"
   additional_disks     = {
     1 = "50",
     2 = "10",
-  }
+  }     
 }
 
 output "ny2_autolab_hapg_0" {
