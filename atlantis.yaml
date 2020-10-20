@@ -310,8 +310,6 @@ projects:
   dir: /smangrol/pg_G1
 - name: pgtst
   dir: smangrol/pgtest
-- name: hapostgres
-  dir: cfrmrd/hapostgres
 - name: hapostgres-etcd
   dir: cfrmrd/hapostgres/etcd
 - name: hapostgres-hapg
