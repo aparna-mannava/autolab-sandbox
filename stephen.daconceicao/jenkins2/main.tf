@@ -1,9 +1,8 @@
 terraform {
- backend "http" {}
+ backend "s3" {}
 }
 
 locals {
-    product = "ux"
     facts = {
         "bt_tier" = "dev"
         "bt_env" = "1",
