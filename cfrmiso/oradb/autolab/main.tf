@@ -32,7 +32,7 @@ module "cfdb001" {
   bt_infra_cluster    = "ny2-aza-ntnx-07"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "12"
+  cpus                = "8"
   memory              = "16192"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
@@ -40,7 +40,7 @@ module "cfdb001" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "250", //disk1
+    1 = "250", // disk1
 	  2 = "250", // disk2
 	  3 = "250", // disk3
 	  4 = "250"  // disk4
