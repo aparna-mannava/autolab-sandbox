@@ -325,3 +325,5 @@ projects:
   dir: cfrmrd/hapostgres/hapg
 - name: hapostgres-backrest
   dir: cfrmrd/hapostgres/backrest
+- name: pgmgtst
+  dir: partha/postgres/cloud-74059
