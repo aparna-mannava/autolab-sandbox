@@ -26,13 +26,13 @@ locals {
   }
 }
 
-module "ny2_autolab_backrest_1" {
+module "cfrmrd_autolab_backrest_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
   alias                = "${local.backrest_alias[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
-  foreman_hostgroup    = "BT PG Backrest Server"
+  foreman_hostgroup    = local.hostgroup
   foreman_environment  = local.environment
   lob                  = local.lob
   os_version           = "rhel7"
@@ -46,10 +46,10 @@ module "ny2_autolab_backrest_1" {
   }
 }
 
-output "ny2_autolab_backrest_1" {
+output "cfrmrd_autolab_backrest_1" {
   value = {
-    "fqdn"  = "${module.ny2_autolab_backrest_1.fqdn}",
-    "alias" = "${module.ny2_autolab_backrest_1.alias}",
-    "ip"    = "${module.ny2_autolab_backrest_1.ip}",
+    "fqdn"  = "${module.cfrmrd_autolab_backrest_1.fqdn}",
+    "alias" = "${module.cfrmrd_autolab_backrest_1.alias}",
+    "ip"    = "${module.cfrmrd_autolab_backrest_1.ip}",
   }
 }
