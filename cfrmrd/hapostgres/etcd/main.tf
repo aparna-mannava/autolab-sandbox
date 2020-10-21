@@ -99,4 +99,4 @@ output "ny2_autolab_etcd_2" {
     "alias" = "${module.ny2_autolab_etcd_2.alias}",
     "ip"    = "${module.ny2_autolab_etcd_2.ip}",
   }
-} 
+}  
