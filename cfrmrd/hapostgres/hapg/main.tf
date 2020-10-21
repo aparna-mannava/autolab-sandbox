@@ -151,4 +151,4 @@ output "cfrmrd_autolab_haproxy_1" {
     "alias" = "${module.cfrmrd_autolab_haproxy_1.alias}",
     "ip"    = "${module.cfrmrd_autolab_haproxy_1.ip}",
   }
-}       
+}     
