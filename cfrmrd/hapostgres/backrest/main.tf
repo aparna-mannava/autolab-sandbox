@@ -12,9 +12,9 @@ locals {
   domain          = "auto.saas-n.com"
   bt_product      = "cfrmrd"
   lob             = "CFRM"
-  hostgroup       = "BT PG Backrest Server"
+  hostgroup       = "CFRMRD PG Backrest Server"
   environment     = "feature_CFRMX_3466_HA_Postgres"
-  cluster         = "ny2-aza-ntnx-07"
+  cluster         = "ny2-aza-ntnx-13"
   network         = "ny2-autolab-app-ahv"
   facts           = {
     "bt_product"              = "${local.bt_product}"
