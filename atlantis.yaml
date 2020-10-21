@@ -142,6 +142,8 @@ projects:
   dir:  rmarke/Hackathon/Windows
 - name: stevek-hackathon-skexample1
   dir: stevek/hackathon/example1
+- name: stevek-hackathon-skexample2
+  dir: stevek/hackathon/example2
 - name: stevek-hackathon-winexample1
   dir: stevek/hackathon/winexample1
 - name: suresh-postgres
@@ -296,6 +298,13 @@ projects:
   dir: saumilp/test2
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
+  workflow: nutanix-backend
+- name: stephendjenkins2
+  dir: stephen.daconceicao/jenkins2
+  workflow: nutanix-backend
+- name: stephendjenkins3
+  dir: stephen.daconceicao/jenkins3
+  workflow: nutanix-backend
 - name: cfrmiso
   dir: cfrmiso/elastic
 - name: cfrmiso-oradb
@@ -310,5 +319,9 @@ projects:
   dir: /smangrol/pg_G1
 - name: pgtst
   dir: smangrol/pgtest
-- name: pgmgtst
-  dir: partha/postgres/cloud-74059
+- name: hapostgres-etcd
+  dir: cfrmrd/hapostgres/etcd
+- name: hapostgres-hapg
+  dir: cfrmrd/hapostgres/hapg
+- name: hapostgres-backrest
+  dir: cfrmrd/hapostgres/backrest
