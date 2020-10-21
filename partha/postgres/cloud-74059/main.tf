@@ -23,8 +23,8 @@ additional_disks = {
 
 output "postgres_serverHSP" {
 value = {
-"fqdn" = "${module.postgres_server1.fqdn}",
-"alias" = "${module.postgres_server1.alias}",
-"ip" = "${module.postgres_server1.ip}",
+"fqdn" = "${module.postgres_serverHSP.fqdn}",
+"alias" = "${module.postgres_serverHSP.alias}",
+"ip" = "${module.postgres_serverHSP.ip}",
 }
 }
