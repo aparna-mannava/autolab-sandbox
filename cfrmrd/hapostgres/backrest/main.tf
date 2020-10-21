@@ -10,8 +10,6 @@ locals {
   etcd_hosts_p    = ["'us01vlcfrmrd601.auto.saas-n.com','us01vlcfrmrd602.auto.saas-n.com','us01vlcfrmrd603.auto.saas-n.com'"]
   backrest_alias  = ["cfrmrd-backrest"]
   domain          = "auto.saas-n.com"
-  tier            = "auto"
-  bt_env          = "1"
   bt_product      = "cfrmrd"
   lob             = "CFRM"
   hostgroup       = "BT PG Backrest Server"
@@ -19,8 +17,6 @@ locals {
   cluster         = "ny2-aza-ntnx-07"
   network         = "ny2-autolab-app-ahv"
   facts           = {
-    "bt_env"                  = "${local.bt_env}"
-    "bt_tier"                 = "${local.tier}"
     "bt_product"              = "${local.bt_product}"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}"]
