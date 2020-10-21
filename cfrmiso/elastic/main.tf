@@ -33,7 +33,7 @@ module "cfel01" {
   bt_infra_cluster    = "ny2-aza-ntnx-07"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "8"
+  cpus                = "4"
   memory              = "16192"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
