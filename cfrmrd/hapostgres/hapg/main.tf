@@ -15,7 +15,7 @@ locals {
   lob             = "CFRM"
   hostgroup       = "CFRMRD HA PG Server"
   environment     = "feature_CFRMX_3466_HA_Postgres"
-  cluster         = "ny2-aza-ntnx-07"
+  cluster         = "ny2-aza-ntnx-13"
   network         = "ny2-autolab-app-ahv"
   facts_hapg      = {
     "bt_product"              = "${local.bt_product}"
