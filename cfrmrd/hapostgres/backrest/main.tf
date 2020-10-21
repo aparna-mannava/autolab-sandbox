@@ -29,7 +29,7 @@ locals {
 module "ny2_autolab_backrest_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
-  alias                = "${local.haproxy_alias[0]}"
+  alias                = "${local.backrest_alias[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT PG Backrest Server"
