@@ -4,8 +4,8 @@ terraform {
 }
 
 locals {
-  cluster = "ny2-azd-ntnx-10"
-  network = "ny2-autolab-app-ahv"
+  cluster = "ny2-aza-ntnx-13"
+    network = "ny2-autolab-app-ahv"
   os      = "rhel8"
   cpus    = "2"
   memory  = "2048"
