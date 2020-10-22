@@ -15,7 +15,7 @@ locals {
   lob             = "btiq"
   hostgroup       = "BTIQ PG Server"
   environment     = "feature_BTIQ_77_jenkins"
-  cluster         = "ny2-aza-ntnx-07"
+  cluster         = "ny2-aza-ntnx-05"
   network         = "ny2-autolab-app-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
