@@ -25,6 +25,7 @@ module "db_server_1" {
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb Server"
+  lob                  = "CLOUD"
   external_facts       = local.facts
   cpus                 = "4"
   memory               = "8192"
@@ -45,6 +46,7 @@ module "db_server_2" {
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb Secondary Server"
+  lob                  = "CLOUD"
   external_facts       = local.facts
   cpus                 = "4"
   memory               = "8192"
@@ -65,6 +67,7 @@ module "db_observer_1" {
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb fsfo Observer"
+  lob                  = "CLOUD"
   external_facts       = local.facts
   cpus                 = "2"
   memory               = "4096"
