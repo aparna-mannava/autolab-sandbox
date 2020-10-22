@@ -260,3 +260,5 @@ projects:
   dir: bkumar/pgins
 - name: dnani-sqlmirror04
   dir: dnani/sqlmirror04
+- name: genady-nginx
+  dir: cfrmrd/nginx
