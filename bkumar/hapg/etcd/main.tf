@@ -12,7 +12,7 @@ locals {
   lob             = "btiq"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "master"
-  cluster         = "ny2-aza-ntnx-07"
+  cluster         = "ny2-aza-ntnx-05"
   network         = "ny2-autolab-app-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
