@@ -266,6 +266,5 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: genady-nginx
   dir: cfrmrd/nginx
-  - name: agservrs
-    dir: partha/sqlserver/cloud-74059
-  
+- name: agservrs
+  dir: partha/sqlserver/cloud-74059
