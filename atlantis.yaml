@@ -260,3 +260,7 @@ projects:
   dir: bkumar/pgins
 - name: dnani-sqlmirror04
   dir: dnani/sqlmirror04
+- name: cfrmiso-elastic
+  dir: cfrmiso/oradb/elastic
+- name: cfrmiso-oradb-autolab
+  dir: cfrmiso/oradb/autolab
