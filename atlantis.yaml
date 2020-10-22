@@ -142,6 +142,8 @@ projects:
   dir:  rmarke/Hackathon/Windows
 - name: stevek-hackathon-skexample1
   dir: stevek/hackathon/example1
+- name: stevek-hackathon-skexample2
+  dir: stevek/hackathon/example2
 - name: stevek-hackathon-winexample1
   dir: stevek/hackathon/winexample1
 - name: suresh-postgres
@@ -238,75 +240,23 @@ projects:
   dir: dmartin/pulp
 - name: dgb-test
   dir: krunal/dgb
+- name: iq-hapg-etcd
+  dir: bkumar/hapg/etcd
+  workflow: nutanix-backend
+- name: iq-hapg-hapg
+  dir: bkumar/hapg/hapg
+  workflow: nutanix-backend
 - name: vm-test
   dir: bkumar/vm
 - name: pg12ha-etcd
-  dir: bkumar/pg12ha/etcd
+  dir: bkumar/iqpgcluster/etcd
 - name: pg12ha-hapg
-  dir: bkumar/pg12ha/hapg
+  dir: bkumar/iqpgcluster/hapg
 - name: pg12ha-backrest
-  dir: bkumar/pg12ha/backrest
+  dir: bkumar/iqpgcluster/backrest
 - name: iqcluster
   dir: bkumar/iqpgcluster
-- name: llabranche1-sparx
-  dir: llabranche1/sparx
-  workflow: nutanix-backend
-- name: pbscap-pg
-  dir: sriramvaradhan/pbscap
-- name: genady-cfrmrd-integration
-  dir: cfrmrd/integration
-- name: genady-cfrmrd-nfs
-  dir: cfrmrd/nfs
-- name: genady-cfrmrd-ic
-  dir: cfrmrd/ic
-- name: saumil-btbkt
-  dir: saumilp/bitbucket
-- name: saumil-btbkt19c
-  dir: saumilp/bitbkt19c
-- name: bbt-ora19
-  dir: sriramvaradhan/bbt
-- name: ciscatdb
-  dir: sriramvaradhan/ciscatdb
-- name: bbt-tst
-  dir: saumilp/bbt19
-- name: bbt-tst1
-  dir: saumilp/test
-- name: mdavidson
-  dir: mdavidson
-- name: cfrmtst
-  dir: cloud72774/oracle
-- name: genady-cfrmrd-postgres
-  dir: cfrmrd/postgres
-- name: areid-btc-hackathon
-  dir: areid/btc-hackathon
-- name: dgbdb
-  dir: bthakkar/oradb/dgb
-- name: ora19c
-  dir: oracle19c/oracle
-- name: oracle19cdb
-  dir: oracle19cdb/oracle
-- name: llabranche1-OEM
-  dir: llabranche1/OEM
-  workflow: nutanix-backend
-- name: sridgb
-  dir: sriramvaradhan/dgb
-- name: fsfotest
-  dir: saumilp/fsfo
-- name: dgboemtest
-  dir: saumilp/test2
-- name: stephendjenkins
-  dir: stephen.daconceicao/jenkins
-- name: cfrmiso-elastic
-  dir: cfrmiso/elastic
-- name: cfrmiso-oradb
-  dir: cfrmiso/oradb/autolab
-- name: omrtest
-  dir: saumilp/omr
-- name: omrtestdb
-  dir: krunal/oem
-- name: postgrestst
-  dir: smangrol/postgresql
-- name: pg12tst
-  dir: /smangrol/pg_G1
-- name: pgtst
-  dir: smangrol/pgtest
+- name: pgins
+  dir: bkumar/pgins
+- name: dnani-sqlmirror04
+  dir: dnani/sqlmirror04
