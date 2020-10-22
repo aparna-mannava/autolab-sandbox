@@ -22,7 +22,7 @@ module "db_server_1" {
   alias                = "${local.lob}-tf-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db01"
   datacenter           = local.datacenter
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny2-aza-ntnx-07"
+  bt_infra_cluster     = "ny2-aza-ntnx-05"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb Server"
   lob                  = "CLOUD"
@@ -43,7 +43,7 @@ module "db_server_2" {
   alias                = "${local.lob}-tf-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db02"
   datacenter           = local.datacenter
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny2-aza-ntnx-07"
+  bt_infra_cluster     = "ny2-aza-ntnx-05"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb Secondary Server"
   lob                  = "CLOUD"
@@ -64,7 +64,7 @@ module "db_observer_1" {
   alias                = "${local.lob}-tf-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-ob01"
   datacenter           = local.datacenter
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny2-aza-ntnx-07"
+  bt_infra_cluster     = "ny2-aza-ntnx-05"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb fsfo Observer"
   lob                  = "CLOUD"
