@@ -327,5 +327,5 @@ projects:
   dir: cfrmrd/hapostgres/backrest
 - name: pgmgtst
   dir: partha/postgres/cloud-74059
-- name: FCBDB
-  dir: nirmaljani/FCBDB
+- name: FCBDG
+  dir: nirmaljani/FCBDG
