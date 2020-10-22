@@ -6,10 +6,9 @@ locals {
     facts       = {
       "bt_customer" = "cfrmrd"
       "bt_product" = "cfrmrd"
-      "bt_product" = "nginx"
     }
     vm01facts    = {
-      "bt_role" = "${local.facts.bt_role}"
+      "bt_role" = "nginx"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
      }
