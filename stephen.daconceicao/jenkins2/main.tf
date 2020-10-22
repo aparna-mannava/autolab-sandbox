@@ -32,6 +32,7 @@ module "jenkins" {
     os_version          = local.os
     cpus                = local.cpus
     memory              = local.memory
+    additional_disks    = local.additional_disks
     external_facts      = local.facts
     foreman_environment = local.environment
     foreman_hostgroup   = local.hostgroup
