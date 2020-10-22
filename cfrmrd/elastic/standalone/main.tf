@@ -35,7 +35,7 @@ module "elasticsearch_1" {
   os_version           = "rhel7"
   external_facts       = local.es01facts
   lob                  = "CFRM"
-  foreman_environment  = "CFRMX_3503_Add_jmx_exporter"
+  foreman_environment  = "feature_CFRMX_3503_Add_jmx_exporter"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   datacenter           = "ny2"
   cpus                 = "2"
@@ -55,7 +55,7 @@ module "elasticsearch_2" {
   os_version           = "rhel7"
   external_facts       = local.es02facts
   lob                  = "CFRM"
-  foreman_environment  = "CFRMX_3503_Add_jmx_exporter"
+  foreman_environment  = "feature_CFRMX_3503_Add_jmx_exporter"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   datacenter           = "ny2"
   cpus                 = "2"
