@@ -240,6 +240,12 @@ projects:
   dir: dmartin/pulp
 - name: dgb-test
   dir: krunal/dgb
+- name: iq-hapg-etcd
+  dir: bkumar/hapg/etcd
+  workflow: nutanix-backend
+- name: iq-hapg-hapg
+  dir: bkumar/hapg/hapg
+  workflow: nutanix-backend
 - name: vm-test
   dir: bkumar/vm
 - name: pg12ha-etcd
