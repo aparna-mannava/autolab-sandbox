@@ -15,7 +15,8 @@ locals {
     cpus    = "8"
     memory  = "8192"
     additional_disks = {
-        1 = "500"
+        1 = "500",
+        2 = "500"
     }
     environment = "feature_GLU_3502"
     hostgroup   = "UX Jenkins"
