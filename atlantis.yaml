@@ -258,3 +258,5 @@ projects:
   dir: bkumar/iqpgcluster
 - name: pgins
   dir: bkumar/pgins
+- name: dnani-sqlmirror04
+  dir: dnani/sqlmirror04
