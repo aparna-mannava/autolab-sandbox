@@ -9,7 +9,7 @@ locals {
   hostname       = "us01vwbfsdevdn4"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
-    "bt_product"      = "DGB"
+    "bt_product"      = "BFS"
     "bt_tier"         = "dev"
     "bt_bfs_timezone" = "Eastern Standard Time"
   }
