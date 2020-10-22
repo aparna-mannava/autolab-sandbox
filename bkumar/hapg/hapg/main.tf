@@ -5,8 +5,6 @@ terraform {
 locals {
   etcd_servers    = ["us01vlbtiqed01","us01vlbtiqed02","us01vlbtiqed03"]
   hapg_servers    = ["us01vlbtiqpg01","us01vlbtiqpg02","us01vlbtiqpg03"]
-  haproxy_server  = ["us01vlbtiqpxy01"]
-  backrest_server = ["us01vlbtiqbkp01"]
   etcd_hosts_p    = ["'us01vlbtiqed01.auto.saas-n.com','us01vlbtiqed02.auto.saas-n.com','us01vlbtiqed03.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
@@ -28,6 +26,7 @@ locals {
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "iqpgcs"
     "bt_pg_version"           = "12"
+
   }
 }
 
@@ -80,7 +79,6 @@ module "ny2_btiq_hapg_2" {
   cpus                 = "2"
   memory               = "2048"
   external_facts       = local.facts
-
   additional_disks     = {
     1 = "100",
     2 = "200",
