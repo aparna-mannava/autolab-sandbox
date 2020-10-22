@@ -296,7 +296,7 @@ projects:
   dir: saumilp/test2
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
-- name: cfrmiso
+- name: cfrmiso-elastic
   dir: cfrmiso/elastic
 - name: cfrmiso-oradb
   dir: cfrmiso/oradb/autolab
