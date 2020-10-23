@@ -266,3 +266,5 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: genady-nginx
   dir: cfrmrd/nginx
+- name: dnani-newsqlserver
+  dir: dnani/newsqlserver
