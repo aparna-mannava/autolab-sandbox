@@ -49,7 +49,7 @@ output "us01vwndag01" {
   value = <<INFO
 {
 ||function||hostname||host alias||IP||
-|db etz server|${module.us01vwag0_1.fqdn}|${module.us01vwag0_1.alias[0]}|${module.us01vwag0_1.ip}|
+|db etz server|${module.us01vwndag01.fqdn}|${module.us01vwndag01.alias[0]}|${module.us01vwndag01.ip}|
 }
 INFO
 }
