@@ -12,12 +12,16 @@ locals {
   bt_infra_network       = "ny2-inf-nonprod-services"
   cpus                   = "4"
   memory                 = "16384"
-  db1_hostname           = "us01vwndag01"
+  db1_hostname           = "us01vwndagtest01"
   db1_alias              = "bfs-dev-ndagdb01"
   db1_bt_infra_network   = "ny2-autolab-db-ahv"
   db1_bt_infra_cluster   = "ny2-aza-ntnx-13"
-  db1_foreman_hostgroup  = "BT BFS MSSQL 2016 Server"
-
+  db1_foreman_hostgroup  = "MSSQL 2016 Server"
+external_facts       = {
+  "bt_product"       = "bfs"
+  "bt_tier"          = "dev"
+  "bt_bfs_timezone"  = "Eastern Standard Time"
+  }
 }
 
 module "us01vwndag01" {
@@ -30,11 +34,7 @@ module "us01vwndag01" {
   bt_infra_cluster     = "${local.db1_bt_infra_cluster}"
   foreman_environment  = "${local.environment}"
   foreman_hostgroup    = "${local.db1_foreman_hostgroup}"
-  external_facts       = {
-  "bt_product"       = "bfs"
-  "bt_tier"          = "dev"
-  "bt_bfs_timezone"  = "Eastern Standard Time"
-  }
+  
   additional_disks     = {
     1 = "200",
     2 = "100",
