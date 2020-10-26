@@ -35,6 +35,7 @@ module "jenkins" {
     memory              = local.memory
     external_facts      = local.facts
     foreman_environment = local.environment
+    additional_disks    = local.additional_disks
     foreman_hostgroup   = local.hostgroup
     datacenter          = local.datacenter
     lob                 = local.lob
