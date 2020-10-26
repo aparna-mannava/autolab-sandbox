@@ -21,7 +21,7 @@ locals {
 module "app_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd89"
-  alias                = " "
+  alias                = "cfrmrd-autolab-postgres1"
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
@@ -44,4 +44,4 @@ output "app_1" {
     "alias" = "${module.app_1.alias}",
     "ip"    = "${module.app_1.ip}",
   }
-}    
+}  
