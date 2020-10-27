@@ -270,3 +270,5 @@ projects:
   dir: dnani/newsqlserver
 - name: genady-postgres
   dir: cfrmrd/postgres
+- name: omr-db12
+  dir: saumilp/omr12
