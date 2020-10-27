@@ -274,3 +274,5 @@ projects:
   dir: saumilp/omr12
 - name: omr-db12c
   dir: saumilp/omrdb12c
+- name: agservrs
+  dir partha/sqlserver/cloud-74059
