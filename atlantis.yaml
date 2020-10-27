@@ -272,3 +272,5 @@ projects:
   dir: cfrmrd/postgres
 - name: omr-db12
   dir: saumilp/omr12
+- name: omr-db12c
+  dir: saumilp/omrdb12c
