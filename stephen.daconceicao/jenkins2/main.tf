@@ -15,7 +15,8 @@ locals {
     cpus    = "8"
     memory  = "8192"
     additional_disks = {
-        1 = "500"
+        1 = "500",
+        2 = "500"
     }
     environment = "feature_GLU_3502"
     hostgroup   = "UX Jenkins"
@@ -25,13 +26,14 @@ locals {
 
 module "jenkins" {
     source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-    hostname            = "us01vluxjen004"
-    alias               = "ux-${local.facts.bt_tier}-backup-jenkins"
+    hostname            = "us01vluxjen008"
+    alias               = "ux-${local.facts.bt_tier}-8-jenkins"
     bt_infra_cluster    = local.cluster
     bt_infra_network    = local.network
     os_version          = local.os
     cpus                = local.cpus
     memory              = local.memory
+    additional_disks    = local.additional_disks
     external_facts      = local.facts
     foreman_environment = local.environment
     foreman_hostgroup   = local.hostgroup

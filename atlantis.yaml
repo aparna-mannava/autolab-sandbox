@@ -266,5 +266,11 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: genady-nginx
   dir: cfrmrd/nginx
-- name: agservrs
-  dir: partha/sqlserver/cloud-74059
+- name: dnani-newsqlserver
+  dir: dnani/newsqlserver
+- name: genady-postgres
+  dir: cfrmrd/postgres
+- name: omr-db12
+  dir: saumilp/omr12
+- name: omr-db12c
+  dir: saumilp/omrdb12c
