@@ -290,3 +290,5 @@ projects:
   dir: smurali/server4
 - name: smurali-server3
   dir: smurali/server3
+- name: savula-AAG
+  dir: savula/AAG
