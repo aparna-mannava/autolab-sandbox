@@ -280,3 +280,5 @@ projects:
   dir: dnani/sqlmirror05
 - name: agservr2
   dir: partha/sqlserver/CLOUD-75505
+- name: smurali-server4
+  dir: smurali/server4
