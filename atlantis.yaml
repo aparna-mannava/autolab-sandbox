@@ -278,5 +278,5 @@ projects:
   dir: partha/sqlserver/cloud-74059
 - name: dnani-sqlmirror05
   dir: dnani/sqlmirror05
-- name: agservrs
+- name: agservr2
   dir: partha/sqlserver/CLOUD-75505
