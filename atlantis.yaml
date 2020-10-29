@@ -280,6 +280,12 @@ projects:
   dir: dnani/sqlmirror05
 - name: agservr2
   dir: partha/sqlserver/CLOUD-75505
+- name: jrosa-dev5-etcd
+  dir: jrosa/dev5/etcd
+- name: jrosa-dev5-hapg
+  dir: jrosa/dev5/hapg
+- name: jrosa-dev5-backrest
+  dir: jrosa/dev5/backrest
 - name: smurali-server4
   dir: smurali/server4
 - name: smurali-server3
