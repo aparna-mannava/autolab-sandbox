@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product        = "inf"
-  environment    = "feature_CLOUD_75118"
+  environment    = "master"
   datacenter     = "ny2"
   hostname       = "us01vwagdev02"
   hostgroup      = "BT MSSQL 2016 Server"
