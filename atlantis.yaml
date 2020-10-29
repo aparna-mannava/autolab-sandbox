@@ -282,3 +282,5 @@ projects:
   dir: partha/sqlserver/CLOUD-75505
 - name: smurali-server4
   dir: smurali/server4
+- name: smurali-server3
+  dir: smurali/server3
