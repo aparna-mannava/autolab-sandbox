@@ -21,7 +21,7 @@ module "inf_windns_m22" {
   hostname             = "${local.hostname}"
   alias                = ""
   bt_infra_cluster     = "ny2-aza-ntnx-13"
-  bt_infra_network     = "ny2-autolab-db-ahv"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "inf"
   os_version           = "win2016"
   cpus                 = "2"
