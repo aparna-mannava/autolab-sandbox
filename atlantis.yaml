@@ -286,3 +286,7 @@ projects:
   dir: jrosa/dev5/hapg
 - name: jrosa-dev5-backrest
   dir: jrosa/dev5/backrest
+- name: smurali-server4
+  dir: smurali/server4
+- name: smurali-server3
+  dir: smurali/server3
