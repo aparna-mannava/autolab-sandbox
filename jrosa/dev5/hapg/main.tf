@@ -142,3 +142,4 @@ output "ny2_autolab_haproxy_1" {
     "ip"    = "${module.ny2_autolab_haproxy_1.ip}",
   }
 }
+

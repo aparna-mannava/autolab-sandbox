@@ -58,3 +58,4 @@ output "ny2_autolab_backrest_1" {
     "ip"    = "${module.ny2_autolab_backrest_1.ip}",
   }
 }
+
