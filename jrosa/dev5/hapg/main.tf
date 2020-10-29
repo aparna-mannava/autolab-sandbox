@@ -16,7 +16,7 @@ locals {
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "nonprod"
   cluster         = "ny2-azd-ntnx-10"
-  network         = "ny2-autolab-db-ahv"
+  network         = "ny2-autolab-app-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
     "bt_tier"                 = "${local.tier}"
