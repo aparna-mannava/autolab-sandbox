@@ -292,3 +292,5 @@ projects:
   dir: smurali/server3
 - name: savula-AAG
   dir: savula/AAG
+- name: rkumar-MSSQL001
+  dir: rkumar/MSSQL001
