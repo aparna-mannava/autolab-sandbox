@@ -296,3 +296,5 @@ projects:
   dir: rkumar/MSSQL001
 - name: dnani-ag01new
   dir: dnani/ag01new
+- name: suresh-test5
+  dir: skola/test5
