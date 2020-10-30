@@ -1,11 +1,10 @@
-#
-# Building VMs for Testing
 terraform {
   backend "http" {}
 }
+
 module "app_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlsndbxvm01"
+  hostname             = "us01vlapp0051"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
@@ -17,8 +16,7 @@ module "app_server_1" {
     1 = "20"
   }
   external_facts       = {
-    "bt_product"       = "btiq"
-    "bt_tier"          = "dev"
+    "bt_tier" = "dev"
   }
 }
 
