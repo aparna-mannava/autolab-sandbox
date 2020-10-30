@@ -1,12 +1,11 @@
 terraform {
   backend "http" {}
 }
-
 locals {
   product        = "inf"
-  environment    = "master"
+  environment    = "feature_CLOUD_75118"
   datacenter     = "ny2"
-  hostname       = "us01vwbfsdevag1"
+  hostname       = "us01vwagnd001"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_product"      = "bfs"
@@ -14,17 +13,15 @@ locals {
     "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
-
-
-module "inf_windns_ag1" {
+module "inf_windns_nd1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
   bt_infra_cluster     = "ny2-aza-ntnx-13"
-  bt_infra_network     = "ny2-autolab-db-ahv"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "inf"
   os_version           = "win2016"
-  cpus                 = "4"
+  cpus                 = "2"
   memory               = "4096"
   external_facts       = "${local.facts}"
   foreman_environment  = "${local.environment}"
@@ -34,16 +31,15 @@ module "inf_windns_ag1" {
     1 = "200",
     2 = "100",
     3 = "100",
-    4 = "100",
-    5 = "100",
-    6 = "150"
+    4 = "50",
+    5 = "50",
+    6 = "50"
   }
 }
-
-output "inf_windns_ag1" {
+output "inf_windns_nd1" {
   value = {
-    "fqdn"  = "${module.inf_windns_ag1.fqdn}",
-    "alias" = "${module.inf_windns_ag1.alias}",
-    "ip"    = "${module.inf_windns_ag1.ip}",
+    "fqdn"  = "${module.inf_windns_nd1.fqdn}",
+    "alias" = "${module.inf_windns_nd1.alias}",
+    "ip"    = "${module.inf_windns_nd1.ip}",
   }
 }

@@ -294,3 +294,5 @@ projects:
   dir: savula/AAG
 - name: rkumar-MSSQL001
   dir: rkumar/MSSQL001
+- name: dnani-ag01new
+  dir: dnani/ag01new
