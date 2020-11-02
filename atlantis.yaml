@@ -300,3 +300,5 @@ projects:
   dir: skola/test5
 - name: suresh-test6
   dir: skola/test6
+- name: sre_gitlab_runner
+  dir: sre/gitlab_runner
