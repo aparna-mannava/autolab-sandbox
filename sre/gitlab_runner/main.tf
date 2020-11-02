@@ -5,9 +5,9 @@ terraform {
   backend "http" {}
 }
 
-module "us01vwglr001" {
+module "us01vwsretest001" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vwglr001"
+  hostname             = "us01vwsretest001"
   bt_infra_network     = "ny2-autolab-svc"
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   os_version           = "win2016"
@@ -27,10 +27,10 @@ module "us01vwglr001" {
   }
 }
 
-output "us01vlcncrs0004" {
+output "us01vwsretest001" {
   value = {
-    "fqdn"  = "${module.us01vlcncrs0004.fqdn}",
-    "alias" = "${module.us01vlcncrs0004.alias}",
-    "ip"    = "${module.us01vlcncrs0004.ip}",
+    "fqdn"  = "${module.us01vwsretest001.fqdn}",
+    "alias" = "${module.us01vwsretest001.alias}",
+    "ip"    = "${module.us01vwsretest001.ip}",
   }
 }
