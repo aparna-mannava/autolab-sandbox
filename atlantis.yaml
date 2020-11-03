@@ -2,3 +2,5 @@
 version: 3
 automerge: true
 projects:
+- name: genady-nginx
+  dir: cfrmrd/nginx
