@@ -7,3 +7,6 @@ projects:
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
+- name: cdrew-testdb
+  dir: cdrew/btiq
+  workflow: nutanix-backend
