@@ -9,7 +9,7 @@ locals {
         "bt_product" = "ux"
         "bt_role" = "jenkins"
     }
-    cluster = "ny2-aza-ntnx-05"
+    cluster = "ny2-aza-ntnx-13"
     network = "ny2-autolab-app-ahv"
     os      = "rhel8"
     cpus    = "8"
