@@ -10,3 +10,6 @@ projects:
 - name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
+- name: jdustin/oktawindows
+  dir: jdustin/oktawindows
+  workflow: nutanix-backend
