@@ -17,7 +17,7 @@ locals {
     additional_disks = {
         1 = "50"
     }
-    environment = "Master"
+    environment = "master"
     hostgroup   = "BT Base Windows Server"
     datacenter  = "ny2"
     lob         = "CLOUD"
