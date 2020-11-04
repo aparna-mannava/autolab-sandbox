@@ -19,6 +19,7 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "staging"
       "bt_ic_mode" = "FRONTEND"
      }
      ap2facts    = {
@@ -26,6 +27,7 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "staging"
       "bt_ic_mode" = "FRONTEND"
      }
      ap3facts    = {
@@ -33,6 +35,7 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "staging"
       "bt_ic_mode" = "BACKEND"
      }
 } 
