@@ -19,6 +19,7 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "staging"
       "bt_ic_mode" = "FRONTEND"
      }
      ap2facts    = {
@@ -26,6 +27,7 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "staging"
       "bt_ic_mode" = "FRONTEND"
      }
      ap3facts    = {
@@ -33,6 +35,7 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "staging"
       "bt_ic_mode" = "BACKEND"
      }
 } 
@@ -67,7 +70,7 @@ module "app_1" {
   external_facts       = local.ap2facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_3463_nginx"
-  foreman_hostgroup    = "CFRMRD NGINX"
+  foreman_hostgroup    = "CFRMRD Application"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -87,7 +90,7 @@ module "app_2" {
   external_facts       = local.ap3facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_3463_nginx"
-  foreman_hostgroup    = "CFRMRD NGINX"
+  foreman_hostgroup    = "CFRMRD Application"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
@@ -107,7 +110,7 @@ module "app_3" {
   external_facts       = local.vm01facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_3463_nginx"
-  foreman_hostgroup    = "CFRMRD NGINX"
+  foreman_hostgroup    = "CFRMRD Application"
   datacenter           = "ny2"
   cpus                 = "4"
   memory         	   = "8192"
