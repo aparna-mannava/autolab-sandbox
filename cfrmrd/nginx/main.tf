@@ -38,6 +38,12 @@ locals {
       "bt_env" = "staging"
       "bt_ic_mode" = "BACKEND"
      }
+     ap4facts    = {
+      "bt_role" = "postgresql"
+      "bt_customer" = "${local.facts.bt_customer}"
+      "bt_product" = "${local.facts.bt_product}"
+      "bt_tier" = "${local.facts.bt_tier}"
+     }
 } 
 
 module "nginx_1" {
@@ -120,6 +126,26 @@ module "app_3" {
   }
 }
 
+module "app_4" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlcfrmrd954"
+  alias                = "cfrmrd-autolab-db1"
+  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  os_version           = "rhel7"
+  external_facts       = local.ap4facts
+  lob                  = "CFRM"
+  foreman_environment  = "feature_CFRMX_3463_nginx"
+  foreman_hostgroup    = "CFRMRD Postgres"
+  datacenter           = "ny2"
+  cpus                 = "4"
+  memory         	   = "8192"
+  additional_disks     = {
+    1 = "50", // Disk 1
+    2 = "100" //Disk 2
+  }
+}
+
 output "nginx_1" {
   value = {
     "fqdn"  = "${module.nginx_1.fqdn}",
@@ -149,5 +175,13 @@ output "app_3" {
     "fqdn"  = "${module.app_3.fqdn}",
     "alias" = "${module.app_3.alias}",
     "ip"    = "${module.app_3.ip}",
+  }
+}
+
+output "app_4" {
+  value = {
+    "fqdn"  = "${module.app_4.fqdn}",
+    "alias" = "${module.app_4.alias}",
+    "ip"    = "${module.app_4.ip}",
   }
 }
