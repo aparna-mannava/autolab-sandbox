@@ -67,7 +67,7 @@ module "app_1" {
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  external_facts       = local.ap2facts
+  external_facts       = local.ap1facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_3463_nginx"
   foreman_hostgroup    = "CFRMRD Application"
@@ -87,7 +87,7 @@ module "app_2" {
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  external_facts       = local.ap3facts
+  external_facts       = local.ap2facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_3463_nginx"
   foreman_hostgroup    = "CFRMRD Application"
@@ -107,7 +107,7 @@ module "app_3" {
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  external_facts       = local.vm01facts
+  external_facts       = local.ap3facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_3463_nginx"
   foreman_hostgroup    = "CFRMRD Application"
