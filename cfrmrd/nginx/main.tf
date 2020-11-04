@@ -59,7 +59,7 @@ module "nginx_1" {
     2 = "100" //Disk 2
   }
 } 
-
+ 
 module "app_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd951"
