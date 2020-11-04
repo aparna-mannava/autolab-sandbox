@@ -23,6 +23,7 @@ module "jenkins-master" {
   alias                = "fmcloud-jenkins-e2e"
   bt_infra_network     = local.network
   bt_infra_cluster     = local.cluster
+  lob                  = local.facts.bt_product
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
