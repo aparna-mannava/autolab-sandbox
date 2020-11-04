@@ -17,7 +17,7 @@ module "inf_windns_nd1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
-  bt_infra_cluster     = "ny2-aze-ntnx-11"
+  bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "inf"
   os_version           = "win2016"
