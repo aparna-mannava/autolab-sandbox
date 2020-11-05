@@ -13,3 +13,8 @@ projects:
 - name: jdustin/oktawindows
   dir: jdustin/oktawindows
   workflow: nutanix-backend
+- name: fcirilli-jenkins-e2e-dev
+  dir: fcirilli/jenkins/e2e/dev
+  workflow: nutanix-backend
+- name: dnani-sql001
+  dir: dnani/sql001
