@@ -11,9 +11,9 @@ locals {
   network      = "ny2-autolab-app-ahv"
   cluster        = "ny2-aza-ntnx-13"
   facts          = {
-    "bt_tier"          = "auto"
+    "bt_tier"          = "dev"
     "bt_env"           = "03"
-    "bt_product"       = "shared"
+    "bt_product"       = "fmcloud"
   }
 }
 
