@@ -18,7 +18,7 @@ locals {
         1 = "500",
         2 = "500"
     }
-    environment = "feature_GLU_3333_glu_nexus"
+    environment = "feature_GLU_3333"
     hostgroup   = "UX Nexus"
     datacenter  = "ny2"
     lob         = "CLOUD"
