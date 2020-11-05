@@ -20,6 +20,13 @@ locals {
       "bt_tier" = "${local.facts.bt_tier}"
       "bt_env" = "autolab"
      }
+     
+    es03facts    = {
+      "bt_customer" = "${local.facts.bt_customer}"
+      "bt_product" = "${local.facts.bt_product}"
+      "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "autolab"
+     }
 } 
 
 module "elasticsearch_1" {
@@ -62,6 +69,26 @@ module "elasticsearch_2" {
   }
 }
 
+module "elasticsearch_3" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlcfrmrdes3"
+  alias                = "cfrmrd-autolab-es3"
+  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  os_version           = "rhel7"
+  external_facts       = local.es03facts
+  lob                  = "CFRM"
+  foreman_environment  = "feature_CFRMX_3463_nginx"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
+  datacenter           = "ny2"
+  cpus                 = "2"
+  memory         	   = "4096"
+  additional_disks     = {
+    1 = "100",
+    2 = "100"
+  }
+}
+
 output "elasticsearch_1" {
   value = {
     "fqdn"  = "${module.elasticsearch_1.fqdn}",
@@ -75,5 +102,13 @@ output "elasticsearch_2" {
     "fqdn"  = "${module.elasticsearch_2.fqdn}",
     "alias" = "${module.elasticsearch_2.alias}",
     "ip"    = "${module.elasticsearch_2.ip}",
+  }
+}
+
+output "elasticsearch_3" {
+  value = {
+    "fqdn"  = "${module.elasticsearch_3.fqdn}",
+    "alias" = "${module.elasticsearch_3.alias}",
+    "ip"    = "${module.elasticsearch_3.ip}",
   }
 }
