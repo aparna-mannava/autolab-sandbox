@@ -11,12 +11,11 @@ locals {
   network      = "ny2-autolab-app-ahv"
   cluster        = "ny2-aza-ntnx-13"
   facts          = {
-    "bt_tier"          = "dev"
+    "bt_tier"          = "auto"
     "bt_env"           = "03"
     "bt_product"       = "fmcloud"
   }
 }
-
 
 module "jenkins-master" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
