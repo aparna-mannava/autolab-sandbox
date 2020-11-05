@@ -13,17 +13,17 @@ locals {
   facts          = {
     "bt_tier"          = "dev"
     "bt_env"           = "03"
-    "bt_product"       = "fmcloud"
+    "bt_product"       = "shared"
   }
 }
 
 module "jenkins-master" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vljnkns001"
+  hostname             = "us01vlfmjnkns001"
   alias                = "fmcloud-jenkins-e2e"
   bt_infra_network     = local.network
   bt_infra_cluster     = local.cluster
-  lob                  = local.facts.bt_product
+  lob                  = "fmcloud"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
@@ -37,7 +37,7 @@ module "jenkins-master" {
   }
 }
 
-output "jenkins-master" {
+output "jenkins-e2e" {
   value = {
     "fqdn"  = "${module.jenkins-master.fqdn}",
     "alias" = "${module.jenkins-master.alias}",
