@@ -7,17 +7,20 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product"  = "cfrmrd"
       "bt_tier"     = "dev"
+      "bt_role"     = "elasticsearch"
     }
     es01facts    = {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_role" = "${local.facts.bt_role}"
       "bt_env" = "autolab"
      }
     es02facts    = {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_role" = "${local.facts.bt_role}"
       "bt_env" = "autolab"
      }
      
@@ -25,6 +28,7 @@ locals {
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_role" = "${local.facts.bt_role}"
       "bt_env" = "autolab"
      }
 } 
