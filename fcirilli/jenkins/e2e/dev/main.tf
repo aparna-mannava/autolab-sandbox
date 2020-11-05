@@ -18,7 +18,6 @@ locals {
 }
 
 
-
 module "jenkins-master" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlfmjnkns01"
