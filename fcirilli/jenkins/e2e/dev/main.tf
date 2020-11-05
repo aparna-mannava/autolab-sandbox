@@ -13,7 +13,7 @@ locals {
   facts          = {
     "bt_tier"          = "dev"
     "bt_env"           = "03"
-    "bt_product"       = "shared"
+    "bt_product"       = "fmcloud"
   }
 }
 
