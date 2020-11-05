@@ -184,4 +184,4 @@ output "app_4" {
     "alias" = "${module.app_4.alias}",
     "ip"    = "${module.app_4.ip}",
   }
-}
+} 
