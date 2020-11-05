@@ -21,6 +21,7 @@ module "us01vwsretest001" {
     "bt_tier"          = "autolab"
     "bt_product"       = "sre"
     "bt_role"          = "gitlab_runner"
+    "bt_lob"           = "cloud"
   }
   additional_disks     = {
     1 = "20",
