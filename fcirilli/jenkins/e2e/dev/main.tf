@@ -18,7 +18,7 @@ locals {
 }
 
 
-module "jenkins-e2e" {
+module "jenkins-master" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlfmjnkns01"
   alias                = "fmcloud-jenkins-e2e"
