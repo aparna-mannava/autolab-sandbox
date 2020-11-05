@@ -17,13 +17,14 @@ locals {
   }
 }
 
+
 module "jenkins-master" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlfmjnkns001"
+  hostname             = "us01vlfmjnkns01"
   alias                = "fmcloud-jenkins-e2e"
   bt_infra_network     = local.network
   bt_infra_cluster     = local.cluster
-  lob                  = "fmcloud"
+  lob                  = "FMCLOUD"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
