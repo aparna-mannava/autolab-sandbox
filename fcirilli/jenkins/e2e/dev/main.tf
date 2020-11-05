@@ -13,9 +13,10 @@ locals {
   facts          = {
     "bt_tier"          = "auto"
     "bt_env"           = "03"
-    "bt_product"       = "fmcloud"
+    "bt_product"       = "shared"
   }
 }
+
 
 module "jenkins-master" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
