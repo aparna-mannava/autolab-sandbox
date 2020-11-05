@@ -20,3 +20,5 @@ projects:
   workflow: nutanix-backend
 - name: dnani-sql001
   dir: dnani/sql001
+- name: sre_gitlab_runner
+  dir: sre/gitlab_runner
