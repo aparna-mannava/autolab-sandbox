@@ -3,6 +3,7 @@ terraform {
   backend "s3" {}
 }
 
+
 locals {
   lob                  = "LSM"
   product              = "lsm"
@@ -10,7 +11,7 @@ locals {
   hostgroup            = "BT Base Server"
   environment          = "master"
   datacenter           = "ny2"
-  cluster              = "ny2-aze-ntnx-11"
+  cluster              = "ny2-aza-ntnx-13"
   network              = "ny2-autolab-app-ahv"
   cpu                  = "2"
   memory               = "8192"
@@ -18,9 +19,6 @@ locals {
   disks                = {
     1                  = "200"
     2                  = "100"
-    3                  = "300"
-    4                  = "300"
-    5                  = "300"
   }
 
   facts                = {
