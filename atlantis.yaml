@@ -26,3 +26,5 @@ projects:
 - name: lsm
   dir: lsm
   workflow: nutanix-backend
+- name: sre_win_gitlab_runner
+  dir: sre/gitlab_runner
