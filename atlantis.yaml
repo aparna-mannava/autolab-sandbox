@@ -23,3 +23,6 @@ projects:
   workflow: nutanix-backend
 - name: dnani-sql001
   dir: dnani/sql001
+- name: lsm
+  dir: lsm
+  workflow: nutanix-backend
