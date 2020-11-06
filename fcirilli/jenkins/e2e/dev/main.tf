@@ -6,7 +6,8 @@ terraform {
 }
 
 locals {
-  environment    = "feature_FMDO_1927_saas_n_puppet_profile_for_jenkins"
+  #environment    = "feature_FMDO_1927_saas_n_puppet_profile_for_jenkins"
+  environment    = "master"
   datacenter     = "ny2"
   network      = "ny2-autolab-app-ahv"
   cluster        = "ny2-aza-ntnx-13"
