@@ -11,7 +11,7 @@ locals {
   hostgroup            = "BT Base Server"
   environment          = "master"
   datacenter           = "ny2"
-  cluster              = "ny2-aze-ntnx-11"
+  cluster              = "ny2-aza-ntnx-13"
   network              = "ny2-autolab-app-ahv"
   cpu                  = "2"
   memory               = "8192"
