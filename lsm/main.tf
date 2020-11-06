@@ -1,6 +1,6 @@
 
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
 
 locals {
