@@ -3,6 +3,7 @@ terraform {
   backend "s3" {}
 }
 
+
 locals {
   lob                  = "LSM"
   product              = "lsm"
