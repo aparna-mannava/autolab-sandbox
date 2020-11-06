@@ -9,6 +9,9 @@ projects:
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
+- name: stephendnexus
+  dir: stephen.daconceicao/nexus
+  workflow: nutanix-backend
 - name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
@@ -20,5 +23,8 @@ projects:
   workflow: nutanix-backend
 - name: dnani-sql001
   dir: dnani/sql001
-- name: sre_gitlab_runner
+- name: lsm
+  dir: lsm
+  workflow: nutanix-backend
+- name: sre_win_gitlab_runner
   dir: sre/gitlab_runner

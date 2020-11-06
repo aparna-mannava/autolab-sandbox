@@ -5,15 +5,16 @@ terraform {
   backend "s3" {}
 }
 
+
 locals {
-  environment    = "master"
+  environment    = "feature_FMDO_1927_saas_n_puppet_profile_for_jenkins"
   datacenter     = "ny2"
   network      = "ny2-autolab-app-ahv"
   cluster        = "ny2-aza-ntnx-13"
   facts          = {
-    "bt_tier"          = "auto"
+    "bt_tier"          = "dev"
     "bt_env"           = "03"
-    "bt_product"       = "shared"
+    "bt_product"       = "fmcloud"
   }
 }
 

@@ -29,11 +29,11 @@ module "inf_windns_nd1" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "100",
-    3 = "100",
-    4 = "50",
-    5 = "50",
-    6 = "50"
+    2 = "200",
+    3 = "200",
+    4 = "155",
+    5 = "155",
+    6 = "75"
   }
 }
 output "inf_windns_nd1" {
