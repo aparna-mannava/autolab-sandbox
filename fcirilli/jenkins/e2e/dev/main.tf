@@ -14,6 +14,7 @@ locals {
     "bt_tier"          = "dev"
     "bt_env"           = "03"
     "bt_product"       = "fmcloud"
+    "bt_role"          = "jenkins_e2e"
   }
 }
 
