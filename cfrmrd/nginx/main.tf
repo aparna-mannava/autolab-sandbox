@@ -23,7 +23,7 @@ module "nginx_1" {
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  external_facts       = local.ap1facts
+  external_facts       = local.vm01facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_3463_nginx"
   foreman_hostgroup    = "CFRMRD NGINX"
