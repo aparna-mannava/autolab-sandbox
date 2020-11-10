@@ -11,7 +11,7 @@ locals {
   hostgroup   = "BT Base Server"
   environment = "master"
   cluster     = "ny2-aza-ntnx-13"
-  network     = "gb03-saas-n-fml-app"
+  network     = "ny2-autolab-app-ahv"
   facts = {
     "bt_product" = "inf"
   }
