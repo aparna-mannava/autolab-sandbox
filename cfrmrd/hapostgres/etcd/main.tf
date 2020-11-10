@@ -1,7 +1,7 @@
 terraform {
   backend "http" {}
 } 
-
+ 
 locals {
   etcd_servers    = ["us01vlcfrmrd601","us01vlcfrmrd602","us01vlcfrmrd603"]
   etcd_hosts_p    = ["'us01vlcfrmrd601.auto.saas-n.com','us01vlcfrmrd602.auto.saas-n.com','us01vlcfrmrd603.auto.saas-n.com'"]
@@ -10,7 +10,7 @@ locals {
   bt_product      = "cfrmrd"
   lob             = "CFRM"
   hostgroup       = "CFRMRD ETCD for PostgreSQL Server"
-  environment     = "feature_CFRMX_3466_HA_Postgres"
+  environment     = "master"
   cluster         = "ny2-aza-ntnx-13"
   network         = "ny2-autolab-app-ahv"
   facts           = {

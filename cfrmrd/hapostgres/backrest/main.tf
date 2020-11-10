@@ -13,7 +13,7 @@ locals {
   bt_product      = "cfrmrd"
   lob             = "CFRM"
   hostgroup       = "CFRMRD PG Backrest Server"
-  environment     = "feature_CFRMX_3466_HA_Postgres"
+  environment     = "master"
   cluster         = "ny2-aza-ntnx-13"
   network         = "ny2-autolab-app-ahv"
   facts           = {
