@@ -7,12 +7,14 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product"  = "cfrmrd"
       "bt_tier"     = "dev"
+      "bt_env" = "autolab"
     }
     vm01facts    = {
       "bt_role" = "nginx"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_env" = "${local.facts.bt_env}"
      }
 } 
 
