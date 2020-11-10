@@ -22,7 +22,7 @@ projects:
   dir: fcirilli/jenkins/e2e/dev
   workflow: nutanix-backend
 - name: fcirilli-nexus
-  dir: fcirilli/nexus/
+  dir: fcirilli/nexus
   workflow: nutanix-backend
 - name: dnani-sql001
   dir: dnani/sql001
