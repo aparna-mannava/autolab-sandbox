@@ -1,6 +1,6 @@
 terraform {
   backend "http" {}
-}
+} 
 
 locals {
   etcd_servers    = ["us01vlcfrmrd601","us01vlcfrmrd602","us01vlcfrmrd603"]
