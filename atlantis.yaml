@@ -28,3 +28,9 @@ projects:
   workflow: nutanix-backend
 - name: sre_win_gitlab_runner
   dir: sre/gitlab_runner
+- name: hapostgres-etcd
+  dir: cfrmrd/hapostgres/etcd
+- name: hapostgres-hapg
+  dir: cfrmrd/hapostgres/hapg
+- name: hapostgres-backrest
+  dir: cfrmrd/hapostgres/backrest
