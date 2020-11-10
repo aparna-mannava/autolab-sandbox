@@ -6,7 +6,7 @@ terraform {
 }
 
 locals {
-  environment    = "feature_FMDO_1927_saas_n_puppet_profile_for_jenkins"
+  environment    = "feature_FMDO_1928_saas_n_puppet_profile_for_nexus"
   datacenter     = "ny2"
   datastore      = "ny2-dgb-development"
   cluster        = "ny2-aza-ntnx-13"
