@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob           = "dgb"
+  lob           = "inf"
   environment    = "master"
   datacenter    = "ny2"
   domain        = "auto.saas-n.com"
@@ -28,6 +28,7 @@ module "db_server_1" {
   os_version           = "win2016"
   alias                = local.db1_alias
   datacenter           = local.datacenter
+  lob                  = local.lob
   bt_infra_network     = local.db1_bt_infra_network
   bt_infra_cluster     = local.db1_bt_infra_cluster
   foreman_environment  = local.environment
