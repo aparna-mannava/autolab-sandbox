@@ -1,8 +1,8 @@
 #
 # Build a concourse orchestration server in the autolab
 #
-# APPLY
-#
+# DESTROY
+
 terraform {
   backend "s3" {}
 }
