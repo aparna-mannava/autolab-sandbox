@@ -41,4 +41,4 @@ projects:
   dir: guy.newbury/test/networkperms
   workflow: nutanix-backend
 - name: savula-goa
-  dir: savula/goa
+  dir: savula/GOA
