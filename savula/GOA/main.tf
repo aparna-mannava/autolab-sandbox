@@ -18,7 +18,7 @@ locals {
   db1_hostname          = "us01vwdbsa1" #ex: us01vwdbXXX
   db1_alias             = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-db-001"
   db1_bt_infra_network  = "ny2-autolab-db-ahv"
-  db1_bt_infra_cluster  = "ny2-aze-ntnx-11"
+  db1_bt_infra_cluster  = "ny2-aza-ntnx-13"
   db1_foreman_hostgroup = "BT Base Windows Server"
 
 }
