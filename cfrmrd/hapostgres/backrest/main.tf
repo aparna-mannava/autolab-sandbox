@@ -25,6 +25,7 @@ locals {
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "cfrmrd_cluster"
+    "bt_pg_version"           = "12"
   }
 }
 
@@ -55,3 +56,4 @@ output "cfrmrd_autolab_backrest_1" {
     "ip"    = "${module.cfrmrd_autolab_backrest_1.ip}",
   }
 }
+ 
