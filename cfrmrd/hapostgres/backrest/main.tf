@@ -56,3 +56,4 @@ output "cfrmrd_autolab_backrest_1" {
     "ip"    = "${module.cfrmrd_autolab_backrest_1.ip}",
   }
 }
+ 
