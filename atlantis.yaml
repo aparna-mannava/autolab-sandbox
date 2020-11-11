@@ -37,3 +37,8 @@ projects:
   dir: cfrmrd/hapostgres/hapg
 - name: hapostgres-backrest
   dir: cfrmrd/hapostgres/backrest
+- name: guynewbury-test-networkperms
+  dir: guy.newbury/test/networkperms
+  workflow: nutanix-backend
+- name: savula-goa
+  dir: savula/GOA
