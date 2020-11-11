@@ -1,6 +1,8 @@
 #
 # Build a concourse orchestration server in the autolab
 #
+# APPLY
+#
 terraform {
   backend "s3" {}
 }
