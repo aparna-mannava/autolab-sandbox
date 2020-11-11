@@ -30,7 +30,7 @@ module "db_server_1" {
   datacenter           = local.datacenter
   bt_infra_network     = local.db1_bt_infra_network
   bt_infra_cluster     = local.db1_bt_infra_cluster
-  foreman_environment  = local.puppet_env
+  foreman_environment  = local.environment
   foreman_hostgroup    = local.db1_foreman_hostgroup
   external_facts       = local.facts
   cpus                 = "4"
@@ -51,7 +51,6 @@ output "server_info" {
   value = <<INFO
 
 ||function||hostname||host alias||IP||
-|goa server 4|${module.goa_server_4.fqdn}|${module.goa_server_4.alias[0]}|${module.goa_server_4.ip}|
 |db server 1|${module.db_server_1.fqdn}|${module.db_server_1.alias[0]}|${module.db_server_1.ip}|
   INFO
 }
