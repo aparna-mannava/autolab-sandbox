@@ -264,3 +264,5 @@ projects:
   dir: cfrmiso/elastic
 - name: cfrmiso-oradb-autolab
   dir: cfrmiso/oradb/autolab
+- name: cfrmiso-mgmt-autolab
+  dir: cfrmiso/mgmt/autolab
