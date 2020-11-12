@@ -28,7 +28,7 @@ module "cfmn001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.cfmn001.hostname}"
   alias               = "${local.product}-${local.datacenter.id}-${local.cfmn001.silo}-${local.facts.bt_role}-${local.cfmn001.hostname}"
-  bt_infra_cluster    = "ny2-aza-ntnx-05"
+  bt_infra_cluster    = "ny2-aza-ntnx-13"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "win2019"
   cpus                = "2"
