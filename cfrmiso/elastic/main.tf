@@ -5,48 +5,51 @@ terraform {
 locals {
   product     = "cfrmiso"
   environment = "CFRMSUP_1565__automate_oracledb" #  Change to nonprod after 2020-02-11 Puppet release
-  hostname    = "us01vwcf"
-  hostgroup   = "CFRM BT ISO IL Management Server"
+  hostname    = "us01vlcf"
+  hostgroup   = "CFRM BT ISO IL Elastic Servers"
   facts = {
     "bt_tier" = "autolab"
     "bt_customer" = "saasn-fml-uk"
     "bt_product" = "cfrmiso"
-	  "bt_role" = "mgmt"
+	  "bt_role" = "elastic"
+    "bt_artemis_version" = "2.11.0"
+    "bt_es_version" = "7.8.0"
+    "bt_apacheds_version" = "2.0.0_M24"
   }
   datacenter = {
     name = "ny2"
     id   = "ny2"
   }
-  cfmn001 = {
-    hostname = "${local.hostname}mg01"
+  cfel01 = {
+    hostname = "${local.hostname}el01"
     silo     = "autolab"
   }
 }
 
-
-module "cfmn001" {
+module "cfel01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.cfmn001.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.cfmn001.silo}-${local.facts.bt_role}-${local.cfmn001.hostname}"
-  bt_infra_cluster    = "ny2-aza-ntnx-13"
+  hostname            = "${local.cfel01.hostname}"
+  alias               = "${local.product}-${local.datacenter.id}-${local.cfel01.silo}-${local.facts.bt_role}-${local.cfel01.hostname}"
+  bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
-  os_version          = "win2019"
-  cpus                = "2"
-  memory              = "4096"
+  os_version          = "rhel7"
+  cpus                = "4"
+  memory              = "16192"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-      1 = "50" //
+    1 = "50",  //  disk 1
+    2 = "200"  //  disk 2
   }
 }
 
-output "cfmn001" {
+output "cfel01" {
   value = {
-    "fqdn"  = "${module.cfmn001.fqdn}",
-    "alias" = "${module.cfmn001.alias}",
-    "ip"    = "${module.cfmn001.ip}",
+    "fqdn"  = "${module.cfel01.fqdn}",
+    "alias" = "${module.cfel01.alias}",
+    "ip"    = "${module.cfel01.ip}",
   }
 }
