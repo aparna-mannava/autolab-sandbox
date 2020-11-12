@@ -27,7 +27,7 @@ locals {
 module "cfmn001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.cfmn001.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.cfel01.silo}-${local.facts.bt_role}-${local.cfel01.hostname}"
+  alias               = "${local.product}-${local.datacenter.id}-${local.cfmn001.silo}-${local.facts.bt_role}-${local.cfmn001.hostname}"
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "win2019"
@@ -39,28 +39,9 @@ module "cfmn001" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "50"
+      1 = "50"
   }
 }
-
-# module "cfmn002" {
-#   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-#   hostname            = "${local.cfmn002.hostname}"
-#   alias               = "${local.product}-${local.datacenter.id}-${local.cfmn002.silo}-${local.facts.bt_role}-${local.cfmn002.hostname}"
-#   bt_infra_cluster    = "ny2-aza-ntnx-05"
-#   bt_infra_network    = "ny2-autolab-app-ahv"
-#   os_version          = "win2019"
-#   cpus                = "4"
-#   memory              = "8096"
-#   lob                 = "cfrm"
-#   external_facts      = "${local.facts}"
-#   foreman_environment = "${local.environment}"
-#   foreman_hostgroup   = "${local.hostgroup}"
-#   datacenter          = "${local.datacenter.name}"
-#   additional_disks     = {
-#     1 = "50"
-#   }
-# }
 
 output "cfmn001" {
   value = {
@@ -68,12 +49,4 @@ output "cfmn001" {
     "alias" = "${module.cfmn001.alias}",
     "ip"    = "${module.cfmn001.ip}",
   }
-}
-
-# output "cfmn002" {
-#   value = {
-#     "fqdn"  = "${module.cfmn002.fqdn}",
-#     "alias" = "${module.cfmn002.alias}",
-#     "ip"    = "${module.cfmn002.ip}",
-#   }
 }
