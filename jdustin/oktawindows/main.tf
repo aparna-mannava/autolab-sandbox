@@ -6,28 +6,27 @@ locals {
     facts = {
         "bt_tier" = "dev"
         "bt_env" = "1",
-        "bt_product" = "ux"
-        "bt_role" = "jenkins"
+        "bt_product" = "cloud"
+        "bt_role" = "base"
     }
     cluster = "ny2-aza-ntnx-13"
     network = "ny2-autolab-app-ahv"
-    os      = "rhel8"
-    cpus    = "8"
+    os      = "win2019"
+    cpus    = "2"
     memory  = "8192"
     additional_disks = {
-        1 = "500",
-        2 = "500"
+        1 = "50"
     }
-    environment = "feature_GLU_3502_Docker"
-    hostgroup   = "UX Jenkins Docker"
+    environment = "master"
+    hostgroup   = "BT Base Windows Server"
     datacenter  = "ny2"
     lob         = "CLOUD"
 }
 
-module "jenkins" {
+module "us01vwoktatest1" {
     source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-    hostname            = "us01vluxjen011"
-    alias               = "jenkins-ux-docker"
+    hostname            = "us01vwoktatest1"
+    alias               = "cloud-oktatest1"
     bt_infra_cluster    = local.cluster
     bt_infra_network    = local.network
     os_version          = local.os
@@ -41,10 +40,10 @@ module "jenkins" {
     lob                 = local.lob
 }
 
-output "jenkins" {
+output "us01vwoktatest1" {
  value = {
- "fqdn" = "${module.jenkins.fqdn}",
- "alias" = "${module.jenkins.alias}",
- "ip" = "${module.jenkins.ip}",
+ "fqdn" = "${module.us01vwoktatest1.fqdn}",
+ "alias" = "${module.us01vwoktatest1.alias}",
+ "ip" = "${module.us01vwoktatest1.ip}",
  }
 }

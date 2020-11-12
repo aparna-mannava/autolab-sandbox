@@ -1,26 +1,18 @@
+---
 version: 3
 automerge: true
 projects:
-- name: aa-tf-test
-  dir: aarvelo/tf-test
+- name: genady-nginx
+  dir: cfrmrd/nginx
+- name: genady-es
+  dir: cfrmrd/es
+- name: stephendjenkins
+  dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
-- name: aarvelo-ciscat-test
-  dir: aarvelo/ciscat-test
-- name: aarvelo-fixrhel8
-  dir: aarvelo/fixrhel8
-- name: cdrew-pmxtestcluster
-  dir: cdrew/dev5/hapg
+- name: stephendnexus
+  dir: stephen.daconceicao/nexus
   workflow: nutanix-backend
-- name: cdrew-hacluster-demo-backrest
-  dir: cdrew/hacluster/backrest
-  workflow: nutanix-backend
-- name: cdrew-hacluster-demo-hapg
-  dir: cdrew/hacluster/hapg
-  workflow: nutanix-backend
-- name: cdrew-hacluster-demo-etcd
-  dir: cdrew/hacluster/etcd
-  workflow: nutanix-backend
-- name: cdrew-btiq-test
+- name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
 - name: cdrew-dev4-backrest

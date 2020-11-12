@@ -14,7 +14,7 @@ locals {
   bt_product      = "cfrmrd"
   lob             = "CFRM"
   hostgroup       = "CFRMRD HA PG Server"
-  environment     = "feature_CFRMX_3466_HA_Postgres"
+  environment     = "master"
   cluster         = "ny2-aza-ntnx-13"
   network         = "ny2-autolab-app-ahv"
   facts_hapg      = {
@@ -27,6 +27,7 @@ locals {
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "cfrmrd_cluster"
+    "bt_pg_version"           = "12"
   }
   facts_proxy      = {
     "bt_product"              = "${local.bt_product}"
@@ -38,6 +39,7 @@ locals {
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "cfrmrd_cluster"
+    "bt_pg_version"           = "12"
   }
 }
 
@@ -151,4 +153,4 @@ output "cfrmrd_autolab_haproxy_1" {
     "alias" = "${module.cfrmrd_autolab_haproxy_1.alias}",
     "ip"    = "${module.cfrmrd_autolab_haproxy_1.ip}",
   }
-}  
+}    

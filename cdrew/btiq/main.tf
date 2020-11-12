@@ -13,13 +13,13 @@ locals {
 
 module "pg-service" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlbtiqdb11" 
-  alias                = "btiq_cae_pg_auto_02" 
-  bt_infra_cluster     = "ny2-azd-ntnx-10"
+  hostname             = "us01vlpgtst11" 
+  alias                = "pgtesting01" 
+  bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  foreman_environment  = "feature_CEA_8439_fdw"
-  foreman_hostgroup    = "BT PMX PG Database Server"
+  foreman_environment  = "master"
+  foreman_hostgroup    = "BT Postgresql DB Server" 
   datacenter           = "ny2"
   lob                  = "cloud"
   cpus                 = "4"

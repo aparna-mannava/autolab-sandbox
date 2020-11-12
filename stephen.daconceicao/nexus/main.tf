@@ -7,7 +7,7 @@ locals {
         "bt_tier" = "dev"
         "bt_env" = "1",
         "bt_product" = "ux"
-        "bt_role" = "jenkins"
+        "bt_role" = "nexus"
     }
     cluster = "ny2-aza-ntnx-13"
     network = "ny2-autolab-app-ahv"
@@ -18,16 +18,16 @@ locals {
         1 = "500",
         2 = "500"
     }
-    environment = "feature_GLU_3502_Docker"
-    hostgroup   = "UX Jenkins Docker"
+    environment = "feature_GLU_3333"
+    hostgroup   = "UX Nexus"
     datacenter  = "ny2"
     lob         = "CLOUD"
 }
 
 module "jenkins" {
     source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-    hostname            = "us01vluxjen011"
-    alias               = "jenkins-ux-docker"
+    hostname            = "us01vluxnex001"
+    alias               = "nexus-ux"
     bt_infra_cluster    = local.cluster
     bt_infra_network    = local.network
     os_version          = local.os
