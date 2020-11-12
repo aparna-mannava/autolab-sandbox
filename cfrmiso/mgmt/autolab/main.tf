@@ -33,6 +33,7 @@ module "cfmn001" {
   os_version          = "win2019"
   cpus                = "2"
   memory              = "4096"
+  lob                 = "cfrm"
   external_facts      = "${local.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
