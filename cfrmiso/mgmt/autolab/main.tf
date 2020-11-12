@@ -39,7 +39,7 @@ module "cfmn001" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-      1 = "50" //
+      1 = "50"  //
   }
 }
 
