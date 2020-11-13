@@ -261,3 +261,5 @@ projects:
 - name: llabranche-ora2pg
   dir: llabranche/ora2pg
   workflow: nutanix-backend
+- name: hsp-sql2019
+  dir: partha/CLOUD-76577
