@@ -6,7 +6,7 @@ locals {
   environment    = "master"
   datacenter     = "ny2"
   hostname       = "us01vw2019"
-  hostgroup      = "BT MSSQL 2019 Server"
+  hostgroup      = "BT BFS MSSQL 2019 Server"
   facts          = {
     "bt_product"      = "bfs"
     "bt_tier"         = "dev"
