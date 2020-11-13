@@ -258,3 +258,6 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
+- name: llabranche-ora2pg
+  dir: llabranche/ora2pg
+  workflow: nutanix-backend
