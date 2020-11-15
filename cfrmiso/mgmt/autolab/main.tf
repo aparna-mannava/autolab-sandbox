@@ -54,7 +54,7 @@ module "cfmn002" {
   alias               = "${local.product}-${local.datacenter.id}-${local.cfmn002.silo}-${local.facts.bt_role}-${local.cfmn002.hostname}"
   bt_infra_cluster    = "ny2-aza-ntnx-13"
   bt_infra_network    = "ny2-autolab-app-ahv"
-  os_version          = "win2019"
+  os_version          = "rhel7"
   cpus                = "2"
   memory              = "4096"
   lob                 = "cfrm"
