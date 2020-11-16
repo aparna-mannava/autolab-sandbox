@@ -12,7 +12,7 @@ module "k8s_test1" {
   worker_memory        = 16384
   domain               = "auto.saas-n.com"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
-  bt_infra_network     = "ny2-autolab-svc"
+  bt_infra_network     = "ny2-autolab-services-ahv"
   datacenter           = "ny2"
   os_version           = "rhel8"
   foreman_environment  = "master"
@@ -23,3 +23,4 @@ module "k8s_test1" {
     "bt_env"  = "99"
   }
 }
+
