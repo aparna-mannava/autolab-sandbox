@@ -23,4 +23,3 @@ module "k8s_test1" {
     "bt_env"  = "99"
   }
 }
-
