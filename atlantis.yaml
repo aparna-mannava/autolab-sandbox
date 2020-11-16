@@ -2,6 +2,9 @@
 version: 3
 automerge: true
 projects:
+- name: cbanning-k8s-test1
+  dir: cbanning/k8s
+  workflow: nutanix-backend
 - name: genady-nginx
   dir: cfrmrd/nginx
 - name: genady-es
