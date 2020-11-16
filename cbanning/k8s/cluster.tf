@@ -11,8 +11,8 @@ module "k8s_test1" {
   worker_cpus          = 8
   worker_memory        = 16384
   domain               = "auto.saas-n.com"
-  bt_infra_cluster     = "ny2-aza-vmw-autolab"
-  bt_infra_network     = "ny2-autolab-app"
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
+  bt_infra_network     = "ny2-autolab-svc"
   datacenter           = "ny2"
   os_version           = "rhel8"
   foreman_environment  = "master"
