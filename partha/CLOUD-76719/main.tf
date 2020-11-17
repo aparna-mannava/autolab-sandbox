@@ -19,7 +19,7 @@ module "inf_windns_hsp" {
   alias                = ""
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = "inf"
+  lob                  = "INF"
   os_version           = "win2016"
   cpus                 = "2"
   memory               = "4096"
