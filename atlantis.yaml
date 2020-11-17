@@ -267,3 +267,5 @@ projects:
   dir: partha/CLOUD-76577
 - name: savula-SIMPLE
   dir: savula/SIMPLE
+- name: savula-SQL2019
+  dir: savula/SQL2019
