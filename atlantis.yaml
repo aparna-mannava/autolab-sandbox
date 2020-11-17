@@ -265,3 +265,5 @@ projects:
   workflow: nutanix-backend
 - name: hsp-sql2019
   dir: partha/CLOUD-76577
+- name: savula-SIMPLE
+  dir: savula/SIMPLE
