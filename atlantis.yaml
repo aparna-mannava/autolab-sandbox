@@ -269,3 +269,5 @@ projects:
   dir: savula/SIMPLE
 - name: savula-SQL2019
   dir: savula/SQL2019
+- name: hsp-sql20192
+  dir: partha/CLOUD-76719
