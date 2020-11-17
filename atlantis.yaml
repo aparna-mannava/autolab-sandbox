@@ -271,3 +271,5 @@ projects:
   dir: savula/SQL2019
 - name: hsp-sql20192
   dir: partha/CLOUD-76719
+- name: hsp-sql20193
+  dir: partha/CLOUD-76743
