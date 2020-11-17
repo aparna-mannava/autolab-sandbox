@@ -29,7 +29,7 @@ module "inf_windns_hsp" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "94",
+    2 = "95",
     3 = "50",
     4 = "50",
     5 = "50",
