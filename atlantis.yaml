@@ -273,3 +273,5 @@ projects:
   dir: partha/CLOUD-76719
 - name: hsp-sql20193
   dir: partha/CLOUD-76743
+- name: hsp-sql20194
+  dir: partha/CLOUD-76815
