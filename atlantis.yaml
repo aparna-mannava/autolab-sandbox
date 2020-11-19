@@ -275,3 +275,6 @@ projects:
   dir: partha/CLOUD-76743
 - name: hsp-sql20194
   dir: partha/CLOUD-76815
+- name: iq-es-cluster
+  dir: bkumar/es-cluster
+  workflow: nutanix-backend
