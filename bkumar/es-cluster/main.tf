@@ -5,7 +5,7 @@ terraform {
 locals {
   es_hostname             = ["us01vliqes01","us01vliqes02","us01vliqes03","us01vliqes04","us01vliqes05","us01vliqes06"]
   initial_master_nodes    = ["us01vliqes01-btiq-es","us01vliqes02-btiq-es","us01vliqes03-btiq-es"]
-  domain                  = "saas-n.com"
+  domain                  = "auto.saas-n.com"
   tier                    = "dev"
   datacenter              = "ny2"
   image                   = "rhel7"
@@ -13,7 +13,7 @@ locals {
   lob                     = "btiq"
   environment             = "feature_BTIQ_77_jenkins"
   hostgroup               = "BTIQ ES Cluster"
-  infra_cluster           = "us-01-vn-nutanix09"
+  infra_cluster           = "ny2-aza-ntnx-13"
   infra_network           = "ny2-autolab-db-ahv"
   master_memory           = "2048"
   master_cpu              = "2"
