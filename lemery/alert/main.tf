@@ -1,5 +1,5 @@
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
 
 locals {
@@ -8,7 +8,7 @@ locals {
   hostgroup     = "BT Base Server"
   environment   = "master"
   datacenter    = "ny2"
-  cluster       = "ny2-aza-ntnx-05"
+  cluster       = "ny2-aza-ntnx-13"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
   memory        = "2048"
@@ -36,6 +36,7 @@ module "base_server_1" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = local.disks
+  lob                  = local.lob
 }
 
 output "base_server_1" {

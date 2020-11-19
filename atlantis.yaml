@@ -52,10 +52,6 @@ projects:
   workflow: nutanix-backend
 - name: richard-test-01
   dir: richard.grainger/test_01
-- name: lemery-deferred_poc
-  dir: lemery/deferred_poc
-- name: lemery-engine
-  dir: lemery/engine
 - name: lemery-jira
   dir: lemery/jira
   workflow: nutanix-backend
