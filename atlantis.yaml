@@ -256,7 +256,7 @@ projects:
   dir: dnani/sqlmirror04
 - name: cfrmiso-elastic
   dir: cfrmiso/elastic
-- name: cfrmiso-oradb-autolab
+- name: cfrmiso-oradb
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
