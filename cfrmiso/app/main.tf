@@ -8,12 +8,14 @@ locals {
   hostname    = "gb03vlcf"
   hostgroup   = "BT FML CFRM Application Servers"
   facts = {
-    "bt_tier" = "uat"
-    "bt_customer" = "saasn-fml-uk"
-    "bt_product" = "cfrmiso"
+    "bt_tier" = "uat" # ['PPD','SBX','PROD','DR','UAT']
+    "bt_customer" = "FML" # ['FML','FMG','FMA'] for now
+    "bt_product" = "CFRM"
 	  "bt_role" = "app"
-    #"bt_artemis_version" = "2.11.0"
-    #"bt_es_version" = "7.8.0"
+    "bt_server_mode" = "STANDALONE" # ['ICFE','ICBE','STANDALONE']
+    "bt_deployment_mode" = "NONE" # ['BLUE','GREEN','NONE']
+    "bt_cfrm_version" = "6.1_SP1" # 
+    
   }
   datacenter = {
     name = "colt"

@@ -1,26 +1,20 @@
+---
 version: 3
 automerge: true
 projects:
-- name: aa-tf-test
-  dir: aarvelo/tf-test
+- name: genady-nginx
+  dir: cfrmrd/nginx
+- name: genady-es
+  dir: cfrmrd/es
+- name: genady-ic
+  dir: cfrmrd/ic
+- name: stephendjenkins
+  dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
-- name: aarvelo-ciscat-test
-  dir: aarvelo/ciscat-test
-- name: aarvelo-fixrhel8
-  dir: aarvelo/fixrhel8
-- name: cdrew-pmxtestcluster
-  dir: cdrew/dev5/hapg
+- name: stephendnexus
+  dir: stephen.daconceicao/nexus
   workflow: nutanix-backend
-- name: cdrew-hacluster-demo-backrest
-  dir: cdrew/hacluster/backrest
-  workflow: nutanix-backend
-- name: cdrew-hacluster-demo-hapg
-  dir: cdrew/hacluster/hapg
-  workflow: nutanix-backend
-- name: cdrew-hacluster-demo-etcd
-  dir: cdrew/hacluster/etcd
-  workflow: nutanix-backend
-- name: cdrew-btiq-test
+- name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
 - name: cdrew-dev4-backrest
@@ -258,6 +252,29 @@ projects:
   dir: bkumar/iqpgcluster
 - name: pgins
   dir: bkumar/pgins
+- name: dnani-sqlmirror04
+  dir: dnani/sqlmirror04
+- name: cfrmiso-elastic
+  dir: cfrmiso/elastic
+- name: cfrmiso-oradb-autolab
+  dir: cfrmiso/oradb/autolab
+- name: cfrmiso-mgmt-autolab
+  dir: cfrmiso/mgmt/autolab
+- name: llabranche-ora2pg
+  dir: llabranche/ora2pg
+  workflow: nutanix-backend
+- name: hsp-sql2019
+  dir: partha/CLOUD-76577
+- name: savula-SIMPLE
+  dir: savula/SIMPLE
+- name: savula-SQL2019
+  dir: savula/SQL2019
+- name: hsp-sql20192
+  dir: partha/CLOUD-76719
+- name: hsp-sql20193
+  dir: partha/CLOUD-76743
+- name: hsp-sql20194
+  dir: partha/CLOUD-76815
 - name: iq-es-cluster
   dir: bkumar/es-cluster
   workflow: nutanix-backend

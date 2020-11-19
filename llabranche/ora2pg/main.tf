@@ -11,10 +11,10 @@ locals {
   }
 }
 
-module "pg-service" {
+module "pgora_db_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlpgtst11" 
-  alias                = "pgtesting01" 
+  hostname             = "us01vltpgbora02" 
+  alias                = "pgoratest02" 
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
@@ -31,11 +31,11 @@ module "pg-service" {
   external_facts       = local.facts
 }
 
-output "pg-service" {
+output "pgora_db_1" {
   value = {
-    "fqdn"  = "${module.pg-service.fqdn}",
-    "alias" = "${module.pg-service.alias}",
-    "ip"    = "${module.pg-service.ip}",
+    "fqdn"  = "${module.pgora_db_1.fqdn}",
+    "alias" = "${module.pgora_db_1.alias}",
+    "ip"    = "${module.pgora_db_1.ip}",
   }
   
 }
