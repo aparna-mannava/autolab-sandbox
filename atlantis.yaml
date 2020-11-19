@@ -258,3 +258,6 @@ projects:
   dir: bkumar/iqpgcluster
 - name: pgins
   dir: bkumar/pgins
+- name: iq-es-cluster
+  dir: bkumar/es-cluster
+  workflow: nutanix-backend
