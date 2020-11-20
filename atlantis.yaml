@@ -277,3 +277,6 @@ projects:
 - name: iq-es-cluster
   dir: bkumar/es-cluster
   workflow: nutanix-backend
+- name: llabranche-pgbkptest01
+  dir: llabranche/pgbkptest01
+  workflow: nutanix-backend
