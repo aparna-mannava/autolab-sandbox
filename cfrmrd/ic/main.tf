@@ -47,7 +47,7 @@ module "app_2" {
   os_version           = "rhel7"
   external_facts       = local.vm01facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_3987_IC_configuration_3987refining"
+  foreman_environment  = "feature_CFRMX_3987_IC_configuration_3987_refining"
   foreman_hostgroup    = "CFRMRD Application SSL"
   datacenter           = "ny2"
   cpus                 = "2"
