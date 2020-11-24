@@ -15,7 +15,7 @@ locals {
   lob             = "pbscap"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "master"
-  cluster         = "ny2-azd-ntnx-13"
+  cluster         = "ny2-aza-ntnx-13"
   network         = "ny2-autolab-app-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
