@@ -67,7 +67,7 @@ module "cfmn002" {
   }
 }
 
-# output "cfmn001" {
+# output "cfmn001" { 
 #   value = {
 #     "fqdn"  = "${module.cfmn001.fqdn}",
 #     "alias" = "${module.cfmn001.alias}",
