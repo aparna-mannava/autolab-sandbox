@@ -12,7 +12,7 @@ locals {
   tier            = "dev"
   bt_env          = "5"
   bt_product      = "pbscap"
-  lob             = "pbscap"
+  lob             = "pbs"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "master"
   cluster         = "ny2-aza-ntnx-13"
