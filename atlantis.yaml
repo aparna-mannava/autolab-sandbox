@@ -17,29 +17,17 @@ projects:
 - name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
-- name: cdrew-dev4-backrest
-  dir: cdrew/dev4/backrest
-- name: cdrew-lx-keycloak
-  dir: cdrew/lx/dev8
-  workflow: nutanix-backend
-- name: cdrew-fmpg-hapg
-  dir: cdrew/fmpg/hapg
-- name: cdrew-dev4-hapg
-  dir: cdrew/dev4/hapg
-- name: cdrew-cfrmrd
-  dir: cdrew/cfrmrd
 - name: cdrew-dev3-etcd
   dir: cdrew/dev3/etcd
+  workflow: nutanix-backend
 - name: cdrew-dev3-hapg
   dir: cdrew/dev3/hapg
+  workflow: nutanix-backend
 - name: cdrew-dev3-backrest
   dir: cdrew/dev3/backrest
+  workflow: nutanix-backend
 - name: windows_firewall
   dir: aarvelo/firewall
-- name: cdrew-dev1
-  dir: cdrew/dev1
-- name: cdrew-dev2
-  dir: cdrew/dev2
 - name: erin-pgtest1
   dir: erin/pgtest1
   workflow: nutanix-backend
