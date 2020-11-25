@@ -268,3 +268,6 @@ projects:
 - name: llabranche-pgbkptest01
   dir: llabranche/pgbkptest01
   workflow: nutanix-backend
+- name: savula-NEW2019
+  dir: savula/NEW2019
+  workflow: nutanix-backend
