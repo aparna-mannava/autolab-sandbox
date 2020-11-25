@@ -271,3 +271,6 @@ projects:
 - name: savula-NEW2019
   dir: savula/NEW2019
   workflow: nutanix-backend
+- name: hsp-btiq1
+  dir: partha/CLOUD-77588
+  workflow: nutanix-backend
