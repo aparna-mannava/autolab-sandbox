@@ -55,6 +55,9 @@ projects:
 - name: lemery-alert
   dir: lemery/alert
   workflow: nutanix-backend
+- name: lemery-foreman
+  dir: lemery/foreman
+  workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
   workflow: nutanix-backend
