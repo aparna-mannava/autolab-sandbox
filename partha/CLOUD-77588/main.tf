@@ -24,7 +24,7 @@ module "btiq_db_77588" {
   alias                = ""
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = "btiq"
+  lob                  = "BTIQ"
   os_version           = "win2019"
   cpus                 = "2"
   memory               = "4096"
