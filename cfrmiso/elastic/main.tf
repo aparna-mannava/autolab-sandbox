@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMSUP_1565__automate_oracledb" #  Change to nonprod after 2020-02-11 Puppet release
+  environment = "CFRMSUP_1565__automate_oracledb" #  
   hostname    = "us01vlcf"
   hostgroup   = "CFRM BT ISO IL Elastic Servers"
   facts = {
