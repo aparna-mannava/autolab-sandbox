@@ -33,7 +33,7 @@ module "btiq_new_77591" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "100",
+    2 = "90",
     3 = "50",
     4 = "50",
     5 = "50",
