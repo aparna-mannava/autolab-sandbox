@@ -1,7 +1,6 @@
 terraform {
   backend "s3" {}
 }
-
 locals {
   product        = "btiq"
   environment    = "feature_CLOUD_77579"
@@ -17,7 +16,7 @@ locals {
   }
 }
 
-module "btiq_new_77591" {
+module "btiq_77591" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
@@ -41,10 +40,10 @@ module "btiq_new_77591" {
   }
 }
 
-output "btiq_new_77591" {
+output "btiq_77591" {
   value = {
-    "fqdn"  = "${module.btiq_new_77591.fqdn}",
-    "alias" = "${module.btiq_new_77591.alias}",
-    "ip"    = "${module.btiq_new_77591.ip}",
+    "fqdn"  = "${module.btiq_77591.fqdn}",
+    "alias" = "${module.btiq_77591.alias}",
+    "ip"    = "${module.btiq_77591.ip}",
   }
 }
