@@ -6,8 +6,7 @@ locals {
     facts       = {
       "bt_customer" = "cfrmrd"
       "bt_product"  = "cfrmrd"
-      "bt_tier"     = "dev"
-      "bt_env" = "autolab"
+      "bt_tier"     = "prod"
     }
     vm01facts    = {
       "bt_role" = "app"
