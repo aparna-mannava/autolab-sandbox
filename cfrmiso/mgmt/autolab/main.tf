@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMSUP_2164_CFRM_Linux_Mgmt" #    Change to nonprod after 2020-02-11 Puppet release
+  environment = "CFRMSUP_2164_CFRM_Linux_Mgmt" #  Change to nonprod after 2020-02-11 Puppet release
   hostname    = "us01"
   hostgroup   = "CFRM BT ISO IL Management Server"
   facts = {
