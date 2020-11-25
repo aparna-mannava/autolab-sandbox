@@ -1,4 +1,3 @@
-# blargh
 terraform {
   backend "s3" {}
 }
