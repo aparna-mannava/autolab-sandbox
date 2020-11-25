@@ -12,15 +12,14 @@ locals {
   cluster       = "ny2-aza-ntnx-13"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
-  memory        = "2048"
+  memory        = "16384"
   disks     = {
     1 = "60",
     2 = "500",
   }
   facts         = {
     "bt_product"      = "cloud"
-    "bt_role"         = "foo"
-    "bt_tier"         = "pr"
+    "bt_role"         = "foreman_server"
   }
 }
 
