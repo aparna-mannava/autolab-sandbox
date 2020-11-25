@@ -6,7 +6,7 @@ locals {
   product        = "btiq"
   environment    = "feature_CLOUD_77579"
   datacenter     = "ny2"
-  hostname       = "us01btiqwdb01"
+  hostname       = "us01btiqdb01"
   hostgroup      = "BI MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
@@ -17,7 +17,8 @@ locals {
   }
 }
 
-module "btiq_new_77591" {
+
+module "btiq_db_77588" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
@@ -33,7 +34,7 @@ module "btiq_new_77591" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "90",
+    2 = "100",
     3 = "50",
     4 = "50",
     5 = "50",
@@ -41,10 +42,10 @@ module "btiq_new_77591" {
   }
 }
 
-output "btiq_new_77591" {
+output "btiq_db_77588" {
   value = {
-    "fqdn"  = "${module.btiq_new_77591.fqdn}",
-    "alias" = "${module.btiq_new_77591.alias}",
-    "ip"    = "${module.btiq_new_77591.ip}",
+    "fqdn"  = "${module.btiq_db_77588.fqdn}",
+    "alias" = "${module.btiq_db_77588.alias}",
+    "ip"    = "${module.btiq_db_77588.ip}",
   }
 }
