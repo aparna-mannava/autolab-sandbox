@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMSUP_1565__automate_oracledb" #     
+  environment = "CFRMSUP_1565__automate_oracledb"  #     
   hostname    = "us01vlcf"
   hostgroup   = "CFRM BT ISO IL Elastic Servers"
   facts = {
