@@ -36,7 +36,7 @@ module "nginx_1" {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
   }
-}  
+}   
 
 output "nginx_1" {
   value = {
