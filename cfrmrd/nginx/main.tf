@@ -27,7 +27,7 @@ module "nginx_1" {
   os_version           = "rhel7"
   external_facts       = local.vm01facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_3463_nginx"
+  foreman_environment  = "feature_CFRMX_4062_Switch_Nginx_to_HTTP"
   foreman_hostgroup    = "CFRMRD NGINX"
   datacenter           = "ny2"
   cpus                 = "2"
