@@ -44,4 +44,4 @@ output "nginx_1" {
     "alias" = "${module.nginx_1.alias}",
     "ip"    = "${module.nginx_1.ip}",
   }
-}   
+}    
