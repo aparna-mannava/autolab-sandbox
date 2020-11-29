@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMSUP_2164_CFRM_Linux_Mgmt"  #     
+  environment = "CFRMSUP_2164_CFRM_Linux_Mgmt"   #     
   hostname    = "us01vlcf"
   hostgroup   = "CFRM BT ISO IL Elastic Servers"
   facts = {
