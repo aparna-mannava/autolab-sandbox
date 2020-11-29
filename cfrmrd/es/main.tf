@@ -4,9 +4,9 @@ terraform {
 
 locals {
     facts       = {
-      "bt_customer" = "cfrmrd"
+      "bt_customer" = "btiq"
       "bt_product"  = "cfrmrd"
-      "bt_tier"     = "dev"
+      "bt_tier"     = "prod"
       "bt_role"     = "elasticsearch"
     }
     es01facts    = {
