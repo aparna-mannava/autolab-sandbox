@@ -32,7 +32,7 @@ locals {
 
 module "master_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-k8s-infrastructure.git?ref=master"
-  hostname             = "us01vleng01"
+  hostname             = "us01vlkm001"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -47,7 +47,7 @@ module "master_server_1" {
 
 module "master_server_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-k8s-infrastructure.git?ref=master"
-  hostname             = "us01vleng01"
+  hostname             = "us01vlkm002"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -62,7 +62,7 @@ module "master_server_2" {
 
 module "master_server_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-k8s-infrastructure.git?ref=master"
-  hostname             = "us01vleng01"
+  hostname             = "us01vlkm003"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -77,7 +77,7 @@ module "master_server_3" {
 
 module "worker_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-k8s-infrastructure.git?ref=master"
-  hostname             = "us01vleng01"
+  hostname             = "us01vlkw001"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -92,7 +92,7 @@ module "worker_server_1" {
 
 module "worker_server_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-k8s-infrastructure.git?ref=master"
-  hostname             = "us01vleng01"
+  hostname             = "us01vlkw002"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -107,7 +107,7 @@ module "worker_server_2" {
 
 module "worker_server_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-k8s-infrastructure.git?ref=master"
-  hostname             = "us01vleng01"
+  hostname             = "us01vlkw003"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
