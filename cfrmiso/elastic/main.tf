@@ -30,7 +30,7 @@ module "cfel01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.cfel01.hostname}"
   alias               = "${local.product}-${local.datacenter.id}-${local.cfel01.silo}-${local.facts.bt_role}-${local.cfel01.hostname}"
-  bt_infra_cluster    = "ny2-aza-ntnx-05"
+  bt_infra_cluster    = "ny2-aza-ntnx-13"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "4"
@@ -41,7 +41,7 @@ module "cfel01" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //  disk 1
+    1 = "100",  // disk 1
   }
 }
 
