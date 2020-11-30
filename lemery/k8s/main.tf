@@ -12,7 +12,7 @@ module "k8s_inf_us01auto1" {
   bt_infra_network    = "ny2-autolab-app-ahv"
   datacenter          = "ny2"
   os_version          = "rhel7"
-  foreman_environment = "master"
+  foreman_environment = "feature_CEA_6213_k8s_svc_ip_ranges"
   additional_disks    = ["100"]
   external_facts = {
     "bt_product" = "inf"
