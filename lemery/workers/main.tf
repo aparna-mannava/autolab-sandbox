@@ -35,6 +35,7 @@ module "base_server_1" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = local.disks
+  lob                  = local.lob
 }
 
 module "base_server_2" {
@@ -50,6 +51,7 @@ module "base_server_2" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = local.disks
+  lob                  = local.lob
 }
 
 output "base_server_1" {
