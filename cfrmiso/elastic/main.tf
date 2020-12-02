@@ -42,7 +42,7 @@ module "cfel01" {
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
     1 = "50",  //  disk 1
-    2 = "100",  //  disk 1
+    2 = "100",  //  disk 2 for elk data
   }
 }
 
