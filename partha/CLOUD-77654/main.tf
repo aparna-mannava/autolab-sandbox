@@ -4,15 +4,15 @@ terraform {
 
 locals {
   product        = "btiq"
-  environment    = "feature_CLOUD_77579"
+  environment    = "feature_CLOUD_78001"
   datacenter     = "ny2"
   hostname       = "us01vwbidb02"
-  hostgroup      = "BI MSSQL 2019 Server"
+  hostgroup      = "BT BI MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "bi"
     "bt_tier"         = "dev"
-    "bt_role"         = "powerbi"
+    "bt_role"         = "mssql"
     "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
@@ -34,7 +34,7 @@ module "btiq_db_77654" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "50",
+    2 = "60",
     3 = "50",
     4 = "50",
     5 = "50",
