@@ -283,3 +283,6 @@ projects:
 - name: hsp-btiq2
   dir: partha/CLOUD-77654
   workflow: nutanix-backend
+- name: llabranche-pgbkptest02
+  dir: llabranche/pgbkptest02
+  workflow: nutanix-backend
