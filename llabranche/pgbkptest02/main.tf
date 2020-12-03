@@ -46,7 +46,7 @@ module "stdby_bk_06" {
   cpus                 = "2"
   memory               = "4096"
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT Base Server"
+  foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = local.datacenter
   lob                  = "cloud"
   external_facts       = local.facts
@@ -62,7 +62,7 @@ module "stdby_bk_07" {
   cpus                 = "2"
   memory               = "4096"
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT Base Server"
+  foreman_hostgroup    = "BT Postgresql DB Server"
   datacenter           = local.datacenter
   lob		       = "cloud"
   external_facts       = local.facts
