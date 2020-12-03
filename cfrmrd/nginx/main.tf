@@ -20,7 +20,7 @@ locals {
 
 module "nginx_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd950"
+  hostname             = "us01vlcfrmrd959"
   alias                = "cfrmrd-autolab-nginx"
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
