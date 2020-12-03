@@ -8,7 +8,7 @@ locals {
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "nonprod"
-    "bt_env"  = "2"
+    "bt_env"  = "1"
     "bt_lob" = "cloud"
     "bt_role" = "Postgresql"
     "bt_pg_version" = "12"
