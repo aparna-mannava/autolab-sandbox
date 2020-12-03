@@ -13,7 +13,6 @@ locals {
     "bt_product"      = "bi"
     "bt_tier"         = "autolab"
     "bt_role"         = "mssql"
-    "bt_bfs_timezone" = "Eastern Standard Time"
   }
 }
 
