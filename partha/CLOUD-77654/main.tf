@@ -2,7 +2,6 @@ terraform {
   backend "s3" {}
 }
 
-
 locals {
   product        = "btiq"
   environment    = "feature_CLOUD_78001"
