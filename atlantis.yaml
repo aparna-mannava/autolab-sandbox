@@ -17,6 +17,9 @@ projects:
 - name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
+- name: cdrew-sstest
+  dir: cdrew/jdbcss
+  workflow: nutanix-backend
 - name: cdrew-dev3-etcd
   dir: cdrew/dev3/etcd
   workflow: nutanix-backend
