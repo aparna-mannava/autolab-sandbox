@@ -11,7 +11,7 @@ locals {
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "bi"
-    "bt_tier"         = "dev"
+    "bt_tier"         = "autolab"
     "bt_role"         = "mssql"
     "bt_bfs_timezone" = "Eastern Standard Time"
   }
@@ -33,7 +33,7 @@ module "btiq_db_77654" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "50",
+    2 = "60",
     3 = "50",
     4 = "50",
     5 = "50",
