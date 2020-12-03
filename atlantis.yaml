@@ -6,8 +6,10 @@ projects:
   dir: cfrmrd/nginx
 - name: genady-es
   dir: cfrmrd/es
-- name: genady-ic2
+- name: genady-ic
   dir: cfrmrd/ic
+- name: genady-ssl
+  dir: cfrmrd/ssl
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
