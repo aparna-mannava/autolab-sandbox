@@ -30,11 +30,11 @@ module "pg-service" {
   external_facts       = local.facts
 }
 
-output "ss-service" {
+output "pg-service" {
   value = {
-    "fqdn"  = "${module.ss-service.fqdn}",
-    "alias" = "${module.ss-service.alias}",
-    "ip"    = "${module.ss-service.ip}",
+    "fqdn"  = "${module.pg-service.fqdn}",
+    "alias" = "${module.pg-service.alias}",
+    "ip"    = "${module.pg-service.ip}",
   }
   
 }
