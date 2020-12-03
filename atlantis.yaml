@@ -6,7 +6,7 @@ projects:
   dir: cfrmrd/nginx
 - name: genady-es
   dir: cfrmrd/es
-- name: genady-ic
+- name: genady-ic2
   dir: cfrmrd/ic
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
