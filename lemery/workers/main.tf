@@ -1,4 +1,3 @@
-# look a goose
 terraform {
   backend "s3" {}
 }
@@ -9,7 +8,7 @@ locals {
   hostgroup     = "BT Base Server"
   environment   = "feature_CEA_6213_k8s_svc_ip_ranges"
   datacenter    = "ny2"
-  cluster       = "ny2-aza-ntnx-13"
+  cluster       = "ny2-aza-ntnx-05"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
   memory        = "4096"
