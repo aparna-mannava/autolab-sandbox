@@ -6,13 +6,14 @@ locals {
     facts       = {
       "bt_customer" = "cfrmrd"
       "bt_product"  = "cfrmrd"
-      "bt_tier"     = "prod"
+      "bt_tier"     = "dev"
     }
     vm01facts    = {
-      "bt_role" = "app"
+      "bt_role" = "standalone"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
       "bt_tier" = "${local.facts.bt_tier}"
+      "bt_ic_mode" = "STANDALONE"
      }
 } 
  
@@ -25,8 +26,8 @@ module "app_2" {
   os_version           = "rhel7"
   external_facts       = local.vm01facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_3987_IC_configuration_refining"
-  foreman_hostgroup    = "CFRMRD Application SSL"
+  foreman_environment  = "feature_CFRMX_4062_Switch_Nginx_to_HTTP"
+  foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   datacenter           = "ny2"
   cpus                 = "2"
   memory         	   = "4096"
