@@ -14,7 +14,7 @@ locals {
   bt_product      = "pbscap"
   lob             = "pbs"
   hostgroup       = "BT PG Backrest Server"
-  environment     = "master"
+  environment     = "feature_CEA_9335"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   facts           = {
