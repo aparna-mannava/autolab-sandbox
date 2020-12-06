@@ -15,7 +15,7 @@ locals {
       "bt_tier" = "${local.facts.bt_tier}"
       "bt_ic_mode" = "STANDALONE"
      }
-}  
+}     
  
 module "app_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
