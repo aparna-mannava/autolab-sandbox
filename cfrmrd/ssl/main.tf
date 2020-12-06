@@ -35,7 +35,7 @@ module "app_2" {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
   }
-}  
+}   
 
 output "app_2" {
   value = {
