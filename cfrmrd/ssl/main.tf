@@ -30,7 +30,7 @@ module "app_2" {
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   datacenter           = "ny2"
   cpus                 = "2"
-  memory         	   = "1024"
+  memory         	   = "2048"
   additional_disks     = {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
