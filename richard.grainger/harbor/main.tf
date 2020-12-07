@@ -5,7 +5,6 @@ terraform {
 module "harbor" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "us01vlhrbr1000" 
-  domain              = "auto.saas-n.com"
   bt_infra_cluster    = "ny2-aza-ntnx-13"
   bt_infra_network    = "ny2-autolab-app-ahv"
   datacenter          = "ny2"
