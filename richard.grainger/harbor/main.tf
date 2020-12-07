@@ -20,7 +20,7 @@ module "harbor" {
   external_facts = {
     "bt_product" = "cloud"
     "bt_lob"     = "CEA"
-    "bt_role"    = "harbor_server"
+    "bt_role"    = "base"
     "bt_tier"    = "dev"
     "bt_env"     = "1"
   }
