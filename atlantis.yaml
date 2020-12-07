@@ -17,10 +17,10 @@ projects:
   dir: stephen.daconceicao/nexus
   workflow: nutanix-backend
 - name: cdrew-dev4hapg
-  dir: cdrew/dev4/hapg
+  dir: cdrew/dev5/hapg
   workflow: nutanix-backend
 - name: cdrew-dev4backrest
-  dir: cdrew/dev4/backrest
+  dir: cdrew/dev5/backrest
   workflow: nutanix-backend
 - name: cdrew-br2
   dir: cdrew/dev3/backrest1
