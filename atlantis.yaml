@@ -294,3 +294,6 @@ projects:
 - name: llabranche-pgbkptest02
   dir: llabranche/pgbkptest02
   workflow: nutanix-backend
+- name: richard.grainger-harbor
+  dir: richard.grainger/harbor
+  workflow: nutanix-backend
