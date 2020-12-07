@@ -17,7 +17,7 @@ projects:
   dir: stephen.daconceicao/nexus
   workflow: nutanix-backend
 - name: cdrew-br2
-  dir: cdrew/backrest1
+  dir: cdrew/dev3/backrest1
   workflow: nutanix-backend
 - name: cdrew-testdb
   dir: cdrew/btiq
