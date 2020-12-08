@@ -7,7 +7,7 @@ locals {
   environment    = "feature_CLOUD_77579"
   datacenter     = "ny2"
   hostname       = "us01vwbidb01"
-  hostgroup      = "BI MSSQL 2019 Server"
+  hostgroup      = "BT BI MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "bi"
@@ -34,7 +34,7 @@ module "btiq_db_77588" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "81",
+    2 = "80",
     3 = "50",
     4 = "50",
     5 = "50",
