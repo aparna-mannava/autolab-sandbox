@@ -23,7 +23,7 @@ locals {
   }
 
   cfmn002 = {
-    hostname = "${local.hostname}vlcfmg02"
+    hostname = "${local.hostname}vlcfmg03"
     silo     = "autolab"
   }
 }
