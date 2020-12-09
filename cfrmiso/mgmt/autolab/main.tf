@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMSUP_2164_CFRM_Linux_Mgmt"   #  
+  environment = "feature_CFRMISO_249_GB03_CFRM_MGMT1"   #  
   hostname    = "us01"
   hostgroup   = "CFRM BT ISO IL Management Server"
   facts = {
@@ -61,7 +61,7 @@ module "cfmn002" {
   bt_infra_cluster    = "ny2-aza-ntnx-13"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "4"
+  cpus                = "2"
   memory              = "4096"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
@@ -80,7 +80,7 @@ module "cfmn003" {
   bt_infra_cluster    = "ny2-aza-ntnx-13"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "4"
+  cpus                = "2"
   memory              = "4096"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
