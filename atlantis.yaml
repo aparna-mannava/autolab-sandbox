@@ -54,9 +54,6 @@ projects:
   workflow: nutanix-backend
 - name: richard-test-01
   dir: richard.grainger/test_01
-- name: lemery-workers
-  dir: lemery/workers
-  workflow: nutanix-backend
 - name: lemery-jira
   dir: lemery/jira
   workflow: nutanix-backend
