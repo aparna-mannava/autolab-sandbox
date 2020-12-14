@@ -6,38 +6,42 @@ projects:
   dir: cfrmrd/nginx
 - name: genady-es
   dir: cfrmrd/es
+- name: genady-ic
+  dir: cfrmrd/ic
+- name: genady-ssl
+  dir: cfrmrd/ssl
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
 - name: stephendnexus
   dir: stephen.daconceicao/nexus
   workflow: nutanix-backend
+- name: cdrew-dev4hapg
+  dir: cdrew/dev5/hapg
+  workflow: nutanix-backend
+- name: cdrew-dev4backrest
+  dir: cdrew/dev5/backrest
+  workflow: nutanix-backend
+- name: cdrew-br2
+  dir: cdrew/dev3/backrest1
+  workflow: nutanix-backend
 - name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
-- name: cdrew-dev4-backrest
-  dir: cdrew/dev4/backrest
-- name: cdrew-lx-keycloak
-  dir: cdrew/lx/dev8
+- name: cdrew-sstest
+  dir: cdrew/jdbcss
   workflow: nutanix-backend
-- name: cdrew-fmpg-hapg
-  dir: cdrew/fmpg/hapg
-- name: cdrew-dev4-hapg
-  dir: cdrew/dev4/hapg
-- name: cdrew-cfrmrd
-  dir: cdrew/cfrmrd
 - name: cdrew-dev3-etcd
   dir: cdrew/dev3/etcd
+  workflow: nutanix-backend
 - name: cdrew-dev3-hapg
   dir: cdrew/dev3/hapg
+  workflow: nutanix-backend
 - name: cdrew-dev3-backrest
   dir: cdrew/dev3/backrest
+  workflow: nutanix-backend
 - name: windows_firewall
   dir: aarvelo/firewall
-- name: cdrew-dev1
-  dir: cdrew/dev1
-- name: cdrew-dev2
-  dir: cdrew/dev2
 - name: erin-pgtest1
   dir: erin/pgtest1
   workflow: nutanix-backend
@@ -50,10 +54,6 @@ projects:
   workflow: nutanix-backend
 - name: richard-test-01
   dir: richard.grainger/test_01
-- name: lemery-deferred_poc
-  dir: lemery/deferred_poc
-- name: lemery-engine
-  dir: lemery/engine
 - name: lemery-jira
   dir: lemery/jira
   workflow: nutanix-backend
@@ -65,6 +65,15 @@ projects:
   workflow: nutanix-backend
 - name: lemery-registry-test
   dir: lemery/registry-test
+  workflow: nutanix-backend
+- name: lemery-alert
+  dir: lemery/alert
+  workflow: nutanix-backend
+- name: lemery-foreman
+  dir: lemery/foreman
+  workflow: nutanix-backend
+- name: lemery-k8s
+  dir: lemery/k8s
   workflow: nutanix-backend
 - name: btiq-cae-strset
   dir: btiq-cae-ss/service
@@ -258,5 +267,44 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
+<<<<<<< HEAD
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
+=======
+- name: llabranche-ora2pg
+  dir: llabranche/ora2pg
+  workflow: nutanix-backend
+- name: hsp-sql2019
+  dir: partha/CLOUD-76577
+- name: savula-SIMPLE
+  dir: savula/SIMPLE
+- name: savula-SQL2019
+  dir: savula/SQL2019
+- name: hsp-sql20192
+  dir: partha/CLOUD-76719
+- name: hsp-sql20193
+  dir: partha/CLOUD-76743
+- name: hsp-sql20194
+  dir: partha/CLOUD-76815
+- name: iq-es-cluster
+  dir: bkumar/es-cluster
+  workflow: nutanix-backend
+- name: llabranche-pgbkptest01
+  dir: llabranche/pgbkptest01
+  workflow: nutanix-backend
+- name: savula-NEW2019
+  dir: savula/NEW2019
+  workflow: nutanix-backend
+- name: hsp-btiq1
+  dir: partha/CLOUD-77588
+  workflow: nutanix-backend
+- name: hsp-btiq2
+  dir: partha/CLOUD-77654
+  workflow: nutanix-backend
+- name: llabranche-pgbkptest02
+  dir: llabranche/pgbkptest02
+  workflow: nutanix-backend
+- name: richard.grainger-harbor
+  dir: richard.grainger/harbor
+  workflow: nutanix-backend
+>>>>>>> 88655fb00593c8c0796183b6116e25355b249e33

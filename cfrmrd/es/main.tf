@@ -4,9 +4,9 @@ terraform {
 
 locals {
     facts       = {
-      "bt_customer" = "cfrmrd"
+      "bt_customer" = "btiq"
       "bt_product"  = "cfrmrd"
-      "bt_tier"     = "dev"
+      "bt_tier"     = "prod"
       "bt_role"     = "elasticsearch"
     }
     es01facts    = {
@@ -42,7 +42,7 @@ module "elasticsearch_1" {
   os_version           = "rhel7"
   external_facts       = local.es01facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_3463_nginx"
+  foreman_environment  = "master"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
   cpus                 = "2"
@@ -62,7 +62,7 @@ module "elasticsearch_2" {
   os_version           = "rhel7"
   external_facts       = local.es02facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_3463_nginx"
+  foreman_environment  = "master"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
   cpus                 = "2"
@@ -82,7 +82,7 @@ module "elasticsearch_3" {
   os_version           = "rhel7"
   external_facts       = local.es03facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMX_3463_nginx"
+  foreman_environment  = "master"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Cluster"
   datacenter           = "ny2"
   cpus                 = "2"
@@ -115,4 +115,4 @@ output "elasticsearch_3" {
     "alias" = "${module.elasticsearch_3.alias}",
     "ip"    = "${module.elasticsearch_3.ip}",
   }
-}
+}  
