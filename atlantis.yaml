@@ -258,3 +258,5 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
+- name: cfrmiso-mgmt-win-autolab
+  dir: cfrmiso/mgmt/autolab_win
