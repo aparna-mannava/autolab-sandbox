@@ -5,7 +5,7 @@ projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
 - name: genady-es
-  dir: cfrmrd/es
+  dir: cfrmrd/es/temp
 - name: genady-ic
   dir: cfrmrd/ic
 - name: genady-ssl
