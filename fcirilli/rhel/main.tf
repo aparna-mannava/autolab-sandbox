@@ -27,7 +27,6 @@ module "nexus" {
   memory               = "8192"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT Base Server"
-  external_facts       = local.facts
   datacenter           = local.datacenter
   additional_disks     = {
     1 = "300",
