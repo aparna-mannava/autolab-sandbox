@@ -305,6 +305,6 @@ projects:
 - name: richard.grainger-harbor
   dir: richard.grainger/harbor
   workflow: nutanix-backend
-  - name: fcirilli-rhel
+- name: fcirilli-rhel
   dir: fcirilli/rhel
   workflow: nutanix-backend
