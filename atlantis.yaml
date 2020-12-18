@@ -57,6 +57,9 @@ projects:
 - name: lemery-jira
   dir: lemery/jira
   workflow: nutanix-backend
+- name: lemery-test
+  dir: lemery/test
+  workflow: nutanix-backend
 - name: lemery-harbor2
   dir: lemery/harbor2
   workflow: nutanix-backend
