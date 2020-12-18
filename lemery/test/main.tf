@@ -8,7 +8,7 @@ locals {
   hostgroup     = "BT Base Server"
   environment   = "master"
   datacenter    = "ny2"
-  cluster       = "ny2-aza-ntnx-05"
+  cluster       = "ny2-aza-ntnx-13"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
   memory        = "2048"
