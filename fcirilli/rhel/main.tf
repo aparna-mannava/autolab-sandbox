@@ -10,7 +10,7 @@ terraform {
 locals {
   environment    = "feature_FMDO_2117_vm_provisionning_for_gtsuite_on_saas_n"
   datacenter     = "ny2"
-  network      = "ny2-autolab-app-ahv"
+  network        = "ny2-autolab-app-ahv"
   cluster        = "ny2-aza-ntnx-13"
 
 }
