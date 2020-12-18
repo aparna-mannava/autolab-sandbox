@@ -41,6 +41,7 @@ module "base_server_1" {
     )
   )}"
   additional_disks     = local.disks
+  lob                  = local.lob
 }
 
 output "base_server_1" {
