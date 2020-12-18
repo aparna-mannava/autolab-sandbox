@@ -54,4 +54,3 @@ output "server_info" {
 |database|${module.db_server.fqdn}|${module.db_server.alias[0]}|${module.db_server.ip}|
   INFO
 }
-s
