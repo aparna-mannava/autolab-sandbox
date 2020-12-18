@@ -4,8 +4,8 @@ terraform {
 
 module "k8s_inf_us01auto1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-k8s-infrastructure.git?ref=master"
-  k8s_masters         = ["us01vlkm004", "us01vlkm005", "us01vlkm006"]
-  k8s_workers         = ["us01vlkw003", "us01vlkw004"]
+  k8s_masters         = ["us01vlkm007", "us01vlkm008", "us01vlkm009"]
+  k8s_workers         = ["us01vlkw005", "us01vlkw006"]
   master_cpus         = 8
   worker_cpus         = 4
   master_memory       = 16384
