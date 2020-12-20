@@ -66,7 +66,7 @@ module "app_2" {
     2 = "100" //Disk 2
   }
 }  
-
+ 
 output "app_1" {
   value = {
     "fqdn"  = "${module.app_1.fqdn}",
