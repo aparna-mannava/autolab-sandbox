@@ -54,7 +54,7 @@ module "app_2" {
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  external_facts       = local.vm01facts
+  external_facts       = local.vm02facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_4369_Add_SSL_DB_support_for_IC"
   foreman_hostgroup    = "CFRMRD Application SSL"
