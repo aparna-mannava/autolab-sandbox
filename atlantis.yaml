@@ -9,7 +9,7 @@ projects:
 - name: genady-ic
   dir: cfrmrd/ic
 - name: genady-ic-ssl
-  dir: cfrmrd/ssl/ic
+  dir: cfrmrd/ic/ssl
 - name: genady-ssl
   dir: cfrmrd/ssl
 - name: stephendjenkins
