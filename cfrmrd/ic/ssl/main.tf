@@ -31,7 +31,7 @@ module "app_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd501"
   alias                = "cfrmx-ic1"
-  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.vm01facts
@@ -39,7 +39,7 @@ module "app_1" {
   foreman_environment  = "feature_CFRMX_4369_Add_SSL_DB_support_for_IC"
   foreman_hostgroup    = "CFRMRD Application SSL"
   datacenter           = "ny2"
-  cpus                 = "2"
+  cpus                 = "1"
   memory         	   = "4096"
   additional_disks     = {
     1 = "50", // Disk 1
@@ -51,7 +51,7 @@ module "app_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd502"
   alias                = "cfrmx-ic2"
-  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.vm01facts
@@ -59,7 +59,7 @@ module "app_2" {
   foreman_environment  = "feature_CFRMX_4369_Add_SSL_DB_support_for_IC"
   foreman_hostgroup    = "CFRMRD Application SSL"
   datacenter           = "ny2"
-  cpus                 = "2"
+  cpus                 = "1"
   memory         	   = "4096"
   additional_disks     = {
     1 = "50", // Disk 1
