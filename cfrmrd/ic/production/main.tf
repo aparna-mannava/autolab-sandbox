@@ -13,7 +13,6 @@ locals {
       "bt_env"      = "qa2"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product"  = "${local.facts.bt_product}"
-      "bt_tier"     = "${local.facts.bt_tier}"
       "bt_ic_mode"  = "STANDALONE"
      }
      
@@ -23,7 +22,6 @@ locals {
       "bt_env"      = "staging"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product"  = "${local.facts.bt_product}"
-      "bt_tier"     = "${local.facts.bt_tier}"
       "bt_ic_mode"  = "BACKEND"
      }
      
@@ -32,7 +30,6 @@ locals {
       "bt_tier"     = "ppd"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product"  = "${local.facts.bt_product}"
-      "bt_tier"     = "${local.facts.bt_tier}"
       "bt_ic_mode"  = "BACKEND"
      }
 } 
