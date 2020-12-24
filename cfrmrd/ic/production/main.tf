@@ -45,9 +45,9 @@ module "app_1" {
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_4396_IC_configuration_for_prod"
   foreman_hostgroup    = "CFRMRD Application PROD"
-  datacenter           = "ny5"
+  datacenter           = "ny2"
   cpus                 = "1"
-  memory         	   = "1024"
+  memory         	   = "2048"
   additional_disks     = {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
@@ -65,9 +65,9 @@ module "app_2" {
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_4396_IC_configuration_for_prod"
   foreman_hostgroup    = "CFRMRD Application PROD"
-  datacenter           = "ny5"
+  datacenter           = "ny2"
   cpus                 = "1"
-  memory         	   = "1024"
+  memory         	   = "2048"
   additional_disks     = {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
@@ -85,9 +85,9 @@ module "app_3" {
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMX_4396_IC_configuration_for_prod"
   foreman_hostgroup    = "CFRMRD Application PROD"
-  datacenter           = "ny5"
+  datacenter           = "ny2"
   cpus                 = "1"
-  memory         	   = "1024"
+  memory         	   = "2048"
   additional_disks     = {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
