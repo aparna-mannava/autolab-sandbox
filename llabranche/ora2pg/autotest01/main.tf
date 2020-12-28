@@ -12,8 +12,8 @@ module "orap_server_1" {
   datacenter           = "ny5"
   lob                  = "cloud"
   additional_disks     = {
-    1 = "100".
-	2 = "50"
+    1 = "100",
+    2 = "50"
   }
   external_facts       = {
     "bt_tier" = "dev"
