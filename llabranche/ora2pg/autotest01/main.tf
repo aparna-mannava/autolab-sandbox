@@ -9,7 +9,7 @@ module "orap_server_1" {
   os_version           = "rhel7"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
-  datacenter           = "ny5"
+  datacenter           = "ny2"
   lob                  = "cloud"
   additional_disks     = {
     1 = "100",
