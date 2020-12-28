@@ -315,6 +315,6 @@ projects:
 - name: fcirilli-rhel
   dir: fcirilli/rhel
   workflow: nutanix-backend
-- name: llabranche-ora2pg/autotest01
+- name: llabranche-ora2pg-autotest01
   dir: llabranche/ora2pg/autotest01
   workflow: nutanix-backend
