@@ -5,7 +5,7 @@ module "orap_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlora2sbx01"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
-  bt_infra_network     = "ny5-autolab-db-ahv"
+  bt_infra_network     = "ny2-autolab-db-ahv"
   os_version           = "rhel7"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
