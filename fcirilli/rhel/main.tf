@@ -29,6 +29,7 @@ module "db_server" {
   datacenter           = local.datacenter
   bt_infra_network     = local.db_bt_infra_network
   bt_infra_cluster     = local.db_bt_infra_cluster
+  lob                  = "FMCLOUD"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = local.db_foreman_hostgroup
   external_facts       = local.facts
