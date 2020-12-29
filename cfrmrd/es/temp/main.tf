@@ -38,8 +38,6 @@ module "elasticsearch_1" {
   }
 } 
 
-
-
 output "elasticsearch_1" {
   value = {
     "fqdn"  = "${module.elasticsearch_1.fqdn}",
