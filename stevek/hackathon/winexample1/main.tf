@@ -16,7 +16,8 @@ locals {
   hostgroup   = "BT Base Windows Server"
   datacenter  = "ny2"
   lob         = "fml"
-  name_servers = "10.226.199.53" "127.0.0.1"
+  name_servers = "10.226.199.53"
+                 "127.0.0.1"
 }
 # Add a comment to make it look different
 module "example_module1" {
