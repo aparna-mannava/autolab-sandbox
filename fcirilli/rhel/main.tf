@@ -4,7 +4,7 @@ terraform {
 
 locals {
   lob           = "dgb"
-  puppet_env    = "feature/FMDO_2117_vm_provisionning_for_gtsuite_on_saas_n"
+  puppet_env    = "feature_FMDO_2117_vm_provisionning_for_gtsuite_on_saas_n"
   datacenter    = "ny2"
   domain        = "saas-n.com"
   facts         = {
