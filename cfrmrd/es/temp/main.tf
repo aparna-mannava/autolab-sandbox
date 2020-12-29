@@ -27,7 +27,7 @@ module "elasticsearch_1" {
   os_version           = "rhel7"
   external_facts       = local.es01facts
   lob                  = "CFRM"
-  foreman_environment  = "master"
+  foreman_environment  = "feature_CFRMX_4396_IC_configuration_for_prod"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   datacenter           = "ny2"
   cpus                 = "2"
