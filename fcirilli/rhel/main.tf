@@ -17,7 +17,7 @@ locals {
   db_alias               = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
   db_bt_infra_network    = "ny2-autolab-app-ahv"
   db_bt_infra_cluster    = "ny2-aza-ntnx-13"
-  db_foreman_hostgroup   = "BT DGB Oradb Server"
+  db_foreman_hostgroup   = "BT FMG Oracle DB Server"
 }
 
 
