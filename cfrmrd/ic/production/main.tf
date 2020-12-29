@@ -36,7 +36,7 @@ locals {
  
 module "app_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd501"
+  hostname             = "us01vlcfrmrd551"
   alias                = "cfrmx-ic101"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -47,7 +47,7 @@ module "app_1" {
   foreman_hostgroup    = "CFRMRD Application PROD"
   datacenter           = "ny2"
   cpus                 = "1"
-  memory         	   = "1024"
+  memory         	   = "2048"
   additional_disks     = {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
@@ -56,7 +56,7 @@ module "app_1" {
 
 module "app_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd502"
+  hostname             = "us01vlcfrmrd552"
   alias                = "cfrmx-ic102"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -67,7 +67,7 @@ module "app_2" {
   foreman_hostgroup    = "CFRMRD Application PROD"
   datacenter           = "ny2"
   cpus                 = "1"
-  memory         	   = "1024"
+  memory         	   = "2048"
   additional_disks     = {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
@@ -76,7 +76,7 @@ module "app_2" {
 
 module "app_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd503"
+  hostname             = "us01vlcfrmrd553"
   alias                = "cfrmx-ic103"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
@@ -87,7 +87,7 @@ module "app_3" {
   foreman_hostgroup    = "CFRMRD Application PROD"
   datacenter           = "ny2"
   cpus                 = "1"
-  memory         	   = "1024"
+  memory         	   = "2048"
   additional_disks     = {
     1 = "50", // Disk 1
     2 = "100" //Disk 2
