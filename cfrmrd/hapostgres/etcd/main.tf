@@ -1,38 +1,29 @@
 terraform {
-  backend "s3" {}
-}
-
+  backend "http" {}
+} 
+ 
 locals {
-  etcd_servers    = ["us01vldved001","us01vldved002","us01vldved003"]
-  hapg_servers    = ["us01vldvpg1","us01vldvpg2","us01vldvpg3"]
-  haproxy_server  = ["us01vldvpxy1"]
-  backrest_server = ["us01vldvbkp1"]
-  etcd_hosts_p    = ["'us01vldved001.auto.saas-n.com','us01vldved002.auto.saas-n.com','us01vldved003.auto.saas-n.com'"]
+  etcd_servers    = ["us01vlcfrmrd601","us01vlcfrmrd602","us01vlcfrmrd603"]
+  etcd_hosts_p    = ["'us01vlcfrmrd601.auto.saas-n.com','us01vlcfrmrd602.auto.saas-n.com','us01vlcfrmrd603.auto.saas-n.com'"]
+  etcd_aliases    = ["cfrmrd-etcd1","cfrmrd-etcd2","cfrmrd-etcd3"]
   domain          = "auto.saas-n.com"
-  tier            = "dev"
-  bt_env          = "5"
-  bt_product      = "pbscap"
-  lob             = "pbs"
-  hostgroup       = "BT ETCD for PostgreSQL Server"
+  bt_product      = "cfrmrd"
+  lob             = "CFRM"
+  hostgroup       = "CFRMRD ETCD for PostgreSQL Server"
   environment     = "master"
   cluster         = "ny2-aza-ntnx-13"
   network         = "ny2-autolab-app-ahv"
   facts           = {
-    "bt_env"                  = "${local.bt_env}"
-    "bt_tier"                 = "${local.tier}"
     "bt_product"              = "${local.bt_product}"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
-    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
-    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
-    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-    "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
-    "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
+    "bt_cluster_name"         = "cfrmrd_cluster"
   }
 }
 
 module "ny2_autolab_etcd_0" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[0]}"
+  alias                = "${local.etcd_aliases[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   lob                  = local.lob
@@ -51,6 +42,7 @@ module "ny2_autolab_etcd_0" {
 module "ny2_autolab_etcd_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[1]}"
+  alias                = "${local.etcd_aliases[1]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = local.hostgroup
@@ -69,6 +61,7 @@ module "ny2_autolab_etcd_1" {
 module "ny2_autolab_etcd_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[2]}"
+  alias                = "${local.etcd_aliases[2]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = local.hostgroup
@@ -106,4 +99,4 @@ output "ny2_autolab_etcd_2" {
     "alias" = "${module.ny2_autolab_etcd_2.alias}",
     "ip"    = "${module.ny2_autolab_etcd_2.ip}",
   }
-}
+}  
