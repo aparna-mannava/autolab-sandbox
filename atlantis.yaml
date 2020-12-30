@@ -318,3 +318,5 @@ projects:
 - name: llabranche-ora2pg-autotest01
   dir: llabranche/ora2pg/autotest01
   workflow: nutanix-backend
+- name: savula-POST
+  dir: savula/POST
