@@ -3,7 +3,7 @@ terraform {
 }
 locals {
   product     = "cfrmiso"
-  environment = "feature_CFRMISO_249_GB03_CFRM_MGMT1"     #   
+  environment = "feature_CFRMISO_249_GB03_CFRM_MGMT1"    # Build Bitbucket and HAProxy
   hostname    = "us01"
   hostgroup   = "CFRM BT ISO IL Bastion Hosts"
   facts = {
