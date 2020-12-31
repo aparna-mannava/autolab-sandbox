@@ -16,6 +16,7 @@ locals {
     name = "ny2"
     id   = "il02"
   }
+  ## create Bitbucket and HAProxy servers #
   cfbb001 = { ## Bitbucket server ##
     hostname  = "${local.hostname}vlcfbb01"
     alias     = "${local.hostname}vlbitbucket01"
