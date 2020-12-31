@@ -16,7 +16,10 @@ locals {
     name = "ny2"
     id   = "il02"
   }
-  ## create Bitbucket and HAProxy servers #
+  #|#################################################|#
+  #|## -- create Bitbucket and HAProxy servers -- ###|#
+  #|#################################################|#
+
   ## Bitbucket server ##
   cfbb001 = { 
     hostname    = "${local.hostname}vlcfbb01"
