@@ -16,8 +16,11 @@ locals {
     name = "ny2"
     id   = "il02"
   }
-  ## create Bitbucket and HAProxy servers #
-  ## Bitbucket server ##
+  #|#################################################|#  
+  #|## -- create Bitbucket and HAProxy servers -- ###|#
+  #|#################################################|#
+
+  #|## Bitbucket server module configuration ########|#
   cfbb001 = { 
     hostname    = "${local.hostname}vlcfbb01"
     alias       = "${local.hostname}vlbitbucket01"
@@ -31,7 +34,7 @@ locals {
       "bt_app"      = "bitbucket" }
   }
   
-  ## HAProxy server ##
+  #|## HAProxy server module configuration ########|#
   cfhp001 = { 
     hostname    = "${local.hostname}vlcfhp01"
     alias       = "${local.hostname}vlhaproxy01"
