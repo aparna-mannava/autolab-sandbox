@@ -7,30 +7,42 @@ locals {
   environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #  Build Bitbucket and HAProxy
   hostname    = "us01"
   facts = {
-    "bt_product" = "cfrmiso"
+    "bt_product"  = "cfrmiso"
     "bt_customer" = "it"
-    "bt_tier" = "prod"
-    "bt_role" = "cfrm_it"
+    "bt_tier"     = "prod"
+    "bt_role"     = "cfrm_it"
   }
   datacenter = {
     name = "ny2"
     id   = "il02"
   }
   ## create Bitbucket and HAProxy servers #
-  cfbb001 = { ## Bitbucket server ##
-    hostname  = "${local.hostname}vlcfbb01"
-    alias     = "${local.hostname}vlbitbucket01"
-    silo      = "autolab"
-    hostgroup = "BT CFRM IT Bitbucket Server"
-    application = "haproxy"
-
+  ## Bitbucket server ##
+  cfbb001 = { 
+    hostname    = "${local.hostname}vlcfbb01"
+    alias       = "${local.hostname}vlbitbucket01"
+    silo        = "autolab"
+    hostgroup   = "BT CFRM IT Bitbucket Server"
+    facts       = {
+      "bt_product"  = "${local.facts.bt_product}"
+      "bt_customer" = "${local.facts.bt_customer}"
+      "bt_tier"     = "${local.facts.bt_tier}"
+      "bt_role"     = "${local.facts.bt_role}"
+      "bt_app"      = "bitbucket" }
   }
-  cfhp001 = { ## HAProxy server ##
-    hostname       = "${local.hostname}vlcfhp01"
-    alias          = "${local.hostname}vlhaproxy01"
-    silo           = "autolab"
-    hostgroup      = "BT CFRM IT HAProxy Server"
-    application = "haproxy"
+  
+  ## HAProxy server ##
+  cfhp001 = { 
+    hostname    = "${local.hostname}vlcfhp01"
+    alias       = "${local.hostname}vlhaproxy01"
+    silo        = "autolab"
+    hostgroup   = "BT CFRM IT HAProxy Server"
+    facts       = {
+      "bt_product"  = "${local.facts.bt_product}"
+      "bt_customer" = "${local.facts.bt_customer}"
+      "bt_tier"     = "${local.facts.bt_tier}"
+      "bt_role"     = "${local.facts.bt_role}"
+      "bt_app"      = "haproxy" }
   }
 }
 module "cfbb001" {
@@ -47,8 +59,7 @@ module "cfbb001" {
   cpus                = "4"
   memory              = "12288"
   lob                 = "CFRM"
-  external_facts      = "${local.facts}"
-  app                 = "${local.cfbb001.application}"
+  external_facts      = "${local.cfbb001.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.cfbb001.hostgroup}"
   datacenter          = "${local.datacenter.name}"
@@ -71,8 +82,7 @@ module "cfhp001" {
   cpus                = "2"
   memory              = "2048"
   lob                 = "CFRM"
-  external_facts      = "${local.facts}"
-  app                 = "${local.cfbb001.application}"
+  external_facts      = "${local.cfhp001.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.cfhp001.hostgroup}"
   datacenter          = "${local.datacenter.name}"
@@ -87,7 +97,7 @@ output "cfbb001" {
     "fqdn"  = "${module.cfbb001.fqdn}",
     "alias" = "${module.cfbb001.alias}",
     "ip"    = "${module.cfbb001.ip}",
-    "app"   = "${module.cfbb001.app}"
+    "app"   = "${local.cfbb001.facts.bt_app}"
   }
 }
 
@@ -96,6 +106,6 @@ output "cfhp001" {
     "fqdn"  = "${module.cfhp001.fqdn}",
     "alias" = "${module.cfhp001.alias}",
     "ip"    = "${module.cfhp001.ip}",
-    "app"   = "${module.cfhp001.app}"
+    "app"   = "${local.cfhp001.facts.bt_app}"
   }
 }
