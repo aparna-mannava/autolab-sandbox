@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmit"
-  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #  Bitbucket
+  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #  Build Bitbucket and HAProxy
   hostname    = "us01"
   facts = {
     "bt_product" = "cfrmiso"
@@ -22,13 +22,15 @@ locals {
     alias     = "${local.hostname}vlbitbucket01"
     silo      = "autolab"
     hostgroup = "BT CFRM IT Bitbucket Server"
+    application = "haproxy"
 
   }
   cfhp001 = { ## HAProxy server ##
-    hostname  = "${local.hostname}vlcfhp01"
-    alias     = "${local.hostname}vlhaproxy01"
-    silo      = "autolab"
-    hostgroup = "BT CFRM IT HAProxy Server"
+    hostname       = "${local.hostname}vlcfhp01"
+    alias          = "${local.hostname}vlhaproxy01"
+    silo           = "autolab"
+    hostgroup      = "BT CFRM IT HAProxy Server"
+    application = "haproxy"
   }
 }
 module "cfbb001" {
@@ -46,10 +48,11 @@ module "cfbb001" {
   memory              = "12288"
   lob                 = "CFRM"
   external_facts      = "${local.facts}"
+  app                 = "${local.cfbb001.application}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.cfbb001.hostgroup}"
   datacenter          = "${local.datacenter.name}"
-  additional_disks     = {
+  additional_disks    = {
     1 = "250", // disk1
   }
 }
@@ -69,10 +72,11 @@ module "cfhp001" {
   memory              = "2048"
   lob                 = "CFRM"
   external_facts      = "${local.facts}"
+  app                 = "${local.cfbb001.application}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.cfhp001.hostgroup}"
   datacenter          = "${local.datacenter.name}"
-    additional_disks     = {
+    additional_disks  = {
     1 = "50", // disk1
   }
 }
@@ -83,6 +87,7 @@ output "cfbb001" {
     "fqdn"  = "${module.cfbb001.fqdn}",
     "alias" = "${module.cfbb001.alias}",
     "ip"    = "${module.cfbb001.ip}",
+    "app"   = "${module.cfbb001.app}"
   }
 }
 
@@ -91,5 +96,6 @@ output "cfhp001" {
     "fqdn"  = "${module.cfhp001.fqdn}",
     "alias" = "${module.cfhp001.alias}",
     "ip"    = "${module.cfhp001.ip}",
+    "app"   = "${module.cfhp001.app}"
   }
 }
