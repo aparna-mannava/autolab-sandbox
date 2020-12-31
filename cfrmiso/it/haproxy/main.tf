@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmit"
-  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" # 
+  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" # proxy
   hostname    = "us01"
   hostgroup   = "BT CFRM IT HAProxy Server"
   facts = {
