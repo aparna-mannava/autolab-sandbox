@@ -17,17 +17,17 @@ locals {
     name = "ny2"
     id   = "il02"
   }
-  cfit001 = {
-    hostname = "${local.hostname}vlcfit01"
-    alias    = "${local.hostname}vl-haproxy01"
+  cfhp001 = {
+    hostname = "${local.hostname}vlcfhp01"
+    alias    = "${local.hostname}vlhaproxy01"
     silo     = "autolab"
   }
 }
 
-module "cfit001" {
+module "cfhp001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.cfit001.hostname}" #us01vlcfit01.auto.saas-n.com
-  alias               = "${local.datacenter.id}-${local.datacenter.name}-${local.cfit001.alias}-${local.cfit001.silo}" #il02-ny2-vl-haproxy01-autolab
+  hostname            = "${local.cfhp001.hostname}" #us01vlcfha01.auto.saas-n.com
+  alias               = "${local.datacenter.id}-${local.cfhp001.alias}" #il02-us01vlhaproxy01.auto.saas-n.com
   ## saas-p NY2
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
@@ -44,10 +44,10 @@ module "cfit001" {
   datacenter          = "${local.datacenter.name}"
 }
 
-output "cfit001" {
+output "cfhp001" {
   value = {
-    "fqdn"  = "${module.cfit001.fqdn}",
-    "alias" = "${module.cfit001.alias}",
-    "ip"    = "${module.cfit001.ip}",
+    "fqdn"  = "${module.cfhp001.fqdn}",
+    "alias" = "${module.cfhp001.alias}",
+    "ip"    = "${module.cfhp001.ip}",
   }
 }
