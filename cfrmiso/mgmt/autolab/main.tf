@@ -1,7 +1,6 @@
 terraform {
   backend "http" {}
 }
-
 locals {
   product     = "cfrmiso"
   environment = "feature_CFRMISO_249_GB03_CFRM_MGMT1"    #  
