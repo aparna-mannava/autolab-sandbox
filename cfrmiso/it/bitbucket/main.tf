@@ -18,7 +18,7 @@ locals {
     id   = "il02"
   }
   cfit001 = {
-    hostname = "${local.hostname}vwcfit01"
+    hostname = "${local.hostname}vlcfit01"
     alias    = "${local.hostname}bitbucket01"
     silo     = "autolab"
   }
