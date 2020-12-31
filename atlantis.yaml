@@ -276,6 +276,10 @@ projects:
   dir: cfrmiso/mgmt/autolab
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
+- name: cfrmiso-it-bitb
+  dir: cfrmiso/it/bitbucket
+- name: cfrmiso-it-hap
+  dir: cfrmiso/it/haproxy
 - name: llabranche-ora2pg
   dir: llabranche/ora2pg
   workflow: nutanix-backend
