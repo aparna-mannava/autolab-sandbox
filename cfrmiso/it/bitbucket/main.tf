@@ -19,7 +19,7 @@ locals {
   }
   cfit001 = {
     hostname = "${local.hostname}vlcfit01"
-    alias    = "${local.hostname}bitbucket01"
+    alias    = "${local.hostname}vl-bitbucket01"
     silo     = "autolab"
   }
 }
@@ -27,7 +27,7 @@ locals {
 module "cfit001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.cfit001.hostname}" #us01vvlfit01.auto.saas-n.com
-  alias               = "${local.datacenter.id}-${local.product}-${local.cfit001.silo}-${local.cfit001.alias}01" #il02-cfrmit-autolab-us01-bitbucket01
+  alias               = "${local.datacenter.id}-${local.datacenter.name}-${local.cfit001.alias}-${local.cfit001.silo}" #il02-ny2-vl-bitbucket01-autolab
   ## saas-p NY2
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
