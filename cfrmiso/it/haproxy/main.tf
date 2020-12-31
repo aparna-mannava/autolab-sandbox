@@ -4,13 +4,13 @@ terraform {
 
 locals {
   product     = "cfrmit"
-  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" # proxy
+  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #  proxy
   hostname    = "us01"
   hostgroup   = "BT CFRM IT HAProxy Server"
   facts = {
-    "bt_tier" = "prod"
-    "bt_customer" = "it"
     "bt_product" = "cfrmiso"
+    "bt_customer" = "it"
+    "bt_tier" = "prod"
 	  "bt_role" = "cfrm_it"
   }
   datacenter = {
@@ -42,7 +42,11 @@ module "cfhp001" {
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
+    additional_disks     = {
+    1 = "50", // disk1
+  }
 }
+
 
 output "cfhp001" {
   value = {

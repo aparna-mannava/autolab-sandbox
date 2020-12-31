@@ -8,10 +8,10 @@ locals {
   hostname    = "us01"
   hostgroup   = "BT CFRM IT Bitbucket Server"
   facts = {
-    "bt_tier" = "prod"
-    "bt_customer" = "it"
     "bt_product" = "cfrmiso"
-	  "bt_role" = "cfrm_it"
+    "bt_customer" = "it"
+    "bt_tier" = "prod"
+    "bt_role" = "cfrm_it"
   }
   datacenter = {
     name = "ny2"
