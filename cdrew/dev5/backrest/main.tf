@@ -4,9 +4,9 @@ terraform {
 
 locals {
   etcd_servers    = ["us01vldved001","us01vldved002","us01vldved003"]
-  hapg_servers    = ["us01vldvpg1","us01vldvpg2","us01vldvpg3"]
-  haproxy_server  = ["us01vldvpxy1"]
-  backrest_server = ["us01vldvbkp1"]
+  hapg_servers    = ["us01vldvpg4","us01vldvpg5","us01vldvpg6"]
+  haproxy_server  = ["us01vldvpxy3"]
+  backrest_server = ["us01vldvbkp3"]
   etcd_hosts_p    = ["'us01vldved001.auto.saas-n.com','us01vldved002.auto.saas-n.com','us01vldved003.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
@@ -14,8 +14,8 @@ locals {
   bt_product      = "pbscap"
   lob             = "pbs"
   hostgroup       = "BT PG Backrest Server"
-  environment     = "master"
-  cluster         = "ny2-aza-ntnx-13"
+  environment     = "feature_CEA_9335"
+  cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"

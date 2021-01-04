@@ -5,17 +5,35 @@ projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
 - name: genady-es
-  dir: cfrmrd/es
+  dir: cfrmrd/es/temp
 - name: genady-ic
   dir: cfrmrd/ic
+- name: genady-ic-ssl
+  dir: cfrmrd/ic/ssl
+- name: genady-ic-prod
+  dir: cfrmrd/ic/production
+- name: genady-ssl
+  dir: cfrmrd/ssl
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
 - name: stephendnexus
   dir: stephen.daconceicao/nexus
   workflow: nutanix-backend
+- name: cdrew-dev4hapg
+  dir: cdrew/dev5/hapg
+  workflow: nutanix-backend
+- name: cdrew-dev4backrest
+  dir: cdrew/dev5/backrest
+  workflow: nutanix-backend
+- name: cdrew-br2
+  dir: cdrew/dev3/backrest1
+  workflow: nutanix-backend
 - name: cdrew-testdb
   dir: cdrew/btiq
+  workflow: nutanix-backend
+- name: cdrew-sstest
+  dir: cdrew/jdbcss
   workflow: nutanix-backend
 - name: cdrew-dev3-etcd
   dir: cdrew/dev3/etcd
@@ -259,6 +277,12 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
+- name: cfrmiso-mgmt-win-autolab
+  dir: cfrmiso/mgmt/autolab_win
+- name: cfrmiso-it-bitb
+  dir: cfrmiso/it/bitbucket
+- name: cfrmiso-it-hap
+  dir: cfrmiso/it/haproxy
 - name: llabranche-ora2pg
   dir: llabranche/ora2pg
   workflow: nutanix-backend
@@ -289,3 +313,17 @@ projects:
 - name: hsp-btiq2
   dir: partha/CLOUD-77654
   workflow: nutanix-backend
+- name: llabranche-pgbkptest02
+  dir: llabranche/pgbkptest02
+  workflow: nutanix-backend
+- name: richard.grainger-harbor
+  dir: richard.grainger/harbor
+  workflow: nutanix-backend
+- name: fcirilli-rhel
+  dir: fcirilli/rhel
+  workflow: nutanix-backend
+- name: llabranche-ora2pg-autotest01
+  dir: llabranche/ora2pg/autotest01
+  workflow: nutanix-backend
+- name: savula-POST
+  dir: savula/POST

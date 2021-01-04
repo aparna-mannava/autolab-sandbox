@@ -4,27 +4,25 @@ terraform {
 
 locals {
   product        = "btiq"
-  environment    = "feature_CLOUD_77579"
+  environment    = "feature_CLOUD_78001"
   datacenter     = "ny2"
   hostname       = "us01vwbidb02"
-  hostgroup      = "BI MSSQL 2019 Server"
+  hostgroup      = "BT BI MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "bi"
-    "bt_tier"         = "dev"
-    "bt_role"         = "powerbi"
-    "bt_bfs_timezone" = "Eastern Standard Time"
+    "bt_tier"         = "autolab"
+    "bt_role"         = "mssql"
   }
 }
-
 
 module "btiq_db_77654" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
-  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_cluster     = "ny2-azd-ntnx-10"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = "btiq"
+  lob                  = "inf"
   os_version           = "win2019"
   cpus                 = "2"
   memory               = "4096"
@@ -34,7 +32,7 @@ module "btiq_db_77654" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "50",
+    2 = "60",
     3 = "50",
     4 = "50",
     5 = "50",

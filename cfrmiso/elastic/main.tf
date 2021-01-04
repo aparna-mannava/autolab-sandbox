@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMSUP_1565__automate_oracledb" #  
+  environment = "CFRMSUP_2164_CFRM_Linux_Mgmt"       #     
   hostname    = "us01vlcf"
   hostgroup   = "CFRM BT ISO IL Elastic Servers"
   facts = {
@@ -34,15 +34,14 @@ module "cfel01" {
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "4"
-  memory              = "16192"
+  memory              = "12288"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "50",  //  disk 1
-    2 = "200"  //  disk 2
+    1 = "100",  //   disk 1
   }
 }
 
