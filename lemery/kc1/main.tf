@@ -13,7 +13,7 @@ locals {
   cpus          = "4"
   memory        = "8192"
   disks     = {
-    1 = "500",
+    1 = "700",
   }
   facts         = {
     "bt_tier" = "ny2"
