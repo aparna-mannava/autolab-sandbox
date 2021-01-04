@@ -1,4 +1,3 @@
-#lol
 terraform {
   backend "s3" {}
 }
@@ -21,14 +20,14 @@ locals {
     "bt_env" = "99"
     "bt_confluent_cluster" = {
       "kafka": [
-        "us01vlskb100",
-        "us01vlskb101",
-        "us01vlskb102",
+        "us01vlskfkb100",
+        "us01vlskfkb101",
+        "us01vlskfkb102",
       ],
       "zookeeper": [
-        "us01vlskb100",
-        "us01vlskb101",
-        "us01vlskb102",
+        "us01vlskfkb100",
+        "us01vlskfkb101",
+        "us01vlskfkb102",
       ]
     }
   }
@@ -36,7 +35,7 @@ locals {
 
 module "base_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlskb100"
+  hostname             = "us01vlskfkb100"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -51,7 +50,7 @@ module "base_server_1" {
 
 module "base_server_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlskb101"
+  hostname             = "us01vlskfkb101"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -66,7 +65,7 @@ module "base_server_2" {
 
 module "base_server_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlskb102"
+  hostname             = "us01vlskfkb102"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
