@@ -64,6 +64,9 @@ projects:
 - name: lemery-test
   dir: lemery/test
   workflow: nutanix-backend
+- name: lemery-kc1
+  dir: lemery/kc1
+  workflow: nutanix-backend
 - name: lemery-harbor2
   dir: lemery/harbor2
   workflow: nutanix-backend
