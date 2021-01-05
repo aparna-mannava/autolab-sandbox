@@ -11,7 +11,7 @@ locals {
   cluster       = "ny2-azd-ntnx-10"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
-  memory        = "2048"
+  memory        = "8192"
   disks     = {
     1 = "500",
   }
