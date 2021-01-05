@@ -45,6 +45,7 @@ module "base_server_1" {
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   external_facts       = local.facts
+  lob                  = local.lob
 }
 
 module "base_server_2" {
@@ -59,6 +60,7 @@ module "base_server_2" {
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   external_facts       = local.facts
+  lob                  = local.lob
 }
 
 module "base_server_3" {
@@ -73,6 +75,7 @@ module "base_server_3" {
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   external_facts       = local.facts
+  lob                  = local.lob
 }
 
 output "base_server_1" {
