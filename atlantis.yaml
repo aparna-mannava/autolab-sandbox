@@ -327,3 +327,5 @@ projects:
   workflow: nutanix-backend
 - name: savula-POST
   dir: savula/POST
+- name: skola-POST
+  dir: skola/POST
