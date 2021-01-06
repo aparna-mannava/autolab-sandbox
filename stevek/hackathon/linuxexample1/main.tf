@@ -13,16 +13,15 @@ locals {
     "bt_product" = "fml"
   }
   environment = "master"
-  hostgroup   = "BT Base Windows Server"
+  hostgroup   = "BT base Linux server"
   datacenter  = "ny2"
   lob         = "fml"
-  name_servers = ["10.226.199.53","127.0.0.1"]
 }
 # Add a comment to make it look different
 module "example_module1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "us01vwexpl123"
-  alias               = "fml-ny2-skwexample01"
+  hostname            = "us01vlexpl123"
+  alias               = "fml-ny2-sklexample01"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   os_version          = local.os
@@ -33,7 +32,6 @@ module "example_module1" {
   foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter
   lob                 = local.lob
-  name_servers        = local.name_servers
 }
 
 
