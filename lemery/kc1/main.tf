@@ -5,7 +5,7 @@ terraform {
 locals {
   lob           = "cea"
   image         = "rhel7"
-  hostgroup     = "BT Base Server"
+  hostgroup     = "BT Small Kafka Broker Server"
   environment   = "master"
   datacenter    = "ny2"
   cluster       = "ny2-azd-ntnx-10"
@@ -13,7 +13,7 @@ locals {
   cpus          = "4"
   memory        = "8192"
   disks     = {
-    1 = "500",
+    1 = "700",
   }
   facts         = {
     "bt_tier" = "ny2"
