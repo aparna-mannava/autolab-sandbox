@@ -34,6 +34,7 @@ module "example_module1" {
   lob                 = local.lob
 }
 
+resource "null_resource" "staging_for_delete" {}
 
 output "example_module1" {
   value = {
