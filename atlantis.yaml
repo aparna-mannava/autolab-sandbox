@@ -154,6 +154,8 @@ projects:
   dir: stevek/hackathon/example2
 - name: stevek-hackathon-winexample1
   dir: stevek/hackathon/winexample1
+- name: stevek-sudotest
+  dir: stevek/sudotest
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
