@@ -14,6 +14,8 @@ projects:
   dir: cfrmrd/ic/production
 - name: genady-ssl
   dir: cfrmrd/ssl
+- name: genady-gitlab
+  dir: cfrmrd/gitlab
 - name: stephendjenkins
   dir: stephen.daconceicao/jenkins
   workflow: nutanix-backend
