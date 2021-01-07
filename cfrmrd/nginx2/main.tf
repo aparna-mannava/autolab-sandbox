@@ -20,8 +20,8 @@ locals {
  
 module "staging_nginx" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd200"
-  alias                = "cfrmx-staging-ic22"
+  hostname             = "us01vlcfrmrd222"
+  alias                = "cfrmx-staging-ic222"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = "1"
