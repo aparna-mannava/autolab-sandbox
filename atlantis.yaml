@@ -4,6 +4,8 @@ automerge: true
 projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
+- name: genady-nginx2
+  dir: cfrmrd/nginx2
 - name: genady-es
   dir: cfrmrd/es/temp
 - name: genady-ic
