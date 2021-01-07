@@ -29,7 +29,7 @@ module "staging_nginx" {
   os_version           = "rhel7"
   external_facts       = local.staging_nginx_facts
   foreman_environment  = "master"
-  foreman_hostgroup    = "BT CFRMRD Nginx"
+  foreman_hostgroup    = "CFRMRD NGINX"
   lob                  = "CFRM"
   datacenter           = "ny2"
   additional_disks     = {
