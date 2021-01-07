@@ -28,7 +28,7 @@ module "staging_nginx" {
   memory               = "2048"
   os_version           = "rhel7"
   external_facts       = local.staging_nginx_facts
-  foreman_environment  = "master"
+  foreman_environment  = "feature_CFRMX_4557_NGINX_failures"
   foreman_hostgroup    = "CFRMRD NGINX"
   lob                  = "CFRM"
   datacenter           = "ny2"
