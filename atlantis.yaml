@@ -335,3 +335,6 @@ projects:
   dir: savula/POST
 - name: skola-POST
   dir: skola/POST
+- name: llabranche-ora2pg-oracle01
+  dir: llabranche/ora2pg/oracle01
+  workflow: nutanix-backend
