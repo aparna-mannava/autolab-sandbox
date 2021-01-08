@@ -24,6 +24,9 @@ projects:
 - name: stephendnexus
   dir: stephen.daconceicao/nexus
   workflow: nutanix-backend
+- name: cbonnet-pg
+  dir: cbonnet/pg
+  workflow: nutanix-backend
 - name: cdrew-dev4hapg
   dir: cdrew/dev5/hapg
   workflow: nutanix-backend
