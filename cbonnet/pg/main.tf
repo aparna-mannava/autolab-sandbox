@@ -3,7 +3,6 @@ terraform {
 }
 
 locals {
-  # comments
   etcd_servers    = ["us01vltfetcd11","us01vltfetcd12","us01vltfetcd13"]
   hapg_servers    = ["us01vltfhapg11","us01vltfhapg12","us01vltfhapg13"]
   backrest_server = ["us01vltfpgbkp11"]
