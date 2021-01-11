@@ -6,7 +6,6 @@ locals {
   etcd_servers    = ["us01vltfetcd11","us01vltfetcd12","us01vltfetcd13"]
   hapg_servers    = ["us01vltfhapg11","us01vltfhapg12","us01vltfhapg13"]
   backrest_server = ["us01vltfpgbkp11"]
-  etcd_hosts_p    = ["'us01vltfetcd11.auto.saas-n.com','us01vltfetcd12.auto.saas-n.com','us01vltfetcd13.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
   bt_env          = "11"
