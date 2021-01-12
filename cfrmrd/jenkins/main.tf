@@ -9,7 +9,7 @@ locals {
       "bt_tier"     = "dev"
       "bt_env"      = "staging"
     }
-    staging_nginx_facts    = {
+    staging_jenkins_facts    = {
       "bt_role" = "jenkins"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_product" = "${local.facts.bt_product}"
@@ -18,7 +18,7 @@ locals {
      }
 }
  
-module "staging_nginx" {
+module "staging_jenkins" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd223"
   alias                = "cfrmx-jenkins"
@@ -27,7 +27,7 @@ module "staging_nginx" {
   cpus                 = "2"
   memory               = "4096"
   os_version           = "rhel7"
-  external_facts       = local.staging_nginx_facts
+  external_facts       = local.staging_jenkins_facts
   foreman_environment  = "feature_CFRMX_4598_Jenkins"
   foreman_hostgroup    = "CFRMRD Jenkins"
   lob                  = "CFRM"
@@ -38,7 +38,7 @@ module "staging_nginx" {
   }
 }
 
-output "staging_nginx" {
+output "staging_jenkins" {
   value = {
     "fqdn"  = "${module.staging_nginx.fqdn}",
     "alias" = "${module.staging_nginx.alias}",

@@ -8,6 +8,7 @@ projects:
   dir: cfrmrd/nginx2
 - name: genady-jenkins
   dir: cfrmrd/jenkins
+  workflow: nutanix-backend
 - name: genady-es
   dir: cfrmrd/es/temp
 - name: genady-ic
