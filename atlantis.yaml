@@ -6,6 +6,7 @@ projects:
   dir: cfrmrd/nginx
 - name: genady-nginx2
   dir: cfrmrd/nginx2
+  workflow: nutanix-backend
 - name: genady-jenkins
   dir: cfrmrd/jenkins
   workflow: nutanix-backend
