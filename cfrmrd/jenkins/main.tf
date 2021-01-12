@@ -40,8 +40,8 @@ module "staging_jenkins" {
 
 output "staging_jenkins" {
   value = {
-    "fqdn"  = "${module.staging_nginx.fqdn}",
-    "alias" = "${module.staging_nginx.alias}",
-    "ip"    = "${module.staging_nginx.ip}"
+    "fqdn"  = "${module.staging_jenkins.fqdn}",
+    "alias" = "${module.staging_jenkins.alias}",
+    "ip"    = "${module.staging_jenkins.ip}"
   }
 } 
