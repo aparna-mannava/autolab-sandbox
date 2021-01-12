@@ -25,7 +25,7 @@ module "staging_jenkins" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = "2"
-  memory               = "4096"
+  memory               = "2048"
   os_version           = "rhel7"
   external_facts       = local.staging_jenkins_facts
   foreman_environment  = "feature_CFRMX_4598_Jenkins"
