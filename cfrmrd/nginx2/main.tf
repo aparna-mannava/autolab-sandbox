@@ -44,4 +44,4 @@ output "staging_nginx" {
     "alias" = "${module.staging_nginx.alias}",
     "ip"    = "${module.staging_nginx.ip}"
   }
-} 
+}  
