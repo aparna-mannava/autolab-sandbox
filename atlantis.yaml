@@ -5,12 +5,8 @@ projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
 - name: genady-nginx2
-  dir: cfrmrd/nginx2
-- name: genady-jenkins
   dir: cfrmrd/jenkins
   workflow: nutanix-backend
-- name: genady-es
-  dir: cfrmrd/es/temp
 - name: genady-ic
   dir: cfrmrd/ic
 - name: genady-ic-ssl
