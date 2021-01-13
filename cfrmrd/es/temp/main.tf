@@ -16,7 +16,7 @@ locals {
       "bt_role" = "${local.facts.bt_role}"
       "bt_env" = "qa2"
      }
-} 
+}  
  
 module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
