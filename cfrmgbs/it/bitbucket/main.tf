@@ -15,7 +15,7 @@ locals {
   }
   datacenter = {
     name = "ny2"
-    id   = "il02"
+    id   = "ny2"
   }
   #|#################################################|#  
   #|## -- create Bitbucket and HAProxy servers -- ###|#
@@ -25,7 +25,7 @@ locals {
   cfbb001 = { 
     hostname    = "${local.hostname}vlbb${local.facts.bt_host_number}"
     alias       = "${local.hostname}vlbitbucket${local.facts.bt_host_number}"
-    silo        = "prod"
+    silo        = "autolab"
     hostgroup   = "BT CFRM IT Management" 
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
@@ -40,7 +40,7 @@ locals {
   cfpx001 = { 
     hostname    = "${local.hostname}vlprx${local.facts.bt_host_number}"
     alias       = "${local.hostname}vlhaproxy${local.facts.bt_host_number}"
-    silo        = "prod"
+    silo        = "autolab"
     hostgroup   = "BT CFRM IT Management"
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
