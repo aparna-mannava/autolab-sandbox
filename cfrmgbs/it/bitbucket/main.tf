@@ -4,7 +4,7 @@ terraform {
 #  Build Bitbucket and HAProxy #
 locals {
   product     = "cfrmit"
-  environment = "master"   
+  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #  Build Bitbucket and HAProxy
   hostname    = "il02"
   facts = {
     "bt_product"     = "cfrmit"
