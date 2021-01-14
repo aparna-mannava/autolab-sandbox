@@ -10,7 +10,8 @@ locals {
     "bt_product"     = "cfrmit"
     "bt_customer"    = "it"
     "bt_tier"        = "prod"
-    "bt_role"        = "bitbucket"
+    "bt_role_bb"        = "bitbucket"
+    "bt_role_ha"        = "haproxy"
     "bt_host_number" = "001"
   }
   datacenter = {
@@ -31,7 +32,7 @@ locals {
       "bt_product"  = "${local.facts.bt_product}"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_tier"     = "${local.facts.bt_tier}"
-      "bt_role"     = "${local.facts.bt_role}"
+      "bt_role"     = "${local.facts.bt_role_bb}"
       "bt_app"      = "bitbucket"
       "bt_fw_group" = "CFRMRD_NY02_BH_TO_CFRMRD_PR_BB" }
   }
@@ -46,7 +47,7 @@ locals {
       "bt_product"  = "${local.facts.bt_product}"
       "bt_customer" = "${local.facts.bt_customer}"
       "bt_tier"     = "${local.facts.bt_tier}"
-      "bt_role"     = "${local.facts.bt_role}"
+      "bt_role"     = "${local.facts.bt_role_ha}"
       "bt_app"      = "haproxy"
       "bt_fw_group" = "CFRMRD_NY02_BH_TO_CFRMRD_PR_HA" }
   }
