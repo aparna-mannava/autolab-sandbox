@@ -4,7 +4,7 @@ terraform {
 #  Build Bitbucket and HAProxy #
 locals {
   product     = "cfrmit"
-  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #     Build Bitbucket and HAProxy
+  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #  Build Bitbucket and HAProxy
   hostname    = "us01"
   facts = {
     "bt_product"     = "cfrmit"
@@ -63,7 +63,7 @@ module "cfbb001" {
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "4"
-  memory              = "32768"
+  memory              = "8096"
   lob                 = "CFRM"
   external_facts      = "${local.cfbb001.facts}"
   foreman_environment = "${local.environment}"
