@@ -25,7 +25,7 @@ locals {
   cfbb001 = { 
     hostname    = "${local.hostname}vlbb${local.facts.bt_host_number}"
     alias       = "${local.hostname}vlbitbucket${local.facts.bt_host_number}"
-    silo        = "autolab"
+    silo        = "prod"
     hostgroup   = "BT CFRM IT Management" 
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
@@ -40,7 +40,7 @@ locals {
   cfpx001 = { 
     hostname    = "${local.hostname}vlprx${local.facts.bt_host_number}"
     alias       = "${local.hostname}vlhaproxy${local.facts.bt_host_number}"
-    silo        = "autolab"
+    silo        = "prod"
     hostgroup   = "BT CFRM IT Management"
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
@@ -56,8 +56,11 @@ module "cfbb001" {
   hostname            = "${local.cfbb001.hostname}"
   alias               = "${local.cfbb001.alias}"
   ## saas-p NY2 on IL02 subnet
-  bt_infra_cluster    = "il02-aza-ntnx-01"
-  bt_infra_network    = "il02_hosted_corp_app"
+  #bt_infra_cluster    = "il02-aza-ntnx-01"
+  #bt_infra_network    = "il02_hosted_corp_app"
+  ## auto.saas-n
+  bt_infra_cluster    = "ny5-aza-ntnx-14"
+  bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "4"
   memory              = "32768"
