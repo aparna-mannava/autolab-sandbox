@@ -27,7 +27,7 @@ locals {
     hostname    = "${local.hostname}vlbb${local.facts.bt_host_number}"
     alias       = "${local.hostname}vlbitbucket${local.facts.bt_host_number}"
     silo        = "autolab"
-    hostgroup   = "BT CFRM IT Management" 
+    hostgroup   = "BT CFRM IT Bitbucket Server" 
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
       "bt_customer" = "${local.facts.bt_customer}"
@@ -42,7 +42,7 @@ locals {
     hostname    = "${local.hostname}vlprx${local.facts.bt_host_number}"
     alias       = "${local.hostname}vlhaproxy${local.facts.bt_host_number}"
     silo        = "autolab"
-    hostgroup   = "BT CFRM IT Management"
+    hostgroup   = "BT CFRM IT HAProxy Server"
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
       "bt_customer" = "${local.facts.bt_customer}"
