@@ -63,7 +63,7 @@ module "cfbb001" {
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "4"
-  memory              = "32768"
+  memory              = "8096"
   lob                 = "CFRM"
   external_facts      = "${local.cfbb001.facts}"
   foreman_environment = "${local.environment}"
