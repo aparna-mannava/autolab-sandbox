@@ -10,8 +10,8 @@ locals {
     "bt_product"     = "cfrmit"
     "bt_customer"    = "it"
     "bt_tier"        = "prod"
-    "bt_role_bb"        = "bitbucket"
-    "bt_role_ha"        = "haproxy"
+    "bt_role_bb"     = "bitbucket"
+    "bt_role_ha"     = "haproxy"
     "bt_host_number" = "001"
   }
   datacenter = {
