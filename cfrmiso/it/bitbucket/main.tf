@@ -12,7 +12,7 @@ locals {
     "bt_tier"     = "prod"
     "bt_role"     = "cfrm_it"
   }
-  datacenter = {
+  datacenter = { 
     name = "ny2"
     id   = "il02"
   }

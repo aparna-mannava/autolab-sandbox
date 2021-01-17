@@ -340,3 +340,5 @@ projects:
 - name: llabranche-ora2pg-oracle01
   dir: llabranche/ora2pg/oracle01
   workflow: nutanix-backend
+- name: cfrmiso-it-eitan
+  dir: cfrmiso/it/bitbucket
