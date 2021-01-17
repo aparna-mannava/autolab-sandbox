@@ -3,7 +3,6 @@ terraform {
 }
 
 locals {
-  # comments
   etcd_servers    = ["us01vltfetcd11","us01vltfetcd12","us01vltfetcd13"]
   hapg_servers    = ["us01vltfhapg11","us01vltfhapg12","us01vltfhapg13"]
   backrest_server = ["us01vltfpgbkp11"]
@@ -35,7 +34,7 @@ module "ny2_autolab_hapg_0" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   lob                  = local.lob
-  foreman_hostgroup    = "BT HA PG Server"
+  foreman_hostgroup    = "BT Postgresql DB Server"
   foreman_environment  = local.environment
   os_version           = "rhel7"
   cpus                 = "2"
@@ -44,48 +43,8 @@ module "ny2_autolab_hapg_0" {
   datacenter           = "ny2"
   additional_disks     = {
   1 = "100",
-  2 = "150",
-  3 = "150",
-  }
-}
-
-module "ny2_autolab_hapg_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hapg_servers[1]}"
-  bt_infra_cluster     = local.cluster
-  bt_infra_network     = local.network
-  foreman_hostgroup    = "BT HA PG Server"
-  foreman_environment  = local.environment
-  lob                  = local.lob
-  os_version           = "rhel7"
-  cpus                 = "2"
-  memory               = "4096"
-  external_facts       = local.facts
-  datacenter           = "ny2"
-  additional_disks     = {
-  1 = "100",
-  2 = "150",
-  3 = "150",
-  }
-}
-
-module "ny2_autolab_hapg_2" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hapg_servers[2]}"
-  bt_infra_cluster     = local.cluster
-  bt_infra_network     = local.network
-  foreman_hostgroup    = "BT HA PG Server"
-  foreman_environment  = local.environment
-  lob                  = local.lob
-  os_version           = "rhel7"
-  cpus                 = "2"
-  memory               = "4096"
-  external_facts       = local.facts
-  datacenter           = "ny2"
-  additional_disks     = {
-    1 = "100",
-    2 = "150",
-    3 = "150",
+  2 = "80",
+  3 = "80",
   }
 }
 
@@ -94,21 +53,5 @@ output "ny2_autolab_hapg_0" {
     "fqdn"  = "${module.ny2_autolab_hapg_0.fqdn}",
     "alias" = "${module.ny2_autolab_hapg_0.alias}",
     "ip"    = "${module.ny2_autolab_hapg_0.ip}",
-  }
-}
-
-output "ny2_autolab_hapg_1" {
-  value = {
-    "fqdn"  = "${module.ny2_autolab_hapg_1.fqdn}",
-    "alias" = "${module.ny2_autolab_hapg_1.alias}",
-    "ip"    = "${module.ny2_autolab_hapg_1.ip}",
-  }
-}
-
-output "ny2_autolab_hapg_2" {
-  value = {
-    "fqdn"  = "${module.ny2_autolab_hapg_2.fqdn}",
-    "alias" = "${module.ny2_autolab_hapg_2.alias}",
-    "ip"    = "${module.ny2_autolab_hapg_2.ip}",
   }
 }

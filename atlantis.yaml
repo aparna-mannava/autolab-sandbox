@@ -25,8 +25,7 @@ projects:
   workflow: nutanix-backend
 - name: cbonnet-pg
   dir: cbonnet/pg
-  workflow: nutanix-backend
-  # comments
+  workflow: nutanix-backend #
 - name: cdrew-dev4hapg
   dir: cdrew/dev5/hapg
   workflow: nutanix-backend
@@ -288,8 +287,8 @@ projects:
   dir: cfrmiso/mgmt/autolab
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
-- name: cfrmiso-it-bitb
-  dir: cfrmiso/it/bitbucket
+- name: cfrmit-bitbucket
+  dir: cfrmgbs/it/bitbucket
 - name: cfrmiso-it-hap
   dir: cfrmiso/it/haproxy
 - name: llabranche-ora2pg
@@ -341,5 +340,5 @@ projects:
 - name: llabranche-ora2pg-oracle01
   dir: llabranche/ora2pg/oracle01
   workflow: nutanix-backend
-- name: cfrmit-bitbucket-gbs
-  dir: cfrmgbs/bitbucket
+- name: cfrmiso-it-eitan
+  dir: cfrmiso/it/bitbucket
