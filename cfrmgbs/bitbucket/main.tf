@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmgbs"
-  environment = "feature_CFRMGC_192_change_in_puppet_repo_from_cfrmiso_to_cfrmgbs" #  Build Bitbucket and HAProxy
+  environment = "feature_CFRMGC_192_change_in_puppet_repo_from_cfrmiso_to_cfrmgbs" #   Build Bitbucket and HAProxy
   hostname    = "us01"
   facts = {
     "bt_product"  = "cfrmgbs"
