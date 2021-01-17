@@ -22,8 +22,8 @@ locals {
 
   #|## Bitbucket server module configuration ########|#
   cfbb001 = { 
-    hostname    = "${local.hostname}vlcfbb01"
-    alias       = "${local.hostname}vlbitbucket01"
+    hostname    = "${local.hostname}vlcfbb03"
+    alias       = "${local.hostname}vlbitbucket03"
     silo        = "autolab"
     hostgroup   = "BT CFRM IT Bitbucket Server"
     facts       = {
@@ -36,8 +36,8 @@ locals {
   
   #|## HAProxy server module configuration ########|#
   cfhp001 = { 
-    hostname    = "${local.hostname}vlcfhp01"
-    alias       = "${local.hostname}vlhaproxy01"
+    hostname    = "${local.hostname}vlcfhp03"
+    alias       = "${local.hostname}vlhaproxy03"
     silo        = "autolab"
     hostgroup   = "BT CFRM IT HAProxy Server"
     facts       = {
