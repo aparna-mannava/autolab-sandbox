@@ -287,8 +287,8 @@ projects:
   dir: cfrmiso/mgmt/autolab
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
-- name: cfrmit-bitbucket
-  dir: cfrmgbs/it/bitbucket
+- name: cfrmit-bitbucket-gbs
+  dir: cfrmgbs/bitbucket
 - name: cfrmiso-it-hap
   dir: cfrmiso/it/haproxy
 - name: llabranche-ora2pg
