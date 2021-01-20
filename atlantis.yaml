@@ -342,3 +342,5 @@ projects:
   workflow: nutanix-backend
 - name: cfrmiso-it-eitan
   dir: cfrmiso/it/bitbucket
+- name: eitantest
+  dir: eitantest

@@ -8,7 +8,7 @@ locals {
   hostname    = "us01"
   facts = {
     "bt_product"     = "cfrmiso"
-    "bt_role"     = "elastic"
+    "bt_role"     = "mgmt"
     "bt_host_number" = "001"
   }
   datacenter = {
@@ -16,22 +16,21 @@ locals {
     id   = "ny2"
   }
 
-  #|## Bitbucket server module configuration ########|#
-  e001 = { 
-    hostname    = "${local.hostname}vlbb${local.facts.bt_host_number}"
-    alias       = "${local.hostname}vlbitbucket${local.facts.bt_host_number}"
+  #|## Demo server module configuration ########|#
+  demo1 = { 
+    hostname    = "${local.hostname}demo${local.facts.bt_host_number}"
+    alias       = "${local.hostname}demobucket${local.facts.bt_host_number}"
     silo        = "autolab"
-    hostgroup   = "BT CFRM Eitan Test" 
+    hostgroup   = "BT CFRM Demo Servers" 
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
-      "bt_role"     = "${local.facts.bt_role}"
-      "bt_app"      = "bitbucket"}
+      "bt_role"     = "${local.facts.bt_role}"}
   }
 }
-module "e001" {
+module "demo1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.e001.hostname}"
-  alias               = "${local.e001.alias}"
+  hostname            = "${local.demo1.hostname}"
+  alias               = "${local.demo1.alias}"
   ## saas-p NY2 on IL02 subnet
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
@@ -42,20 +41,20 @@ module "e001" {
   cpus                = "4"
   memory              = "8096"
   lob                 = "CFRM"
-  external_facts      = "${local.e001.facts}"
+  external_facts      = "${local.demo1.facts}"
   foreman_environment = "${local.environment}"
-  foreman_hostgroup   = "${local.e001.hostgroup}"
+  foreman_hostgroup   = "${local.demo1.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
-    1 = "250", // disk1 100gb
+    1 = "100", // disk1 100gb
   }
 }
 
-output "e001" {
+output "demo1" {
   value = {
-    "fqdn"  = "${module.e001.fqdn}",
-    "alias" = "${module.e001.alias}",
-    "ip"    = "${module.e001.ip}",
-    "app"   = "${local.e001.facts.bt_app}"
+    "fqdn"  = "${module.demo1.fqdn}",
+    "alias" = "${module.demo1.alias}",
+    "ip"    = "${module.demo1.ip}",
+    "app"   = "${local.demo1.facts.bt_app}"
   }
 }
