@@ -54,7 +54,6 @@ output "demo1" {
   value = {
     "fqdn"  = "${module.demo1.fqdn}",
     "alias" = "${module.demo1.alias}",
-    "ip"    = "${module.demo1.ip}",
-    "app"   = "${local.demo1.facts.bt_app}"
+    "ip"    = "${module.demo1.ip}"
   }
 }
