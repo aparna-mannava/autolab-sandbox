@@ -4,7 +4,7 @@ automerge: true
 projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
-- name: genady-nginx2
+- name: genady-jenkins
   dir: cfrmrd/jenkins
   workflow: nutanix-backend
 - name: genady-ic
@@ -25,8 +25,7 @@ projects:
   workflow: nutanix-backend
 - name: cbonnet-pg
   dir: cbonnet/pg
-  workflow: nutanix-backend
-  # comments
+  workflow: nutanix-backend #
 - name: cdrew-dev4hapg
   dir: cdrew/dev5/hapg
   workflow: nutanix-backend
@@ -288,8 +287,8 @@ projects:
   dir: cfrmiso/mgmt/autolab
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
-- name: cfrmit-bitbucket
-  dir: cfrmgbs/it/bitbucket
+- name: cfrmit-bitbucket-gbs
+  dir: cfrmgbs/bitbucket
 - name: cfrmiso-it-hap
   dir: cfrmiso/it/haproxy
 - name: llabranche-ora2pg
@@ -345,5 +344,8 @@ projects:
   dir: cfrmiso/it/bitbucket
 - name: eitantest
   dir: eitantest
+- name: ir-pg-db
+  dir: mspatre
+  workflow: nutanix-backend
 - name: 5demos
   dir: 5demo/first
