@@ -350,7 +350,7 @@ projects:
 - name: nirmal-pgtest1
   dir: nirmal/pgtest1
   workflow: nutanix-backend
-- name: demo1
+- name: 5demos
   dir: 5demo/demo1
 - name: demo2
   dir: 5demo/demo2
