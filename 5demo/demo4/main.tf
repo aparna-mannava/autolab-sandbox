@@ -40,7 +40,7 @@ module "demo4" {
   os_version          = "rhel7"
   cpus                = "4"
   memory              = "8096"
-  #lob                 = "CFRM"
+  lob                 = "CFRM"
   external_facts      = "${local.demo4.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.demo4.hostgroup}"
