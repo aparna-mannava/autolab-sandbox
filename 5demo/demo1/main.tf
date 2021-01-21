@@ -25,6 +25,7 @@ locals {
     facts       = {
       "bt_product"  = "${local.facts.bt_product}"
       "bt_role"     = "${local.facts.bt_role}"}
+      "bt_tier"     = "autolab"
   }
 }
 module "demo1" {
