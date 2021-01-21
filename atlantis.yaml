@@ -4,7 +4,7 @@ automerge: true
 projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
-- name: genady-nginx2
+- name: genady-jenkins
   dir: cfrmrd/jenkins
   workflow: nutanix-backend
 - name: genady-ic
@@ -344,5 +344,8 @@ projects:
   dir: cfrmiso/it/bitbucket
 - name: eitantest
   dir: eitantest
+- name: ir-pg-db
+  dir: mspatre
+  workflow: nutanix-backend
 - name: nirmal-pgtest1
   dir: nirmal/pgtest1
