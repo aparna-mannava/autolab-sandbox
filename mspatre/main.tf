@@ -1,49 +1,43 @@
-#
 # Build the IR PostgreSQL Database server
-#
+
 terraform {
   backend "s3" {}
 }
 
 locals {
-  product     = "ir"
-  domain      = "saas-n.com"
-  environment = "feature_IRCA_858"
-  datacenter  = "ny2"
-  facts       = {
-    "bt_product"       = "ir"
-    "bt_tier"          = "dev"
-    "bt_env"           = "1"
-    "bt_override_date" = "2020-20-01"
-    "bt_pg_version"    = "12"
-  }
+facts = {
+"bt_tier" = "dev"
+"bt_env" = "1"
+}
 }
 
-module "pgdb_server_ir_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlirpgdb01"
-  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-pgdb01"
-  bt_infra_cluster     = "ny5-aza-ntnx-14"
-  bt_infra_network     = "ny2-receivables-dev-qa"
-  os_version           = "rhel7"
-  cpus                 = 2
-  memory               = 8192
-  lob                  = "IR"
-  foreman_hostgroup    = "BT IR PG"
-  external_facts       = "${local.facts}"
-  foreman_environment  = "${local.environment}"
-  datacenter           = "${local.datacenter}"
-  additional_disks     = {
-    1 = "100",
-    2 = "150",
-    3 = "150"
-  }
+module "db_server1" {
+source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+hostname = "us01vlirdbpg001"
+alias = "pgdb-irtest-pg01"
+bt_infra_network = "ny2-autolab-db"
+bt_infra_cluster = "ny2-aza-vmw-autolab"
+cpus = 2
+memory = 8096
+os_version = "rhel7"
+lob = "dev"
+external_facts       = local.facts
+foreman_environment = "master"
+foreman_hostgroup = "BT IR PG"
+datacenter = "ny2"
+additional_disks = {
+1 = "100",
+2 = "50",
+3 = "50",
+}
 }
 
-output "pgdb_server_ir_1" {
+output "db_server1" {
   value = {
-    "fqdn"  = "${module.pgdb_server_ir_1.fqdn}",
-    "alias" = "${module.pgdb_server_ir_1.alias}",
-    "ip"    = "${module.pgdb_server_ir_1.ip}",
+    "fqdn"  = "${module.db_server1.fqdn}",
+    "alias" = "${module.db_server1.alias}",
+    "ip"    = "${module.db_server1.ip}",
   }
 }
+
+

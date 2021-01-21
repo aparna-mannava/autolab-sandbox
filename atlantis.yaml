@@ -346,3 +346,4 @@ projects:
   dir: eitantest
 - name: ir-pg-db
   dir: mspatre
+  workflow: nutanix-backend
