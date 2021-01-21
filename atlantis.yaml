@@ -344,3 +344,6 @@ projects:
   dir: cfrmiso/it/bitbucket
 - name: eitantest
   dir: eitantest
+- name: ir-pg-db
+  dir: mspatre
+  workflow: nutanix-backend
