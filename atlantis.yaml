@@ -344,3 +344,5 @@ projects:
   dir: cfrmiso/it/bitbucket
 - name: eitantest
   dir: eitantest
+- name: nirmal-pgtest1
+  dir: nirmal/pgtest1
