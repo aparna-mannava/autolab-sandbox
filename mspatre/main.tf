@@ -5,11 +5,13 @@ terraform {
 }
 
 locals {
-facts = {
-"bt_product" = "ir"
-"bt_tier" = "IR"
-"bt_env" = "1"
-}
+  facts       = {
+    "bt_tier"    = "dev"
+    "bt_product" = "ir"
+    "bt_role" = "postgresql"
+    "bt_env"    = "2"
+    "bt_pg_version" = "12"
+  }
 }
 
 module "db_server1" {
@@ -21,7 +23,7 @@ bt_infra_cluster = "ny2-aza-vmw-autolab"
 cpus = 2
 memory = 8096
 os_version = "rhel7"
-lob = "dev"
+lob = "IR"
 external_facts       = local.facts
 foreman_environment = "master"
 foreman_hostgroup = "BT IR PG"
