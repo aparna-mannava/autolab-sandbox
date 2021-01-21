@@ -4,7 +4,7 @@ terraform {
 #  Build test server
 locals {
   product     = "cfrmit"
-  environment = "feature_CFRMGC_219_puppet_test" 
+  environment = "master" 
   hostname    = "us01"
   facts = {
     "bt_product"     = "cfrmiso"
@@ -46,7 +46,7 @@ module "demo1" {
   foreman_hostgroup   = "${local.demo1.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
-    1 = "100", // disk1 100gb
+    1 = "100", // disk1 100gb 
   }
 }
 

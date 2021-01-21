@@ -345,3 +345,5 @@ projects:
   dir: cfrmiso/it/bitbucket
 - name: eitantest
   dir: eitantest
+- name: 5demos
+  dir: 5demo/first
