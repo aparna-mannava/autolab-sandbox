@@ -349,3 +349,4 @@ projects:
   workflow: nutanix-backend
 - name: nirmal-pgtest1
   dir: nirmal/pgtest1
+  workflow: nutanix-backend
