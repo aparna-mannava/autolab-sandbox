@@ -1,6 +1,15 @@
 terraform {
   backend "s3" {}
 }
+locals {
+  facts       = {
+    "bt_tier"    = "auto"
+    "bt_product" = "shared"
+    "bt_role" = "postgresql"
+    "bt_env"    = "2"
+    "bt_pg_version" = "12"
+  }
+}
 
 module "postgres_server1" {
   source                = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
