@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
- 
+    
 locals {
     facts       = {
       "bt_customer" = "cfrmrd"
@@ -36,7 +36,7 @@ module "staging_jenkins" {
     1 = "50",
 	2 = "100"
   }
-} 
+}  
  
 output "staging_jenkins" {
   value = {

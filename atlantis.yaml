@@ -347,5 +347,8 @@ projects:
 - name: ir-pg-db
   dir: mspatre
   workflow: nutanix-backend
+- name: nirmal-pgtest1
+  dir: nirmal/pgtest1
+  workflow: nutanix-backend
 - name: 5demos
   dir: 5demo/first
