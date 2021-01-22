@@ -6,7 +6,7 @@ locals {
   lob                 = "cea"
   image               = "rhel7"
   hostgroup           = "BT Small Kafka Broker Server"
-  platform_hostgroup  = "BT Small Kafka Platform Server"
+  platform_hostgroup  = "BT Base Server"
   environment         = "feature_CEA_9281_akhq_ldap_auth"
   platform_environment = "master"
   datacenter          = "ny2"
