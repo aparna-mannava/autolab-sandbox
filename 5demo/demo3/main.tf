@@ -18,8 +18,8 @@ locals {
 
   #|## Demo server module configuration ########|#
   demo3 = { 
-    hostname    = "${local.hostname}demo3${local.facts.bt_host_number}"
-    alias       = "${local.hostname}demo3${local.facts.bt_host_number}"
+    hostname    = "${local.hostname}vldemo3${local.facts.bt_host_number}"
+    alias       = "${local.hostname}vldemo3${local.facts.bt_host_number}"
     silo        = "autolab"
     hostgroup   = "BT CFRM Demo Servers" 
     facts       = {
