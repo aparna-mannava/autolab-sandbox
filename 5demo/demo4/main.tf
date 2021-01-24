@@ -17,7 +17,7 @@ locals {
   }
 
   #|## Demo server module configuration ########|#
-  demo1 = { 
+  demo4 = { 
     hostname    = "${local.hostname}demo4${local.facts.bt_host_number}"
     alias       = "${local.hostname}demo4${local.facts.bt_host_number}"
     silo        = "autolab"
@@ -29,10 +29,10 @@ locals {
   }
 }
 }
-module "demo1" {
+module "demo4" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.demo1.hostname}"
-  alias               = "${local.demo1.alias}"
+  hostname            = "${local.demo4.hostname}"
+  alias               = "${local.demo4.alias}"
   ## saas-p NY2 on IL02 subnet
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
@@ -43,19 +43,19 @@ module "demo1" {
   cpus                = "4"
   memory              = "8096"
   lob                 = "CFRM"
-  external_facts      = "${local.demo1.facts}"
+  external_facts      = "${local.demo4.facts}"
   foreman_environment = "${local.environment}"
-  foreman_hostgroup   = "${local.demo1.hostgroup}"
+  foreman_hostgroup   = "${local.demo4.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
     1 = "100", // disk1 100gb 
   }
 }
 
-output "demo1" {
+output "demo4" {
   value = {
-    "fqdn"  = "${module.demo1.fqdn}",
-    "alias" = "${module.demo1.alias}",
-    "ip"    = "${module.demo1.ip}"
+    "fqdn"  = "${module.demo4.fqdn}",
+    "alias" = "${module.demo4.alias}",
+    "ip"    = "${module.demo4.ip}"
   }
 }
