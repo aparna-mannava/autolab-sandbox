@@ -26,7 +26,7 @@ locals {
       "bt_product"  = "cfrmiso"
       "bt_role"     = "mgmt"
       "bt_tier"     = "autolab"
-  }
+  } 
 }
 }
 module "demo1" {
