@@ -19,13 +19,15 @@ locals {
   #|## Demo server module configuration ########|#
   demo1 = { 
     hostname    = "${local.hostname}vldemo1${local.facts.bt_host_number}"
-    alias       = "${local.hostname}vldemo1bucket${local.facts.bt_host_number}"
+    alias       = "${local.hostname}vldemo1${local.facts.bt_host_number}"
     silo        = "autolab"
     hostgroup   = "BT CFRM Demo Servers" 
     facts       = {
-      "bt_product"  = "${local.facts.bt_product}"
-      "bt_role"     = "${local.facts.bt_role}"}
+      "bt_product"  = "cfrmiso"
+      "bt_role"     = "mgmt"
+      "bt_tier"     = "autolab"
   }
+}
 }
 module "demo1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
