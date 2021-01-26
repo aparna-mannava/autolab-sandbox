@@ -9,7 +9,7 @@ locals {
   hostgroup     = "BT CLOUD Harbor Server"
   environment   = "master"
   datacenter    = "ny2"
-  cluster       = "ny2-aze-ntnx-11"
+  cluster       = "ny2-aza-ntnx-13"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
   memory        = "2048"
