@@ -1,3 +1,4 @@
+#comment to delete VM
 terraform {
   backend "http" {}
 }
