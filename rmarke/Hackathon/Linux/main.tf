@@ -1,3 +1,4 @@
+#comment to delete VM (FMLDO-14696)
 terraform {
   backend "http" {}
 }
