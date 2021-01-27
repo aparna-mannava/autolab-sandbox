@@ -19,7 +19,7 @@ locals {
 # Add a comment to make it look different
 module "example_module1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "us01vlexpl123"
+  hostname            = "us01vlrmex123"
   alias               = "fml-ny2-rmlexample01"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
