@@ -12,7 +12,7 @@ locals {
     "bt_product" = "fml"
   }
   environment = "master"
-  hostgroup   = "BT base Linux server"
+  hostgroup   = "BT Base Server"
   datacenter  = "ny2"
   lob         = "fml"
 }
