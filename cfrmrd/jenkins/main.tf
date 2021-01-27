@@ -36,8 +36,8 @@ module "staging_jenkins" {
     1 = "50",
 	2 = "100"
   }
-}  
-  
+}   
+   
 output "staging_jenkins" {
   value = {
     "fqdn"  = "${module.staging_jenkins.fqdn}",
