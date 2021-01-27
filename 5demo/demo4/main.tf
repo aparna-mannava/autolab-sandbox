@@ -4,7 +4,7 @@ terraform {
 #  Build test server
 locals {
   product     = "cfrmit"
-  environment = "feature_CFRMGC_219_puppet_test" 
+  environment = "master" 
   hostname    = "us01"
   facts = {
     "bt_product"     = "cfrmiso"
@@ -18,14 +18,16 @@ locals {
 
   #|## Demo server module configuration ########|#
   demo1 = { 
-    hostname    = "${local.hostname}demo${local.facts.bt_host_number}"
-    alias       = "${local.hostname}demobucket${local.facts.bt_host_number}"
+    hostname    = "${local.hostname}demo4${local.facts.bt_host_number}"
+    alias       = "${local.hostname}demo4${local.facts.bt_host_number}"
     silo        = "autolab"
     hostgroup   = "BT CFRM Demo Servers" 
     facts       = {
-      "bt_product"  = "${local.facts.bt_product}"
-      "bt_role"     = "${local.facts.bt_role}"}
+      "bt_product"  = "cfrmiso"
+      "bt_role"     = "mgmt"
+      "bt_tier"     = "autolab"
   }
+}
 }
 module "demo1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
@@ -46,7 +48,7 @@ module "demo1" {
   foreman_hostgroup   = "${local.demo1.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
-    1 = "100", // disk1 100gb
+    1 = "100", // disk1 100gb 
   }
 }
 
@@ -54,7 +56,6 @@ output "demo1" {
   value = {
     "fqdn"  = "${module.demo1.fqdn}",
     "alias" = "${module.demo1.alias}",
-    "ip"    = "${module.demo1.ip}",
-    "app"   = "${local.demo1.facts.bt_app}"
+    "ip"    = "${module.demo1.ip}"
   }
 }

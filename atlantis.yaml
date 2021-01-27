@@ -64,6 +64,9 @@ projects:
   workflow: nutanix-backend
 - name: richard-test-01
   dir: richard.grainger/test_01
+- name: lemery-harbor
+  dir: lemery/harbor
+  workflow: nutanix-backend
 - name: lemery-jira
   dir: lemery/jira
   workflow: nutanix-backend
@@ -344,3 +347,19 @@ projects:
   dir: cfrmiso/it/bitbucket
 - name: eitantest
   dir: eitantest
+- name: ir-pg-db
+  dir: mspatre
+  workflow: nutanix-backend
+- name: nirmal-pgtest1
+  dir: nirmal/pgtest1
+  workflow: nutanix-backend
+- name: demo1
+  dir: 5demo/demo1
+- name: demo2
+  dir: 5demo/demo2
+- name: demo3
+  dir: 5demo/demo3
+- name: demo4
+  dir: 5demo/demo4
+- name: demo5
+  dir: 5demo/demo5
