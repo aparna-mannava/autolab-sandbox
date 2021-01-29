@@ -172,6 +172,8 @@ projects:
   dir: stevek/hackathon/linuxexample2
 - name: liamsh-linuxexample1
   dir: liamsh/linuxexample1
+- name: mfirth-examples-linux
+  dir: mfirth/examples/linux
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
