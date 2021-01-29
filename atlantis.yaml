@@ -168,6 +168,8 @@ projects:
   dir: stevek/hackathon/winexample1
 - name: stevek-sudotest
   dir: stevek/sudotest
+- name: stevek-linuxexample2
+  dir: stevek/linuxexample2
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
