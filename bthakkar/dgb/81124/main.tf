@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob           = "dgb"
+  lob           = "CLOUD"
   puppet_env    = "master"
   datacenter    = "ny2"
   domain        = "auto.saas-n.com"
