@@ -6,6 +6,7 @@ locals {
   puppet_env    = "master"
   datacenter    = "ny2"
   domain        = "auto.saas-n.com"
+  lob           = "CLOUD"
   facts         = {
     "bt_customer"         = "fi0007" #ex: fiXXXX
     "bt_tier"             = "pr" #ex: sbx, tst, td, demo
@@ -21,7 +22,6 @@ module "db_server_1" {
   os_version           = "rhel7"
   alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
   datacenter           = local.datacenter
-  lob                  = "CLOUD"
   bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   foreman_environment  = local.puppet_env
