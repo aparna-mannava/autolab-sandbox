@@ -6,13 +6,12 @@ locals {
   puppet_env    = "master"
   datacenter    = "ny2"
   domain        = "auto.saas-n.com"
-  lob           = "CLOUD"
+  lob           = "dgb"
   facts         = {
-    "bt_customer"         = "fi0007" #ex: fiXXXX
+    "bt_customer"         = "fi9999" #ex: fiXXXX
     "bt_tier"             = "pr" #ex: sbx, tst, td, demo
     "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
-    "bt_product_version"  = "3.6"
   }
 }
 
@@ -31,6 +30,8 @@ module "db_server_1" {
   memory               = "65536"
   additional_disks     = {
     1 = "200",
+    2 = "200",
+    3 = "200"
   }
 }
 
