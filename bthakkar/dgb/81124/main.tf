@@ -18,7 +18,7 @@ locals {
 
 module "db_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us00vlauto057" #ex: us01vldgbdbXXX
+  hostname             = "us00vlautolab057" #ex: us01vldgbdbXXX
   os_version           = "rhel7"
   alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
   datacenter           = local.datacenter
