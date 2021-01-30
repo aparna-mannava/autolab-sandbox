@@ -23,7 +23,7 @@ module "db_server_1" {
   alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
   datacenter           = local.datacenter
   bt_infra_network     = "ny2-autolab-db-ahv"
-  bt_infra_cluster     = "ny2-aze-ntnx-11"
+  bt_infra_cluster     = "ny2-aza-ntnx-13"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb Server" #ex: BT DGB Oradb Server
   external_facts       = local.facts
