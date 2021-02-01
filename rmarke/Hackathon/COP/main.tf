@@ -12,6 +12,7 @@ locals {
     "bt_product" = "fml"
   }
   environment = "master"
+  hostgroup   = "BT Base Windows Server"
   datacenter  = "ny2"
   lob         = "fml"
 }
@@ -27,6 +28,7 @@ module "example_module1" {
   memory              = local.memory
   external_facts      = local.facts
   foreman_environment = local.environment
+  foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter
   lob                 = local.lob
 }
