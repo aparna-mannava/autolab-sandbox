@@ -36,12 +36,40 @@ module "staging_jenkins" {
     1 = "50",
 	2 = "100"
   }
-}   
+}  
+
+module "staging_jenkins2" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlcfrmrd224"
+  alias                = "cfrmx-jenkins2"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  bt_infra_cluster     = "ny2-azb-ntnx-08"
+  cpus                 = "2"
+  memory               = "1024"
+  os_version           = "rhel7"
+  external_facts       = local.staging_jenkins_facts
+  foreman_environment  = "feature_CFRMX_4598_Jenkins"
+  foreman_hostgroup    = "CFRMRD Jenkins"
+  lob                  = "CFRM"
+  datacenter           = "ny2"
+  additional_disks     = {
+    1 = "50",
+	2 = "100"
+  }
+}  
          
 output "staging_jenkins" {
   value = {
     "fqdn"  = "${module.staging_jenkins.fqdn}",
     "alias" = "${module.staging_jenkins.alias}",
     "ip"    = "${module.staging_jenkins.ip}"
+  }
+} 
+
+output "staging_jenkins2" {
+  value = {
+    "fqdn"  = "${module.staging_jenkins2.fqdn}",
+    "alias" = "${module.staging_jenkins2.alias}",
+    "ip"    = "${module.staging_jenkins2.ip}"
   }
 } 
