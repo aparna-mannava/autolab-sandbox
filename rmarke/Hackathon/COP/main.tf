@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  cluster = "ny2-azb-ntnx-09"
+  cluster = "ny2-azb-ntnx-08"
   network = "ny2-autolab-app-ahv"
   os      = "win2019"
   cpus    = "2"
