@@ -160,6 +160,8 @@ projects:
   dir:  rmarke/Hackathon/Linux
 - name: rmarke-Hackathon-Windows
   dir:  rmarke/Hackathon/Windows
+- name: rmarke-Hackathon-COP-Windows
+  dir:  rmarke/Hackathon/COP/Windows
 - name: stevek-hackathon-skexample1
   dir: stevek/hackathon/example1
 - name: stevek-hackathon-skexample2
