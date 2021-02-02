@@ -377,4 +377,6 @@ projects:
 - name: llabranche-BizzDesign-sql
   dir: llabranche/BizzDesign/sql
   workflow: nutanix-backend
-
+- name: nirmal-pgtest2
+  dir: nirmal/pgtest2
+  workflow: nutanix-backend
