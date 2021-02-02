@@ -374,8 +374,8 @@ projects:
 - name: CLOUD81124
   dir: bthakkar/dgb/81124
   workflow: nutanix-backend
-- name: llabranche-BizzDesign-sql
-  dir: llabranche/BizzDesign/sql
+- name: llabranche-BizzDesign-sql02
+  dir: llabranche/BizzDesign/sql02
   workflow: nutanix-backend
 - name: nirmal-pgtest2
   dir: nirmal/pgtest2
