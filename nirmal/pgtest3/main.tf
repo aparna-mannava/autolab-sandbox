@@ -13,8 +13,8 @@ locals {
 
 module "postgres_server1" {
   source                = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname              = "us01vltfdm079"
-  alias                 = "tf-pg-mstr079"
+  hostname              = "us01vltfdm099"
+  alias                 = "tf-pg-mstr099"
   bt_infra_cluster      = "ny2-azb-ntnx-09"
   bt_infra_network      = "ny2-autolab-app-ahv"
   cpus                  = "2"
