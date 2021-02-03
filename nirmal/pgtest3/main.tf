@@ -11,6 +11,8 @@ locals {
   }
 }
 
+resource "null_resource" "staging_for_delete" {}
+
 module "postgres_server1" {
   source                = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname              = "us01vltfdm069"
