@@ -380,3 +380,6 @@ projects:
 - name: nirmal-pgtest2
   dir: nirmal/pgtest2
   workflow: nutanix-backend
+- name: nirmal-pgtest3
+  dir: nirmal/pgtest3
+  workflow: nutanix-backend
