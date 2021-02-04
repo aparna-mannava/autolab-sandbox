@@ -56,7 +56,7 @@ module "app0001" {
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
   ## auto.saas-n
-  bt_infra_cluster    = "ny5-aza-ntnx-14"
+  bt_infra_cluster    = "ny2-azb-ntnx-09"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "4"
@@ -79,7 +79,7 @@ module "app0002" {
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
   ## auto.saas-n
-  bt_infra_cluster    = "ny5-aza-ntnx-14"
+  bt_infra_cluster    = "ny2-azb-ntnx-09"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "2"
