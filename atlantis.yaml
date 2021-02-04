@@ -350,6 +350,8 @@ projects:
 - name: nirmal-pgtest1
   dir: nirmal/pgtest1
   workflow: nutanix-backend
+- name: cfrmit-demo-servers
+  dir: cfrmgbs/it/demo
 - name: demo1
   dir: 5demo/demo1
 - name: demo2
