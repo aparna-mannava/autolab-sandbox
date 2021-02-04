@@ -22,8 +22,8 @@ locals {
 
   #|## Demo server 0001 module configuration ########|#
   app0001 = { 
-    hostname    = "${local.hostname}VLDEMO0001"
-    alias       = "${local.hostname}VLDEMO0001-CFRM"
+    hostname    = "${local.hostname}vlDEMO0001"
+    alias       = "${local.hostname}vlDEMO0001-CFRM"
     silo        = "autolab"
     hostgroup   = "BT CFRM IT DEMO Servers"
     facts       = {
@@ -36,8 +36,8 @@ locals {
   
   #|## Demo server 0002 module configuration ########|#
   app0002 = { 
-    hostname    = "${local.hostname}VLDEMO0002"
-    alias       = "${local.hostname}VLDEMO0002-CFRM"
+    hostname    = "${local.hostname}vlDEMO0002"
+    alias       = "${local.hostname}vlDEMO0002-CFRM"
     silo        = "autolab"
     hostgroup   = "BT CFRM IT DEMO Servers"
     facts       = {
