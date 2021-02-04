@@ -17,9 +17,9 @@ locals {
   }
 
   #|## Demo server module configuration ########|#
-  demo1 = { 
-    hostname    = "${local.hostname}demo3${local.facts.bt_host_number}"
-    alias       = "${local.hostname}demo3${local.facts.bt_host_number}"
+  demo3 = { 
+    hostname    = "${local.hostname}vldemo3${local.facts.bt_host_number}"
+    alias       = "${local.hostname}vldemo3${local.facts.bt_host_number}"
     silo        = "autolab"
     hostgroup   = "BT CFRM Demo Servers" 
     facts       = {
@@ -29,10 +29,10 @@ locals {
   }
 }
 }
-module "demo1" {
+module "demo3" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.demo1.hostname}"
-  alias               = "${local.demo1.alias}"
+  hostname            = "${local.demo3.hostname}"
+  alias               = "${local.demo3.alias}"
   ## saas-p NY2 on IL02 subnet
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
@@ -43,19 +43,19 @@ module "demo1" {
   cpus                = "4"
   memory              = "8096"
   lob                 = "CFRM"
-  external_facts      = "${local.demo1.facts}"
+  external_facts      = "${local.demo3.facts}"
   foreman_environment = "${local.environment}"
-  foreman_hostgroup   = "${local.demo1.hostgroup}"
+  foreman_hostgroup   = "${local.demo3.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
     1 = "100", // disk1 100gb 
   }
 }
 
-output "demo1" {
+output "demo3" {
   value = {
-    "fqdn"  = "${module.demo1.fqdn}",
-    "alias" = "${module.demo1.alias}",
-    "ip"    = "${module.demo1.ip}"
+    "fqdn"  = "${module.demo3.fqdn}",
+    "alias" = "${module.demo3.alias}",
+    "ip"    = "${module.demo3.ip}"
   }
 }
