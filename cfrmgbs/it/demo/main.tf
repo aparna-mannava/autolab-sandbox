@@ -20,7 +20,7 @@ locals {
   #|## -- create Demo Servers -- ###|#
   #|#################################################|#
 
-  #|## Demo server 0001 module configuration ########|#
+  #|## Demo server 0001 module configuration ########| #
   app0001 = { 
     hostname    = "${local.hostname}vlDEMO0001"
     alias       = "${local.hostname}vlDEMO0001-CFRM"
