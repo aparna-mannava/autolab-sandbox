@@ -100,7 +100,6 @@ output "app0001" {
     "fqdn"  = "${module.app0001.fqdn}",
     "alias" = "${module.app0001.alias}",
     "ip"    = "${module.app0001.ip}",
-    "app"   = "${local.app0001.facts.bt_app}"
   }
 }
 
@@ -109,6 +108,5 @@ output "app0002" {
     "fqdn"  = "${module.app0002.fqdn}",
     "alias" = "${module.app0002.alias}",
     "ip"    = "${module.app0002.ip}",
-    "app"   = "${local.app0002.facts.bt_app}"
   }
 }
