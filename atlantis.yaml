@@ -386,5 +386,5 @@ projects:
   dir: nirmal/pgtest3
   workflow: nutanix-backend
 - name: fdalobtrial
-  dir:fmasihuddin/createform/tfs
+  dir: fmasihuddin/createform/tfs
   workflow: nutanix-backend
