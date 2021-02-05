@@ -385,3 +385,5 @@ projects:
 - name: nirmal-pgtest3
   dir: nirmal/pgtest3
   workflow: nutanix-backend
+- name: dgbexporter
+  dir: spatel/dgb
