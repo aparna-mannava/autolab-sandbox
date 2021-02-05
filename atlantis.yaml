@@ -387,3 +387,5 @@ projects:
   workflow: nutanix-backend
 - name: dgbexporter
   dir: spatel/dgb
+- name: testexporter
+  dir: spatel/dgb1
