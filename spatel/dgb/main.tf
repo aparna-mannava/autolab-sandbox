@@ -10,7 +10,7 @@ locals {
     "bt_tier" = "pr"
     "bt_env"  = "2"
     "bt_role" = "oradb"
-    "bt_customer" = "CDB"
+    "bt_customer" = "fi1888"
   }
 }
 
