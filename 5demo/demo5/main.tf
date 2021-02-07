@@ -22,7 +22,7 @@ locals {
     hostname    = "${local.hostname}VLDEMO${local.facts.bt_host_number}"
     alias       = "${local.hostname}VLDEMO${local.facts.bt_host_number}"
     silo        = "autolab"
-    hostgroup   = "BT CFRM IT Demo Servers"
+    hostgroup   = "BT CFRM Demo Servers"
 }
 }
 module "app005" {
