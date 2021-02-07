@@ -13,7 +13,7 @@ locals {
   }
   datacenter = {
     name = "ny2"
-    id   = "ny2"
+    id   = "ny2" 
   }
 
   #|## Demo server module configuration ########|#
