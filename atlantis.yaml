@@ -4,6 +4,7 @@ automerge: true
 projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
+  workflow: nutanix-backend  
 - name: genady-jenkins
   dir: cfrmrd/jenkins
   workflow: nutanix-backend
