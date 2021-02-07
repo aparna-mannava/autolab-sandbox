@@ -364,7 +364,7 @@ projects:
 - name: cfrmit-demo-servers
   dir: cfrmgbs/it/demo
 - name: demo1
-  dir: 5demo/demo1
+  dir: demo/demo1
 - name: demo2
   dir: 5demo/demo2
 - name: demo3
