@@ -21,7 +21,7 @@ locals {
     hostname    = "${local.hostname}vldemo1${local.facts.bt_host_number}"
     alias       = "${local.hostname}vldemo1${local.facts.bt_host_number}"
     silo        = "autolab"
-    hostgroup   = "BT CFRM IT Demo Servers" 
+    hostgroup   = "BT CFRM IT DEMO Servers" 
     facts       = {
       "bt_product"  = "cfrmit"
       "bt_role"     = "demo"
