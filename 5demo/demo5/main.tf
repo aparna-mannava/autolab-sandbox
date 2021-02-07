@@ -51,7 +51,7 @@ module "demo5" {
     1 = "100", // disk1 100gb 
   }
 }
-
+ 
 output "demo5" {
   value = {
     "fqdn"  = "${module.demo5.fqdn}",
