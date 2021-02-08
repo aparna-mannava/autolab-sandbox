@@ -8,8 +8,9 @@ locals {
   hostname    = "us01"
   facts = {
     "bt_product"     = "cfrmit"
-    "bt_role"     = "mgmt"
+    "bt_role"     = "demo"
     "bt_host_number" = "0001"
+    "bt_tier"     = "autolab"
   }
   datacenter = {
     name = "ny2"
@@ -22,11 +23,7 @@ locals {
     alias       = "${local.hostname}vldemo1a${local.facts.bt_host_number}"
     silo        = "autolab"
     hostgroup   = "BT CFRM IT DEMO Servers" 
-    facts       = {
-      "bt_product"  = "cfrmit"
-      "bt_role"     = "demo"
-      "bt_tier"     = "autolab"
-  }
+
 }
 }
 module "demo1" {
@@ -43,7 +40,7 @@ module "demo1" {
   cpus                = "4"
   memory              = "8096"
   lob                 = "CFRM"
-  external_facts      = "${local.demo1.facts}"
+  external_facts      = "${local.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.demo1.hostgroup}"
   datacenter          = "${local.datacenter.name}"
