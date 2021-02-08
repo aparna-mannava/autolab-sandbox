@@ -4,7 +4,7 @@ automerge: true
 projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
-  workflow: nutanix-backend  
+  workflow: nutanix-backend
 - name: genady-jenkins
   dir: cfrmrd/jenkins
   workflow: nutanix-backend
@@ -390,3 +390,5 @@ projects:
   dir: spatel/dgb
 - name: testexporter
   dir: spatel/dgb1
+- name: savula-TSTPROM
+  dir: savula/TSTPROM
