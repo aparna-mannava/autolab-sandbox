@@ -395,3 +395,5 @@ projects:
   dir: spatel/dgb1
 - name: savula-TSTPROM
   dir: savula/TSTPROM
+- name: savula-PCLSTR-ETCD
+  dir: savula/PCLSTR/ETCD
