@@ -397,3 +397,5 @@ projects:
   dir: savula/TSTPROM
 - name: savula-PCLSTR-ETCD
   dir: savula/PCLSTR/ETCD
+- name: savula-PCLSTR-HAPG
+  dir: savula/PCLSTR/HAPG
