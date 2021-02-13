@@ -48,7 +48,7 @@ module "db_server_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlauto058" #ex: us01vldgbdbXXX
   os_version           = "rhel7"
-  alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
+  alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb02"
   datacenter           = local.datacenter
   bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny2-aza-ntnx-13"
