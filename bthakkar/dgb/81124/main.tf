@@ -53,6 +53,7 @@ module "db_server_2" {
   bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   foreman_environment  = local.puppet_env
+  lob				   = "CLOUD"
   foreman_hostgroup    = "BT DGB Oradb Server" #ex: BT DGB Oradb Server
   external_facts       = local.facts
   cpus                 = "8"
