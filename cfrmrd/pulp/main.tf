@@ -20,7 +20,7 @@ module "app_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd4747"
   alias                = "cfrmx-elastic-pulp1"
-  bt_infra_cluster     = "ny5-aza-ntnx-09"
+  bt_infra_cluster     = "ny2-azb-ntnx-09"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.vm01facts
