@@ -379,25 +379,5 @@ projects:
   dir: 5demo/demo4
 - name: demo5
   dir: 5demo/demo5
-- name: CLOUD81124
-  dir: bthakkar/dgb/81124
-  workflow: nutanix-backend
-- name: llabranche-BizzDesign-sql02
-  dir: llabranche/BizzDesign/sql02
-  workflow: nutanix-backend
-- name: nirmal-pgtest2
-  dir: nirmal/pgtest2
-  workflow: nutanix-backend
-- name: nirmal-pgtest3
-  dir: nirmal/pgtest3
-  workflow: nutanix-backend
-- name: dgbexporter
-  dir: spatel/dgb
-- name: testexporter
-  dir: spatel/dgb1
-- name: savula-TSTPROM
-  dir: savula/TSTPROM
-- name: savula-PCLSTR-ETCD
-  dir: savula/PCLSTR/ETCD
-- name: savula-PCLSTR-HAPG
-  dir: savula/PCLSTR/HAPG
+- name: chcnfs001
+  dir: cfrmgbs/chc/nfs
