@@ -2,6 +2,8 @@
 version: 3
 automerge: true
 projects:
+- name: alon-pulp
+  dir: cfrmrd/pulp
 - name: genady-nginx
   dir: cfrmrd/nginx
   workflow: nutanix-backend
