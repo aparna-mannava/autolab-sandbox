@@ -5,7 +5,7 @@ terraform {
 locals {
   product     = "cfrmiso"
   environment = "feature_CFRMGC-374_c.hoare_saas_p_uat_servers_instantiation"
-  hostname    = "gb03vlchc" // NFS Servers
+  hostname    = "us01vlchc" // NFS Servers
   hostgroup   = "BT CFRM NFS SERVER CHC"
     facts = {
     "bt_tier" = "ppd"
