@@ -381,3 +381,5 @@ projects:
   dir: 5demo/demo5
 - name: chcnfs001
   dir: cfrmgbs/chc/nfs
+- name: chcel01
+  dir: cfrmgbs/chc/elk
