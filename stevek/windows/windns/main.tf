@@ -15,6 +15,7 @@ locals {
     "bt_role" = "sags"
   }
 #  environment = "feature_FMLDO_14970_sagdns"
+  environment = "master"
   hostgroup   = "BT FML Base Windows"
   datacenter  = "ny2"
   lob         = "fml"
