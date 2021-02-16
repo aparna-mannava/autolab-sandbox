@@ -4,49 +4,51 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "feature_CFRMGC_374_c_hoare_saas_p_uat_servers_instantiation"
+  environment = "feature_CFRMGC_374_c_hoare_saas_p_uat_servers_instantiation"    
   hostname    = "us01vlchc"
-  hostgroup   = "BT CFRM NFS SERVER CHC"
-    facts = {
+  hostgroup   = "BT CFRM ELK CHC"
+  facts = {
     "bt_tier" = "autolab"
     "bt_customer" = "chc"
     "bt_product" = "cfrmiso"
-	  "bt_role" = "mgmt"
+	  "bt_role" = "elastic"
+    "bt_artemis_version" = "2.6.0"
+    "bt_es_version" = "5.6.2"
+    "bt_apacheds_version" = "2.0.0_M24"
   }
   datacenter = {
     name = "ny2"
     id   = "ny2"
   }
-  
-  chcnfs001 = {
-    hostname = "${local.hostname}mg001"
+  cfel01 = {
+    hostname = "${local.hostname}el01"
     silo     = "autolab"
   }
 }
 
-module "chcnfs001" {
+module "cfel01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.chcnfs001.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.chcnfs001.silo}-${local.facts.bt_role}-${local.chcnfs001.hostname}"
+  hostname            = "${local.cfel01.hostname}"
+  alias               = "${local.product}-${local.datacenter.id}-${local.cfel01.silo}-${local.facts.bt_role}-${local.cfel01.hostname}"
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "2"
-  memory              = "4096"
+  cpus                = "16"
+  memory              = "16384"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "50"
+    1 = "40",  //   disk 1
   }
 }
 
-output "chcnfs001" {
+output "cfel01" {
   value = {
-    "fqdn"  = "${module.chcnfs001.fqdn}",
-    "alias" = "${module.chcnfs001.alias}",
-    "ip"    = "${module.chcnfs001.ip}",
+    "fqdn"  = "${module.cfel01.fqdn}",
+    "alias" = "${module.cfel01.alias}",
+    "ip"    = "${module.cfel01.ip}",
   }
 }
