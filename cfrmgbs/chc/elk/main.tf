@@ -15,7 +15,7 @@ locals {
     "bt_artemis_version" = "2.6.0"
     "bt_es_version" = "5.6.2"
     "bt_apacheds_version" = "2.0.0_M24"
-  }
+  } 
   datacenter = {
     name = "ny2"
     id   = "ny2"
