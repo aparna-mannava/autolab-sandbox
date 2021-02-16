@@ -33,7 +33,7 @@ module "chcel01" {
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "16"
+  cpus                = "8"
   memory              = "16384"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
@@ -41,7 +41,7 @@ module "chcel01" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "40",  //   disk 1
+    1 = "100",  //   disk 1
   }
 }
 
