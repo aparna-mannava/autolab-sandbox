@@ -4,7 +4,7 @@ terraform {
 
 
 locals {
-  lob = "sre"
+  lob = "CLOUD"
   environment = "master"
   datacenter  = "ny2"
   cluster     = "ny2-azb-ntnx-08"
