@@ -14,13 +14,12 @@ locals {
     bt_product = "inf"
     bt_role = "consul"
     bt_lob = "SRE"
-    bt_owner = "sre@bottomline.com"
   }
 }
 
 module "autolab-consul-3" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname = "us01vlcnsl00032"
+  hostname = "us01vlcnsl00033"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
   os_version = "rhel7"
