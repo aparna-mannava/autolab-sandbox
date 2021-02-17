@@ -178,6 +178,8 @@ projects:
   dir: stevek/sudotest
 - name: stevek-hackathon-linuxexample2
   dir: stevek/hackathon/linuxexample2
+- name: stevek-windows-windns
+  dir: stevek/windows/windns
 - name: liamsh-linuxexample1
   dir: liamsh/linuxexample1
 - name: mfirth-examples-linux
