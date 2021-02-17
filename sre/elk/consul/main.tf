@@ -7,7 +7,7 @@ locals {
   lob = "CLOUD"
   environment = "master"
   datacenter  = "ny2"
-  cluster     = "ny2-azb-ntnx-08"
+  cluster     = "ny2-azb-ntnx-09"
   network     = "ny2-autolab-svc"
   facts = {
     bt_tier = "autolab"
