@@ -27,7 +27,7 @@ module "autolab-consul-3" {
   memory = "2048"
   lob = local.lob
   foreman_environment = local.environment
-  foreman_hostgroup = "BT INF Consul Server"
+  foreman_hostgroup = "BT Base Server"
   datacenter = local.datacenter
   external_facts = local.facts
 }
