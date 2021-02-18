@@ -1,3 +1,4 @@
+# foo
 terraform {
   backend "s3" {}
 }
