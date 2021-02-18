@@ -6,7 +6,7 @@ terraform {
 locals {
   lob           = "cea"
   image         = "rhel7"
-  hostgroup     = "BT CLOUD Harbor Server"
+  hostgroup     = "BT Base Server"
   environment   = "master"
   datacenter    = "ny2"
   cluster       = "ny2-aza-ntnx-13"
