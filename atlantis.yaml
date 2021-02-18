@@ -389,3 +389,5 @@ projects:
   dir: sre/elk/consul
 - name: savula-STANDBY-ETCD
   dir: savula/STANDBY/ETCD
+- name: skola-ETCD
+  dir: skola/ETCD
