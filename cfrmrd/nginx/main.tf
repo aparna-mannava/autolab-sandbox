@@ -15,7 +15,7 @@ locals {
       "bt_product" = "${local.facts.bt_product}"
      }  
 } 
-
+ 
 module "nginx_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd951"
