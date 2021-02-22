@@ -1,4 +1,4 @@
-# pulp poc
+# pulp server poc
 terraform {
   backend "http" {}
 }
