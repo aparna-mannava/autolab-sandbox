@@ -393,3 +393,5 @@ projects:
   dir: skola/ETCD
 - name: savula-STANDBY-HAPG
   dir: savula/STANDBY/HAPG
+- name: skola-HAPG
+  dir: skola/HAPG
