@@ -2,7 +2,7 @@
 terraform {
   backend "http" {}
 }
-
+#build attempt 8
 locals {
   cluster = "ny2-aza-ntnx-05"
   network = "ny2-autolab-app-ahv"
@@ -11,7 +11,7 @@ locals {
   memory  = "4096"
   facts = {
     "bt_product" = "fml"
-    "bt_tier" =  "ts-saasn"
+    "bt_tier" =  "ts-auto-saasn"
     "bt_role" = "sags"
   }
 #  environment = "feature_FMLDO_14970_sagdns"
