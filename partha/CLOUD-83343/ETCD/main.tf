@@ -79,7 +79,7 @@ module "clr-83343_etcd_2" {
 
 output "server_info" {
   value = <<INFO
-||fqdn||alias||ip||
+||fqdn||"alias"||ip||
 |${module.clr-83343_etcd_0.fqdn}|${module.clr-83343_etcd_0.alias}|${module.clr-83343_etcd_0.ip}|
 |${module.clr-83343_etcd_1.fqdn}|${module.clr-83343_etcd_1.alias}|${module.clr-83343_etcd_1.ip}|
 |${module.clr-83343_etcd_2.fqdn}|${module.clr-83343_etcd_2.alias}|${module.clr-83343_etcd_2.ip}|
