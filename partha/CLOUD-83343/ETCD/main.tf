@@ -23,7 +23,7 @@ locals {
   }
 }
 
-module "ny2_clr-83343_etcd_0" {
+module "clr-83343_etcd_0" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -41,7 +41,7 @@ module "ny2_clr-83343_etcd_0" {
   }
 }
 
-module "ny2_clr-83343_etcd_1" {
+module "clr-83343_etcd_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -59,7 +59,7 @@ module "ny2_clr-83343_etcd_1" {
   }
 }
 
-module "ny2_clr-83343_etcd_2" {
+module "clr-83343_etcd_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[2]}"
   bt_infra_cluster     = local.cluster
@@ -81,8 +81,8 @@ output "server_info" {
   value = <<INFO
 
 ||fqdn||alias||ip||
-|${module.ny2_clr-83343_etcd_0.fqdn}|${module.ny2_clr-83343_etcd_0.alias[0]}|${module.ny2_clr-83343_etcd_0.ip}|
-|${module.ny2_clr-83343_etcd_1.fqdn}|${module.ny2_clr-83343_etcd_1.alias[0]}|${module.ny2_clr-83343_etcd_1.ip}|
-|${module.ny2_clr-83343_etcd_2.fqdn}|${module.ny2_clr-83343_etcd_2.alias[0]}|${module.ny2_clr-83343_etcd_2.ip}|
+|${module.clr-83343_etcd_0.fqdn}|${module.clr-83343_etcd_0.alias[0]}|${module.clr-83343_etcd_0.ip}|
+|${module.clr-83343_etcd_1.fqdn}|${module.clr-83343_etcd_1.alias[0]}|${module.clr-83343_etcd_1.ip}|
+|${module.clr-83343_etcd_2.fqdn}|${module.clr-83343_etcd_2.alias[0]}|${module.clr-83343_etcd_2.ip}|
   INFO
 }
