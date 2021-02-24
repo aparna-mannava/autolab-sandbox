@@ -80,7 +80,7 @@ module "ny2_clr-83343_etcd_2" {
 output "server_info" {
   value = <<INFO
 
-||hostname||host alias||IP||
+||fqdn||alias||ip||
 |${module.ny2_clr-83343_etcd_0.fqdn}|${module.ny2_clr-83343_etcd_0.alias[0]}|${module.ny2_clr-83343_etcd_0.ip}|
 |${module.ny2_clr-83343_etcd_1.fqdn}|${module.ny2_clr-83343_etcd_1.alias[0]}|${module.ny2_clr-83343_etcd_1.ip}|
 |${module.ny2_clr-83343_etcd_2.fqdn}|${module.ny2_clr-83343_etcd_2.alias[0]}|${module.ny2_clr-83343_etcd_2.ip}|
