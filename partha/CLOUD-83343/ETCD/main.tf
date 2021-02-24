@@ -77,11 +77,26 @@ module "clr-83343_etcd_2" {
   }
 }
 
-output "server_info" {
-  value = <<INFO
-||fqdn||"alias"||ip||
-|${module.clr-83343_etcd_0.fqdn}|${module.clr-83343_etcd_0.alias}|${module.clr-83343_etcd_0.ip}|
-|${module.clr-83343_etcd_1.fqdn}|${module.clr-83343_etcd_1.alias}|${module.clr-83343_etcd_1.ip}|
-|${module.clr-83343_etcd_2.fqdn}|${module.clr-83343_etcd_2.alias}|${module.clr-83343_etcd_2.ip}|
-  INFO
+output "clr-83343_etcd_0" {
+  value = {
+    "fqdn"  = "${module.clr-83343_etcd_0.fqdn}",
+    "alias" = "${module.clr-83343_etcd_0.alias}",
+    "ip"    = "${module.clr-83343_etcd_0.ip}",
+  }
+}
+
+output "clr-83343_etcd_1" {
+  value = {
+    "fqdn"  = "${module.clr-83343_etcd_1.fqdn}",
+    "alias" = "${module.clr-83343_etcd_1.alias}",
+    "ip"    = "${module.clr-83343_etcd_1.ip}",
+  }
+}
+
+output "clr-83343_etcd_2" {
+  value = {
+    "fqdn"  = "${module.clr-83343_etcd_2.fqdn}",
+    "alias" = "${module.clr-83343_etcd_2.alias}",
+    "ip"    = "${module.clr-83343_etcd_2.ip}",
+  }
 }
