@@ -5,9 +5,9 @@ terraform {
 
 locals {
   etcd_servers    = ["us01vlpeacd01","us01vlpeacd02","us01vlpeacd03"]
-  hapg_servers    = ["us01vlssgdb01","us01vlssgdb02","us01vlssgdb03"]
-  haproxy_server  = ["us01vlssx01"]
-  backrest_server = ["us01vlsbk01"]
+  hapg_servers    = ["us01vlssgdb04","us01vlssgdb05","us01vlssgdb06"]
+  haproxy_server  = ["us01vlssx02"]
+  backrest_server = ["us01vlsbk02"]
   etcd_hosts_p    = ["'us01vlpeacd01.auto.saas-n.com','us01vlpeacd01.auto.saas-n.com','us01vlpeacd03.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "dev"
@@ -29,7 +29,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "pclstr"
+    "bt_cluster_name"         = "pclst"
     "bt_pg_version"           = "12"
   }
 }

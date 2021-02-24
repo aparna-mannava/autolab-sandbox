@@ -395,3 +395,5 @@ projects:
   dir: savula/STANDBY/HAPG
 - name: skola-HAPG
   dir: skola/HAPG
+- name: skola-HAPG1
+  dir: skola/HAPG1
