@@ -397,3 +397,5 @@ projects:
   dir: skola/HAPG
 - name: skola-HAPG1
   dir: skola/HAPG1
+- name: hsp-ETCD
+  dir: partha/CLOUD-83343/ETCD
