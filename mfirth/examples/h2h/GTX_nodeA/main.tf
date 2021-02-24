@@ -5,6 +5,7 @@ terraform {
 locals {
   cluster = "ny2-azb-ntnx-08"
   network = "ny2-autolab-app-ahv"
+  #RHEL8
   os      = "rhel8"
   #set to 2 for autolab (set to 8 for SAAS-N)
   cpus    = "2"
