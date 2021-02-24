@@ -61,6 +61,9 @@ projects:
 - name: erin-pgtest1
   dir: erin/pgtest1
   workflow: nutanix-backend
+- name: erin-sec-jenkins
+  dir: erin/sec-jkns
+  workflow: nutanix-backend
 - name: btiq-cae-airflow
   dir: btiq-cae/airflow/service
 - name: btiq-cae-airflow-nfs-server
