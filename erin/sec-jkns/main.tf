@@ -6,7 +6,7 @@ module "jenkins" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlsecjeg01"
   bt_infra_cluster     = "ny2-aza-ntnx-05"
-  bt_infra_network     = "ny2-autolab-db"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "INF"
   cpus                 = "4"
   memory               = "8192"
