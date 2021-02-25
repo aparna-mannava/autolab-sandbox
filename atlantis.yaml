@@ -402,3 +402,5 @@ projects:
   dir: skola/HAPG1
 - name: hsp-ETCD
   dir: partha/CLOUD-83343/ETCD
+- name: Krunal-oracle
+  dir: krunal/dgb
