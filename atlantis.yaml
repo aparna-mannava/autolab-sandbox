@@ -412,3 +412,5 @@ projects:
   dir: partha/CLOUD-83343/ETCD
 - name: Krunal-oracle
   dir: krunal/dgb
+- name: hsp-HAPG
+  dir: partha/CLOUD-83343/HAPG
