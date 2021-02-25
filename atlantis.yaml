@@ -187,6 +187,8 @@ projects:
   dir: liamsh/linuxexample1
 - name: mfirth-examples-linux
   dir: mfirth/examples/linux
+- name: mfirth-examples-h2h-GTX_nodeA
+  dir: mfirth/examples/h2h/GTX_nodeA
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
