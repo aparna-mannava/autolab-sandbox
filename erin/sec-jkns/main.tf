@@ -10,7 +10,7 @@ module "jenkins" {
   lob                  = "INF"
   cpus                 = "4"
   memory               = "8192"
-  os_version           = "rhel8"
+  os_version           = "rhel7"
   foreman_environment  = "feature_CEA_9916_sec_jkns"
   foreman_hostgroup    = "BT Security Jenkins Server"
   datacenter           = "ny2"
@@ -18,3 +18,4 @@ module "jenkins" {
     1 = "200",
   }
 }
+
