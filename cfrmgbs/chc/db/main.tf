@@ -18,16 +18,16 @@ locals {
     name = "ny2"
     id   = "ny2"
   }
-  cfdb001 = {
+  chcdb01 = {
     hostname = "${local.hostname}01"
     silo     = "autolab"
   }
 }
 
-module "cfdb001" {
+module "chcdb01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.cfdb001.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.cfdb001.silo}-${local.facts.bt_role}-${local.cfdb001.hostname}"
+  hostname            = "${local.chcdb01.hostname}"
+  alias               = "${local.product}-${local.datacenter.id}-${local.chcdb01.silo}-${local.facts.bt_role}-${local.chcdb01.hostname}"
   bt_infra_cluster    = "ny2-aza-ntnx-07"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
@@ -46,10 +46,10 @@ module "cfdb001" {
   }
 }
 
-output "cfdb001" {
+output "chcdb01" {
   value = {
-    "fqdn"  = "${module.cfdb001.fqdn}",
-    "alias" = "${module.cfdb001.alias}",
-    "ip"    = "${module.cfdb001.ip}",
+    "fqdn"  = "${module.chcdb01.fqdn}",
+    "alias" = "${module.chcdb01.alias}",
+    "ip"    = "${module.chcdb01.ip}",
   }
 }
