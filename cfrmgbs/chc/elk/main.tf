@@ -6,7 +6,7 @@ locals {
   product     = "cfrmiso"
   environment = "feature_CFRMGC_374_c_hoare_saas_p_uat_servers_instantiation"    
   hostname    = "us01vlchc"
-  hostgroup   = "BT CFRM ELK CHC"
+  hostgroup   = "BT CFRM CHC ELK"
   facts = {
     "bt_tier" = "autolab"
     "bt_customer" = "chc"
@@ -33,15 +33,15 @@ module "chcel01" {
   bt_infra_cluster    = "ny2-azb-ntnx-08"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "8"
-  memory              = "16384"
+  cpus                = "4"
+  memory              = "12288"
   lob                 = "cfrm"
   external_facts      = "${local.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //   disk 1
+    1 = "50",  //   disk 1
   }
 }
 
