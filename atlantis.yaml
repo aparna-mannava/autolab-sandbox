@@ -186,6 +186,12 @@ projects:
   dir: mfirth/examples/linux
 - name: mfirth-examples-h2h-GTX_nodeA
   dir: mfirth/examples/h2h/GTX_nodeA
+- name: mfirth-examples-h2h-GTX_nodeB
+  dir: mfirth/examples/h2h/GTX_nodeB
+- name: mfirth-examples-h2h-GTX_nodeC
+  dir: mfirth/examples/h2h/GTX_nodeC
+- name: mfirth-examples-h2h-GTX_nodeD
+  dir: mfirth/examples/h2h/GTX_nodeD
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
