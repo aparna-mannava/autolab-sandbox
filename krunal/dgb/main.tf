@@ -16,7 +16,7 @@ locals {
 
 module "oradb_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbtstkv027"
+  hostname             = "us01vldbtss19"
   bt_infra_cluster     = "ny2-azb-ntnx-09"
   bt_infra_network     = "ny2-autolab-db-ahv"
   os_version           = "rhel7"
