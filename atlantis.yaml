@@ -416,3 +416,5 @@ projects:
   dir: partha/CLOUD-83343/HAPG
 - name: skola-STANDBY-ETCD
   dir: skola/STANDBY/ETCD
+- name: skola-STANDBY-HAPG
+  dir: skola/STANDBY/HAPG
