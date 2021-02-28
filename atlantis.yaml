@@ -418,3 +418,5 @@ projects:
   dir: skola/STANDBY/ETCD
 - name: skola-STANDBY-HAPG
   dir: skola/STANDBY/HAPG
+- name: skola-ETCD1
+  dir: skola/ETCD1
