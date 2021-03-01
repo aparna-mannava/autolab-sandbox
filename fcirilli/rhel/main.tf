@@ -15,22 +15,22 @@ locals {
     "bt_env"              = "3" #ex: leave blank for first env, or non-zero-padded number
   }
 
-  db_hostname            = "us01vlfmgora01" 
-  db_alias               = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
-  db_bt_infra_network    = "ny2-autolab-app-ahv"
-  db_bt_infra_cluster    = "ny2-aza-ntnx-13"
-  db_foreman_hostgroup   = "BT FMG Oracle DB Server"
+  hostname            = "us01vlfmgora01" 
+  alias               = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
+  bt_infra_network    = "ny2-autolab-app-ahv"
+  bt_infra_cluster    = "ny2-aza-ntnx-13"
+  foreman_hostgroup    = "BT Base Server"
 }
 
 
-module "db_server" {
+module "gt_oracle_db_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.db_hostname
-  os_version           = "rhel7"
-  alias                = local.db_alias
+  hostname             = local.hostname
+  os_version           = "rhel8"
+  alias                = local.alias
   datacenter           = local.datacenter
-  bt_infra_network     = local.db_bt_infra_network
-  bt_infra_cluster     = local.db_bt_infra_cluster
+  bt_infra_network     = local.bt_infra_network
+  bt_infra_cluster     = local.bt_infra_cluster
   lob                  = "FMCLOUD"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = local.db_foreman_hostgroup
@@ -38,22 +38,17 @@ module "db_server" {
   cpus                 = "8"
   memory               = "65536"
   additional_disks     = {
-    1 = "200",
-    2 = "200",
-    3 = "200"
+    1 = "300"
   }
 }
 
-output "host_file" {
-  value = <<HOSTFILE
-${module.db_server.ip}  db
-  HOSTFILE
+
+
+output "gt_oracle_db_1" {
+  value = {
+    "fqdn"  = "${module.app_server_1.fqdn}",
+    "alias" = "${module.app_server_1.alias}",
+    "ip"    = "${module.app_server_1.ip}",
+  }
 }
 
-output "server_info" {
-  value = <<INFO
-
-||function||hostname||host alias||IP||
-|database|${module.db_server.fqdn}|${module.db_server.alias[0]}|${module.db_server.ip}|
-  INFO
-}
