@@ -41,10 +41,10 @@ module "cfm_tfs_server" {
   }
 }
 
-output "inf_windns_SRVR" {
+output "cfm_tfs_server" {
   value = {
-    "fqdn"  = "${module.inf_windns_SRVR.fqdn}",
-    "alias" = "${module.inf_windns_SRVR.alias}",
-    "ip"    = "${module.inf_windns_SRVR.ip}",
+    "fqdn"  = "${module.cfm_tfs_server.fqdn}",
+    "alias" = "${module.cfm_tfs_server.alias}",
+    "ip"    = "${module.cfm_tfs_server.ip}",
   }
 }
