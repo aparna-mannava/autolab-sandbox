@@ -48,10 +48,4 @@ ${module.db_server.ip}  db
   HOSTFILE
 }
 
-output "server_info" {
-  value = <<INFO
 
-||function||hostname||host alias||IP||
-|database|${module.db_server.fqdn}|${module.db_server.alias[0]}|${module.db_server.ip}|
-  INFO
-}
