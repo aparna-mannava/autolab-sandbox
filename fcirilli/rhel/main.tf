@@ -33,7 +33,7 @@ module "gt_oracle_db_1" {
   bt_infra_cluster     = local.bt_infra_cluster
   lob                  = "FMCLOUD"
   foreman_environment  = local.puppet_env
-  foreman_hostgroup    = local.db_foreman_hostgroup
+  foreman_hostgroup    = local.foreman_hostgroup
   external_facts       = local.facts
   cpus                 = "8"
   memory               = "65536"
@@ -46,9 +46,9 @@ module "gt_oracle_db_1" {
 
 output "gt_oracle_db_1" {
   value = {
-    "fqdn"  = "${module.app_server_1.fqdn}",
-    "alias" = "${module.app_server_1.alias}",
-    "ip"    = "${module.app_server_1.ip}",
+    "fqdn"  = "${module.gt_oracle_db_1.fqdn}",
+    "alias" = "${module.gt_oracle_db_1.alias}",
+    "ip"    = "${module.gt_oracle_db_1.ip}",
   }
 }
 
