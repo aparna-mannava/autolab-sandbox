@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmit"
-  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" #   Build Bitbucket and HAProxy
+  environment = "feature_CFRMISO_309_puppet_for_clean_rhel_ny2_cfrmrd_il02_cluster" # Build Bitbucket and HAProxy
   hostname    = "us01"
   facts = {
     "bt_product"  = "cfrmit"
@@ -54,7 +54,7 @@ module "app0001" {
   alias               = "${local.datacenter.id}-${local.app0001.alias}" #il02-us01vlbitbucket01 
   ## saas-p NY2
   #bt_infra_cluster    = "il02-aza-ntnx-01"
-  #bt_infra_network    = "il02_hosted_corp_app "
+  #bt_infra_network    = "il02_hosted_corp_app"
   ## auto.saas-n
   bt_infra_cluster    = "ny2-azb-ntnx-09"
   bt_infra_network    = "ny2-autolab-app-ahv"

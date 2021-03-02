@@ -6,7 +6,7 @@ locals {
   product        = "inf"
   environment    = "master"
   datacenter     = "ny2"
-  hostname       = "us01vwsmpl01"
+  hostname       = "us01vwtstprom1"
   hostgroup      = "BT MSSQL 2016 Server"
   facts          = {
     "bt_product"      = "bfs"
@@ -16,7 +16,7 @@ locals {
 }
 
 
-module "inf_windns_SMPL" {
+module "inf_windns_TSTPROM" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
@@ -40,10 +40,10 @@ module "inf_windns_SMPL" {
   }
 }
 
-output "inf_windns_SMPL" {
+output "inf_windns_TSTPROM" {
   value = {
-    "fqdn"  = "${module.inf_windns_SMPL.fqdn}",
-    "alias" = "${module.inf_windns_SMPL.alias}",
-    "ip"    = "${module.inf_windns_SMPL.ip}",
+    "fqdn"  = "${module.inf_windns_TSTPROM.fqdn}",
+    "alias" = "${module.inf_windns_TSTPROM.alias}",
+    "ip"    = "${module.inf_windns_TSTPROM.ip}",
   }
 }

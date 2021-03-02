@@ -13,7 +13,7 @@ locals {
   }
   datacenter = {
     name = "ny2"
-    id   = "ny2"
+    id   = "ny2" 
   }
 
   #|## Demo server module configuration ########|#
@@ -26,7 +26,7 @@ locals {
       "bt_product"  = "cfrmiso"
       "bt_role"     = "mgmt"
       "bt_tier"     = "autolab"
-  } 
+  }
 }
 }
 module "demo5" {
@@ -51,7 +51,7 @@ module "demo5" {
     1 = "100", // disk1 100gb 
   }
 }
-
+ 
 output "demo5" {
   value = {
     "fqdn"  = "${module.demo5.fqdn}",

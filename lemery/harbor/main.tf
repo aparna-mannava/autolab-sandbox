@@ -1,3 +1,4 @@
+# foo
 terraform {
   backend "s3" {}
 }
@@ -5,10 +6,10 @@ terraform {
 locals {
   lob           = "cea"
   image         = "rhel7"
-  hostgroup     = "BT CLOUD Harbor Server"
+  hostgroup     = "BT Base Server"
   environment   = "master"
   datacenter    = "ny2"
-  cluster       = "ny2-aza-ntnx-13"
+  cluster       = "ny2-azb-ntnx-09"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
   memory        = "2048"

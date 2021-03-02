@@ -2,8 +2,11 @@
 version: 3
 automerge: true
 projects:
+- name: alon-pulp
+  dir: cfrmrd/pulp
 - name: genady-nginx
   dir: cfrmrd/nginx
+  workflow: nutanix-backend
 - name: genady-jenkins
   dir: cfrmrd/jenkins
   workflow: nutanix-backend
@@ -38,6 +41,9 @@ projects:
 - name: cdrew-testdb
   dir: cdrew/btiq
   workflow: nutanix-backend
+- name: cdrew-testdb1
+  dir: cdrew/dev1
+  workflow: nutanix-backend
 - name: cdrew-sstest
   dir: cdrew/jdbcss
   workflow: nutanix-backend
@@ -54,6 +60,9 @@ projects:
   dir: aarvelo/firewall
 - name: erin-pgtest1
   dir: erin/pgtest1
+  workflow: nutanix-backend
+- name: erin-sec-jenkins
+  dir: erin/sec-jkns
   workflow: nutanix-backend
 - name: btiq-cae-airflow
   dir: btiq-cae/airflow/service
@@ -172,10 +181,20 @@ projects:
   dir: stevek/sudotest
 - name: stevek-hackathon-linuxexample2
   dir: stevek/hackathon/linuxexample2
+- name: stevek-windows-windns
+  dir: stevek/windows/windns
 - name: liamsh-linuxexample1
   dir: liamsh/linuxexample1
 - name: mfirth-examples-linux
   dir: mfirth/examples/linux
+- name: mfirth-examples-h2h-GTX_nodeA
+  dir: mfirth/examples/h2h/GTX_nodeA
+- name: mfirth-examples-h2h-GTX_nodeB
+  dir: mfirth/examples/h2h/GTX_nodeB
+- name: mfirth-examples-h2h-GTX_nodeC
+  dir: mfirth/examples/h2h/GTX_nodeC
+- name: mfirth-examples-h2h-GTX_nodeD
+  dir: mfirth/examples/h2h/GTX_nodeD
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
@@ -364,7 +383,7 @@ projects:
 - name: cfrmit-demo-servers
   dir: cfrmgbs/it/demo
 - name: demo1
-  dir: 5demo/demo1
+  dir: demo/demo1
 - name: demo2
   dir: 5demo/demo2
 - name: demo3
@@ -373,17 +392,33 @@ projects:
   dir: 5demo/demo4
 - name: demo5
   dir: 5demo/demo5
-- name: CLOUD81124
-  dir: bthakkar/dgb/81124
-  workflow: nutanix-backend
-- name: llabranche-BizzDesign-sql02
-  dir: llabranche/BizzDesign/sql02
-  workflow: nutanix-backend
-- name: nirmal-pgtest2
-  dir: nirmal/pgtest2
-  workflow: nutanix-backend
-- name: nirmal-pgtest3
-  dir: nirmal/pgtest3
-  workflow: nutanix-backend
+- name: chcnfs001
+  dir: cfrmgbs/chc/nfs
+- name: chcel01
+  dir: cfrmgbs/chc/elk
+- name: sre-autolab-consul
+  dir: sre/elk/consul
+- name: savula-STANDBY-ETCD
+  dir: savula/STANDBY/ETCD
+- name: skola-ETCD
+  dir: skola/ETCD
+- name: savula-STANDBY-HAPG
+  dir: savula/STANDBY/HAPG
+- name: skola-HAPG
+  dir: skola/HAPG
+- name: skola-HAPG1
+  dir: skola/HAPG1
+- name: hsp-ETCD
+  dir: partha/CLOUD-83343/ETCD
+- name: Krunal-oracle
+  dir: krunal/dgb
+- name: hsp-HAPG
+  dir: partha/CLOUD-83343/HAPG
+- name: skola-STANDBY-ETCD
+  dir: skola/STANDBY/ETCD
+- name: skola-STANDBY-HAPG
+  dir: skola/STANDBY/HAPG
+- name: skola-ETCD1
+  dir: skola/ETCD1
 - name: fdalobtrial
   dir: fmasihuddin/createform/tfs
