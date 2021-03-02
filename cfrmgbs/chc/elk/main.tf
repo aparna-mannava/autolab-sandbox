@@ -6,7 +6,7 @@ locals {
   product     = "cfrmiso"
   environment = "feature_CFRMGC_374_c_hoare_saas_p_uat_servers_instantiation"    
   hostname    = "us01vlchc"
-  hostgroup   = "BT CFRM ELK CHC "
+  hostgroup   = "BT CFRM ELK CHC"
   facts = {
     "bt_tier" = "autolab"
     "bt_customer" = "chc"
