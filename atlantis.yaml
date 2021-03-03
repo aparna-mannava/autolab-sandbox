@@ -360,16 +360,10 @@ projects:
 - name: fcirilli-rhel
   dir: fcirilli/rhel
   workflow: nutanix-backend
-- name: llabranche-ora2pg-autotest01
-  dir: llabranche/ora2pg/autotest01
-  workflow: nutanix-backend
 - name: savula-POST
   dir: savula/POST
 - name: skola-POST
   dir: skola/POST
-- name: llabranche-ora2pg-oracle01
-  dir: llabranche/ora2pg/oracle01
-  workflow: nutanix-backend
 - name: cfrmiso-it-eitan
   dir: cfrmiso/it/bitbucket
 - name: eitantest
@@ -420,3 +414,6 @@ projects:
   dir: skola/STANDBY/HAPG
 - name: skola-ETCD1
   dir: skola/ETCD1
+- name: llabranche-ora2pg-confluence01
+  dir: llabranche/ora2pg/confluence01
+  workflow: nutanix-backend  
