@@ -14,7 +14,7 @@ locals {
 
 module "oracle-pg-001" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vloraclepg001" 
+  hostname             = "us01vloraepg001" 
   alias                = "oraclepg001" 
   bt_infra_cluster     = "ny2-azb-ntnx-09"
   bt_infra_network     = "ny2-autolab-app-ahv"
