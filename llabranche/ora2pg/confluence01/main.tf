@@ -5,6 +5,7 @@ locals {
   facts       = {
     "bt_tier"    = "auto"
     "bt_product" = "shared"
+    "bt_lob" = "cloud"
     "bt_role" = "postgresql"
     "bt_env"    = "2"
     "bt_pg_version" = "12"
