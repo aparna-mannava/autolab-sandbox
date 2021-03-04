@@ -21,7 +21,7 @@ locals {
 
 module "chcnfs01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "gb00vlcons01.u.saas-p.com"
+  hostname            = "us01vlcons01.u.saas-p.com"
   alias               = "cfrm-cloud-chc-u-gb00-nfs01"
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
