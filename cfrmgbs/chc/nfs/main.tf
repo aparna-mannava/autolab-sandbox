@@ -3,9 +3,9 @@ terraform {
 }
 
 locals {
-  product     = "cfrm-cloud-chc-u"
+  #product     = "cfrm-cloud-chc-u"
   environment = "feature_CFRMGC_373_c_hoare_uat_saas_p_cfrm"
-  hostname    = "gb00vlcons01.u.saas-p.com"
+  silo     = "autolab"
   hostgroup   = "BT CFRM C.Hoare NFS Server"
     facts = {
     "bt_tier" = "autolab"
@@ -17,17 +17,12 @@ locals {
     name = "ny2"
     id   = "ny2"
   }
-  
-  gb00vlcons01.u.saas-p.com = {
-    hostname = "${local.hostname}mg001"
-    silo     = "autolab"
-  }
-}
+ }
 
-module "gb00vlcons01.u.saas-p.com" {
+module "chcnfs01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.gb00vlcons01.u.saas-p.com.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.gb00vlcons01.u.saas-p.com.silo}-${local.facts.bt_role}-${local.gb00vlcons01.u.saas-p.com.hostname}"
+  hostname            = "gb00vlcons01.u.saas-p.com"
+  alias               = "cfrm-cloud-chc-u-gb00-nfs01"
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
@@ -43,10 +38,10 @@ module "gb00vlcons01.u.saas-p.com" {
   }
 }
 
-output "gb00vlcons01.u.saas-p.com" {
+output "chcnfs01" {
   value = {
-    "fqdn"  = "${module.gb00vlcons01.u.saas-p.com.fqdn}",
-    "alias" = "${module.gb00vlcons01.u.saas-p.com.alias}",
-    "ip"    = "${module.gb00vlcons01.u.saas-p.com.ip}",
+    "fqdn"  = "${module.chcnfs01.fqdn}",
+    "alias" = "${module.chcnfs01.alias}",
+    "ip"    = "${module.chcnfs01.ip}",
   }
 }
