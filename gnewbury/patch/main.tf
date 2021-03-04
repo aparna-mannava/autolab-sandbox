@@ -23,18 +23,18 @@ locals {
 
 module "patch-test" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  lob                 = locals.lob
-  hostname            = locals.hostname
-  alias               = locals.alias
-  cpus                = locals.cpus
-  memory              = locals.memory
-  os_version          = locals.os
-  foreman_hostgroup   = locals.hostgroup
-  foreman_environment = locals.environment
-  bt_infra_cluster    = locals.cluster
-  bt_infra_network    = locals.network
-  datacenter          = locals.datacenter
-  external_facts      = locals.facts
+  lob                 = local.lob
+  hostname            = local.hostname
+  alias               = local.alias
+  cpus                = local.cpus
+  memory              = local.memory
+  os_version          = local.os
+  foreman_hostgroup   = local.hostgroup
+  foreman_environment = local.environment
+  bt_infra_cluster    = local.cluster
+  bt_infra_network    = local.network
+  datacenter          = local.datacenter
+  external_facts      = local.facts
 }
 
 output "patch-test" {
