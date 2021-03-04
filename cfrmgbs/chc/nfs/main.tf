@@ -3,14 +3,14 @@ terraform {
 }
 
 locals {
-  product     = "cfrmiso"
-  environment = "feature_CFRMGC_374_c_hoare_saas_p_uat_servers_instantiation"
-  hostname    = "us01vlchc"
-  hostgroup   = "BT CFRM NFS SERVER CHC"
+  product     = "cfrm-cloud-chc-u"
+  environment = "feature_CFRMGC_373_c_hoare_uat_saas_p_cfrm"
+  hostname    = "gb00vlcons01.u.saas-p.com"
+  hostgroup   = "BT CFRM C.Hoare NFS Server"
     facts = {
     "bt_tier" = "autolab"
     "bt_customer" = "chc"
-    "bt_product" = "cfrmiso"
+    "bt_product" = "cfrmcloud"
 	  "bt_role" = "mgmt"
   }
   datacenter = {
@@ -18,16 +18,16 @@ locals {
     id   = "ny2"
   }
   
-  chcnfs001 = {
+  gb00vlcons01.u.saas-p.com = {
     hostname = "${local.hostname}mg001"
     silo     = "autolab"
   }
 }
 
-module "chcnfs001" {
+module "gb00vlcons01.u.saas-p.com" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.chcnfs001.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.chcnfs001.silo}-${local.facts.bt_role}-${local.chcnfs001.hostname}"
+  hostname            = "${local.gb00vlcons01.u.saas-p.com.hostname}"
+  alias               = "${local.product}-${local.datacenter.id}-${local.gb00vlcons01.u.saas-p.com.silo}-${local.facts.bt_role}-${local.gb00vlcons01.u.saas-p.com.hostname}"
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
@@ -39,14 +39,14 @@ module "chcnfs001" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "50"
+    1 = "100"
   }
 }
 
-output "chcnfs001" {
+output "gb00vlcons01.u.saas-p.com" {
   value = {
-    "fqdn"  = "${module.chcnfs001.fqdn}",
-    "alias" = "${module.chcnfs001.alias}",
-    "ip"    = "${module.chcnfs001.ip}",
+    "fqdn"  = "${module.gb00vlcons01.u.saas-p.com.fqdn}",
+    "alias" = "${module.gb00vlcons01.u.saas-p.com.alias}",
+    "ip"    = "${module.gb00vlcons01.u.saas-p.com.ip}",
   }
 }
