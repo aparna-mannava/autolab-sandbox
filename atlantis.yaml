@@ -61,6 +61,9 @@ projects:
 - name: erin-pgtest1
   dir: erin/pgtest1
   workflow: nutanix-backend
+- name: erin-sec-jenkins
+  dir: erin/sec-jkns
+  workflow: nutanix-backend
 - name: btiq-cae-airflow
   dir: btiq-cae/airflow/service
 - name: btiq-cae-airflow-nfs-server
@@ -178,10 +181,20 @@ projects:
   dir: stevek/sudotest
 - name: stevek-hackathon-linuxexample2
   dir: stevek/hackathon/linuxexample2
+- name: stevek-windows-windns
+  dir: stevek/windows/windns
 - name: liamsh-linuxexample1
   dir: liamsh/linuxexample1
 - name: mfirth-examples-linux
   dir: mfirth/examples/linux
+- name: mfirth-examples-h2h-GTX_nodeA
+  dir: mfirth/examples/h2h/GTX_nodeA
+- name: mfirth-examples-h2h-GTX_nodeB
+  dir: mfirth/examples/h2h/GTX_nodeB
+- name: mfirth-examples-h2h-GTX_nodeC
+  dir: mfirth/examples/h2h/GTX_nodeC
+- name: mfirth-examples-h2h-GTX_nodeD
+  dir: mfirth/examples/h2h/GTX_nodeD
 - name: suresh-postgres
   dir: postgres/CLOUD-59121
 - name: saumilp-postgres
@@ -347,16 +360,10 @@ projects:
 - name: fcirilli-rhel
   dir: fcirilli/rhel
   workflow: nutanix-backend
-- name: llabranche-ora2pg-autotest01
-  dir: llabranche/ora2pg/autotest01
-  workflow: nutanix-backend
 - name: savula-POST
   dir: savula/POST
 - name: skola-POST
   dir: skola/POST
-- name: llabranche-ora2pg-oracle01
-  dir: llabranche/ora2pg/oracle01
-  workflow: nutanix-backend
 - name: cfrmiso-it-eitan
   dir: cfrmiso/it/bitbucket
 - name: eitantest
@@ -383,3 +390,30 @@ projects:
   dir: cfrmgbs/chc/nfs
 - name: chcel01
   dir: cfrmgbs/chc/elk
+- name: sre-autolab-consul
+  dir: sre/elk/consul
+- name: savula-STANDBY-ETCD
+  dir: savula/STANDBY/ETCD
+- name: skola-ETCD
+  dir: skola/ETCD
+- name: savula-STANDBY-HAPG
+  dir: savula/STANDBY/HAPG
+- name: skola-HAPG
+  dir: skola/HAPG
+- name: skola-HAPG1
+  dir: skola/HAPG1
+- name: hsp-ETCD
+  dir: partha/CLOUD-83343/ETCD
+- name: Krunal-oracle
+  dir: krunal/dgb
+- name: hsp-HAPG
+  dir: partha/CLOUD-83343/HAPG
+- name: skola-STANDBY-ETCD
+  dir: skola/STANDBY/ETCD
+- name: skola-STANDBY-HAPG
+  dir: skola/STANDBY/HAPG
+- name: skola-ETCD1
+  dir: skola/ETCD1
+- name: llabranche-ora2pg-confluence01
+  dir: llabranche/ora2pg/confluence01
+  workflow: nutanix-backend  
