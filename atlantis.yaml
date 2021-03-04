@@ -386,7 +386,7 @@ projects:
   dir: 5demo/demo4
 - name: demo5
   dir: 5demo/demo5
-- name: gb00vlcons01.u.saas-p.com
+- name: chcnfs01
   dir: cfrmgbs/chc/nfs
 - name: chcel01
   dir: cfrmgbs/chc/elk
