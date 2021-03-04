@@ -26,7 +26,7 @@ module "patch-test" {
   lob                 = locals.lob
   hostname            = locals.hostname
   alias               = locals.alias
-  cpu                 = locals.cpu
+  cpus                = locals.cpus
   memory              = locals.memory
   os_version          = locals.os
   foreman_hostgroup   = locals.hostgroup
