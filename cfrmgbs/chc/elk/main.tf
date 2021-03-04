@@ -3,14 +3,14 @@ terraform {
 }
 
 locals {
-  product     = "cfrmiso"
-  environment = "feature_CFRMGC_374_c_hoare_saas_p_uat_servers_instantiation"    
-  hostname    = "us01vlchc"
-  hostgroup   = "BT CFRM CHC ELK"
+  # product     = "cfrmiso"
+  hostname    = "us01vlcoel"
+  environment = "feature_CFRMGC_373_c_hoare_uat_saas_p_cfrm" 
+  hostgroup   = "BT CFRM C.Hoare ELK Servers"
   facts = {
     "bt_tier" = "autolab"
     "bt_customer" = "chc"
-    "bt_product" = "cfrmiso"
+    "bt_product" = "cfrmcloud"
 	  "bt_role" = "elastic"
     "bt_artemis_version" = "2.6.0"
     "bt_es_version" = "5.6.2"
@@ -20,16 +20,12 @@ locals {
     name = "ny2"
     id   = "ny2"
   }
-  chcel01 = {
-    hostname = "${local.hostname}el01"
-    silo     = "autolab"
-  }
 }
 
-module "chcel01" {
+module "chcelk01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.chcel01.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.chcel01.silo}-${local.facts.bt_role}-${local.chcel01.hostname}"
+  hostname            = "${local.hostname}01"
+  alias               = "cfrm-cloud-chc-u-gb00-elk01"
   bt_infra_cluster    = "ny2-azb-ntnx-08"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
@@ -45,10 +41,10 @@ module "chcel01" {
   }
 }
 
-output "chcel01" {
+output "chcelk01" {
   value = {
-    "fqdn"  = "${module.chcel01.fqdn}",
-    "alias" = "${module.chcel01.alias}",
-    "ip"    = "${module.chcel01.ip}",
+    "fqdn"  = "${module.chcelk01.fqdn}",
+    "alias" = "${module.chcelk01.alias}",
+    "ip"    = "${module.chcelk01.ip}",
   }
 }

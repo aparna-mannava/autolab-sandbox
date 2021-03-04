@@ -388,7 +388,7 @@ projects:
   dir: 5demo/demo5
 - name: chcnfs01
   dir: cfrmgbs/chc/nfs
-- name: chcel01
+- name: chcelk01
   dir: cfrmgbs/chc/elk
 - name: sre-autolab-consul
   dir: sre/elk/consul

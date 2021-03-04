@@ -4,7 +4,7 @@ terraform {
 
 locals {
   #product     = "cfrm-cloud-chc-u"
-  hostname    = "us01vlcons01"
+  hostname    = "us01vlcons"
   environment = "feature_CFRMGC_373_c_hoare_uat_saas_p_cfrm"
   silo     = "autolab"
   hostgroup   = "BT CFRM C.Hoare NFS Server"
