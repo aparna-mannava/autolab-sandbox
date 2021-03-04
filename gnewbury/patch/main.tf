@@ -11,7 +11,7 @@ locals {
   os          = "rhel8"
   hostgroup   = "BT Base Server"
   environment = "feature_CLOUD_83256_find_patches"
-  cluster     = "ny2-aza-ntnx-08"
+  cluster     = "ny2-azb-ntnx-08"
   network     = "ny2-autolab-app-ahv"
   datacenter  = "ny2"
   facts = {
