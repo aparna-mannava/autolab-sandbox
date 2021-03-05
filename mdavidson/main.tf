@@ -20,6 +20,7 @@ module "inf_ny2_pam_testing" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
+  lob                  = "CLOUD"
   memory               = "2048"
   external_facts       = "${local.facts}"
   foreman_environment  = "${local.environment}"
