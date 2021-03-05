@@ -253,6 +253,9 @@ projects:
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
   dir: savula/jenkins
+- name: mdavidson
+  dir: mdavidson
+  workflow: nutanix-backend
 - name: zvaliji-hackathon-example1
   dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
@@ -360,16 +363,10 @@ projects:
 - name: fcirilli-rhel
   dir: fcirilli/rhel
   workflow: nutanix-backend
-- name: llabranche-ora2pg-autotest01
-  dir: llabranche/ora2pg/autotest01
-  workflow: nutanix-backend
 - name: savula-POST
   dir: savula/POST
 - name: skola-POST
   dir: skola/POST
-- name: llabranche-ora2pg-oracle01
-  dir: llabranche/ora2pg/oracle01
-  workflow: nutanix-backend
 - name: cfrmiso-it-eitan
   dir: cfrmiso/it/bitbucket
 - name: eitantest
@@ -392,9 +389,9 @@ projects:
   dir: 5demo/demo4
 - name: demo5
   dir: 5demo/demo5
-- name: chcnfs001
+- name: chcnfs01
   dir: cfrmgbs/chc/nfs
-- name: chcel01
+- name: chcelk01
   dir: cfrmgbs/chc/elk
 - name: sre-autolab-consul
   dir: sre/elk/consul
@@ -420,5 +417,6 @@ projects:
   dir: skola/STANDBY/HAPG
 - name: skola-ETCD1
   dir: skola/ETCD1
-- name: fdalobtrial
-  dir: fmasihuddin/createform/tfs
+- name: llabranche-ora2pg-confluence01
+  dir: llabranche/ora2pg/confluence01
+  workflow: nutanix-backend  

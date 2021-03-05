@@ -3,31 +3,27 @@ terraform {
 }
 
 locals {
-  product     = "cfrmiso"
-  environment = "feature_CFRMGC_374_c_hoare_saas_p_uat_servers_instantiation"
-  hostname    = "us01vlchc"
-  hostgroup   = "BT CFRM NFS SERVER CHC"
+  #product     = "cfrm-cloud-chc-u"
+  hostname    = "us01vlcons"
+  environment = "feature_CFRMGC_373_c_hoare_uat_saas_p_cfrm"
+  silo     = "autolab"
+  hostgroup   = "BT CFRM C.Hoare NFS Server"
     facts = {
     "bt_tier" = "autolab"
     "bt_customer" = "chc"
-    "bt_product" = "cfrmiso"
+    "bt_product" = "cfrmcloud"
 	  "bt_role" = "mgmt"
   }
   datacenter = {
     name = "ny2"
     id   = "ny2"
   }
-  
-  chcnfs001 = {
-    hostname = "${local.hostname}mg001"
-    silo     = "autolab"
-  }
-}
+ }
 
-module "chcnfs001" {
+module "chcnfs01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.chcnfs001.hostname}"
-  alias               = "${local.product}-${local.datacenter.id}-${local.chcnfs001.silo}-${local.facts.bt_role}-${local.chcnfs001.hostname}"
+  hostname            = "${local.hostname}01"
+  alias               = "cfrm-cloud-chc-u-gb00-nfs01"
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
@@ -39,14 +35,14 @@ module "chcnfs001" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "50"
+    1 = "100"
   }
 }
 
-output "chcnfs001" {
+output "chcnfs01" {
   value = {
-    "fqdn"  = "${module.chcnfs001.fqdn}",
-    "alias" = "${module.chcnfs001.alias}",
-    "ip"    = "${module.chcnfs001.ip}",
+    "fqdn"  = "${module.chcnfs01.fqdn}",
+    "alias" = "${module.chcnfs01.alias}",
+    "ip"    = "${module.chcnfs01.ip}",
   }
 }
