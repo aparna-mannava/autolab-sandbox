@@ -6,7 +6,7 @@ locals {
   product        = "cfm"
   environment    = "master"
   datacenter     = "ny2"
-  hostname       = "us01tfssql2016sp1"
+  hostname       = "us01vwtfssql19"
   hostgroup      = "BT BFS MSSQL 2019 Server"
   lob			 = "fda"
   facts          = {
