@@ -14,8 +14,8 @@ module "db_server1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlsslab"
   alias                = "bt-${local.facts.bt_tier}${local.facts.bt_env}-ss01"
-  bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-azd-ntnx-15"
+  bt_infra_network     = "ny2-autolab-db-ahv"
+  bt_infra_cluster     = "ny2-aza-ntnx-13"
   cpus                 = 2
   memory               = 8096 
   os_version           = "rhel7"
