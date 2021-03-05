@@ -253,6 +253,9 @@ projects:
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
   dir: savula/jenkins
+- name: mdavidson
+  dir: mdavidson
+  workflow: nutanix-backend
 - name: zvaliji-hackathon-example1
   dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
