@@ -20,7 +20,7 @@ module "db_server1" {
   memory               = 8096 
   os_version           = "rhel7"
   external_facts       = local.facts
-  lob       	       = "PMX"
+  lob       	       = "PBS"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Streamsets Server"
   datacenter           = "ny2"
