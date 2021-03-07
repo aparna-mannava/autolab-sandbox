@@ -416,6 +416,6 @@ projects:
   dir: skola/ETCD1
 - name: llabranche-ora2pg-confluence01
   dir: llabranche/ora2pg/confluence01
-  workflow: nutanix-backend  
-  dir: cfrmgbs/chc/db
+  workflow: nutanix-backend
 - name: chcdb01
+  dir: cfrmgbs/chc/db
