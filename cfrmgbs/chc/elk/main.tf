@@ -27,7 +27,7 @@ locals {
 module "chcelk01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.hostname}01"
-  alias               = "cfrm-cloud-chc-u-gb00-elk01"
+  alias               = "cfrm-cloud-chc-uat-gb00-elk01"
   bt_infra_cluster    = "ny2-aze-ntnx-11"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
@@ -46,7 +46,7 @@ module "chcelk01" {
 module "chcelk02" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.hostname}02"
-  alias               = "cfrm-cloud-chc-u-gb00-elk02"
+  alias               = "cfrm-cloud-chc-uat-gb00-elk02"
   bt_infra_cluster    = "ny2-aze-ntnx-11"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
@@ -65,7 +65,7 @@ module "chcelk02" {
 module "chcelk03" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.hostname}03"
-  alias               = "cfrm-cloud-chc-u-gb00-elk03"
+  alias               = "cfrm-cloud-chc-uat-gb00-elk03"
   bt_infra_cluster    = "ny2-aze-ntnx-11"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
