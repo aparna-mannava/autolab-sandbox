@@ -1,4 +1,5 @@
-#DELETE PLAN
+#BUILD PLAN
+
 terraform {
   backend "s3" {}
 }
@@ -9,9 +10,11 @@ locals {
   datacenter    = "ny2"
   domain        = "saas-n.com"
   facts         = {
-    "bt_customer"         = "fi1200" #ex: fiXXXX
+    "bt_product"          = "dgb"
     "bt_tier"             = "dev"
-    "bt_env"              = "3" #ex: leave blank for first env, or non-zero-padded number
+    "bt_role"             = "fmgoradb"
+    "bt_loc"              = "ny2"
+    "bt_env"              = "1"
   }
 
   hostname            = "us01vlfmgora01" 
