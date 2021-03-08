@@ -29,6 +29,9 @@ projects:
 - name: cbonnet-pg
   dir: cbonnet/pg
   workflow: nutanix-backend #
+- name: cdrew-sslab
+  dir: cdrew/dev2/ss
+  workflow: nutanix-backend
 - name: cdrew-dev4hapg
   dir: cdrew/dev5/hapg
   workflow: nutanix-backend
