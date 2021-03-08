@@ -15,7 +15,7 @@ module "db_server1" {
   hostname             = "us01vlsslab"
   alias                = "bt-${local.facts.bt_tier}${local.facts.bt_env}-ss01"
   bt_infra_network     = "ny2-autolab-db-ahv"
-  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_cluster     = "ny2-aze-ntnx-12"
   cpus                 = 2
   memory               = 8096 
   os_version           = "rhel7"
