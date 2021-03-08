@@ -380,7 +380,7 @@ projects:
   dir: cfrmgbs/chc/nfs
 - name: chcelk01
   dir: cfrmgbs/chc/elk
-  workflow: nutanix-backend
+#  workflow: nutanix-backend
 # - name: chcelk02
 #   dir: cfrmgbs/chc/elk
 # - name: chcelk03

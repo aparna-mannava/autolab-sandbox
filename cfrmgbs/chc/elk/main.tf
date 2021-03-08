@@ -1,5 +1,5 @@
 terraform {
-  backend "s3" {}
+  backend "http" {}
 }
 
 locals {
@@ -102,5 +102,4 @@ output "chcelk03" {
     "fqdn"  = "${module.chcelk03.fqdn}",
     "alias" = "${module.chcelk03.alias}",
     "ip"    = "${module.chcelk03.ip}",
-  }
 }
