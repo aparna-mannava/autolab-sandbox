@@ -23,7 +23,7 @@ locals {
 module "chcnfs01" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.hostname}01"
-  alias               = "cfrm-cloud-chc-u-gb00-nfs01"
+  alias               = "cfrm-cloud-chc-uat-gb00-nfs01"
   bt_infra_cluster    = "ny2-aza-ntnx-05"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
