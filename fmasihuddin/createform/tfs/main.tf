@@ -21,7 +21,7 @@ module "cfm_tfs_server" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = "${local.lob}-${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}"
-  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_cluster     = "ny2-aza-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "${local.lob}"
   os_version           = "win2016"
