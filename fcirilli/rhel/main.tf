@@ -1,5 +1,4 @@
 #DELETE PLAN
-
 terraform {
   backend "s3" {}
 }
