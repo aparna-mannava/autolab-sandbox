@@ -379,20 +379,17 @@ projects:
   workflow: nutanix-backend
 - name: cfrmit-demo-servers
   dir: cfrmgbs/it/demo
-- name: demo1
-  dir: demo/demo1
-- name: demo2
-  dir: 5demo/demo2
-- name: demo3
-  dir: 5demo/demo3
-- name: demo4
-  dir: 5demo/demo4
-- name: demo5
-  dir: 5demo/demo5
 - name: chcnfs01
   dir: cfrmgbs/chc/nfs
 - name: chcelk01
   dir: cfrmgbs/chc/elk
+  workflow: nutanix-backend
+# - name: chcelk02
+#   dir: cfrmgbs/chc/elk
+# - name: chcelk03
+#   dir: cfrmgbs/chc/elk
+- name: chcdb01
+  dir: cfrmgbs/chc/db
 - name: sre-autolab-consul
   dir: sre/elk/consul
 - name: savula-STANDBY-ETCD
@@ -420,5 +417,3 @@ projects:
 - name: llabranche-ora2pg-confluence01
   dir: llabranche/ora2pg/confluence01
   workflow: nutanix-backend
-- name: chcdb01
-  dir: cfrmgbs/chc/db
