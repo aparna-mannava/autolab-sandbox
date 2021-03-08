@@ -18,7 +18,7 @@ locals {
   }
 
   hostname            = "us01vlfmgora01" 
-  alias               = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
+  alias               = "${local.lob}-${local.facts.bt_tier}-${local.facts.bt_role}"
   bt_infra_network    = "ny2-autolab-app-ahv"
   bt_infra_cluster    = "ny2-aza-ntnx-07"
   foreman_hostgroup    = "BT Base Server"
