@@ -12,6 +12,7 @@ locals {
     "bt_customer" = "chc"
     "bt_product" = "cfrmcloud"
 	  "bt_role" = "elastic"
+    "bt_env" = "01"
     "bt_artemis_version" = "2.6.0"
     "bt_es_version" = "5.6.2"
     "bt_apacheds_version" = "2.0.0_M24"
