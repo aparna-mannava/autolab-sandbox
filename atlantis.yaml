@@ -420,3 +420,6 @@ projects:
 - name: llabranche-ora2pg-confluence01
   dir: llabranche/ora2pg/confluence01
   workflow: nutanix-backend
+- name: cfrmcloud-app-bp
+  dir: cfrmgbs/BP/app
+  workflow: nutanix-backend
