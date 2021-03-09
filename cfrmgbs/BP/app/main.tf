@@ -5,7 +5,7 @@ terraform {
 locals {
     facts       = {
       bt_customer = "bp"
-      bt_product = "cfrmcloud"
+      bt_product = "cfrmcloud" #  
       bt_lob = "cfrm"
       bt_tier = "autolab"
       bt_env = "ae"
