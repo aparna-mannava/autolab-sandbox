@@ -52,6 +52,7 @@ module "ae_server_2" {
   foreman_environment  = "${local.facts.environment}"
   foreman_hostgroup    = "${local.facts.hostgroup}"
   #firewall_group       = "${local.facts.firewall_group}"
+  lob                  = "cfrm"
   datacenter           = "${local.datacenter.name}"
   cpus                 = 4
   memory               = 8096
