@@ -5,7 +5,7 @@ terraform {
 locals {
     facts       = {
       bt_customer = "bp"
-      bt_product = "cfrmcloud"
+      bt_product = "cfrmcloud" #  
       bt_lob = "cfrm"
       bt_tier = "autolab"
       bt_env = "ae"
@@ -32,6 +32,7 @@ module "ae_server_1" {
   foreman_environment  = "${local.facts.environment}"
   foreman_hostgroup    = "${local.facts.hostgroup}"
   #firewall_group       = "${local.facts.firewall_group}"
+  lob                  = "cfrm"
   datacenter           = "${local.datacenter.name}"
   cpus                 = 4
   memory               = 8096
