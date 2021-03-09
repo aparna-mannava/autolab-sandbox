@@ -29,6 +29,9 @@ projects:
 - name: cbonnet-pg
   dir: cbonnet/pg
   workflow: nutanix-backend #
+- name: cdrew-sslab
+  dir: cdrew/dev2/ss
+  workflow: nutanix-backend
 - name: cdrew-dev4hapg
   dir: cdrew/dev5/hapg
   workflow: nutanix-backend
@@ -419,3 +422,6 @@ projects:
   workflow: nutanix-backend
 - name: fdalobtrial
   dir: fmasihuddin/createform/tfs
+- name: cfrmcloud-app-bp
+  dir: cfrmgbs/BP/app
+  workflow: nutanix-backend

@@ -12,11 +12,15 @@ locals {
     "bt_customer" = "chc"
     "bt_product" = "cfrmcloud"
 	  "bt_role" = "elastic"
+    "bt_env" = "01"
     "bt_artemis_version" = "2.6.0"
     "bt_es_version" = "5.6.2"
     "bt_apacheds_version" = "2.0.0_M24"
     "bt_ic_version" = "5.9_SP4"
     "bt_jmx_prometheus_version" = "0.14.0"
+    "bt_artemis1_fqdn" = "${local.hostname}01"
+    "bt_artemis2_fqdn" = "${local.hostname}02"
+    "bt_artemis3_fqdn" = "${local.hostname}03"
   } 
   datacenter = {
     name = "ny2"
@@ -39,7 +43,7 @@ module "chcelk01" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //   disk 1
+    1 = "150",  //   disk 1
   }
 }
 
@@ -58,7 +62,7 @@ module "chcelk02" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //   disk 1
+    1 = "150",  //   disk 1
   }
 }
 
@@ -77,7 +81,7 @@ module "chcelk03" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //   disk 1
+    1 = "150",  //   disk 1
   }
 }
 
