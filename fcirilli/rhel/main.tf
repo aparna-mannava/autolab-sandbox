@@ -1,4 +1,4 @@
-#Build PLAN
+#Del PLAN
 
 terraform {
   backend "s3" {}
