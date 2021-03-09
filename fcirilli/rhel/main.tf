@@ -1,4 +1,4 @@
-#BUILD PLAN
+#DELETE PLAN
 
 terraform {
   backend "s3" {}
@@ -10,11 +10,11 @@ locals {
   datacenter    = "ny2"
   domain        = "saas-n.com"
   facts         = {
-    "bt_product"          = "dgb"
+    "bt_product"          = "fmcloud"
     "bt_tier"             = "dev"
-    "bt_role"             = "fmgoradb"
+    "bt_role"             = "rhel8"
     "bt_loc"              = "ny2"
-    "bt_env"              = "1"
+
   }
 
   hostname            = "us01vlfmgora01" 
@@ -33,7 +33,7 @@ module "gt_oracle_db_1" {
   datacenter           = local.datacenter
   bt_infra_network     = local.bt_infra_network
   bt_infra_cluster     = local.bt_infra_cluster
-  lob                  = "FMCLOUD"
+  lob                  = "fmcloud"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = local.foreman_hostgroup
   external_facts       = local.facts
