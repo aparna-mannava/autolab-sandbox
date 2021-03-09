@@ -43,7 +43,7 @@ module "chcelk01" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //   disk 1
+    1 = "150",  //   disk 1
   }
 }
 
@@ -62,7 +62,7 @@ module "chcelk02" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //   disk 1
+    1 = "150",  //   disk 1
   }
 }
 
@@ -81,7 +81,7 @@ module "chcelk03" {
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
-    1 = "100",  //   disk 1
+    1 = "150",  //   disk 1
   }
 }
 
