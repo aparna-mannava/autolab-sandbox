@@ -41,7 +41,7 @@ module "gt_oracle_db_1" {
   cpus                 = "8"
   memory               = "65536"
   additional_disks     = {
-    1 = "300"
+    1 = "330"
   }
 }
 
