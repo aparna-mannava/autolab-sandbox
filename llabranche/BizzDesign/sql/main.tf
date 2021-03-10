@@ -3,7 +3,7 @@ terraform {
 }
 locals {
   product        = "inf"
-  environment    = "master"
+  environment    = "nonprod"
   datacenter     = "ny2"
   hostname       = "us01vwmsb21"
   hostgroup      = "BT BFS MSSQL 2019 Server"
