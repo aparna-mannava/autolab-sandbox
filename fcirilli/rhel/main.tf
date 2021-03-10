@@ -1,4 +1,4 @@
-#Del PLAN
+#BUILD PLAN
 
 
 terraform {
