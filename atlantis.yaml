@@ -345,9 +345,6 @@ projects:
 - name: iq-es-cluster
   dir: bkumar/es-cluster
   workflow: nutanix-backend
-- name: llabranche-pgbkptest01
-  dir: llabranche/pgbkptest01
-  workflow: nutanix-backend
 - name: savula-NEW2019
   dir: savula/NEW2019
   workflow: nutanix-backend
@@ -356,9 +353,6 @@ projects:
   workflow: nutanix-backend
 - name: hsp-btiq2
   dir: partha/CLOUD-77654
-  workflow: nutanix-backend
-- name: llabranche-pgbkptest02
-  dir: llabranche/pgbkptest02
   workflow: nutanix-backend
 - name: richard.grainger-harbor
   dir: richard.grainger/harbor
@@ -424,4 +418,7 @@ projects:
   dir: fmasihuddin/createform/tfs
 - name: cfrmcloud-app-bp
   dir: cfrmgbs/BP/app
+  workflow: nutanix-backend
+- name: llabranche-BizzDesign-sql
+  dir: llabranche/BizzDesign-sql
   workflow: nutanix-backend
