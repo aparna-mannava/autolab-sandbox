@@ -45,7 +45,7 @@ module "chcdb01" {
 	#   4 = "250"  // disk4
   # }
   additional_disks     = {
-    1 = "50",  //   disk 1
+    1 = "200",  //   disk 1
   }
 }
 
