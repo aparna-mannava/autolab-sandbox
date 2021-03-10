@@ -420,5 +420,5 @@ projects:
   dir: cfrmgbs/BP/app
   workflow: nutanix-backend
 - name: llabranche-BizzDesign-sql
-  dir: llabranche/BizzDesign-sql
+  dir: llabranche/BizzDesign/sql
   workflow: nutanix-backend
