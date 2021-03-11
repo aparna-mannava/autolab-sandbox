@@ -11,7 +11,7 @@ locals {
   os          = "rhel8"
   hostgroup   = "BT Base Server"
   environment = "feature_CLOUD_83257_pulp_sync"
-  cluster     = "ny2-azb-ntnx-08"
+  cluster     = "ny2-aze-ntnx-12"
   network     = "ny2-autolab-app-ahv"
   datacenter  = "ny2"
   facts = {
