@@ -1,6 +1,5 @@
 #BUILD PLAN
 
-
 terraform {
   backend "s3" {}
 }
