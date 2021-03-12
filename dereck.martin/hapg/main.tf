@@ -130,6 +130,15 @@ module "ny2_autolab_haproxy_2" {
   }
 }
 
+resource "infoblox_record_host" "hapg9999" {
+  name              = "hapg9999.auto.saas-n.com"
+  configure_for_dns = true
+  ipv4addr {
+    function           = "func:nextavailableip:10.226.190.0/24"
+    configure_for_dhcp = false
+  }
+}
+
 output "ny2_autolab_hapg_0" {
   value = {
     "fqdn"  = "${module.ny2_autolab_hapg_0.fqdn}",
