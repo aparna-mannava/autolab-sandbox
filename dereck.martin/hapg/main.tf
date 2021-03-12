@@ -94,7 +94,7 @@ module "ny2_autolab_hapg_2" {
 
 module "ny2_autolab_haproxy_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.haproxy_server[0]}"
+  hostname             = "${local.haproxy_servers[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT Patroni HA Proxy"
@@ -113,7 +113,7 @@ module "ny2_autolab_haproxy_1" {
 
 module "ny2_autolab_haproxy_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.haproxy_server[1]}"
+  hostname             = "${local.haproxy_servers[1]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT Patroni HA Proxy"
