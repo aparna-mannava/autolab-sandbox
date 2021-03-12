@@ -427,3 +427,4 @@ projects:
   workflow: nutanix-backend
 - name: cfrmcloud-db-bp
   dir: cfrmgbs/BP/db
+  workflow: nutanix-backend
