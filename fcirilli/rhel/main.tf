@@ -1,8 +1,6 @@
 #REBUILD PLAN
 
 
-
-
 terraform {
   backend "s3" {}
 }
