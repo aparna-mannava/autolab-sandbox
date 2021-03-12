@@ -1,4 +1,7 @@
-#BUILD PLAN
+#REBUILD PLAN
+
+
+
 
 terraform {
   backend "s3" {}
@@ -11,7 +14,7 @@ locals {
   domain        = "saas-n.com"
   facts         = {
     "bt_product"          = "fmcloud"
-    "bt_tier"             = "autolab"
+    "bt_tier"             = "dev"
     "bt_role"             = "rhel8"
     "bt_loc"              = "ny2"
 
