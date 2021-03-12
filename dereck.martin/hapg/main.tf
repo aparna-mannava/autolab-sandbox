@@ -15,7 +15,7 @@ locals {
   lob             = "PBS"
   hostgroup       = "BT HA PG Server"
   environment     = "feature_CEA_9822"
-  cluster         = "ny5-aza-ntnx-19"
+  cluster         = "ny2-aze-ntnx-12"
   network         = "ny2-autolab-app-ahv"
   facts           = {
     "bt_env"                  = "${local.bt_env}"
