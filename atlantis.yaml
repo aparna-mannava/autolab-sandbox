@@ -422,3 +422,6 @@ projects:
 - name: llabranche-BizzDesign-sql
   dir: llabranche/BizzDesign/sql
   workflow: nutanix-backend
+- name: dereck-martin-hapg
+  dir: dereck.martin/hapg
+  workflow: nutanix-backend
