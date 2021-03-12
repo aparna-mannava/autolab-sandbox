@@ -12,7 +12,7 @@ locals {
   tier            = "dev"
   bt_env          = "5"
   bt_product      = "pbscap"
-  lob             = "pbs"
+  lob             = "PBS"
   hostgroup       = "BT HA PG Server"
   environment     = "feature_CEA_9822"
   cluster         = "ny2-aza-ntnx-13"
