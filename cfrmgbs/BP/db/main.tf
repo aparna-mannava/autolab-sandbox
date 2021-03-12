@@ -34,7 +34,7 @@ locals {
 
 module "dbprod_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.hostname}01-pr" //  gb00vlbpdb01-pr.saas-p.com
+  hostname             = "${local.facts.hostname}01-pr" // gb00vlbpdb01-pr.saas-p.com
   alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}-${local.datacenter.id}.db01"// cfrmcloud.bp.prod.gb00.db01
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
