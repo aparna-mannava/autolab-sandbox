@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 - name: alon-pulp
   dir: cfrmrd/pulp
@@ -123,19 +123,9 @@ projects:
   dir: hdonovan/hackathon/win2019
 - name: hdonovan-hackathon-rhel-second
   dir: hdonovan/hackathon/rhel
-- name: gnewbury-packer-partitions
-  dir: gnewbury/packer-partitions
-- name: disallow-os-test
-  dir: gnewbury/disallow-os
-- name: gnewbury-hackathon-example1
-  dir: gnewbury/hackathon/example1
-- name: gnewbury-hackathon-example2
-  dir: gnewbury/hackathon/example2
-- name: gnewbury-patching-test
-  dir: gnewbury/patching-test
+- name: gnewbury-patch
+  dir: gnewbury/patch
   workflow: nutanix-backend
-- name: gnewbury-btc-hackathon
-  dir: gnewbury/btc-hackathon
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
