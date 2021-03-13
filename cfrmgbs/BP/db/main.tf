@@ -9,7 +9,7 @@ locals {
       bt_lob           = "cfrm"
       bt_tier          = "prod" //PROD
       bt_env           = "1"
-      bt_cfrm_version  = "6.1_SP1" //Need to be updated
+      bt_cfrm_version  = "6.1_SP1" // Need to be updated
       bt_role          = "oradb"
       bt_infra_cluster = "ny2-aze-ntnx-11"
       bt_infra_network = "ny2-autolab-app-ahv"
