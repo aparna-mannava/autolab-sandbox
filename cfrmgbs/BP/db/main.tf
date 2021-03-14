@@ -9,7 +9,7 @@ locals {
       bt_lob           = "cfrm"
       bt_tier          = "prod" //PROD
       bt_env           = "1"
-      bt_cfrm_version  = "6.1_SP1" //Need to be updated
+      bt_cfrm_version  = "6.1_SP1" // Need to be updated
       bt_role          = "oradb"
       bt_infra_cluster = "ny2-aze-ntnx-11"
       bt_infra_network = "ny2-autolab-app-ahv"
@@ -35,7 +35,7 @@ locals {
 module "dblab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.hostname}01-pr" // gb00vlbpdb01-pr.saas-p.com
-  alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}-${local.datacenter.id}.db01"// cfrmcloud.bp.prod.gb00.db01
+  alias                = "${local.facts.bt_product}.${local.facts.bt_customer}.${local.facts.bt_tier}.${local.datacenter.id}.db01"// cfrmcloud.bp.prod.gb00.db01
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
   #firewall_group       = "${local.facts.firewall_group}" //adding firewall group
