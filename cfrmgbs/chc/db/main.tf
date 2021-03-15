@@ -38,15 +38,13 @@ module "chcdb01" {
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
-  # additional_disks     = {
-  #   1 = "250", // disk1
-	#   2 = "250", // disk2
-	#   3 = "250", // disk3
-	#   4 = "250"  // disk4
-  # }
   additional_disks     = {
-    1 = "200",  //   disk 1
+     1 = "250", // disk1
+	   2 = "250", // disk2
+	   3 = "250", // disk3
+	   4 = "250"  // disk4
   }
+
 }
 
 output "chcdb01" {

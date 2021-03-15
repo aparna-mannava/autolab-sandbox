@@ -1,6 +1,4 @@
-#REBUILD PLAN
-
-
+#Build PLAN
 
 
 terraform {
