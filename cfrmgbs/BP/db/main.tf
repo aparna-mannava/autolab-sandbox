@@ -45,8 +45,8 @@ module "dblab_1" {
   datacenter           = "${local.datacenter.name}"
   external_facts       = local.db01prod
   os_version           = "rhel7"
-  cpus                 = "4"
-  memory         	   = "8096"
+  cpus                 = "8"
+  memory         	   = "16000"
   additional_disks     = {
     1 = "250",
 	  2 = "250",
