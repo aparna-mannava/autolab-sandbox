@@ -3,7 +3,6 @@ terraform {
 }
 
 locals {
-  lob           = "INF"
   image         = "rhel7"
   hostgroup     = "BT Base Server"
   environment   = "master"
@@ -33,7 +32,7 @@ module "base_server_1" {
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   additional_disks     = local.disks
-  lob                  = local.lob
+  lob                  = "CEA"
 }
 
 output "base_server_1" {
