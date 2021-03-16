@@ -22,7 +22,7 @@ locals {
 
 module "base_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlkfkcc100.saas-p.com"
+  hostname             = "us01vlkfkcc100"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
