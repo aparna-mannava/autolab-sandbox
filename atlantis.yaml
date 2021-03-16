@@ -76,6 +76,9 @@ projects:
   workflow: nutanix-backend
 - name: richard-test-01
   dir: richard.grainger/test_01
+- name: lemery-ccc
+  dir: lemery/ccc
+  workflow: nutanix-backend
 - name: lemery-harbor
   dir: lemery/harbor
   workflow: nutanix-backend
