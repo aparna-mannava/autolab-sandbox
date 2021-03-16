@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob           = "inf"
+  lob           = "INF"
   image         = "rhel7"
   hostgroup     = "BT Base Server"
   environment   = "master"
