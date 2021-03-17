@@ -1,4 +1,4 @@
-#Rebuild PLAN
+#¨Destroy PLAN
 
 
 terraform {
