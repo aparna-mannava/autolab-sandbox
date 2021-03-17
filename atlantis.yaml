@@ -419,4 +419,4 @@ projects:
   dir: cfrmgbs/BP/db
   workflow: nutanix-backend
 - name: kv
-    dir: krunal/dgb_pr
+  dir: krunal/dgb_pr
