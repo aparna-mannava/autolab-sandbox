@@ -420,3 +420,5 @@ projects:
   workflow: nutanix-backend
 - name: kv
   dir: krunal/dgb_pr
+- name: dgb_pci_1
+  dir: spatel/dgb_pci/
