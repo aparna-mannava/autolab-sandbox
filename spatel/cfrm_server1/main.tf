@@ -4,12 +4,12 @@ terraform {
 
 locals {
   product     = "cfrm"
-  environment = "nonprod"
+  environment = "master"
   datacenter  = "ny2"
   facts       = {
     "bt_product"         = "cfrm"
     "bt_customer"        = "WPBBMT"
-    "bt_tier"            = "pr"
+    "bt_tier"            = "prod"
     "bt_env"             = "1"
     "bt_role"            = "oradb"
     "bt_deployment_mode" = "live"
@@ -20,7 +20,7 @@ locals {
     "db_cpus"            = "4"
     "obs_cpus"           = "2"
     "os_version"         = "rhel7"
-    "db01_hostname"      = "us01vldbcfsrv1"
+    "db01_hostname"      = "us01vldbcrsrv1"
 
 
   }
