@@ -422,3 +422,5 @@ projects:
   dir: krunal/dgb_pr
 - name: dgb_pci_1
   dir: spatel/dgb_pci/
+- name: cfrm_pci_1
+  dir: spatel/cfrm_server1/
