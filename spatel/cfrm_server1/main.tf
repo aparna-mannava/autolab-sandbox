@@ -8,7 +8,7 @@ locals {
   datacenter  = "ny2"
   facts       = {
     "bt_product"         = "cfrm"
-    "bt_customer"        = "WPBBMT"
+    "bt_customer"        = "bfs"
     "bt_tier"            = "prod"
     "bt_env"             = "1"
     "bt_role"            = "oradb"
@@ -20,7 +20,7 @@ locals {
     "db_cpus"            = "4"
     "obs_cpus"           = "2"
     "os_version"         = "rhel7"
-    "db01_hostname"      = "us01vldbcrsrv1"
+    "db01_hostname"      = "us01vldbcmsrv1"
 
 
   }
