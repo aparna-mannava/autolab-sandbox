@@ -24,7 +24,7 @@ locals {
 
 
   }
-  db01facts    = {
+  db02facts    = {
     "bt_product" = "${local.facts.bt_product}"
     "bt_customer" = "${local.facts.bt_customer}"
     "bt_tier" = "${local.facts.bt_tier}"
