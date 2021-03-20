@@ -39,7 +39,7 @@ locals {
 
 module "oradb_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.db01_hostname}"
+  hostname             = "${local.facts.db02_hostname}"
   alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.db02facts.bt_server_mode}${local.db02facts.bt_server_number}-${local.facts.bt_deployment_mode}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
@@ -50,7 +50,7 @@ module "oradb_server_1" {
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM SP Oracle Server"
   datacenter           = local.datacenter
-  external_facts       = local.db01facts
+  external_facts       = local.db02facts
   additional_disks     = {
     1 = "200",
     2 = "100",
