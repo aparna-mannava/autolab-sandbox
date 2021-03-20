@@ -33,7 +33,7 @@ locals {
     "bt_server_mode" = "db"
     "bt_server_number" = "01"
     "bt_deployment_mode" = "${local.facts.bt_deployment_mode}"
-    "bt_alias" = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-db022${local.facts.bt_deployment_mode}"
+    "bt_alias" = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-db02${local.facts.bt_deployment_mode}"
   }
 }
 
