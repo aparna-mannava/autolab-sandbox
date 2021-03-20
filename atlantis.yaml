@@ -426,3 +426,5 @@ projects:
   dir: spatel/cfrm_server1/
 - name: cfrm_pci_2
   dir: smangrol/cfrm_server2/  
+- name: cfrm_pci_3
+  dir: smangrol/cfrm_server3/
