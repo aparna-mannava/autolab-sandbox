@@ -48,7 +48,7 @@ module "oradb_server_1" {
   memory               = "${local.facts.db_memory}"
   lob                  = "DGB"
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT DGB Oradb Server "
+  foreman_hostgroup    = "BT DGB Oradb Server"
   datacenter           = local.datacenter
   external_facts       = local.db01facts
   additional_disks     = {
