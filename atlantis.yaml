@@ -428,3 +428,5 @@ projects:
   dir: smangrol/cfrm_server2/  
 - name: cfrm_pci_3
   dir: smangrol/cfrm_server3/
+- name: DGB_srv1
+  dir: smangrol/DGB_SRV1
