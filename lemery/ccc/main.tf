@@ -7,7 +7,7 @@ locals {
   hostgroup     = "BT Base Server"
   environment   = "feature_CEA_10101_confluent_control_center"
   datacenter    = "ny2"
-  cluster       = "ny5-azd-ntnx-15"
+  cluster       = "ny2-aza-ntnx-05"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
   memory        = "2048"
