@@ -7,7 +7,7 @@ locals {
   hostgroup     = "BT Small Kafka Control Center"
   environment   = "feature_CEA_10101_confluent_control_center"
   datacenter    = "ny2"
-  cluster       = "ny2-aze-ntnx-12"
+  cluster       = "ny5-azd-ntnx-15"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
   memory        = "2048"
