@@ -126,6 +126,9 @@ projects:
 - name: gnewbury-patch
   dir: gnewbury/patch
   workflow: nutanix-backend
+- name: gnewbury-templates
+  dir: gnewbury/templates
+  workflow: nutanix-backend
 - name: ydelanoe-essnap
   dir: ydelanoe/essnap
 - name: lsm-bamboo
