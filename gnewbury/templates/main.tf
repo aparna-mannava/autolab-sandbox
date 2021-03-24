@@ -38,10 +38,36 @@ module "canary-test" {
   external_facts      = local.facts
 }
 
+module "canary-test-2" {
+  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  canary              = false
+  lob                 = local.lob
+  hostname            = "us01vlcnry002"
+  alias               = "inf-ny2-canarytest002"
+  cpus                = local.cpus
+  memory              = local.memory
+  os_version          = local.os
+  foreman_hostgroup   = local.hostgroup
+  foreman_environment = local.environment
+  bt_infra_cluster    = local.cluster
+  bt_infra_network    = local.network
+  datacenter          = local.datacenter
+  external_facts      = local.facts
+}
+
+
 output "canary-test" {
   value = {
     fqdn  = module.canary-test.fqdn
     alias = module.canary-test.alias
     ip    = module.canary-test.ip
+  }
+}
+
+output "canary-test-2" {
+  value = {
+    fqdn  = module.canary-test-2.fqdn
+    alias = module.canary-test-2.alias
+    ip    = module.canary-test-2.ip
   }
 }
