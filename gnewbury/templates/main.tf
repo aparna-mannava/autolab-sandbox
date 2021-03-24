@@ -4,7 +4,7 @@ terraform {
 
 locals {
   lob         = "CLOUD"
-  hostname    = "us01vwcrnytest1"
+  hostname    = "us01vwcnrytest1"
   alias       = "inf-ny2-canarytest001"
   cpus        = "2"
   memory      = "2048"
@@ -42,7 +42,7 @@ module "canary-test-2" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   canary              = false
   lob                 = local.lob
-  hostname            = "us01vlcnry002"
+  hostname            = "us01vwcnrytest2"
   alias               = "inf-ny2-canarytest002"
   cpus                = local.cpus
   memory              = local.memory
