@@ -11,7 +11,7 @@ locals {
   os          = "win2016"
   hostgroup   = "BT Base Windows Server"
   environment = "master"
-  cluster     = "ny2-aze-ntnx-05"
+  cluster     = "ny2-aza-ntnx-05"
   network     = "ny2-autolab-app-ahv"
   datacenter  = "ny2"
   facts = {
