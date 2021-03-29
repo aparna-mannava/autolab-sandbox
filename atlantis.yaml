@@ -173,12 +173,14 @@ projects:
   dir: stevek/hackathon/example2
 - name: stevek-hackathon-winexample1
   dir: stevek/hackathon/winexample1
+  workflow: nutanix-backend
 - name: stevek-sudotest
   dir: stevek/sudotest
 - name: stevek-hackathon-linuxexample2
   dir: stevek/hackathon/linuxexample2
 - name: stevek-windows-windns
   dir: stevek/windows/windns
+  workflow: nutanix-backend
 - name: liamsh-linuxexample1
   dir: liamsh/linuxexample1
 - name: mfirth-examples-linux
@@ -428,7 +430,7 @@ projects:
 - name: cfrm_pci_1
   dir: spatel/cfrm_server1/
 - name: cfrm_pci_2
-  dir: smangrol/cfrm_server2/  
+  dir: smangrol/cfrm_server2/
 - name: cfrm_pci_3
   dir: smangrol/cfrm_server3/
 - name: DGB_srv1
