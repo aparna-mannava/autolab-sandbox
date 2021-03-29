@@ -1,7 +1,6 @@
 #comment
-#destroy
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
 #build attempt 8
 locals {
