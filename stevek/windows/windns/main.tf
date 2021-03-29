@@ -1,8 +1,8 @@
 #comment
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
-#build attempt 8
+#change
 locals {
   cluster = "ny5-aza-ntnx-19"
   network = "ny2-autolab-app-ahv"
