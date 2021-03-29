@@ -1,6 +1,6 @@
 #comment
 terraform {
-  backend "s3" {}
+  backend "http" {}
 }
 #build attempt 8
 locals {
