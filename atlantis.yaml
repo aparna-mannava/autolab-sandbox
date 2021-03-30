@@ -434,5 +434,5 @@ projects:
 - name: DGB_srv1
   dir: smangrol/DGB_SRV1
 - name: daniel.eliyahu-dev1
-  dir: daniel.eliyahu-dev1
+  dir: daniel.eliyahu/dev1/
   workflow: nutanix-backend
