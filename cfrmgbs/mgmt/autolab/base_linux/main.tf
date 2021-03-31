@@ -4,10 +4,10 @@ terraform {
 
 locals {
     facts       = {
-      bt_customer      = "bp" //bp
+      bt_customer      = "" //bp
       bt_product       = "cfrmcloud"
       bt_lob           = "cfrm"
-      bt_tier          = "autolab" //PROD
+      bt_tier          = "dev" //PROD
       bt_env           = "1"
       bt_role          = "mgmt"
       bt_infra_cluster = "ny2-aze-ntnx-12" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse
