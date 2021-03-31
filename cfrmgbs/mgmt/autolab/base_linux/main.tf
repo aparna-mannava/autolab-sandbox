@@ -50,8 +50,8 @@ module "mglab_1" {
 
 output "mglab_1" {
   value = {
-    "fqdn"  = "${module.dblab_1.fqdn}",
-    "alias" = "${module.dblab_1.alias}",
-    "ip"    = "${module.dblab_1.ip}",
+    "fqdn"  = "${module.mglab_1.fqdn}",
+    "alias" = "${module.mglab_1.alias}",
+    "ip"    = "${module.mglab_1.ip}",
   }
 }
