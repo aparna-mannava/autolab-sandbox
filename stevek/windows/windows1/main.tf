@@ -1,4 +1,5 @@
 #comment
+#destroy
 terraform {
   backend "http" {}
 }

@@ -1,10 +1,10 @@
 #comment
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
-#build attempt 8
+#change
 locals {
-  cluster = "ny2-aza-ntnx-05"
+  cluster = "ny2-aze-ntnx-12"
   network = "ny2-autolab-app-ahv"
   os      = "win2019"
   cpus    = "2"
@@ -24,8 +24,8 @@ locals {
 # Add a comment to make it look different
 module "example_module1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "us01vwexpl124"
-  alias               = "fml-ny2-sksagdns01"
+  hostname            = "us01vwsk002"
+  alias               = "fml-ny2-sksagdns02"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   os_version          = local.os
