@@ -4,11 +4,11 @@ terraform {
 
 locals {
     facts       = {
-      bt_customer      = "" //bp
+      bt_customer      = "bp" //bp
       bt_product       = "cfrmcloud"
       bt_lob           = "cfrm"
-      bt_tier          = "dev" //PROD
-      bt_env           = ""
+      bt_tier          = "autolab" //PROD
+      bt_env           = "1"
       bt_role          = "mgmt"
       bt_infra_cluster = "ny2-aze-ntnx-12" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse
       bt_infra_network = "ny2-autolab-app-ahv" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse/data/networks
@@ -21,20 +21,12 @@ locals {
       name = "ny2"
       id   = "ny2"
   }
-    # mg01auto   = {
-    #   "bt_customer"     = "${local.facts.bt_customer}"
-    #   "bt_product"      = "${local.facts.bt_product}"
-    #   "bt_tier"         = "${local.facts.bt_tier}"
-    #   "bt_env"          = "${local.facts.bt_env}"
-    #   "bt_role"         = "${local.facts.bt_role}"
-    #   "bt_cfrm_version" = "${local.facts.bt_cfrm_version}"
-    #  }
 }
 
 module "mglab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.hostname}" // us01vlcfmgmt01a.auto.saas-p.com
-  alias                = "${local.facts.bt_product}.${local.facts.bt_customer}.${local.facts.bt_tier}.${local.datacenter.id}.dmg1"// cfrmcloud.cfrm.auto.gb00.db01
+  alias                = "${local.facts.bt_product}.${local.facts.bt_customer}.${local.facts.bt_tier}.${local.datacenter.id}.dmg2"// cfrmcloud.cfrm.auto.gb00.db01
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
   #firewall_group       = "${local.facts.firewall_group}" //  adding firewall group
