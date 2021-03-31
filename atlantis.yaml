@@ -174,8 +174,8 @@ projects:
 - name: stevek-hackathon-winexample1
   dir: stevek/hackathon/winexample1
   workflow: nutanix-backend
-- name: stevek/linux/lvmtest
-  dir: stevek-linux-lvmtest
+- name: stevek-linux-lvmtest
+  dir: stevek/linux/lvmtest
   workflow: nutanix-backend
 - name: stevek-sudotest
   dir: stevek/sudotest
