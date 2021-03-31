@@ -38,6 +38,9 @@ module "mglab_1" {
   os_version           = "rhel7"
   cpus                 = "4"
   memory         	     = "8096"
+  additional_disks  = {
+    1 = "50"
+  }
 } 
 
 output "mglab_1" {
