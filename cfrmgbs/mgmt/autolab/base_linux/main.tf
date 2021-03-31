@@ -8,7 +8,7 @@ locals {
       bt_product       = "cfrmcloud"
       bt_lob           = "cfrm"
       bt_tier          = "dev" //PROD
-      bt_env           = "1"
+      bt_env           = ""
       bt_role          = "mgmt"
       bt_infra_cluster = "ny2-aze-ntnx-12" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse
       bt_infra_network = "ny2-autolab-app-ahv" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse/data/networks
