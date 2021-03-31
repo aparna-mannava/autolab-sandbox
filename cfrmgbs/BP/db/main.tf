@@ -38,7 +38,7 @@ module "dblab_1" {
   alias                = "${local.facts.bt_product}.${local.facts.bt_customer}.${local.facts.bt_tier}.${local.datacenter.id}.db01"// cfrmcloud.bp.prod.gb00.db01
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
-  #firewall_group       = "${local.facts.firewall_group}" //adding firewall group
+  #firewall_group       = "${local.facts.firewall_group}" //  adding firewall group
   lob                  = "${local.facts.bt_lob}"
   foreman_environment  = "${local.facts.environment}"
   foreman_hostgroup    = "${local.facts.hostgroup}"
@@ -48,10 +48,10 @@ module "dblab_1" {
   cpus                 = "8"
   memory         	   = "16000"
   additional_disks     = {
-    1 = "250",
-	  2 = "250",
-	  3 = "250",
-	  4 = "250"
+    1 = "300",
+	  2 = "300",
+	  3 = "300",
+	  4 = "300"
   }
 } 
 

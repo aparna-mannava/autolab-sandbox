@@ -423,6 +423,9 @@ projects:
 - name: cfrmcloud-db-bp
   dir: cfrmgbs/BP/db
   workflow: nutanix-backend
+- name: cfrmcloud-mgmt-test
+  dir: cfrmgbs/mgmt/autolab/base_linux
+  workflow: nutanix-backend
 - name: kv
   dir: krunal/dgb_pr
 - name: dgb_pci_1
