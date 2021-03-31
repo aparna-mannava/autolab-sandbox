@@ -10,7 +10,7 @@ locals {
       bt_tier          = "dev" //PROD
       bt_env           = ""
       bt_role          = "mgmt"
-      bt_infra_cluster = "ny2-aze-ntnx-11" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse
+      bt_infra_cluster = "ny2-aze-ntnx-12" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse
       bt_infra_network = "ny2-autolab-app-ahv" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse/data/networks
       #firewall_group   = "CFRMRD_PR_ES" //"CFRMRD_PR_DB"
       hostgroup        = "BT CFRM CLOUD MGMT Base"
@@ -21,14 +21,6 @@ locals {
       name = "ny2"
       id   = "ny2"
   }
-    # mg01auto   = {
-    #   "bt_customer"     = "${local.facts.bt_customer}"
-    #   "bt_product"      = "${local.facts.bt_product}"
-    #   "bt_tier"         = "${local.facts.bt_tier}"
-    #   "bt_env"          = "${local.facts.bt_env}"
-    #   "bt_role"         = "${local.facts.bt_role}"
-    #   "bt_cfrm_version" = "${local.facts.bt_cfrm_version}"
-    #  }
 }
 
 module "mglab_1" {
@@ -46,6 +38,9 @@ module "mglab_1" {
   os_version           = "rhel7"
   cpus                 = "4"
   memory         	     = "8096"
+  additional_disks  = {
+    1 = "50"
+  }
 } 
 
 output "mglab_1" {
