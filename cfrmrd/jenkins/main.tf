@@ -23,7 +23,7 @@ module "staging_jenkins" {
   hostname             = "us01vlcfrmrd223"
   alias                = "cfrmx-jenkins"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny2-aza-ntnx-05"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   cpus                 = "2"
   memory               = "1024"
   os_version           = "rhel7"
