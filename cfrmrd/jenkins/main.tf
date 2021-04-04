@@ -28,7 +28,7 @@ module "staging_jenkins" {
   memory               = "1024"
   os_version           = "rhel7"
   external_facts       = local.staging_jenkins_facts
-  foreman_environment  = "feature_CFRMX_5553_Jenkins"
+  foreman_environment  = "feature_CFRMX_4598_Jenkins"
   foreman_hostgroup    = "CFRMRD Jenkins"
   lob                  = "CFRM"
   datacenter           = "ny2"
