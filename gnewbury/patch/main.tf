@@ -10,7 +10,7 @@ locals {
   memory      = "2048"
   os          = "rhel8"
   hostgroup   = "BT CLOUD Pulp Server"
-  environment = "master"
+  environment = "feature_CLOUD_83257_pulp_sync"
   cluster     = "ny2-aze-ntnx-12"
   network     = "ny2-autolab-app-ahv"
   datacenter  = "ny2"
