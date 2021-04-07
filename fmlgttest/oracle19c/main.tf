@@ -18,7 +18,7 @@ module "oradb_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlfmldb1"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  bt_infra_network     = "ny2-autolab-db-ahv"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
