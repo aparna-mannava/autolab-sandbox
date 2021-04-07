@@ -20,7 +20,7 @@ locals {
     bt_role    = "base"
   }
   disks = {
-    1 = "200"
+    1 = "600"
   }
 }
 
