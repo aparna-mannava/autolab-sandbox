@@ -10,7 +10,7 @@ locals {
   memory      = "2048"
   os          = "rhel8"
   hostgroup   = "BT CLOUD Pulp Server"
-  environment = "feature_CLOUD_83257_pulp_sync"
+  environment = "master"
   cluster     = "ny2-aze-ntnx-12"
   network     = "ny2-autolab-app-ahv"
   datacenter  = "ny2"
@@ -18,6 +18,9 @@ locals {
     bt_product = "inf"
     bt_tier    = "lab"
     bt_role    = "base"
+  }
+  disks = {
+    1 = "200"
   }
 }
 
@@ -35,6 +38,7 @@ module "patch-test" {
   bt_infra_network    = local.network
   datacenter          = local.datacenter
   external_facts      = local.facts
+  additional_disks    = local.disks
 }
 
 output "patch-test" {
