@@ -444,3 +444,5 @@ projects:
 - name: daniel-test-oracle
   dir: cfrmgbs/daniel-test/oracle
   workflow: nutanix-backend
+- name: fmlgttest-oracle19c
+  dir: fmlgttest/oracle
