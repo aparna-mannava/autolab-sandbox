@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 - name: alon-pulp
   dir: cfrmrd/pulp
