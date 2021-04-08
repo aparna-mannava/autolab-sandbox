@@ -35,3 +35,4 @@ output "inf_ny2_pam_testing" {
     "ip"    = "${module.inf_ny2_pam_testing.ip}",
   }
 }
+
