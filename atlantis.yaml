@@ -438,6 +438,9 @@ projects:
   dir: smangrol/cfrm_server3/
 - name: DGB_srv1
   dir: smangrol/DGB_SRV1
+- name: dereck-martin-harbor
+  dir: dereck.martin/harbor
+  workflow: nutanix-backend
 - name: daniel-test-oracle
   dir: cfrmgbs/daniel-test/oracle
   workflow: nutanix-backend
