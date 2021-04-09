@@ -445,4 +445,4 @@ projects:
   dir: cfrmgbs/daniel-test/oracle
   workflow: nutanix-backend
 - name: fmlgttest-oracle19c
-  dir: fmlgttest/oracle
+  dir: fmlgttest/oracle19c
