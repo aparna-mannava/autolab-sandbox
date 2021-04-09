@@ -8,7 +8,7 @@ locals {
   alias       = "inf-ny2-patchtest001"
   cpus        = "2"
   memory      = "2048"
-  os          = "rhel8"
+  os          = "rhel7"
   hostgroup   = "BT CLOUD Pulp Server"
   environment = "feature_CLOUD_83257_pulp_sync"
   cluster     = "ny2-aze-ntnx-12"
@@ -18,6 +18,9 @@ locals {
     bt_product = "inf"
     bt_tier    = "lab"
     bt_role    = "base"
+  }
+  disks = {
+    1 = "600"
   }
 }
 
@@ -35,6 +38,7 @@ module "patch-test" {
   bt_infra_network    = local.network
   datacenter          = local.datacenter
   external_facts      = local.facts
+  additional_disks    = local.disks
 }
 
 output "patch-test" {

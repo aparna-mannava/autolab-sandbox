@@ -2,30 +2,26 @@
 terraform {
   backend "s3" {}
 }
-#change
+
 locals {
   cluster = "ny2-aze-ntnx-12"
   network = "ny2-autolab-app-ahv"
-  os      = "win2019"
+  os      = "rhel8"
   cpus    = "2"
   memory  = "4096"
   facts = {
     "bt_product" = "fml"
-    "bt_tier" =  "ts-auto-saasn"
-    "bt_role" = "sags"
   }
-#  environment = "feature_FMLDO_14970_sagdns"
   environment = "master"
-  hostgroup   = "BT FML Base Windows"
+  hostgroup   = "BT FML Linux Server Build Test"
   datacenter  = "ny2"
   lob         = "fml"
-
 }
 # Add a comment to make it look different
 module "example_module1" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "us01vwsk002"
-  alias               = "fml-ny2-sksagdns02"
+  hostname            = "us01vlsklvm001"
+  alias               = "fml-ny2-sklvmtest001"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   os_version          = local.os

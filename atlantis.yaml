@@ -76,6 +76,9 @@ projects:
   workflow: nutanix-backend
 - name: richard-test-01
   dir: richard.grainger/test_01
+- name: lemery-ccc2
+  dir: lemery/ccc2
+  workflow: nutanix-backend
 - name: lemery-harbor
   dir: lemery/harbor
   workflow: nutanix-backend
@@ -170,12 +173,17 @@ projects:
   dir: stevek/hackathon/example2
 - name: stevek-hackathon-winexample1
   dir: stevek/hackathon/winexample1
+  workflow: nutanix-backend
+- name: stevek-linux-lvmtest
+  dir: stevek/linux/lvmtest
+  workflow: nutanix-backend
 - name: stevek-sudotest
   dir: stevek/sudotest
 - name: stevek-hackathon-linuxexample2
   dir: stevek/hackathon/linuxexample2
 - name: stevek-windows-windns
   dir: stevek/windows/windns
+  workflow: nutanix-backend
 - name: liamsh-linuxexample1
   dir: liamsh/linuxexample1
 - name: mfirth-examples-linux
@@ -246,9 +254,6 @@ projects:
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
   dir: savula/jenkins
-- name: mdavidson
-  dir: mdavidson
-  workflow: nutanix-backend
 - name: zvaliji-hackathon-example1
   dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
@@ -418,6 +423,9 @@ projects:
 - name: cfrmcloud-db-bp
   dir: cfrmgbs/BP/db
   workflow: nutanix-backend
+- name: cfrmcloud-mgmt-test
+  dir: cfrmgbs/mgmt/autolab/base_linux
+  workflow: nutanix-backend
 - name: kv
   dir: krunal/dgb_pr
 - name: dgb_pci_1
@@ -425,7 +433,7 @@ projects:
 - name: cfrm_pci_1
   dir: spatel/cfrm_server1/
 - name: cfrm_pci_2
-  dir: smangrol/cfrm_server2/  
+  dir: smangrol/cfrm_server2/
 - name: cfrm_pci_3
   dir: smangrol/cfrm_server3/
 - name: DGB_srv1
@@ -433,3 +441,8 @@ projects:
 - name: dereck-martin-harbor
   dir: dereck.martin/harbor
   workflow: nutanix-backend
+- name: daniel-test-oracle
+  dir: cfrmgbs/daniel-test/oracle
+  workflow: nutanix-backend
+- name: fmlgttest-oracle19c
+  dir: fmlgttest/oracle
