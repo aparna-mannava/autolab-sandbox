@@ -13,7 +13,7 @@ locals {
       bt_infra_cluster = "ny2-aze-ntnx-12"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD MGMT Base"
-      environment      = "feature/CFRMGC-737-cfrm-cloud-devops-can-you-add-this-3-lines-to-the-end-of-etc-profile-by-puppet"
+      environment      = "feature_CFRMGC_737_cfrm_cloud_devops_can_you_add_this_3_lines_to_the_end_of_etc_profile_by_puppet"
       hostname         = "us01vlcfmgmt01p"
     }
     datacenter = {
