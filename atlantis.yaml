@@ -446,3 +446,5 @@ projects:
   workflow: nutanix-backend
 - name: fmlgttest-oracle19c
   dir: fmlgttest/oracle19c
+- name: cfrmgbs/proxy
+  dir: cfrmgbs/proxy
