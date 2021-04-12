@@ -5,14 +5,14 @@ terraform {
 locals {
     facts       = {
       bt_customer      = ""
-      bt_product       = "cfrmcloud"
+      bt_product       = "cfrmit"
       bt_lob           = "cfrm"
-      bt_tier          = "dev"
+      bt_tier          = "autolab"
       bt_env           = ""
-      bt_role          = "mgmt"
+      bt_role          = "bitbucket"
       bt_infra_cluster = "ny2-aze-ntnx-11"  
       bt_infra_network = "ny2-autolab-app-ahv"
-      hostgroup        = "BT CFRM CLOUD MGMT Base"
+      hostgroup        = "BT CFRM IT Bitbucket Server"
       environment      = "feature_CFRMGC_737_cfrm_cloud_devops_can_you_add_this_3_lines_to_the_end_of_etc_profile_by_puppet"
       hostname         = "us01vlcfmgmt01p"
     }
