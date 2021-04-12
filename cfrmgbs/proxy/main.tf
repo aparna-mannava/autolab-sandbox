@@ -37,7 +37,7 @@ module "mglabp_1" {
   cpus                 = "4"
   memory         	     = "8096"
   additional_disks  = {
-    1 = "50"
+    1 = "150"
   }
 } 
 
