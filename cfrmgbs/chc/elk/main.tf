@@ -29,7 +29,7 @@ locals {
 }
 
 module "chcelk01" {
-  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master" //
   hostname            = "${local.hostname}01"
   alias               = "cfrm-cloud-chc-uat-gb00-elk01"
   bt_infra_cluster    = "ny2-aze-ntnx-11"
