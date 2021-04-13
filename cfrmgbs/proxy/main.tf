@@ -14,7 +14,7 @@ locals {
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM IT Bitbucket Server"
       environment      = "feature_CFRMGC_737_cfrm_cloud_devops_can_you_add_this_3_lines_to_the_end_of_etc_profile_by_puppet"
-      hostname         = "us01vlcfmgmt02p"   
+      hostname         = "us01vlcfmgmt02p"    
     }
     datacenter = {
       name = "ny2"
@@ -37,7 +37,7 @@ module "mglabp_1" {
   cpus                 = "4"
   memory         	     = "8096"
   additional_disks  = {
-    1 = "150"
+    1 = "250"
   }
 } 
 
