@@ -35,7 +35,7 @@ module "mglabp_1" {
   external_facts       = local.facts
   os_version           = "rhel7"
   cpus                 = "4"
-  memory         	     = "8096"
+  memory         	     = "8096" 
   additional_disks  = {
     1 = "250"
   }
