@@ -449,3 +449,6 @@ projects:
 - name: proxy
   dir: cfrmgbs/proxy
   workflow: nutanix-backend
+- name: richard.grainger-harbor2
+  dir: richard.grainger/harbor2
+  workflow: nutanix-backend
