@@ -13,15 +13,15 @@ locals {
   }
 }
 
-module "oradb_dbserver_1" {
+module "fmgoradb" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlfmgtoradb"
+  hostname             = "us01vlfmgoradb"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
   cpus                 = "2"
   memory               = "8192"
-  lob                  = local.bt_product
+  lob                  = local.product
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT FMCLOUD Oracle19c"
   datacenter           = local.datacenter
@@ -31,9 +31,9 @@ module "oradb_dbserver_1" {
   }
 }
 
-output "oradb_dbserver_1" {
+output "fmgoradb" {
   value = {
-    "fqdn"  = "${module.oradb_dbserver_1.fqdn}",
-    "ip"    = "${module.oradb_dbserver_1.ip}",
+    "fqdn"  = "${module.fmgoradb.fqdn}",
+    "ip"    = "${module.fmgoradb.ip}",
   }
 }
