@@ -27,7 +27,7 @@ module "fmgoradb" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "150"
+    1 = "200"
   }
 }
 
