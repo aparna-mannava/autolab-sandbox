@@ -18,7 +18,7 @@ module "fmgoradb" {
   hostname             = "us01vlfmgoradb"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel8"
+  os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
   lob                  = local.product
