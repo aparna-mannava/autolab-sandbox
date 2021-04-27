@@ -9,7 +9,7 @@ locals {
   facts       = {
     "bt_tier" = "dev"
     "bt_env"  = "1"
-    "bt_role" = "oradb19c"
+    "bt_role" = "gtxoradb19c"
   }
 }
 
