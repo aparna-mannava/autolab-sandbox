@@ -13,7 +13,7 @@ locals {
   hostname    = "us01vlbwpw001"
   alias       = "cloud-ny2-bitwarden01"
   lob         = "CLOUD"
-  environment = "feature_CLOUD_88029_create_bitwarden_poc"
+  environment = "master"
   facts = {
     bt_product = "cloud"
     bt_role    = "bitwarden"
