@@ -5,7 +5,7 @@ terraform {
 locals {
   datacenter  = "ny2"
   os          = "rhel8"
-  cpu         = "2"
+  cpus        = "2"
   ram         = "4096"
   network     = "ny2-autolab-app-ahv"
   cluster     = "ny2-aza-ntnx-07"
