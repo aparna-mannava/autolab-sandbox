@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  product     = "fmcloud"
+  product     = "FMCLOUD"
   environment = "feature_CFMS_9005"
   datacenter  = "ny2"
   facts       = {
@@ -27,7 +27,7 @@ module "fmgoradb" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "200"
+    1 = "300"
   }
 }
 
