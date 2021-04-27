@@ -9,7 +9,7 @@ locals {
   ram         = "4096"
   network     = "ny2-autolab-app-ahv"
   cluster     = "ny2-aza-ntnx-07"
-  hostgroup   = "BT Base Server"
+  hostgroup   = "BT CLOUD Bitwarden Server"
   hostname    = "us01vlbwpw001"
   alias       = "cloud-ny2-bitwarden01"
   lob         = "CLOUD"
