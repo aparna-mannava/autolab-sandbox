@@ -11,7 +11,7 @@ locals {
     "bt_env"          = "1"
     "bt_product"      = "bi"
     "bt_tier"         = "dev"
-    "bt_role"         = "powerbi"
+    "bt_role"         = "mssql"
     "bt_bfs_timezone" = "Eastern Standard Time"
 	
   }
