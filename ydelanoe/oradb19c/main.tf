@@ -7,9 +7,10 @@ locals {
   environment = "feature_CFMS_9005"
   datacenter  = "ny2"
   facts       = {
-    "bt_tier" = "dev"
-    "bt_env"  = "1"
-    "bt_role" = "gtxoradb19c"
+    "bt_product" = "fmcloud"
+    "bt_tier"    = "dev"
+    "bt_env"     = "1"
+    "bt_role"    = "gtxoradb19c"
   }
 }
 
