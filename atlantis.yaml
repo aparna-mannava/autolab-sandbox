@@ -309,6 +309,7 @@ projects:
   dir: dnani/sqlmirror04
 - name: cfrmiso-elastic
   dir: cfrmiso/elastic
+  workflow: nutanix-backend
 - name: cfrmiso-oradb-autolab
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
