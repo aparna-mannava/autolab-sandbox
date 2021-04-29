@@ -34,7 +34,7 @@ module "gtxjenkins1" {
 
 output "gtxjenkins1" {
   value = {
-    "fqdn"  = "${module.fmgoradb.fqdn}",
-    "ip"    = "${module.fmgoradb.ip}",
+    "fqdn"  = "${module.gtxjenkins1.fqdn}",
+    "ip"    = "${module.gtxjenkins1.ip}",
   }
 }
