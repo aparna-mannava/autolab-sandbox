@@ -1,23 +1,23 @@
 terraform {
   backend "s3" {}
 }
-
 locals {
   product        = "btiq"
   environment    = "feature_CLOUD_77579"
   datacenter     = "ny2"
   hostname       = "us01vwnew2019"
-  hostgroup      = "BI MSSQL 2019 Server"
+  hostgroup      = "BT BI MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "bi"
     "bt_tier"         = "dev"
-    "bt_role"         = "powerbi"
+    "bt_role"         = "mssql"
     "bt_bfs_timezone" = "Eastern Standard Time"
+	
   }
 }
 
-module "btiq_new_77591" {
+module "btiq_77591" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
@@ -41,10 +41,10 @@ module "btiq_new_77591" {
   }
 }
 
-output "btiq_new_77591" {
+output "btiq_77591" {
   value = {
-    "fqdn"  = "${module.btiq_new_77591.fqdn}",
-    "alias" = "${module.btiq_new_77591.alias}",
-    "ip"    = "${module.btiq_new_77591.ip}",
+    "fqdn"  = "${module.btiq_77591.fqdn}",
+    "alias" = "${module.btiq_77591.alias}",
+    "ip"    = "${module.btiq_77591.ip}",
   }
 }
