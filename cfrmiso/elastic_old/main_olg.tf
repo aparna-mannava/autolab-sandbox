@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrmiso"
-  environment = "CFRMCLOUD_920_elasticsearch_cluster_not_updating_cluster_file"       #     
+  environment = "CFRMCLOUD_920_elasticsearch_cluster_not_updating_cluster_file"   //      #     
   hostname    = "us01vlcf"
   hostgroup   = "CFRM BT CLOUD Elastic Servers"
   facts = {
