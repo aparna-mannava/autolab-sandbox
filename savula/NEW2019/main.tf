@@ -6,7 +6,7 @@ locals {
   environment    = "feature_CLOUD_77579"
   datacenter     = "ny2"
   hostname       = "us01vwnew2019"
-  hostgroup      = "BI MSSQL 2019 Server"
+  hostgroup      = "BT BI MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "bi"
