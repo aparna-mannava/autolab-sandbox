@@ -8,7 +8,7 @@ locals {
       bt_customer             = ""
       bt_product              = "cfrmcloud"
       bt_lob                  = "cfrm"
-      bt_tier                 = "autolab" // PROD
+      bt_tier                 = "autolab" //PROD
       bt_env                  = "01"
       bt_role                 = "elastic"
       bt_infra_cluster        = "ny2-aza-ntnx-05"
