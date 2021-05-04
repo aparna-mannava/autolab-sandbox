@@ -10,7 +10,7 @@ locals {
     "bt_product" = "fmcloud"
     "bt_tier"    = "dev"
     "bt_env"     = "1"
-    "bt_role"    = "gtxjenkins"
+    "bt_role"    = "gtsjenkins"
   }
 }
 
