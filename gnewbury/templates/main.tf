@@ -22,7 +22,7 @@ locals {
 }
 
 module "canary-test" {
-  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CLOUD-88446_terraform_upgrade"
   canary              = true
   lob                 = local.lob
   hostname            = local.hostname
@@ -39,7 +39,7 @@ module "canary-test" {
 }
 
 module "canary-test-2" {
-  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CLOUD-88446_terraform_upgrade"
   canary              = false
   lob                 = local.lob
   hostname            = "us01vwcnrytest2"
