@@ -453,7 +453,7 @@ projects:
 - name: gnewbury-bitwarden
   dir: gnewbury/bitwarden
   workflow: nutanix-backend
-  terraform_version: v0.13.7
+  terraform_version: v0.15.1
 - name: test-python3-server
   dir: cfrmrd/test-python3-server
   workflow: nutanix-backend
