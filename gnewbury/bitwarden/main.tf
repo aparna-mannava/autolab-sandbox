@@ -25,7 +25,7 @@ locals {
 }
 
 module "patch-test" {
-  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CLOUD-88446_teraform_upgrade"
+  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CLOUD-88446_terraform_upgrade"
   lob                 = local.lob
   hostname            = local.hostname
   alias               = local.alias
