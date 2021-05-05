@@ -454,3 +454,6 @@ projects:
 - name: test-python3-server
   dir: cfrmrd/test-python3-server
   workflow: nutanix-backend
+- name: gnewbury-patch
+  dir: gnewbury/patch
+  workflow: nutanix-backend
