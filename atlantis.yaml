@@ -122,10 +122,6 @@ projects:
   dir: hdonovan/hackathon/win2019
 - name: hdonovan-hackathon-rhel-second
   dir: hdonovan/hackathon/rhel
-- name: gnewbury-templates
-  dir: gnewbury/templates
-  workflow: nutanix-backend
-  terraform_version: v0.13.7
 - name: lsm-bamboo
   dir: lsm/bamboo
 - name: lsm-rpt
