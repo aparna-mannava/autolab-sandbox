@@ -23,7 +23,7 @@ module "test_python3_server" {
   hostname             = "us01vlcfrmrd399"
   alias                = "cfrmx-python-server"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny2-aze-ntnx-12"
+  bt_infra_cluster     = "ny2-aze-ntnx-11"
   cpus                 = "4"
   memory               = "8192"
   os_version           = "rhel7"
