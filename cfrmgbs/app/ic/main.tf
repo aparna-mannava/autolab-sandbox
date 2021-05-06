@@ -50,7 +50,7 @@ module "ic_server_2" {
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   foreman_environment  = "${local.facts.environment}"
   foreman_hostgroup    = "${local.facts.hostgroup}"
-  #firewall_group       = "${local.facts.firewall_group}" // CFRMRD_PR_FE
+  #firewall_group       = "${local.facts.firewall_group}"   //  CFRMRD_PR_FE
   datacenter           = "${local.datacenter.name}"
   cpus                 = 2
   memory               = 4096
