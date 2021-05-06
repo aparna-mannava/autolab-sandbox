@@ -14,7 +14,7 @@ locals {
       bt_infra_network = "ny2-autolab-app-ahv" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse/data/networks
       #firewall_group   = "CFRMRD_PR_ES" //"CFRMRD_PR_DB"
       hostgroup        = "BT CFRM CLOUD MGMT Base"
-      environment      = "feature_CFRMGC_621_bp_poc_create_vm_servers_on_saas_p" // 
+      environment      = "CFRMCLOUD_966_base_nfs_client_linux_role" // 
       hostname         = "us01vlcfmg01-al" // us01vlcfmgmt01a.auto.saas-p.com
     }
     datacenter = {
