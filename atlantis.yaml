@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 - name: alon-pulp
   dir: cfrmrd/pulp
@@ -118,19 +118,10 @@ projects:
   dir: llabranche/mssqltest2
 - name: adgitops
   dir: aarvelo/adgitops
-- name: ydelanoe-repo
-  dir: ydelanoe/repo
-- name: ydelanoe-es
-  dir: ydelanoe/es
 - name: hdonovan-hackathon-win2019
   dir: hdonovan/hackathon/win2019
 - name: hdonovan-hackathon-rhel-second
   dir: hdonovan/hackathon/rhel
-- name: gnewbury-patch
-  dir: gnewbury/patch
-  workflow: nutanix-backend
-- name: ydelanoe-essnap
-  dir: ydelanoe/essnap
 - name: lsm-bamboo
   dir: lsm/bamboo
 - name: lsm-rpt
@@ -173,6 +164,9 @@ projects:
   dir: stevek/hackathon/example2
 - name: stevek-hackathon-winexample1
   dir: stevek/hackathon/winexample1
+  workflow: nutanix-backend
+- name: stevek-linux-lvmtest
+  dir: stevek/linux/lvmtest
   workflow: nutanix-backend
 - name: stevek-sudotest
   dir: stevek/sudotest
@@ -251,9 +245,6 @@ projects:
   dir: btiq-cae-ss/demo
 - name: savula-jenkins
   dir: savula/jenkins
-- name: mdavidson
-  dir: mdavidson
-  workflow: nutanix-backend
 - name: zvaliji-hackathon-example1
   dir: zvaliji/hackathon/linux/
 - name: zvaliji-hackathon-example2
@@ -439,3 +430,31 @@ projects:
   dir: smangrol/cfrm_server3/
 - name: DGB_srv1
   dir: smangrol/DGB_SRV1
+- name: dereck-martin-harbor
+  dir: dereck.martin/harbor
+  workflow: nutanix-backend
+- name: daniel-test-oracle
+  dir: cfrmgbs/daniel-test/oracle
+  workflow: nutanix-backend
+- name: fmlgttest-oracle19c
+  dir: fmlgttest/oracle19c
+- name: proxy
+  dir: cfrmgbs/proxy
+  workflow: nutanix-backend
+- name: richard.grainger-harbor2
+  dir: richard.grainger/harbor2
+  workflow: nutanix-backend
+- name: ydelanoe-oradb19c
+  dir: ydelanoe/oradb19c
+  workflow: nutanix-backend
+- name: gnewbury-bitwarden
+  dir: gnewbury/bitwarden
+  workflow: nutanix-backend
+  terraform_version: v0.15.1
+- name: test-python3-server
+  dir: cfrmrd/test-python3-server
+  workflow: nutanix-backend
+- name: gnewbury-patch
+  dir: gnewbury/patch
+  workflow: nutanix-backend
+  terraform_version: v0.13.7

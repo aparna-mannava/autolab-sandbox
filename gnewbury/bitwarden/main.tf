@@ -3,24 +3,24 @@ terraform {
 }
 
 locals {
-  lob         = "CLOUD"
-  hostname    = "us01vlpatcht001"
-  alias       = "inf-ny2-patchtest001"
-  cpus        = "2"
-  memory      = "2048"
-  os          = "rhel7"
-  hostgroup   = "BT CLOUD Pulp Server"
-  environment = "feature_CLOUD_83257_pulp_sync"
-  cluster     = "ny2-aze-ntnx-12"
-  network     = "ny2-autolab-app-ahv"
   datacenter  = "ny2"
+  os          = "rhel8"
+  cpus        = "2"
+  ram         = "4096"
+  network     = "ny2-autolab-app-ahv"
+  cluster     = "ny2-aza-ntnx-07"
+  hostgroup   = "BT Base Server"
+  hostname    = "us01vlbwpw001"
+  alias       = "cloud-ny2-bitwarden01"
+  lob         = "CLOUD"
+  environment = "feature_CLOUD_88029_create_bitwarden_poc"
   facts = {
-    bt_product = "inf"
+    bt_product = "cloud"
+    bt_role    = "bitwarden"
     bt_tier    = "lab"
-    bt_role    = "base"
   }
   disks = {
-    1 = "600"
+    1 = "50"
   }
 }
 
@@ -30,7 +30,7 @@ module "patch-test" {
   hostname            = local.hostname
   alias               = local.alias
   cpus                = local.cpus
-  memory              = local.memory
+  memory              = local.ram
   os_version          = local.os
   foreman_hostgroup   = local.hostgroup
   foreman_environment = local.environment
