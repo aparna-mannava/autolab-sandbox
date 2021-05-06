@@ -10,7 +10,7 @@ locals {
       bt_tier          = "autolab"
       bt_env           = ""
       bt_role          = "mgmt"
-      bt_infra_cluster = "ny2-aze-ntnx-12" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse
+      bt_infra_cluster = "ny2-aze-ntnx-11" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse
       bt_infra_network = "ny2-autolab-app-ahv" // https://us-pr-stash.saas-p.com/projects/TRRFRM/repos/terraform-module-infrastructure/browse/data/networks
       #firewall_group   = "CFRMRD_PR_ES" //"CFRMRD_PR_DB"
       hostgroup        = "BT CFRM CLOUD MGMT Base"
