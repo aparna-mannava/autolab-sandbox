@@ -446,6 +446,8 @@ projects:
   workflow: nutanix-backend
 - name: ydelanoe-oradb19c
   dir: ydelanoe/oradb19c
+- name: ydelanoe-jenkins
+  dir: ydelanoe/jenkins
   workflow: nutanix-backend
 - name: gnewbury-bitwarden
   dir: gnewbury/bitwarden
