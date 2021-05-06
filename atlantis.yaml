@@ -457,4 +457,4 @@ projects:
 - name: gnewbury-patch
   dir: gnewbury/patch
   workflow: nutanix-backend
-  terraform_version: v0.12.31
+  terraform_version: v0.13.7
