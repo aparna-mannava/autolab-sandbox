@@ -448,8 +448,6 @@ projects:
   dir: ydelanoe/oradb19c
 - name: ydelanoe-jenkins
   dir: ydelanoe/jenkins
-- name: ydelanoe-gtx
-  dir: ydelanoe/gtx
 - name: ydelanoe-repo
   dir: ydelanoe/repo
   workflow: nutanix-backend
