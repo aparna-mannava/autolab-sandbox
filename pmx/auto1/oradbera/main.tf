@@ -12,7 +12,7 @@ locals {
   }
 }
 
-module "pmx_amq_1" {
+module "pmx_odbera_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlpmxdbe99"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-odbe01"
@@ -33,10 +33,10 @@ module "pmx_amq_1" {
   }
 }
 
-output "pmx_amq_1" {
+output "pmx_odbera_1" {
   value = {
-    "fqdn"  = "${module.pmx_amq_1.fqdn}",
-    "alias" = "${module.pmx_amq_1.alias}",
-    "ip"    = "${module.pmx_amq_1.ip}",
+    "fqdn"  = "${module.pmx_odbera_1.fqdn}",
+    "alias" = "${module.pmx_odbera_1.alias}",
+    "ip"    = "${module.pmx_odbera_1.ip}",
   }
 }
