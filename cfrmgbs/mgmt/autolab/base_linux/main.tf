@@ -15,7 +15,7 @@ locals {
       #firewall_group   = "CFRMRD_PR_ES" //"CFRMRD_PR_DB"
       hostgroup        = "BT CFRM CLOUD MGMT Base"
       environment      = "CFRMCLOUD_966_base_nfs_client_linux_role" // 
-      hostname         = "us01vlcfmg01-al" // us01vlcfmgmt01a.auto.saas-p.com
+      hostname         = "us01vlcfmg01-al" //  us01vlcfmgmt01a.auto.saas-p.com
     }
     datacenter = {
       name = "ny2"
