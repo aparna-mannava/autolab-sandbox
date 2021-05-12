@@ -17,7 +17,7 @@ module "pmx_amq_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlpmxamq99"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-amq01"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = 2
