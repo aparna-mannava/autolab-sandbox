@@ -27,7 +27,7 @@ module "pmx_odbera_1" {
   lob                 = "PBS"
   external_facts       = local.facts
   additional_disks     = {
-    1                  = "50"
+    1                  = "300"
     2                  = "25"
     3                  = "25"
   }
