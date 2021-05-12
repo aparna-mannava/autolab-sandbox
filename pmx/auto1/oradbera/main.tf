@@ -9,6 +9,7 @@ locals {
   facts       = {
     "bt_tier"          = "auto"
     "bt_env"           = "1"
+    "bt_pmxdbtype"     = "1"
   }
 }
 
