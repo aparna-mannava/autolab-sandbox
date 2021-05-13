@@ -39,3 +39,30 @@ output "pmx_amq_1" {
     "ip"    = "${module.pmx_amq_1.ip}",
   }
 }
+
+module "pmx_gtf_1" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlpmxgtf99"
+  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-gtf01"
+  bt_infra_cluster     = "ny2-aze-ntnx-11"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  os_version           = "rhel7"
+  cpus                 = 2
+  memory               = 4096
+  foreman_environment  = local.environment
+  foreman_hostgroup    = "BT PMX GTFRAME"
+  datacenter           = local.datacenter
+  lob                 = "PBS"
+  external_facts       = local.facts
+  additional_disks     = {
+    1 = "50"
+  }
+}
+
+output "pmx_gtf_1" {
+  value = {
+    "fqdn"  = "${module.pmx_gtf_1.fqdn}",
+    "alias" = "${module.pmx_gtf_1.alias}",
+    "ip"    = "${module.pmx_gtf_1.ip}",
+  }
+}
