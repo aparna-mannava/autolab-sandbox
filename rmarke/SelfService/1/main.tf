@@ -7,6 +7,7 @@ locals {
   environment = "master"
   hostname    = "us01vwrmssa"
   hostgroup   = "BT FML Self Service"
+  lob         = "fmlsaas"
   facts = {
     bt_product = "fmlsaas"
     bt_tier    = "ts"
