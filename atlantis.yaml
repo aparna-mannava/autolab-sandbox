@@ -4,6 +4,7 @@ automerge: false
 projects:
 - name: rmarke-SelfService-1
   dir:  rmarke/SelfService/1
+  workflow: nutanix-backend
 - name: alon-pulp
   dir: cfrmrd/pulp
 - name: genady-nginx
