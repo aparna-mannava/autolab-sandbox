@@ -25,6 +25,7 @@ module "adss001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.adss001.hostname}"
   alias               = "${local.product}-${local.datacenter.name}-ts-${local.facts.bt_role}101"
+  lob                 = local.lob
   bt_infra_cluster    = "ny5-aza-ntnx-14"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "win2019"
