@@ -12,15 +12,15 @@ locals {
     id   = "ny2"
   }
 
-  #|## App server module configuration ########|#
+  #|## Elk server module configuration ########|#
   e001 = { 
-    hostname    = "${local.hostname}vLapp001"
-    alias       = "${local.hostname}vlbaseapp001"
+    hostname    = "${local.hostname}vlelk001"
+    alias       = "${local.hostname}vlelastic001"
     silo        = "autolab"
     hostgroup   = "BT CFRM Eitan Test" 
     facts       = {
       "bt_product"  = "cfrmcloud"
-      "bt_role" = "app"
+      "bt_role" = "elastic"
       "bt_tier" = "autolab"}
   }
 }
