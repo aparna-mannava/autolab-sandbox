@@ -461,6 +461,6 @@ projects:
 - name: test-python3-server
   dir: cfrmrd/test-python3-server
   workflow: nutanix-backend
-- name: eitantest
+- name: eitantest-elk
   dir: elk/eitantest
   workflow: nutanix-backend
