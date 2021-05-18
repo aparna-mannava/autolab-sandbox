@@ -26,7 +26,7 @@ module "adss001" {
   hostname            = "${local.adss001.hostname}"
   alias               = "${local.product}-${local.datacenter.name}-ts-${local.facts.bt_role}101"
   lob                 = local.lob
-  bt_infra_cluster    = "ny2-aze-ntnx-11"
+  bt_infra_cluster    = "ny2-aza-ntnx-07"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "win2019"
   cpus                = "1"
