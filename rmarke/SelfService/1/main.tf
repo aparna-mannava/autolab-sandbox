@@ -37,6 +37,10 @@ module "adss001" {
   datacenter          = "${local.datacenter.name}"
   additional_disks     = {
     1 = "50"
+    2 = "150"
+    3 = "100"
+    4 = "100"
+    5 = "100"
 }
 }
 
