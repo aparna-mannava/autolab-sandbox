@@ -21,7 +21,8 @@ locals {
     facts       = {
       "bt_product"  = "cfrmcloud"
       "bt_role" = "elastic"
-      "bt_tier" = "autolab"}
+      "bt_tier" = "autolab"
+      "bt_lob" = "cfrm"}
   }
 }
 module "e001" {
