@@ -13,8 +13,8 @@ locals {
   }
 
   #|## App server module configuration ########|#
-  e001 = { 
-    hostname    = "${local.hostname}vLapp001"
+  app001 = {
+    hostname    = "${local.hostname}vlapp001"
     alias       = "${local.hostname}vlbaseapp001"
     silo        = "autolab"
     hostgroup   = "BT CFRM Eitan Test"
@@ -25,10 +25,10 @@ locals {
       "bt_lob" = "cfrm"}
   }
 }
-module "e001" {
+module "app001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.e001.hostname}"
-  alias               = "${local.e001.alias}"
+  hostname            = "${local.app001.hostname}"
+  alias               = "${local.app001.alias}"
   ## saas-p NY2 on IL02 subnet
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
@@ -39,19 +39,19 @@ module "e001" {
   cpus                = "4"
   memory              = "4048"
   lob                 = "cfrm"
-  external_facts      = "${local.e001.facts}"
+  external_facts      = "${local.app001.facts}"
   foreman_environment = "${local.environment}"
-  foreman_hostgroup   = "${local.e001.hostgroup}"
+  foreman_hostgroup   = "${local.app001.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
-    1 = "250", // disk1 100gb
+    1 = "100", // disk1 100gb
   }
 }
 
-output "e001" {
+output "app001" {
   value = {
-    "fqdn"  = "${module.e001.fqdn}",
-    "alias" = "${module.e001.alias}",
-    "ip"    = "${module.e001.ip}",
+    "fqdn"  = "${module.app001.fqdn}",
+    "alias" = "${module.app001.alias}",
+    "ip"    = "${module.app001.ip}",
   }
 }
