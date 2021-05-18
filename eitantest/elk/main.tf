@@ -38,7 +38,7 @@ module "e001" {
   os_version          = "rhel7"
   cpus                = "4"
   memory              = "4048"
-  lob                 = "CFRM"
+  lob                 = "cfrm"
   external_facts      = "${local.e001.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.e001.hostgroup}"
