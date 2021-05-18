@@ -17,7 +17,7 @@ locals {
     hostname    = "${local.hostname}vLapp001"
     alias       = "${local.hostname}vlbaseapp001"
     silo        = "autolab"
-    hostgroup   = "BT CFRM Eitan Test" 
+    hostgroup   = "BT CFRM Eitan Test"
     facts       = {
       "bt_product"  = "cfrmcloud"
       "bt_role" = "app"
