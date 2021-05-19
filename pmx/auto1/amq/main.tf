@@ -5,7 +5,7 @@ terraform {
 locals {
   product     = "pmx"
 #  environment = "nonprod"
-  environment = "feature_PXDVOP_15397"
+  environment = "feature_PXDVOP_15451"
   datacenter  = "ny2"
   facts       = {
     "bt_tier"          = "auto"
@@ -16,7 +16,7 @@ locals {
 module "pmx_ss_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlpmxss99"
-  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-amq01"
+  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-ss01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
