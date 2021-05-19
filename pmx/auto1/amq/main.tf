@@ -8,6 +8,7 @@ locals {
   environment = "feature_PXDVOP_15451"
   datacenter  = "ny2"
   facts       = {
+    "bt_product"       = "pmx"
     "bt_tier"          = "auto"
     "bt_env"           = "1"
   }
