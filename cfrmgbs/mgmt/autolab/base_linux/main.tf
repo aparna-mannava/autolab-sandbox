@@ -30,7 +30,7 @@ module "mglab_1" {
   alias                = "${local.facts.bt_product}.${local.facts.bt_customer}.${local.facts.bt_tier}.${local.datacenter.id}.dmg1"// cfrmcloud.cfrm.auto.gb00.db01
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
-  #firewall_group       = "${local.facts.firewall_group}" //   adding firewall group
+  #firewall_group       = "${local.facts.firewall_group}" // adding firewall group
   lob                  = "${local.facts.bt_lob}"
   foreman_environment  = "${local.facts.environment}"
   foreman_hostgroup    = "${local.facts.hostgroup}"
