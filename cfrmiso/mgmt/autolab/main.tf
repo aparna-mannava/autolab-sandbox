@@ -2,10 +2,10 @@ terraform {
   backend "s3" {}
 }
 locals {
-  product     = "cfrmiso"
+  product     = "cfrmcloud"
   environment = "bugfix_CFRMCLOUD_1034_cmp_puppet_executed_successfully_corrective"    #  
   hostname    = "us01"
-  hostgroup   = "CFRM BT ISO IL Management Server"
+  hostgroup   = "CFRM BT CLOUD NFS Server"
   facts = {
     "bt_tier" = "autolab"
     "bt_customer" = ""
