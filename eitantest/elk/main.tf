@@ -39,10 +39,6 @@ module "e001" {
   ## auto.saas-n
   bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
-  bt_es_version       = "${local.e001.facts.bt_es_version}"
-  bt_artemis_version  = "${local.e001.facts.bt_artemis_version}"
-  bt_apacheds_version = "${local.e001.facts.bt_apacheds_version}"
-  bt_jmx_prometheus_version = "${local.e001.facts.bt_jmx_prometheus_version}"
   os_version          = "rhel7"
   cpus                = "2"
   memory              = "2024"
