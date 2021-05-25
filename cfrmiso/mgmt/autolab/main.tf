@@ -8,8 +8,8 @@ locals {
   hostgroup   = "CFRM BT ISO IL Management Server"
   facts = {
     "bt_tier" = "autolab"
-    "bt_customer" = "saasn-fml-uk"
-    "bt_product" = "cfrmiso"
+    "bt_customer" = ""
+    "bt_product" = "cfrmcloud"
 	  "bt_role" = "mgmt"
   }
   datacenter = {
