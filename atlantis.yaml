@@ -308,7 +308,7 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
-  workflow: nutanix-backend
+  workflow: terraform-upgrade
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
 - name: cfrmit-bitbucket-gbs
