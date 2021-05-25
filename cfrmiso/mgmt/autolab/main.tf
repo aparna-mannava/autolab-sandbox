@@ -1,9 +1,9 @@
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
 locals {
   product     = "cfrmiso"
-  environment = "feature_CFRMISO_249_GB03_CFRM_MGMT1"    #  
+  environment = "bugfix_CFRMCLOUD_1034_cmp_puppet_executed_successfully_corrective"    #  
   hostname    = "us01"
   hostgroup   = "CFRM BT ISO IL Management Server"
   facts = {
@@ -55,7 +55,7 @@ locals {
 
 module "cfmn002" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.cfmn002.hostname}"
+  hostname            = "${local.hostname}vlcfmg02"
   alias               = "${local.product}-${local.datacenter.id}-${local.cfmn002.silo}-${local.facts.bt_role}-${local.cfmn002.hostname}"
   bt_infra_cluster    = "ny2-aza-ntnx-13"
   bt_infra_network    = "ny2-autolab-app-ahv"
