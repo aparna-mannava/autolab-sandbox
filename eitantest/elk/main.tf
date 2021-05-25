@@ -5,7 +5,7 @@ terraform {
 locals {
  # product     = "cfrmcloud"
  # environment = "feature_CFRMGC_219_puppet_test" 
-  environment = "feature_CFRMCLOUD_928_devops_puppet_add_additional_folders_to_be_created"
+  environment = "feature_CFRMCLOUD_916_cloud_admin_user_to_apachds"
   hostname    = "us01"
   datacenter = {
     name = "ny2"
@@ -33,7 +33,7 @@ module "e001" {
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
   ## auto.saas-n
-  bt_infra_cluster    = "ny2-aza-ntnx-13"
+  bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "2"
@@ -44,7 +44,7 @@ module "e001" {
   foreman_hostgroup   = "${local.e001.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
-    1 = "250", // disk1 100gb
+    1 = "100", // disk1 100gb
   }
 }
 
