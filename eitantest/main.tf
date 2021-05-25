@@ -5,7 +5,8 @@ terraform {
 locals {
  # product     = "cfrmcloud"
  # environment = "feature_CFRMGC_219_puppet_test" 
-  environment = "feature_CFRMCLOUD_928_devops_puppet_add_additional_folders_to_be_created"
+ # environment = "feature_CFRMCLOUD_928_devops_puppet_add_additional_folders_to_be_created"
+  environment = "feature_CFRMCLOUD_928_devops_add_ic_folders"
   hostname    = "us01"
   datacenter = {
     name = "ny2"
