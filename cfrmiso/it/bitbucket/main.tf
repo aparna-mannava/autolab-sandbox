@@ -51,7 +51,7 @@ locals {
 module "cfbb001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.cfbb001.hostname}" #us01vlcfbb01.auto.saas-n.com
-  alias               = "${local.datacenter.id}-${local.cfbb001.alias}" #il02-us01vlbitbucket01 
+  alias               = "${local.datacenter.id}-${local.cfbb001.alias}" # il02-us01vlbitbucket01 
   ## saas-p NY2
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
