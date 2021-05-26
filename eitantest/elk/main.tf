@@ -40,15 +40,15 @@ module "e001" {
   bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "2"
-  memory              = "2024"
+  cpus                = "4"
+  memory              = "8096"
   lob                 = "cfrm"
   external_facts      = "${local.e001.facts}"
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.e001.hostgroup}"
   datacenter          = "${local.datacenter.name}"
   additional_disks    = {
-    1 = "100", // disk1 100gb
+    1 = "200", // disk1 100gb
   }
 }
 
