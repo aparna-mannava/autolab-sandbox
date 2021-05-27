@@ -464,4 +464,4 @@ projects:
   workflow: nutanix-backend
 - name: eitantest-elk
   dir: eitantest/elk
-  workflow: nutanix-backend
+  workflow: terraform-upgrade
