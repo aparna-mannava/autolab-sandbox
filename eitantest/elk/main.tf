@@ -44,9 +44,9 @@ module "e001" {
   memory              = "8096"
   lob                 = "cfrm"
   external_facts      = "local.e001.facts"
-  foreman_environment = "local.environment"
+  foreman_environment = "feature_CFRMCLOUD_916_cloud_admin_user_to_apachds"
   foreman_hostgroup   = "local.e001.hostgroup"
-  datacenter          = "local.datacenter.name"
+  datacenter          = "ny2"
   additional_disks    = {
     1 = "200", // disk1 100gb
   }
