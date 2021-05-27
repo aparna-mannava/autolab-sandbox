@@ -21,7 +21,7 @@ locals {
     hostgroup   = "BT CFRM Eitan Test"
     facts       = {
       "bt_product"  = "cfrmcloud"
-      "bt_role" = "app"
+      "bt_role" = "cfrm"
       "bt_tier" = "autolab"
       "bt_lob" = "cfrm"}
   }
