@@ -15,7 +15,7 @@ locals {
       #firewall_group   = "CFRMRD_PR_ES" //"CFRMRD_PR_DB"
       hostgroup        = "BT CFRM CLOUD MGMT Base"
       environment      = "CFRMCLOUD_966_base_nfs_client_linux_role" // 
-      hostname         = "us01vlcfmg01-al" // us01vlcfmgmt01a.auto.saas-p.com
+      hostname         = "us01vlcfmg01-al" //  us01vlcfmgmt01a.auto.saas-p.com
     }
     datacenter = {
       name = "ny2"
@@ -26,11 +26,11 @@ locals {
 
 module "mglab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.hostname}" // us01vlcfmgmt01a.auto.saas-p.com
+  hostname             = "${local.facts.hostname}" // us01vlcfmgmt01a.auto.saas-p.com 
   alias                = "${local.facts.bt_product}.${local.facts.bt_customer}.${local.facts.bt_tier}.${local.datacenter.id}.dmg1"// cfrmcloud.cfrm.auto.gb00.db01
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
-  #firewall_group       = "${local.facts.firewall_group}" //  adding firewall group
+  #firewall_group       = "${local.facts.firewall_group}" // adding firewall group
   lob                  = "${local.facts.bt_lob}"
   foreman_environment  = "${local.facts.environment}"
   foreman_hostgroup    = "${local.facts.hostgroup}"

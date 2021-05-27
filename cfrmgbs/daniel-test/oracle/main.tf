@@ -13,7 +13,7 @@ locals {
       bt_role          = "oradb_19c"
       bt_infra_cluster = "ny2-aze-ntnx-12"
       bt_infra_network = "ny2-autolab-app-ahv"
-      #firewall_group   = "CFRMRD_PR_ES" //"CFRMRD_PR_DB"
+      #firewall_group   = "CFRMRD_PR_ES" //"CFRMRD_PR_DB" 
       hostgroup        = "BT CFRM CLOUD Oracle DB Servers"
       environment      = "feature_CFRMGC_621_bp_poc_create_vm_servers_on_saas_p" // 
       hostname         = "us01vlcfoc19v12"

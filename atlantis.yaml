@@ -308,6 +308,7 @@ projects:
   dir: cfrmiso/oradb/autolab
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
+  workflow: nutanix-backend
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
 - name: cfrmit-bitbucket-gbs
@@ -459,6 +460,9 @@ projects:
   dir: gnewbury/bitwarden
   workflow: nutanix-backend
   terraform_version: v0.15.1
+- name: pmx-auto1-amq
+  dir: pmx/auto1/amq
+  workflow: nutanix-backend
 - name: test-python3-server
   dir: cfrmrd/test-python3-server
   workflow: nutanix-backend
