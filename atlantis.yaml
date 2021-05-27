@@ -446,7 +446,7 @@ projects:
   workflow: nutanix-backend
 - name: pmx-auto1-oradbera
   dir: pmx/auto1/oradbera
-  workflow: nutanix-backend
+  workflow: terraform-upgrade
 - name: ydelanoe-oradb19c
   dir: ydelanoe/oradb19c
 - name: ydelanoe-jenkins
