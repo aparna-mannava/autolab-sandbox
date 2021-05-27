@@ -13,19 +13,17 @@ locals {
     id   = "ny2"
   }
 
-  #|## App server module configuration ########|#
-  cfrm001 = {
-    hostname    = "${local.hostname}vlcfrm001"
-    alias       = "${local.hostname}vlbasecfrm001"
-    silo        = "autolab"
-    hostgroup   = "BT CFRM Eitan Test"
-    facts       = {
-      "bt_product"  = "cfrmcloud"
-      "bt_role" = "cfrm"
-      "bt_tier" = "autolab"
-      "bt_lob" = "cfrm"}
-  }
+  hostname    = "${local.hostname}vlcfrm001"
+  alias       = "${local.hostname}vlbasecfrm001"
+  silo        = "autolab"
+  hostgroup   = "BT CFRM Eitan Test"
+  facts       = {
+    "bt_product"  = "cfrmcloud"
+    "bt_role" = "cfrm"
+    "bt_tier" = "autolab"
+    "bt_lob" = "cfrm"}
 }
+
 module "cfrm001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "local.cfrm001.hostname"
@@ -42,7 +40,7 @@ module "cfrm001" {
   lob                 = "cfrm"
   external_facts      = local.cfrm001.facts
   foreman_environment = local.environment
-  foreman_hostgroup   = local.app001.hostgroup
+  foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter.name
   additional_disks    = {
     1 = "100", // disk1 100gb
