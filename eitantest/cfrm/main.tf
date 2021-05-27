@@ -41,9 +41,9 @@ module "cfrm001" {
   memory              = "2024"
   lob                 = "cfrm"
   external_facts      = "local.cfrm001.facts"
-  foreman_environment = "local.environment"
-  foreman_hostgroup   = "local.cfrm001.hostgroup"
-  datacenter          = "local.datacenter.name"
+  foreman_environment = "feature_CFRMCLOUD_131_cfrm_install_standalone"
+  foreman_hostgroup   = "BT CFRM Eitan Test"
+  datacenter          = "ny2"
   additional_disks    = {
     1 = "100", // disk1 100gb
   }
