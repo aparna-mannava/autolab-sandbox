@@ -37,8 +37,8 @@ module "pmx_odbera_1" {
 
 output "pmx_odbera_1" {
   value = {
-    "fqdn"  = "${module.pmx_odbera_1.fqdn}",
-    "alias" = "${module.pmx_odbera_1.alias}",
-    "ip"    = "${module.pmx_odbera_1.ip}",
+    "fqdn"  = module.pmx_odbera_1.fqdn,
+    "alias" = module.pmx_odbera_1.alias,
+    "ip"    = module.pmx_odbera_1.ip,
   }
 }
