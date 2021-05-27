@@ -21,15 +21,15 @@ locals {
     hostgroup   = "BT CFRM Eitan Test"
     facts       = {
       "bt_product"  = "cfrmcloud"
-      "bt_role" = "app"
+      "bt_role" = "cfrm"
       "bt_tier" = "autolab"
       "bt_lob" = "cfrm"}
   }
 }
 module "cfrm001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.cfrm001.hostname}"
-  alias               = "${local.cfrm001.alias}"
+  hostname            = "local.cfrm001.hostname"
+  alias               = "local.cfrm001.alias"
   ## saas-p NY2 on IL02 subnet
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
@@ -40,10 +40,10 @@ module "cfrm001" {
   cpus                = "2"
   memory              = "2024"
   lob                 = "cfrm"
-  external_facts      = "local.cfrm001.facts"
-  foreman_environment = "feature_CFRMCLOUD_131_cfrm_install_standalone"
-  foreman_hostgroup   = "BT CFRM Eitan Test"
-  datacenter          = "ny2"
+  external_facts      = local.cfrm001.facts
+  foreman_environment = local.environment
+  foreman_hostgroup   = local.app001.hostgroup
+  datacenter          = local.datacenter.name
   additional_disks    = {
     1 = "100", // disk1 100gb
   }
