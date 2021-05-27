@@ -34,7 +34,7 @@ module "cfrm001" {
   cpus                = "2"
   memory              = "2024"
   lob                 = "cfrm"
-  external_facts      = local.cfrm001.facts
+  external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter.name
