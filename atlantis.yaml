@@ -469,3 +469,6 @@ projects:
 - name: eitantest-elk
   dir: eitantest/elk
   workflow: terraform-upgrade
+  - name: eitantest-cfrm
+  dir: eitantest/cfrm
+  workflow: nutanix-backend
