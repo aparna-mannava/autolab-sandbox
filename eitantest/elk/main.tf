@@ -45,7 +45,7 @@ module "e001" {
   lob                 = "cfrm"
   external_facts      = "local.e001.facts"
   foreman_environment = "feature_CFRMCLOUD_916_cloud_admin_user_to_apachds"
-  foreman_hostgroup   = "local.e001.hostgroup"
+  foreman_hostgroup   = "BT CFRM Eitan Test"
   datacenter          = "ny2"
   additional_disks    = {
     1 = "200", // disk1 100gb
