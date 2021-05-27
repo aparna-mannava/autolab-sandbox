@@ -43,10 +43,10 @@ module "e001" {
   cpus                = "4"
   memory              = "8096"
   lob                 = "cfrm"
-  external_facts      = "${local.e001.facts}"
-  foreman_environment = "${local.environment}"
-  foreman_hostgroup   = "${local.e001.hostgroup}"
-  datacenter          = "${local.datacenter.name}"
+  external_facts      = "local.e001.facts"
+  foreman_environment = "local.environment"
+  foreman_hostgroup   = "local.e001.hostgroup"
+  datacenter          = "local.datacenter.name"
   additional_disks    = {
     1 = "200", // disk1 100gb
   }
