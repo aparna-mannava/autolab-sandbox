@@ -54,8 +54,8 @@ module "e001" {
 
 output "e001" {
   value = {
-    "fqdn"  = "${module.e001.fqdn}",
-    "alias" = "${module.e001.alias}",
-    "ip"    = "${module.e001.ip}",
+    "fqdn"  = "module.e001.fqdn",
+    "alias" = "module.e001.alias",
+    "ip"    = "module.e001.ip",
   }
 }
