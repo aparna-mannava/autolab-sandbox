@@ -11,8 +11,8 @@ locals {
       "bt_tier" = "autolab"
       "bt_role" = "mgmt"
       "bt_env" = ""
-      "bt_customer" = "${local.facts.bt_customer}"
-      "bt_product" = "${local.facts.bt_product}"
+      "bt_customer" = local.facts.bt_customer
+      "bt_product" = local.facts.bt_product
      }  
 } 
  
@@ -39,9 +39,9 @@ module "mgmt_951" {
 
 output "mgmt_951" {
   value = {
-    "fqdn"  = "${module.mgmt_1.fqdn}",
-    "alias" = "${module.mgmt_1.alias}",
-    "ip"    = "${module.mgmt_1.ip}",
+    "fqdn"  = module.mgmt_951.fqdn,
+    "alias" = module.mgmt_951.alias,
+    "ip"    = module.mgmt_951.ip,
   }
 } 
   
