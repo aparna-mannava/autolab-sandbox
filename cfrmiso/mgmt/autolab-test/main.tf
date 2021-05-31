@@ -16,7 +16,7 @@ locals {
      }  
 } 
  
-module "mgmt_1" {
+module "mgmt_951" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmmg951"
   alias                = "cfrmcloud-autolab-mgnf-clinet"
@@ -37,7 +37,7 @@ module "mgmt_1" {
 
   
 
-output "mgmt_1" {
+output "mgmt_951" {
   value = {
     "fqdn"  = "${module.mgmt_1.fqdn}",
     "alias" = "${module.mgmt_1.alias}",
