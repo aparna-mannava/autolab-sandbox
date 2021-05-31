@@ -51,8 +51,8 @@ module "app001" {
 
 output "app001" {
   value = {
-    "fqdn"  = module.app001.fqdn,
-    "alias" = module.app001.alias,
-    "ip"    = module.app001.ip,
+    "fqdn"  = "${module.app001.fqdn}",
+    "alias" = "${module.app001.alias}",
+    "ip"    = "${module.app001.ip}",
   }
 }
