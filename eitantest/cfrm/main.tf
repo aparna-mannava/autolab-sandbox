@@ -45,8 +45,8 @@ module "cfrm001" {
 
 output "cfrm001" {
   value = {
-    "fqdn"  = "module.cfrm001.fqdn",
-    "alias" = "module.cfrm001.alias",
-    "ip"    = "module.cfrm001.ip",
+    "fqdn"  = module.cfrm001.fqdn,
+    "alias" = module.cfrm001.alias,
+    "ip"    = module.cfrm001.ip,
   }
 }

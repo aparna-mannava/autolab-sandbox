@@ -28,8 +28,8 @@ locals {
 }
 module "app001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.app001.hostname}"
-  alias               = "${local.app001.alias}"
+  hostname            = "local.app001.hostname
+  alias               = "local.app001.alias
   ## saas-p NY2 on IL02 subnet
   #bt_infra_cluster    = "il02-aza-ntnx-01"
   #bt_infra_network    = "il02_hosted_corp_app"
@@ -40,10 +40,10 @@ module "app001" {
   cpus                = "2"
   memory              = "2024"
   lob                 = "cfrm"
-  external_facts      = "local.app001.facts"
-  foreman_environment = "local.environment"
-  foreman_hostgroup   = "local.app001.hostgroup"
-  datacenter          = "local.datacenter.name"
+  external_facts      = local.app001.facts
+  foreman_environment = local.environment
+  foreman_hostgroup   = local.app001.hostgroup
+  datacenter          = local.datacenter.name
   additional_disks    = {
     1 = "100", // disk1 100gb
   }
@@ -51,8 +51,8 @@ module "app001" {
 
 output "app001" {
   value = {
-    "fqdn"  = "module.app001.fqdn",
-    "alias" = "module.app001.alias",
-    "ip"    = "module.app001.ip",
+    "fqdn"  = module.app001.fqdn,
+    "alias" = module.app001.alias,
+    "ip"    = module.app001.ip,
   }
 }
