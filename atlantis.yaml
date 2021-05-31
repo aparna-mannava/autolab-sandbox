@@ -312,6 +312,9 @@ projects:
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
   workflow: nutanix-backend
+- name: cfrmcloud-mgmt-autolab
+  dir: cfrmiso/mgmt/autolab-test
+  workflow: nutanix-backend
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
 - name: cfrmit-bitbucket-gbs
