@@ -1,54 +1,47 @@
 terraform {
   backend "s3" {}
 }
+ 
 locals {
-  product     = "cfrmcloud"
-  environment = "feature_CFRMCLOUD_824_cfrm_cloud_user_key"    #  
-  hostname    = "us01"
-  hostgroup   = "BT CFRM CLOUD MGMT Base test"
-  facts = {
-    "bt_tier" = "autolab"
-    "bt_customer" = ""
-    "bt_product" = "cfrmcloud"
-	  "bt_role" = "mgmt"
-  }
-  datacenter = {
-    name = "ny2"
-    id   = "ny2"
-  }
-  cfmn001 = {
-    hostname = "${local.hostname}vlcfrmmg12"
-    silo     = "autolab"
-  }
-
-}
-
-
-module "cfmn001" {
-  source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = local.cfmn001.hostname
-  alias               = "${local.product}-${local.cfmn001.hostname}"
-  bt_infra_cluster    = "ny5-azc-ntnx-16"
-  bt_infra_network    = "ny2-autolab-app-ahv"
-  os_version          = "rhel7"
-  cpus                = "2"
-  memory              = "4096"
-  lob                 = "cfrm"
-  external_facts      = local.facts
-  foreman_environment = local.environment
-  foreman_hostgroup   = local.hostgroup
-  datacenter          = local.datacenter.name
+    facts       = {
+      "bt_customer" = ""
+      "bt_product"  = "cfrmcloud"
+    }
+    vm01facts    = {
+      "bt_tier" = "autolab"
+      "bt_role" = "mgmt"
+      "bt_env" = ""
+      "bt_customer" = "${local.facts.bt_customer}"
+      "bt_product" = "${local.facts.bt_product}"
+     }  
+} 
+ 
+module "mgmt_1" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlcfrmmg951"
+  alias                = "cfrmcloud-autolab-mgnf-clinet"
+  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  os_version           = "rhel7"
+  external_facts       = local.vm01facts
+  lob                  = "CFRM"
+  foreman_environment  = "feature_CFRMCLOUD_824_cfrm_cloud_user_key"
+  foreman_hostgroup    = "BT CFRM CLOUD MGMT Base test"
+  datacenter           = "ny2"
+  cpus                 = "2"
+  memory         	   = "4096"
   additional_disks     = {
-      1 = "150"    //
+    1 = "150", // Disk 1
   }
-}
+} 
 
+  
 
-output "cfmn001" { 
+output "mgmt_1" {
   value = {
-    "fqdn"  = "${module.cfmn001.fqdn}",
-    "alias" = "${module.cfmn001.alias}",
-    "ip"    = "${module.cfmn001.ip}",
+    "fqdn"  = "${module.mgmt_1.fqdn}",
+    "alias" = "${module.mgmt_1.alias}",
+    "ip"    = "${module.mgmt_1.ip}",
   }
-
-}
+} 
+  
