@@ -29,7 +29,7 @@ module "cfmn001" {
   hostname            = local.cfmn001.hostname
   alias               = "${local.product}-${local.datacenter.id}-${local.cfmn001.silo}-${local.facts.bt_role}-${local.cfmn001.hostname}"
   bt_infra_cluster    = "ny5-azc-ntnx-16"
-  bt_infra_network    = "ny2-autolab-app-ahv"
+  bt_infra_network    = "ny2-autolab-db-ahv"
   os_version          = "rhel7"
   cpus                = "2"
   memory              = "4096"
