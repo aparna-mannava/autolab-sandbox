@@ -17,7 +17,7 @@ locals {
     id   = "ny2"
   }
   cfmn001 = {
-    hostname = "${local.hostname}vlcfmg12"
+    hostname = "${local.hostname}vlcfrmmg12"
     silo     = "autolab"
   }
 
