@@ -309,9 +309,6 @@ projects:
 - name: cfrmiso-mgmt-autolab
   dir: cfrmiso/mgmt/autolab
   workflow: nutanix-backend
-- name: cfrmcloud-mgmt-autolab
-  dir: cfrmiso/mgmt/autolab-test
-  workflow: nutanix-backend
 - name: cfrmiso-mgmt-win-autolab
   dir: cfrmiso/mgmt/autolab_win
 - name: cfrmit-bitbucket-gbs
@@ -462,3 +459,6 @@ projects:
   dir: gnewbury/patch
   workflow: nutanix-backend
   terraform_version: v0.13.7
+- name: cfrmcloud-test-nfs99
+  dir: cfrmiso/mgmt/autolab_test
+  workflow: nutanix-backend
