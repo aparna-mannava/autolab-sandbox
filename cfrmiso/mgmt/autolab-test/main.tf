@@ -14,7 +14,7 @@ locals {
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD MGMT Base test"
       environment      = "feature_CFRMCLOUD_824_cfrm_cloud_user_key"
-      hostname         = "us01vlcfmgmt03c"       
+      hostname         = "us01vlcfmgmt04c"       
     }
     datacenter = {
       name = "ny2"
@@ -22,16 +22,16 @@ locals {
   }
 }
 
-module "nfstst_1" {
+module "mglabp_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.facts.hostname 
-  alias                = "${local.facts.bt_product}.${local.facts.bt_tier}.${local.datacenter.id}.rmg5" // cfrmcloud.cfrm.auto.gb00.db01
-  bt_infra_cluster     = local.facts.bt_infra_cluster
-  bt_infra_network     = local.facts.bt_infra_network
-  lob                  = local.facts.bt_lob
-  foreman_environment  = local.facts.environment
-  foreman_hostgroup    = local.facts.hostgroup
-  datacenter           = local.datacenter.name
+  hostname             = "${local.facts.hostname}" 
+  alias                = "${local.facts.bt_product}.${local.facts.bt_tier}.${local.datacenter.id}.rmg4"// cfrmcloud.cfrm.auto.gb00.db01
+  bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
+  bt_infra_network     = "${local.facts.bt_infra_network}"
+  lob                  = "${local.facts.bt_lob}"
+  foreman_environment  = "${local.facts.environment}"
+  foreman_hostgroup    = "${local.facts.hostgroup}"
+  datacenter           = "${local.datacenter.name}"
   external_facts       = local.facts
   os_version           = "rhel7"
   cpus                 = "4"
@@ -41,10 +41,10 @@ module "nfstst_1" {
   }
 } 
 
-output "nfstst_1" {
+output "mglabp_1" {
   value = {
-    "fqdn"  = module.nfstst_1.fqdn,
-    "alias" = module.nfstst_1.alias,
-    "ip"    = module.nfstst_1.ip,
+    "fqdn"  = "${module.mglabp_1.fqdn}",
+    "alias" = "${module.mglabp_1.alias}",
+    "ip"    = "${module.mglabp_1.ip}",
   }
 }
