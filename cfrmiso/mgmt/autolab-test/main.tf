@@ -21,7 +21,7 @@ module "mgmt_951" {
   hostname             = "us01vlcfrmmg951"
   alias                = "cfrmcloud-autolab-mgnf-clinet"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
-  bt_infra_network     = "nny2-autolab-app-ahv"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   external_facts       = local.vm01facts
   lob                  = "CFRM"
