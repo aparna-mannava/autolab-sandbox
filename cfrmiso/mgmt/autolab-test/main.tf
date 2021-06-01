@@ -12,7 +12,7 @@ locals {
       bt_role          = "mgmt"
       bt_infra_cluster = "ny5-azc-ntnx-16"  
       bt_infra_network = "ny2-autolab-app-ahv"
-      hostgroup        = "BT CFRM CLOUD MGMT Base test"
+      hostgroup        = "BT CFRM CLOUD MGMT Base"
       environment      = "feature_CFRMCLOUD_824_cfrm_cloud_user_key"
       hostname         = "us01vlcfmgmt04c"       
     }
@@ -37,7 +37,7 @@ module "mglatst_1" {
   cpus                 = "4"
   memory         	     = "8096" 
   additional_disks  = {
-    1 = "250"
+    1 = "150"
   }
 } 
 
