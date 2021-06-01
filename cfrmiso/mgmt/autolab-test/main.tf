@@ -14,7 +14,7 @@ locals {
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD MGMT Base test"
       environment      = "feature_CFRMCLOUD_824_cfrm_cloud_user_key"
-      hostname         = "us01vlcfrmmg951"       
+      hostname         = "us01vlcfmgmt03c"       
     }
     datacenter = {
       name = "ny2"
@@ -25,7 +25,7 @@ locals {
 module "nfstst_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.hostname 
-  alias                = "${local.facts.bt_product}.${local.facts.bt_tier}.${local.datacenter.id}.rmg3" // cfrmcloud.cfrm.auto.gb00.db01
+  alias                = "${local.facts.bt_product}.${local.facts.bt_tier}.${local.datacenter.id}.rmg5" // cfrmcloud.cfrm.auto.gb00.db01
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   lob                  = local.facts.bt_lob
