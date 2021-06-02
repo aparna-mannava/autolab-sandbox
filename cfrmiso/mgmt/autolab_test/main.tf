@@ -34,8 +34,8 @@ module "mglatst_1" {
   datacenter           = "${local.datacenter.name}"
   external_facts       = local.facts
   os_version           = "rhel7"
-  cpus                 = "4"
-  memory         	     = "8096" 
+  cpus                 = "2"
+  memory         	     = "4096" 
   additional_disks  = {
     1 = "150"
   }
