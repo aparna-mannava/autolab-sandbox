@@ -15,7 +15,7 @@ locals {
 }
 
 module "pmx_ss_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=terraform-0.12.17"
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlpmxss99"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-ss01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
@@ -37,8 +37,8 @@ module "pmx_ss_1" {
 
 output "pmx_ss_1" {
   value = {
-    "fqdn"  = "${module.pmx_ss_1.fqdn}",
-    "alias" = "${module.pmx_ss_1.alias}",
-    "ip"    = "${module.pmx_ss_1.ip}",
+    "fqdn"  = module.pmx_ss_1.fqdn,
+    "alias" = module.pmx_ss_1.alias,
+    "ip"    = module.pmx_ss_1.ip,
   }
 }
