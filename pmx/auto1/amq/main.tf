@@ -15,7 +15,7 @@ locals {
 }
 
 module "pmx_ss_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=terraform-0.12.17"
   hostname             = "us01vlpmxss99"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-ss01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
