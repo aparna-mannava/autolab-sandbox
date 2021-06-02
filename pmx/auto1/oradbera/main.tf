@@ -30,8 +30,8 @@ module "pmx_odbera_1" {
   external_facts       = local.facts
   additional_disks     = {
     1                  = "300"
-    2                  = "25"
-    3                  = "25"
+    2                  = "125"
+    3                  = "125"
   }
 }
 
