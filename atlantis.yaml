@@ -161,3 +161,7 @@ projects:
 - name: pmx-auto1-amq
   dir: pmx/auto1/amq
   workflow: nutanix-backend
+- name: cfrm-autolab-db
+  dir: cfrmcloud/oradb19c
+  workflow: nutanix-backend
+
