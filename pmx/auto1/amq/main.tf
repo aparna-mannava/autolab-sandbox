@@ -37,8 +37,8 @@ module "pmx_ss_1" {
 
 output "pmx_ss_1" {
   value = {
-    "fqdn"  = "${module.pmx_ss_1.fqdn}",
-    "alias" = "${module.pmx_ss_1.alias}",
-    "ip"    = "${module.pmx_ss_1.ip}",
+    "fqdn"  = module.pmx_ss_1.fqdn,
+    "alias" = module.pmx_ss_1.alias,
+    "ip"    = module.pmx_ss_1.ip,
   }
 }
