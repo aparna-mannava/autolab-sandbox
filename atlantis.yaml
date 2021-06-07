@@ -161,3 +161,6 @@ projects:
 - name: pmx-auto1-amq
   dir: pmx/auto1/amq
   workflow: nutanix-backend
+- name: cfrm-auto
+  dir: cfrmrd/auto
+  workflow: nutanix-backend
