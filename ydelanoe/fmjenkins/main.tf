@@ -40,8 +40,8 @@ module "fmjenkins_01" {
 
 output "fmjenkins_01" {
   value = {
-    "fqdn"  = module.goa_server.fqdn,
-    "alias" = module.goa_server.alias,
-    "ip"    = module.goa_server.ip,
+    "fqdn"  = module.fmjenkins_01.fqdn,
+    "alias" = module.fmjenkins_01.alias,
+    "ip"    = module.fmjenkins_01.ip,
   }
 }
