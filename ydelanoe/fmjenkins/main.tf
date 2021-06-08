@@ -19,7 +19,7 @@ locals {
   }
 }
 
-module "fmjenkins_01" {
+module "fmjenkins" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlfmgjnks${local.facts.bt_env}"
   alias                = "fmg-fmcloud-jenkins${local.facts.bt_env}"
@@ -38,10 +38,10 @@ module "fmjenkins_01" {
   lob                  = local.facts.bt_product
 }
 
-output "fmjenkins_01" {
+output "fmjenkins" {
   value = {
-    "fqdn"  = module.fmjenkins_01.fqdn,
-    "alias" = module.fmjenkins_01.alias,
-    "ip"    = module.fmjenkins_01.ip,
+    "fqdn"  = module.fmjenkins.fqdn,
+    "alias" = module.fmjenkins.alias,
+    "ip"    = module.fmjenkins.ip,
   }
 }
