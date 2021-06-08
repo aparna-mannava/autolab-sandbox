@@ -8,7 +8,7 @@ locals {
   hostgroup     = "BT FMCLOUD FMJenkins"
   datacenter    = "ny2"
   image         = "rhel7"
-  infra_cluster = "ny2-aze-ntnx-11"
+  infra_cluster = "ny2-aze-ntnx-12.json"
   infra_network = "ny2-autolab-app-ahv"
   facts         = {
     "bt_product"        = "fmcloud"
