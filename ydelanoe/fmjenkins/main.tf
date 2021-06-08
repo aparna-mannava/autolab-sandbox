@@ -21,8 +21,8 @@ locals {
 
 module "fmjenkins_01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlfmgjnks01"
-  alias                = "fmg-fmcloud-jenkins01"
+  hostname             = "us01vlfmgjnks${local.facts.bt_env}"
+  alias                = "fmg-fmcloud-jenkins${local.facts.bt_env}"
   bt_infra_cluster     = local.infra_cluster
   bt_infra_network     = local.infra_network
   os_version           = local.image
