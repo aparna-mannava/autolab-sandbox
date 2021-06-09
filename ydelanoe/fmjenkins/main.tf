@@ -33,7 +33,7 @@ module "fmjenkins" {
   cpus                 = "4"
   memory               = "8192"
   additional_disks     = {
-    1 = "200"
+    1 = "250"
   }
   lob                  = local.facts.bt_product
 }
