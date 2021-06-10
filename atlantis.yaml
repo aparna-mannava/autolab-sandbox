@@ -450,6 +450,8 @@ projects:
   dir: ydelanoe/oradb19c
 - name: ydelanoe-jenkins
   dir: ydelanoe/jenkins
+- name: ydelanoe-fmjenkins
+  dir: ydelanoe/fmjenkins
 - name: ydelanoe-gtx
   dir: ydelanoe/gtx
   workflow: nutanix-backend
@@ -463,12 +465,12 @@ projects:
 - name: pmx-auto1-amq
   dir: pmx/auto1/amq
   workflow: nutanix-backend
-- name: test-python3-server
-  dir: cfrmrd/test-python3-server
+- name: cfrm-auto
+  dir: cfrmrd/auto
   workflow: nutanix-backend
-- name: eitantest-elk
-  dir: eitantest/elk
-  workflow: terraform-upgrade
+- name: mzahorik-banking-poc
+  dir: mzahorik/banking-poc
+  workflow: nutanix-backend
 - name: eitantest-cfrm
   dir: eitantest/cfrm
   workflow: nutanix-backend
