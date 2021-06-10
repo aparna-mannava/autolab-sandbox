@@ -4,8 +4,8 @@ terraform {
 
 locals {
   product     = "pmx"
-#  environment = "master"
-  environment = "feature_PXDVOP_15301"
+  environment = "master"
+#  environment = "feature_PXDVOP_15301"
   datacenter  = "ny2"
   facts       = {
     "bt_tier"          = "auto"
