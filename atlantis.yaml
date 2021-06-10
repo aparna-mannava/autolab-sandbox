@@ -156,6 +156,8 @@ projects:
 - name: ydelanoe-repo
   dir: ydelanoe/repo
   workflow: nutanix-backend
+- name: ydelanoe-influxdb
+  dir: ydelanoe/influxdb
 - name: gnewbury-bitwarden
   dir: gnewbury/bitwarden
   workflow: nutanix-backend
