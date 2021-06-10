@@ -18,10 +18,12 @@ locals {
     "bt_role" = "cfrm"
     "bt_tier" = "autolab"
     "bt_lob" = "cfrm"
-    "bt_artemis_version" = "2.11.0"
-    "bt_es_version" = "7.8.0"
-    "bt_apacheds_version" = "2.0.0_M24"
-    "bt_jmx_prometheus_version" = "0.14.0"}
+    # "bt_artemis_version" = "2.11.0"
+    # "bt_es_version" = "7.8.0"
+    # "bt_apacheds_version" = "2.0.0_M24"
+    # "bt_jmx_prometheus_version" = "0.14.0"
+    "bt_ic_version" = "6.4.0_SP1"
+    }
 }
 
 module "cfrm001" {
