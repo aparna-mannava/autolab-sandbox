@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product       = "fmcloud"
-  environment   = "dev"
+  environment   = "feature_FMDO_1930"
   hostgroup     = "BT FMCLOUD InfluxDB"
   datacenter    = "ny2"
   image         = "rhel8"
@@ -26,7 +26,7 @@ module "influxdb" {
   bt_infra_cluster     = local.infra_cluster
   bt_infra_network     = local.infra_network
   os_version           = local.image
-  foreman_environment  = "feature_FMDO_1927"
+  foreman_environment  = local.environment
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   external_facts       = local.facts
