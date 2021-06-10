@@ -21,7 +21,7 @@ locals {
 
 module "influxdb" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlfmifxdb${local.facts.bt_env}"
+  hostname             = "us01vlfmgifxdb${local.facts.bt_env}"
   alias                = "fmg-influxdb-${local.facts.bt_env}"
   bt_infra_cluster     = local.infra_cluster
   bt_infra_network     = local.infra_network
