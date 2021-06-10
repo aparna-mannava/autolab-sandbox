@@ -15,7 +15,7 @@ locals {
     "bt_tier"           = "dev"
     "bt_loc"            = "ny2"
     "bt_role"           = "influxdb"
-    "bt_env"            = "01"
+    "bt_env"            = "1"
   }
 }
 
