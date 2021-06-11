@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product       = "fmcloud"
-  environment   = "feature_FMDO_1930"
+  environment   = "master"
   hostgroup     = "BT FMCLOUD InfluxDB"
   datacenter    = "ny2"
   image         = "rhel8"
