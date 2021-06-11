@@ -24,7 +24,8 @@ module "pmx_odbera_1" {
   cpus                 = 2
   memory               = 4096
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT PMX ORA DB ERA"
+#  foreman_hostgroup    = "BT PMX ORA DB ERA"
+  foreman_hostgroup    = "BT PMX ORA19DB"
   datacenter           = local.datacenter
   lob                 = "PBS"
   external_facts       = local.facts
