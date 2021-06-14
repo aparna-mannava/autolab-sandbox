@@ -5,7 +5,6 @@ terraform {
 locals {
   product = "fmcloud"
   facts = {
-    "bt_pg_version"           = "12"
     "bt_tier" = "autolab" ###### THIS IS YOUR TIER
     "bt_env" = "1" ###### THIS IS YOUR ENV NUMBER
   }
