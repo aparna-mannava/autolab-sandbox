@@ -7,7 +7,7 @@ locals {
   environment   = "feature_FMDO_1930"
   hostgroup     = "BT FMCLOUD InfluxDB"
   datacenter    = "ny2"
-  image         = "rhel8"
+  image         = "rhel7"
   infra_cluster = "ny2-aze-ntnx-12"
   infra_network = "ny2-autolab-app-ahv"
   facts         = {
