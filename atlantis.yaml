@@ -166,6 +166,9 @@ projects:
 - name: cfrm-auto
   dir: cfrmrd/auto
   workflow: nutanix-backend
+- name: cbonnet-pg1
+  dir: cbonnet/standalone_pg1
+  workflow: nutanix-backend
 - name: mzahorik-banking-poc
   dir: mzahorik/banking-poc
   workflow: nutanix-backend
