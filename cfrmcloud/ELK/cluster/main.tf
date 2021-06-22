@@ -20,7 +20,7 @@ locals {
       bt_es_version           = "7.8.0"
       bt_apacheds_version     = "2.0.0_M24"
       bt_jmx_prometheus_version = "0.14.0"
-      bt_artemis1_fqdn        = "${local.hostname}01-au" //us01vlcfel01-ut.saas-p.com
+      bt_artemis1_fqdn        = "${local.hostname}01-au" // us01vlcfel01-ut.saas-p.com
       bt_artemis2_fqdn        = "${local.hostname}02-au" //us01vlcfel02-ut.saas-p.com
       bt_artemis3_fqdn        = "${local.hostname}03-au" //us01vlcfel03-ut.saas-p.com
     }
