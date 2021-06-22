@@ -8,7 +8,7 @@ locals {
       bt_customer             = ""
       bt_product              = "cfrmcloud"
       bt_lob                  = "cfrm"
-      bt_tier                 = "uat" //PROD
+      bt_tier                 = "autolab" //PROD
       bt_env                  = "01"
       bt_role                 = "elastic"
       bt_infra_cluster        = "ny5-azc-ntnx-16"  
@@ -20,13 +20,13 @@ locals {
       bt_es_version           = "7.8.0"
       bt_apacheds_version     = "2.0.0_M24"
       bt_jmx_prometheus_version = "0.14.0"
-      bt_artemis1_fqdn        = "${local.hostname}01-au" //gb00vlcfel01-ut.saas-p.com
-      bt_artemis2_fqdn        = "${local.hostname}02-au" //gb00vlcfel02-ut.saas-p.com
-      bt_artemis3_fqdn        = "${local.hostname}03-au" //gb00vlcfel03-ut.saas-p.com
+      bt_artemis1_fqdn        = "${local.hostname}01-au" //us01vlcfel01-ut.saas-p.com
+      bt_artemis2_fqdn        = "${local.hostname}02-au" //us01vlcfel02-ut.saas-p.com
+      bt_artemis3_fqdn        = "${local.hostname}03-au" //us01vlcfel03-ut.saas-p.com
     }
     datacenter = {
-      name = "bunker"
-      id   = "gb00"
+      name = "ny2"
+      id   = "ny2"
   }
     es01facts    = {
       "bt_customer"               = local.facts.bt_customer
