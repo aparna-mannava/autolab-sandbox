@@ -168,15 +168,9 @@ projects:
 - name: pmx-auto1-amq
   dir: pmx/auto1/amq
   workflow: nutanix-backend
-- name: cfrm-auto
-  dir: cfrmrd/auto
+- name: cfrm-autolab-db
+  dir: cfrmcloud/oradb19c
   workflow: nutanix-backend
-- name: cbonnet-pg1
-  dir: cbonnet/standalone_pg1
-  workflow: nutanix-backend
-- name: cbonnet-pg2
-  dir: cbonnet/standalone_pg2
-  workflow: nutanix-backend
-- name: mzahorik-banking-poc
-  dir: mzahorik/banking-poc
+- name: cfrm-autolab-elk
+  dir: cfrmcloud/ELK/cluster
   workflow: nutanix-backend
