@@ -5,15 +5,15 @@ terraform {
 locals {
     facts       = {
       bt_customer      = "fi1122"
-      bt_product       = "dgb"
-      bt_lob           = "dgb"
+      bt_product       = "cloud"
+      bt_lob           = "CLOUD"
       bt_tier          = "pr" //PROD
       bt_env           = "01"
       bt_role          = "oradb"
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT DGB Oradb Server"
-      environment      = "feature_cloud_90826" //
+      environment      = "feature_CLOUD_90826" //
       hostname         = "us01vldgbdblb01"
     }
     datacenter = {
