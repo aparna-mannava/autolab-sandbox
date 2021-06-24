@@ -4,13 +4,13 @@ terraform {
 
 locals {
   image         = "rhel7"
-  hostgroup     = "BT Base Server"
-  environment   = "feature_CEA_10101_confluent_control_center"
+  hostgroup     = "BT Small Kafka Control CenterServer"
+  environment   = "master"
   datacenter    = "ny2"
   cluster       = "ny2-aza-ntnx-07"
   network       = "ny2-autolab-app-ahv"
   cpus          = "4"
-  memory        = "2048"
+  memory        = "8192"
   disks     = {
     1 = "500",
   }
