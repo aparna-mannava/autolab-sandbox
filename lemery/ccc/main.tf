@@ -4,7 +4,7 @@ terraform {
 
 locals {
   image         = "rhel7"
-  hostgroup     = "BT Small Kafka Control CenterServer"
+  hostgroup     = "BT Small Kafka Control Center"
   environment   = "master"
   datacenter    = "ny2"
   cluster       = "ny2-aza-ntnx-07"
@@ -37,8 +37,8 @@ module "base_server_1" {
 
 output "base_server_1" {
   value = {
-    "fqdn"  = "${module.base_server_1.fqdn}",
-    "alias" = "${module.base_server_1.alias}",
-    "ip"    = "${module.base_server_1.ip}",
+    "fqdn"  = module.base_server_1.fqdn,
+    "alias" = module.base_server_1.alias,
+    "ip"    = module.base_server_1.ip,
   }
 }
