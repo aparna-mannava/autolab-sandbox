@@ -176,4 +176,4 @@ projects:
   workflow: nutanix-backend
 - name: lemery-ccc
   dir: lemery/ccc
-  workflow: terraform-upgrade
+  workflow: nutanix-backend
