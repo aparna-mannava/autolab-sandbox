@@ -174,3 +174,6 @@ projects:
 - name: cfrm-autolab-elk
   dir: cfrmcloud/ELK/cluster
   workflow: nutanix-backend
+- name: dgb-autolab-db
+  dir: dgb/oracle
+  workflow: nutanix-backend
