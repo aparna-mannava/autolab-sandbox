@@ -185,3 +185,4 @@ projects:
   workflow: nutanix-backend
 - name: bvarghese-oracle
   dir: bvarghese/oracle
+  workflow: nutanix-backend
