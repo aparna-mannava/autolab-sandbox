@@ -14,7 +14,7 @@ locals {
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT DGB Oradb Server"
       environment      = "feature_CLOUD_90826"
-      hostname         = "us01vldgbdblb05"
+      hostname         = "us01vldgbdblb06"
     }
     datacenter = {
       name = "ny2"
@@ -31,8 +31,8 @@ locals {
 
 module "dblab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldgbdblb05" //   us01vlcfdblab01.auto.saas-n.com
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-oradb19"//cfrmcloud-autolab-ny2-lb05
+  hostname             = "us01vldgbdblb06" //   us01vlcfdblab01.auto.saas-n.com
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-oralb06"//cfrmcloud-autolab-ny2-lb05
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   lob                  = local.facts.bt_lob
