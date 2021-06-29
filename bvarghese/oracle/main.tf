@@ -97,8 +97,8 @@ output "db_server_autolab_pci_2" {
 
 output "db_observer_autolab_pci_1" {
   value = {
-    "fqdn"  = "${module.db_observer_ppd_pci_1.fqdn}",
-    "alias" = "${module.db_observer_ppd_pci_1.alias}",
-    "ip"    = "${module.db_observer_ppd_pci_1.ip}",
+    "fqdn"  = "${module.db_observer_autolab_pci_1.fqdn}",
+    "alias" = "${module.db_observer_autolab_pci_1.alias}",
+    "ip"    = "${module.db_observer_autolab_pci_1.ip}",
   }
 }
