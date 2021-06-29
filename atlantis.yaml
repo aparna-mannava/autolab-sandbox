@@ -163,6 +163,8 @@ projects:
   dir: ydelanoe/influxdb
 - name: ydelanoe-etcd1
   dir: ydelanoe/psql/primary/etcd
+- name: ydelanoe-hapg1
+  dir: ydelanoe/psql/primary/hapg
 - name: gnewbury-bitwarden
   dir: gnewbury/bitwarden
   workflow: nutanix-backend
