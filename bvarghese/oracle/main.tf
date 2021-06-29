@@ -10,7 +10,7 @@ terraform {
 
 locals {
   lob           = "cloud"
-  puppet_env    = "feature_testing-fsfo"
+  puppet_env    = "master"
   datacenter    = "ny2"
   facts         = {
     "bt_customer"         = "fi9999" #ex: fiXXXX
