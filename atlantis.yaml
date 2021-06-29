@@ -186,3 +186,6 @@ projects:
 - name: dgb-autolab-db1
   dir: dgb/sam
   workflow: nutanix-backend
+- name: lemery-ccc2
+  dir: lemery/ccc2
+  workflow: nutanix-backend
