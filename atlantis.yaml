@@ -162,7 +162,7 @@ projects:
 - name: ydelanoe-influxdb
   dir: ydelanoe/influxdb
 - name: ydelanoe-etcd1
-  dir: ydelanoe/primary/etcd
+  dir: ydelanoe/psql/primary/etcd
 - name: gnewbury-bitwarden
   dir: gnewbury/bitwarden
   workflow: nutanix-backend
