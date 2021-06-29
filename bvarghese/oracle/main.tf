@@ -27,7 +27,7 @@ module "db_server_autolab_pci_1" {
   os_version           = "rhel7"
   alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb01"
   datacenter           = local.datacenter
-  bt_infra_network     = "ny2-autolab-db"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb Server" #"BT DGB Oradb Server"
@@ -47,7 +47,7 @@ module "db_server_autolab_pci_2" {
   os_version           = "rhel7"
   alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oradb02"
   datacenter           = local.datacenter
-  bt_infra_network     = "ny2-autolab-db"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb Secondary Server" #"BT DGB Oradb Secondary Server"
@@ -67,7 +67,7 @@ module "db_observer_autolab_pci_1" {
   os_version           = "rhel7"
   alias                = "${local.lob}-pci-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-oraob01"
   datacenter           = local.datacenter
-  bt_infra_network     = "ny2-autolab-db"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   foreman_environment  = local.puppet_env
   foreman_hostgroup    = "BT DGB Oradb fsfo Observer" #"BT DGB Oradb fsfo Observer"
