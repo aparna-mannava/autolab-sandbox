@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-
+#
 locals {
   etcd_servers    = ["us01vletcdfm01","us01vletcdfm02","us01vletcdfm03"]
   hapg_servers    = ["us01vlpgfm0001","us01vlpgfm0002","us01vlpgfm0003"]
