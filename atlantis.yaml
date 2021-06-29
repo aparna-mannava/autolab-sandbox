@@ -183,3 +183,6 @@ projects:
 - name: dgb-autolab-db
   dir: dgb/oracle
   workflow: nutanix-backend
+- name: dgb-autolab-db1
+  dir: dgb/sam
+  workflow: nutanix-backend
