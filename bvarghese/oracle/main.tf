@@ -36,7 +36,7 @@ module "db_server_autolab_pci_1" {
   cpus                 = "2"
   memory               = "4096"
   additional_disks     = {
-    1 = "50",
+    1 = "200",
     2 = "50",
     3 = "50"
   }
@@ -57,7 +57,7 @@ module "db_server_autolab_pci_2" {
   cpus                 = "2"
   memory               = "4096"
   additional_disks     = {
-    1 = "50",
+    1 = "200",
     2 = "50",
     3 = "50"
   }
@@ -78,7 +78,7 @@ module "db_observer_autolab_pci_1" {
   cpus                 = "2"
   memory               = "4096"
   additional_disks     = {
-    1 = "50"
+    1 = "200"
   }
 }
 
