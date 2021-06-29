@@ -183,3 +183,5 @@ projects:
 - name: dgb-autolab-db
   dir: dgb/oracle
   workflow: nutanix-backend
+- name: bvarghese-oracle
+  dir: bvarghese/oracle
