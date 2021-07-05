@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 - name: genady-nginx
   dir: cfrmrd/nginx
@@ -25,4 +25,4 @@ projects:
   dir: dnani/sql001
 - name: lsm
   dir: lsm
-  workflow: nutanix-backend
+  workflow: terraform-upgrade
