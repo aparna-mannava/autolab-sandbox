@@ -2,27 +2,7 @@
 version: 3
 automerge: false
 projects:
-- name: genady-nginx
-  dir: cfrmrd/nginx
-- name: genady-es
-  dir: cfrmrd/es
-- name: stephendjenkins
-  dir: stephen.daconceicao/jenkins
-  workflow: nutanix-backend
-- name: stephendnexus
-  dir: stephen.daconceicao/nexus
-  workflow: nutanix-backend
-- name: cdrew-testdb
-  dir: cdrew/btiq
-  workflow: nutanix-backend
-- name: jdustin/oktawindows
-  dir: jdustin/oktawindows
-  workflow: nutanix-backend
-- name: fcirilli-jenkins-e2e-dev
-  dir: fcirilli/jenkins/e2e/dev
-  workflow: nutanix-backend
-- name: dnani-sql001
-  dir: dnani/sql001
+
 - name: lsm
   dir: lsm
   workflow: terraform-upgrade
