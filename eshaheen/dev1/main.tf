@@ -18,7 +18,7 @@ module "db_server1" {
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   cpus                 = 2
   memory               = 33696
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   external_facts       = local.facts
   lob       	         = "DGB"
   foreman_environment  = "master"
@@ -38,7 +38,7 @@ module "db_server2" {
   bt_infra_cluster     = "ny2-aza-vmw-autolab"
   cpus                 = 2
   memory               = 33696
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   external_facts       = local.facts
   lob       	         = "DGB"
   foreman_environment  = "master"
