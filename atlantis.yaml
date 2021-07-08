@@ -10,3 +10,6 @@ projects:
   dir: ydelanoe/psql/secondary/etcd
 - name: ydelanoe-hapg2
   dir: ydelanoe/psql/secondary/hapg
+- name: eitantest-cfrm
+  dir: eitantest/cfrm
+  workflow: nutanix-backend
