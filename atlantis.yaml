@@ -15,3 +15,4 @@ projects:
   workflow: nutanix-backend
 - name: eshaheen-dev1
   dir: eshaheen/dev1
+  workflow: nutanix-backend
