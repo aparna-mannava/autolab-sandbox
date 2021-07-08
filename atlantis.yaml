@@ -8,3 +8,5 @@ projects:
   dir: ydelanoe/psql/primary/hapg
 - name: ydelanoe-etcd2
   dir: ydelanoe/psql/secondary/etcd
+- name: ydelanoe-hapg2
+  dir: ydelanoe/psql/secondary/hapg
