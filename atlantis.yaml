@@ -13,3 +13,5 @@ projects:
 - name: eitantest-cfrm
   dir: eitantest/cfrm
   workflow: nutanix-backend
+- name: eshaheen-dev1
+  dir: eshaheen/dev1
