@@ -2,3 +2,5 @@
 version: 3
 automerge: true
 projects:
+- name: ydelanoe-etcd1
+  dir: ydelanoe/psql/primary/etcd
