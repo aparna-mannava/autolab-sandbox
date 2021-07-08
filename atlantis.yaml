@@ -4,3 +4,5 @@ automerge: true
 projects:
 - name: ydelanoe-etcd1
   dir: ydelanoe/psql/primary/etcd
+- name: ydelanoe-hapg1
+  dir: ydelanoe/psql/primary/hapg
