@@ -4,12 +4,13 @@ terraform {
 
 locals {
     facts       = {
-      bt_customer      = ""
+      bt_customer      = "fml"
       bt_product       = "cfrmcloud"
       bt_lob           = "cfrm"
       bt_tier          = "autolab" //PROD
       bt_env           = "01"
       bt_cfrm_version  = "6.1_SP1" //Need to be updated
+      bt_db_url        = "us01vlcfdblab01.auto.saas-n.com:1560:CFRMAU01"
       bt_role          = "oradb"
       bt_infra_cluster = "ny5-azc-ntnx-16"  
       bt_infra_network = "ny2-autolab-app-ahv"
@@ -28,6 +29,7 @@ locals {
       "bt_env"          = local.facts.bt_env
       "bt_role"         = local.facts.bt_role
       "bt_cfrm_version" = local.facts.bt_cfrm_version
+      "bt_db_url"       = local.facts.bt_db_url
      }
 }
 
