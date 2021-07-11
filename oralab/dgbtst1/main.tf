@@ -32,7 +32,7 @@ locals {
 module "dblab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldbtst2"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-oralb06"//cfrmcloud-autolab-ny2-lb05
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-oralb02"
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   lob                  = local.facts.bt_lob
@@ -44,16 +44,16 @@ module "dblab_1" {
   cpus                 = "4"
   memory         	   = "4096"
   additional_disks     = {
-      1 = "100",
-      2 = "100",
-      3 = "100"
+      1 = "200",
+	  2 = "200",
+	  3 = "200"
   }
 }
 
 module "dblab_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldbtst3"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-oralb06"//cfrmcloud-autolab-ny2-lb05
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-oralb03"
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   lob                  = local.facts.bt_lob
@@ -65,9 +65,9 @@ module "dblab_2" {
   cpus                 = "4"
   memory         	   = "4096"
   additional_disks     = {
-      1 = "100",
-      2 = "100",
-      3 = "100"
+      1 = "200",
+	  2 = "200",
+	  3 = "200"
   }
 }
 
@@ -75,7 +75,7 @@ module "dblab_2" {
 module "dblab_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldbtst4"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-oralb06"//cfrmcloud-autolab-ny2-lb05
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-oralb04"
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   lob                  = local.facts.bt_lob
@@ -87,7 +87,7 @@ module "dblab_3" {
   cpus                 = "4"
   memory         	   = "2048"
   additional_disks     = {
-      1 = "100"
+      1 = "200"
   }
 }
 
