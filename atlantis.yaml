@@ -16,3 +16,6 @@ projects:
 - name: eshaheen-dev1
   dir: eshaheen/dev1
   workflow: nutanix-backend
+- name: dgbtst1-fsfo
+  dir: oralab/dgbtst1
+  workflow: nutanix-backend
