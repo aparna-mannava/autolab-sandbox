@@ -1,13 +1,13 @@
 terraform {
   backend "s3" {}
 }
-#
+
 locals {
   domain          = "auto.saas-n.com"
   os_version      = "rhel8"
   lob             = "fmcloud"
   environment     = "feature_FMDO_2654_ReplicationIssue"
-  cluster         = "ny2-aze-ntnx-12"
+  cluster         = "ny2-aze-ntnx-11"
   network         = "ny2-autolab-app-ahv"
   hostgroup       = "BT FMCLOUD Harbor"
   facts           = {
