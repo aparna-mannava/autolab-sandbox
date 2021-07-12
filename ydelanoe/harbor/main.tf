@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-#
+
 locals {
   domain          = "auto.saas-n.com"
   os_version      = "rhel8"
