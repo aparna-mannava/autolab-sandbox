@@ -20,7 +20,7 @@ locals {
 
 module "hbr_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = us01vlfmhbr01
+  hostname             = "us01vlfmhbr01"
   alias                = "fm-${local.facts.bt_tier}-${local.facts.bt_role}-${local.facts.bt_env}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
