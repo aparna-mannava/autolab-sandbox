@@ -38,8 +38,8 @@ module "cfrm001" {
   bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "2"
-  memory              = "2024"
+  cpus                = "4"
+  memory              = "8096"
   lob                 = "cfrm"
   external_facts      = local.facts
   foreman_environment = local.environment
