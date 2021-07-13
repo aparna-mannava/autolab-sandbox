@@ -4,7 +4,7 @@ terraform {
 
 locals {
   domain          = "auto.saas-n.com"
-  os_version      = "rhel8"
+  os_version      = "rhel7"
   lob             = "fmcloud"
   environment     = "feature_FMDO_2654_ReplicationIssue"
   cluster         = "ny2-aze-ntnx-11"
