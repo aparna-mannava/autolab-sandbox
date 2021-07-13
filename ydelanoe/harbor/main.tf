@@ -11,7 +11,7 @@ locals {
   network         = "ny2-autolab-app-ahv"
   hostgroup       = "BT FMCLOUD Harbor"
   facts           = {
-    "bt_role"                 = "harbor"
+    "bt_role"                 = "harbor_server"
     "bt_env"                  = "1"
     "bt_tier"                 = "autolab"
     "bt_product"              = "fmcloud"
