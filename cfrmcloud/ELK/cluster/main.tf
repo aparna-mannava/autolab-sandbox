@@ -5,7 +5,7 @@ terraform {
 locals {
     hostname    = "us01vlcfel"
     facts       = {
-      bt_customer             = ""
+      bt_customer             = "chc"
       bt_product              = "cfrmcloud"
       bt_lob                  = "cfrm"
       bt_tier                 = "autolab" //PROD
@@ -15,9 +15,9 @@ locals {
       bt_infra_network        = "ny2-autolab-app-ahv"
       #firewall_group          = "CFRMRD_PR_ES"
       hostgroup               = "CFRM BT CLOUD Elastic Servers"
-      environment             = "feature_CFRMCLOUD_1095_add_apacheds_user_creation_elk_cluster" //
-      bt_artemis_version      = "2.11.0"
-      bt_es_version           = "7.8.0"
+      environment             = "feature_CFRMCLOUD_1243_add_support_for_elk_5_6_2" //
+      bt_artemis_version      = "2.8.0"
+      bt_es_version           = "5.6.2"
       bt_apacheds_version     = "2.0.0_M24"
       bt_jmx_prometheus_version = "0.14.0"
       bt_artemis1_fqdn        = "${local.hostname}01-au" // us01vlcfel01-ut.saas-p.com
