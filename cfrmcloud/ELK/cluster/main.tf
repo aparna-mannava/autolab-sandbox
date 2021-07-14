@@ -8,7 +8,7 @@ locals {
       bt_customer             = "chc"
       bt_product              = "cfrmcloud"
       bt_lob                  = "cfrm"
-      bt_tier                 = "autolab" //   PROD
+      bt_tier                 = "autolab" // PROD
       bt_env                  = "01"
       bt_role                 = "elastic"
       bt_infra_cluster        = "ny5-azc-ntnx-16"  
@@ -68,7 +68,7 @@ locals {
 
 module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hostname}01-ut"
+  hostname             = "${local.hostname}01-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk01"// cfrmcloud-uat-gb00-elk01
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
@@ -89,7 +89,7 @@ module "elasticsearch_1" {
 
 module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hostname}02-ut"
+  hostname             = "${local.hostname}02-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk02"// cfrmcloud-uat-gb00-elk02
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
@@ -110,7 +110,7 @@ module "elasticsearch_2" {
 
 module "elasticsearch_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hostname}03-ut"
+  hostname             = "${local.hostname}03-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk03"//cfrmcloud-uat-gb00-elk03
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
