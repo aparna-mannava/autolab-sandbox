@@ -15,7 +15,7 @@ locals {
       bt_infra_network        = "ny2-autolab-app-ahv"
       #firewall_group          = "CFRMRD_PR_ES"
       hostgroup               = "CFRM BT CLOUD Elastic Servers"
-      environment             = "feature_CFRMCLOUD_1243_add_support_for_elk_5_6_2" ////
+      environment             = "CFRMCLOUD_1247_chc_nfs_add_default_path" ////
       bt_artemis_version      = "2.8.0"
       bt_es_version           = "5.6.2"
       bt_apacheds_version     = "2.0.0_M24"
