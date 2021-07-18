@@ -17,7 +17,7 @@ locals {
       hostgroup               = "CFRM BT CLOUD Elastic Servers"
       environment             = "CFRMCLOUD_1247_chc_nfs_add_default_path"   //
       bt_artemis_version      = "2.8.0"
-      bt_es_version           = "5.6.12"
+      bt_es_version           = "5.6.16"
       bt_apacheds_version     = "2.0.0_M24"
       bt_jmx_prometheus_version = "0.14.0"
       bt_artemis1_fqdn        = "${local.hostname}01-au" //us01vlcfel01-ut.saas-p.com
