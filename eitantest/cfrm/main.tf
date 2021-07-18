@@ -3,7 +3,7 @@ terraform {
 }
 #  Build test server
 locals {
-  environment = "feature_CFRMCLOUD_131_cfrm_install_standalone"
+  environment = "feature_CFRMCLOUD_1048_cfrm_standalone"
   datacenter = {
     name = "ny2"
     id   = "ny2"
