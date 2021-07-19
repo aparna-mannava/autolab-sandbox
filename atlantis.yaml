@@ -32,3 +32,12 @@ projects:
 - name: dgbtst2-fsfo
   dir: oralab/dgbtst2
   workflow: nutanix-backend
+- name: lemery-hapg-hapg
+  dir: lemery/hapg/hapg
+  workflow: nutanix-backend
+- name: lemery-hapg-etcd
+  dir: lemery/hapg/etcd
+  workflow: nutanix-backend
+- name: lemery-hapg-backrest
+  dir: lemery-hapg-backrest
+  workflow: nutanix-backend
