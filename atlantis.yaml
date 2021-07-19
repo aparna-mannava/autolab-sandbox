@@ -29,3 +29,6 @@ projects:
 - name: llabranche-cfo
   dir: llabranche/cfo
   workflow: nutanix-backend
+- name: dgbtst2-fsfo
+  dir: oralab/dgbtst2
+  workflow: nutanix-backend
