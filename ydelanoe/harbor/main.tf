@@ -4,14 +4,14 @@ terraform {
 
 locals {
   domain          = "auto.saas-n.com"
-  os_version      = "rhel8"
+  os_version      = "rhel7"
   lob             = "fmcloud"
   environment     = "feature_FMDO_2654_ReplicationIssue"
   cluster         = "ny2-aze-ntnx-11"
   network         = "ny2-autolab-app-ahv"
   hostgroup       = "BT FMCLOUD Harbor"
   facts           = {
-    "bt_role"                 = "harbor"
+    "bt_role"                 = "harbor_server"
     "bt_env"                  = "1"
     "bt_tier"                 = "autolab"
     "bt_product"              = "fmcloud"

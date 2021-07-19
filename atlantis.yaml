@@ -26,4 +26,6 @@ projects:
   workflow: nutanix-backend
 - name: cfrm-autolab-app-standalone
   dir: cfrmcloud/cfrm/standalone
+- name: llabranche-cfo
+  dir: llabranche/cfo
   workflow: nutanix-backend
