@@ -24,3 +24,6 @@ projects:
 - name: cfrm-autolab-elk
   dir: cfrmcloud/ELK/cluster
   workflow: nutanix-backend
+- name: llabranche-cfo
+  dir: llabranche/cfo
+  workflow: nutanix-backend
