@@ -17,7 +17,7 @@ module "postgres_server1" {
   lob                   = "CEA"
   additional_disks      = {
     1 = "50",
-    2 = "50",
+    2 = "60",
   }
 }
 
