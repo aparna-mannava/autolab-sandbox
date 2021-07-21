@@ -43,9 +43,8 @@ projects:
   dir: lemery/hapg/etcd
   workflow: nutanix-backend
 - name: lemery-hapg-backrest
-  dir: lemery-hapg-backrest
+  dir: lemery/hapg/backrest
   workflow: nutanix-backend
 - name: cdrew-pg
   dir: cdrew/pg1
   workflow: nutanix-backend
-# foo
