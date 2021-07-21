@@ -18,7 +18,7 @@ locals {
     "bt_role" = "cfrm"
     "bt_tier" = "autolab"
     "bt_lob" = "cfrm"
-    "bt_ic_version" = "640_SP1"//
+    "bt_ic_version" = "640_SP1"  //
     }
 }
 
