@@ -11,7 +11,7 @@ locals {
   lob             = "CEA"
   bt_product      = "btiq"
   hostgroup       = "BT ETCD for PostgreSQL Server"
-  environment     = "master"
+  environment     = "feature_CEA_11134_patroni_tde"
   cluster         = "ny5-azc-ntnx-16"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
