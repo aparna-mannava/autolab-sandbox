@@ -13,7 +13,7 @@ locals {
   bt_product      = "btiq"
   lob             = "CEA"
   hostgroup       = "BT HA PG Server"
-  environment     = "master"
+  environment     = "feature_CEA_11134_patroni_tde"
   cluster         = "ny5-azc-ntnx-16"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
