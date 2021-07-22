@@ -20,7 +20,7 @@ module "ora_diag_1" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "4"
-  memory               = "182536"
+  memory               = "65356"
   external_facts       = local.facts
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM Oracle Server"
