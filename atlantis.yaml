@@ -51,4 +51,7 @@ projects:
 - name: dgbtst3-em
   dir: oralab/dgbtst3
   workflow: nutanix-backend
+- name: llabranche-cfrm-oradb
+  dir: llabranche/cfrm/oradb
+  workflow: nutanix-backend
 # foo
