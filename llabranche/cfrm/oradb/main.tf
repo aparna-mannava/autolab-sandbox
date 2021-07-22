@@ -24,6 +24,7 @@ module "ora_diag_1" {
   external_facts       = local.facts
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM Oracle Server"
+  lob			= "cloud"
   datacenter           = local.datacenter
   additional_disks     = {
     1 = "100",
