@@ -57,4 +57,6 @@ projects:
 - name: dgbtst4-em
   dir: oralab/dgbtst4
   workflow: nutanix-backend
-# foo
+- name: dgbtst5-em
+  dir: oralab/dgbtst5
+  workflow: nutanix-backend
