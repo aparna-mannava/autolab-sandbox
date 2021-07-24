@@ -60,3 +60,6 @@ projects:
 - name: dgbtst5-em
   dir: oralab/dgbtst5
   workflow: nutanix-backend
+- name: dgb-emversion
+  dir: oralab/dgbtst50
+  workflow: nutanix-backend
