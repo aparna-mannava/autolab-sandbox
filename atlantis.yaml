@@ -33,6 +33,8 @@ projects:
 - name: llabranche-cfo
   dir: llabranche/cfo
   workflow: nutanix-backend
+- name: cfrmiso-mgmt-autolab
+  dir: cfrmcloud/nfs
 - name: dgbtst2-fsfo
   dir: oralab/dgbtst2
   workflow: nutanix-backend
