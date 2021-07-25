@@ -94,9 +94,9 @@ module "cfmn003" {
 
 output "cfmn001" { 
   value = {
-    "fqdn"  = "${module.cfmn001.fqdn}",
-    "alias" = "${module.cfmn001.alias}",
-    "ip"    = "${module.cfmn001.ip}",
+    "fqdn"  = module.cfmn001.fqdn,
+    "alias" = module.cfmn001.alias,
+    "ip"    = module.cfmn001.ip,
   }
 
 output "cfmn002" {
@@ -112,5 +112,4 @@ output "cfmn003" {
     "alias" = module.cfmn003.alias,
     "ip"    = module.cfmn003.ip,
   }
-
 }
