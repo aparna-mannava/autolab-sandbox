@@ -50,7 +50,7 @@ module "cfmn001" {
   foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter.name
   additional_disks     = {
-      1 = "150"    //
+      1 = "200"    //
   }
 }
 
@@ -61,15 +61,15 @@ module "cfmn002" {
   bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "2"
-  memory              = "4096"
+  cpus                = "8"
+  memory              = "24960"
   lob                 = "cfrm"
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter.name
   additional_disks     = {
-      1 = "150"  //   disk 1  PR 1
+      1 = "200"  //   disk 1  PR 1
   }
 }
 
@@ -88,7 +88,7 @@ module "cfmn003" {
   foreman_hostgroup   = local.hostgroup
   datacenter          = local.datacenter.name
   additional_disks     = {
-      1 = "150"  // disk 1  PR 1
+      1 = "200"  // disk 1  PR 1
   }
 }
 
