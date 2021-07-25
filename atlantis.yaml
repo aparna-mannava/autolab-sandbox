@@ -33,3 +33,6 @@ projects:
 - name: llabranche-cfo
   dir: llabranche/cfo
   workflow: nutanix-backend
+- name: cfrmiso-mgmt-autolab
+  dir: cfrmcloud/nfs
+  workflow: nutanix-backend
