@@ -50,5 +50,3 @@ output "cfmn002" {
     "ip"    = module.cfmn002.ip  
     }
 }
-
-}
