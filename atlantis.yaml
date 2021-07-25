@@ -35,4 +35,33 @@ projects:
   workflow: nutanix-backend
 - name: cfrmiso-mgmt-autolab
   dir: cfrmcloud/nfs
+- name: dgbtst2-fsfo
+  dir: oralab/dgbtst2
+  workflow: nutanix-backend
+- name: lemery-hapg-hapg
+  dir: lemery/hapg/hapg
+  workflow: nutanix-backend
+- name: lemery-hapg-etcd
+  dir: lemery/hapg/etcd
+  workflow: nutanix-backend
+- name: lemery-hapg-backrest
+  dir: lemery/hapg/backrest
+  workflow: nutanix-backend
+- name: cdrew-pg
+  dir: cdrew/pg1
+  workflow: nutanix-backend
+- name: dgbtst3-em
+  dir: oralab/dgbtst3
+  workflow: nutanix-backend
+- name: llabranche-cfrm-oradb
+  dir: llabranche/cfrm/oradb
+  workflow: nutanix-backend
+- name: dgbtst4-em
+  dir: oralab/dgbtst4
+  workflow: nutanix-backend
+- name: dgbtst5-em
+  dir: oralab/dgbtst5
+  workflow: nutanix-backend
+- name: dgb-emversion
+  dir: oralab/dgbtst50
   workflow: nutanix-backend
