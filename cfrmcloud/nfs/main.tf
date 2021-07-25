@@ -98,6 +98,7 @@ output "cfmn001" {
     "alias" = module.cfmn001.alias,
     "ip"    = module.cfmn001.ip,
   }
+}
 
 output "cfmn002" {
   value = {
