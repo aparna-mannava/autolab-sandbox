@@ -2,6 +2,13 @@ terraform {
   backend "s3" {}
 }
 
+locals {
+  facts       = {
+    "bt_pg_version" = "13"
+    }
+}
+
+
 module "postgres_server1" {
   source                = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname              = "us01vlcrd1"
@@ -15,9 +22,10 @@ module "postgres_server1" {
   foreman_hostgroup     = "BT Postgresql DB Server"
   datacenter            = "ny2"
   lob                   = "CEA"
+  external_facts        = local.facts
   additional_disks      = {
     1 = "50",
-    2 = "50",
+    2 = "60",
   }
 }
 
