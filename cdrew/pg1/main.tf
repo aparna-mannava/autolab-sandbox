@@ -4,7 +4,7 @@ terraform {
 
 locals {
   facts       = {
-    "bt_pg_version" = "13"
+    "bt_pg_version" = "12"
     }
 }
 
