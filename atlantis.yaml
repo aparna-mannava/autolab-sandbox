@@ -68,3 +68,6 @@ projects:
 - name: cfrm-autolab-db
   dir: cfrmcloud/oradb
   workflow: nutanix-backend
+- name: dgb-emversion1
+  dir: oralab/dgbtst9
+  workflow: nutanix-backend
