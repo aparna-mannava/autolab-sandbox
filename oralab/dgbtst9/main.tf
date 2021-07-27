@@ -51,7 +51,6 @@ module "dblab_1" {
   }
 }
 
-
 output "dblab_1" {
   value = {
     "fqdn"  = module.dblab_1.fqdn,
