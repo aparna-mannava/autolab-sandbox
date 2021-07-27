@@ -71,3 +71,6 @@ projects:
 - name: dgb-emversion1
   dir: oralab/dgbtst9
   workflow: nutanix-backend
+- name: dgb-emversion2
+  dir: oralab/dgbtst8
+  workflow: nutanix-backend
