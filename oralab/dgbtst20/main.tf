@@ -1,21 +1,20 @@
 terraform {
   backend "s3" {}
 }
-
 locals {
     facts       = {
-      bt_customer      = ""
-      bt_product       = "cfrmcloud"
-      bt_lob           = "cfrm"
-      bt_tier          = "autolab" //PROD
-      bt_env           = "01"
-      bt_cfrm_version  = "6.1_SP1" // Need to be updated
+      bt_customer      = "fi1888"
+      bt_product       = "dgb"
+      bt_lob           = "CLOUD"
+      bt_tier          = "pr"
+      bt_env           = "2"
       bt_role          = "oradb"
-      bt_infra_cluster = "ny5-azc-ntnx-16"  
+      bt_em_agent      = "13.4.0.0"
+      bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
-      hostgroup        = "BT CFRM CLOUD Oracle DB Servers"
-      environment      = "feature_CFRMCLOUD_1293_puppet_monitoring_sql_exporter" //
-      hostname         = "us01vlcfdb"
+      hostgroup        = "BT DGB Oradb Server"
+      environment      = "feature_CLOUD_92713"
+      hostname         = "us01vldbtst36"
     }
     datacenter = {
       name = "ny2"
@@ -27,14 +26,13 @@ locals {
       "bt_tier"         = local.facts.bt_tier
       "bt_env"          = local.facts.bt_env
       "bt_role"         = local.facts.bt_role
-      "bt_cfrm_version" = local.facts.bt_cfrm_version
+      "bt_em_agent"     = local.facts.bt_em_agent
      }
 }
-
 module "dblab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.hostname}lab01" // us01vlcfdblab01.auto.saas-n.com   
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-oradb01"//  cfrmcloud-autolab-ny2-oradb01
+  hostname             = "us01vldbtst36"
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-oralb36"
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   lob                  = local.facts.bt_lob
@@ -44,15 +42,13 @@ module "dblab_1" {
   external_facts       = local.db01prod
   os_version           = "rhel7"
   cpus                 = "4"
-  memory         	   = "12386"
+  memory         	   = "4096"
   additional_disks     = {
-    1 = "300",
-	  2 = "300",
-	  3 = "300",
-	  4 = "300"
+      1 = "200",
+	  2 = "200",
+	  3 = "200"
   }
-} 
-
+}
 output "dblab_1" {
   value = {
     "fqdn"  = module.dblab_1.fqdn,
