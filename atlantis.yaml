@@ -80,4 +80,3 @@ projects:
 - name: dgb-dgbtst20
   dir: oralab/dgbtst20
   workflow: nutanix-backend
-# foo
