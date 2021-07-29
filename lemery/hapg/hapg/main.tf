@@ -13,7 +13,7 @@ locals {
   bt_product      = "btiq"
   lob             = "CEA"
   hostgroup       = "BT HA PG Server"
-  environment     = "feature_CEA_11134_patroni_tde"
+  environment     = "feature_CEA_4699_upgrade_postgres_modules"
   cluster         = "ny5-azc-ntnx-16"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
@@ -40,7 +40,7 @@ module "auto_lae_hapg_0" {
   foreman_hostgroup    = local.hostgroup
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
@@ -59,7 +59,7 @@ module "auto_lae_hapg_1" {
   foreman_environment  = local.environment
   datacenter           = local.datacenter
   lob                  = local.lob
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
