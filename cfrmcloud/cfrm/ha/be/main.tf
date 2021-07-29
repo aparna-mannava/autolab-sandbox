@@ -21,11 +21,11 @@ locals {
       bt_env           = "ic"
       bt_env_id        = local.facts.env_id
       ## BE
-      ic_hostname1     = "us01vlcoic1lb${local.facts.bt_env_id}" ##us01vlcoic1pd01.saas-p.com
-      ic_hostname2     = "us01vlcoic2lb${local.facts.bt_env_id}" ##us01vlcoic2pd01.saas-p.com
-      ic_hostname3     = "us01vlcobt3lb${local.facts.bt_env_id}" ##us01vlcobt3pd01.saas-p.com
-      be_hostname1     = "us01vlcoae1lb${local.facts.bt_env_id}" ##us01vlcoae1pd01.saas-p.com
-      be_hostname2     = "us01vlcoae2lb${local.facts.bt_env_id}" ##us01vlcoae1pd02.saas-p.com
+      ic_hostname1     = "us01vlcoic1lb${local.facts.env_id}" ##us01vlcoic1pd01.saas-p.com
+      ic_hostname2     = "us01vlcoic2lb${local.facts.env_id}" ##us01vlcoic2pd01.saas-p.com
+      ic_hostname3     = "us01vlcobt3lb${local.facts.env_id}" ##us01vlcobt3pd01.saas-p.com
+      be_hostname1     = "us01vlcoae1lb${local.facts.env_id}" ##us01vlcoae1pd01.saas-p.com
+      be_hostname2     = "us01vlcoae2lb${local.facts.env_id}" ##us01vlcoae1pd02.saas-p.com
     }
     datacenter = {
       name = "ny2"
