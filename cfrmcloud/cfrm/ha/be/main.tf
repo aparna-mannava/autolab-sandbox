@@ -11,11 +11,11 @@ locals {
       bt_env           = "be"
       bt_env_id        = "01"
       bt_role          = "app"
-      bt_infra_cluster    = "ny5-azc-ntnx-16"
-      bt_infra_network    = "ny2-autolab-app-ahv"
+      bt_infra_cluster = "ny5-azc-ntnx-16"
+      bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers"
       firewall_group   = "CFRMRD_PPD_BE"
-      environment      = "master"
+      environment      = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
     }
 
     cfrmfacts    = {

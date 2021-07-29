@@ -15,7 +15,7 @@ locals {
       bt_infra_network  = "ny2-autolab-app-ahv"
       hostgroup         = "BT CFRM CLOUD Application Servers"
       firewall_group    = "CFRMRD_PPD_FE"
-      environment       = "master"
+      environment       = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
     }
 
     cfrmfacts    = {
