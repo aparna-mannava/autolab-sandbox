@@ -68,3 +68,9 @@ projects:
 - name: cfrm-autolab-db
   dir: cfrmcloud/oradb
   workflow: nutanix-backend
+- name: cfrm-autolab-ha-be
+  dir: cfrmcloud/cfrm/ha/be
+  workflow: nutanix-backend
+- name: cfrm-autolab-ha-fe
+  dir: cfrmcloud/cfrm/ha/fe
+  workflow: nutanix-backend
