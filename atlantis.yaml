@@ -80,4 +80,9 @@ projects:
 - name: dgb-dgbtst20
   dir: oralab/dgbtst20
   workflow: nutanix-backend
-# foo
+- name: cfrm-autolab-ha-be
+  dir: cfrmcloud/cfrm/ha/be
+  workflow: nutanix-backend
+- name: cfrm-autolab-ha-fe
+  dir: cfrmcloud/cfrm/ha/fe
+  workflow: nutanix-backend
