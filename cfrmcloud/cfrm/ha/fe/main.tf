@@ -12,7 +12,7 @@ locals {
       bt_infra_cluster  = "ny5-azc-ntnx-16"
       bt_infra_network  = "ny2-autolab-app-ahv"
       hostgroup         = "BT CFRM CLOUD Application Servers"
-      firewall_group    = "CFRMRD_PPD_FE"
+      #firewall_group    = "CFRMRD_PPD_FE"
       environment       = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
     }
 
@@ -41,7 +41,7 @@ module "chc-ic-fe-lab01" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  firewall_group       = local.facts.firewall_group// CFRMRD_PR_FE
+  #firewall_group       = local.facts.firewall_group// CFRMRD_PR_FE
   datacenter           = local.datacenter.name
   cpus                 = 8
   memory               = 16000
@@ -59,7 +59,7 @@ module "chc-ic-fe-lab02" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  firewall_group       = local.facts.firewall_group  //     
+  #firewall_group       = local.facts.firewall_group  //     
   datacenter           = local.datacenter.name
   cpus                 = 8
   memory               = 16000
@@ -77,7 +77,7 @@ module "chc-ic-fe-lab03" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE  
+  #firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE  
   datacenter           = local.datacenter.name
   cpus                 = 4
   memory               = 8096

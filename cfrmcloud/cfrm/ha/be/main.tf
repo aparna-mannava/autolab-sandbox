@@ -41,7 +41,7 @@ module "chc-ic-be-lab01" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  firewall_group       = local.facts.firewall_group
+  #firewall_group       = local.facts.firewall_group
   datacenter           = local.datacenter.name
   cpus                 = 8
   memory               = 32000
@@ -60,7 +60,7 @@ module "chc-ic-be-lab02" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  firewall_group       = local.facts.firewall_group   // AE 
+  #firewall_group       = local.facts.firewall_group   // AE 
   datacenter           = local.datacenter.name
   cpus                 = 8
   memory               = 32000
