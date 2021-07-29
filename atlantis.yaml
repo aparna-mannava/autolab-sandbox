@@ -15,6 +15,9 @@ projects:
   dir: ydelanoe/psql/secondary/hapg
 - name: ydelanoe-hbr
   dir: ydelanoe/harbor
+- name: bvarghese-oracle
+  dir: bvarghese/oracle
+  workflow: nutanix-backend
 - name: eitantest-cfrm
   dir: eitantest/cfrm
   workflow: nutanix-backend
