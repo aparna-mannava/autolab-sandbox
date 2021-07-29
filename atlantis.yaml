@@ -319,9 +319,6 @@ projects:
 - name: lemery-ccc2
   dir: lemery/ccc2
   workflow: nutanix-backend
-- name: eitantest-cfrm
-  dir: eitantest/cfrm
-  workflow: nutanix-backend
 - name: dgb-dgbtst20
   dir: oralab/dgbtst20
   workflow: nutanix-backend
