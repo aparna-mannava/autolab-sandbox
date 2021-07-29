@@ -2,6 +2,9 @@
 version: 3
 automerge: true
 projects:
+- name: lemery-ccc
+  dir: lemery/ccc
+  workflow: nutanix-backend
 - name: ydelanoe-etcd1
   dir: ydelanoe/psql/primary/etcd
 - name: ydelanoe-hapg1
