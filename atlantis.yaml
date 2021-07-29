@@ -257,6 +257,9 @@ projects:
 - name: dgbtst1-fsfo
   dir: oralab/dgbtst1
   workflow: nutanix-backend
+- name: awrwh-db
+  dir: oralab/awrwh
+  workflow: nutanix-backend
 - name: cfrm-autolab-elk
   dir: cfrmcloud/ELK/cluster
   workflow: nutanix-backend
