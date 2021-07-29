@@ -6,10 +6,8 @@ locals {
     facts       = {
       bt_customer      = "chc"
       bt_product       = "cfrmcloud"
-      bt_lob           = "cfrm"
       bt_tier          = "autolab"
-      bt_env           = "be"
-      bt_env_id        = "01"
+      env_id           = "01"
       bt_role          = "app"
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
@@ -19,6 +17,9 @@ locals {
     }
 
     cfrmfacts    = {
+      bt_lob           = "cfrm"
+      bt_env           = "ic"
+      bt_env_id        = local.facts.env_id
       ## BE
       ic_hostname1     = "us01vlcoic1lb${local.facts.bt_env_id}" ##us01vlcoic1pd01.saas-p.com
       ic_hostname2     = "us01vlcoic2lb${local.facts.bt_env_id}" ##us01vlcoic2pd01.saas-p.com
