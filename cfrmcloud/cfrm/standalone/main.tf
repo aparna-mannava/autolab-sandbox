@@ -9,16 +9,16 @@ locals {
     id   = "ny2"
   }
 
-  hostname    = "us01vlcfrm001"
-  alias       = "us01vlbasecfrm001"
+  hostname    = "us01vlcfrm051"
+  alias       = "us01vlbasecfrm051"
   silo        = "autolab"
-  hostgroup   = "BT CFRM Eitan Test"
+  hostgroup   = "BT CFRM CLOUD Application Standalone"
   facts       = {
     "bt_product"  = "cfrmcloud"
     "bt_role" = "cfrm"
     "bt_tier" = "autolab"
     "bt_lob" = "cfrm"
-    "bt_db_url" = "us01vlcfdblab01.auto.saas-n.com:1560/CFRMAU01"
+    #"bt_db_url" = "us01vlcfdblab01.auto.saas-n.com:1560/CFRMAU01"
     # "bt_artemis_version" = "2.11.0"
     # "bt_es_version" = "7.8.0"
     # "bt_apacheds_version" = "2.0.0_M24"
@@ -38,8 +38,8 @@ module "cfrm001" {
   bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
-  cpus                = "4"
-  memory              = "8096"
+  cpus                = "8"
+  memory              = "32000"
   lob                 = "cfrm"
   external_facts      = local.facts
   foreman_environment = local.environment
