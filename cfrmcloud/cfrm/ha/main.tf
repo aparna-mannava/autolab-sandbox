@@ -61,7 +61,7 @@ locals {
 
 module "chc-ic-be-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.facts.cfrmfacts_be.be_hostname1 
+  hostname             = local.facts.be_host1
   alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_be.bt_tier}-${local.env_id}-${local.datacenter.name}-be01"
   bt_infra_network     = local.facts.bt_infra_network // 
   bt_infra_cluster     = local.facts.bt_infra_cluster
@@ -81,7 +81,7 @@ module "chc-ic-be-lab01" {
 
 module "chc-ic-be-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.facts.cfrmfacts_be.be_hostname2
+  hostname             = local.facts.be_host2
   alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_be.bt_tier}-${local.env_id}-${local.datacenter.name}-be02"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
@@ -101,8 +101,8 @@ module "chc-ic-be-lab02" {
 
 module "chc-ic-fe-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.facts.cfrmfacts_ic.ic_hostname1
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.env_id}-${local.datacenter.name}-ic01"
+  hostname             = local.facts.ic_host1
+  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic01"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -120,8 +120,8 @@ module "chc-ic-fe-lab01" {
 }
 module "chc-ic-fe-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.facts.cfrmfacts_ic.ic_hostname2
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.env_id}-${local.datacenter.name}-ic02"
+  hostname             = local.facts.ic_host2
+  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic02"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -139,8 +139,8 @@ module "chc-ic-fe-lab02" {
 }
 module "chc-ic-fe-lab03" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.facts.cfrmfacts_ic.ic_hostname3
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.env_id}-${local.datacenter.name}-btic01"
+  hostname             = local.facts.ic_host3
+  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-btic01"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
