@@ -9,7 +9,7 @@ locals {
       tier             = "autolab"
       env_id           = "01"
       bt_role          = "app"
-      cfrm_version     = "V590SP2"
+      cfrm_version     = "5901_SP2"
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers"
@@ -29,7 +29,7 @@ locals {
       bt_lob           = "cfrm"
       bt_env           = "ic"
       bt_env_id        = local.facts.env_id
-      bt_ic_version    = local.cfrm_version
+      bt_ic_version    = local.facts.cfrm_version
       ic_hostname1     = ic_host1
       ic_hostname2     = ic_host2
       ic_hostname3     = ic_host3
@@ -44,7 +44,7 @@ locals {
       bt_lob           = "cfrm"
       bt_env           = "be"
       bt_env_id        = local.facts.env_id
-      bt_ic_version    = local.cfrm_version
+      bt_ic_version    = local.facts.cfrm_version
       ic_hostname1     = ic_host1
       ic_hostname2     = ic_host2
       ic_hostname3     = ic_host3
