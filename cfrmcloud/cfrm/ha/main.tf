@@ -73,7 +73,7 @@ module "chc-ic-be-lab01" {
   cpus                 = 8
   memory               = 32000
   os_version           = "rhel7"
-  external_facts       = local.facts.cfrmfacts_be
+  external_facts       = local.cfrmfacts_be
   additional_disks     = {
     1 = "150"
   }
@@ -93,7 +93,7 @@ module "chc-ic-be-lab02" {
   cpus                 = 8
   memory               = 32000
   os_version           = "rhel7"
-  external_facts       = local.facts.cfrmfacts_be
+  external_facts       = local.cfrmfacts_be
   additional_disks     = {
     1 = "150"
   }
@@ -113,7 +113,7 @@ module "chc-ic-fe-lab01" {
   cpus                 = 8
   memory               = 16000
   os_version           = "rhel7"
-  external_facts       = local.facts.cfrmfacts_ic
+  external_facts       = local.cfrmfacts_ic
   additional_disks     = {
     1 = "150"
   }
@@ -132,7 +132,7 @@ module "chc-ic-fe-lab02" {
   cpus                 = 8
   memory               = 16000
   os_version           = "rhel7"
-  external_facts       = local.facts.cfrmfacts_ic
+  external_facts       = local.cfrmfacts_ic
   additional_disks     = {
     1 = "150"
   }
@@ -151,7 +151,7 @@ module "chc-ic-fe-lab03" {
   cpus                 = 4
   memory               = 8096
   os_version           = "rhel7"
-  external_facts       = local.facts.cfrmfacts_ic
+  external_facts       = local.cfrmfacts_ic
   additional_disks     = {
     1 = "150"
   }
