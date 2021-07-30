@@ -13,7 +13,7 @@ locals {
   bt_product      = "btiq"
   lob             = "CEA"
   hostgroup       = "BT HA PG Server"
-  environment     = "feature_CEA_4699_upgrade_postgres_modules"
+  environment     = "feature_CEA_4699_TDE_cont"
   cluster         = "ny5-azc-ntnx-16"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
