@@ -274,6 +274,7 @@ projects:
   workflow: nutanix-backend
 - name: cfrmiso-mgmt-autolab
   dir: cfrmcloud/nfs
+  workflow: nutanix-backend
 - name: dgbtst2-fsfo
   dir: oralab/dgbtst2
   workflow: nutanix-backend
@@ -322,4 +323,9 @@ projects:
 - name: dgb-dgbtst20
   dir: oralab/dgbtst20
   workflow: nutanix-backend
-# foo
+- name: cfrm-autolab-ha-be
+  dir: cfrmcloud/cfrm/ha/be
+  workflow: nutanix-backend
+- name: cfrm-autolab-ha-fe
+  dir: cfrmcloud/cfrm/ha/fe
+  workflow: nutanix-backend
