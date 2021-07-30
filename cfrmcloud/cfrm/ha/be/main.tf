@@ -23,7 +23,7 @@ locals {
       bt_lob           = "cfrm"
       bt_env           = "ic"
       bt_env_id        = local.facts.env_id
-      ic_version       = "V590_SP2"
+      ic_version       = "V590SP2"
       ## BE
       ic_hostname1     = "us01vlcoic1lb${local.facts.env_id}" ##us01vlcoic1pd01.saas-p.com
       ic_hostname2     = "us01vlcoic2lb${local.facts.env_id}" ##us01vlcoic2pd01.saas-p.com
