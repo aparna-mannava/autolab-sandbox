@@ -3,7 +3,8 @@ terraform {
 }
 
 locals {
-   facts       = {
+   env_id              = "01"
+   facts     = {
       customer         = "chc"
       product          = "cfrmcloud"
       tier             = "autolab"
@@ -15,11 +16,11 @@ locals {
       hostgroup        = "BT CFRM CLOUD Application Servers"
       firewall_group   = "CFRMRD_PPD_BE"
       environment      = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
-      ic_host1         = "us01vlcoic1lb${local.facts.env_id}" ##us01vlcoic1pd01.saas-p.com
-      ic_host2         = "us01vlcoic2lb${local.facts.env_id}" ##us01vlcoic2pd01.saas-p.com  //
-      ic_host3         = "us01vlcobt3lb${local.facts.env_id}" ##us01vlcobt3pd01.saas-p.com
-      be_host1         = "us01vlcoae1lb${local.facts.env_id}" ##us01vlcoae1pd01.saas-p.com
-      be_host2         = "us01vlcoae2lb${local.facts.env_id}" ##us01vlcoae1pd02.saas-p.com
+      ic_host1         = "us01vlcoic1lb${local.env_id}" ##us01vlcoic1pd01.saas-p.com
+      ic_host2         = "us01vlcoic2lb${local.env_id}" ##us01vlcoic2pd01.saas-p.com  //
+      ic_host3         = "us01vlcobt3lb${local.env_id}" ##us01vlcobt3pd01.saas-p.com
+      be_host1         = "us01vlcoae1lb${local.env_id}" ##us01vlcoae1pd01.saas-p.com
+      be_host2         = "us01vlcoae2lb${local.env_id}" ##us01vlcoae1pd02.saas-p.com
     }
     ## IC-FE
     cfrmfacts_ic    = {
@@ -28,7 +29,7 @@ locals {
       bt_tier          = local.facts.tier
       bt_lob           = "cfrm"
       bt_env           = "ic"
-      bt_env_id        = local.facts.env_id
+      bt_env_id        = local.env_id
       bt_ic_version    = local.facts.cfrm_version
       ic_hostname1     = local.facts.ic_host1
       ic_hostname2     = local.facts.ic_host2
@@ -43,7 +44,7 @@ locals {
       bt_tier          = local.facts.tier
       bt_lob           = "cfrm"
       bt_env           = "be"
-      bt_env_id        = local.facts.env_id
+      bt_env_id        = local.env_id
       bt_ic_version    = local.facts.cfrm_version
       ic_hostname1     = local.facts.ic_host1
       ic_hostname2     = local.facts.ic_host2
@@ -61,7 +62,7 @@ locals {
 module "chc-ic-be-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.cfrmfacts_be.be_hostname1 
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_be.bt_tier}-${local.facts.env_id}-${local.datacenter.name}-be01"
+  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_be.bt_tier}-${local.env_id}-${local.datacenter.name}-be01"
   bt_infra_network     = local.facts.bt_infra_network // 
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -81,7 +82,7 @@ module "chc-ic-be-lab01" {
 module "chc-ic-be-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.cfrmfacts_be.be_hostname2
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_be.bt_tier}-${local.facts.env_id}-${local.datacenter.name}-be02"
+  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_be.bt_tier}-${local.env_id}-${local.datacenter.name}-be02"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -101,7 +102,7 @@ module "chc-ic-be-lab02" {
 module "chc-ic-fe-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.cfrmfacts_ic.ic_hostname1
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.facts.env_id}-${local.datacenter.name}-ic01"
+  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.env_id}-${local.datacenter.name}-ic01"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -120,7 +121,7 @@ module "chc-ic-fe-lab01" {
 module "chc-ic-fe-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.cfrmfacts_ic.ic_hostname2
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.facts.env_id}-${local.datacenter.name}-ic02"
+  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.env_id}-${local.datacenter.name}-ic02"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -139,7 +140,7 @@ module "chc-ic-fe-lab02" {
 module "chc-ic-fe-lab03" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.cfrmfacts_ic.ic_hostname3
-  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.facts.env_id}-${local.datacenter.name}-btic01"
+  alias                = "cfrm-cloud-chc-${local.facts.cfrmfacts_ic.bt_tier}-${local.env_id}-${local.datacenter.name}-btic01"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
