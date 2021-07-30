@@ -3,29 +3,34 @@ terraform {
 }
 
 locals {
-    facts       = {
-      bt_customer       = "chc"
-      bt_product        = "cfrmcloud"
-      bt_tier           = "autolab"
-      env_id            = "01"
-      bt_role           = "app"
-      bt_infra_cluster  = "ny5-azc-ntnx-16"
-      bt_infra_network  = "ny2-autolab-app-ahv"
-      hostgroup         = "BT CFRM CLOUD Application Servers"
-      #firewall_group    = "CFRMRD_PPD_FE"
-      environment       = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
+   facts       = {
+      customer         = "chc"
+      product          = "cfrmcloud"
+      tier             = "autolab"
+      env_id           = "01"
+      bt_role          = "app"
+      bt_infra_cluster = "ny5-azc-ntnx-16"
+      bt_infra_network = "ny2-autolab-app-ahv"
+      hostgroup        = "BT CFRM CLOUD Application Servers"
+      firewall_group   = "CFRMRD_PPD_BE"
+      environment      = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
     }
 
     cfrmfacts    = {
+      bt_customer      = local.facts.customer
+      bt_product       = local.facts.product
+      bt_tier          = local.facts.tier
       bt_lob           = "cfrm"
       bt_env           = "ic"
       bt_env_id        = local.facts.env_id
-      ## IC
+      bt_ic_version    = "V590SP2"
+      ## BE
       ic_hostname1     = "us01vlcoic1lb${local.facts.env_id}" ##us01vlcoic1pd01.saas-p.com
       ic_hostname2     = "us01vlcoic2lb${local.facts.env_id}" ##us01vlcoic2pd01.saas-p.com
       ic_hostname3     = "us01vlcobt3lb${local.facts.env_id}" ##us01vlcobt3pd01.saas-p.com
       be_hostname1     = "us01vlcoae1lb${local.facts.env_id}" ##us01vlcoae1pd01.saas-p.com
       be_hostname2     = "us01vlcoae2lb${local.facts.env_id}" ##us01vlcoae1pd02.saas-p.com
+    }
     }
     datacenter = {
       name = "ny2"
