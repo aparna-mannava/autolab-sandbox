@@ -21,6 +21,7 @@ locals {
       ic_host3         = "us01vlcobt3lb${local.env_id}" ##us01vlcobt3pd01.saas-p.com
       be_host1         = "us01vlcoae1lb${local.env_id}" ##us01vlcoae1pd01.saas-p.com
       be_host2         = "us01vlcoae2lb${local.env_id}" ##us01vlcoae1pd02.saas-p.com
+      bt_
     }
     ## IC-FE
     cfrmfacts_ic    = {
@@ -63,7 +64,7 @@ module "chc-ic-be-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.be_host1
   alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be01"
-  bt_infra_network     = local.facts.bt_infra_network // 
+  bt_infra_network     = local.facts.bt_infra_network   // 
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
