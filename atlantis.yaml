@@ -330,5 +330,5 @@ projects:
   dir: cfrmcloud/cfrm/ha/fe
   workflow: nutanix-backend
 - name: cfrm-autolab-ha
-  dir: cfrmcloud/cfrm/ha/fe
+  dir: cfrmcloud/cfrm/ha
   workflow: nutanix-backend
