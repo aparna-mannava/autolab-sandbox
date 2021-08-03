@@ -9,6 +9,21 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrm-autolab-nfs
+  dir: cfrmcloud/nfs
+  workflow: nutanix-backend
+- name: cfrm-autolab-elk-chc
+  dir: cfrmcloud/elastic/chc
+  workflow: nutanix-backend
+- name: cfrm-autolab-db
+  dir: cfrmcloud/central_db
+  workflow: nutanix-backend
+- name: cfrm-autolab-ha ##001
+  dir: cfrmcloud/cfrm/ha/001
+  workflow: nutanix-backend
+- name: cfrm-autolab-ha-00 ##00
+  dir: cfrmcloud/cfrm/ha/000
+  workflow: nutanix-backend
 # D
 # E
 # F

@@ -3,24 +3,23 @@ terraform {
 }
 
 locals {
-   env_id              = "01"
+   env_id              = "00"
    facts     = {
       customer         = "chc"
       product          = "cfrmcloud"
       tier             = "autolab"
-      env_id           = "01"
       bt_role          = "app"
-      cfrm_version     = "5901_SP2" // Mandatory
+      cfrm_version     = "5901_SP4" // Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers"
       firewall_group   = "CFRMRD_PPD_BE"
       environment      = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
-      ic_host1         = "us01vlcoic1lb${local.env_id}" ##us01vlcoic1pd01.saas-p.com
-      ic_host2         = "us01vlcoic2lb${local.env_id}" ##us01vlcoic2pd01.saas-p.com  //
-      ic_host3         = "us01vlcobt3lb${local.env_id}" ##us01vlcobt3pd01.saas-p.com
-      be_host1         = "us01vlcoae1lb${local.env_id}" ##us01vlcoae1pd01.saas-p.com
-      be_host2         = "us01vlcoae2lb${local.env_id}" ##us01vlcoae1pd02.saas-p.com
+      ic_host1         = "us01vl${local.env_id}coiclb1" ##us01vl01coicpd1.saas-p.com
+      ic_host2         = "us01vl${local.env_id}coiclb2" ##us01vl01coicpd2.saas-p.com  //
+      ic_host3         = "us01vl${local.env_id}cobtlb3" ##us01vl01cobtpd3.saas-p.com
+      be_host1         = "us01vl${local.env_id}coaelb1" ##us01vl01coaepd1.saas-p.com
+      be_host2         = "us01vl${local.env_id}coaelb2" ##us01vl01coaepd2.saas-p.com
     }
     ## IC-FE
     cfrmfacts_ic    = {
