@@ -34,6 +34,7 @@ module "base_server_1" {
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   additional_disks     = local.disks
+  external_facts       = local.facts
   lob                  = "CEA"
 }
 
