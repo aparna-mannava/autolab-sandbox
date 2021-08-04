@@ -36,6 +36,9 @@ projects:
 - name: lemery-hapg-hapg
   dir: lemery/hapg/hapg
   workflow: nutanix-backend
+- name: lemery-test
+  dir: lemery/test
+  workflow: nutanix-backend
 # M
 # N
 # O
