@@ -36,6 +36,10 @@ projects:
 - name: lemery-hapg-hapg
   dir: lemery/hapg/hapg
   workflow: nutanix-backend
+- name: lemery-test
+  dir: lemery/test
+  terraform_version: 1.0.0
+  workflow: nutanix-backend
 # M
 # N
 # O
