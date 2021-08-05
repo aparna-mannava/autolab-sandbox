@@ -54,4 +54,6 @@ projects:
 # Y
 # Z
 - name: sunil.yadav-btiq
-  dir: sunil.yadav/btiq  
+  dir: sunil.yadav/btiq
+- name: sunil.yadav-btiq-new
+  dir: sunil.yadav/btiq-new  
