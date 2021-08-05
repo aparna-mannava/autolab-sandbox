@@ -29,7 +29,7 @@ module "datascience-vm" {
   external_facts = local.facts
 }
 
-module "datascience-vm" {
+module "datascience-vm2" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "us01vlbtiqds007"
   bt_infra_network    = "ny2-autolab-app-ahv"
@@ -53,5 +53,13 @@ output "datascience-vm" {
     "fqdn"  = module.datascience-vm.fqdn,
     "alias" = module.datascience-vm.alias,
     "ip"    = module.datascience-vm.ip,
+  }
+}
+
+output "datascience-vm2" {
+  value = {
+    "fqdn"  = module.datascience-vm2.fqdn,
+    "alias" = module.datascience-vm2.alias,
+    "ip"    = module.datascience-vm2.ip,
   }
 }
