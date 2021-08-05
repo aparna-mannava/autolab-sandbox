@@ -21,7 +21,7 @@ module "datascience-vm" {
   foreman_hostgroup   = "BT Base Server"
   datacenter          = "ny2"
   lob                 = "btiq"
-  cpus                = "2"
+  cpus                = "1"
   memory              = "10240"
   additional_disks = {
     1 = "200"
