@@ -21,14 +21,13 @@ module "datascience-vm" {
   foreman_hostgroup   = "BT Base Server"
   datacenter          = "ny2"
   lob                 = "btiq"
-  cpus                = "1"
+  cpus                = "2"
   memory              = "10240"
   additional_disks = {
     1 = "200"
   }
   external_facts = local.facts
 }
-
 output "datascience-vm" {
   value = {
     "fqdn"  = module.datascience-vm.fqdn,
