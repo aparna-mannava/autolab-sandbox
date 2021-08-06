@@ -59,4 +59,5 @@ projects:
   dir: sunil.yadav/btiq-new 
 - name: OraclePSU
   dir: OraclePSU/dgb
+  workflow: nutanix-backend
 # foo
