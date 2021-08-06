@@ -56,5 +56,8 @@ projects:
 - name: sunil.yadav-btiq
   dir: sunil.yadav/btiq
 - name: sunil.yadav-btiq-new
-  dir: sunil.yadav/btiq-new  
+  dir: sunil.yadav/btiq-new 
+- name: OraclePSU
+  dir: OraclePSU/dgb
+  workflow: nutanix-backend
 # foo
