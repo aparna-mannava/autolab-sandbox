@@ -12,10 +12,10 @@ locals {
 
 module "datascience-vm" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "us01vlbtiqds006"
+  hostname            = "us01vlbtiqds008"
   bt_infra_network    = "ny2-autolab-app-ahv"
   bt_infra_cluster    = "ny5-azc-ntnx-16"
-  alias               = "btiq-${local.facts.bt_tier}${local.facts.bt_env}-ds05"
+  alias               = "btiq-${local.facts.bt_tier}${local.facts.bt_env}-ds08"
   os_version          = "rhel8"
   foreman_environment = "master"
   foreman_hostgroup   = "BT Base Server"
