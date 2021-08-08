@@ -3,9 +3,9 @@ terraform {
 }
 
 locals {
-    hostname    = "us01vlcoel"
+    hostname    = "us01vlcfel"
     facts       = {
-      bt_customer             = "chc"
+      bt_customer             = ""
       bt_product              = "cfrmcloud"
       bt_lob                  = "cfrm"
       bt_tier                 = "autolab" //    LAB
@@ -66,10 +66,10 @@ locals {
     }
 }
 
-module "elk_chc_1" {
+module "elasticsearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}01-au"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk01"// cfrmcloud-uat-gb00-elk01
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk01"// cfrmcloud-uat-us01vlcfel-gb00-elk01
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   #firewall_group       = local.facts.firewall_group
@@ -87,7 +87,7 @@ module "elk_chc_1" {
   }
 } 
 
-module "elk_chc_2" {
+module "elasticsearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}02-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk02"// cfrmcloud-uat-gb00-elk02
@@ -108,7 +108,7 @@ module "elk_chc_2" {
   }
 }
 
-module "elk_chc_3" {
+module "elasticsearch_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}03-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk03"//cfrmcloud-uat-gb00-elk03
@@ -129,26 +129,26 @@ module "elk_chc_3" {
   }
 } 
 
-output "elk_chc_1" {
+output "elasticsearch_1" {
   value = {
-    "fqdn"  = module.elk_chc_1.fqdn,
-    "alias" = module.elk_chc_1.alias,
-    "ip"    = module.elk_chc_1.ip,
+    "fqdn"  = module.elasticsearch_1.fqdn,
+    "alias" = module.elasticsearch_1.alias,
+    "ip"    = module.elasticsearch_1.ip,
   }
 }
 
-output "elk_chc_2" {
+output "elasticsearch_2" {
   value = {
-    "fqdn"  = module.elk_chc_2.fqdn,
-    "alias" = module.elk_chc_2.alias,
-    "ip"    = module.elk_chc_2.ip,
+    "fqdn"  = module.elasticsearch_2.fqdn,
+    "alias" = module.elasticsearch_2.alias,
+    "ip"    = module.elasticsearch_2.ip,
   }
 }
 
-output "elk_chc_3" {
+output "elasticsearch_3" {
   value = {
-    "fqdn"  = module.elk_chc_3.fqdn,
-    "alias" = module.elk_chc_3.alias,
-    "ip"    = module.elk_chc_3.ip,
+    "fqdn"  = module.elasticsearch_3.fqdn,
+    "alias" = module.elasticsearch_3.alias,
+    "ip"    = module.elasticsearch_3.ip,
   }
 }
