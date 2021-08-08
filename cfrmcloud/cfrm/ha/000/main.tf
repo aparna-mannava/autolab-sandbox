@@ -9,7 +9,7 @@ locals {
       product          = "cfrmcloud"
       tier             = "autolab"
       bt_role          = "app"
-      cfrm_version     = "5901_SP4" // rebuild    Mandatory
+      cfrm_version     = "5901_SP4" // rebuild    Mandatory   
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers"
