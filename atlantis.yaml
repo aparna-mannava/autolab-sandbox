@@ -75,5 +75,3 @@ projects:
 - name: kshah
   dir: kshah/dgb
   workflow: nutanix-backend
-
-# foo
