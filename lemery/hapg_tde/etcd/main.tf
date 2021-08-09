@@ -3,8 +3,8 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vllabed98"]
-  etcd_hosts_p    = ["'us01vllabed98.auto.saas-n.com'"]
+  etcd_servers    = ["us01vllabed77"]
+  etcd_hosts_p    = ["'us01vllabed77.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
   tier            = "auto"
   bt_env          = "1"
