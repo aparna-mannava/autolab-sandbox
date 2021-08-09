@@ -15,6 +15,9 @@ projects:
 - name: cfrm-autolab-elk-chc
   dir: cfrmcloud/elastic/chc
   workflow: nutanix-backend
+- name: cfrm-autolab-elk
+  dir: cfrmcloud/elastic/cluster
+  workflow: nutanix-backend
 - name: cfrm-autolab-db
   dir: cfrmcloud/central_db
   workflow: nutanix-backend
@@ -65,4 +68,10 @@ projects:
 - name: sunil.yadav-btiq
   dir: sunil.yadav/btiq
 - name: sunil.yadav-btiq-new
-  dir: sunil.yadav/btiq-new  
+  dir: sunil.yadav/btiq-new
+- name: OraclePSU
+  dir: OraclePSU/dgb
+  workflow: nutanix-backend
+- name: kshah
+  dir: kshah/dgb
+  workflow: nutanix-backend
