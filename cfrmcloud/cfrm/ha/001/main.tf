@@ -10,14 +10,15 @@ locals {
       tier             = "autolab"
       env_id           = "01"
       bt_role          = "app"
-      cfrm_version     = "5901_SP2" // Mandatory
+      bt_lob           = "CFRM"
+      cfrm_version     = "5901_SP4" // Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers"
       firewall_group   = "CFRMRD_PPD_BE"
       environment      = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
       ic_host1         = "us01vl${local.env_id}coiclb1" ##us01vl01coicpd1.saas-p.com
-      ic_host2         = "us01vl${local.env_id}coiclb2" ##us01vl01coicpd2.saas-p.com  //
+      ic_host2         = "us01vl${local.env_id}coiclb2" ##us01vl01coicpd2.saas-p.com  //  
       ic_host3         = "us01vl${local.env_id}cobtlb3" ##us01vl01cobtpd3.saas-p.com
       be_host1         = "us01vl${local.env_id}coaelb1" ##us01vl01coaepd1.saas-p.com
       be_host2         = "us01vl${local.env_id}coaelb2" ##us01vl01coaepd2.saas-p.com
@@ -27,7 +28,7 @@ locals {
       bt_customer      = local.facts.customer
       bt_product       = local.facts.product
       bt_tier          = local.facts.tier
-      bt_lob           = "cfrm"
+      bt_lob           = "CFRM"
       bt_env           = "ic"
       bt_env_id        = local.env_id
       bt_ic_version    = local.facts.cfrm_version
@@ -42,7 +43,7 @@ locals {
       bt_customer      = local.facts.customer
       bt_product       = local.facts.product
       bt_tier          = local.facts.tier
-      bt_lob           = "cfrm"
+      bt_lob           = "CFRM"
       bt_env           = "be"
       bt_env_id        = local.env_id
       bt_ic_version    = local.facts.cfrm_version
@@ -67,7 +68,7 @@ module "chc-ic-be-lab01" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group
   datacenter           = local.datacenter.name
   cpus                 = 8
@@ -87,7 +88,7 @@ module "chc-ic-be-lab02" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group   // AE 
   datacenter           = local.datacenter.name
   cpus                 = 8
@@ -107,7 +108,7 @@ module "chc-ic-fe-lab01" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group// CFRMRD_PR_FE
   datacenter           = local.datacenter.name
   cpus                 = 8
@@ -126,7 +127,7 @@ module "chc-ic-fe-lab02" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group  // 
   datacenter           = local.datacenter.name
   cpus                 = 8
@@ -145,7 +146,7 @@ module "chc-ic-fe-lab03" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE  
   datacenter           = local.datacenter.name
   cpus                 = 4
