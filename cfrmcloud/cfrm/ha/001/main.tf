@@ -178,39 +178,39 @@ module "chc-ic-01-fe-lab03" {
 
 output "chc-ic-01-be-lab01" {
   value = {
-    "fqdn"  = module.chc-ic-be-lab01.fqdn,
-    "alias" = module.chc-ic-be-lab01.alias,
-    "ip"    = module.chc-ic-be-lab01.ip,
+    "fqdn"  = module.chc-ic-01-be-lab01.fqdn,
+    "alias" = module.chc-ic-01-be-lab01.alias,
+    "ip"    = module.chc-ic-01-be-lab01.ip,
   }
 }
 
 output "chc-ic-01-be-lab02" {
   value = {
-    "fqdn"  = module.chc-ic-be-lab02.fqdn,
-    "alias" = module.chc-ic-be-lab02.alias,
-    "ip"    = module.chc-ic-be-lab02.ip,
+    "fqdn"  = module.chc-ic-01-be-lab02.fqdn,
+    "alias" = module.chc-ic-01-be-lab02.alias,
+    "ip"    = module.chc-ic-01-be-lab02.ip,
   }
 }
 output "chc-ic-01-fe-lab01" {
   value = {
-    "fqdn"  = module.chc-ic-fe-lab01.fqdn,
-    "alias" = module.chc-ic-fe-lab01.alias,
-    "ip"    = module.chc-ic-fe-lab01.ip,
+    "fqdn"  = module.chc-ic-01-fe-lab01.fqdn,
+    "alias" = module.chc-ic-01-fe-lab01.alias,
+    "ip"    = module.chc-ic-01-fe-lab01.ip,
   }
 }
 
 output "chc-ic-01-fe-lab02" {
   value = {
-    "fqdn"  = module.chc-ic-fe-lab02.fqdn,
-    "alias" = module.chc-ic-fe-lab02.alias,
-    "ip"    = module.chc-ic-fe-lab02.ip,
+    "fqdn"  = module.chc-ic-01-fe-lab02.fqdn,
+    "alias" = module.chc-ic-01-fe-lab02.alias,
+    "ip"    = module.chc-ic-01-fe-lab02.ip,
   }
 }
 
 output "chc-ic-01-fe-lab03" {
   value = {
-    "fqdn"  = module.chc-ic-fe-lab03.fqdn,
-    "alias" = module.chc-ic-fe-lab03.alias,
-    "ip"    = module.chc-ic-fe-lab03.ip,
+    "fqdn"  = module.chc-ic-01-fe-lab03.fqdn,
+    "alias" = module.chc-ic-01-fe-lab03.alias,
+    "ip"    = module.chc-ic-01-fe-lab03.ip,
   }
 }
