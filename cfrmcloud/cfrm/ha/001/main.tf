@@ -54,7 +54,7 @@ locals {
       ic_hostname3     = local.facts.ic_host3
       be_hostname1     = local.facts.be_host1
       be_hostname2     = local.facts.be_host2
-      bt_cfrm_db       = cfrm_db
+      bt_cfrm_db       = local.cfrm_db
       # bt_db_host       = local.facts.db_host
       # bt_db_sid        = local.facts.db_sid
       # bt_db_re_usr     = local.facts.db_re_usr
@@ -76,7 +76,7 @@ locals {
       ic_hostname3     = local.facts.ic_host3
       be_hostname1     = local.facts.be_host1
       be_hostname2     = local.facts.be_host2
-      bt_cfrm_db       = cfrm_db
+      bt_cfrm_db       = local.cfrm_db
     }
   
     datacenter = {
