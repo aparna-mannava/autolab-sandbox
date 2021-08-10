@@ -31,6 +31,9 @@ projects:
 # E
 # F
 # G
+- name: gnewbury-fwautomation
+  dir: gnewbury/fwautomation
+  workflow: nutanix-backend
 # H
 # I
 # J
