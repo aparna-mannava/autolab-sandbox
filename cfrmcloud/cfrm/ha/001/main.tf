@@ -10,6 +10,7 @@ locals {
       tier             = "autolab"
       env_id           = "01"
       bt_role          = "app"
+      bt_lob           = "CFRM"
       cfrm_version     = "5901_SP4" // Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
