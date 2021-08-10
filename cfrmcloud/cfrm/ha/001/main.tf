@@ -31,13 +31,13 @@ locals {
     
     ### DB ###
       cfrm_db = {
-          db_host         = "us01vlcfdblab01.auto.saas-n.com"
-          db_sid          = "CFRMAU01"
-          db_port         = "1560"
-          db_re_usr       = "CHC_RE_LAB_${local.env_id}"
-          db_cld_usr      = "CHC_CLD_LAB_${local.env_id}"
-          db_stg_usr      = "CHC_STG_LAB_${local.env_id}"
-          db_jobs_usr     = "CHC_JB_LAB_${local.env_id}"
+          db_host         = "us01vlcfdblab01.auto.saas-n.com" # 0
+          db_sid          = "CFRMAU01"                        # 1
+          db_port         = "1560"                            # 2
+          db_re_usr       = "CHC_RE_LAB_${local.env_id}"      # 3
+          db_cld_usr      = "CHC_CLD_LAB_${local.env_id}"     # 4
+          db_stg_usr      = "CHC_STG_LAB_${local.env_id}"     # 5
+          db_jobs_usr     = "CHC_JB_LAB_${local.env_id}"      # 6
       }
 
     ## IC-FE
