@@ -16,6 +16,10 @@ locals {
     "bt_role"    = "test"
     "bt_tier"    = "autolab"
   }
+  firewall_groups = [
+    "test_group_a",
+    "test_group_b"
+  ]
 }
 
 module "base_server_1" {
@@ -31,6 +35,7 @@ module "base_server_1" {
   datacenter          = local.datacenter
   external_facts      = local.facts
   lob                 = "CLOUD"
+  firewall_groups     = local.firewall_groups
 }
 
 output "base_server_1" {
