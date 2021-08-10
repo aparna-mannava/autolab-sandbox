@@ -22,7 +22,7 @@ locals {
     cfrm_hosts = {
           ic_host1         = "us01vl${local.env_id}coicau1" ##us01vl01coicpd1.saas-p.com
           ic_host2         = "us01vl${local.env_id}coicau2" ##us01vl01coicpd2.saas-p.com    
-          ic_host3         = "us01vl${local.env_id}cobtau3" ##us01vl01cobtpd3.saas-p.com // ONLY for C.Hoare  
+          ic_host3         = "us01vl${local.env_id}cobtau3" ##us01vl01cobtpd3.saas-p.com // ONLY for C.Hoare    
           be_host1         = "us01vl${local.env_id}coaeau1" ##us01vl01coaepd1.saas-p.com
           be_host2         = "us01vl${local.env_id}coaeau2" ##us01vl01coaepd2.saas-p.com
     }
