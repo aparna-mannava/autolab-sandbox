@@ -17,7 +17,7 @@ locals {
       firewall_group   = "CFRMRD_PPD_BE"
       environment      = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
       ic_host1         = "us01vl${local.env_id}coiclb1" ##us01vl01coicpd1.saas-p.com
-      ic_host2         = "us01vl${local.env_id}coiclb2" ##us01vl01coicpd2.saas-p.com  //
+      ic_host2         = "us01vl${local.env_id}coiclb2" ##us01vl01coicpd2.saas-p.com  //  
       ic_host3         = "us01vl${local.env_id}cobtlb3" ##us01vl01cobtpd3.saas-p.com
       be_host1         = "us01vl${local.env_id}coaelb1" ##us01vl01coaepd1.saas-p.com
       be_host2         = "us01vl${local.env_id}coaelb2" ##us01vl01coaepd2.saas-p.com
