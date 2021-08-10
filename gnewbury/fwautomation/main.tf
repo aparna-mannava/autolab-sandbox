@@ -35,7 +35,6 @@ module "base_server_1" {
   datacenter          = local.datacenter
   external_facts      = local.facts
   lob                 = "CLOUD"
-  firewall_groups     = local.firewall_groups
 }
 
 output "base_server_1" {
