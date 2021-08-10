@@ -108,7 +108,7 @@ module "chc-ic-fe-lab01" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group// CFRMRD_PR_FE
   datacenter           = local.datacenter.name
   cpus                 = 8
@@ -127,7 +127,7 @@ module "chc-ic-fe-lab02" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group  // 
   datacenter           = local.datacenter.name
   cpus                 = 8
@@ -146,7 +146,7 @@ module "chc-ic-fe-lab03" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   #firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE  
   datacenter           = local.datacenter.name
   cpus                 = 4
