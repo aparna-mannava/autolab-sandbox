@@ -7,7 +7,7 @@ locals {
    facts     = {
       customer         = "chc" // pre customer
       product          = "cfrmcloud"
-      tier             = "autolab" //changed on each env
+      tier             = "autolab" //changed on each env 
       bt_role          = "app"
       bt_lob           = "CFRM"
       cfrm_version     = "5901_SP4" // Mandatory
