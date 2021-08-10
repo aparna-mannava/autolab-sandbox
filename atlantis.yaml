@@ -21,11 +21,11 @@ projects:
 - name: cfrm-autolab-db
   dir: cfrmcloud/central_db
   workflow: nutanix-backend
-- name: cfrm-autolab-ha ##001
-  dir: cfrmcloud/cfrm/ha/001
-  workflow: nutanix-backend
-- name: cfrm-autolab-ha-00 ##00
+- name: cfrm-autolab-ha-00 ##000 chc
   dir: cfrmcloud/cfrm/ha/000
+  workflow: nutanix-backend
+- name: cfrm-autolab-ha-01 ##001 chc
+  dir: cfrmcloud/cfrm/ha/001
   workflow: nutanix-backend
 # D
 # E
