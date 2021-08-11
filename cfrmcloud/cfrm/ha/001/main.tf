@@ -8,7 +8,7 @@ locals {
       customer         = "chc" // pre customer
       product          = "cfrmcloud"
       tier             = "autolab" //changed on each env 
-      bt_role          = "app"
+      role          = "app"
       bt_lob           = "CFRM"
       cfrm_version     = "5901_SP4" // Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
