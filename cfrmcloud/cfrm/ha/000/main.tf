@@ -8,7 +8,7 @@ locals {
       customer         = "chc" // pre customer
       product          = "cfrmcloud"
       tier             = "autolab" //changed on each env 
-      bt_role          = "app"
+      role             = "app"
       bt_lob           = "CFRM"
       cfrm_version     = "5901_SP4" // Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
@@ -49,6 +49,7 @@ locals {
     cfrmfacts_ic    = {
       bt_customer      = local.facts.customer
       bt_product       = local.facts.product
+      bt_role          = local.facts.role
       bt_tier          = local.facts.tier
       bt_lob           = "CFRM"
       bt_env           = "ic"
@@ -165,7 +166,7 @@ module "chc-ic-00-fe-lab03" {
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
   lob                  = "CFRM"
-  #firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE  
+  #firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE    
   datacenter           = local.datacenter.name
   cpus                 = 4
   memory               = 8096

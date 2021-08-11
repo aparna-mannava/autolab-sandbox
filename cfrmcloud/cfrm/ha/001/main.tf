@@ -8,7 +8,7 @@ locals {
       customer         = "chc" // pre customer
       product          = "cfrmcloud"
       tier             = "autolab" //changed on each env 
-      bt_role          = "app"
+      role             = "app"
       bt_lob           = "CFRM"
       cfrm_version     = "5901_SP4" // Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
@@ -49,6 +49,7 @@ locals {
     cfrmfacts_ic    = {
       bt_customer      = local.facts.customer
       bt_product       = local.facts.product
+      bt_role          = local.facts.role
       bt_tier          = local.facts.tier
       bt_lob           = "CFRM"
       bt_env           = "ic"
@@ -62,6 +63,7 @@ locals {
     cfrmfacts_be    = {
       bt_customer      = local.facts.customer
       bt_product       = local.facts.product
+      bt_role          = local.facts.role
       bt_tier          = local.facts.tier
       bt_lob           = "CFRM"
       bt_env           = "be"
@@ -82,7 +84,7 @@ module "chc-ic-01-be-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.be_host1
   alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be01"
-  bt_infra_network     = local.facts.bt_infra_network   // 
+  bt_infra_network     = local.facts.bt_infra_network   //   
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
