@@ -165,7 +165,7 @@ module "chc-ic-00-fe-lab03" {
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
   lob                  = "CFRM"
-  #firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE  
+  #firewall_group       = local.facts.firewall_group//  CFRMRD_PR_FE    
   datacenter           = local.datacenter.name
   cpus                 = 4
   memory               = 8096
