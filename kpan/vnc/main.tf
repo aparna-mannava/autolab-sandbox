@@ -18,6 +18,7 @@ module "vnc-vm" {
   hostname            = "us01vliqvnc001"
   bt_infra_network    = "ny2-autolab-app-ahv"
   bt_infra_cluster    = "ny5-azc-ntnx-16"
+  alias               = "btiq-dev-vnc01"
   os_version          = "win2016"
   foreman_environment = "master"
   foreman_hostgroup   = "BT Base Windows Server"
