@@ -3,10 +3,13 @@ terraform {
 }
 
 locals {
+  tier            = "auto"
+  bt_env          = "1"
+  bt_product      = "btiq"
   facts = {
-    "bt_tier"        = "dev"
-    "bt_product"     = "btiq"
-    "bt_env"         = ""
+    "bt_env"                  = local.bt_env
+    "bt_tier"                 = local.tier
+    "bt_product"              = local.bt_product
   }
 }
 
@@ -20,7 +23,7 @@ module "vnc-vm" {
   foreman_environment = "master"
   foreman_hostgroup   = "BT Base Windows Server"
   datacenter          = "ny2"
-  lob                 = "btiq"
+  lob                 = "BTIQ"
   cpus                = "1"
   memory              = "4096"
   additional_disks = {
