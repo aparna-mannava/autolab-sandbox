@@ -17,7 +17,7 @@ module "vnc-vm" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "us01vwbtiqvn001"
   bt_infra_network    = "ny2-autolab-app-ahv"
-  bt_infra_cluster    = "ny5-azc-ntnx-16"
+  bt_infra_cluster    = "ny5-aza-ntnx-19"
   os_version          = "win2016"
   foreman_environment = "master"
   foreman_hostgroup   = "BT Base Windows Server"
