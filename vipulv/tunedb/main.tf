@@ -10,7 +10,7 @@ locals {
       bt_tier          = "pr"
       bt_env           = "2"
       bt_role          = "oradb"
-      bt_infra_cluster = "ny5-azc-ntnx-16"
+      bt_infra_cluster = "ny5-aza-ntnx-19"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT DGB Oradb Server"
       environment      = "feature_CLOUD_94776"
