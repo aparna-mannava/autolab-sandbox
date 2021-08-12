@@ -78,6 +78,6 @@ projects:
 - name: kshah
   dir: kshah/dgb
   workflow: nutanix-backend
-- name: kshah
-  dir: kshah/tunedb
+- name: vipulv
+  dir: vipulv/tunedb
   workflow: nutanix-backend
