@@ -22,7 +22,7 @@ module "vnc-vm" {
   foreman_environment = "master"
   foreman_hostgroup   = "BT Base Windows Server"
   datacenter          = "ny2"
-  lob                 = "CLOUD"
+  lob                 = "BTIQ"
   cpus                = "1"
   memory              = "4096"
   additional_disks = {
