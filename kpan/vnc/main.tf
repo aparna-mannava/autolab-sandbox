@@ -21,7 +21,7 @@ module "vnc-vm" {
   bt_infra_cluster    = "ny5-aza-ntnx-19"
   os_version          = "win2016"
   foreman_environment = "feature_BTIQ_5557"
-  foreman_hostgroup   = "BT Base Windows Server"
+  foreman_hostgroup   = "BTIQ Windows"
   datacenter          = "ny2"
   lob                 = "BTIQ"
   cpus                = "1"
