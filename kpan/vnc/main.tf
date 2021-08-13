@@ -5,7 +5,7 @@ terraform {
 locals {
   tier            = "auto"
   bt_env          = "1"
-  bt_product      = "btiq"
+  bt_product      = "cae"
   facts = {
     "bt_product" = "cae"
     # "bt_env"                  = local.bt_env
