@@ -7,9 +7,10 @@ locals {
   bt_env          = "1"
   bt_product      = "btiq"
   facts = {
-    "bt_env"                  = local.bt_env
-    "bt_tier"                 = local.tier
-    "bt_product"              = local.bt_product
+    "bt_product" = "cae"
+    # "bt_env"                  = local.bt_env
+    # "bt_tier"                 = local.tier
+    # "bt_product"              = local.bt_product
   }
 }
 
