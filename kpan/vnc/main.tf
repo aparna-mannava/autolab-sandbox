@@ -3,8 +3,8 @@ terraform {
 }
 
 locals {
-  tier            = "auto"
-  bt_env          = "1"
+  tier            = "dev"
+  bt_env          = ""
   bt_product      = "btiq"
   facts = {
     "bt_env"                  = local.bt_env
