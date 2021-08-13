@@ -9,9 +9,6 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: chris-autolab-hbrtest
-  dir: chris/hbrtest
-  workflow: nutanix-backend
 - name: cfrm-autolab-nfs
   dir: cfrmcloud/nfs
   workflow: nutanix-backend
@@ -29,6 +26,9 @@ projects:
   workflow: nutanix-backend
 - name: cfrm-autolab-ha-01 ##001 chc
   dir: cfrmcloud/cfrm/ha/001
+  workflow: nutanix-backend
+- name: chris-autolab-hbrtest
+  dir: chris/hbrtest
   workflow: nutanix-backend
 # D
 # E
