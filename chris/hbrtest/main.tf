@@ -16,6 +16,7 @@ module "harbor_test_1" {
   hostname             = "us01vltchris03"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
+  lob                  = "CEA"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
