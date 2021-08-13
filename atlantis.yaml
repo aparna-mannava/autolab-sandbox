@@ -41,6 +41,12 @@ projects:
 # I
 # J
 # K
+- name: kpan-vnc
+  dir: kpan/vnc
+  workflow: nutanix-backend
+- name: kpan-bh
+  dir: kpan/bh
+  workflow: nutanix-backend
 # L
 - name: lemery-hapg-hapg
   dir: lemery/hapg/hapg
