@@ -15,7 +15,7 @@ module "harbor_test_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltchris03"
   bt_infra_network     = "ny2-autolab-app"
-  bt_infra_cluster     = "ny5-aze-ntnx-16"
+  bt_infra_cluster     = "ny5-azc-ntnx-16"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
