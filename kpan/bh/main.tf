@@ -20,7 +20,7 @@ module "vnc-vm" {
   bt_infra_cluster    = "ny5-aza-ntnx-19"
   os_version          = "win2016"
   foreman_environment = "master"
-  foreman_hostgroup   = "BT Windows Bastion Host Server"
+  foreman_hostgroup   = "BT Windows Bastion Hosts"
   datacenter          = "ny2"
   lob                 = "BTIQ"
   cpus                = "1"
