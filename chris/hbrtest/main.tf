@@ -31,8 +31,7 @@ module "harbor_test_1" {
 
 output "harbor_test_1" {
   value = {
-    "fqdn"  = "${module.app_server_1.fqdn}",
-    "alias" = "${module.app_server_1.alias}",
-    "ip"    = "${module.app_server_1.ip}",
+    "fqdn"  = "${module.harbor_test_1.fqdn}",
+    "ip"    = "${module.harbor_test_1.ip}",
   }
 }
