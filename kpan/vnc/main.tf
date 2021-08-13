@@ -3,12 +3,12 @@ terraform {
 }
 
 locals {
-  tier            = "dev"
-  bt_env          = ""
-  bt_product      = "btiq"
+  tier            = "autolab"
+  bt_env          = "auto"
+  bt_product      = "inf"
   facts = {
-    "bt_env"                  = local.bt_env
-    "bt_tier"                 = local.tier
+#    "bt_env"                  = local.bt_env
+#    "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
   }
 }
