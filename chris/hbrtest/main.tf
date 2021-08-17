@@ -25,7 +25,7 @@ module "harbor_test_1" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "50",
+    1 = "100",
     2 = "100"
   }
 }
