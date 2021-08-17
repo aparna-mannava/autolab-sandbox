@@ -90,3 +90,6 @@ projects:
 - name: vipulv
   dir: vipulv/tunedb
   workflow: nutanix-backend
+- name: partha
+  dir: partha/etcd
+  workflow: nutanix-backend
