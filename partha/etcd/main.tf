@@ -32,7 +32,7 @@ module "ny2_hspclstr_etcd_0" {
   foreman_hostgroup    = local.hostgroup
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel8"
+  os_version           = "rhel6"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
@@ -50,7 +50,7 @@ module "ny2_hspclstr_etcd_1" {
   foreman_environment  = local.environment
   datacenter           = local.datacenter
   lob                  = local.lob
-  os_version           = "rhel8"
+  os_version           = "rhel6"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
@@ -68,7 +68,7 @@ module "ny2_hspclstr_etcd_2" {
   lob                  = local.lob
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel8"
+  os_version           = "rhel6"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
