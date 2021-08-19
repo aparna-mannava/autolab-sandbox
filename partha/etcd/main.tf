@@ -3,19 +3,19 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vlpsetcd01","us01vlpsetcd02","us01vlpsetcd03"]
-  etcd_hosts_p    = ["'us01vlpsetcd01.auto.saas-n.com','us01vlpsetcd02.auto.saas-n.com','us01vlpsetcd03.auto.saas-n.com'"]
-  domain          = "auto.saas-n.com"
-  tier            = "dev"
-  bt_env          = "1"
-  lob             = "CLOUD"
-  bt_product      = "inf"
-  hostgroup       = "BT ETCD for PostgreSQL Server"
-  environment     = "master"
-  cluster         = "ny2-aza-vmw-autolab"
-  network         = "ny2-autolab-db"
-  datacenter      = "ny2"
-  facts           = {
+  etcd_servers      = ["us01vlpsetcd01","us01vlpsetcd02","us01vlpsetcd03"]
+  etcd_hosts_p      = ["'us01vlpsetcd01.auto.saas-n.com','us01vlpsetcd02.auto.saas-n.com','us01vlpsetcd03.auto.saas-n.com'"]
+  domain            = "auto.saas-n.com"
+  tier              = "dev"
+  bt_env            = "1"
+  lob               = "CLOUD"
+  bt_product        = "inf"
+  hostgroup         = "BT ETCD for PostgreSQL Server"
+  environment       = "master"
+  cluster  = "ny5-aza-ntnx-19"
+  network  = "ny2-autolab-app-ahv"
+  datacenter        = "ny2"
+  facts             = {
     "bt_env"                  = "${local.bt_env}"
     "bt_tier"                 = "${local.tier}"
     "bt_product"              = "${local.bt_product}"
@@ -32,7 +32,7 @@ module "ny2_hspclstr_etcd_0" {
   foreman_hostgroup    = local.hostgroup
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel6"
+  os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
@@ -50,7 +50,7 @@ module "ny2_hspclstr_etcd_1" {
   foreman_environment  = local.environment
   datacenter           = local.datacenter
   lob                  = local.lob
-  os_version           = "rhel6"
+  os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
@@ -68,7 +68,7 @@ module "ny2_hspclstr_etcd_2" {
   lob                  = local.lob
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel6"
+  os_version           = "rhel7"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
