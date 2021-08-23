@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  environment = "feature/CEA-10866-harbor-storage-quotas"
+  environment = "feature_CEA_10866_harbor_storage_quotas"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "dev"
