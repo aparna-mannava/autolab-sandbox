@@ -27,6 +27,8 @@ projects:
 - name: cfrm-autolab-ha-01 ##001 chc
   dir: cfrmcloud/cfrm/ha/001
   workflow: nutanix-backend
+- name: chris-autolab-hbr1test
+  dir: chris/hbr1test
 - name: chris-autolab-hbrtest
   dir: chris/hbrtest
   workflow: nutanix-backend
