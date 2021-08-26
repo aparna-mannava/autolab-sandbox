@@ -11,7 +11,7 @@ locals {
   hostgroup   = "BT FM Cloud ES Server"
   datacenter  = "ny2"
   image       = "rhel7"
-  infra_cluster = "ny2-aza-vmw-autolab"
+  infra_cluster = "ny2-azd-ntnx-10"
   infra_network = "ny2-autolab-app"
   lob           = "FMCLOUD"
   master_memory = "8192"
