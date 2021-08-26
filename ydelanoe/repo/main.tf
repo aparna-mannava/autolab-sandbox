@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  product       = "FMCLOUD"
+  lob           = "FMCLOUD"
   environment   = "master"
   hostgroup     = "BT FM Cloud Repo Server"
   datacenter    = "ny2"
@@ -31,7 +31,7 @@ module "scp_repo" {
   external_facts       = local.facts
   cpus                 = "1"
   memory               = "1024"
-  lob                  = local.facts.bt_product
+  lob                  = local.lob
 }
 
 output "scp_repo" {
