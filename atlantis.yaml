@@ -33,8 +33,6 @@ projects:
   dir: chris/hbrtest
   workflow: nutanix-backend
 # D
-- name: ydelanoe-es
-  dir: ydelanoe/es
 # E
 # F
 # G
@@ -82,6 +80,8 @@ projects:
 # Y
 - name: ydelanoe-repo
   dir: ydelanoe/repo
+- name: ydelanoe-es
+  dir: ydelanoe/es
 # Z
 - name: sunil.yadav-btiq
   dir: sunil.yadav/btiq

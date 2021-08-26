@@ -2,8 +2,6 @@ terraform {
   backend "s3" {}
 }
 
-# Comment for backend migration
-
 locals {
   product     = "fmcloud"
   #environment = "feature_FMDO_2314"
