@@ -12,7 +12,7 @@ locals {
   datacenter  = "ny2"
   image       = "rhel7"
   infra_cluster = "ny2-azd-ntnx-10"
-  infra_network = "ny2-autolab-app"
+  infra_network = "ny2-autolab-app-ahv"
   lob           = "FMCLOUD"
   master_memory = "8192"
   master_cpu    = "2"
