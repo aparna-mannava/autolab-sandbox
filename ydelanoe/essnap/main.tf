@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-#destroy
+
 locals {
   lob           = "FMCLOUD"
   environment   = "master"
@@ -21,8 +21,8 @@ locals {
 
 module "es_snap" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlfm${local.facts.bt_role}${local.facts.bt_env}"
-  alias                = "fm-${local.facts.bt_loc}-${local.facts.bt_tier}-${local.facts.bt_role}-${local.facts.bt_env}"
+  hostname             = "us01vlfm${local.facts.bt_role}"
+  alias                = "fm-${local.facts.bt_loc}-${local.facts.bt_tier}-${local.facts.bt_role}"
   bt_infra_cluster     = local.infra_cluster
   bt_infra_network     = local.infra_network
   os_version           = local.image
