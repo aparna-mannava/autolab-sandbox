@@ -33,6 +33,8 @@ projects:
   dir: chris/hbrtest
   workflow: nutanix-backend
 # D
+- name: ydelanoe-es
+  dir: ydelanoe/es
 # E
 # F
 # G
