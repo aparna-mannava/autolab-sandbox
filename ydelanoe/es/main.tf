@@ -6,7 +6,7 @@ terraform {
 
 locals {
   product     = "fmcloud"
-  #environment = "feature_FMDO_2654"
+  #environment = "feature_FMDO_2314"
   environment = "master"
   hostgroup   = "BT FM Cloud ES Server"
   datacenter  = "ny2"
@@ -54,7 +54,6 @@ module "es_master_1" {
   memory               = local.master_memory
   additional_disks     = local.master_disks
   lob                  = local.lob
-  firewall_group       = local.firewall_group
 }
 
 output "es_master_1" {
@@ -87,7 +86,6 @@ module "es_master_2" {
   memory               = local.master_memory
   additional_disks     = local.master_disks
   lob                  = local.lob
-  firewall_group       = local.firewall_group
 }
 
 output "es_master_2" {
@@ -120,7 +118,6 @@ module "es_master_3" {
   memory               = local.master_memory
   additional_disks     = local.master_disks
   lob                  = local.lob
-  firewall_group       = local.firewall_group
 }
 
 
@@ -155,7 +152,6 @@ module "es_data_1" {
   memory               = local.data_memory
   additional_disks     = local.data_disks
   lob                  = local.lob
-  firewall_group       = local.firewall_group
 }
 
 output "es_data_1" {
@@ -188,7 +184,6 @@ module "es_data_2" {
   memory               = local.data_memory
   additional_disks     = local.data_disks
   lob                  = local.lob
-  firewall_group       = local.firewall_group
 }
 
 output "es_data_2" {
@@ -221,7 +216,6 @@ module "es_data_3" {
   memory               = local.data_memory
   additional_disks     = local.data_disks
   lob                  = local.lob
-  firewall_group       = local.firewall_group
 }
 
 output "es_data_3" {
