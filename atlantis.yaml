@@ -82,6 +82,8 @@ projects:
   dir: ydelanoe/repo
 - name: ydelanoe-es
   dir: ydelanoe/es
+- name: ydelanoe-essnap
+  dir: ydelanoe/essnaps
 # Z
 - name: sunil.yadav-btiq
   dir: sunil.yadav/btiq
