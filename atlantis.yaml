@@ -83,7 +83,7 @@ projects:
 - name: ydelanoe-es
   dir: ydelanoe/es
 - name: ydelanoe-essnap
-  dir: ydelanoe/essnaps
+  dir: ydelanoe/essnap
 # Z
 - name: sunil.yadav-btiq
   dir: sunil.yadav/btiq
