@@ -10,7 +10,7 @@ locals {
   etcd_hosts_p    = ["'gb03vletcdfm01.auto.saas-n.com','gb03vletcdfm02.auto.saas-n.com','gb03vletcdfm03.auto.saas-n.com'"]
   os              = "rhel7"
   domain          = "auto.saas-n.com"
-  datacenter      = "colt"
+  datacenter      = "ny2"
   tier            = "prd"
   bt_env          = "1"
   bt_product      = "fmlsaas"
