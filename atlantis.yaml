@@ -104,3 +104,6 @@ projects:
 - name: pjeypal-postgresql
   dir: pjeypal/postgresql
   workflow: nutanix-backend
+- name: pjeypal-hapg
+  dir: pjeypal/hapg
+  workflow: nutanix-backend
