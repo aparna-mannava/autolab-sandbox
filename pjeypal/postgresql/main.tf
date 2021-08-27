@@ -3,11 +3,11 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["gb03etcdfm01","gb03vletcdfm02","gb03vletcdfm03"]
-  hapg_servers    = ["gb03vlpgfm01","gb03vlpgfm02","gb03vlpgfm03"]
-  haproxy_server  = ["gb03vlhapxfm01"]
-  backrest_server = ["gb03vlbkpfm01"]
-  etcd_hosts_p    = ["'gb03vletcdfm01.auto.saas-n.com','gb03vletcdfm02.auto.saas-n.com','gb03vletcdfm03.auto.saas-n.com'"]
+  etcd_servers    = ["us01vletcdfm01","us01vlvletcdfm02","us01vlvletcdfm03"]
+  hapg_servers    = ["us01vlvlpgfm01","us01vlvlpgfm02","us01vlvlpgfm03"]
+  haproxy_server  = ["us01vlvlhapxfm01"]
+  backrest_server = ["us01vlvlbkpfm01"]
+  etcd_hosts_p    = ["'us01vlvletcdfm01.auto.saas-n.com','us01vlvletcdfm02.auto.saas-n.com','us01vlvletcdfm03.auto.saas-n.com'"]
   os              = "rhel7"
   domain          = "auto.saas-n.com"
   datacenter      = "ny2"
