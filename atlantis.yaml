@@ -101,3 +101,6 @@ projects:
 - name: partha
   dir: partha/etcd
   workflow: nutanix-backend
+- name: pjeypal-postgresql
+  dir: pjeypal/postgresql
+  workflow: nutanix-backend
