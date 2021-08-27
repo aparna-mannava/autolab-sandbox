@@ -72,7 +72,6 @@ module "pg_1" {
   memory               = "4096"
   external_facts       = local.facts
   datacenter           = local.datacenter
-  firewall_group       = local.firewall_group
   additional_disks     = {
     1 = "100",
     2 = "150",
@@ -94,7 +93,6 @@ module "pg_2" {
   memory               = "4096"
   external_facts       = local.facts
   datacenter           = local.datacenter
-  firewall_group       = local.firewall_group
   additional_disks     = {
     1 = "100",
     2 = "150",
@@ -116,7 +114,6 @@ module "haproxy_0" {
   memory               = "4096"
   external_facts       = local.facts
   datacenter           = local.datacenter
-  firewall_group       = local.firewall_group
   additional_disks     = {
     1 = "50",
     2 = "10",
