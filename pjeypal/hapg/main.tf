@@ -50,7 +50,6 @@ module "pg_0" {
   memory               = "4096"
   external_facts       = local.facts
   datacenter           = local.datacenter
-  firewall_group       = local.firewall_group
   additional_disks     = {
     1 = "100",
     2 = "150",
