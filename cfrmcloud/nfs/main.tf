@@ -5,7 +5,7 @@ terraform {
  
 locals {
   product     = "cfrmcloud"
-  environment = "master"    # 
+  environment = "feature_CFRMCLOUD_1373_puppet_adding_roles"    # 
   hostname    = "us01"
   hostgroup   = "CFRM BT CLOUD NFS Server"
   facts = {
@@ -45,7 +45,7 @@ module "cfmn001" {
   os_version          = "rhel7"
   cpus                = "2"
   memory              = "4096"
-  lob                 = "cfrm"
+  lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
@@ -64,7 +64,7 @@ module "cfmn002" {
   os_version          = "rhel7"
   cpus                = "8"
   memory              = "24960"
-  lob                 = "cfrm"
+  lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
@@ -83,7 +83,7 @@ module "cfmn003" {
   os_version          = "rhel7"
   cpus                = "2"
   memory              = "4096"
-  lob                 = "cfrm"
+  lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
