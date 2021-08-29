@@ -5,7 +5,7 @@ terraform {
  
 locals {
   product     = "cfrmcloud"
-  environment = "feature_CFRMCLOUD_1373_puppet_adding_roles"    # 
+  environment = "feature_CFRMCLOUD_1373_puppet_adding_roles"    #  rebuild NFS
   hostname    = "us01"
   hostgroup   = "CFRM BT CLOUD NFS Server"
   facts = {
