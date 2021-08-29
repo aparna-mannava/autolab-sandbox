@@ -5,7 +5,7 @@ terraform {
  
 locals {
   product     = "cfrmcloud"
-  environment = "master"    # 
+  environment = "feature_CFRMCLOUD_1373_puppet_adding_roles"    # 
   hostname    = "us01"
   hostgroup   = "CFRM BT CLOUD NFS Server"
   facts = {
@@ -45,7 +45,7 @@ module "cfmn001" {
   os_version          = "rhel7"
   cpus                = "2"
   memory              = "4096"
-  lob                 = "cfrm"
+  lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
@@ -64,7 +64,7 @@ module "cfmn002" {
   os_version          = "rhel7"
   cpus                = "8"
   memory              = "24960"
-  lob                 = "cfrm"
+  lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
@@ -77,13 +77,13 @@ module "cfmn002" {
 module "cfmn003" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = local.cfmn003.hostname
-  alias               = "${local.product}-${local.datacenter.id}-${local.cfmn003.silo}-${local.facts.bt_role}-${local.cfmn003.hostname}"
+  alias               = "${local.product}-${local.datacenter.id}-${local.cfmn003.silo}-${local.facts.bt_role}-${local.cfmn003.hostname}" /// ngnix reinstall
   bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "rhel7"
   cpus                = "2"
   memory              = "4096"
-  lob                 = "cfrm"
+  lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
