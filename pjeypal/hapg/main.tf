@@ -5,7 +5,7 @@ terraform {
 locals {
   etcd_servers    = ["us01vletcdfm01","us01vletcdfm02","us01vletcdfm03"]
   hapg_servers    = ["us01vlpgfm01","us01vlpgfm02","us01vlpgfm03"]
-  haproxy_server  = ["us01vlhapxfm01"]
+  haproxy_server  = ["us01vlhapxfm01","us01vlhapxfm02"]
   backrest_server = ["us01vlbkpfm01"]
   etcd_hosts_p    = ["'us01vletcdfm01.auto.saas-n.com','us01vletcdfm02.auto.saas-n.com','us01vletcdfm03.auto.saas-n.com'"]
   os              = "rhel7"
