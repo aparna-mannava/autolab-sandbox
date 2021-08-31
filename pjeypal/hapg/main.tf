@@ -15,13 +15,13 @@ locals {
   bt_env          = "1"
   bt_product      = "fmlsaas"
   lob             = "FML"
-  environment     = "production"
+  environment     = "master"
   cluster         = "ny5-azc-ntnx-16"
   network         = "ny2-autolab-app-ahv"
   etcd_hostgroup  = "BT ETCD for PostgreSQL Server"
   pg_datacenter   = "ny2"
   pg_tier         = "prd"
-  pg_hostgroup    = "BT Postgresql fmlsaas DB Server"
+  pg_hostgroup    = "BT HA PG Server"
   hapxy_hostgroup = "BT Patroni HA Proxy"
   facts           = {
     "bt_pg_version"           = "12"
@@ -33,6 +33,8 @@ locals {
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
+    "bt_hapg_haproxy_servers" = ["${local.haproxy_servers[0]}.${local.domain}", "${local.haproxy_servers[1]}.${local.domain}"]
+    "bt_hapg_haproxy_service" = "hapg1111.auto.saas-n.com"
   }
 }
 
@@ -119,6 +121,36 @@ module "haproxy_0" {
   }
 }
 
+module "haproxy_1" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = local.haproxy_server[1]
+  alias                = "fm-${local.pg_datacenter}-${local.pg_tier}-haproxy2"
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  foreman_hostgroup    = local.hapxy_hostgroup
+  foreman_environment  = local.environment
+  lob                  = local.lob
+  os_version           = local.os
+  cpus                 = "2"
+  memory               = "4096"
+  external_facts       = local.facts
+  datacenter           = local.datacenter
+  additional_disks     = {
+    1 = "50",
+    2 = "10",
+  }
+}
+
+resource "infoblox_record_host" "hapg1111" {
+  name              = "hapg1111.auto.saas-n.com"
+  configure_for_dns = true
+  ipv4addr {
+    function           = "func:nextavailableip:10.226.190.0/24"
+    configure_for_dhcp = false
+  }
+}
+
+
 output "pg_0" {
   value = {
     "fqdn"  = module.pg_0.fqdn,
@@ -148,5 +180,14 @@ output "haproxy_0" {
     "fqdn"  = module.haproxy_0.fqdn,
     "alias" = module.haproxy_0.alias,
     "ip"    = module.haproxy_0.ip,
+  }
+}
+
+
+output "haproxy_1" {
+  value = {
+    "fqdn"  = module.haproxy_1.fqdn,
+    "alias" = module.haproxy_1.alias,
+    "ip"    = module.haproxy_1.ip,
   }
 }
