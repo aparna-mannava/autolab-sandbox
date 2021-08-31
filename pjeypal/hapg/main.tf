@@ -21,6 +21,7 @@ locals {
   etcd_hostgroup  = "BT ETCD for PostgreSQL Server"
   pg_datacenter   = "ny2"
   pg_tier         = "prd"
+  bt_cluster_name = "fm-test"
   pg_hostgroup    = "BT HA PG Server"
   hapxy_hostgroup = "BT Patroni HA Proxy"
   facts           = {
