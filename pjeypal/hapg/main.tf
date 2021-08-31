@@ -141,14 +141,14 @@ module "haproxy_1" {
   }
 }
 
-resource "infoblox_record_host" "hapg1111" {
-  name              = "hapg1111.auto.saas-n.com"
-  configure_for_dns = true
-  ipv4addr {
-    function           = "func:nextavailableip:10.226.190.0/24"
-    configure_for_dhcp = false
-  }
-}
+#resource "infoblox_record_host" "hapg1111" {
+#  name              = "hapg1111.auto.saas-n.com"
+#  configure_for_dns = true
+#  ipv4addr {
+#    function           = "func:nextavailableip:10.226.190.0/24"
+#    configure_for_dhcp = false
+#  }
+#}
 
 
 output "pg_0" {
