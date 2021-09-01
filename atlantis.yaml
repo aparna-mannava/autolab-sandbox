@@ -9,62 +9,15 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrm-autolab-nfs
-  dir: cfrmcloud/nfs
-  workflow: nutanix-backend
-- name: cfrm-autolab-elk-chc
-  dir: cfrmcloud/elastic/chc
-  workflow: nutanix-backend
-- name: cfrm-autolab-elk
-  dir: cfrmcloud/elastic/cluster
-  workflow: nutanix-backend
-- name: cfrm-autolab-db
-  dir: cfrmcloud/central_db
-  workflow: nutanix-backend
-- name: cfrm-autolab-ha-00 ##000 chc
-  dir: cfrmcloud/cfrm/ha/000
-  workflow: nutanix-backend
-- name: cfrm-autolab-ha-01 ##001 chc
-  dir: cfrmcloud/cfrm/ha/001
-  workflow: nutanix-backend
-- name: chris-autolab-hbr1test
-  dir: chris/hbr1test
-- name: chris-autolab-hbrtest
-  dir: chris/hbrtest
-  workflow: nutanix-backend
 # D
 # E
 # F
 # G
-- name: gnewbury-fwautomation
-  dir: gnewbury/fwautomation
-  workflow: nutanix-backend
 # H
 # I
 # J
 # K
-- name: kpan-vnc
-  dir: kpan/vnc
-  workflow: nutanix-backend
-- name: kpan-bh
-  dir: kpan/bh
-  workflow: nutanix-backend
 # L
-- name: lemery-hapg-hapg
-  dir: lemery/hapg/hapg
-  workflow: nutanix-backend
-- name: lemery-test
-  dir: lemery/test
-  workflow: nutanix-backend
-- name: lemery-hapg_tde-etcd
-  dir: lemery/hapg_tde/etcd
-  workflow: nutanix-backend
-- name: lemery-hapg_tde-hapg
-  dir: lemery/hapg_tde/hapg
-  workflow: nutanix-backend
-- name: lemery-hapg_tde/backrest
-  dir: lemery/hapg_tde/backrest
-  workflow: nutanix-backend
 # M
 # N
 # O
@@ -78,32 +31,4 @@ projects:
 # W
 # X
 # Y
-- name: ydelanoe-repo
-  dir: ydelanoe/repo
-- name: ydelanoe-es
-  dir: ydelanoe/es
-- name: ydelanoe-essnap
-  dir: ydelanoe/essnap
 # Z
-- name: sunil.yadav-btiq
-  dir: sunil.yadav/btiq
-- name: sunil.yadav-btiq-new
-  dir: sunil.yadav/btiq-new
-- name: OraclePSU
-  dir: OraclePSU/dgb
-  workflow: nutanix-backend
-- name: kshah
-  dir: kshah/dgb
-  workflow: nutanix-backend
-- name: vipulv
-  dir: vipulv/tunedb
-  workflow: nutanix-backend
-- name: partha
-  dir: partha/etcd
-  workflow: nutanix-backend
-- name: pjeypal-postgresql
-  dir: pjeypal/postgresql
-  workflow: nutanix-backend
-- name: pjeypal-hapg
-  dir: pjeypal/hapg
-  workflow: nutanix-backend
