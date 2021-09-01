@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  environment = "feature/CEA-11289_harbor_log_rotation_fix"
+  environment = "feature_CEA_11289_harbor_log_rotation_fix"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "dev"
