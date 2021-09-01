@@ -9,6 +9,10 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+  - name: chris-autolab-hbrtest
+    dir: chris/hbrtest
+    workflow: nutanix-backend
+
 # D
 # E
 # F
