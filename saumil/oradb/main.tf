@@ -44,7 +44,7 @@ module "dblab_1" {
   external_facts       = local.db01prod
   os_version           = "rhel7"
   cpus                 = "4"
-  memory         	     = "4096"
+  memory         	   = "4096"
   additional_disks     = {
       1 = "200",
 	  2 = "200",
