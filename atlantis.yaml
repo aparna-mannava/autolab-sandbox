@@ -29,6 +29,9 @@ projects:
 # Q
 # R
 # S
+  - name: sam-autolab-oratst
+    dir: saumil/oradb
+    workflow: nutanix-backend
 # T
 # U
 # V
