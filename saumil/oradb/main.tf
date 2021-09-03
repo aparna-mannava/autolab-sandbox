@@ -7,7 +7,7 @@ locals {
       bt_customer      = "fi1888"
       bt_product       = "dgb"
       bt_lob           = "CLOUD"
-      bt_tier          = "pr"
+      bt_tier          = "sbx"
       bt_env           = "2"
       bt_role          = "oradb"
       bt_em_agent      = "13.4.0.0"
@@ -15,7 +15,7 @@ locals {
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT DGB Oradb Server"
       environment      = "feature_CLOUD_95708"
-      hostname         = "us01vldbtst8"
+      hostname         = "us01vldbtst7"
     }
     datacenter = {
       name = "ny2"
@@ -33,8 +33,8 @@ locals {
 
 module "dblab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbtst8"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-oralb08"
+  hostname             = "us01vldbtst7"
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-oralb07"
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   lob                  = local.facts.bt_lob
