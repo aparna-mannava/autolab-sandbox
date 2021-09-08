@@ -13,7 +13,7 @@ module "ptch01" {
   memory               = 2048
   os_version           = "win2019"
   foreman_environment  = "nonprod"
-  foreman_hostgroup    = "BT Windows Base Server"
+  foreman_hostgroup    = "BT Base Windows Server"
   datacenter           = "ny2"
 }
 
