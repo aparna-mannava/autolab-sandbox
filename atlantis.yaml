@@ -17,6 +17,9 @@ projects:
   - name: dave-autolab-ptchnix
     dir: dmorvan/patch_nix
     workflow: nutanix-backend
+  - name: dave-autolab-ptchwin
+    dir: dmorvan/patch_win
+    workflow: nutanix-backend
 # E
 # F
 # G
