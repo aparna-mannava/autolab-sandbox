@@ -5,7 +5,7 @@ terraform {
  
 locals {
   product     = "cfrmcloud"
-  environment = "CFRMCLOUD_405_fml_saas_p_gb00_uat_servers_instantiation"    #  rebuild NFS
+  environment = "CFRMCLOUD_405_fml_saas_p_gb00_uat_servers_instantiation"    #  destroy NFS
   hostname    = "us01"
   hostgroup   = "CFRM BT CLOUD NFS Server"
   facts = {
