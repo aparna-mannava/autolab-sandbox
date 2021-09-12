@@ -31,7 +31,7 @@ projects:
     dir: cfrmcloud/cfrm/ha/001
     workflow: nutanix-backend
   - name: cfrm-autolab-fmg-ha-01 ##003 fmg
-    dir: cfrmcloud/cfrm/ha/00_fmg
+    dir: cfrmcloud/cfrm/ha/003_fmg
     workflow: nutanix-backend
 
 # D

@@ -15,7 +15,7 @@ locals {
       bt_infra_cluster = "ny5-azc-ntnx-16" 
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Oracle DB Servers"
-      environment      = "feature_CFRMCLOUD_1293_puppet_monitoring_sql_exporter" //
+      environment      = "master" //
       hostname         = "us01vlcfdb"
     }
     datacenter = {

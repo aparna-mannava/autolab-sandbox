@@ -10,7 +10,7 @@ locals {
       tier             = "autolab" //changed on each env 
       role             = "app"
       bt_lob           = "CFRM"
-      cfrm_version     = "610_SP2" // Mandatory
+      cfrm_version     = "610_SP2" // Mandatory rebuild
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers"
