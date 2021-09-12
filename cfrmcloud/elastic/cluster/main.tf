@@ -7,7 +7,7 @@ locals {
     facts       = {
       bt_customer             = ""
       bt_product              = "cfrmcloud"
-      bt_lob                  = "cfrm"
+      bt_lob                  = "CFRM"
       bt_tier                 = "autolab" //    rebuild
       bt_env                  = "01"
       bt_role                 = "elastic"
