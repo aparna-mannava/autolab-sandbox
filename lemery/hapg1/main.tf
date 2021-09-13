@@ -150,7 +150,13 @@ module "haproxy_1" {
 #     configure_for_dhcp = false
 #   }
 # }
-
+module "hapg1911" {
+  source   = "git::https://us-pr-stash.saas-p.com/scm/tdns/cloud.git?ref=master"
+  hostname = "hapg1911"
+  alias    = "le-${local.pg_datacenter}-${local.pg_tier}-vip"
+  domain   = "auto.saas-n.com"
+  cidr     = "10.226.190.0/24"
+}
 
 output "pg_0" {
   value = {
