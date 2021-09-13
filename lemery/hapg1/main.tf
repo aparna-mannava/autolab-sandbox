@@ -152,6 +152,7 @@ module "haproxy_1" {
 # }
 
 resource "infoblox_record_host" "host" {
+  source            = "terraform.bottomline.com/automation/infoblox"
   configure_for_dns = true
   name              = "us01vlpgle02.auto.saas-n.com"
   view              = "default"
