@@ -151,6 +151,17 @@ module "haproxy_1" {
 #   }
 # }
 
+resource "infoblox_record_host" "host" {
+  configure_for_dns = true
+  name              = "us01vlpgle02.auto.saas-n.com"
+  view              = "default"
+
+  ipv4addr {
+      configure_for_dhcp = false
+      function           = "func:nextavailableip:10.226.190.0/24"
+  }
+}
+
 output "pg_0" {
   value = {
     "fqdn"  = module.pg_0.fqdn,
