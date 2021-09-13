@@ -3,11 +3,11 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdfm01","us01vletcdfm02","us01vletcdfm03"]
-  hapg_servers    = ["us01vlpgfm01","us01vlpgfm02","us01vlpgfm03"]
-  haproxy_servers  = ["us01vlhapxfm01","us01vlhapxfm02"]
-  backrest_server = ["us01vlbkpfm01"]
-  etcd_hosts_p    = ["'us01vletcdfm01.auto.saas-n.com','us01vletcdfm02.auto.saas-n.com','us01vletcdfm03.auto.saas-n.com'"]
+  etcd_servers    = ["us01vletcdle01","us01vletcdle02","us01vletcdle03"]
+  hapg_servers    = ["us01vlpgle01","us01vlpgle02","us01vlpgle03"]
+  haproxy_servers  = ["us01vlhapxle01","us01vlhapxle02"]
+  backrest_server = ["us01vlbkple01"]
+  etcd_hosts_p    = ["'us01vletcdle01.auto.saas-n.com','us01vletcdle02.auto.saas-n.com','us01vletcdle03.auto.saas-n.com'"]
   os              = "rhel7"
   domain          = "auto.saas-n.com"
   datacenter      = "ny2"
@@ -21,7 +21,7 @@ locals {
   etcd_hostgroup  = "BT ETCD for PostgreSQL Server"
   pg_datacenter   = "ny2"
   pg_tier         = "prd"
-  bt_cluster_name = "fm-test"
+  bt_cluster_name = "le-test"
   pg_hostgroup    = "BT HA PG Server"
   hapxy_hostgroup = "BT Patroni HA Proxy"
   facts           = {
@@ -42,7 +42,7 @@ locals {
 module "pg_0" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.hapg_servers[0]
-  alias                = "fm-${local.pg_datacenter}-${local.pg_tier}-pg1"
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-pg1"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   lob                  = local.lob
@@ -63,7 +63,7 @@ module "pg_0" {
 module "pg_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.hapg_servers[1]
-  alias                = "fm-${local.pg_datacenter}-${local.pg_tier}-pg2"
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-pg2"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = local.pg_hostgroup
@@ -84,7 +84,7 @@ module "pg_1" {
 module "pg_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.hapg_servers[2]
-  alias                = "fm-${local.pg_datacenter}-${local.pg_tier}-pg3"
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-pg3"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = local.pg_hostgroup
@@ -105,7 +105,7 @@ module "pg_2" {
 module "haproxy_0" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.haproxy_servers[0]
-  alias                = "fm-${local.pg_datacenter}-${local.pg_tier}-haproxy1"
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-haproxy1"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = local.hapxy_hostgroup
@@ -125,7 +125,7 @@ module "haproxy_0" {
 module "haproxy_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.haproxy_servers[1]
-  alias                = "fm-${local.pg_datacenter}-${local.pg_tier}-haproxy2"
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-haproxy2"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = local.hapxy_hostgroup
