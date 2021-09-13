@@ -52,6 +52,9 @@ projects:
 # J
 # K
 # L
+  - name: lemery-hapg
+    dir: lemery/hapg
+    workflow: nutanix-backend
   - name: lemery-kek-vault
     dir: lemery/kek/vault
     workflow: nutanix-backend
