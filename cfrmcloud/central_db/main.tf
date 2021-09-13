@@ -8,7 +8,7 @@ locals {
       bt_customer      = ""
       bt_product       = "cfrmcloud"
       bt_lob           = "CFRM"
-      bt_tier          = "autolab" //PROD
+      bt_tier          = "autolab" //dev
       bt_env           = "01"
       bt_cfrm_version  = "6.1_SP1" //rebuild
       bt_role          = "oradb"
