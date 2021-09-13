@@ -7,7 +7,7 @@ locals {
   datacenter  = "ny2"
   domain      = "auto.saas-n.com"
   environment = "master"
-  etcd        = ["us01vlrgetcd01","us01vlrgetcd02","us01vlrgetcd02"]
+  etcd        = ["us01vletcdz01","us01vletcdz02","us01vletcdz02"]
   hostgroup   = "BT Base Server"
   lob         = "CLOUD"
   network     = "ny2-autolab-app-ahv"
