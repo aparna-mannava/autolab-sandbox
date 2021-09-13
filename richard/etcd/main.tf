@@ -21,7 +21,6 @@ locals {
 }
 
 module "etcd1" {
-  for_each =           toset(local.etcd)
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.etcd_servers[0]
   bt_infra_cluster     = local.cluster
@@ -40,7 +39,6 @@ module "etcd1" {
 }
 
 module "etcd2" {
-  for_each =           toset(local.etcd)
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.etcd_servers[1]
   bt_infra_cluster     = local.cluster
@@ -59,7 +57,6 @@ module "etcd2" {
 }
 
 module "etcd3" {
-  for_each =           toset(local.etcd)
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.etcd_servers[2]
   bt_infra_cluster     = local.cluster
