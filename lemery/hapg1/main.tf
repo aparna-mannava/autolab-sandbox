@@ -1,5 +1,11 @@
 terraform {
   backend "s3" {}
+  required_providers {
+    infoblox = {
+      source  = "terraform.bottomline.com/automation/infoblox"
+      version = "1.1.1"
+    }
+  }
 }
 
 locals {
@@ -26,16 +32,16 @@ locals {
   hapxy_hostgroup = "BT Patroni HA Proxy"
   facts           = {
     "bt_pg_version"           = "12"
-    "bt_env"                  = "${local.bt_env}"
-    "bt_tier"                 = "${local.tier}"
-    "bt_product"              = "${local.bt_product}"
+    "bt_env"                  = local.bt_env
+    "bt_tier"                 = local.tier
+    "bt_product"              = local.bt_product
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_hapg_haproxy_servers" = ["${local.haproxy_servers[0]}.${local.domain}", "${local.haproxy_servers[1]}.${local.domain}"]
-    "bt_hapg_haproxy_service" = "hapg1111.auto.saas-n.com"
+    "bt_hapg_haproxy_service" = "hapg1911.auto.saas-n.com"
   }
 }
 
@@ -142,15 +148,25 @@ module "haproxy_1" {
   }
 }
 
-#resource "infoblox_record_host" "hapg1111" {
-#  name              = "hapg1111.auto.saas-n.com"
-#  configure_for_dns = true
-#  ipv4addr {
-#    function           = "func:nextavailableip:10.226.190.0/24"
-#    configure_for_dhcp = false
-#  }
-#}
+# resource "infoblox_record_host" "hapg1911" {
+#   name              = "hapg1911.auto.saas-n.com"
+#   configure_for_dns = true
+#   ipv4addr {
+#     function           = "func:nextavailableip:10.226.190.0/24"
+#     configure_for_dhcp = false
+#   }
+# }
 
+resource "infoblox_record_host" "host" {
+  configure_for_dns = true
+  name              = "us01vlpgle02.auto.saas-n.com"
+  view              = "default"
+
+  ipv4addr {
+      configure_for_dhcp = false
+      function           = "func:nextavailableip:10.226.190.0/24"
+  }
+}
 
 output "pg_0" {
   value = {
