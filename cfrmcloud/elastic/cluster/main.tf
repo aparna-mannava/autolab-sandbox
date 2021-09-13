@@ -65,7 +65,7 @@ locals {
     }
 }
 
-module "elasticsearch_1" {
+module "elk_dev_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}01-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk01"// cfrmcloud-uat-us01vlcfel-gb00-elk01
@@ -86,7 +86,7 @@ module "elasticsearch_1" {
   }
 } 
 
-module "elasticsearch_2" {
+module "elk_dev_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}02-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk02"// cfrmcloud-uat-gb00-elk02
@@ -107,7 +107,7 @@ module "elasticsearch_2" {
   }
 }
 
-module "elasticsearch_3" {
+module "elk_dev_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}03-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk03"//cfrmcloud-uat-gb00-elk03
@@ -128,26 +128,26 @@ module "elasticsearch_3" {
   }
 } 
 
-output "elasticsearch_1" {
+output "elk_dev_1" {
   value = {
-    "fqdn"  = module.elasticsearch_1.fqdn,
-    "alias" = module.elasticsearch_1.alias,
-    "ip"    = module.elasticsearch_1.ip,
+    "fqdn"  = module.elk_dev_1.fqdn,
+    "alias" = module.elk_dev_1.alias,
+    "ip"    = module.elk_dev_1.ip,
   }
 }
 
-output "elasticsearch_2" {
+output "elk_dev_2" {
   value = {
-    "fqdn"  = module.elasticsearch_2.fqdn,
-    "alias" = module.elasticsearch_2.alias,
-    "ip"    = module.elasticsearch_2.ip,
+    "fqdn"  = module.elk_dev_2.fqdn,
+    "alias" = module.elk_dev_2.alias,
+    "ip"    = module.elk_dev_2.ip,
   }
 }
 
-output "elasticsearch_3" {
+output "elk_dev_3" {
   value = {
-    "fqdn"  = module.elasticsearch_3.fqdn,
-    "alias" = module.elasticsearch_3.alias,
-    "ip"    = module.elasticsearch_3.ip,
+    "fqdn"  = module.elk_dev_3.fqdn,
+    "alias" = module.elk_dev_3.alias,
+    "ip"    = module.elk_dev_3.ip,
   }
 }
