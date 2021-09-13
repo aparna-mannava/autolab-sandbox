@@ -8,14 +8,14 @@ locals {
       bt_customer      = ""
       bt_product       = "cfrmcloud"
       bt_lob           = "CFRM"
-      bt_tier          = "autolab" //PROD
+      bt_tier          = "autolab" //dev
       bt_env           = "01"
-      bt_cfrm_version  = "6.1_SP1" //Need to be updated
+      bt_cfrm_version  = "6.1_SP1" //rebuild
       bt_role          = "oradb"
       bt_infra_cluster = "ny5-azc-ntnx-16" 
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Oracle DB Servers"
-      environment      = "feature_CFRMCLOUD_1293_puppet_monitoring_sql_exporter" //
+      environment      = "master" //
       hostname         = "us01vlcfdb"
     }
     datacenter = {
