@@ -20,17 +20,17 @@ locals {
     
     ### App ###
     cfrm_hosts = {
-          ic_host1         = "us01vl${local.env_id}fmicau1" ##us01vl01coicpd1.saas-p.com
-          ic_host2         = "us01vl${local.env_id}fmicau2" ##us01vl01coicpd2.saas-p.com    
-          be_host1         = "us01vl${local.env_id}fmaeau1" ##us01vl01coaepd1.saas-p.com
-          be_host2         = "us01vl${local.env_id}fmaeau2" ##us01vl01coaepd2.saas-p.com
+          ic_host1         = "us01vl${local.env_id}cfrmic1" ##us01vl01coicpd1.saas-p.com
+          ic_host2         = "us01vl${local.env_id}cfrmic2" ##us01vl01coicpd2.saas-p.com    
+          be_host1         = "us01vl${local.env_id}cfrmae1" ##us01vl01coaepd1.saas-p.com
+          be_host2         = "us01vl${local.env_id}cfrmae2" ##us01vl01coaepd2.saas-p.com
     }
 
     ### ELK ###
     cfrm_elk = {
-          elk_host1       = "us01vlcoel01-au.auto.saas-n.com"
-          elk_host2       = "us01vlcoel02-au.auto.saas-n.com"
-          elk_host3       = "us01vlcoel03-au.auto.saas-n.com"
+          elk_host1       = "us01vlcfel01-au.auto.saas-n.com"
+          elk_host2       = "us01vlcfel02-au.auto.saas-n.com"
+          elk_host3       = "us01vlcfel03-au.auto.saas-n.com"
       }    
     
     ### DB ###
