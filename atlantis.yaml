@@ -54,7 +54,7 @@ projects:
 # L
   - name: lemery-hapg
     dir: lemery/hapg
-    workflow: nutanix-backend
+    workflow: terraform-upgrade
   - name: lemery-kek-vault
     dir: lemery/kek/vault
     workflow: nutanix-backend
