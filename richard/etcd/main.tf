@@ -9,7 +9,7 @@ locals {
   environment = "master"
   etcd        = ["us01vlrgetcd01","us01vlrgetcd02","us01vlrgetcd02"]
   hostgroup   = "BT Base Server"
-  lob         = "cloud"
+  lob         = "CLOUD"
   network     = "ny2-autolab-app-ahv"
   facts       = {
     "bt_env"                  = "autolab"
