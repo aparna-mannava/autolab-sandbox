@@ -20,10 +20,48 @@ locals {
   }
 }
 
-module "etcd" {
+module "etcd1" {
   for_each =           toset(local.etcd)
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = each.key
+  hostname             = local.etcd_servers[0]
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  cpus                 = "2"
+  datacenter           = local.datacenter
+  external_facts       = local.facts
+  foreman_environment  = local.environment
+  foreman_hostgroup    = local.hostgroup
+  lob                  = local.lob
+  memory               = "4096"
+  os_version           = "rhel7"  
+  additional_disks     = {
+    1 = "200",
+  }
+}
+
+module "etcd2" {
+  for_each =           toset(local.etcd)
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = local.etcd_servers[1]
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  cpus                 = "2"
+  datacenter           = local.datacenter
+  external_facts       = local.facts
+  foreman_environment  = local.environment
+  foreman_hostgroup    = local.hostgroup
+  lob                  = local.lob
+  memory               = "4096"
+  os_version           = "rhel7"  
+  additional_disks     = {
+    1 = "200",
+  }
+}
+
+module "etcd3" {
+  for_each =           toset(local.etcd)
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = local.etcd_servers[2]
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   cpus                 = "2"
