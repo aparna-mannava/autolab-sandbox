@@ -61,6 +61,8 @@ projects:
 # P
 # Q
 # R
+  - name: richard-etcd
+    dir: richard/etcd
 # S
   - name: sam-autolab-oratst
     dir: saumil/oradb
