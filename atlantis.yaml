@@ -21,8 +21,8 @@ projects:
   - name: cfrm-autolab-elk-1
     dir: cfrmcloud/elastic/cluster_1
     workflow: nutanix-backend
-  - name: cfrm-autolab-db
-    dir: cfrmcloud/central_db
+  - name: cfrm-autolab-db-1
+    dir: cfrmcloud/central_db_1
     workflow: nutanix-backend
   - name: cfrm-autolab-ha-00 ##000 chc
     dir: cfrmcloud/cfrm/ha/000

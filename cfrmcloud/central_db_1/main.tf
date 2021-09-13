@@ -32,7 +32,7 @@ locals {
      }
 }
  
-module "dblab_1" {
+module "db_lab_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.hostname}lab01" //   us01vlcfdblab01.auto.saas-n.com
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-oradb01"//cfrmcloud-autolab-ny2-oradb01
@@ -54,10 +54,10 @@ module "dblab_1" {
   }
 }
  
-output "dblab_1" {
+output "db_lab_1" {
   value = {
-    "fqdn"  = module.dblab_1.fqdn,
-    "alias" = module.dblab_1.alias,
-    "ip"    = module.dblab_1.ip,
+    "fqdn"  = module.db_lab_1.fqdn,
+    "alias" = module.db_lab_1.alias,
+    "ip"    = module.db_lab_1.ip,
   }
 }
