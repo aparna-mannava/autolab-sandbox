@@ -9,11 +9,10 @@ locals {
       bt_product              = "cfrmcloud"
       bt_lob                  = "CFRM"
       bt_tier                 = "autolab" //   rebuild
-      bt_env                  = "01"
+      bt_env                  = "00"
       bt_role                 = "elastic"
       bt_infra_cluster        = "ny5-azc-ntnx-16"  
       bt_infra_network        = "ny2-autolab-app-ahv"
-      #firewall_group          = "CFRMRD_PR_ES"
       hostgroup               = "CFRM BT CLOUD Elastic Servers"
       environment             = "master"   //  
       bt_artemis_version      = "2.8.0"
