@@ -157,9 +157,9 @@ module "haproxy_1" {
 #   }
 # }
 
-resource "infoblox_record_host" "host" {
+resource "infoblox_record_host" "vip" {
   configure_for_dns = true
-  name              = "us01vlpgle02.auto.saas-n.com"
+  name              = "hapg1911.auto.saas-n.com"
   view              = "default"
 
   ipv4addr {
