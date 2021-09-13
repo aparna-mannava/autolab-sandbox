@@ -28,14 +28,14 @@ locals {
 
     ### ELK ###
     cfrm_elk = {
-          elk_host1       = "us01vlcoel01-au.auto.saas-n.com"
-          elk_host2       = "us01vlcoel02-au.auto.saas-n.com"
-          elk_host3       = "us01vlcoel03-au.auto.saas-n.com"
+          elk_host1       = "us01vlcfel01-au.auto.saas-n.com"
+          elk_host2       = "us01vlcfel02-au.auto.saas-n.com"
+          elk_host3       = "us01vlcfel03-au.auto.saas-n.com"
       }    
     
     ### DB ###
     cfrm_db = {
-          db_host         = "us01vlcfdblab01.auto.saas-n.com" 
+          db_host         = "us01vlcfdblab01.auto.saas-n.com" ## us01vlcfdblab01.auto.saas-n.com
           db_sid          = "CFRMAU01"                        
           db_port         = "1560"                            
           db_re_usr       = "CHC_RE_LAB_${local.env_id}"      
