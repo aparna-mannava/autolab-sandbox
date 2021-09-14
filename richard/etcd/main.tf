@@ -22,7 +22,7 @@ locals {
 
 module "etcd1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.etcd[0]
+  hostname             = "${local.etcd[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   cpus                 = "2"
@@ -40,7 +40,7 @@ module "etcd1" {
 
 module "etcd2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.etcd[1]
+  hostname             = "${local.etcd[1]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   cpus                 = "2"
@@ -58,7 +58,7 @@ module "etcd2" {
 
 module "etcd3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.etcd[2]
+  hostname             = "${local.etcd[2]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   cpus                 = "2"
