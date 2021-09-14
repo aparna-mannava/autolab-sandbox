@@ -8,7 +8,7 @@ locals {
   domain      = "auto.saas-n.com"
   environment = "master"
   etcd        = ["us01vletcdz01","us01vletcdz02","us01vletcdz03"]
-  hostgroup   = "BT Base Server"
+  hostgroup   = "BT ETCD for PostgreSQL Server"
   lob         = "CLOUD"
   network     = "ny2-autolab-app-ahv"
   facts       = {
