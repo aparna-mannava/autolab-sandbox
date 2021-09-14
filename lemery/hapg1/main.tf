@@ -45,6 +45,63 @@ locals {
   }
 }
 
+module "etcd_0" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = local.etcd_servers[0]
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-etcd1"
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  lob                  = local.lob
+  foreman_hostgroup    = local.etcd_hostgroup
+  foreman_environment  = local.environment
+  os_version           = local.os
+  cpus                 = "2"
+  memory               = "4096"
+  external_facts       = local.facts
+  datacenter           = local.datacenter
+  additional_disks     = {
+    1 = "100",
+  }
+}
+
+module "etcd_1" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = local.etcd_servers[1]
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-etcd2"
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  lob                  = local.lob
+  foreman_hostgroup    = local.etcd_hostgroup
+  foreman_environment  = local.environment
+  os_version           = local.os
+  cpus                 = "2"
+  memory               = "4096"
+  external_facts       = local.facts
+  datacenter           = local.datacenter
+  additional_disks     = {
+    1 = "100",
+  }
+}
+
+module "etcd_2" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = local.etcd_servers[2]
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-etcd2"
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  lob                  = local.lob
+  foreman_hostgroup    = local.etcd_hostgroup
+  foreman_environment  = local.environment
+  os_version           = local.os
+  cpus                 = "2"
+  memory               = "4096"
+  external_facts       = local.facts
+  datacenter           = local.datacenter
+  additional_disks     = {
+    1 = "100",
+  }
+}
+
 module "pg_0" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.hapg_servers[0]
