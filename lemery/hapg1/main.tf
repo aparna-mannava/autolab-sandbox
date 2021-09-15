@@ -14,6 +14,7 @@ locals {
   haproxy_servers  = ["us01vlhapxle01","us01vlhapxle02"]
   backrest_server = ["us01vlbkple01"]
   etcd_hosts_p    = ["'us01vletcdle01.auto.saas-n.com','us01vletcdle02.auto.saas-n.com','us01vletcdle03.auto.saas-n.com'"]
+  etcd_os         = "rhel7"
   os              = "rhel8"
   domain          = "auto.saas-n.com"
   datacenter      = "ny2"
@@ -68,7 +69,7 @@ module "etcd_0" {
   lob                  = local.lob
   foreman_hostgroup    = local.etcd_hostgroup
   foreman_environment  = local.environment
-  os_version           = local.os
+  os_version           = local.etcd_os
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
@@ -87,7 +88,7 @@ module "etcd_1" {
   lob                  = local.lob
   foreman_hostgroup    = local.etcd_hostgroup
   foreman_environment  = local.environment
-  os_version           = local.os
+  os_version           = local.etcd_os
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
@@ -106,7 +107,7 @@ module "etcd_2" {
   lob                  = local.lob
   foreman_hostgroup    = local.etcd_hostgroup
   foreman_environment  = local.environment
-  os_version           = local.os
+  os_version           = local.etcd_os
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
