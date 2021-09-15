@@ -14,7 +14,7 @@ locals {
   haproxy_servers  = ["us01vlhapxle01","us01vlhapxle02"]
   backrest_server = ["us01vlbkple01"]
   etcd_hosts_p    = ["'us01vletcdle01.auto.saas-n.com','us01vletcdle02.auto.saas-n.com','us01vletcdle03.auto.saas-n.com'"]
-  os              = "rhel7"
+  os              = "rhel8"
   domain          = "auto.saas-n.com"
   datacenter      = "ny2"
   tier            = "auto"
