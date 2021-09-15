@@ -43,6 +43,20 @@ locals {
     "bt_hapg_haproxy_servers" = ["${local.haproxy_servers[0]}.${local.domain}", "${local.haproxy_servers[1]}.${local.domain}"]
     "bt_hapg_haproxy_service" = "hapg1911.auto.saas-n.com"
   }
+  hapgfacts       = {
+    "bt_role"                 = "postgresql"
+    "bt_pg_version"           = "12"
+    "bt_env"                  = local.bt_env
+    "bt_tier"                 = local.tier
+    "bt_product"              = local.bt_product
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
+    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
+    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
+    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
+    "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
+    "bt_hapg_haproxy_servers" = ["${local.haproxy_servers[0]}.${local.domain}", "${local.haproxy_servers[1]}.${local.domain}"]
+    "bt_hapg_haproxy_service" = "hapg1911.auto.saas-n.com"
+  }
 }
 
 module "etcd_0" {
@@ -114,7 +128,7 @@ module "pg_0" {
   os_version           = local.os
   cpus                 = "2"
   memory               = "4096"
-  external_facts       = local.facts
+  external_facts       = local.hapgfacts
   datacenter           = local.datacenter
   additional_disks     = {
     1 = "100",
@@ -135,7 +149,7 @@ module "pg_1" {
   os_version           = local.os
   cpus                 = "2"
   memory               = "4096"
-  external_facts       = local.facts
+  external_facts       = local.hapgfacts
   datacenter           = local.datacenter
   additional_disks     = {
     1 = "100",
@@ -156,7 +170,7 @@ module "pg_2" {
   os_version           = local.os
   cpus                 = "2"
   memory               = "4096"
-  external_facts       = local.facts
+  external_facts       = local.hapgfacts
   datacenter           = local.datacenter
   additional_disks     = {
     1 = "100",
