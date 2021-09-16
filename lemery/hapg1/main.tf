@@ -22,7 +22,7 @@ locals {
   bt_env          = "1"
   bt_product      = "btiq"
   lob             = "BTIQ"
-  environment     = "master"
+  environment     = "feature_CEA_10339_validate_ssl_w_hapg"
   cluster         = "ny5-azc-ntnx-16"
   network         = "ny2-autolab-app-ahv"
   etcd_hostgroup  = "BT ETCD for PostgreSQL Server"
