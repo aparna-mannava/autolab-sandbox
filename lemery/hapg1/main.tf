@@ -101,7 +101,7 @@ module "etcd_1" {
 module "etcd_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.etcd_servers[2]
-  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-etcd2"
+  alias                = "le-${local.pg_datacenter}-${local.pg_tier}-etcd3"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   lob                  = local.lob
