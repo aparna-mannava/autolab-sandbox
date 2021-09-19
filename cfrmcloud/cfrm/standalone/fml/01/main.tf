@@ -21,7 +21,7 @@ locals {
     bt_lob        = "CFRM"
     bt_ic_version = "610_SP2"
     bt_env        = "standalone"
-    //firewall_group  = "GB03-SAASN-DEV2"
+    //firewall_group  = "GB03-SAASN-DEV2"  
     db_host       = "us01vlcfdblab01.auto.saas-n.com" 
     db_sid        = "CFRMAU01"                        
     db_port       = "1560" 
