@@ -7,10 +7,10 @@ locals {
    facts     = {
       customer         = "fml" // pre customer
       product          = "cfrmcloud"
-      tier             = "autolab" //changed on each env 
+      tier             = "autolab" //changed on each env    
       role             = "app"
       bt_lob           = "CFRM"
-      cfrm_version     = "640_SP2" // Mandatory rebuild
+      cfrm_version     = "640_SP2" // Mandatory rebuild 
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers"
