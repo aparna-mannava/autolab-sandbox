@@ -50,7 +50,7 @@ projects:
 # F
 # G
   - name: gnewbury-tfproviders
-    path: gnewbury/tfproviders
+    dir: gnewbury/tfproviders
     workflow: nutanix-backend
 # H
 # I
