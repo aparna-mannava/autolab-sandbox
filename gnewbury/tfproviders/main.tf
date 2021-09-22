@@ -20,6 +20,10 @@ module "tfchocotest" {
     bt_product = "inf"
     bt_role    = "chocolatey_server"
   }
+  additional_disks = {
+    1 = "500"
+    2 = "500"
+  }
 }
 
 output "tfchocotest" {
