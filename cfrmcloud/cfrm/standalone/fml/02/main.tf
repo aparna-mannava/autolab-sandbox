@@ -28,7 +28,7 @@ locals {
     }
 }
 
-module "cfrm_fml_01" {
+module "cfrm_fml_02" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = local.hostname
   alias               = "cfrm-cloud-${local.facts.bt_tier}-${local.datacenter.id}-${local.facts.bt_customer}-${local.facts.bt_env}-ic-${local.host_number}"
@@ -48,10 +48,10 @@ module "cfrm_fml_01" {
   }
 }
 
-output "cfrm_fml_01" {
+output "cfrm_fml_02" {
   value = {
-    "fqdn"  = module.cfrm_fml_01.fqdn,
-    "alias" = module.cfrm_fml_01.alias,
-    "ip"    = module.cfrm_fml_01.ip,
+    "fqdn"  = module.cfrm_fml_02.fqdn,
+    "alias" = module.cfrm_fml_02.alias,
+    "ip"    = module.cfrm_fml_02.ip,
   }
 }
