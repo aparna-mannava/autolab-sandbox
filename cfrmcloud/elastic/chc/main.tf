@@ -66,7 +66,7 @@ locals {
     }
 }
 
-module "elk_chc_1" {
+module "elk_chc1_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}01-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk01"// cfrmcloud-uat-gb00-elk01
@@ -87,7 +87,7 @@ module "elk_chc_1" {
   }
 } 
 
-module "elk_chc_2" {
+module "elk_chc1_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}02-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk02"// cfrmcloud-uat-gb00-elk02
@@ -108,7 +108,7 @@ module "elk_chc_2" {
   }
 }
 
-module "elk_chc_3" {
+module "elk_chc1_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}03-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk03"//cfrmcloud-uat-gb00-elk03
@@ -129,26 +129,26 @@ module "elk_chc_3" {
   }
 } 
 
-output "elk_chc_1" {
+output "elk_chc1_1" {
   value = {
-    "fqdn"  = module.elk_chc_1.fqdn,
-    "alias" = module.elk_chc_1.alias,
-    "ip"    = module.elk_chc_1.ip,
+    "fqdn"  = module.elk_chc1_1.fqdn,
+    "alias" = module.elk_chc1_1.alias,
+    "ip"    = module.elk_chc1_1.ip,
   }
 }
 
-output "elk_chc_2" {
+output "elk_chc1_2" {
   value = {
-    "fqdn"  = module.elk_chc_2.fqdn,
-    "alias" = module.elk_chc_2.alias,
-    "ip"    = module.elk_chc_2.ip,
+    "fqdn"  = module.elk_chc1_2.fqdn,
+    "alias" = module.elk_chc1_2.alias,
+    "ip"    = module.elk_chc1_2.ip,
   }
 }
 
-output "elk_chc_3" {
+output "elk_chc1_3" {
   value = {
-    "fqdn"  = module.elk_chc_3.fqdn,
-    "alias" = module.elk_chc_3.alias,
-    "ip"    = module.elk_chc_3.ip,
+    "fqdn"  = module.elk_chc1_3.fqdn,
+    "alias" = module.elk_chc1_3.alias,
+    "ip"    = module.elk_chc1_3.ip,
   }
 }
