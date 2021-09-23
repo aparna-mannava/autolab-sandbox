@@ -15,7 +15,7 @@ projects:
   - name: cfrm-autolab-nfs
     dir: cfrmcloud/nfs
     workflow: nutanix-backend
-  - name: cfrm-autolab-elk-chc
+  - name: cfrm-autolab--wls-elk-chc
     dir: cfrmcloud/elastic/chc
     workflow: nutanix-backend
   - name: cfrm-autolab-elk-1
