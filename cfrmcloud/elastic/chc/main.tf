@@ -7,14 +7,14 @@ locals {
     facts       = {
       bt_customer             = "chc"
       bt_product              = "cfrmcloud"
-      bt_lob                  = "cfrm"
+      bt_lob                  = "CFRM"
       bt_tier                 = "autolab" //    LAB
       bt_env                  = "01"
       bt_role                 = "elastic"
       bt_infra_cluster        = "ny5-azc-ntnx-16"  
       bt_infra_network        = "ny2-autolab-app-ahv"
       #firewall_group          = "CFRMRD_PR_ES"
-      hostgroup               = "CFRM BT CLOUD Elastic Servers"
+      hostgroup               = "CFRM BT CLOUD Elastic Servers [CHC]"
       environment             = "master"   //  
       bt_artemis_version      = "2.8.0"
       bt_es_version           = "5.6.16"
