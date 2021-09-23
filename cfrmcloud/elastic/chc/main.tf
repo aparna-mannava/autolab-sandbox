@@ -7,14 +7,14 @@ locals {
     facts       = {
       bt_customer             = "chc"
       bt_product              = "cfrmcloud"
-      bt_lob                  = "cfrm"
+      bt_lob                  = "CFRM"
       bt_tier                 = "autolab" //    LAB
       bt_env                  = "01"
       bt_role                 = "elastic"
       bt_infra_cluster        = "ny5-azc-ntnx-16"  
       bt_infra_network        = "ny2-autolab-app-ahv"
       #firewall_group          = "CFRMRD_PR_ES"
-      hostgroup               = "CFRM BT CLOUD Elastic Servers"
+      hostgroup               = "CFRM BT CLOUD Elastic Servers [CHC]"
       environment             = "master"   //  
       bt_artemis_version      = "2.8.0"
       bt_es_version           = "5.6.16"
@@ -66,7 +66,7 @@ locals {
     }
 }
 
-module "elk_chc_1" {
+module "elk_wls_chc_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}01-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk01"// cfrmcloud-uat-gb00-elk01
@@ -87,7 +87,7 @@ module "elk_chc_1" {
   }
 } 
 
-module "elk_chc_2" {
+module "elk_wls_chc_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}02-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk02"// cfrmcloud-uat-gb00-elk02
@@ -108,7 +108,7 @@ module "elk_chc_2" {
   }
 }
 
-module "elk_chc_3" {
+module "elk_wls_chc_3" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}03-au"
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.hostname}-${local.datacenter.id}-elk03"//cfrmcloud-uat-gb00-elk03
@@ -129,26 +129,26 @@ module "elk_chc_3" {
   }
 } 
 
-output "elk_chc_1" {
+output "elk_wls_chc_1" {
   value = {
-    "fqdn"  = module.elk_chc_1.fqdn,
-    "alias" = module.elk_chc_1.alias,
-    "ip"    = module.elk_chc_1.ip,
+    "fqdn"  = module.elk_wls_chc_1.fqdn,
+    "alias" = module.elk_wls_chc_1.alias,
+    "ip"    = module.elk_wls_chc_1.ip,
   }
 }
 
-output "elk_chc_2" {
+output "elk_wls_chc_2" {
   value = {
-    "fqdn"  = module.elk_chc_2.fqdn,
-    "alias" = module.elk_chc_2.alias,
-    "ip"    = module.elk_chc_2.ip,
+    "fqdn"  = module.elk_wls_chc_2.fqdn,
+    "alias" = module.elk_wls_chc_2.alias,
+    "ip"    = module.elk_wls_chc_2.ip,
   }
 }
 
-output "elk_chc_3" {
+output "elk_wls_chc_3" {
   value = {
-    "fqdn"  = module.elk_chc_3.fqdn,
-    "alias" = module.elk_chc_3.alias,
-    "ip"    = module.elk_chc_3.ip,
+    "fqdn"  = module.elk_wls_chc_3.fqdn,
+    "alias" = module.elk_wls_chc_3.alias,
+    "ip"    = module.elk_wls_chc_3.ip,
   }
 }
