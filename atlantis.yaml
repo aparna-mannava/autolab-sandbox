@@ -52,6 +52,9 @@ projects:
 # E
 # F
 # G
+  - name: gnewbury-crowdstrike
+    dir: gnewbury/crowdstrike
+    workflow: nutanix-backend
 # H
 # I
 # J
