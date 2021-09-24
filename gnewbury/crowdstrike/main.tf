@@ -12,7 +12,7 @@ module "crowdstriketest" {
   lob                 = "CLOUD"
   memory              = 4096
   os_version          = "rhel8"
-  foreman_environment = "feature_CLOUD_95811_crowdstrike_agent_linux"
+  foreman_environment = "master"
   foreman_hostgroup   = "BT Base Server"
   datacenter          = "ny2"
   external_facts = {
