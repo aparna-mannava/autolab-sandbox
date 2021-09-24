@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -49,9 +49,6 @@ projects:
 # E
 # F
 # G
-  - name: gnewbury-tfproviders
-    dir: gnewbury/tfproviders
-    workflow: nutanix-backend
 # H
 # I
 # J
