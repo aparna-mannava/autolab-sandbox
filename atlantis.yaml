@@ -42,6 +42,8 @@ projects:
   - name: cfrm-autolab-fml-standalone-02 ##01 fml
     dir: cfrmcloud/cfrm/standalone/fml/02
     workflow: nutanix-backend
+  - name: cdrew-pg-test123
+    dir: cdrew/pg1
 # D
   - name: dave-autolab-ptchnix
     dir: dmorvan/patch_nix
