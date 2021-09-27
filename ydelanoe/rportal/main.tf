@@ -9,7 +9,7 @@ locals {
   datacenter    = "ny2"
   image         = "rhel8"
   infra_cluster = "ny5-azc-ntnx-16"
-  infra_network = "ny2-autolab-app"
+  infra_network = "ny2-autolab-db"
   facts         = {
     "bt_product"        = "fmcloud"
     "bt_tier"           = "dev"
