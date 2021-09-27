@@ -15,7 +15,7 @@ module "postgres_server1" {
   alias                 = "crd-pg-db02"
   bt_infra_cluster      = "ny5-azc-ntnx-16"
   bt_infra_network      = "ny2-autolab-app-ahv"
-  cpus                  = "2"
+  cpus                  = "4"
   memory                = "8192"
   os_version            = "rhel7"
   foreman_environment   = "master"
