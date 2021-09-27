@@ -17,7 +17,7 @@ module "postgres_server1" {
   bt_infra_network      = "ny2-autolab-app-ahv"
   cpus                  = "2"
   memory                = "8192"
-  os_version            = "rhel8"
+  os_version            = "rhel7"
   foreman_environment   = "master"
   foreman_hostgroup     = "BT Postgresql DB Server"
   datacenter            = "ny2"
