@@ -84,4 +84,6 @@ projects:
 # W
 # X
 # Y
+  - name: ydelanoe-rportal
+    dir: ydelanoe/rportal
 # Z
