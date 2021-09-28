@@ -29,7 +29,6 @@ locals {
       "bt_tier"         = local.facts.bt_tier
       "bt_env"          = local.facts.bt_env
       "bt_role"         = local.facts.bt_role
-      "bt_cfrm_version" = local.facts.bt_cfrm_version
      }
 }
  
