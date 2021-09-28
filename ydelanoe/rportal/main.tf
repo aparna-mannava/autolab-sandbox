@@ -1,13 +1,13 @@
 terraform {
   backend "s3" {}
 }
-#
+
 locals {
   lob           = "FMCLOUD"
   environment   = "dev"
   hostgroup     = "BT FMCLOUD ReportPortal"
   datacenter    = "ny2"
-  image         = "rhel8"
+  image         = "rhel7"
   infra_cluster = "ny5-azc-ntnx-16"
   infra_network = "ny2-autolab-app-ahv"
   facts         = {
