@@ -27,7 +27,7 @@ projects:
   - name: cfrm-autolab-prod-db-1 ## DB prod autolab
     dir: cfrmcloud/central_db_1/pr
     workflow: nutanix-backend
-  - name: cfrm-autolab-prod-db-1 ## DB dr autolab
+  - name: cfrm-autolab-dr-db-1 ## DB dr autolab
     dir: cfrmcloud/central_db_1/dr
     workflow: nutanix-backend
   - name: cfrm-autolab-ha-00 ##000 chc
