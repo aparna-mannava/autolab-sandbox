@@ -13,8 +13,6 @@ locals {
       bt_role              = "oradb"
       bt_infra_cluster     = "ny5-azc-ntnx-16" 
       bt_infra_network     = "ny2-autolab-app-ahv"
-      bt_secondary_dbhost  = "us01vlcfdbpr01.auto.saas-n.com" // mandatory on prod and dr tier
-      bt_secondary_sid     = "cfrmpr01" // mandatory on prod and dr tier
       hostgroup            = "BT CFRM CLOUD Oracle DB Servers"
       environment          = "bugfix_CFRMCLOUD_1437_chc_db_dr_tnsname_file_is_overwritten_by_puppet" //
       hostname             = "us01vlcfdb"
@@ -24,11 +22,13 @@ locals {
       id   = "ny2"
   }
     db01prod    = {
-      "bt_customer"     = local.facts.bt_customer
-      "bt_product"      = local.facts.bt_product
-      "bt_tier"         = local.facts.bt_tier
-      "bt_env"          = local.facts.bt_env
-      "bt_role"         = local.facts.bt_role
+      bt_customer        = local.facts.bt_customer
+      bt_product         = local.facts.bt_product
+      bt_tier            = local.facts.bt_tier
+      bt_env             = local.facts.bt_env
+      bt_role            = local.facts.bt_role
+      bt_secondary_dbhost  = "us01vlcfdbpr01.auto.saas-n.com" // mandatory on prod and dr tier
+      bt_secondary_sid     = "cfrmpr01" // mandatory on prod and dr tier
      }
 }
  
