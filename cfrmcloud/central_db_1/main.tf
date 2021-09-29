@@ -5,18 +5,20 @@ terraform {
  
 locals {
     facts       = {
-      bt_customer      = ""
-      bt_product       = "cfrmcloud"
-      bt_lob           = "CFRM"
-      bt_tier          = "autolab" //dev
-      bt_env           = "01"
-      bt_cfrm_version  = "6.1_SP1" //rebuild
-      bt_role          = "oradb"
-      bt_infra_cluster = "ny5-azc-ntnx-16" 
-      bt_infra_network = "ny2-autolab-app-ahv"
-      hostgroup        = "BT CFRM CLOUD Oracle DB Servers"
-      environment      = "master" //
-      hostname         = "us01vlcfdb"
+      bt_customer          = ""
+      bt_product           = "cfrmcloud"
+      bt_lob               = "CFRM"
+      bt_tier              = "autolab" //dev
+      bt_env               = "01"
+      bt_cfrm_version      = "6.1_SP1" //rebuild
+      bt_role              = "oradb"
+      bt_infra_cluster     = "ny5-azc-ntnx-16" 
+      bt_infra_network     = "ny2-autolab-app-ahv"
+      bt_secondary_dbhost  = "" // mandatory on prod and dr tier
+      bt_secondary_sid     = "" // mandatory on prod and dr tier
+      hostgroup            = "BT CFRM CLOUD Oracle DB Servers"
+      environment          = "master" //
+      hostname             = "us01vlcfdb"
     }
     datacenter = {
       name = "ny2"
