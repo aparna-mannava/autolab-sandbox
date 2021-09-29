@@ -16,7 +16,7 @@ locals {
       bt_secondary_dbhost  = "us01vlcfdbpr01.auto.saas-n.com" // mandatory on prod and dr tier
       bt_secondary_sid     = "cfrmpr01" // mandatory on prod and dr tier
       hostgroup            = "BT CFRM CLOUD Oracle DB Servers"
-      environment          = "master" //
+      environment          = "bugfix_CFRMCLOUD_1437_chc_db_dr_tnsname_file_is_overwritten_by_puppet" //
       hostname             = "us01vlcfdb"
     }
     datacenter = {
