@@ -8,7 +8,7 @@ locals {
       bt_customer          = ""
       bt_product           = "cfrmcloud"
       bt_lob               = "CFRM"
-      bt_tier              = "dr" // DR
+      bt_tier              = "dr" //   DR
       bt_env               = "01"
       bt_role              = "oradb"
       bt_infra_cluster     = "ny5-azc-ntnx-16" 
