@@ -9,7 +9,6 @@ locals {
       bt_product           = "cfrmcloud"
       bt_lob               = "CFRM"
       bt_tier              = "prod" //   prod
-      bt_env               = "01"
       bt_role              = "oradb"
       bt_infra_cluster     = "ny5-azc-ntnx-16" 
       bt_infra_network     = "ny2-autolab-app-ahv"

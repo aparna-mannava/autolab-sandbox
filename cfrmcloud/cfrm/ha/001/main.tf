@@ -13,9 +13,9 @@ locals {
       cfrm_version     = "5901_SP4" // Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
-      hostgroup        = "BT CFRM CLOUD Application Servers"
+      hostgroup        = "BT CFRM CLOUD Application Servers [CHC]"
       firewall_group   = "CFRMRD_PPD_BE"
-      environment      = "feature_CFRMCLOUD_1244_cfrm_automated_ha"
+      environment      = "feature_CFRMCLOUD_1439_chc_add_flag_to_support_sso_login"
     }
     
     ### App ###
