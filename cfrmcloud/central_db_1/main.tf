@@ -10,7 +10,6 @@ locals {
       bt_lob               = "CFRM"
       bt_tier              = "autolab" //dev
       bt_env               = "01"
-      bt_cfrm_version      = "6.1_SP1" //rebuild
       bt_role              = "oradb"
       bt_infra_cluster     = "ny5-azc-ntnx-16" 
       bt_infra_network     = "ny2-autolab-app-ahv"
@@ -24,13 +23,12 @@ locals {
       name = "ny2"
       id   = "ny2"
   }
-    db01prod    = {
+    db01lab    = {
       "bt_customer"     = local.facts.bt_customer
       "bt_product"      = local.facts.bt_product
       "bt_tier"         = local.facts.bt_tier
       "bt_env"          = local.facts.bt_env
       "bt_role"         = local.facts.bt_role
-      "bt_cfrm_version" = local.facts.bt_cfrm_version
      }
 }
  
@@ -44,7 +42,7 @@ module "db_lab_1" {
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
   datacenter           = local.datacenter.name
-  external_facts       = local.db01prod
+  external_facts       = local.db01lab
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "12386"

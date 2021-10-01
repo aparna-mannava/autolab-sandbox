@@ -15,8 +15,8 @@ locals {
       bt_infra_network        = "ny2-autolab-app-ahv"
       hostgroup               = "CFRM BT CLOUD Elastic Servers"
       environment             = "master"   //  
-      bt_artemis_version      = "2.8.0"
-      bt_es_version           = "5.6.16"
+      bt_artemis_version      = "2.13.0"
+      bt_es_version           = "7.8.0"
       bt_apacheds_version     = "2.0.0_M24"
       bt_jmx_prometheus_version = "0.14.0"
       bt_artemis1_fqdn        = "${local.hostname}01-au" //us01vlcfel01-ut.saas-p.com
