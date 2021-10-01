@@ -10,7 +10,7 @@ locals {
       tier             = "prod" //changed on each env 
       role             = "app"
       bt_lob           = "CFRM"
-      cfrm_version     = "5901_SP4" // Mandatory
+      cfrm_version     = "5901_SP4" //  Mandatory
       bt_infra_cluster = "ny5-azc-ntnx-16"
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers [CHC]"
