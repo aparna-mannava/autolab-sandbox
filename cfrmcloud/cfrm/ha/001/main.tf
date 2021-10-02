@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-   env_id              = "01"
+   env_id              = "00"
    facts     = {
       customer         = "chc" // pre customer
       product          = "cfrmcloud"
@@ -83,7 +83,7 @@ locals {
 module "chc-ic-01-be-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.be_host1
-  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be01" //
+  alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be01" //
   bt_infra_network     = local.facts.bt_infra_network   ////  
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -103,7 +103,7 @@ module "chc-ic-01-be-lab01" {
 module "chc-ic-01-be-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.be_host2
-  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be02"
+  alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be02"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -123,7 +123,7 @@ module "chc-ic-01-be-lab02" {
 module "chc-ic-01-fe-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.ic_host1
-  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic01"
+  alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic01"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -142,7 +142,7 @@ module "chc-ic-01-fe-lab01" {
 module "chc-ic-01-fe-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.ic_host2
-  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic02"
+  alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic02"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
@@ -161,7 +161,7 @@ module "chc-ic-01-fe-lab02" {
 module "chc-ic-01-fe-lab03" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.ic_host3
-  alias                = "cfrm-cloud-chc-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-btic01"
+  alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-btic01"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   foreman_environment  = local.facts.environment
