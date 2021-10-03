@@ -80,7 +80,7 @@ locals {
   }
 }
 
-module "chc-ic-01-be-lab01" {
+module "chc-ic-01a-be-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.be_host1
   alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be01" //
@@ -100,7 +100,7 @@ module "chc-ic-01-be-lab01" {
   }
 }
 
-module "chc-ic-01-be-lab02" {
+module "chc-ic-01a-be-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.be_host2
   alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-be02"
@@ -120,7 +120,7 @@ module "chc-ic-01-be-lab02" {
   }
 }
 
-module "chc-ic-01-fe-lab01" {
+module "chc-ic-01a-fe-lab01" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.ic_host1
   alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic01"
@@ -139,7 +139,7 @@ module "chc-ic-01-fe-lab01" {
     1 = "150"
   }
 }
-module "chc-ic-01-fe-lab02" {
+module "chc-ic-01a-fe-lab02" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.ic_host2
   alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-ic02"
@@ -158,7 +158,7 @@ module "chc-ic-01-fe-lab02" {
     1 = "150"
   }
 }
-module "chc-ic-01-fe-lab03" {
+module "chc-ic-01a-fe-lab03" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.cfrm_hosts.ic_host3
   alias                = "cfrmcloud-${local.facts.customer}-${local.facts.tier}-${local.env_id}-${local.datacenter.name}-btic01"
@@ -178,41 +178,41 @@ module "chc-ic-01-fe-lab03" {
   }
 }
 
-output "chc-ic-01-be-lab01" {
+output "chc-ic-01a-be-lab01" {
   value = {
-    "fqdn"  = module.chc-ic-01-be-lab01.fqdn,
-    "alias" = module.chc-ic-01-be-lab01.alias,
-    "ip"    = module.chc-ic-01-be-lab01.ip,
+    "fqdn"  = module.chc-ic-01a-be-lab01.fqdn,
+    "alias" = module.chc-ic-01a-be-lab01.alias,
+    "ip"    = module.chc-ic-01a-be-lab01.ip,
   }
 }
 
-output "chc-ic-01-be-lab02" {
+output "chc-ic-01a-be-lab02" {
   value = {
-    "fqdn"  = module.chc-ic-01-be-lab02.fqdn,
-    "alias" = module.chc-ic-01-be-lab02.alias,
-    "ip"    = module.chc-ic-01-be-lab02.ip,
+    "fqdn"  = module.chc-ic-01a-be-lab02.fqdn,
+    "alias" = module.chc-ic-01a-be-lab02.alias,
+    "ip"    = module.chc-ic-01a-be-lab02.ip,
   }
 }
-output "chc-ic-01-fe-lab01" {
+output "chc-ic-01a-fe-lab01" {
   value = {
-    "fqdn"  = module.chc-ic-01-fe-lab01.fqdn,
-    "alias" = module.chc-ic-01-fe-lab01.alias,
-    "ip"    = module.chc-ic-01-fe-lab01.ip,
-  }
-}
-
-output "chc-ic-01-fe-lab02" {
-  value = {
-    "fqdn"  = module.chc-ic-01-fe-lab02.fqdn,
-    "alias" = module.chc-ic-01-fe-lab02.alias,
-    "ip"    = module.chc-ic-01-fe-lab02.ip,
+    "fqdn"  = module.chc-ic-01a-fe-lab01.fqdn,
+    "alias" = module.chc-ic-01a-fe-lab01.alias,
+    "ip"    = module.chc-ic-01a-fe-lab01.ip,
   }
 }
 
-output "chc-ic-01-fe-lab03" {
+output "chc-ic-01a-fe-lab02" {
   value = {
-    "fqdn"  = module.chc-ic-01-fe-lab03.fqdn,
-    "alias" = module.chc-ic-01-fe-lab03.alias,
-    "ip"    = module.chc-ic-01-fe-lab03.ip,
+    "fqdn"  = module.chc-ic-01a-fe-lab02.fqdn,
+    "alias" = module.chc-ic-01a-fe-lab02.alias,
+    "ip"    = module.chc-ic-01a-fe-lab02.ip,
+  }
+}
+
+output "chc-ic-01a-fe-lab03" {
+  value = {
+    "fqdn"  = module.chc-ic-01a-fe-lab03.fqdn,
+    "alias" = module.chc-ic-01a-fe-lab03.alias,
+    "ip"    = module.chc-ic-01a-fe-lab03.ip,
   }
 }
