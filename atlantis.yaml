@@ -7,6 +7,9 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+  - name: aarvelo-sophos
+    dir: aarvelo/sophos
+    workflow: nutanix-backend
 # B
 # C
   - name: chris-autolab-hbrtest
