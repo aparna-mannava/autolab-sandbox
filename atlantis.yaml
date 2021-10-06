@@ -75,9 +75,9 @@ projects:
 # P
 # Q
 # R
-  -name: richard-harbor
-   dir: richard/harbor
-   workflow: nutanix-backend
+  - name: richard-harbor
+    dir: richard/harbor
+    workflow: nutanix-backend
 # S
   - name: sam-autolab-oratst
     dir: saumil/oradb
