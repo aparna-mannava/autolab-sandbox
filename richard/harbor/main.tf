@@ -19,7 +19,7 @@ module "harbor1" {
   }
   external_facts       = {
     "bt_product" = "cloud"
-    "bt_role"    = "harbor_server"
+    "bt_role"    = "bt_base_server"
     "bt_tier"    = "autolab"
   }
 }
@@ -41,7 +41,7 @@ module "harbor2" {
   }
   external_facts       = {
     "bt_product" = "cloud"
-    "bt_role"    = "harbor_server"
+    "bt_role"    = "bt_base_server"
     "bt_tier"    = "autolab"
   }
 }
