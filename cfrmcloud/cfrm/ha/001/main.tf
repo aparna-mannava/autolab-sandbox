@@ -7,7 +7,7 @@ locals {
    facts     = {
       customer         = "chc" // pre customer
       product          = "cfrmcloud"
-      tier             = "prod" //changed on each env 
+      tier             = "prod" // changed on each env 
       role             = "app"
       bt_lob           = "CFRM"
       cfrm_version     = "5901_SP4" //  Mandatory
@@ -15,7 +15,7 @@ locals {
       bt_infra_network = "ny2-autolab-app-ahv"
       hostgroup        = "BT CFRM CLOUD Application Servers [CHC]"
       firewall_group   = "CFRMRD_PPD_BE"
-      environment      = "feature_CFRMCLOUD_1439_chc_add_flag_to_support_sso_login"
+      environment      = "master" //"feature_CFRMCLOUD_1439_chc_add_flag_to_support_sso_login"
     }
     
     ### App ###
