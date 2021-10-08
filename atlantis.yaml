@@ -69,6 +69,9 @@ projects:
   - name: lemery-kek-vault
     dir: lemery/kek/vault
     workflow: nutanix-backend
+  - name: lemery-test
+    dir: lemery/test
+    workflow: nutanix-backend
 # M
 # N
 # O
