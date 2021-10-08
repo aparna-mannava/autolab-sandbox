@@ -1,4 +1,3 @@
-#
 terraform {
   backend "s3" {}
 }
@@ -20,7 +19,6 @@ module "harbor1" {
   }
   external_facts       = {
     "bt_product" = "cloud"
-    "bt_role"    = "harbor_server"
     "bt_tier"    = "autolab"
   }
 }
@@ -42,7 +40,6 @@ module "harbor1b" {
   }
   external_facts       = {
     "bt_product" = "cloud"
-    "bt_role"    = "base_server"
     "bt_tier"    = "autolab"
   }
 }
@@ -64,7 +61,6 @@ module "harbor2" {
   }
   external_facts       = {
     "bt_product" = "cloud"
-    "bt_role"    = "harbor_server"
     "bt_tier"    = "autolab"
   }
 }
@@ -86,7 +82,6 @@ module "harbor2b" {
   }
   external_facts       = {
     "bt_product" = "cloud"
-    "bt_role"    = "base_server"
     "bt_tier"    = "autolab"
   }
 }
