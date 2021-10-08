@@ -33,7 +33,7 @@ module "harbor1b" {
   cpus                 = "4"
   datacenter           = "ny2"
   foreman_environment  = "feature_CEA_11622_3"
-  foreman_hostgroup    = "BT CLOUD Harbor Server"
+  foreman_hostgroup    = "BT Base Server"
   lob                  = "CLOUD"
   memory               = "4096"
   additional_disks     = {
@@ -77,7 +77,7 @@ module "harbor2b" {
   cpus                 = "4"
   datacenter           = "ny2"
   foreman_environment  = "feature_CEA_11622_3"
-  foreman_hostgroup    = "BT CLOUD Harbor Server"
+  foreman_hostgroup    = "BT Base Server"
   lob                  = "CLOUD"
   memory               = "4096"
   additional_disks     = {
