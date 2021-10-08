@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product        = "inf"
-  environment    = "feature_CLOUD_97021_Sophos"
+  environment    = "feature_CLOUD_195812_Sophos"
   datacenter     = "ny2"
   cpus           = "2"
   memory         = "8192"
@@ -26,6 +26,15 @@ locals {
     hostname  = "us01vwwin002"
     hostgroup = "BT Base Windows Server"
     os        = "win2019"
+    cluster   = "ny5-azc-ntnx-16"
+    network   = "ny2-autolab-app-ahv"
+    facts     = merge(local.facts, { "bt_tier" = "autolab"})
+  }
+
+  lin001 = {
+    hostname  = "us01vltstaa90"
+    hostgroup = "BT Base Server"
+    os        = "rhel8"
     cluster   = "ny5-azc-ntnx-16"
     network   = "ny2-autolab-app-ahv"
     facts     = merge(local.facts, { "bt_tier" = "autolab"})
@@ -71,6 +80,26 @@ module "win002" {
   }
 }
 
+module "lin001" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = local.lin001.hostname
+  alias                = ""
+  bt_infra_cluster     = local.lin001.cluster
+  bt_infra_network     = local.lin001.network
+  os_version           = local.lin001.os
+  cpus                 = local.cpus
+  memory               = local.memory
+  external_facts       = local.lin001.facts
+  lob                  = local.lob
+  foreman_environment  = local.environment
+  foreman_hostgroup    = local.lin001.hostgroup
+  datacenter           = local.datacenter
+  additional_disks     = {
+    1 = "100",
+  }
+}
+
+
 output "win001" {
   value = {
     "fqdn"  = module.win001.fqdn,
@@ -84,5 +113,13 @@ output "win002" {
     "fqdn"  = module.win002.fqdn,
     "alias" = module.win002.alias,
     "ip"    = module.win002.ip,
+  }
+}
+
+output "lin001" {
+  value = {
+    "fqdn"  = module.lin001.fqdn,
+    "alias" = module.lin001.alias,
+    "ip"    = module.lin001.ip,
   }
 }
