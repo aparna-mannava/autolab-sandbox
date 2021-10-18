@@ -5,12 +5,12 @@ terraform {
 locals {
   product       = "fmcloud"
   environment   = "dev"
-  hostgroup     = "BT Base Server"
+  hostgroup     = "BT FM Cloud ES Snapshot Server"
   datacenter    = "ny2"
   facts         = {
     "bt_product"        = "fmcloud"
     "bt_tier"           = "autolab"
-    "bt_role"           = "test"
+    "bt_role"           = "essnap"
     /*"bt_short_product"  = "fm"
     "bt_tier"           = "dev"
 	  "bt_role"           = "es"
@@ -24,7 +24,7 @@ module "fmcloud_base" {
   bt_infra_cluster     = "ny2-aza-ntnx-07"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
-  foreman_environment  = "master"
+  foreman_environment  = "feature_FMDO_3013"
   lob                  = "FMCLOUD"
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
@@ -32,7 +32,7 @@ module "fmcloud_base" {
   cpus                 = "4"
   memory               = "4096"
   additional_disks     = {
-    1 = "150"
+    1 = "50"
   }
 }
 
