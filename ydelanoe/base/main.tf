@@ -7,9 +7,6 @@ locals {
   environment   = "dev"
   hostgroup     = "BT Base Server"
   datacenter    = "ny2"
-  image         = "rhel8"
-  infra_cluster = "ny2-aza-vmw-autolab"
-  infra_network = "ny2-autolab-app"
   facts         = {
     "bt_product"        = "fmcloud"
     /*"bt_short_product"  = "fm"
@@ -23,9 +20,9 @@ module "fmcloud_base" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlfmbase001"
   alias                = "fm-base01"
-  bt_infra_cluster     = local.infra_cluster
-  bt_infra_network     = local.infra_network
-  os_version           = local.image
+  bt_infra_cluster     = "ny2-aza-ntnx-07"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  os_version           = "rhel7"
   foreman_environment  = "master"
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
