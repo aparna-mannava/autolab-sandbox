@@ -9,6 +9,7 @@ locals {
   datacenter    = "ny2"
   facts         = {
     "bt_product"        = "fmcloud"
+    "bt_tier"           = "autolab"
     /*"bt_short_product"  = "fm"
     "bt_tier"           = "dev"
 	  "bt_role"           = "es"
@@ -24,6 +25,7 @@ module "fmcloud_base" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   foreman_environment  = "master"
+  lob                  = "FMCLOUD"
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   external_facts       = local.facts
