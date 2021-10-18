@@ -29,10 +29,10 @@ module "fmcloud_base" {
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   external_facts       = local.facts
-  cpus                 = "2"
-  memory               = "2048"
+  cpus                 = "4"
+  memory               = "4096"
   additional_disks     = {
-    1 = "100"
+    1 = "150"
   }
 }
 
