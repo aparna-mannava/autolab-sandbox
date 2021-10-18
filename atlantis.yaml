@@ -88,4 +88,6 @@ projects:
 # W
 # X
 # Y
+  - name: ydelanoe-base
+    dir: ydelanoe/base
 # Z
