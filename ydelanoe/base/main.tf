@@ -10,13 +10,13 @@ locals {
   facts         = {
     "bt_product"        = "fmcloud"
     "bt_tier"           = "autolab"
+    "bt_role"           = "test"
     /*"bt_short_product"  = "fm"
     "bt_tier"           = "dev"
 	  "bt_role"           = "es"
     "bt_env"            = "1"*/
   }
 }
-
 module "fmcloud_base" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlfmbase001"
