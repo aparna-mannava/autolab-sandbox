@@ -7,7 +7,7 @@ locals {
   environment   = "dev"
   hostgroup     = "BT Base Server"
   datacenter    = "ny2"
-  image         = "rhel7"
+  image         = "rhel8"
   infra_cluster = "ny2-aza-vmw-autolab"
   infra_network = "ny2-autolab-app"
   facts         = {
