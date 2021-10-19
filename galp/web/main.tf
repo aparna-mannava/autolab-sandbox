@@ -26,6 +26,7 @@ module "harbor_test_1" {
   external_facts       = local.facts
   additional_disks     = {
     1 = "100",
-    2 = "100"
+    2 = "100",
+    3 = "50"
   }
 }
