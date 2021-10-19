@@ -58,6 +58,9 @@ projects:
 # E
 # F
 # G
+  - name: galp-web-blue
+    dir: galp/web/blue
+    workflow: nutanix-backend
 # H
 # I
 # J
