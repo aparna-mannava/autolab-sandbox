@@ -26,8 +26,8 @@ module "fmcloud_base" {
   foreman_hostgroup    = local.hostgroup
   datacenter           = local.datacenter
   external_facts       = local.facts
-  cpus                 = "4"
-  memory               = "4096"
+  cpus                 = "2"
+  memory               = "2048"
   additional_disks     = {
     1 = "130"
   }
