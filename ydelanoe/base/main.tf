@@ -9,7 +9,7 @@ locals {
   datacenter    = "ny2"
   facts         = {
     "bt_product"        = "fmcloud"
-    "bt_tier"           = "autolab"
+    "bt_tier"           = "dev"
     "bt_role"           = "essnap"
     /*"bt_short_product"  = "fm"
     "bt_tier"           = "dev"
