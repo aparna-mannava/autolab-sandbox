@@ -11,10 +11,7 @@ locals {
     "bt_product"        = "fmcloud"
     "bt_tier"           = "dev"
     "bt_role"           = "essnap"
-    /*"bt_short_product"  = "fm"
-    "bt_tier"           = "dev"
-	  "bt_role"           = "es"
-    "bt_env"            = "1"*/
+    /*"bt_env"            = "1"*/
   }
 }
 module "fmcloud_base" {
