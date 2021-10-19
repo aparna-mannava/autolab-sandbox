@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  environment = "feature_CUT1_11474"
+  environment = "master"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "dev"
