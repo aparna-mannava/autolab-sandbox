@@ -29,7 +29,7 @@ module "fmcloud_base" {
   cpus                 = "2"
   memory               = "2048"
   additional_disks     = {
-    1 = "130"
+    1 = "100"
   }
 }
 
