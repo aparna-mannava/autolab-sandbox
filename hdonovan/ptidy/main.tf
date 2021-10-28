@@ -18,7 +18,7 @@ locals {
     "bt_product"      = "fml"
     "bt_tier"         = "autolab"
   }
-  lob         = "fml"
+  lob         = "FML"
 }
 
 module "tidy_test_server_1" {
