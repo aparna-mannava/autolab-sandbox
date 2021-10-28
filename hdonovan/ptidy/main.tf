@@ -18,7 +18,6 @@ locals {
     "bt_product"      = "fml"
     "bt_tier"         = "autolab"
   }
-  datacenter  = "ny2"
   lob         = "fml"
 }
 
