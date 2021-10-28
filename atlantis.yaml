@@ -62,6 +62,9 @@ projects:
     dir: galp/web
     workflow: nutanix-backend
 # H
+  - name: hdonovan-ptidy
+    dir: hdonovan/ptidy
+    workflow: nutanix-backend
 # I
 # J
 # K
