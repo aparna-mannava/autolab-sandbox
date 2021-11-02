@@ -27,6 +27,9 @@ projects:
 - name: rm_sav
   dir: dmorvan/remove_sophos
   workflow: nutanix-backend
+- name: rm_sav_a
+  dir: dmorvan/test
+  workflow: nutanix-backend
 # S
 # T
 # U
