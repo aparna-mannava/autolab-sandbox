@@ -16,6 +16,9 @@ projects:
 - name: dgbtest1
   dir: nirmalj/dgbtest1
   workflow: nutanix-backend
+- name: dgbtest19c
+  dir: nirmalj/dgbtest19c
+  workflow: nutanix-backend
 # E
 # F
 # G
