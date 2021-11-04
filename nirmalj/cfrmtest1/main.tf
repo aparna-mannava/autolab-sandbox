@@ -20,7 +20,7 @@ module "cfrm_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmsbx77"
   alias                = "${local.product}-${local.facts.bt_customer}-${local.facts.bt_tier}77"
-  bt_infra_cluster     = "ny2-aza-vmw-autolab"
+  bt_infra_cluster     = "ny2-azb-ntnx-09"
   bt_infra_network     = "ny2-autolab-app"
   os_version           = "rhel7"
   cpus                 = "2"
