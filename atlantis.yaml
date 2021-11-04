@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmtest1
+  dir: nirmalj/cfrmtest1
+  workflow: nutanix-backend
 # D
 # E
 # F
