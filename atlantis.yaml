@@ -31,6 +31,9 @@ projects:
 # N
 # O
 # P
+- name: pmx-auto1-pgdelphix
+  dir: pmx/auto1/pgdelphix
+  workflow: nutanix-backend
 # Q
 # R
 - name: rm_sav
