@@ -23,7 +23,7 @@ module "atlassian_dbserver_1" {
   memory               = "8192"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT Atlassian DB"
+  foreman_hostgroup    = "BT Atlassian db role"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
