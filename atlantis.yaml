@@ -447,6 +447,9 @@ projects:
 - name: pmx-auto1-oradbera2
   dir: pmx/auto1/oradbera
   workflow: nutanix-backend
+- name: pmx-auto1-pgdelphix
+  dir: pmx/auto1/pgdelphix
+  workflow: nutanix-backend
 - name: ydelanoe-oradb19c
   dir: ydelanoe/oradb19c
 - name: ydelanoe-jenkins
