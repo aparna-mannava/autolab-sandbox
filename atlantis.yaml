@@ -19,6 +19,9 @@ projects:
 - name: dgbtest19c
   dir: nirmalj/dgbtest19c
   workflow: nutanix-backend
+- name: altsuit_OCT_RU_21
+  dir: bthakkar/altsuit
+  workflow: nutanix-backend
 # E
 # F
 # G
