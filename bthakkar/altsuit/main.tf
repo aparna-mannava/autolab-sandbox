@@ -17,7 +17,7 @@ module "atlassian_dbserver_1" {
   hostname             = "us01vlatldb111"
   alias                = "${local.product}-atl-${local.facts.bt_tier}${local.facts.bt_env}-db111"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
-  bt_infra_environment = "ny2-autolab-app-ahv"
+  bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
