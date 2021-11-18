@@ -50,6 +50,9 @@ projects:
   workflow: nutanix-backend
 #
 # S
+- name: dgbtstdb
+  dir: saumil/dgbtst
+  workflow: nutanix-backend
 # T
 # U
 # V
