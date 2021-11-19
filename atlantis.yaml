@@ -40,6 +40,10 @@ projects:
 - name: pmx-auto1-pgdelphix
   dir: pmx/auto1/pgdelphix
   workflow: nutanix-backend
+- name: pcmtest1
+  dir: nirmalj/pcmtest1
+  workflow: nutanix-backend
+
 # Q
 # R
 - name: rm_sav
