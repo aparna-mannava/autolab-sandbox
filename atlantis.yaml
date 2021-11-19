@@ -43,6 +43,9 @@ projects:
 - name: pcmtest1
   dir: nirmalj/pcmtest1
   workflow: nutanix-backend
+- name: pcmtest2
+  dir: nirmalj/pcmtest2
+  workflow: nutanix-backend
 
 # Q
 # R
