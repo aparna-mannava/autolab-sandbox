@@ -8,7 +8,7 @@ locals {
   datacenter  = "ny2"
   facts                    = {
     "bt_product"           = "pcm"
-    "bt_tier"              = "td"
+    "bt_tier"              = "qa"
     "bt_env"               = "19"
     "bt_customer"          = "fi9001"
     "oracle_patch_version" = "19"
@@ -40,7 +40,7 @@ module "oradb_server_1" {
 module "oradb_server_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlgapcm19"
-  alias                = "${local.product}-GA${local.facts.bt_env}-${local.facts.bt_customer}-db19"
+  alias                = "${local.product}-ga${local.facts.bt_env}-${local.facts.bt_customer}-db19"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   bt_infra_network     = "ny2-autolab-app-ahv"
   cpus                 = "4"
