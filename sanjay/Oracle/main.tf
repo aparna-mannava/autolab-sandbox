@@ -26,7 +26,7 @@ module "cloud_dbserver_1" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
-  foreman_environment  = local.facts.environment
+  foreman_environment  = local.environment
   lob                  = "CLOUD"
   foreman_hostgroup    = "BT DGB Oradb Server"
   datacenter           = local.datacenter
@@ -48,7 +48,7 @@ module "cloud_dbserver_2" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
-  foreman_environment  = local.facts.environment
+  foreman_environment  = local.environment
   lob                  = "CLOUD"
   foreman_hostgroup    = "BT DGB Oradb Secondary Server"
   datacenter           = local.datacenter
