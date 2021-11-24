@@ -67,3 +67,6 @@ projects:
 # X
 # Y
 # Z
+- name: dgbtest19c
+  dir: sanjay/Oracle
+  workflow: nutanix-backend
