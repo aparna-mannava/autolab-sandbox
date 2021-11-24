@@ -8,7 +8,7 @@ locals {
   datacenter  = "ny2"
   facts                    = {
     "bt_product"           = "pcm"
-    "bt_tier"              = "ppd"
+    "bt_tier"              = "qa"
     "bt_env"               = "12"
     "bt_customer"          = "fi9001"
 	  "bt_role"              = "oradb"
