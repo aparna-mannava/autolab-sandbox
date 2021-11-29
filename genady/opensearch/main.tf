@@ -40,4 +40,4 @@ output "cfrm_opensearch_1" {
     "alias" = module.cfrm_opensearch_1.alias,
     "ip"    = module.cfrm_opensearch_1.ip
   }
-}
+} 
