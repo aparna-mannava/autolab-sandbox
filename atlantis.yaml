@@ -28,6 +28,9 @@ projects:
 - name: altsuit_OCT_RU_21
   dir: bthakkar/altsuit
   workflow: nutanix-backend
+- name: TF_testa
+  dir: dmorvan/testa
+  workflow: nutanix-backend
 # E
 # F
 # G
