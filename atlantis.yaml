@@ -9,28 +9,7 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmtest1
-  dir: nirmalj/cfrmtest1
-  workflow: nutanix-backend
-- name: cfrmxopensearch
-  dir: genady/opensearch
-  workflow: nutanix-backend  
 # D
-- name: dgbtest1
-  dir: nirmalj/dgbtest1
-  workflow: nutanix-backend
-- name: dgbtest2
-  dir: nirmalj/dgbtest2
-  workflow: nutanix-backend
-- name: dgbtest19c
-  dir: nirmalj/dgbtest19c
-  workflow: nutanix-backend
-- name: altsuit_OCT_RU_21
-  dir: bthakkar/altsuit
-  workflow: nutanix-backend
-- name: TF_testa
-  dir: dmorvan/testa
-  workflow: nutanix-backend
 # E
 # F
 # G
@@ -43,29 +22,9 @@ projects:
 # N
 # O
 # P
-- name: pmx-auto1-pgdelphix
-  dir: pmx/auto1/pgdelphix
-  workflow: nutanix-backend
-- name: pcmtest1
-  dir: nirmalj/pcmtest1
-  workflow: nutanix-backend
-- name: pcmtest2
-  dir: nirmalj/pcmtest2
-  workflow: nutanix-backend
-
 # Q
 # R
-- name: rm_sav
-  dir: dmorvan/remove_sophos
-  workflow: nutanix-backend
-- name: rm_sav_a
-  dir: dmorvan/test
-  workflow: nutanix-backend
-#
 # S
-- name: dgbtstdb
-  dir: saumil/dgbtst
-  workflow: nutanix-backend
 # T
 # U
 # V
@@ -73,6 +32,3 @@ projects:
 # X
 # Y
 # Z
-- name: dgb19c
-  dir: sanjay/Oracle
-  workflow: nutanix-backend
