@@ -33,8 +33,8 @@ module "cloud_dbserver_1" {
   external_facts       = local.facts
   additional_disks     = {
     1 = "300",
-    2 = "100",
-    3 = "100"
+    2 = "200",
+    3 = "200"
   }
 }
 
@@ -54,8 +54,8 @@ module "cloud_dbserver_2" {
   external_facts       = local.facts
   additional_disks     = {
     1 = "300",
-    2 = "100",
-    3 = "100"
+    2 = "200",
+    3 = "200"
   }
 }
 
