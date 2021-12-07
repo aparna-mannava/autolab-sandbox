@@ -12,7 +12,7 @@ projects:
 - name: cfrmtest1
   dir: nirmalj/cfrmtest1
   workflow: nutanix-backend
-- name: cfrmxopensearch
+- name: cfrmxopensearch 
   dir: genady/opensearch
   workflow: nutanix-backend  
 # D
