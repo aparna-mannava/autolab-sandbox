@@ -34,7 +34,7 @@ module "fmcloud_jnk" {
   cpus                 = "2"
   memory               = "8192"
   additional_disks     = {
-    1 = "100"
+    1 = "250"
   }
 }
 
