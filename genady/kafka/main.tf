@@ -23,7 +23,7 @@ module "cfrm_opensearch_1" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
-  foreman_environment  = "feature_CFRMX_7314"
+  foreman_environment  = "feature_CFRMX_7315"
   foreman_hostgroup    = "CFRMRD ElasticSearch And Artemis Standalone"
   lob                  = "CFRM"
   datacenter           = local.datacenter
