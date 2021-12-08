@@ -10,7 +10,7 @@ projects:
 # B
 # C
 - name: cfrmxkafka
-  dir: genady/kafka
+  dir: genady/kafka 
   workflow: nutanix-backend
 - name: cfrmxopensearch 
   dir: genady/opensearch
