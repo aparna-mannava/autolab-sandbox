@@ -9,7 +9,7 @@ locals {
   datacenter  = "ny2"
   facts         = {
     "bt_customer"         = "fi1234" #ex: fiXXXX
-    "bt_tier"             = "sbx" #ex: sbx, tst, td, demo
+    "bt_tier"             = "tst" #ex: sbx, tst, td, demo
     "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
     "bt_product_version"  = "3.6"
@@ -20,7 +20,7 @@ locals {
 module "cloud_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldgbtst40"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db22"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db40"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
