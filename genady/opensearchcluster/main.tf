@@ -24,7 +24,7 @@ module "cfrm_opensearch_1" {
   cpus                 = "2"
   memory               = "8192"
   foreman_environment  = "feature_CFRMX_7191_OpenSearch"
-  foreman_hostgroup    = "CFRMRD OpenSearch"
+  foreman_hostgroup    = "CFRMRD OpenSearch Cluster"
   lob                  = "CFRM"
   datacenter           = local.datacenter
   external_facts       = local.facts
@@ -44,7 +44,7 @@ module "cfrm_opensearch_2" {
   cpus                 = "2"
   memory               = "8192"
   foreman_environment  = "feature_CFRMX_7191_OpenSearch"
-  foreman_hostgroup    = "CFRMRD OpenSearch"
+  foreman_hostgroup    = "CFRMRD OpenSearch Cluster"
   lob                  = "CFRM"
   datacenter           = local.datacenter
   external_facts       = local.facts
