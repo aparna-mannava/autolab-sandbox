@@ -15,6 +15,9 @@ projects:
 - name: cfrmxopensearch 
   dir: genady/opensearch
   workflow: nutanix-backend
+- name: cfrmxopensearchcluster 
+  dir: genady/opensearchcluster
+  workflow: nutanix-backend  
 # D
 - name: dgbtest1
   dir: nirmalj/dgbtest1
