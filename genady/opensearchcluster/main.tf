@@ -10,7 +10,7 @@ locals {
     "bt_customer"        = "cfrmrd"
     "bt_tier"            = "dev"
     "bt_env"             = "staging"
-    "bt_role"            = "cluster"
+    "bt_role"            = "opensearch"
   }
 }
 
