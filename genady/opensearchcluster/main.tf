@@ -9,7 +9,7 @@ locals {
     "bt_product"         = "cfrmrd"
     "bt_customer"        = "cfrmrd"
     "bt_tier"            = "dev"
-    "bt_env"             = "devops1"
+    "bt_env"             = "staging"
     "bt_role"            = "cluster"
   }
 }
