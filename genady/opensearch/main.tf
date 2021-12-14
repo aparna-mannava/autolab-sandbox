@@ -22,7 +22,7 @@ module "cfrm_opensearch_1" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
-  memory               = "8192"
+  memory               = "8192" 
   foreman_environment  = "feature_CFRMX_7191_OpenSearch"
   foreman_hostgroup    = "CFRMRD OpenSearch"
   lob                  = "CFRM"
