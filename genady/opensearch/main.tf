@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrm"
-  datacenter  = "ny2"
+  datacenter  = "ny2"  
   facts       = {
     "bt_product"         = "cfrmrd"
     "bt_customer"        = "cfrmrd"
