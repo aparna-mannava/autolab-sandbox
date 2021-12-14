@@ -35,7 +35,7 @@ module "cfrm_opensearch_1" {
 }
 
 output "cfrm_opensearch_1" {
-  value = {
+  value = { 
     "fqdn"  = module.cfrm_opensearch_1.fqdn,
     "alias" = module.cfrm_opensearch_1.alias,
     "ip"    = module.cfrm_opensearch_1.ip
