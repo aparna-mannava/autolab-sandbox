@@ -23,7 +23,7 @@ module "hrbr_server_1" {
   external_facts       = local.facts
   os_version           = "rhel7"
   foreman_environment  = "feature_CEA_11776"
-  foreman_hostgroup    = "BT CLOUD Harbor Server"
+  foreman_hostgroup    = "BT Base Server"
   datacenter           = local.dc
   additional_disks     = {
     1 = "500",
