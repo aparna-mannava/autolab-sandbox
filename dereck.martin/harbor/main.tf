@@ -37,7 +37,7 @@ module "hrbr_server_1" {
 module "hrbrlb_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlhrbrlb99"
-  alias                = "harbor-ny2lab"
+  alias                = "harbor-ny2lab99"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   lob                  = local.lob
