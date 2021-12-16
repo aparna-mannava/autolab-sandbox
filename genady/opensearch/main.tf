@@ -11,7 +11,7 @@ locals {
     "bt_tier"            = "dev"
     "bt_env"             = "devops1"
     "bt_role"            = "standalone"
-  }
+  } 
 }
  
 module "cfrm_opensearch_1" {
