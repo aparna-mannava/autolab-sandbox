@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmxelasticsearch
+  dir: genady/elasticsearch
+  workflow: nutanix-backend
 - name: cfrmxkafka
   dir: genady/kafka 
   workflow: nutanix-backend
