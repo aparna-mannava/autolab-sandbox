@@ -16,8 +16,8 @@ locals {
  
 module "cfrm_opensearch_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmx100"
-  alias                = "cfrm-opensearch1"
+  hostname             = "us01vlcfrmx300"
+  alias                = "cfrm-opensearch-1"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
