@@ -42,3 +42,4 @@ output "cfrm_opensearch_1" {
     "ip"    = module.cfrm_opensearch_1.ip 
   }
 } 
+ 
