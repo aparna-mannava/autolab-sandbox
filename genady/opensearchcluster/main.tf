@@ -28,7 +28,7 @@ module "cfrm_opensearch_1" {
   lob                  = "CFRM"
   datacenter           = local.datacenter
   external_facts       = local.facts
-  additional_disks     = {
+  additional_disks     = { 
     1 = "500",
     2 = "100",
   } 
