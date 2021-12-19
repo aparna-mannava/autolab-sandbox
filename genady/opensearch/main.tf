@@ -35,26 +35,6 @@ module "cfrm_opensearch_1" {
 }
 
 
-module "cfrm_opensearch_2" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmx501"
-  alias                = "cfrm-opensearch2"
-  bt_infra_cluster     = "ny5-aza-ntnx-19"
-  bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel7"
-  cpus                 = "2"
-  memory               = "8192"  
-  foreman_environment  = "feature_CFRMX_7191_Opensearch"
-  foreman_hostgroup    = "CFRMRD OpenSearch"
-  lob                  = "CFRM"
-  datacenter           = local.datacenter
-  external_facts       = local.facts
-  additional_disks     = {
-    1 = "500", 
-    2 = "100",
-  }
-}
-
 output "cfrm_opensearch_1" {
   value = { 
     "fqdn"  = module.cfrm_opensearch_1.fqdn,
