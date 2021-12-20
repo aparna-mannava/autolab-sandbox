@@ -67,3 +67,5 @@ projects:
 - name: bvarghese-oracle
   dir: bvarghese/oracle
 # Z
+- name: Dgbtst
+  dir: sanjay/oracle
