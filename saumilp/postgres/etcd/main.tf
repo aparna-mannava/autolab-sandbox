@@ -7,7 +7,7 @@ locals {
   etcd_hosts_p    = ["us01vlpgetd221"]
   domain          = "auto.saas-n.com"
   tier            = "prod"
-  bt_env          = "2"
+  bt_env          = "1"
   lob             = "CLOUD"
   bt_product      = "cloud"
   bt_role           = "postgres"
