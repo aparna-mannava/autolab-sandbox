@@ -57,7 +57,7 @@ projects:
   dir: saumilp/dgbtst2
   workflow: nutanix-backend
 - name: dgbpost
-  dir: saumilp/postgres
+  dir: saumilp/postgres/etcd
   workflow: nutanix-backend
 # T
 # U
