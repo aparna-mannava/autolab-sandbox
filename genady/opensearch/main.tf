@@ -30,7 +30,7 @@ module "cfrm_opensearch_1" {
   external_facts       = local.facts
   additional_disks     = {
     1 = "500", 
-    2 = "100",
+    2 = "100", 
   }
 }
 
