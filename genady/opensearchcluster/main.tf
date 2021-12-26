@@ -95,4 +95,4 @@ output "cfrm_opensearch_3" {
     "alias" = module.cfrm_opensearch_3.alias,
     "ip"    = module.cfrm_opensearch_3.ip 
   }
-} 
+}  
