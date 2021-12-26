@@ -93,6 +93,6 @@ output "cfrm_opensearch_3" {
   value = {
     "fqdn"  = module.cfrm_opensearch_3.fqdn,
     "alias" = module.cfrm_opensearch_3.alias,
-    "ip"    = module.cfrm_opensearch_3.ip
+    "ip"    = module.cfrm_opensearch_3.ip 
   }
 } 
