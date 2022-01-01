@@ -25,6 +25,9 @@ projects:
 # Q
 # R
 # S
+- name: dgbtstdb
+  dir: saumilp/orcl
+  workflow: nutanix-backend
 # T
 # U
 # V
