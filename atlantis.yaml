@@ -9,33 +9,11 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmxelasticsearch
-  dir: genady/elasticsearch
-  workflow: nutanix-backend
-- name: cfrmxkafka
-  dir: genady/kafka
-  workflow: nutanix-backend
-- name: cfrmxopensearch
-  dir: genady/opensearch
-  workflow: nutanix-backend
-- name: cfrmxopensearchcluster
-  dir: genady/opensearchcluster
-  workflow: nutanix-backend
 # D
-- name: dgbtest1
-  dir: nirmalj/dgbtest1
-  workflow: nutanix-backend
-- name: dgbtest2
-  dir: nirmalj/dgbtest2
-  workflow: nutanix-backend
-
 # E
 # F
 # G
 # H
-- name: harbor99
-  dir: dereck.martin/harbor
-  workflow: nutanix-backend
 # I
 # J
 # K
@@ -47,31 +25,10 @@ projects:
 # Q
 # R
 # S
-- name: dgbtstdb
-  dir: saumilp/dgbtst
-  workflow: nutanix-backend
-- name: dgbtstdb1
-  dir: saumilp/dgbtst1
-  workflow: nutanix-backend
-- name: dgbtstdb2
-  dir: saumilp/dgbtst2
-  workflow: nutanix-backend
-- name: dgbpost
-  dir: saumilp/postgres/etcd
-  workflow: nutanix-backend
-- name: dgbpost1
-  dir: saumilp/postgres/hapg
-  workflow: nutanix-backend
 # T
 # U
 # V
 # W
 # X
 # Y
-- name: ydeljnk
-  dir: ydelanoe/jenkins
-- name: bvarghese-oracle
-  dir: bvarghese/oracle
 # Z
-- name: Dgbtst
-  dir: sanjay/oracle
