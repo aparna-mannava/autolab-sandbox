@@ -38,3 +38,6 @@ projects:
 # X
 # Y
 # Z
+- name: dgbtst
+  dir: sanjay/oracle
+  workflow: nutanix-backend
