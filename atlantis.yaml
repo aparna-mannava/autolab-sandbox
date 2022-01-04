@@ -25,6 +25,9 @@ projects:
 # N
 # O
 # P
+- name: pgtest1
+  dir: nirmalj/pgtest1/etcd
+  workflow: nutanix-backend
 # Q
 # R
 # S
