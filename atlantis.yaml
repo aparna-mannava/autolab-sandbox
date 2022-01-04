@@ -17,6 +17,9 @@ projects:
 # F
 # G
 # H
+- name: hapg1
+  dir: nirmalj/pgtest1/hapg
+  workflow: nutanix-backend
 # I
 # J
 # K
