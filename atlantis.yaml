@@ -24,6 +24,9 @@ projects:
 # J
 # K
 # L
+- name: lemery-hrbr
+  dir: lemery/hrbr
+  workflow: nutanix-backend
 # M
 # N
 # O
