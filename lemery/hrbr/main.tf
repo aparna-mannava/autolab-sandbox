@@ -4,7 +4,7 @@ terraform {
 
 locals {
   lob         = "CEA"
-  cluster     = "ny2-aza-ntnx-13"
+  cluster     = "ny2-aza-ntnx-07"
   network     = "ny2-autolab-svc"
   dc          = "ny2"
   facts       = {
