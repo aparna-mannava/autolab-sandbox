@@ -42,11 +42,14 @@ projects:
   workflow: nutanix-backend
 # T
 # U
+- name: dgbtst
+  dir: sanjay/oracle
+  workflow: nutanix-backend
 # V
 # W
 # X
 # Y
 # Z
-- name: dgbtst
-  dir: sanjay/oracle
+- name: rakesh-NewRK
+  dir: rakesh/NewRK
   workflow: nutanix-backend
