@@ -41,7 +41,7 @@ projects:
   dir: saumilp/orcl
   workflow: nutanix-backend
 - name: dgbtstdb19
-  dir: saumilp/orcl19/sec
+  dir: saumilp/oracl19/sec
   workflow: nutanix-backend
 # T
 # U
