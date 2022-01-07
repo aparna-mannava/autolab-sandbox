@@ -21,7 +21,7 @@ module "inf_103051_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = ""
-  bt_infra_cluster     = "ny2-aza-ntnx-13"
+  bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "CLOUD"
   os_version           = "win2019"
