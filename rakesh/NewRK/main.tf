@@ -23,7 +23,7 @@ module "inf_103051_1" {
   alias                = ""
   bt_infra_cluster     = "ny2-aza-ntnx-13"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = ""
+  lob                  = "inf"
   os_version           = "win2019"
   cpus                 = "2"
   memory               = "4096"
