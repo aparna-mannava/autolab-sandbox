@@ -3,7 +3,6 @@ terraform {
 }
 
 locals {
-  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   etcd_servers = ["us01vlpgcs1e1", "us01vlpgcs1e2", "us01vlpgcs1e3"]
   hapg_servers    = ["us01vlpgcs1p1", "us01vlpgcs1p2"]
   haproxy_server  = ["us01vlpgcs1h1"]
@@ -35,7 +34,7 @@ locals {
 }
 
 module "ny2_autolab_etcd_0" {
-  source = local.source
+  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[0]}"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
@@ -51,7 +50,7 @@ module "ny2_autolab_etcd_0" {
 }
 
 module "ny2_autolab_etcd_1" {
-  source = local.source
+  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[1]}"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
@@ -67,7 +66,7 @@ module "ny2_autolab_etcd_1" {
 }
 
 module "ny2_autolab_etcd_2" {
-  source = local.source
+  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[2]}"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
