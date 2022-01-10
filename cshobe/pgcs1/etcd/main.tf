@@ -3,6 +3,7 @@ terraform {
 }
 
 locals {
+  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   etcd_servers = ["us01vlpgcs1e1", "us01vlpgcs1e2", "us01vlpgcs1e3"]
   hapg_servers    = ["us01vlpgcs1p1", "us01vlpgcs1p2"]
   haproxy_server  = ["us01vlpgcs1h1"]
@@ -18,6 +19,12 @@ locals {
   cluster = "ny5-azc-ntnx-16"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
+  os_version = "rhel7"
+  cpus = "2"
+  memory = "4096"
+  additional_disks = {
+    1 = "32",
+  }
   facts = {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
@@ -28,7 +35,7 @@ locals {
 }
 
 module "ny2_autolab_etcd_0" {
-  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source = local.source
   hostname = "${local.etcd_servers[0]}"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
@@ -36,17 +43,15 @@ module "ny2_autolab_etcd_0" {
   foreman_hostgroup = local.hostgroup
   foreman_environment = local.environment
   datacenter = local.datacenter
-  os_version = "rhel8"
-  cpus = "2"
-  memory = "4096"
+  os_version = local.os_version
+  cpus = local.cpus
+  memory = local.memory
   external_facts = local.facts
-  additional_disks = {
-    1 = "32",
-  }
+  additional_disks = local.additional_disks
 }
 
 module "ny2_autolab_etcd_1" {
-  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source = local.source
   hostname = "${local.etcd_servers[1]}"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
@@ -54,17 +59,15 @@ module "ny2_autolab_etcd_1" {
   foreman_hostgroup = local.hostgroup
   foreman_environment = local.environment
   datacenter = local.datacenter
-  os_version = "rhel8"
-  cpus = "2"
-  memory = "4096"
+  os_version = local.os_version
+  cpus = local.cpus
+  memory = local.memory
   external_facts = local.facts
-  additional_disks = {
-    1 = "32",
-  }
+  additional_disks = local.additional_disks
 }
 
 module "ny2_autolab_etcd_2" {
-  source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source = local.source
   hostname = "${local.etcd_servers[2]}"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
@@ -72,13 +75,11 @@ module "ny2_autolab_etcd_2" {
   foreman_hostgroup = local.hostgroup
   foreman_environment = local.environment
   datacenter = local.datacenter
-  os_version = "rhel8"
-  cpus = "2"
-  memory = "4096"
+  os_version = local.os_version
+  cpus = local.cpus
+  memory = local.memory
   external_facts = local.facts
-  additional_disks = {
-    1 = "32",
-  }
+  additional_disks = local.additional_disks
 }
 
 output "ny2_autolab_etcd_0" {
