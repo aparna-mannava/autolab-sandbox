@@ -39,8 +39,8 @@ projects:
 - name: rakesh-NewRK
   dir: rakesh/NewRK
   workflow: nutanix-backend
-- name: rakesh-SQLServer
-  dir: rakesh/SQLServer
+- name: rakesh-SQLServer_01
+  dir: rakesh/SQLServer_01
   workflow: nutanix-backend
 # S
 - name: dgbtstdb
