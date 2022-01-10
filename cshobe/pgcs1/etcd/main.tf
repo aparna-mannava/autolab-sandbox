@@ -18,6 +18,12 @@ locals {
   cluster = "ny5-azc-ntnx-16"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
+  os_version = "rhel7"
+  cpus = "2"
+  memory = "4096"
+  additional_disks = {
+    1 = "32",
+  }
   facts = {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
@@ -36,13 +42,11 @@ module "ny2_autolab_etcd_0" {
   foreman_hostgroup = local.hostgroup
   foreman_environment = local.environment
   datacenter = local.datacenter
-  os_version = "rhel8"
-  cpus = "2"
-  memory = "4096"
+  os_version = local.os_version
+  cpus = local.cpus
+  memory = local.memory
   external_facts = local.facts
-  additional_disks = {
-    1 = "32",
-  }
+  additional_disks = local.additional_disks
 }
 
 module "ny2_autolab_etcd_1" {
@@ -54,13 +58,11 @@ module "ny2_autolab_etcd_1" {
   foreman_hostgroup = local.hostgroup
   foreman_environment = local.environment
   datacenter = local.datacenter
-  os_version = "rhel8"
-  cpus = "2"
-  memory = "4096"
+  os_version = local.os_version
+  cpus = local.cpus
+  memory = local.memory
   external_facts = local.facts
-  additional_disks = {
-    1 = "32",
-  }
+  additional_disks = local.additional_disks
 }
 
 module "ny2_autolab_etcd_2" {
@@ -72,13 +74,11 @@ module "ny2_autolab_etcd_2" {
   foreman_hostgroup = local.hostgroup
   foreman_environment = local.environment
   datacenter = local.datacenter
-  os_version = "rhel8"
-  cpus = "2"
-  memory = "4096"
+  os_version = local.os_version
+  cpus = local.cpus
+  memory = local.memory
   external_facts = local.facts
-  additional_disks = {
-    1 = "32",
-  }
+  additional_disks = local.additional_disks
 }
 
 output "ny2_autolab_etcd_0" {
