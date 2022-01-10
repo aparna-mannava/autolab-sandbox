@@ -9,8 +9,8 @@ projects:
   workflow: nutanix-backend
 # B
 # C
-- name: cshobe-dbpgcaseydev1-etcd
-  dir: cshobe/dbpgcaseydev1/etcd
+- name: cshobe-pgcs1-etcd
+  dir: cshobe/pgcs1/etcd
   workflow: nutanix-backend
 # D
 - name: dgbtest1
