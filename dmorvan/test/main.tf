@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-
+# destroy
 module "dmts03" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldmts03"
