@@ -64,6 +64,9 @@ projects:
 - name: dgbtstjnks
   dir: saumilp/jnks
   workflow: nutanix-backend
+- name: skola-SQLSERVER2019
+  dir: skola/SQLSERVER2019
+  workflow: nutanix-backend
 # T
 # U
 - name: dgbtst
