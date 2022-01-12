@@ -55,6 +55,9 @@ projects:
 - name: dgbtstdb19
   dir: saumilp/oracl19/sec
   workflow: nutanix-backend
+- name: dgbtstjnks
+  dir: saumilp/jnks
+  workflow: nutanix-backend
 # T
 # U
 - name: dgbtst
