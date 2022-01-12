@@ -8,9 +8,9 @@ module "dmts03" {
   alias                = "ebtest-poc-03"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  cpus                 = 6
+  cpus                 = 2
   lob                  = "CLOUD"
-  memory               = 4096
+  memory               = 2048
   os_version           = "rhel8"
   foreman_environment  = "nonprod"
   foreman_hostgroup    = "BT Base Server"
