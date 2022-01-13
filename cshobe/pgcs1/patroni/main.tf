@@ -86,18 +86,18 @@ module "ny2_autolab_patroni_1" {
   additional_disks = local.additional_disks
 }
 
-output "ny2_autolab_hapg_0" {
+output "ny2_autolab_patroni_0" {
   value = {
-    "fqdn" = "${module.ny2_autolab_hapg_0.fqdn}",
-    "alias" = "${module.ny2_autolab_hapg_0.alias}",
-    "ip" = "${module.ny2_autolab_hapg_0.ip}",
+    "fqdn" = "${module.ny2_autolab_patroni_0.fqdn}",
+    "alias" = "${module.ny2_autolab_patroni_0.alias}",
+    "ip" = "${module.ny2_autolab_patroni_0.ip}",
   }
 }
 
-output "ny2_autolab_hapg_1" {
+output "ny2_autolab_patroni_1" {
   value = {
-    "fqdn" = "${module.ny2_autolab_hapg_1.fqdn}",
-    "alias" = "${module.ny2_autolab_hapg_1.alias}",
-    "ip" = "${module.ny2_autolab_hapg_1.ip}",
+    "fqdn" = "${module.ny2_autolab_patroni_1.fqdn}",
+    "alias" = "${module.ny2_autolab_patroni_1.alias}",
+    "ip" = "${module.ny2_autolab_patroni_1.ip}",
   }
 }
