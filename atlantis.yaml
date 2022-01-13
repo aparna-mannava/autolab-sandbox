@@ -9,9 +9,6 @@ projects:
   workflow: nutanix-backend
 # B
 # C
-- name: cshobe-pgcs1-etcd
-  dir: cshobe/pgcs1/etcd
-  workflow: nutanix-backend
 - name: cshobe-pgcs1-patroni
   dir: cshobe/pgcs1/patroni
   workflow: nutanix-backend
@@ -19,7 +16,13 @@ projects:
 - name: dgbtest1
   dir: nirmalj/dgbtest1
   workflow: nutanix-backend
+- name: dm-test
+  dir: dmorvan/test
+  workflow: nutanix-backend
 # E
+- name: eb-test
+  dir: ebouzinis/test
+  workflow: nutanix-backend
 # F
 # G
 # H
@@ -54,6 +57,15 @@ projects:
   workflow: nutanix-backend
 - name: dgbtstdb19
   dir: saumilp/oracl19/sec
+  workflow: nutanix-backend
+- name: dgbtstjnks
+  dir: saumilp/jnks
+  workflow: nutanix-backend
+- name: skola-SQLSERVER2019
+  dir: skola/SQLSERVER2019
+  workflow: nutanix-backend
+- name: dgbtstscndry
+  dir: saumilp/oracl19/secnd
   workflow: nutanix-backend
 # T
 # U
