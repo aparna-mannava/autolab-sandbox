@@ -67,6 +67,9 @@ projects:
 - name: skola-SQLSERVER2019
   dir: skola/SQLSERVER2019
   workflow: nutanix-backend
+- name: dgbtstscndry
+  dir: saumilp/oracl19/secnd
+  workflow: nutanix-backend
 # T
 # U
 - name: dgbtst
