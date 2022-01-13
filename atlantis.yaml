@@ -20,9 +20,9 @@ projects:
   dir: dmorvan/test
   workflow: nutanix-backend
 # E
-- name: eb-test
-  dir: ebouzinis/test
-  workflow: nutanix-backend
+#- name: eb-test
+#  dir: ebouzinis/test
+#  workflow: nutanix-backend
 # F
 # G
 # H
