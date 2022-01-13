@@ -4,8 +4,8 @@ terraform {
 
 locals {
   etcd_servers = ["us01vlpgcs1e1", "us01vlpgcs1e2", "us01vlpgcs1e3"]
-  hapg_servers    = ["us01vlpgcs1p1", "us01vlpgcs1p2"]
-  haproxy_server  = ["us01vlpgcs1h1"]
+  hapg_servers = ["us01vlpgcs1p1", "us01vlpgcs1p2"]
+  haproxy_server = ["us01vlpgcs1h1"]
   backrest_server = ["us01vlpgcs1b1"]
   domain = "auto.saas-n.com"
   tier = "dev"
@@ -24,15 +24,22 @@ locals {
   additional_disks = {
     1 = "32",
     2 = "128",
-    3 = "128",
+    3 = "128"
   }
   facts = {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
     "bt_product" = local.bt_product
     "bt_role" = local.bt_role
-    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
-    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}"]
+    "bt_etcd_cluster_members" = [
+      "${local.etcd_servers[0]}.${local.domain}",
+      "${local.etcd_servers[1]}.${local.domain}",
+      "${local.etcd_servers[2]}.${local.domain}"
+    ]
+    "bt_hapg_cluster_members" = [
+      "${local.hapg_servers[0]}.${local.domain}",
+      "${local.hapg_servers[1]}.${local.domain}"
+    ]
     "bt_hapg_node1" = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2" = "${local.hapg_servers[1]}.${local.domain}"
     "bt_backup_node" = "${local.backrest_server[0]}.${local.domain}"
