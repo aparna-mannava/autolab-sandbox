@@ -76,6 +76,9 @@ projects:
 - name: dgbtstscndry
   dir: saumilp/oracl19/secnd
   workflow: nutanix-backend
+- name: dgbtstobsrvr
+  dir: saumilp/oracl19/obsrvr
+  workflow: nutanix-backend
 # T
 # U
 - name: dgbtst
