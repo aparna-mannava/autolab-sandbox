@@ -82,6 +82,9 @@ projects:
 - name: dgbtstjnks1
   dir: saumilp/jnks1
   workflow: nutanix-backend
+- name: savula-SERVER2019
+  dir: savula/SERVER2019
+  workflow: nutanix-backend
 # T
 # U
 - name: dgbtst
