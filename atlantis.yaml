@@ -85,6 +85,9 @@ projects:
 - name: savula-SERVER2019
   dir: savula/SERVER2019
   workflow: nutanix-backend
+- name: savula-NEWSERVER
+  dir: savula/NEWSERVER
+  workflow: nutanix-backend
 # T
 # U
 - name: dgbtst
