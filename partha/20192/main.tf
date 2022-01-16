@@ -6,7 +6,7 @@ locals {
   product        = "inf"
   environment    = "master"
   datacenter     = "ny2"
-  hostname       = "us01vwhsp20191"
+  hostname       = "us01vwhsp20192"
   hostgroup      = "BT MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
@@ -19,7 +19,7 @@ locals {
 module "auto_103175" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
-  alias                = "us-01-vw-sp191"
+  alias                = "us-01-vw-sp192"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "DGB"
