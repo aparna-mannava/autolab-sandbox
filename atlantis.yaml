@@ -52,6 +52,9 @@ projects:
 - name: pgtest1
   dir: nirmalj/pgtest1/etcd
   workflow: nutanix-backend
+- name: Partha-2019
+  dir: partha/2019
+  workflow: nutanix-backend
 # Q
 # R
 - name: rakesh-NewRK
