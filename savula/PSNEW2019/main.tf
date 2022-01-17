@@ -23,7 +23,7 @@ module "auto_103175" {
   alias                = "us-01-vw-psa103"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = "DGB"
+  lob                  = "CLOUD"
   os_version           = "win2019"
   cpus                 = "4"
   memory               = "16384"
