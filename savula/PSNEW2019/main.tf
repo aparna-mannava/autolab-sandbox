@@ -20,10 +20,10 @@ locals {
 module "auto_103175" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
-  alias                = "us-01-vw-psa103"
+  alias                = ""
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = "CLOUD"
+  lob                  = "DGB"
   os_version           = "win2019"
   cpus                 = "4"
   memory               = "16384"
