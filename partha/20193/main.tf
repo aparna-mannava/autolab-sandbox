@@ -6,7 +6,7 @@ locals {
   product        = "inf"
   environment    = "feature_CLOUD_103487"
   datacenter     = "ny2"
-  hostname       = "us01vwhsp20193"
+  hostname       = "us01vwhsp20194"
   hostgroup      = "BT MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
