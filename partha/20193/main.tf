@@ -13,6 +13,7 @@ locals {
     "bt_product"      = "bi"
     "bt_tier"         = "dev"
     "bt_role"         = "mssql"
+    
   }
 }
 
