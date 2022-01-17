@@ -1,16 +1,16 @@
 terraform {
   backend "s3" {}
 }
-#Destroy1
+
 module "dmts03" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlebtest01"
-  alias                = "ebtest-poc-03"
+  hostname             = "us01vlk8sn0de1"
+  alias                = "k8s-poc-n0de1"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  cpus                 = 2
+  cpus                 = 4
   lob                  = "CLOUD"
-  memory               = 2048
+  memory               = 8000
   os_version           = "rhel8"
   foreman_environment  = "nonprod"
   foreman_hostgroup    = "BT Base Server"
