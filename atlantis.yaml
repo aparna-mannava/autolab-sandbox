@@ -55,8 +55,8 @@ projects:
 - name: Partha-2019
   dir: partha/2019
   workflow: nutanix-backend
-- name: Partha-20192
-  dir: partha/20192
+- name: Partha-20193
+  dir: partha/20193
   workflow: nutanix-backend
 # Q
 # R
