@@ -14,6 +14,7 @@ locals {
     "bt_tier"         = "auto"
     "bt_role"         = "mssql"
 
+
   }
 }
 
