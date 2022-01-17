@@ -10,9 +10,10 @@ locals {
   hostgroup      = "BT MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
-    "bt_product"      = "bi"
+    "bt_product"      = "database"
     "bt_tier"         = "auto"
     "bt_role"         = "mssql"
+
 
   }
 }
