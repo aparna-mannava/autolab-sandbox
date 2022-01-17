@@ -13,7 +13,6 @@ locals {
     "bt_product"      = "pcmiq"
     "bt_tier"         = "production"
     "bt_role"         = "mssql"
-
   }
 }
 
