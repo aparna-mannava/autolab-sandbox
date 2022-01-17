@@ -46,6 +46,9 @@ projects:
   dir: lemery/hrbr
   workflow: nutanix-backend
 # M
+- name: murali-sql2019
+  dir: murali/sql2019
+  workflow: nutanix-backend
 # N
 # O
 # P
