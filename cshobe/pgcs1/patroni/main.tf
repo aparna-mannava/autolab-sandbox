@@ -2,6 +2,7 @@ terraform {
   backend "s3" {}
 }
 
+
 locals {
   etcd_servers = [
     "us01vlpgcs1e1",
