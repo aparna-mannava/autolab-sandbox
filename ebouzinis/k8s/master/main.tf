@@ -8,7 +8,7 @@ module "dmts03" {
   alias                = "k8s-poc-master1"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  cpus                 = 8
+  cpus                 = 16
   lob                  = "CLOUD"
   memory               = 32000
   os_version           = "rhel8"

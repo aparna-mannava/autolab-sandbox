@@ -29,9 +29,7 @@ projects:
   dir: dmorvan/test
   workflow: nutanix-backend
 # E
-- name: eb-test
-  dir: ebouzinis/test
-  workflow: nutanix-backend
+
 - name: k8s-master
   dir: ebouzinis/k8s/master
   workflow: nutanix-backend
@@ -41,6 +39,9 @@ projects:
 - name: k8s-node2
   dir: ebouzinis/k8s/workers/node2
   workflow: nutanix-backend
+- name: k8s-node3
+  dir: ebouzinis/k8s/workers/node3
+  workflow: nutanix-backend  
    
 # F
 # G
