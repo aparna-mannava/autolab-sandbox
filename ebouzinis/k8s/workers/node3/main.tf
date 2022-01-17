@@ -4,7 +4,7 @@ terraform {
 
 module "dmts03" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01k8st3stn0de3"
+  hostname             = "us01k8sn0de3"
   alias                = "k8s-poc-n0de3"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   bt_infra_network     = "ny2-autolab-app-ahv"
