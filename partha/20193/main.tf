@@ -24,7 +24,7 @@ module "auto_103175" {
   alias                = "us-01-vw-sp194"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = "cloud"
+  lob                  = "CLOUD"
   os_version           = "win2019"
   cpus                 = "4"
   memory               = "16384"
