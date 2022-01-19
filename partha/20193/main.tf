@@ -4,14 +4,14 @@ terraform {
 
 locals {
   product        = "inf"
-  environment    = "master"
+  environment    = "feature_CLOUD_103491"
   datacenter     = "ny2"
   hostname       = "us01vwhsp20194"
   hostgroup      = "BT MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "pcmiq"
-    "bt_tier"         = "ppd"
+    "bt_tier"         = "auto"
     "bt_role"         = "mssql"
   }
 }
