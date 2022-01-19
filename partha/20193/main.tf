@@ -11,7 +11,7 @@ locals {
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "pcmiq"
-    "bt_tier"         = "production"
+    "bt_tier"         = "ppd"
     "bt_role"         = "mssql"
   }
 }
