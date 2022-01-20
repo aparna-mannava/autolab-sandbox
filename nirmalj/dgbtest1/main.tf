@@ -34,7 +34,8 @@ module "cloud_dbserver_1" {
   additional_disks     = {
     1 = "200",
     2 = "300",
-    3 = "300"
+    3 = "300",
+    4 = "300"
   }
 }
 
