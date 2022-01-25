@@ -3,8 +3,11 @@ terraform {
 }
 
 locals {
-  etcd_servers = ["us01vlpgcs1e1", "us01vlpgcs1e2", "us01vlpgcs1e3"]
-  hapg_servers = ["us01vlpgcs1p1", "us01vlpgcs1p2"]
+  etcd_servers = [
+    "us01vlpgcs1e1",
+    "us01vlpgcs1e2",
+    "us01vlpgcs1e3"
+  ]
   domain = "auto.saas-n.com"
   tier = "dev"
   bt_env = "3"
