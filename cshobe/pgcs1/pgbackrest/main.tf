@@ -18,7 +18,7 @@ locals {
   bt_role = "postgres"
   hostgroup = "BT PG Backrest Server"
   environment = "master"
-  cluster = "ny5-azc-ntnx-16"
+  cluster = "ny5-azc-ntnx-19"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
   os_version = "rhel8"
