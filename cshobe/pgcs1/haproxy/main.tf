@@ -7,7 +7,9 @@ locals {
     "us01vlpgcs1p1",
     "us01vlpgcs1p2"
   ]
-  haproxy_server = "us01vlpgcs1h1"
+  haproxy_servers = [
+    "us01vlpgcs1h1"
+  ]
   domain = "auto.saas-n.com"
   tier = "dev"
   bt_env = "3"
@@ -35,14 +37,12 @@ locals {
       "${local.patroni_servers[0]}.${local.domain}",
       "${local.patroni_servers[1]}.${local.domain}"
     ]
-    "bt_hapg_node1" = "${local.patroni_servers[0]}.${local.domain}"
-    "bt_hapg_node2" = "${local.patroni_servers[1]}.${local.domain}"
   }
 }
 
 module "ny2_autolab_haproxy_1" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname = local.haproxy_server
+  hostname = "${local.haproxy_servers[0]}"
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
   lob = local.lob

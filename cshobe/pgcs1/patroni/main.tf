@@ -46,8 +46,6 @@ locals {
       "${local.patroni_servers[0]}.${local.domain}",
       "${local.patroni_servers[1]}.${local.domain}"
     ]
-    "bt_hapg_node1" = "${local.patroni_servers[0]}.${local.domain}"
-    "bt_hapg_node2" = "${local.patroni_servers[1]}.${local.domain}"
     "bt_backup_node" = "${local.pgbackrest_server}.${local.domain}"
     "bt_cluster_name" = "pgcs1"
     "bt_pg_version" = "13"
