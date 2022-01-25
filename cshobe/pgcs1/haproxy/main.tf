@@ -15,7 +15,7 @@ locals {
   bt_env = "3"
   lob = "CLOUD"
   bt_product = "cloud"
-  bt_role = "postgres"
+  bt_role = "postgresql"
   hostgroup = "BT Patroni HA Proxy"
   environment = "master"
   cluster = "ny5-azc-ntnx-16"
