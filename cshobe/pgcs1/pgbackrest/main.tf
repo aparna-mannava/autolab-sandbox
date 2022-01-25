@@ -1,3 +1,5 @@
+# destroy
+
 terraform {
   backend "s3" {}
 }
@@ -13,18 +15,18 @@ locals {
   bt_env = "3"
   lob = "CLOUD"
   bt_product = "cloud"
-  bt_role = "postgres"
+  bt_role = "postgresql"
   hostgroup = "BT PG Backrest Server"
   environment = "master"
-  cluster = "ny5-azc-ntnx-16"
+  cluster = "ny2-azb-ntnx-08"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
   os_version = "rhel8"
   cpus = "2"
   memory = "4096"
   additional_disks = {
-    1 = "64",
-    2 = "128"
+    1 = "4",
+    2 = "32"
   }
   facts = {
     "bt_env" = local.bt_env

@@ -18,7 +18,7 @@ locals {
   bt_env = "3"
   lob = "CLOUD"
   bt_product = "cloud"
-  bt_role = "postgres"
+  bt_role = "postgresql"
   hostgroup = "BT HA PG Server"
   environment = "master"
   cluster = "ny5-azc-ntnx-16"
@@ -28,9 +28,8 @@ locals {
   cpus = "2"
   memory = "4096"
   additional_disks = {
-    1 = "32",
-    2 = "128",
-    3 = "128"
+    1 = "4",
+    2 = "32"
   }
   facts = {
     "bt_env" = local.bt_env
