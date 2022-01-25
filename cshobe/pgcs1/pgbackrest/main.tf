@@ -1,5 +1,4 @@
 # destroy
-
 terraform {
   backend "s3" {}
 }
