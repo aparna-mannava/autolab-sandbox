@@ -5,7 +5,7 @@ terraform {
 locals {
   lob         = "dgb"
   product     = "dgb"
-  environment = "feature_CLOUD_103483"
+  environment = "master"
   datacenter  = "ny2"
   facts         = {
     "bt_customer"         = "fi3456" #ex: fiXXXXXXXXXXXXXX
@@ -32,7 +32,7 @@ module "cloud_dbserver_1" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "200",
+    1 = "500",
     2 = "300",
     3 = "300",
     4 = "300"
@@ -55,7 +55,7 @@ module "cloud_dbserver_2" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "200",
+    1 = "400",
     2 = "300",
     3 = "300"
   }
