@@ -1,4 +1,3 @@
-# destroy
 terraform {
   backend "s3" {}
 }
@@ -17,7 +16,7 @@ locals {
   bt_role = "postgresql"
   hostgroup = "BT ETCD for PostgreSQL Server"
   environment = "master"
-  cluster = "ny5-azc-ntnx-16"
+  cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
   os_version = "rhel7"
@@ -39,7 +38,7 @@ locals {
   }
 }
 
-module "ny2_autolab_etcd_0" {
+module "ny2_pgcs1_etcd_1" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[0]}"
   bt_infra_cluster = local.cluster
@@ -55,7 +54,7 @@ module "ny2_autolab_etcd_0" {
   additional_disks = local.additional_disks
 }
 
-module "ny2_autolab_etcd_1" {
+module "ny2_pgcs1_etcd_2" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[1]}"
   bt_infra_cluster = local.cluster
@@ -71,7 +70,7 @@ module "ny2_autolab_etcd_1" {
   additional_disks = local.additional_disks
 }
 
-module "ny2_autolab_etcd_2" {
+module "ny2_pgcs1_etcd_3" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[2]}"
   bt_infra_cluster = local.cluster
@@ -87,26 +86,26 @@ module "ny2_autolab_etcd_2" {
   additional_disks = local.additional_disks
 }
 
-output "ny2_autolab_etcd_0" {
+output "ny2_pgcs1_etcd_1" {
   value = {
-    "fqdn" = "${module.ny2_autolab_etcd_0.fqdn}",
-    "alias" = "${module.ny2_autolab_etcd_0.alias}",
-    "ip" = "${module.ny2_autolab_etcd_0.ip}",
+    "fqdn" = "${module.ny2_pgcs1_etcd_1.fqdn}",
+    "alias" = "${module.ny2_pgcs1_etcd_1.alias}",
+    "ip" = "${module.ny2_pgcs1_etcd_1.ip}",
   }
 }
 
-output "ny2_autolab_etcd_1" {
+output "ny2_pgcs1_etcd_2" {
   value = {
-    "fqdn" = "${module.ny2_autolab_etcd_1.fqdn}",
-    "alias" = "${module.ny2_autolab_etcd_1.alias}",
-    "ip" = "${module.ny2_autolab_etcd_1.ip}",
+    "fqdn" = "${module.ny2_pgcs1_etcd_2.fqdn}",
+    "alias" = "${module.ny2_pgcs1_etcd_2.alias}",
+    "ip" = "${module.ny2_pgcs1_etcd_2.ip}",
   }
 }
 
-output "ny2_autolab_etcd_2" {
+output "ny2_pgcs1_etcd_3" {
   value = {
-    "fqdn" = "${module.ny2_autolab_etcd_2.fqdn}",
-    "alias" = "${module.ny2_autolab_etcd_2.alias}",
-    "ip" = "${module.ny2_autolab_etcd_2.ip}",
+    "fqdn" = "${module.ny2_pgcs1_etcd_3.fqdn}",
+    "alias" = "${module.ny2_pgcs1_etcd_3.alias}",
+    "ip" = "${module.ny2_pgcs1_etcd_3.ip}",
   }
 }

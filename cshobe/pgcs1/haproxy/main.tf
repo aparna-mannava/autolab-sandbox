@@ -1,4 +1,3 @@
-# destroy
 terraform {
   backend "s3" {}
 }
@@ -19,7 +18,7 @@ locals {
   bt_role = "postgresql"
   hostgroup = "BT Patroni HA Proxy"
   environment = "master"
-  cluster = "ny5-azc-ntnx-16"
+  cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
   os_version = "rhel8"
@@ -41,7 +40,7 @@ locals {
   }
 }
 
-module "ny2_autolab_haproxy_1" {
+module "ny2_pgcs1_haproxy_1" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.haproxy_servers[0]}"
   bt_infra_cluster = local.cluster
@@ -57,10 +56,10 @@ module "ny2_autolab_haproxy_1" {
   additional_disks = local.additional_disks
 }
 
-output "ny2_autolab_haproxy_1" {
+output "ny2_pgcs1_haproxy_1" {
   value = {
-    "fqdn" = "${module.ny2_autolab_haproxy_1.fqdn}",
-    "alias" = "${module.ny2_autolab_haproxy_1.alias}",
-    "ip" = "${module.ny2_autolab_haproxy_1.ip}",
+    "fqdn" = "${module.ny2_pgcs1_haproxy_1.fqdn}",
+    "alias" = "${module.ny2_pgcs1_haproxy_1.alias}",
+    "ip" = "${module.ny2_pgcs1_haproxy_1.ip}",
   }
 }

@@ -1,4 +1,3 @@
-# destroy
 terraform {
   backend "s3" {}
 }
@@ -22,7 +21,7 @@ locals {
   bt_role = "postgresql"
   hostgroup = "BT HA PG Server"
   environment = "master"
-  cluster = "ny5-azc-ntnx-16"
+  cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
   os_version = "rhel8"
@@ -52,7 +51,7 @@ locals {
   }
 }
 
-module "ny2_autolab_patroni_0" {
+module "ny2_pgcs1_patroni_1" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.patroni_servers[0]}"
   bt_infra_cluster = local.cluster
@@ -68,7 +67,7 @@ module "ny2_autolab_patroni_0" {
   additional_disks = local.additional_disks
 }
 
-module "ny2_autolab_patroni_1" {
+module "ny2_pgcs1_patroni_2" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.patroni_servers[1]}"
   bt_infra_cluster = local.cluster
@@ -84,18 +83,18 @@ module "ny2_autolab_patroni_1" {
   additional_disks = local.additional_disks
 }
 
-output "ny2_autolab_patroni_0" {
+output "ny2_pgcs1_patroni_1" {
   value = {
-    "fqdn" = "${module.ny2_autolab_patroni_0.fqdn}",
-    "alias" = "${module.ny2_autolab_patroni_0.alias}",
-    "ip" = "${module.ny2_autolab_patroni_0.ip}",
+    "fqdn" = "${module.ny2_pgcs1_patroni_1.fqdn}",
+    "alias" = "${module.ny2_pgcs1_patroni_1.alias}",
+    "ip" = "${module.ny2_pgcs1_patroni_1.ip}",
   }
 }
 
-output "ny2_autolab_patroni_1" {
+output "ny2_pgcs1_patroni_2" {
   value = {
-    "fqdn" = "${module.ny2_autolab_patroni_1.fqdn}",
-    "alias" = "${module.ny2_autolab_patroni_1.alias}",
-    "ip" = "${module.ny2_autolab_patroni_1.ip}",
+    "fqdn" = "${module.ny2_pgcs1_patroni_2.fqdn}",
+    "alias" = "${module.ny2_pgcs1_patroni_2.alias}",
+    "ip" = "${module.ny2_pgcs1_patroni_2.ip}",
   }
 }
