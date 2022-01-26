@@ -1,4 +1,3 @@
-#destroy
 terraform {
   backend "s3" {}
 }
@@ -38,6 +37,8 @@ locals {
       "${local.patroni_servers[0]}.${local.domain}",
       "${local.patroni_servers[1]}.${local.domain}"
     ]
+    "bt_hapg_node1" = "${local.patroni_servers[0]}.${local.domain}"
+    "bt_hapg_node2" = "${local.patroni_servers[1]}.${local.domain}"
   }
 }
 
