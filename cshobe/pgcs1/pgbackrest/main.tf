@@ -1,4 +1,3 @@
-# destroy
 terraform {
   backend "s3" {}
 }
@@ -40,7 +39,7 @@ locals {
   }
 }
 
-module "ny2_autolab_pgbackrest_1" {
+module "ny2_pgcs1_pgbackrest_1" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = local.pgbackrest_server
   bt_infra_cluster = local.cluster
@@ -56,10 +55,10 @@ module "ny2_autolab_pgbackrest_1" {
   additional_disks = local.additional_disks
 }
 
-output "ny2_autolab_pgbackrest_1" {
+output "ny2_pgcs1_pgbackrest_1" {
   value = {
-    "fqdn" = "${module.ny2_autolab_pgbackrest_1.fqdn}",
-    "alias" = "${module.ny2_autolab_pgbackrest_1.alias}",
-    "ip" = "${module.ny2_autolab_pgbackrest_1.ip}",
+    "fqdn" = "${module.ny2_pgcs1_pgbackrest_1.fqdn}",
+    "alias" = "${module.ny2_pgcs1_pgbackrest_1.alias}",
+    "ip" = "${module.ny2_pgcs1_pgbackrest_1.ip}",
   }
 }
