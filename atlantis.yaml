@@ -116,6 +116,10 @@ projects:
 - name: dgbtst
   dir: sanjay/oracle
   workflow: nutanix-backend
+
+- name: jaycee-dev1
+  dir: jaycee/dev1
+  workflow: nutanix-backend
 # V
 # W
 # X
