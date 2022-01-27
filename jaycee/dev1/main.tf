@@ -1,49 +1,40 @@
 terraform {
   backend "s3" {}
 }
-
+ 
 locals {
-  product        = "inf"
-  environment    = "master"
-  datacenter     = "ny2"
-  hostname       = "us01vwmkms2019"
-  hostgroup      = "BT MSSQL 2019 Server"
-  facts          = {
-    "bt_env"          = "1"
-    "bt_product"      = "inf"
-    "bt_tier"         = "dev"
-    "bt_role"         = "mssql"
+  product     = "jaycee"
+  environment = "master"
+  datacenter  = "ny2"
+  facts       = {
+    "bt_tier" = "dev"
+    "bt_env"  = "1"
   }
 }
-
-module "sql_103479_1" {
+ 
+module "app_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hostname}"
-  alias                = ""
-  bt_infra_cluster     = "ny2-azb-ntnx-08"
-  bt_infra_network     = "ny2-autolab-app-ahv"
-  lob                  = "CLOUD"
-  os_version           = "win2019"
+  hostname             = "us01vltferin03"
+  alias                = "${local.product} -${local.facts.bt_tier}${local.facts.bt_env}-app01"
+  bt_infra_network     = "ny2-autolab-app"
+  bt_infra_cluster     = "ny2-aze-ntnx-11"
+  os_version           = "rhel7"
   cpus                 = "4"
-  memory               = "16384"
-  external_facts       = "${local.facts}"
-  foreman_environment  = "${local.environment}"
-  foreman_hostgroup    = "${local.hostgroup}"
-  datacenter           = "${local.datacenter}"
+  memory               = "8192"
+  foreman_environment  = local.environment
+  foreman_hostgroup    = "BT Base Server"
+  datacenter           = local.datacenter
+  external_facts       = local.facts
   additional_disks     = {
-    1 = "200",
-    2 = "100",
-    3 = "50",
-    4 = "50",
-    5 = "50",
-    6 = "50"
+    1 = "50",
+    2 = "100"
   }
 }
 
-output "sql_103479_1" {
+output "app_server_1" {
   value = {
-    "fqdn"  = "${module.sql_103479_1.fqdn}",
-    "alias" = "${module.sql_103479_1.alias}",
-    "ip"    = "${module.sql_103479_1.ip}",
+    "fqdn"  = "${module.app_server_1.fqdn}",
+    "alias" = "${module.app_server_1.alias}",
+    "ip"    = "${module.app_server_1.ip}",
   }
 }
