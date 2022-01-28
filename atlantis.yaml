@@ -51,7 +51,7 @@ projects:
   workflow: nutanix-backend
 # I
 # J
-- name: jaycee-dev1
+- name: jaycee
   dir: jaycee/dev1
   workflow: nutanix-backend
 # K
