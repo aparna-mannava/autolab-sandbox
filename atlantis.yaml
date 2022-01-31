@@ -51,6 +51,9 @@ projects:
   workflow: nutanix-backend
 # I
 # J
+- name: jaycee
+  dir: jaycee/dev1
+  workflow: nutanix-backend
 # K
 # L
 - name: lemery-base
