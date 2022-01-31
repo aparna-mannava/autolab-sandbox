@@ -20,7 +20,7 @@ locals {
   bt_product = "cloud"
   bt_role = "postgresql"
   hostgroup = "BT HA PG Server"
-  environment = "feature_CLOUD_103272"
+  environment = "feature_CLOUD_103272_testing"
   cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
