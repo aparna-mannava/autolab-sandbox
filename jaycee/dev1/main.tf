@@ -25,9 +25,6 @@ module "app_server_1" {
   lob                  = "CLOUD"
   os_version           = "win2019"
   cpus                 = "4"
-  memory               = "16384"
-  os_version           = "rhel7"
-  cpus                 = "4"
   memory               = "8192"
   external_facts       = "${local.facts}"
   foreman_environment  = local.environment
