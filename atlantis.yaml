@@ -4,118 +4,35 @@ automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
-- name: bvarghese-oracle
-  dir: bvarghese/oracle
-  workflow: nutanix-backend
+#- name: abc-test123
+#  dir: abc/123
+#  workflow: nutanix-backend
 # B
 # C
-- name: cshobe-pgcs1-etcd
-  dir: cshobe/pgcs1/etcd
-  workflow: nutanix-backend
-- name: cshobe-pgcs1-haproxy
-  dir: cshobe/pgcs1/haproxy
-  workflow: nutanix-backend
-- name: cshobe-pgcs1-patroni
-  dir: cshobe/pgcs1/patroni
-  workflow: nutanix-backend
-- name: cshobe-pgcs1-pgbackrest
-  dir: cshobe/pgcs1/pgbackrest
-  workflow: nutanix-backend
 # D
-- name: dgbtest1
-  dir: nirmalj/dgbtest1
-  workflow: nutanix-backend
-- name: dm-test
+- name: dmtest
   dir: dmorvan/test
   workflow: nutanix-backend
 # E
-
-- name: k8s-master
-  dir: ebouzinis/k8s/master
-  workflow: nutanix-backend
-- name: k8s-node1
-  dir: ebouzinis/k8s/workers/node1
-  workflow: nutanix-backend
-- name: k8s-node2
-  dir: ebouzinis/k8s/workers/node2
-  workflow: nutanix-backend
-- name: k8s-node3
-  dir: ebouzinis/k8s/workers/node3
-  workflow: nutanix-backend
-
 # F
 # G
 # H
-- name: hapg1
-  dir: nirmalj/pgtest1/hapg
-  workflow: nutanix-backend
 # I
 # J
 # K
 # L
-- name: lemery-base
-  dir: lemery/base
-  workflow: nutanix-backend
 # M
-- name: murali-sql2019
-  dir: murali/sql2019
-  workflow: nutanix-backend
 # N
 # O
 # P
-- name: pgtest1
-  dir: nirmalj/pgtest1/etcd
-  workflow: nutanix-backend
-- name: Partha-2019
-  dir: partha/2019
-  workflow: nutanix-backend
-- name: Partha-20193
-  dir: partha/20193
-  workflow: nutanix-backend
 # Q
 # R
-- name: rakesh-NewRK
-  dir: rakesh/NewRK
-  workflow: nutanix-backend
-- name: rakesh-SQLServer_01
-  dir: rakesh/SQLServer_01
-  workflow: nutanix-backend
 # S
 - name: dgbtstdb
-  dir: saumilp/orcl
-  workflow: nutanix-backend
-- name: dgbtstdb19
-  dir: saumilp/oracl19/sec
-  workflow: nutanix-backend
-- name: dgbtstjnks
-  dir: saumilp/jnks
-  workflow: nutanix-backend
-- name: skola-SQLSERVER2019
-  dir: skola/SQLSERVER2019
-  workflow: nutanix-backend
-- name: dgbtstscndry
-  dir: saumilp/oracl19/secnd
-  workflow: nutanix-backend
-- name: dgbtstobsrvr
-  dir: saumilp/oracl19/obsrvr
-  workflow: nutanix-backend
-- name: dgbtstjnks1
-  dir: saumilp/jnks1
-  workflow: nutanix-backend
-- name: savula-SERVER2019
-  dir: savula/SERVER2019
-  workflow: nutanix-backend
-- name: savula-NEWSERVER
-  dir: savula/NEWSERVER
-  workflow: nutanix-backend
-- name: savula-PSNEW2019
-  dir: savula/PSNEW2019
+  dir: saumilp/dgb
   workflow: nutanix-backend
 # T
 # U
-- name: dgbtst
-  dir: sanjay/oracle
-  workflow: nutanix-backend
 # V
 # W
 # X
