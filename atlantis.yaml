@@ -10,7 +10,7 @@ projects:
 # B
 # C
 - name: cshobe-pgcs1-etcd
-  dir: cshobe/etcd
+  dir: cshobe/pgcs1/etcd
   workflow: nutanix-backend
 # D
 - name: dmtest
