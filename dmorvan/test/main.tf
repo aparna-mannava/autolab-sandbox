@@ -23,3 +23,4 @@ output "dmts03" {
     "alias" = module.dmts03.alias,
     "ip"    = module.dmts03.ip,
   }
+}
