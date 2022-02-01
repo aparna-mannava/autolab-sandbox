@@ -25,6 +25,9 @@ projects:
 - name: dmtest
   dir: dmorvan/test
   workflow: nutanix-backend
+- name: dgb19c1
+  dir: nirmalj/dgb19c1
+  workflow: nutanix-backend
 # E
 # F
 # G
