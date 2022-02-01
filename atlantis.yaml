@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cshobe-pgcs1-etcd
+  dir: cshobe/etcd
+  workflow: nutanix-backend
 # D
 - name: dmtest
   dir: dmorvan/test
