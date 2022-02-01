@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cshobe-pgcs1-etcd
+  dir: cshobe/pgcs1/etcd
+  workflow: nutanix-backend
 - name: cshobe-pgcs1-haproxy
   dir: cshobe/pgcs1/haproxy
   workflow: nutanix-backend
