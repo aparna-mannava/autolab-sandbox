@@ -73,7 +73,6 @@ module "frontend_1" {
   memory               = local.facts.memory
   foreman_environment  = local.environment
   foreman_hostgroup    = local.facts.foreman_hostgroup
-  firewall_group       = local.facts.firewall_group_fe
   datacenter           = local.datacenter
   external_facts       = local.fe1facts
   additional_disks     = {
@@ -93,7 +92,6 @@ module "backend_1" {
   memory               = local.facts.memory
   foreman_environment  = local.environment
   foreman_hostgroup    = local.facts.foreman_hostgroup
-  firewall_group       = local.facts.firewall_group_be
   datacenter           = local.datacenter
   external_facts       = local.be1facts
   additional_disks     = {
