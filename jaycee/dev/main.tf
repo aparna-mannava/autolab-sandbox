@@ -102,8 +102,6 @@ module "backend_1" {
   }
 }
 
-}
-
 output "frontend_1" {
   value = {
     "fqdn"  = module.frontend_1.fqdn,
