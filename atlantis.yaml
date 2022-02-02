@@ -34,6 +34,9 @@ projects:
 # H
 # I
 # J
+- name: jaycee
+  dir: jaycee/dev
+  workflow: nutanix-backend
 # K
 # L
 # M
