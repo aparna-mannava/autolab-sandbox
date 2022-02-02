@@ -82,9 +82,6 @@ module "frontend_1" {
   }
 }
 
-
-}
-
 module "backend_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.be01_hostname
