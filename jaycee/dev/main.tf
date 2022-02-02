@@ -69,6 +69,7 @@ module "frontend_1" {
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   os_version           = local.facts.os_version
+  lob                  = "CLOUD"
   cpus                 = local.facts.fe_cpus
   memory               = local.facts.memory
   foreman_environment  = local.environment
@@ -87,6 +88,7 @@ module "backend_1" {
   alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.be1facts.bt_server_mode}${local.be1facts.bt_server_number}-${local.facts.bt_deployment_mode}"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
+  lob                  = "CLOUD"
   os_version           = local.facts.os_version
   cpus                 = local.facts.fe_cpus
   memory               = local.facts.memory
