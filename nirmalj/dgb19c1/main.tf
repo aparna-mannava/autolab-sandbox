@@ -8,7 +8,7 @@ locals {
   environment = "feature_CLOUD_104105"
   datacenter  = "ny2"
   facts         = {
-    "bt_customer"         = "fi7890" #ex: fiXXXXXXXXXXXXXX
+    "bt_customer"         = "fi7890" #ex: fiXXX
     "bt_tier"             = "sbx" #ex: sbx, tst, td, demo
     "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
