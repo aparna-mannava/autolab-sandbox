@@ -61,7 +61,10 @@ projects:
   workflow: nutanix-backend
 - name: dgbtstdb1
   dir: saumilp/dgb1
-  workflow: nutanix-backend 
+  workflow: nutanix-backend
+- name: dgbora19
+  dir: sriramvaradhan/dgb
+  workflow: nutanix-backend
 # T
 # U
 # V
