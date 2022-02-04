@@ -42,6 +42,13 @@ projects:
   workflow: nutanix-backend
 # K
 # L
+- name: llabranche-vault-dgb-etcd
+  dir: llabranche/vault/dgb/etcd
+  workflow: nutanix-backend
+- name: llabranche-vault-dgb-hapg
+  dir: llabranche/vault/dgb/hapg
+  workflow: nutanix-backend
+
 # M
 # N
 # O
@@ -54,7 +61,7 @@ projects:
   workflow: nutanix-backend
 - name: dgbtstdb1
   dir: saumilp/dgb1
-  workflow: nutanix-backend
+  workflow: nutanix-backend 
 # T
 # U
 # V
