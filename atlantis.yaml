@@ -41,7 +41,7 @@ projects:
 # L
 - name: llabranche-vault-dgb-etcd
   dir: llabranche/vault/dgb/etcd
-  worflow: nutanix-backend
+  workflow: nutanix-backend
 - name: llabranche-vault-dgb-hapg
   dir: llabranche/vault/dgb/hapg
   workflow: nutanix-backend
