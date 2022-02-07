@@ -65,6 +65,9 @@ projects:
 - name: dgbora19
   dir: sriramvaradhan/dgb
   workflow: nutanix-backend
+- name: ora19onrhel8
+  dir: sriramvaradhan/rhel8
+  workflow: nutanix-backend
 # T
 # U
 # V
