@@ -8,7 +8,7 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   facts         = {
-    "bt_customer"         = "fi8887" #ex: fiXXXX
+    "bt_customer"         = "fi8887" #ex: fiXXXXX
     "bt_tier"             = "sbx" #ex: sbx, tst, td, demo
     "bt_env"              = "1" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
