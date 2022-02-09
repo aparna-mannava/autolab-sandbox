@@ -21,6 +21,9 @@ projects:
 - name: cshobe-pgcs1-pgbackrest
   dir: cshobe/pgcs1/pgbackrest
   workflow: nutanix-backend
+- name: cshobe-pgstat
+  dir: cshobe/pgstat
+  workflow: nutanix-backend
 # D
 - name: dmtest
   dir: dmorvan/test
@@ -34,8 +37,18 @@ projects:
 # H
 # I
 # J
+- name: jaycee
+  dir: jaycee/dev
+  workflow: nutanix-backend
 # K
 # L
+- name: llabranche-vault-dgb-etcd
+  dir: llabranche/vault/dgb/etcd
+  workflow: nutanix-backend
+- name: llabranche-vault-dgb-hapg
+  dir: llabranche/vault/dgb/hapg
+  workflow: nutanix-backend
+
 # M
 # N
 # O
@@ -45,6 +58,15 @@ projects:
 # S
 - name: dgbtstdb
   dir: saumilp/dgb
+  workflow: nutanix-backend
+- name: dgbtstdb1
+  dir: saumilp/dgb1
+  workflow: nutanix-backend
+- name: dgbora19
+  dir: sriramvaradhan/dgb
+  workflow: nutanix-backend
+- name: ora19onrhel8
+  dir: sriramvaradhan/rhel8
   workflow: nutanix-backend
 # T
 # U
