@@ -28,7 +28,7 @@ module "cloud_dbserver_1" {
   memory               = "10240"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT DGB Generic Server"
+  foreman_hostgroup    = "BT DGB Oradb 19c Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
@@ -51,7 +51,7 @@ module "cloud_dbserver_2" {
   memory               = "10240"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT DGB Generic Server"
+  foreman_hostgroup    = "BT DGB Oradb 19c Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
