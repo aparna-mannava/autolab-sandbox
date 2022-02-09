@@ -8,7 +8,7 @@ locals {
   environment = "feature_CLOUD_103960"
   datacenter  = "ny2"
   facts         = {
-    "bt_customer"         = "fi7890" #ex: fiXXX
+    "bt_customer"         = "fi7890" #ex: fiXXXXX
     "bt_tier"             = "sbx" #ex: sbx, tst, td, demo
     "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
@@ -28,7 +28,7 @@ module "cloud_dbserver_1" {
   memory               = "10240"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT DGB Generic Server"
+  foreman_hostgroup    = "BT DGB Oradb 19c Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
@@ -51,7 +51,7 @@ module "cloud_dbserver_2" {
   memory               = "10240"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT DGB Generic Server"
+  foreman_hostgroup    = "BT DGB Oradb 19c Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
