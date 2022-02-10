@@ -1,4 +1,7 @@
 ---
+terraform{
+ backend "s3" {}
+}
 version: 3
 automerge: true
 projects:
