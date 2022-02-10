@@ -68,6 +68,9 @@ projects:
 - name: ora19onrhel8
   dir: sriramvaradhan/rhel8
   workflow: nutanix-backend
+- name: cfrmtstdb
+  dir: saumilp/cfrm
+  workflow: nutanix-backend
 # T
 # U
 # V
