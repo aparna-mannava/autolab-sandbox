@@ -46,7 +46,7 @@ module "oradb_server_1" {
   os_version           = "${local.facts.os_version}"
   cpus                 = "${local.facts.db_cpus}"
   memory               = "${local.facts.db_memory}"
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM SP Oracle Server"
   datacenter           = local.datacenter
