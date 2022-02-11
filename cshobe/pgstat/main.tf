@@ -19,8 +19,7 @@ locals {
   cpus = "2"
   memory = "4096"
   additional_disks = {
-    1 = "4",
-    2 = "32"
+    1 = "32"
   }
   facts = {
     "bt_env" = local.bt_env
