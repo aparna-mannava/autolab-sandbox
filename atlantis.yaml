@@ -31,6 +31,9 @@ projects:
 - name: dgb19c1
   dir: nirmalj/dgb19c1
   workflow: nutanix-backend
+- name: dbora12c
+  dir: nirmalj/dbora12c
+  workflow: nutanix-backend
 # E
 # F
 # G
