@@ -13,7 +13,6 @@ locals {
   bt_env = "3"
   lob = "CLOUD"
   bt_product = "cloud"
-  bt_role = "postgresql"
   hostgroup = "BT ETCD for PostgreSQL Server"
   environment = "master"
   cluster = "ny5-aza-ntnx-14"
@@ -29,7 +28,6 @@ locals {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
     "bt_product" = local.bt_product
-    "bt_role" = local.bt_role
     "bt_etcd_cluster_members" = [
       "${local.etcd_servers[0]}.${local.domain}",
       "${local.etcd_servers[1]}.${local.domain}",
