@@ -51,11 +51,13 @@ projects:
 - name: llabranche-vault-dgb-hapg
   dir: llabranche/vault/dgb/hapg
   workflow: nutanix-backend
-
 # M
 # N
 # O
 # P
+- name: pcmdb19
+  dir: nirmalj/pcmdb19
+  workflow: nutanix-backend
 # Q
 # R
 # S
