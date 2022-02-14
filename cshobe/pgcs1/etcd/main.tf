@@ -36,7 +36,7 @@ locals {
   }
 }
 
-module "etcd_1" {
+module "ny2_pgcs1_etcd_1" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[0]}"
   bt_infra_cluster = local.cluster
@@ -52,7 +52,7 @@ module "etcd_1" {
   additional_disks = local.additional_disks
 }
 
-module "etcd_2" {
+module "ny2_pgcs1_etcd_2" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[1]}"
   bt_infra_cluster = local.cluster
@@ -68,7 +68,7 @@ module "etcd_2" {
   additional_disks = local.additional_disks
 }
 
-module "etcd_3" {
+module "ny2_pgcs1_etcd_3" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname = "${local.etcd_servers[2]}"
   bt_infra_cluster = local.cluster
@@ -84,26 +84,26 @@ module "etcd_3" {
   additional_disks = local.additional_disks
 }
 
-output "etcd_1" {
+output "ny2_pgcs1_etcd_1" {
   value = {
-    "fqdn" = "${module.etcd_1.fqdn}",
-    "alias" = "${module.etcd_1.alias}",
-    "ip" = "${module.etcd_1.ip}",
+    "fqdn" = "${module.ny2_pgcs1_etcd_1.fqdn}",
+    "alias" = "${module.ny2_pgcs1_etcd_1.alias}",
+    "ip" = "${module.ny2_pgcs1_etcd_1.ip}",
   }
 }
 
-output "etcd_2" {
+output "ny2_pgcs1_etcd_2" {
   value = {
-    "fqdn" = "${module.etcd_2.fqdn}",
-    "alias" = "${module.etcd_2.alias}",
-    "ip" = "${module.etcd_2.ip}",
+    "fqdn" = "${module.ny2_pgcs1_etcd_2.fqdn}",
+    "alias" = "${module.ny2_pgcs1_etcd_2.alias}",
+    "ip" = "${module.ny2_pgcs1_etcd_2.ip}",
   }
 }
 
-output "etcd_3" {
+output "ny2_pgcs1_etcd_3" {
   value = {
-    "fqdn" = "${module.etcd_3.fqdn}",
-    "alias" = "${module.etcd_3.alias}",
-    "ip" = "${module.etcd_3.ip}",
+    "fqdn" = "${module.ny2_pgcs1_etcd_3.fqdn}",
+    "alias" = "${module.ny2_pgcs1_etcd_3.alias}",
+    "ip" = "${module.ny2_pgcs1_etcd_3.ip}",
   }
 }
