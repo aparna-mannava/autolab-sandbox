@@ -9,7 +9,6 @@ locals {
   bt_env = "3"
   lob = "CLOUD"
   bt_product = "cloud"
-  bt_role = "postgresql"
   hostgroup = "BT pgBadger Server"
   environment = "feature_CLOUD_103272_testing"
   cluster = "ny5-aza-ntnx-14"
@@ -25,7 +24,6 @@ locals {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
     "bt_product" = local.bt_product
-    "bt_role" = local.bt_role
   }
 }
 
