@@ -27,6 +27,9 @@ projects:
 - name: cshobe-pgcs2
   dir: cshobe/pgcs2
   workflow: nutanix-backend
+- name: cshobe-pgstat
+  dir: cshobe/pgstat
+  workflow: nutanix-backend
 # D
 - name: dmtest
   dir: dmorvan/test
