@@ -18,9 +18,6 @@ projects:
 - name: cshobe-pgcs1-haproxy
   dir: cshobe/pgcs1/haproxy
   workflow: nutanix-backend
-- name: cshobe-pgcs1-patroni
-  dir: cshobe/pgcs1/patroni
-  workflow: nutanix-backend
 - name: cshobe-pgcs1-pgbackrest
   dir: cshobe/pgcs1/pgbackrest
   workflow: nutanix-backend
