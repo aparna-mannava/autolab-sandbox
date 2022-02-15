@@ -12,6 +12,18 @@ projects:
   workflow: nutanix-backend
 # B
 # C
+- name: cshobe-pgcs1-etcd
+  dir: cshobe/pgcs1/etcd
+  workflow: nutanix-backend
+- name: cshobe-pgcs1-haproxy
+  dir: cshobe/pgcs1/haproxy
+  workflow: nutanix-backend
+- name: cshobe-pgcs1-patroni
+  dir: cshobe/pgcs1/patroni
+  workflow: nutanix-backend
+- name: cshobe-pgcs1-pgbackrest
+  dir: cshobe/pgcs1/pgbcakrest
+  workflow: nutanix-backend
 - name: cshobe-pgcs2
   dir: cshobe/pgcs2
   workflow: nutanix-backend
