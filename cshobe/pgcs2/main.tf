@@ -25,7 +25,7 @@ locals {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
     "bt_product" = local.bt_product
-    "bt_pg_version" = "13"
+    "bt_pg_version" = "12"
   }
 }
 
