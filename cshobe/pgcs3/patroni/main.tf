@@ -4,9 +4,9 @@ terraform {
 
 locals {
   etcd_servers = [
-    "us01vlpgcs3e1",
-    "us01vlpgcs3e2",
-    "us01vlpgcs3e3"
+    "us01vlpgcs1e1",
+    "us01vlpgcs1e2",
+    "us01vlpgcs1e3"
   ]
   patroni_servers = [
     "us01vlpgcs3p1"
@@ -43,7 +43,7 @@ locals {
     ]
     "bt_hapg_node1" = "${local.patroni_servers[0]}.${local.domain}"
     "bt_backup_node" = "${local.pgbackrest_server}.${local.domain}"
-    "bt_cluster_name" = "pgcs1"
+    "bt_cluster_name" = "pgcs3"
     "bt_pg_version" = "13"
   }
 }
