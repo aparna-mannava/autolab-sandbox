@@ -27,9 +27,6 @@ projects:
 - name: cshobe-pgcs2
   dir: cshobe/pgcs2
   workflow: nutanix-backend
-- name: cshobe-pgcs3-etcd
-  dir: cshobe/pgcs3/etcd
-  workflow: nutanix-backend
 - name: cshobe-pgcs3-patroni
   dir: cshobe/pgcs3/patroni
   workflow: nutanix-backend
