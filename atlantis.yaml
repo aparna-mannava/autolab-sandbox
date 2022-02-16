@@ -60,6 +60,9 @@ projects:
 - name: llabranche-vault-dgb-hapg
   dir: llabranche/vault/dgb/hapg
   workflow: nutanix-backend
+- name: lemery-runner
+  dir: lemery/runner
+  workflow: nutanix-backend
 # M
 # N
 # O
