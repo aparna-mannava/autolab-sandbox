@@ -10,6 +10,9 @@ projects:
 - name: atlstest1
   dir: nirmalj/atlstest1
   workflow: nutanix-backend
+- name: atlstest2
+  dir: nirmalj/atlstest2
+  workflow: nutanix-backend
 # B
 # C
 - name: cshobe-pgcs1-etcd
