@@ -17,7 +17,7 @@ module "atlassian_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlatldb096"
   alias                = "${local.product}-atl-${local.facts.bt_tier}-oradb096"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "2"
