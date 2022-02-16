@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-
+#atlanssian DB server
 locals {
   product     = "cloud"
   environment = "master"
