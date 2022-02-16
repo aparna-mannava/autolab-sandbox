@@ -12,7 +12,7 @@ locals {
   patroni_servers = [
     "us01vlpgcs3p1"
   ]
-  pgbackrest_server = "us01vlpgcs3b1"
+  pgbackrest_server = "us01vlpgcs1b1"
   domain = "auto.saas-n.com"
   tier = "dev"
   bt_env = "3"
