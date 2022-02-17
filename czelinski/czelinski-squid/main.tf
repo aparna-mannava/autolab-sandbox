@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "inf"
-  environment = "cloud-104535"
+  environment = "master"
   datacenter  = "ny2"
   facts = {
     "bt_tier" = "ny2"
