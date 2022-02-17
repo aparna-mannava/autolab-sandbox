@@ -34,7 +34,7 @@ projects:
   dir: cshobe/pgstat
   workflow: nutanix-backend
 - name: czelinski-squid
-  dir: czelinski/squid
+  dir: czelinski/czelinski-squid
   workflow: nutanix-backend
 # D
 - name: dmtest
