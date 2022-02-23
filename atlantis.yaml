@@ -30,6 +30,9 @@ projects:
 - name: cshobe-pgcs3-patroni
   dir: cshobe/pgcs3/patroni
   workflow: nutanix-backend
+- name: cshobe-pgcs4-patroni
+  dir: cshobe/pgcs4/patroni
+  workflow: nutanix-backend
 - name: cshobe-pgstat
   dir: cshobe/pgstat
   workflow: nutanix-backend
