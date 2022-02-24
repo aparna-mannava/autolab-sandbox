@@ -94,6 +94,9 @@ projects:
 - name: cfrmtstdb
   dir: saumilp/cfrm
   workflow: nutanix-backend
+- name: atlsdberver
+  dir: saumilp/atls
+  workflow: nutanix-backend
 # T
 # U
 # V
