@@ -50,6 +50,10 @@ projects:
   dir: nirmalj/dbora12c
   workflow: nutanix-backend
 # E
+- name: ebouzinis-dev1
+  dir: ebouzinis/dev
+  workflow: nutanix-backend
+
 # F
 # G
 # H
