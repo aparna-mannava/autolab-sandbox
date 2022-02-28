@@ -14,7 +14,7 @@ locals {
 
 module "ebouzinis-dev-machine" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = "us01v1bouz1"
+  hostname            = "us01v1ebdev1"
   alias               = "ebouzinis-dev-1"
   bt_infra_cluster    = "ny5-azc-ntnx-16"
   bt_infra_network    = "ny2-autolab-app-ahv"
