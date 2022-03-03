@@ -28,6 +28,8 @@ locals {
   environment = "feature_CLOUD_103272_testing"
   cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
+  network_details = jsondecode(file("${path.module}/data/networks/${local.network}.json"))
+  network_subnet = local.network_details.network
   datacenter = "ny2"
   os_version = "rhel8"
   cpus = "2"
@@ -97,7 +99,7 @@ resource "infoblox_record_host" "vip" {
   view              = "default"
   ipv4addr {
     configure_for_dhcp = false
-    function           = "func:nextavailableip:10.226.191.0/24"
+    function           = "func:nextavailableip:${local.network_subnet}"
   }
 }
 
