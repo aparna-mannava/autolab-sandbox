@@ -16,7 +16,7 @@ locals {
   bt_role = "postgresql"
   hostgroup = "BT ETCD for PostgreSQL Server"
   environment = "feature_CLOUD_103802_pgbadger"
-  cluster = "ny5-aza-ntnx-14"
+  cluster = "ny5-aza-ntnx-16"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
   os_version = "rhel7"
