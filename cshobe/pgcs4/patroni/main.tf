@@ -1,4 +1,3 @@
-#destroy
 terraform {
   backend "s3" {}
   required_providers {
@@ -29,8 +28,9 @@ locals {
   environment = "feature_CLOUD_103272_testing"
   cluster = "ny5-azc-ntnx-16"
   network = "ny2-autolab-db-ahv"
-  network_details = jsondecode(file("${path.module}/data/networks/${local.network}.json"))
-  network_subnet = local.network_details.network
+#  network_details = jsondecode(file("${path.module}/data/networks/${local.network}.json"))
+#  network_subnet = local.network_details.network
+  network_subnet = "10.226.191.0/24"
   datacenter = "ny2"
   os_version = "rhel8"
   cpus = "2"
@@ -96,7 +96,7 @@ module "patroni_2" {
 
 resource "infoblox_record_host" "vip" {
   configure_for_dns = true
-  name              = "pgcs4.auto.saas-n.com"
+  name              = "${local.cluster_name}.${local.domain}"
   view              = "default"
   ipv4addr {
     configure_for_dhcp = false
