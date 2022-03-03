@@ -7,89 +7,32 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: atlstest1
-  dir: nirmalj/atlstest1
-  workflow: nutanix-backend
-- name: atlstest2
-  dir: nirmalj/atlstest2
-  workflow: nutanix-backend
 # B
 # C
-- name: cshobe-pgcs1-etcd
-  dir: cshobe/pgcs1/etcd
-  workflow: nutanix-backend
-- name: cshobe-pgcs1-haproxy
-  dir: cshobe/pgcs1/haproxy
-  workflow: nutanix-backend
-- name: cshobe-pgcs1-patroni
-  dir: cshobe/pgcs1/patroni
-  workflow: nutanix-backend
-- name: cshobe-pgcs2
-  dir: cshobe/pgcs2
-  workflow: nutanix-backend
-- name: cshobe-pgcs3-patroni
-  dir: cshobe/pgcs3/patroni
-  workflow: nutanix-backend
-- name: cshobe-pgcs4-patroni
-  dir: cshobe/pgcs4/patroni
-  workflow: nutanix-backend
-- name: cshobe-pgstat
-  dir: cshobe/pgstat
-  workflow: nutanix-backend
+- name: cfrmxopensearchcluster 
+  dir: genady/opensearch
+  workflow: nutanix-backend  
 # D
-- name: dmtest
-  dir: dmorvan/test
-  workflow: nutanix-backend
-- name: dgb19c1
-  dir: nirmalj/dgb19c1
-  workflow: nutanix-backend
-- name: dbora12c
-  dir: nirmalj/dbora12c
-  workflow: nutanix-backend
 # E
 # F
 # G
+- name: gnewbury-test
+  dir: gnewbury/test
+  workflow: nutanix-backend
 # H
 # I
 # J
-- name: jaycee
-  dir: jaycee/dev
-  workflow: nutanix-backend
 # K
 # L
-- name: llabranche-vault-dgb-etcd
-  dir: llabranche/vault/dgb/etcd
-  workflow: nutanix-backend
-- name: llabranche-vault-dgb-hapg
-  dir: llabranche/vault/dgb/hapg
-  workflow: nutanix-backend
-- name: lemery-runner
-  dir: lemery/runner
-  workflow: nutanix-backend
 # M
 # N
 # O
 # P
-- name: pcmdb19
-  dir: nirmalj/pcmdb19
-  workflow: nutanix-backend
 # Q
 # R
 # S
 - name: dgbtstdb
   dir: saumilp/dgb
-  workflow: nutanix-backend
-- name: dgbtstdb1
-  dir: saumilp/dgb1
-  workflow: nutanix-backend
-- name: dgbora19
-  dir: sriramvaradhan/dgb
-  workflow: nutanix-backend
-- name: ora19onrhel8
-  dir: sriramvaradhan/rhel8
-  workflow: nutanix-backend
-- name: cfrmtstdb
-  dir: saumilp/cfrm
   workflow: nutanix-backend
 # T
 # U
