@@ -9,9 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmxopensearchcluster 
+- name: cfrmxopensearchcluster
   dir: genady/opensearch
-  workflow: nutanix-backend  
+  workflow: nutanix-backend
 - name: cshobe-pgcs1-etcd
   dir: cshobe/pgcs1/etcd
   workflow: nutanix-backend  
@@ -19,6 +19,12 @@ projects:
   dir: cshobe/pgcs4/patroni
   workflow: nutanix-backend  
 # D
+- name: dgbr8
+  dir: nirmalj/dgbr8
+  workflow: nutanix-backend
+- name: dgbr81
+  dir: nirmalj/dgbr81
+  workflow: nutanix-backend
 # E
 # F
 # G
