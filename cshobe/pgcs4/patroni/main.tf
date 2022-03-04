@@ -21,7 +21,7 @@ locals {
   pgbackrest_server = "us01vlpgcs1b1"
   domain = "auto.saas-n.com"
   tier = "dev"
-  bt_env = "3"
+  bt_env = "4"
   lob = "CLOUD"
   bt_product = "cloud"
   hostgroup = "BT HA PG Server"
