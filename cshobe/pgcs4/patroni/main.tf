@@ -56,6 +56,7 @@ locals {
     "bt_hapg_node1" = "${local.patroni_servers[0]}.${local.domain}"
     "bt_hapg_node2" = "${local.patroni_servers[1]}.${local.domain}"
     "bt_backup_node" = "${local.pgbackrest_server}.${local.domain}"
+    "bt_hapg_master_vip" = "${local.cluster_name}.${local.domain}"
     "bt_cluster_name" = local.cluster_name
     "bt_pg_version" = "13"
     "bt_patroni_master_vip_hostname" = "${local.cluster_name}.${local.domain}"
@@ -103,7 +104,6 @@ resource "infoblox_record_host" "vip" {
     function           = "func:nextavailableip:${local.network_subnet}"
   }
 }
-
 
 output "patroni_1" {
   value = {
