@@ -23,7 +23,7 @@ module "cfrm_windows_1" {
   os_version           = "rhel7" 
   cpus                 = "4"
   memory               = "8192"
-  foreman_environment  = "feature_CFRMRD_8010_Windows_VM"
+  foreman_environment  = "feature_CFRMX_8010_Windows_VM"
   foreman_hostgroup    = "CFRMRD Windows"
   lob                  = "CFRM"
   datacenter           = local.datacenter
