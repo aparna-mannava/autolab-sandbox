@@ -32,7 +32,7 @@ module "cfrm_windows_1" {
     1 = "500",
     2 = "100",
   } 
-}
+} 
 
 output "cfrm_windows_1" {
   value = {
