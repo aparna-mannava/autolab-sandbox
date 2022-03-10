@@ -12,6 +12,9 @@ projects:
 - name: cfrmxopensearchcluster
   dir: genady/opensearch
   workflow: nutanix-backend
+- name: cfrmxstandalone
+  dir: genady/standalone
+  workflow: nutanix-backend  
 - name: cfrmxwindows
   dir: genady/windows
   workflow: nutanix-backend
