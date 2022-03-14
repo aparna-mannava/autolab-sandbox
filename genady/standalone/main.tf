@@ -31,7 +31,7 @@ module "cfrm_opensearch_1" {
   additional_disks     = { 
     1 = "500",
     2 = "100",
-  }  
+  } 
 }  
 
 
