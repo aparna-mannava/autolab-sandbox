@@ -27,6 +27,9 @@ projects:
 - name:  cshobe-pgstat
   dir: cshobe/pgstat
   workflow: nutanix-backend
+- name:  cshu-dgbcsES
+  dir: cshu/dgbcsES
+  workflow: nutanix-backend
 # D
 - name: dgbr8
   dir: nirmalj/dgbr8
