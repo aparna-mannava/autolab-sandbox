@@ -7,6 +7,7 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   facts       = {
+    "bt_lob" = "CFRM"
     "bt_artemis_version" = "2.16.0"
     "bt_customer" = "dgbcs"
     "bt_deployment_mode" = "blue"
@@ -29,6 +30,7 @@ locals {
     "os_version" = "rhel7"
   }
   es01facts    = {
+    "bt_lob" = local.facts.bt_lob
     "bt_customer" = local.facts.bt_customer
     "bt_product" = local.facts.bt_product
     "bt_tier" = local.facts.bt_tier
@@ -45,6 +47,7 @@ locals {
 }
 
 es02facts    = {
+    "bt_lob" = local.facts.bt_lob
     "bt_customer" = local.facts.bt_customer
     "bt_product" = local.facts.bt_product
     "bt_tier" = local.facts.bt_tier
@@ -60,6 +63,7 @@ es02facts    = {
     "bt_alias" = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_server_mode}02-${local.facts.bt_deployment_mode}"
 }
 es03facts    = {
+    "bt_lob" = local.facts.bt_lob
     "bt_customer" = local.facts.bt_customer
     "bt_product" = local.facts.bt_product
     "bt_tier" = local.facts.bt_tier
