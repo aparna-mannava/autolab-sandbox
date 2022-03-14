@@ -20,7 +20,7 @@ module "cfrm_opensearch_1" {
   alias                = "cfrm-opensearch-cluster1"
   bt_infra_cluster     = "ny2-azb-ntnx-09"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel8"  
+  os_version           = "rhel8"   
   cpus                 = "2"
   memory               = "8192"
   foreman_environment  = "feature_CFRMX_8111_Artemis_cluster"
