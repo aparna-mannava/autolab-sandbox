@@ -23,7 +23,7 @@ module "cfrm_opensearch_1" {
   os_version           = "rhel8"  
   cpus                 = "2"
   memory               = "8192"
-  foreman_environment  = "feature_CFRMRD_30877_Artemis_upgrade"
+  foreman_environment  = "feature_CFRMX_8111_Artemis_cluster"
   foreman_hostgroup    = "CFRMRD OpenSearch"
   lob                  = "CFRM"
   datacenter           = local.datacenter
