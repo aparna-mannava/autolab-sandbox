@@ -14,7 +14,7 @@ locals {
     "bt_env" = ""
     "bt_es_version" = "7.10.2"
     "bt_infra_cluster" = "ny2-aze-ntnx-11"
-    "bt_infra_network" = "ny2-autolab-app"
+    "bt_infra_network" = "ny2-autolab-app-ahv"
     "bt_product" = "cfrm"
     "bt_product_version" = "6.6"
     "bt_tier" = "sbx"
