@@ -10,7 +10,7 @@ locals {
     "bt_customer"        = "cfrmrd"
     "bt_tier"            = "dev"
     "bt_env"             = "dev2"
-    "bt_role"            = "opensearch"
+    "bt_role"            = "standalone"
   }
 }
   
@@ -32,7 +32,7 @@ module "cfrm_opensearch_1" {
     1 = "500",
     2 = "100",
   } 
-} 
+}  
 
 
 output "cfrm_opensearch_1" {
