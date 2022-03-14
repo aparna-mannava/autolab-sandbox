@@ -25,7 +25,7 @@ locals {
     es01_hostname = "us01vles00081"
     es02_hostname = "us01vles00082"
     es03_hostname = "us01vles00083"
-    foreman_hostgroup" = "BT CFRM ES Artemis Server"
+    foreman_hostgroup = "BT CFRM ES Artemis Server"
     memory = "30000"
     os_version = "rhel7"
   }
