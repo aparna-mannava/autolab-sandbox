@@ -4,7 +4,7 @@ terraform {
  
 locals {
   product     = "cfrm"
-  environment = "master"
+  environment = "feature_CUT1_14435"
   datacenter  = "ny2"
   facts       = {
     bt_artemis_version = "2.16.0"
