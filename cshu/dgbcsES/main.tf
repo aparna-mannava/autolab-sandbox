@@ -4,10 +4,9 @@ terraform {
  
 locals {
   product     = "cfrm"
-  environment = "master"
+  environment = "feature_CUT1_14435"
   datacenter  = "ny2"
   facts       = {
-    bt_lob = "CFRM"
     bt_artemis_version = "2.16.0"
     bt_customer = "dgbcs"
     bt_deployment_mode = "blue"
@@ -30,7 +29,6 @@ locals {
     os_version = "rhel7"
   }
   es01facts    = {
-    lob = local.facts.bt_lob
     bt_customer = local.facts.bt_customer
     bt_product = local.facts.bt_product
     bt_tier = local.facts.bt_tier
@@ -47,7 +45,6 @@ locals {
 }
 
 es02facts    = {
-    lob = local.facts.bt_lob
     bt_customer = local.facts.bt_customer
     bt_product = local.facts.bt_product
     bt_tier = local.facts.bt_tier
@@ -63,7 +60,6 @@ es02facts    = {
     bt_alias = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_server_mode}02-${local.facts.bt_deployment_mode}"
 }
 es03facts    = {
-    lob = local.facts.bt_lob
     bt_customer = local.facts.bt_customer
     bt_product = local.facts.bt_product
     bt_tier = local.facts.bt_tier
@@ -91,6 +87,7 @@ module "elasticsearch_1" {
   memory               = local.facts.memory
   foreman_environment  = local.environment
   foreman_hostgroup    = local.facts.foreman_hostgroup
+  lob = "CFRM"
   datacenter           = local.datacenter
   external_facts       = local.es01facts
   additional_disks     = {
@@ -110,6 +107,7 @@ module "elasticsearch_2" {
   memory               = local.facts.memory
   foreman_environment  = local.environment
   foreman_hostgroup    = local.facts.foreman_hostgroup
+  lob = "CFRM"
   datacenter           = local.datacenter
   external_facts       = local.es02facts
   additional_disks     = {
@@ -129,6 +127,7 @@ module "elasticsearch_3" {
   memory               = local.facts.memory
   foreman_environment  = local.environment
   foreman_hostgroup    = local.facts.foreman_hostgroup
+  lob = "CFRM"
   datacenter           = local.datacenter
   external_facts       = local.es03facts
   additional_disks     = {
