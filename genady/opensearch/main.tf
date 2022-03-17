@@ -32,7 +32,7 @@ module "cfrm_opensearch_1" {
     1 = "500",
     2 = "100",
   } 
-} 
+}  
 
 module "cfrm_opensearch_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
