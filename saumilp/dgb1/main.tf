@@ -39,7 +39,7 @@ module "cloud_dbserver_1" {
   }
 }
 
-module "cloud_dbserver_1" {
+module "cloud_dbserver_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldgbdb912"
   alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db912"
