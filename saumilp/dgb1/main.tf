@@ -5,7 +5,7 @@ terraform {
 locals {
   lob         = "dgb"
   product     = "dgb"
-  environment = "feature_CLOUD_102377"
+  environment = "master"
   datacenter  = "ny2"
   facts         = {
     "bt_customer"         = "fi2020" #ex: fiXXXX
@@ -21,7 +21,7 @@ module "cloud_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldgbdb911"
   alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db911"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "6"
@@ -34,7 +34,8 @@ module "cloud_dbserver_1" {
   additional_disks     = {
     1 = "300",
     2 = "200",
-    3 = "200"
+    3 = "200",
+    4 = "200"
   }
 }
 
@@ -55,7 +56,8 @@ module "cloud_dbserver_1" {
   additional_disks     = {
     1 = "300",
     2 = "200",
-    3 = "200"
+    3 = "200",
+    4 = "200"
   }
 }
 
