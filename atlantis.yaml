@@ -37,6 +37,9 @@ projects:
 - name: dgbr81
   dir: nirmalj/dgbr81
   workflow: nutanix-backend
+- name: dgb1
+  dir: nirmalj/dgb1
+  workflow: nutanix-backend
 # E
 # F
 # G
