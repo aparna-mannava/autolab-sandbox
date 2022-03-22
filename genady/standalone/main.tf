@@ -12,12 +12,12 @@ locals {
     "bt_env"             = "dev2"
     "bt_role"            = "standalone"
   }
-}
+} 
   
 module "cfrm_opensearch_1" { 
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmx888"
-  alias                = "cfrm-opensearch-standalone"
+  alias                = "cfrm-opensearch-standalone" 
   bt_infra_cluster     = "ny2-azb-ntnx-09"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"  
