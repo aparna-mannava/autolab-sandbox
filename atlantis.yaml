@@ -40,9 +40,9 @@ projects:
 - name: dgb1
   dir: nirmalj/dgb1
   workflow: nutanix-backend
-  - name: dgb2
-    dir: nirmalj/dgb2
-    workflow: nutanix-backend
+- name: dgb2
+  dir: nirmalj/dgb2
+  workflow: nutanix-backend
 # E
 # F
 # G
