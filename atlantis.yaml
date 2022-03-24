@@ -67,6 +67,9 @@ projects:
 - name: dgbtstdb1
   dir: saumilp/dgb1
   workflow: nutanix-backend
+- name: dgbtstdb2
+  dir: saumilp/dgb2
+  workflow: nutanix-backend
 # T
 # U
 # V
