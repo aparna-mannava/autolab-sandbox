@@ -36,7 +36,7 @@ module "cfrm001" {
   os_version          = "rhel7"
   cpus                = "2"
   memory              = "4096"
-  lob                 = "cfrm"
+  lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.facts.environment
   foreman_hostgroup   = local.facts.hostgroup
