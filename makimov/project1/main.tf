@@ -29,7 +29,7 @@ locals {
  
 module "cfrm001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname            = local.hostname
+  hostname            = local.facts.hostname
   alias               = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_env}" #cfrmcloud-ny2-dev-00
   bt_infra_cluster    = local.facts.bt_infra_cluster
   bt_infra_network    = local.facts.bt_infra_network
