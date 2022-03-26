@@ -55,6 +55,9 @@ projects:
 # K
 # L
 # M
+- name: makimov-project1
+  dir: makimov/project1
+  workflow: nutanix-backend
 # N
 # O
 # P
