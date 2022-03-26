@@ -18,7 +18,7 @@ locals {
         bt_tier             = "dev"
         bt_env              = "00"
         bt_role             = "cfrm"
-        bt_infra_cluster    = "ny2-aze-ntnx-11"
+        bt_infra_cluster    = "ny2-aze-ntnx-12"
         bt_infra_network    = "ny2-autolab-app-ahv"
         hostgroup           = "BT CFRM CLOUD Application Standalone"  
         environment         = "master"
