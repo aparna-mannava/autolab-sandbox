@@ -20,7 +20,7 @@ locals {
         bt_role             = "cfrm"
         bt_infra_cluster    = "ny2-aze-ntnx-12"
         bt_infra_network    = "ny2-autolab-app-ahv"
-        hostgroup           = "BT CFRM CLOUD Application Standalone"  
+        hostgroup           = "BT Base Server"  
         environment         = "master"
         hostname            = "us01vlcfrm050"
     }
