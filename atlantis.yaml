@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmxapp
+  dir: genady/app
+  workflow: nutanix-backend
 - name: cfrmxopensearchcluster
   dir: genady/opensearch
   workflow: nutanix-backend
