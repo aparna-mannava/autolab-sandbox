@@ -35,7 +35,7 @@ module "cfrm001" {
   bt_infra_network    = local.facts.bt_infra_network
   os_version          = "rhel7"
   cpus                = "2"
-  memory              = "4096"
+  memory              = "2048"
   lob                 = "CFRM"
   external_facts      = local.facts
   foreman_environment = local.facts.environment
