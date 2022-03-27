@@ -14,7 +14,7 @@ locals {
     "bt_ic_mode"         = "FRONTEND"
   } 
 }
-
+ 
 module "cfrm_opensearch_1" { 
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmx889"
