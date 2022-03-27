@@ -24,7 +24,7 @@ module "cfrm_opensearch_1" {
   os_version           = "rhel8"  
   cpus                 = "2"
   memory               = "8192"
-  foreman_environment  = "feature_CFRMX_8179"
+  foreman_environment  = "feature_CFRMRD_31379"
   foreman_hostgroup    = "CFRMRD OpenSearch"
   lob                  = "CFRM"
   datacenter           = local.datacenter
