@@ -12,7 +12,7 @@ locals {
     "bt_env"             = "staging"
     "bt_role"            = "opensearch"
   }
-}
+} 
   
 module "cfrm_opensearch_1" { 
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
