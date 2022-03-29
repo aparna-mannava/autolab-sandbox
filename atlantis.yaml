@@ -61,6 +61,9 @@ projects:
 - name: makimov-project1
   dir: makimov/project1
   workflow: nutanix-backend
+- name: makimov-cfrm_app_standalone-660_sp1
+  dir: makimov/cfrm_app_standalone/660_sp1
+  workflow: nutanix-backend
 # N
 # O
 # P
