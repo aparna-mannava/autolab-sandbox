@@ -27,7 +27,7 @@ locals {
     hostname              = "us01vlcfrm051" // should be checked either from the following utility: https://us-pr-stash.saas-p.com/projects/INFAPP/repos/hostgen/browse
 
     hostgroup             = "BT CFRM CLOUD Application Standalone" //relevant datacenter Foreman Host Group
-    environment           = "bugfix_CFRMCLOUD_2089_create_ny2_auto.saas_n_cfrm_app_standalone_dev_server" // Puppet "controlrepo" code branch name
+    environment           = "bugfix_CFRMCLOUD_2089_create_ny2_auto_saas_n_cfrm_app_standalone_dev_server" // Puppet "controlrepo" code branch name
 
     datacenter = {
         name = "ny2"
