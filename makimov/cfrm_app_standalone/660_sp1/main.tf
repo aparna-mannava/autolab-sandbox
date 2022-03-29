@@ -4,6 +4,7 @@ terraform {
 #  Build test server
 locals {
 
+    host_number    = "01"
     facts       = {
         bt_product          = "cfrmcloud"
         bt_customer         = "cfrmcloud"
@@ -26,7 +27,7 @@ locals {
     hostname              = "us01vlcfrm051" // should be checked either from the following utility: https://us-pr-stash.saas-p.com/projects/INFAPP/repos/hostgen/browse
 
     hostgroup             = "BT CFRM CLOUD Application Standalone" //relevant datacenter Foreman Host Group
-    environment           = "feature_CFRMCLOUD_1439" // Puppet "controlrepo" code branch name
+    environment           = "bugfix_CFRMCLOUD_2089_create_ny2_auto.saas_n_cfrm_app_standalone_dev_server" // Puppet "controlrepo" code branch name
 
     datacenter = {
         name = "ny2"
@@ -38,7 +39,7 @@ locals {
 module "cfrm002" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = local.hostname
-  alias               = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_env}" # cfrmcloud-ny2-dev-00
+  alias               = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_env}-${local.host_number}" # cfrmcloud-ny2-dev-standalone-01
   bt_infra_cluster    = local.facts.bt_infra_cluster
   bt_infra_network    = local.facts.bt_infra_network
   os_version          = "rhel7"
