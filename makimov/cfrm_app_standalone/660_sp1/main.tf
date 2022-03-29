@@ -7,7 +7,7 @@ locals {
     host_number    = "01"
     facts       = {
         bt_product          = "cfrmcloud"
-        bt_customer         = "cfrmcloud"
+        bt_customer         = "ny2"
         bt_role             = "standalone"
         bt_tier             = "dev"
         bt_lob              = "CFRM"
