@@ -16,14 +16,14 @@ locals {
         bt_artemis_version  = "2.16.0" // should be changed according to $bt_ic_version value
         bt_apacheds_version = "2.0.0_M26"
         db_host             = "us01vlcfdblab01.auto.saas-n.com" // CFRM CLOUD team central DBs, 
-                                                        //can be taken from Confluence: https://confluence.bottomline.tech/display/CFRMGBSC/CFRM+Cloud+%5BOracle+DB%5D+Servers
+                                                                //can be taken from Confluence: https://confluence.bottomline.tech/display/CFRMGBSC/CFRM+Cloud+%5BOracle+DB%5D+Servers
         db_sid              = "CFRMAU01"                        
         db_port             = "1560" 
         bt_infra_cluster    = "ny2-aze-ntnx-12"
         bt_infra_network    = "ny2-autolab-app-ahv"
     }
 
-    hostname              = "us01vlcfrm051"
+    hostname              = "us01vlcfrm051" // should be checked either from the following utility: https://us-pr-stash.saas-p.com/projects/INFAPP/repos/hostgen/browse
 
     hostgroup             = "BT CFRM CLOUD Application Standalone" //relevant datacenter Foreman Host Group
     environment           = "feature_CFRMCLOUD_1439" // Puppet "controlrepo" code branch name
