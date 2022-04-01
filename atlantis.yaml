@@ -9,79 +9,22 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmxapp
-  dir: genady/app
-  workflow: nutanix-backend
-- name: cfrmxopensearchcluster
-  dir: genady/opensearch
-  workflow: nutanix-backend
-- name: cfrmxstandalone
-  dir: genady/standalone
-  workflow: nutanix-backend
-- name: cfrmxwindows
-  dir: genady/windows
-  workflow: nutanix-backend
-- name: cshobe-pgcs1-etcd
-  dir: cshobe/pgcs1/etcd
-  workflow: nutanix-backend
-- name: cshobe-pgcs4-patroni
-  dir: cshobe/pgcs4/patroni
-  workflow: nutanix-backend
-- name:  cshobe-pgstat
-  dir: cshobe/pgstat
-  workflow: nutanix-backend
-- name:  cshu-dgbcsES
-  dir: cshu/dgbcsES
-  workflow: nutanix-backend
 # D
-- name: dgbr8
-  dir: nirmalj/dgbr8
-  workflow: nutanix-backend
-- name: dgbr81
-  dir: nirmalj/dgbr81
-  workflow: nutanix-backend
-- name: dgb1
-  dir: nirmalj/dgb1
-  workflow: nutanix-backend
-- name: dgb2
-  dir: nirmalj/dgb2
-  workflow: nutanix-backend
 # E
 # F
 # G
-- name: gnewbury-test
-  dir: gnewbury/test
-  workflow: nutanix-backend
 # H
 # I
 # J
 # K
 # L
 # M
-- name: makimov-project1
-  dir: makimov/project1
-  workflow: nutanix-backend
-- name: makimov-cfrm_app_standalone-660_sp1
-  dir: makimov/cfrm_app_standalone/660_sp1
-  workflow: nutanix-backend
-- name: makimov-nfs-01
-  dir: makimov/nfs/01
-  workflow: nutanix-backend
 # N
 # O
 # P
 # Q
 # R
 # S
-- name: dgbtstdb
-  dir: saumilp/dgb
-  workflow: nutanix-backend
-- name: dgbtstdb1
-  dir: saumilp/dgb1
-  workflow: nutanix-backend
-- name: dgbtstdb2
-  dir: saumilp/dgb2
-  workflow: nutanix-backend
 # T
 # U
 # V
