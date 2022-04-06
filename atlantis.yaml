@@ -13,6 +13,9 @@ projects:
 - name: dgbora1
   dir: nirmalj/dgbora1
   workflow: nutanix-backend
+- name: dmcpherson-datahub-jenkins
+  dir: dmcpherson/datahub-jenkins
+  workflow: nutanix-backend
 # E
 # F
 # G
