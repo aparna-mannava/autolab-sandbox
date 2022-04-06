@@ -3,6 +3,7 @@ terraform {
 }
 
 locals {
+  lob         = "cfrm"
   product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
