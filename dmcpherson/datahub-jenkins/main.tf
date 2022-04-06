@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrm"
-  environment = "feature/CUT1-14468-provide-access-to-cfrm-bi-team-to-the-datahub-server"
+  environment = "master"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "dev"
@@ -23,6 +23,7 @@ module "jenkins_server_1" {
   alias                = "cfrm-datahub-prod-jkns01"
   bt_infra_network     = "ny2-autolab-app"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
+  firewall_group       = "CFRM_PR_ICBE"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "4096"
