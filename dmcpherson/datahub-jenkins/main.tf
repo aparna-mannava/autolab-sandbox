@@ -27,6 +27,7 @@ module "jenkins_server_1" {
   firewall_group       = "CFRM_PR_ICBE"
   os_version           = "rhel7"
   cpus                 = "4"
+  lob                  = "cfrm"
   memory               = "4096"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM Jenkins Active Server"
