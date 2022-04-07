@@ -1,12 +1,5 @@
-# recreate
 terraform {
   backend "s3" {}
-  required_providers {
-    infoblox = {
-      source = "terraform.bottomline.com/automation/infoblox"
-      version = "1.1.1"
-    }
-  }
 }
 
 locals {

@@ -1,4 +1,3 @@
-# recreate
 terraform {
   backend "s3" {}
   required_providers {
@@ -16,8 +15,8 @@ locals {
     "us01vlpgcs1e3"
   ]
   patroni_servers = [
-    "us01vlpgcs1p1",
-    "us01vlpgcs1p2"
+    "us01vlpgcs4p1",
+    "us01vlpgcs4p2"
   ]
   pgbackrest_server = "us01vlpgcs1b1"
   domain = "auto.saas-n.com"
@@ -26,9 +25,11 @@ locals {
   lob = "CLOUD"
   bt_product = "cloud"
   hostgroup = "BT HA PG Server"
-  environment = "feature_CLOUD_103802_pgbadger"
+  environment = "feature_CLOUD_103272_testing"
   cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
+  network_details = jsondecode(file("${path.module}/data/networks/${local.network}.json"))
+  network_subnet = local.network_details.network
   datacenter = "ny2"
   os_version = "rhel8"
   cpus = "2"
@@ -37,6 +38,7 @@ locals {
     1 = "4",
     2 = "32"
   }
+  cluster_name = "pgcs4"
   facts = {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
@@ -53,8 +55,9 @@ locals {
     "bt_hapg_node1" = "${local.patroni_servers[0]}.${local.domain}"
     "bt_hapg_node2" = "${local.patroni_servers[1]}.${local.domain}"
     "bt_backup_node" = "${local.pgbackrest_server}.${local.domain}"
-    "bt_cluster_name" = "pgcs1"
+    "bt_cluster_name" = local.cluster_name
     "bt_pg_version" = "13"
+    "bt_patroni_master_vip_hostname" = "${local.cluster_name}.${local.domain}"
   }
 }
 
@@ -88,6 +91,26 @@ module "patroni_2" {
   memory = local.memory
   external_facts = local.facts
   additional_disks = local.additional_disks
+}
+
+resource "infoblox_record_host" "vip" {
+  configure_for_dns = true
+  name              = "pgcs4.auto.saas-n.com"
+  view              = "default"
+  ipv4addr {
+    configure_for_dhcp = false
+    function           = "func:nextavailableip:${local.network_subnet}"
+  }
+}
+
+resource "infoblox_record_host" "vip" {
+  configure_for_dns = true
+  name              = "pgcs4.auto.saas-n.com"
+  view              = "default"
+  ipv4addr {
+    configure_for_dhcp = false
+    function           = "func:nextavailableip:${local.network_subnet}"
+  }
 }
 
 output "patroni_1" {
