@@ -26,8 +26,7 @@ locals {
   environment = "feature_CLOUD_103272_testing"
   cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
-  network_details = jsondecode(file("${path.module}/data/networks/${local.network}.json"))
-  network_subnet = local.network_details.network
+  network_subnet = "10.226.191.0/24"
   datacenter = "ny2"
   os_version = "rhel8"
   cpus = "2"
