@@ -3,6 +3,7 @@ terraform {
 }
 
 locals {
+  lob         = "cfrm"
   product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
@@ -23,9 +24,9 @@ module "jenkins_server_1" {
   alias                = "cfrm-datahub-prod-jkns01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  firewall_group       = "CFRM_PR_ICBE"
   os_version           = "rhel7"
   cpus                 = "4"
+  lob                  = "CFRM"
   memory               = "4096"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM Jenkins Active Server"
