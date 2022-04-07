@@ -10,13 +10,11 @@ terraform {
 
 locals {
   etcd_servers = [
-    "us01vlpgcs1e1",
-    "us01vlpgcs1e2",
-    "us01vlpgcs1e3"
+    "us01vlpgcs1e1"
   ]
   patroni_servers = [
-    "us01vlpgcs4p1",
-    "us01vlpgcs4p2"
+    "us01vlpgcs2p1",
+    "us01vlpgcs2p2"
   ]
   pgbackrest_server = "us01vlpgcs1b1"
   domain = "auto.saas-n.com"
@@ -38,7 +36,7 @@ locals {
     1 = "4",
     2 = "32"
   }
-  cluster_name = "pgcs4"
+  cluster_name = "pgcs2"
   facts = {
     "bt_env" = local.bt_env
     "bt_tier" = local.tier
@@ -56,7 +54,7 @@ locals {
     "bt_hapg_node2" = "${local.patroni_servers[1]}.${local.domain}"
     "bt_backup_node" = "${local.pgbackrest_server}.${local.domain}"
     "bt_cluster_name" = local.cluster_name
-    "bt_pg_version" = "13"
+    "bt_pg_version" = "12"
     "bt_patroni_master_vip_hostname" = "${local.cluster_name}.${local.domain}"
   }
 }
@@ -95,17 +93,7 @@ module "patroni_2" {
 
 resource "infoblox_record_host" "vip" {
   configure_for_dns = true
-  name              = "pgcs4.auto.saas-n.com"
-  view              = "default"
-  ipv4addr {
-    configure_for_dhcp = false
-    function           = "func:nextavailableip:${local.network_subnet}"
-  }
-}
-
-resource "infoblox_record_host" "vip" {
-  configure_for_dns = true
-  name              = "pgcs4.auto.saas-n.com"
+  name              = "pgcs2.auto.saas-n.com"
   view              = "default"
   ipv4addr {
     configure_for_dhcp = false
