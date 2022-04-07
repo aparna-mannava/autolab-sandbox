@@ -11,9 +11,7 @@ terraform {
 
 locals {
   etcd_servers = [
-    "us01vlpgcs1e1",
-    "us01vlpgcs1e2",
-    "us01vlpgcs1e3"
+    "us01vlpgcs1e1"
   ]
   patroni_servers = [
     "us01vlpgcs1p1",
