@@ -40,9 +40,7 @@ locals {
     "bt_tier" = local.tier
     "bt_product" = local.bt_product
     "bt_etcd_cluster_members" = [
-      "${local.etcd_servers[0]}.${local.domain}",
-      "${local.etcd_servers[1]}.${local.domain}",
-      "${local.etcd_servers[2]}.${local.domain}"
+      "${local.etcd_servers[0]}.${local.domain}"
     ]
     "bt_hapg_cluster_members" = [
       "${local.patroni_servers[0]}.${local.domain}",
