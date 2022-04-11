@@ -20,7 +20,7 @@ locals {
   }
   thal001 = {
     hostname = "${local.hostname}001"
-
+  }
 }
 
 module "thal001" {
