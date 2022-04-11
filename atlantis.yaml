@@ -37,6 +37,9 @@ projects:
 # Q
 # R
 # S
+- name: skerr-thalestest
+  dir: skerr/windows/ThalesTest
+  workflow: nutanix-backend
 # T
 # U
 # V
