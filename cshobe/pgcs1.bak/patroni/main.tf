@@ -1,17 +1,12 @@
-# destroy
 terraform {
   backend "s3" {}
-  required_providers {
-    infoblox = {
-      source = "terraform.bottomline.com/automation/infoblox"
-      version = "1.1.1"
-    }
-  }
 }
 
 locals {
   etcd_servers = [
-    "us01vlpgcs1e1"
+    "us01vlpgcs1e1",
+    "us01vlpgcs1e2",
+    "us01vlpgcs1e3"
   ]
   patroni_servers = [
     "us01vlpgcs1p1",
@@ -24,7 +19,7 @@ locals {
   lob = "CLOUD"
   bt_product = "cloud"
   hostgroup = "BT HA PG Server"
-  environment = "feature_CLOUD_103272_testing"
+  environment = "feature_CLOUD_103802_pgbadger"
   cluster = "ny5-aza-ntnx-14"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
@@ -40,7 +35,9 @@ locals {
     "bt_tier" = local.tier
     "bt_product" = local.bt_product
     "bt_etcd_cluster_members" = [
-      "${local.etcd_servers[0]}.${local.domain}"
+      "${local.etcd_servers[0]}.${local.domain}",
+      "${local.etcd_servers[1]}.${local.domain}",
+      "${local.etcd_servers[2]}.${local.domain}"
     ]
     "bt_hapg_cluster_members" = [
       "${local.patroni_servers[0]}.${local.domain}",
@@ -50,7 +47,7 @@ locals {
     "bt_hapg_node2" = "${local.patroni_servers[1]}.${local.domain}"
     "bt_backup_node" = "${local.pgbackrest_server}.${local.domain}"
     "bt_cluster_name" = "pgcs1"
-    "bt_pg_version" = "12"
+    "bt_pg_version" = "13"
   }
 }
 
