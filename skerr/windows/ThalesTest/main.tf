@@ -13,11 +13,12 @@ locals {
     bt_product = "fmlsaas"
     bt_tier    = "dv"
     bt_role    = ""
+    bt_lob     = "gbs"
   }
   datacenter = {
     name = "ny2"
     id   = "gb03"
-    lob  = "gbs"
+
   }
   thal001 = {
     hostname = "${local.hostname}001"
