@@ -38,6 +38,7 @@ module "thal001" {
   foreman_environment = "${local.environment}"
   foreman_hostgroup   = "${local.hostgroup}"
   datacenter          = "${local.datacenter.name}"
+  lob                 = "GBS"
 }
 
 output "thal001" {
