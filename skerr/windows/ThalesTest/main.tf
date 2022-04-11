@@ -29,7 +29,7 @@ module "thal001" {
   source              = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.thal001.hostname}"
   alias               = "${local.product}-${local.datacenter.id}-pr-${local.facts.bt_role}001"
-  bt_infra_cluster    = "ny5-aza-ntnx-19"
+  bt_infra_cluster    = "ny2-azb-ntnx-08"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "win2019"
   cpus                = "2"
