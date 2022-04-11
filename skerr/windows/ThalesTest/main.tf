@@ -17,6 +17,7 @@ locals {
   datacenter = {
     name = "ny2"
     id   = "gb03"
+    lob  = "gbs"
   }
   thal001 = {
     hostname = "${local.hostname}001"
