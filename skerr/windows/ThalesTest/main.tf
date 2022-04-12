@@ -8,7 +8,7 @@ locals {
   environment = "master"
   hostname    = "us01vwthal"
   domain      = "auto.saas-n.com"
-  hostgroup   = "BT Base Windows Server"
+  hostgroup   = "BT FML Base Windows"
   facts = {
     bt_product = "fmlsaas"
     bt_tier    = "dv"
