@@ -40,6 +40,9 @@ projects:
 - name: skerr-thalestest
   dir: skerr/windows/ThalesTest
   workflow: nutanix-backend
+- name: dgbtest19c
+  dir: saumilp/dgb19c
+  workflow: nutanix-backend
 # T
 # U
 # V
