@@ -40,6 +40,9 @@ projects:
 - name: njani-pgsql-hapgp
   dir: nirmalj/postgresql/primary/hapg
   workflow: nutanix-backend
+- name: njani-pgsql-pgbkp
+  dir: nirmalj/postgresql/primary/pgbackrest
+  workflow: nutanix-backend
 # Q
 # R
 # S
