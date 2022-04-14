@@ -34,6 +34,9 @@ projects:
 # N
 # O
 # P
+- name: njani-pgsql-etcdp
+  dir: nirmalj/postgresql/primary/etcd
+  workflow: nutanix-backend
 # Q
 # R
 # S
