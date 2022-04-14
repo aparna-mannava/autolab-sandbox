@@ -58,6 +58,9 @@ projects:
 - name: vvadher-pgsql-etcdd
   dir: vipul/postgres/secondary/etcd
   workflow: nutanix-backend
+- name: vvadher-pgsql-hapgd
+  dir: vipul/postgres/secondary/hapg
+  workflow: nutanix-backend
 # W
 # X
 # Y
