@@ -22,6 +22,9 @@ projects:
 - name: dmcpherson-datahub-jenkins
   dir: dmcpherson/datahub-jenkins
   workflow: nutanix-backend
+- name: dm-rgw
+  dir: dereck.martin/rgw
+  workflow: nutanix-backend
 # E
 # F
 # G
