@@ -4,7 +4,7 @@ terraform {
 
 locals {
   lob         = "cea"
-  cluster     = "ny2-aza-ntnx-12"
+  cluster     = "ny2-aze-ntnx-12"
   network     = "ny2-autolab-svc"
   dc          = "ny2"
   facts       = {
@@ -12,7 +12,7 @@ locals {
   }
 }
 
-module "hrbr_server_1" {
+module "rgw_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlrgw9999"
   bt_infra_cluster     = local.cluster
