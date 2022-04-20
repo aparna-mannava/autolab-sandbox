@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob         = "cea"
+  lob         = "CEA"
   cluster     = "ny2-aze-ntnx-12"
   network     = "ny2-autolab-svc"
   dc          = "ny2"
