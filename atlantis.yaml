@@ -15,8 +15,8 @@ projects:
 - name: cshobe-pgcs2-patroni
   dir: cshobe/pgcs2/patroni
   workflow: nutanix-backend
-- name: cshobe-pgb1
-  dir: cshobe/pgb1
+- name: cshobe-pgstat1
+  dir: cshobe/pgstat1
   workflow: nutanix-backend
 # D
 - name: dgbora1
