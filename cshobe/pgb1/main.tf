@@ -3,7 +3,6 @@ terraform {
 }
 
 locals {
-  pgbackrest_server = "us01vlpgcs1b1"
   domain = "auto.saas-n.com"
   tier = "dev"
   bt_env = "1"
