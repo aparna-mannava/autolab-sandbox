@@ -3,6 +3,7 @@ terraform {
 }
 
 locals {
+  hostname = "us01vlpgstat1"
   domain = "auto.saas-n.com"
   tier = "dev"
   bt_env = "1"
@@ -29,7 +30,7 @@ locals {
 
 module "pgbadger_1" {
   source = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname = "us01vlpgb1"
+  hostname = local.hostname
   bt_infra_cluster = local.cluster
   bt_infra_network = local.network
   lob = local.lob
