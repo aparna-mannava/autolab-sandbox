@@ -11,7 +11,7 @@ locals {
   bt_product = "cloud"
   hostgroup = "BT pgBadger Server"
   environment = "master"
-  cluster = "ny5-aza-ntnx-19"
+  cluster = "ny2-aze-ntnx-12"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
   os_version = "rhel8"
