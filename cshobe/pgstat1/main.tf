@@ -1,3 +1,4 @@
+#destroy
 terraform {
   backend "s3" {}
 }
@@ -10,7 +11,7 @@ locals {
   lob = "CLOUD"
   bt_product = "cloud"
   hostgroup = "BT pgBadger Server"
-  environment = "master"
+  environment = "feature_CLOUD_107809_pgbadger"
   cluster = "ny2-aze-ntnx-12"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
@@ -18,8 +19,7 @@ locals {
   cpus = "2"
   memory = "4096"
   additional_disks = {
-    1 = "37",
-    2 = "53"
+    1 = "100"
   }
   facts = {
     "bt_env" = local.bt_env
