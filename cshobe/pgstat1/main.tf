@@ -11,7 +11,7 @@ locals {
   lob = "CLOUD"
   bt_product = "cloud"
   hostgroup = "BT pgBadger Server"
-  environment = "feature_CLOUD_107809_pgbadger"
+  environment = "master"
   cluster = "ny2-aze-ntnx-12"
   network = "ny2-autolab-db-ahv"
   datacenter = "ny2"
