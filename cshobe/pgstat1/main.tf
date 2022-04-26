@@ -1,3 +1,4 @@
+#destroy
 terraform {
   backend "s3" {}
 }
@@ -18,8 +19,7 @@ locals {
   cpus = "2"
   memory = "4096"
   additional_disks = {
-    1 = "37",
-    2 = "53"
+    1 = "100"
   }
   facts = {
     "bt_env" = local.bt_env
