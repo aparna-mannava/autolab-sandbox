@@ -1,4 +1,4 @@
-#destroy2
+#destroy
 terraform {
   backend "s3" {}
 }
