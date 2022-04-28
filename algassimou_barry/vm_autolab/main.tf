@@ -11,7 +11,7 @@ locals {
   infra_cluster = "ny2-aza-vmw-autolab"
   infra_network = "ny2-autolab-app"
   facts         = {
-    "bt_product"        = "fmcloud"
+    "bt_product"        = "FMCLOUD"
     "bt_loc"            = "ny2"
   }
 }
