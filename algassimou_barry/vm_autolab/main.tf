@@ -66,9 +66,9 @@ module "vm_1" {
 
 output "vm_1" {
   value = {
-    "fqdn"  = "${module.vm_0.fqdn}",
-    "alias" = "${module.vm_0.alias}",
-    "ip"    = "${module.vm_0.ip}",
+    "fqdn"  = "${module.vm_1.fqdn}",
+    "alias" = "${module.vm_1.alias}",
+    "ip"    = "${module.vm_1.ip}",
   }
 }
 
@@ -95,9 +95,9 @@ module "vm_2" {
 
 output "vm_2" {
   value = {
-    "fqdn"  = "${module.vm_0.fqdn}",
-    "alias" = "${module.vm_0.alias}",
-    "ip"    = "${module.vm_0.ip}",
+    "fqdn"  = "${module.vm_2.fqdn}",
+    "alias" = "${module.vm_2.alias}",
+    "ip"    = "${module.vm_2.ip}",
   }
 }
 
@@ -123,9 +123,9 @@ module "vm_3" {
 
 output "vm_3" {
   value = {
-    "fqdn"  = "${module.vm_0.fqdn}",
-    "alias" = "${module.vm_0.alias}",
-    "ip"    = "${module.vm_0.ip}",
+    "fqdn"  = "${module.vm_3.fqdn}",
+    "alias" = "${module.vm_3.alias}",
+    "ip"    = "${module.vm_3.ip}",
   }
 }
 
@@ -151,9 +151,9 @@ module "vm_4" {
 
 output "vm_4" {
   value = {
-    "fqdn"  = "${module.vm_0.fqdn}",
-    "alias" = "${module.vm_0.alias}",
-    "ip"    = "${module.vm_0.ip}",
+    "fqdn"  = "${module.vm_4.fqdn}",
+    "alias" = "${module.vm_4.alias}",
+    "ip"    = "${module.vm_4.ip}",
   }
 }
 
@@ -179,8 +179,8 @@ module "vm_5" {
 
 output "vm_5" {
   value = {
-    "fqdn"  = "${module.vm_0.fqdn}",
-    "alias" = "${module.vm_0.alias}",
-    "ip"    = "${module.vm_0.ip}",
+    "fqdn"  = "${module.vm_5.fqdn}",
+    "alias" = "${module.vm_5.alias}",
+    "ip"    = "${module.vm_5.ip}",
   }
 }
