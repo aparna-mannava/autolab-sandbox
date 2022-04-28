@@ -7,6 +7,9 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: algassimoubarry-vm-autolab
+  dir: algassimou_barry/vm_autolab
+  workflow: nutanix-backend
 # B
 # C
 - name: cshobe-pgcs1-etcd
