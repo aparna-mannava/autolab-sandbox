@@ -31,6 +31,9 @@ projects:
 - name: dm-rgw
   dir: dereck.martin/rgw
   workflow: nutanix-backend
+- name: dmo-rapid7
+  dir: dmorvan/rapid7
+  workflow: nutanix-backend
 # E
 # F
 # G
