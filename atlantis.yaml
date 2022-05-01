@@ -7,33 +7,9 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: algassimoubarry-vm-autolab
-  dir: algassimou_barry/vm_autolab
-  workflow: nutanix-backend
 # B
 # C
-- name: cshobe-pgcs1-etcd
-  dir: cshobe/pgcs1/etcd
-  workflow: nutanix-backend
-- name: cshobe-pgcs2-patroni
-  dir: cshobe/pgcs2/patroni
-  workflow: nutanix-backend
-- name: cshobe-pgstat1
-  dir: cshobe/pgstat1
-  workflow: nutanix-backend
 # D
-- name: dgbora1
-  dir: nirmalj/dgbora1
-  workflow: nutanix-backend
-- name: dmcpherson-datahub-jenkins
-  dir: dmcpherson/datahub-jenkins
-  workflow: nutanix-backend
-- name: dm-rgw
-  dir: dereck.martin/rgw
-  workflow: nutanix-backend
-- name: dmo-rapid7
-  dir: dmorvan/rapid7
-  workflow: nutanix-backend
 # E
 # F
 # G
@@ -46,36 +22,12 @@ projects:
 # N
 # O
 # P
-- name: njani-pgsql-etcdp
-  dir: nirmalj/postgresql/primary/etcd
-  workflow: nutanix-backend
-- name: njani-pgsql-hapgp
-  dir: nirmalj/postgresql/primary/hapg
-  workflow: nutanix-backend
-- name: njani-pgsql-pgbkp
-  dir: nirmalj/postgresql/primary/pgbackrest
-  workflow: nutanix-backend
 # Q
 # R
 # S
-- name: skerr-thalestest
-  dir: skerr/windows/ThalesTest
-  workflow: nutanix-backend
-- name: dgbtest19c
-  dir: saumilp/dgb19c
-  workflow: nutanix-backend
 # T
 # U
 # V
-- name: vvadher-pgsql-etcdd
-  dir: vipul/postgres/secondary/etcd
-  workflow: nutanix-backend
-- name: vvadher-pgsql-hapgd
-  dir: vipul/postgres/secondary/hapg
-  workflow: nutanix-backend
-- name: vvadher-pgsql-pgbkp
-  dir: vipul/postgres/secondary/pgbackrest
-  workflow: nutanix-backend
 # W
 # X
 # Y
