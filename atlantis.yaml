@@ -4,6 +4,8 @@ automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
+- name: algassimoubarry-vm
+  dir: algassimoubarry/vm
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
