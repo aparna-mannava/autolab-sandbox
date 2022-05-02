@@ -13,6 +13,10 @@ projects:
 # C
 # D
 # E
+
+- name: eb-python-server
+  dir: eb-python-server/server1
+  workflow: nutanix-backend
 # F
 # G
 # H
