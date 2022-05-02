@@ -4,7 +4,7 @@ terraform {
 
 module "eb-python-server" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01ebpythondev"
+  hostname             = "us01vlebpythdev"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-kubernetes-aze-auto"
   cpus                 = 4
