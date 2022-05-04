@@ -21,7 +21,7 @@ module "cloud_dbserver_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlautodb81"
   alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db81"
-  bt_infra_cluster     = "ny5-aze-ntnx-21"
+  bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
   cpus                 = "6"
