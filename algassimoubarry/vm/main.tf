@@ -28,7 +28,7 @@ module "vm_0" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   cpus                 = "8"
-  memory               = "3200"
+  memory               = "32000"
   lob                  = local.facts.bt_product
   additional_disks     = {
     1 = "50",
@@ -56,7 +56,7 @@ module "vm_1" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   cpus                 = "8"
-  memory               = "3200"
+  memory               = "32000"
   lob                  = local.facts.bt_product
   additional_disks     = {
     1 = "50",
@@ -84,7 +84,7 @@ module "vm_2" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   cpus                 = "8"
-  memory               = "3200"
+  memory               = "32000"
   lob                  = local.facts.bt_product
   additional_disks     = {
     1 = "50",
@@ -113,7 +113,7 @@ module "vm_3" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   cpus                 = "8"
-  memory               = "3200"
+  memory               = "32000"
   lob                  = local.facts.bt_product
   additional_disks     = {
     1 = "50",
@@ -141,7 +141,7 @@ module "vm_4" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   cpus                 = "8"
-  memory               = "3200"
+  memory               = "32000"
   lob                  = local.facts.bt_product
   additional_disks     = {
     1 = "50",
@@ -169,7 +169,7 @@ module "vm_5" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   cpus                 = "8"
-  memory               = "3200"
+  memory               = "32000"
   lob                  = local.facts.bt_product
   additional_disks     = {
     1 = "50",
