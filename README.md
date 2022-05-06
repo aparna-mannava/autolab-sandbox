@@ -1,5 +1,7 @@
 # Terraform Automation Sandbox
 
+# <span style="color:red">This repo has been migrated to Corporate Bitbucket: </span>[https://bitbucket.bottomline.tech/projects/TER/repos/autolab-sandbox](https://bitbucket.bottomline.tech/projects/TER/repos/autolab-sandbox/)
+
 ## Repo Description
 This repository is for Terraform code for building sandbox automation lab servers.
 This repository is **shared**, and resources built within it are deleted at a regular
