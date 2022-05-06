@@ -34,6 +34,9 @@ projects:
 - name: dgbtest12
   dir: spatel/dgb
   workflow: nutanix-backend
+- name: dgbtest14
+  dir: spatel/dgbtst
+  workflow: nutanix-backend
 # T
 # U
 # V
