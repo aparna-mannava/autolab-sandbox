@@ -12,6 +12,9 @@ projects:
 # B
 # C
 # D
+- name: rapid7-test
+  dir: dmorvan/rapid7
+  workflow: nutanix-backend
 # E
 
 - name: eb-python-server
