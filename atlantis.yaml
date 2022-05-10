@@ -19,6 +19,12 @@ projects:
 # H
 # I
 # J
+- name: fm-etcd-test
+  dir: jbriquet/etcd
+  workflow: nutanix-backend
+- name: fm-hapg-test
+  dir: jbriquet/hapg
+  workflow: nutanix-backend
 # K
 # L
 # M
