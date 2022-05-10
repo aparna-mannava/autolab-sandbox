@@ -37,6 +37,9 @@ projects:
 - name: dgbtest14
   dir: spatel/dgbtst
   workflow: nutanix-backend
+- name: cfrmtest83
+  dir: spatel/cfrm
+  workflow: nutanix-backend
 # T
 # U
 # V
