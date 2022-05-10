@@ -6,7 +6,6 @@ locals {
     etcd_servers = ["us01vlfmed001","us01vlfmed002","us01vlfmed003"]
     hapg_servers = ["us01vlfmpg1","us01vlfmpg2","us01vlfmpg3"]
     haproxy_server = ["us01vlfmpxy1"]
-    backrest_server = ["us01vlfmbkp1"]
     etcd_hosts_p = ["'us01vlfmed001.auto.saas-n.com','us01vlfmed002.auto.saas-n.com','us01vlfmed003.auto.saas-n.com'"]
     domain = "auto.saas-n.com"
     tier = "dev"
@@ -26,7 +25,6 @@ locals {
         "bt_hapg_node1" = "${local.hapg_servers[0]}.${local.domain}"
         "bt_hapg_node2" = "${local.hapg_servers[1]}.${local.domain}"
         "bt_hapg_node3" = "${local.hapg_servers[2]}.${local.domain}"
-        "bt_backup_node" = "${local.backrest_server[0]}.${local.domain}"
     }
 }
 
