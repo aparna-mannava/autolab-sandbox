@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  os              = "rhel7"
+  os              = "rhel8"
   domain          = "auto.saas-n.com"
   datacenter      = "ny2"
   tier            = "dev"
