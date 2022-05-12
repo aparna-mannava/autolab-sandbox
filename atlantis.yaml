@@ -52,6 +52,9 @@ projects:
 - name: cfrmtest83
   dir: spatel/cfrm
   workflow: nutanix-backend
+- name: cfrmtest19c
+  dir: spatel/cfrm19c
+  workflow: nutanix-backend
 # T
 # U
 # V
