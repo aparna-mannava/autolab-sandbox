@@ -15,7 +15,6 @@ projects:
 - name: rapid7-test
   dir: dmorvan/rapid7
   workflow: nutanix-backend
-  projects:
 - name: dodyachenko-dev1
   dir: dodyachenko/dev1
   workflow: nutanix-backend
