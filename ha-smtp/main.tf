@@ -18,7 +18,7 @@ locals {
     cpu       = "2"
     memory    = "8192"
     os        = "rhel8"
-    cluster   = "ny5-azc-ntnx-16"
+    cluster   = "ny2-aze-ntnx-12"
     network   = "ny2-autolab-app-ahv"
     facts     = merge(local.facts, { "bt_tier" = "autolab"})
   }
@@ -30,7 +30,7 @@ locals {
     cpu       = "2"
     memory    = "8192"
     os        = "rhel8"
-    cluster   = "ny5-azc-ntnx-16"
+    cluster   = "ny2-aze-ntnx-12"
     network   = "ny2-autolab-app-ahv"
     facts     = merge(local.facts, { "bt_tier" = "autolab"})
   }
