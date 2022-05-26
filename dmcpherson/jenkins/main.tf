@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-
+# comment for destroy
 locals {
   lob        = "CFRM"
   product     = "cfrm"
