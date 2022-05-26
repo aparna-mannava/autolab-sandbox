@@ -6,6 +6,7 @@ locals {
   product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
+  lob        = "cfrm"
   facts       = {
     "bt_tier" = "sbx"
     "bt_product" = "cfrm"
@@ -18,7 +19,7 @@ locals {
 
 module "jenkins_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us00vljkns1000"
+  hostname             = "us01vljkns1000"
   alias                = "cfrm-autolab-prod-jkns01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
