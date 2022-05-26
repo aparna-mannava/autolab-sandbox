@@ -3,6 +3,7 @@ terraform {
 }
 
 locals {
+  lob        = "CFRM"
   product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
@@ -18,13 +19,14 @@ locals {
 
 module "jenkins_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us00vljkns1000"
+  hostname             = "us01vljkns1000"
   alias                = "cfrm-autolab-prod-jkns01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
+  lob                  = "CFRM"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM Jenkins Server"
   datacenter           = local.datacenter
