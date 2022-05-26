@@ -47,6 +47,10 @@ projects:
 - name: oradb19c-test
   dir: njani/dgb19c
   workflow: nutanix-backend
+- name: dgb12ct2
+  dir: njani/dgb12ct2
+  workflow: nutanix-backend
+
 # O
 # P
 # Q
