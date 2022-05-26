@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob        = "cfrm"
+  lob        = "CFRM"
   product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
@@ -26,6 +26,7 @@ module "jenkins_server_1" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
+  lob                  = "CFRM"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM Jenkins Server"
   datacenter           = local.datacenter
