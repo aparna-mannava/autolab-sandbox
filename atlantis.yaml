@@ -18,6 +18,9 @@ projects:
 - name: dodyachenko-dev1
   dir: dodyachenko/dev1
   workflow: nutanix-backend
+- name: dmcpherson-jenkins
+  dir: dmcpherson/jenkins
+  workflow: nutanix-backend
 # E
 
 - name: eb-python-server
