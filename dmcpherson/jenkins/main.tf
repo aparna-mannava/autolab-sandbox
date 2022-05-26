@@ -1,11 +1,11 @@
 terraform {
   backend "s3" {}
 }
-# comment for destroy
+
 locals {
   lob        = "CFRM"
   product     = "cfrm"
-  environment = "master"
+  environment = "feature_CUT1_15595_fix_jenkins_puppet_profile"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "sbx"
@@ -26,7 +26,7 @@ module "jenkins_server_1" {
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
-  lob                  = "CFRM"
+  lob                   = "CFRM"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM Jenkins Server"
   datacenter           = local.datacenter
