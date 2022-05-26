@@ -21,7 +21,7 @@ module "jenkins_server_1" {
   hostname             = "us00vljkns1000"
   alias                = "cfrm-autolab-prod-jkns01"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-aze-ntnx-21"
+  bt_infra_cluster     = "ny2-aze-ntnx-12"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
