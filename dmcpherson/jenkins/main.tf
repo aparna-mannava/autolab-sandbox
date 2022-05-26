@@ -3,10 +3,10 @@ terraform {
 }
 
 locals {
+  lob        = "cfrm"
   product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
-  lob        = "cfrm"
   facts       = {
     "bt_tier" = "sbx"
     "bt_product" = "cfrm"
