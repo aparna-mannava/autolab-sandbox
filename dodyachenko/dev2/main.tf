@@ -9,7 +9,7 @@ locals {
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "dev"
-    "bt_env"  = "1"
+    "bt_env"  = "2"
 	"bt_product" = "${lower(local.lob)}"
   }
 }
