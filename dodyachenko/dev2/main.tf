@@ -20,7 +20,7 @@ module "app_server_1" {
   alias                = "${local.product} -${local.facts.bt_tier}${local.facts.bt_env}-app01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  lob                  = "${bt_product}"
+  lob                  = "${local.facts.bt_product}"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
