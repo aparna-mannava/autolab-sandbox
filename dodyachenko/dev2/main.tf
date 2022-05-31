@@ -10,7 +10,6 @@ locals {
   facts       = {
     "bt_tier" = "dev"
     "bt_env"  = "2"
-	"bt_product" = "${lower(local.lob)}"
   }
 }
  
@@ -20,7 +19,7 @@ module "app_server_1" {
   alias                = "${local.product} -${local.facts.bt_tier}${local.facts.bt_env}-app01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  lob                  = "${local.facts.bt_product}"
+  lob                  = local.lob
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
