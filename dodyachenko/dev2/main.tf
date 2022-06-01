@@ -5,7 +5,7 @@ terraform {
 locals {
   lob         = "CFRM"
   product     = "cfrm-autolab"
-  environment = "master" feature branch
+  environment = "master"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "SBX"
