@@ -12,6 +12,7 @@ locals {
 	"bt_product" = "CFRM"
 	"bt_customer" = "DGBCS"
 	"bt_server_mode" = "SINGLE"
+	"bt_deployment_mode" = "NONE"
     "bt_env"  = ""
   }
 }
