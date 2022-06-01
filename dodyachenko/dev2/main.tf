@@ -16,7 +16,7 @@ locals {
 	"bt_ic_version" = "6.6"
 	"bt_ic_tag" = "v0001"
 	"bt_groovy_version" = "2.5.8"
-    "bt_env"  = ""
+    "bt_env"  = "2"
   }
 }
  
