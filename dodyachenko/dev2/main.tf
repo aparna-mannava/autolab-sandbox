@@ -3,28 +3,29 @@ terraform {
 }
  
 locals {
-  lob         = "CLOUD"
-  product     = "dodyachenko"
+  lob         = "CFRM"
+  product     = "cfrm-autolab"
   environment = "master"
   datacenter  = "ny2"
   facts       = {
     "bt_tier" = "dev"
-    "bt_env"  = "2"
+	"bt_product" = "cfrm"
+    "bt_env"  = ""
   }
 }
  
 module "app_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlapp08033"
-  alias                = "${local.product} -${local.facts.bt_tier}${local.facts.bt_env}-app01"
+  alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-app01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  lob                  = local.lob
+  lob                  = "CFRM"
   os_version           = "rhel7"
-  cpus                 = "4"
+  cpus                 = "2"
   memory               = "8192"
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT CFRM SP Server"
+  foreman_hostgroup    = "BT CFRM TEST Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
