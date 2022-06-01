@@ -10,6 +10,9 @@ projects:
 # B
 # C
 # D
+- name: dodyachenko-dev2
+  dir: dodyachenko/dev2
+  workflow: nutanix-backend
 # E
 # F
 # G
