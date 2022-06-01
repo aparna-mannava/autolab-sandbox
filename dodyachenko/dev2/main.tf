@@ -11,6 +11,7 @@ locals {
     "bt_tier" = "DEV"
 	"bt_product" = "CFRM"
 	"bt_customer" = "DGBCS"
+	"bt_server_mode" = "SINGLE"
     "bt_env"  = ""
   }
 }
