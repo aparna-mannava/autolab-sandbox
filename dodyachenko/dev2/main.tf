@@ -8,8 +8,9 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   facts       = {
-    "bt_tier" = "dev"
-	"bt_product" = "cfrm"
+    "bt_tier" = "DEV"
+	"bt_product" = "CFRM"
+	"bt_customer" = "DGBCS"
     "bt_env"  = ""
   }
 }
