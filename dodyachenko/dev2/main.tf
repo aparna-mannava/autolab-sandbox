@@ -25,7 +25,7 @@ module "app_server_1" {
   cpus                 = "2"
   memory               = "8192"
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT CFRM SP Server"
+  foreman_hostgroup    = "BT CFRM TEST Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
