@@ -3,7 +3,7 @@ terraform {
 }
  
 locals {
-  lob         = "cfrm"
+  lob         = "CFRM"
   product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
@@ -26,7 +26,7 @@ module "app_server_1" {
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-app01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  lob                  = "cfrm"
+  lob                  = "CFRM"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
