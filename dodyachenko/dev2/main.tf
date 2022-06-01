@@ -3,16 +3,16 @@ terraform {
 }
  
 locals {
-  lob         = "CFRM"
-  product     = "cfrm-autolab"
+  lob         = "cfrm"
+  product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
   facts       = {
-    "bt_tier" = "SBX"
-	"bt_product" = "CFRM"
-	"bt_customer" = "DGBCS"
-	"bt_server_mode" = "SINGLE"
-	"bt_deployment_mode" = "NONE"
+    "bt_tier" = "sbx"
+	"bt_product" = "cfrm"
+	"bt_customer" = "dgbcs"
+	"bt_server_mode" = "single"
+	"bt_deployment_mode" = "none"
 	"bt_ic_version" = "6.6"
 	"bt_ic_tag" = "v0001"
 	"bt_groovy_version" = "2.5.8"
@@ -26,7 +26,7 @@ module "app_server_1" {
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-app01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  lob                  = "CFRM"
+  lob                  = "cfrm"
   os_version           = "rhel7"
   cpus                 = "2"
   memory               = "8192"
