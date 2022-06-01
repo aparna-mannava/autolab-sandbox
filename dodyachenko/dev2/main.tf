@@ -4,15 +4,15 @@ terraform {
  
 locals {
   lob         = "CFRM"
-  product     = "cfrm-autolab"
+  product     = "cfrm"
   environment = "master"
   datacenter  = "ny2"
   facts       = {
-    "bt_tier" = "SBX"
-	"bt_product" = "CFRM"
-	"bt_customer" = "DGBCS"
-	"bt_server_mode" = "SINGLE"
-	"bt_deployment_mode" = "NONE"
+    "bt_tier" = "sbx"
+	"bt_product" = "cfrm"
+	"bt_customer" = "dgbcs"
+	"bt_server_mode" = "single"
+	"bt_deployment_mode" = "none"
 	"bt_ic_version" = "6.6"
 	"bt_ic_tag" = "v0001"
 	"bt_groovy_version" = "2.5.8"
