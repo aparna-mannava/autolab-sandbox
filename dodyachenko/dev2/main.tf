@@ -8,7 +8,7 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   facts       = {
-    "bt_tier" = "DEV"
+    "bt_tier" = "SBX"
 	"bt_product" = "CFRM"
 	"bt_customer" = "DGBCS"
 	"bt_server_mode" = "SINGLE"
@@ -31,7 +31,7 @@ module "app_server_1" {
   cpus                 = "2"
   memory               = "8192"
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT CFRM TEST Server"
+  foreman_hostgroup    = "BT CFRM SP Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
