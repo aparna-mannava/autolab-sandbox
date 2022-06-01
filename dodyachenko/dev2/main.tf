@@ -12,6 +12,7 @@ locals {
 	"bt_product" = "cfrm"
 	"bt_customer" = "dgbcs"
 	"bt_server_mode" = "single"
+	"bt_server_number" = "01"
 	"bt_deployment_mode" = "none"
 	"bt_ic_version" = "6.6"
 	"bt_ic_tag" = "v0001"
