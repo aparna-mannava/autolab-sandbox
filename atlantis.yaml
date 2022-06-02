@@ -25,6 +25,8 @@ projects:
 - name: fm-hapg-test
   dir: jbriquet/hapg
   workflow: nutanix-backend
+- name: jbriquet-vm
+  dir: jbriquet/vm
 # K
 # L
 # M
