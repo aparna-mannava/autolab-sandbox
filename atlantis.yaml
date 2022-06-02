@@ -22,6 +22,9 @@ projects:
 # K
 # L
 # M
+- name: cfrmcloud-nfs-server-01
+  dir: makimov/nfs/01
+  workflow: nutanix-backend
 # N
 # O
 # P
