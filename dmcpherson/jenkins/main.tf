@@ -28,7 +28,7 @@ module "jenkins_server_1" {
   memory               = "8192"
   lob                   = "CFRM"
   foreman_environment  = local.environment
-  foreman_hostgroup    = "BT CFRM Jenkins Server"
+  foreman_hostgroup    = "BT CFRM Jenkins Active Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
