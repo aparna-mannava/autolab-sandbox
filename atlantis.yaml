@@ -13,6 +13,9 @@ projects:
 - name: dodyachenko-dev2
   dir: dodyachenko/dev2
   workflow: nutanix-backend
+- name: dmcpherson-jenkins
+  dir: dmcpherson/jenkins
+  workflow: nutanix-backend
 # E
 # F
 # G
