@@ -4,28 +4,16 @@ automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
-- name: algassimoubarry-vm
-  dir: algassimoubarry/vm
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
 # B
 # C
 # D
-- name: rapid7-test
-  dir: dmorvan/rapid7
-  workflow: nutanix-backend
-- name: dodyachenko-dev1
-  dir: dodyachenko/dev1
-  workflow: nutanix-backend
-- name: dmcpherson-jenkins
-  dir: dmcpherson/jenkins
+- name: dodyachenko-dev2
+  dir: dodyachenko/dev2
   workflow: nutanix-backend
 # E
-
-- name: eb-python-server
-  dir: eb-python-server/server1
-  workflow: nutanix-backend
 # F
 # G
 # H
@@ -37,33 +25,20 @@ projects:
 - name: fm-hapg-test
   dir: jbriquet/hapg
   workflow: nutanix-backend
+- name: jbriquet-vm
+  dir: jbriquet/vm
 # K
 # L
-- name: lemery
-  dir: lemery
-  workflow: nutanix-backend
 # M
-# N
-- name: oradb19c-test
-  dir: njani/dgb19c
+- name: cfrmcloud-nfs-server-01
+  dir: makimov/nfs/01
   workflow: nutanix-backend
+# N
 # O
 # P
 # Q
 # R
 # S
-- name: dgbtest12
-  dir: spatel/dgb
-  workflow: nutanix-backend
-- name: dgbtest14
-  dir: spatel/dgbtst
-  workflow: nutanix-backend
-- name: cfrmtest83
-  dir: spatel/cfrm
-  workflow: nutanix-backend
-- name: cfrmtest19c
-  dir: spatel/cfrm19c
-  workflow: nutanix-backend
 # T
 # U
 # V

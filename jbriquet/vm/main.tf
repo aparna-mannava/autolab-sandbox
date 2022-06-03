@@ -184,3 +184,4 @@ output "vm_5" {
     "ip"    = "${module.vm_5.ip}",
   }
 }
+
