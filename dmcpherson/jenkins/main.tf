@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
-# Reprovision 2
+#decom
 locals {
   lob        = "CFRM"
   product     = "cfrm"
