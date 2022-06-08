@@ -16,6 +16,9 @@ projects:
 - name: dmcpherson-jenkins
   dir: dmcpherson/jenkins
   workflow: nutanix-backend
+- name: dmcpherson-ca
+  dir: dmcpherson/ca
+  workflow: nutanix-backend
 # E
 # F
 # G
