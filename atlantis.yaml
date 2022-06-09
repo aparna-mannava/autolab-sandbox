@@ -45,6 +45,9 @@ projects:
 # Q
 # R
 # S
+- name: dgb-test
+  dir: spatel/dgb
+  workflow: nutanix-backend
 # T
 # U
 # V
