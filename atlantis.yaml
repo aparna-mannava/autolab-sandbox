@@ -39,6 +39,9 @@ projects:
 - name: cfrmcloud-nfs-server-01
   dir: makimov/nfs/01
   workflow: nutanix-backend
+- name: cfrmcloud-artemis-standalone-01
+  dir: makimov/artemis/standalone/01
+  workflow: nutanix-backend
 # N
 # O
 # P
