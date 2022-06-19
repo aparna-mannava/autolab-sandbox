@@ -25,7 +25,7 @@ locals {
 }
 
 module "artemisdev_ny2_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/cloud/terraform/terraform-modules/terraform-module-infrastructure?ref=main"
   hostname             = "${local.facts.hostname}-${local.facts.role}-${local.facts.bt_env}" //    us01vlcfrm-artemis-01
   alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.role}-${local.facts.bt_env}"//   cfrmcloud-ny2-dev-artemis-01.autolab.saas-n.com
   bt_infra_cluster     = local.facts.bt_infra_cluster
