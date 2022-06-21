@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrm"
-  environment = "feature/CUT2-10610-pluggable-db"
+  environment = "feature_CUT2_10610_pluggable_db"
   cluster     = "ny2-aza-ntnx-05"
   datacenter  = "ny2"
   facts       = {
