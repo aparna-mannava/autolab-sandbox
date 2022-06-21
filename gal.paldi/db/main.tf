@@ -14,7 +14,7 @@ locals {
     "bt_env"  = ""
     "bt_server_mode" = "db"
     "bt_deployment_mode" = "live"
-    "bt_alias" = "cfrm-bfs-ppd-db-live"
+    "bt_alias" = "cfrm-bfs-gal-db-live"
   }
 }
 
