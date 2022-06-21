@@ -3,9 +3,9 @@ terraform {
 }
 
 locals {
+  lob         = "CFRM"
   product     = "cfrm"
   environment = "feature_CUT2_10610_pluggable_db"
-  cluster     = "ny2-aza-ntnx-05"
   datacenter  = "ny2"
   facts       = {
     "bt_product" = "cfrm"
