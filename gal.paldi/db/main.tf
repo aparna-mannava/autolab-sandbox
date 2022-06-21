@@ -23,10 +23,11 @@ module "oradb_server_1" {
   hostname             = "us01vlgal0810"
   alias                = local.facts.bt_alias
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = local.cluster
+  bt_infra_cluster     = "ny2-aze-ntnx-12"
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "32000"
+  lob                   = "CFRM"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT CFRM SP Oracle19c Pluggable Server"
   datacenter           = local.datacenter
