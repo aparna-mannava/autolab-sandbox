@@ -203,7 +203,7 @@ output "smtp_m02" {
   }
 }
 
-output "smtp_m01" {
+output "smtp_m03" {
   value = {
     "fqdn"  = module.smtp_m03.fqdn,
     "alias" = module.smtp_m03.alias,
