@@ -23,6 +23,10 @@ projects:
 # F
 # G
 # H
+
+- name: ha-smtp
+  dir: ha-smtp
+  workflow: nutanix-backend
 # I
 # J
 - name: fm-etcd-test
