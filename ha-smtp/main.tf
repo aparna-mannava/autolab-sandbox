@@ -37,41 +37,41 @@ locals {
   }
 
   smtp_m01 = {
-    hostname  = "us01vlsmtpm01"
-    alias     = "${local.product}-${local.datacenter}-smtpm01"
-    hostgroup = "BT SMTP Cluster Servers"
-    cpu       = "2"
-    memory    = "8192"
-    os        = "rhel7"
-    cluster   = "ny2-aze-ntnx-12"
-    network   = "ny2-autolab-app-ahv"
-    facts     = merge(local.facts, { "bt_tier" = "autolab"})
+    hostname    = "us01vlsmtpm01"
+    alias       = "${local.product}-${local.datacenter}-smtpm01"
+    hostgroup   = "BT SMTP Cluster Servers"
+    cpu         = "2"
+    memory      = "8192"
+    os          = "rhel7"
+    cluster     = "ny2-aze-ntnx-12"
+    network     = "ny2-autolab-app-ahv"
+    facts       = merge(local.facts, { "bt_tier" = "autolab"})
     environment = "feature_CLOUD_104536_00"
   }
 
   smtp_m02 = {
-    hostname  = "us01vlsmtpm02"
-    alias     = "${local.product}-${local.datacenter}-smtpm02"
-    hostgroup = "BT SMTP Cluster Servers"
-    cpu       = "2"
-    memory    = "8192"
-    os        = "rhel7"
-    cluster   = "ny2-aze-ntnx-12"
-    network   = "ny2-autolab-app-ahv"
-    facts     = merge(local.facts, { "bt_tier" = "autolab"})
+    hostname    = "us01vlsmtpm02"
+    alias       = "${local.product}-${local.datacenter}-smtpm02"
+    hostgroup   = "BT SMTP Cluster Servers"
+    cpu         = "2"
+    memory      = "8192"
+    os          = "rhel7"
+    cluster     = "ny2-aze-ntnx-12"
+    network     = "ny2-autolab-app-ahv"
+    facts       = merge(local.facts, { "bt_tier" = "autolab"})
     environment = "feature_CLOUD_104536_00"
   }
 
   smtp_m03 = {
-    hostname  = "us01vlsmtpm03"
-    alias     = "${local.product}-${local.datacenter}-smtpm03"
-    hostgroup = "BT SMTP Cluster Servers"
-    cpu       = "2"
-    memory    = "8192"
-    os        = "rhel7"
-    cluster   = "ny2-aze-ntnx-12"
-    network   = "ny2-autolab-app-ahv"
-    facts     = merge(local.facts, { "bt_tier" = "autolab"})
+    hostname    = "us01vlsmtpm03"
+    alias       = "${local.product}-${local.datacenter}-smtpm03"
+    hostgroup   = "BT SMTP Cluster Servers"
+    cpu         = "2"
+    memory      = "8192"
+    os          = "rhel7"
+    cluster     = "ny2-aze-ntnx-12"
+    network     = "ny2-autolab-app-ahv"
+    facts       = merge(local.facts, { "bt_tier" = "autolab"})
     environment = "feature_CLOUD_104536_00"
   }
 }
