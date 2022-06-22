@@ -46,7 +46,7 @@ locals {
     cluster     = "ny2-aze-ntnx-12"
     network     = "ny2-autolab-app-ahv"
     facts       = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_CLOUD_104536_00"
+    environment = "feature_cloud_104536_00"
   }
 
   smtp_m02 = {
@@ -59,7 +59,7 @@ locals {
     cluster     = "ny2-aze-ntnx-12"
     network     = "ny2-autolab-app-ahv"
     facts       = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_CLOUD_104536_00"
+    environment = "feature_cloud_104536_00"
   }
 
   smtp_m03 = {
@@ -72,7 +72,7 @@ locals {
     cluster     = "ny2-aze-ntnx-12"
     network     = "ny2-autolab-app-ahv"
     facts       = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_CLOUD_104536_00"
+    environment = "feature_cloud_104536_00"
   }
 }
 
