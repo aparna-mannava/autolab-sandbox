@@ -6,8 +6,10 @@ locals {
   product     = "inf"
   datacenter  = "ny2"
   lob         = "CLOUD"
+  environment = "feature_CLOUD_108232"
   facts       = {
     "bt_product" = "inf",
+    "bt_env"     = "ny2_smtp00",
   }
 
   smtp_lb01 = {
@@ -20,7 +22,6 @@ locals {
     cluster   = "ny2-aze-ntnx-12"
     network   = "ny2-autolab-app-ahv"
     facts     = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_CLOUD_108232"
   }
 
   smtp_lb02 = {
@@ -33,7 +34,6 @@ locals {
     cluster   = "ny2-aze-ntnx-12"
     network   = "ny2-autolab-app-ahv"
     facts     = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_CLOUD_108232"
   }
 
   smtp_m01 = {
@@ -46,7 +46,6 @@ locals {
     cluster     = "ny2-aze-ntnx-12"
     network     = "ny2-autolab-app-ahv"
     facts       = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_cloud_104536_00"
   }
 
   smtp_m02 = {
@@ -59,7 +58,6 @@ locals {
     cluster     = "ny2-aze-ntnx-12"
     network     = "ny2-autolab-app-ahv"
     facts       = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_cloud_104536_00"
   }
 
   smtp_m03 = {
@@ -72,7 +70,6 @@ locals {
     cluster     = "ny2-aze-ntnx-12"
     network     = "ny2-autolab-app-ahv"
     facts       = merge(local.facts, { "bt_tier" = "autolab"})
-    environment = "feature_cloud_104536_00"
   }
 }
 
@@ -87,7 +84,7 @@ module "smtp_lb01" {
   memory               = local.smtp_lb01.memory
   external_facts       = local.smtp_lb01.facts
   lob                  = local.lob
-  foreman_environment  = local.smtp_lb01.environment
+  foreman_environment  = local.environment
   foreman_hostgroup    = local.smtp_lb01.hostgroup
   datacenter           = local.datacenter
   additional_disks     = {
@@ -106,7 +103,7 @@ module "smtp_lb02" {
   memory               = local.smtp_lb02.memory
   external_facts       = local.smtp_lb02.facts
   lob                  = local.lob
-  foreman_environment  = local.smtp_lb02.environment
+  foreman_environment  = local.environment
   foreman_hostgroup    = local.smtp_lb02.hostgroup
   datacenter           = local.datacenter
   additional_disks     = {
@@ -125,7 +122,7 @@ module "smtp_m01" {
   memory               = local.smtp_m01.memory
   external_facts       = local.smtp_m01.facts
   lob                  = local.lob
-  foreman_environment  = local.smtp_m01.environment
+  foreman_environment  = local.environment
   foreman_hostgroup    = local.smtp_m01.hostgroup
   datacenter           = local.datacenter
   additional_disks     = {
@@ -144,7 +141,7 @@ module "smtp_m02" {
   memory               = local.smtp_m02.memory
   external_facts       = local.smtp_m02.facts
   lob                  = local.lob
-  foreman_environment  = local.smtp_m02.environment
+  foreman_environment  = local.environment
   foreman_hostgroup    = local.smtp_m02.hostgroup
   datacenter           = local.datacenter
   additional_disks     = {
@@ -163,7 +160,7 @@ module "smtp_m03" {
   memory               = local.smtp_m03.memory
   external_facts       = local.smtp_m03.facts
   lob                  = local.lob
-  foreman_environment  = local.smtp_m03.environment
+  foreman_environment  = local.environment
   foreman_hostgroup    = local.smtp_m03.hostgroup
   datacenter           = local.datacenter
   additional_disks     = {
