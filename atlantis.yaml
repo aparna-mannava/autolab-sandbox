@@ -22,6 +22,9 @@ projects:
 # E
 # F
 # G
+- name: gal.paldi-db
+  dir: gal.paldi/db  
+  workflow: nutanix-backend
 # H
 
 - name: ha-smtp
