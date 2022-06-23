@@ -25,6 +25,9 @@ projects:
 - name: gal.paldi-db
   dir: gal.paldi/db  
   workflow: nutanix-backend
+- name: gnewbury-new-repo
+  dir: gnewbury/new-repo
+  workflow: nutanix-backend
 # H
 
 - name: ha-smtp
