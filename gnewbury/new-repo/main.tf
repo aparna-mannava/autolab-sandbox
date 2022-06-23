@@ -11,7 +11,7 @@ module "gn_test_01" {
   os_version          = "rhel8"
   cpus                = "2"
   memory              = "8192"
-  foreman_environment = local.environment
+  foreman_environment = "master"
   lob                 = "CLOUD"
   foreman_hostgroup   = "BT Base Server"
   datacenter          = "ny2"
