@@ -27,7 +27,7 @@ locals {
 module "artemisdev_ny2_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.hostname}-${local.facts.bt_role}-${local.facts.bt_env}" //    us01vlcfrm-artemis-01
-  alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.role}-${local.facts.bt_env}"//   cfrmcloud-ny2-dev-artemis-01.autolab.saas-n.com
+  alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-${local.facts.bt_env}"//   cfrmcloud-ny2-dev-artemis-01.autolab.saas-n.com
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   //firewall_group       = local.facts.firewall_group
