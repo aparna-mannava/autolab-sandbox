@@ -15,7 +15,7 @@ locals {
       bt_infra_network   = "ny2-autolab-app-ahv"
       bt_infra_cluster   = "ny2-aze-ntnx-12"
       hostgroup          = "BT CFRM CLOUD Artemis Standalone Servers"
-      environment        = "bugfix_CFRMCLOUD_2327" //
+      environment        = "bugfix_CFRMCLOUD_2327" // Bitbucket Puppet controlrepo branch name
       hostname           = "us01vlcfrm"
     }
     datacenter = {
