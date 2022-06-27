@@ -20,7 +20,7 @@ locals {
 }
  
 module "staging_jenkins" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=masterS"
   hostname             = "us01vlcfrmrdprud"
   alias                = "cfrmx-jenkins"
   bt_infra_network     = "ny2-autolab-app-ahv"
