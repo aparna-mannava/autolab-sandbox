@@ -55,6 +55,9 @@ projects:
 # N
 # O
 # P
+- name: jenkinstask-test
+  dir: jenkinstask/test
+  workflow: nutanix-backend
 # Q
 # R
 # S
