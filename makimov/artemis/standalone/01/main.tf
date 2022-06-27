@@ -10,7 +10,7 @@ locals {
       bt_lob             = "CFRM"
       bt_tier            = "dev"
       bt_env             = "01"
-      bt_role            = "artemis"
+      bt_role            = "artemis" //
       bt_artemis_version = "2.16.0" // Artemis service version
       bt_infra_network   = "ny2-autolab-app-ahv" //
       bt_infra_cluster   = "ny2-aze-ntnx-12"
