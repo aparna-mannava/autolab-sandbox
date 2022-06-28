@@ -8,6 +8,7 @@ locals {
       bt_customer        = "ny2"
       bt_product         = "cfrmcloud"
       bt_lob             = "CFRM"
+      bt_ic_version      = "660_SP2"
       bt_tier            = "dev" //
       bt_env             = "01" //
       bt_role            = "artemis" //
@@ -37,8 +38,8 @@ module "artemisdev_ny2_1" {
   datacenter           = local.datacenter.name
   external_facts       = local.facts
   os_version           = "rhel7"
-  cpus                 = "2"
-  memory         	     = "2048"
+  cpus                 = "4"
+  memory         	     = "4096"
   additional_disks     = {
     1 = "100"
   }
