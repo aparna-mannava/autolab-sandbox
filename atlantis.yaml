@@ -9,64 +9,22 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: chenshu-jenkins
-  dir: chenshu/jenkins
-  workflow: nutanix-backend
 # D
-- name: dodyachenko-dev2
-  dir: dodyachenko/dev2
-  workflow: nutanix-backend
-- name: dmcpherson-jenkins
-  dir: dmcpherson/jenkins
-  workflow: nutanix-backend
-- name: dmcpherson-ca
-  dir: dmcpherson/ca
-  workflow: nutanix-backend
 # E
 # F
 # G
-- name: gal.paldi-db
-  dir: gal.paldi/db  
-  workflow: nutanix-backend
-- name: gnewbury-new-repo
-  dir: gnewbury/new-repo
-  workflow: nutanix-backend
 # H
-
-- name: ha-smtp
-  dir: ha-smtp
-  workflow: nutanix-backend
 # I
 # J
-- name: fm-etcd-test
-  dir: jbriquet/etcd
-  workflow: nutanix-backend
-- name: fm-hapg-test
-  dir: jbriquet/hapg
-  workflow: nutanix-backend
-- name: jbriquet-vm
-  dir: jbriquet/vm
 # K
 # L
 # M
-- name: cfrmcloud-nfs-server-01
-  dir: makimov/nfs/01
-  workflow: nutanix-backend
-- name: cfrmcloud-artemis-standalone-01
-  dir: makimov/artemis/standalone/01
-  workflow: nutanix-backend
 # N
 # O
 # P
-- name: jenkinstask-test
-  dir: jenkinstask/test
-  workflow: nutanix-backend
 # Q
 # R
 # S
-- name: dgb-test
-  dir: spatel/dgb
-  workflow: nutanix-backend
 # T
 # U
 # V
