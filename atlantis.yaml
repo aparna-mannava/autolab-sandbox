@@ -37,7 +37,7 @@ projects:
 - name: sanjayma22-pgsql-hapgd
   dir: sanjaym/postgres/primary/hapg
   workflow: nutanix-backend
-- name: sanjayma22-pgsql-hapgd
+- name: sanjayma22-pgsql-pgbackrest
   dir: sanjaym/postgres/primary/pgbackrest
   workflow: nutanix-backend
 # W
