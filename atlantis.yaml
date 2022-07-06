@@ -31,13 +31,13 @@ projects:
 # T
 # U
 # V
-- name: sanjayma-pgsql-etcdd
+- name: sanjayma22-pgsql-etcdd
   dir: sanjaym/postgres/primary/etcd
   workflow: nutanix-backend
-- name: sanjayma-pgsql-hapgd
+- name: sanjayma22-pgsql-hapgd
   dir: sanjaym/postgres/primary/hapg
   workflow: nutanix-backend
-- name: sanjayma-pgsql-hapgd
+- name: sanjayma22-pgsql-hapgd
   dir: sanjaym/postgres/primary/pgbackrest
   workflow: nutanix-backend
 # W
