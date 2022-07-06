@@ -28,6 +28,9 @@ projects:
 # Q
 # R
 # S
+- name: svoracle19
+  dir: sriramvaradhan/oracle19
+  workflow: nutanix-backend
 # T
 # U
 # V
