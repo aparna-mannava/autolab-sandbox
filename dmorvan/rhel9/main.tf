@@ -2,36 +2,19 @@ terraform {
   backend "s3" {}
 }
 
-locals {
-  product     = "inf"
-  environment = "master"
-  hostname    = "gb00vlrhel9"
-  hostgroup   = "BT Base Server"
-  facts = {
-    bt_product = "inf"
-    bt_tier    = "pr"
-    bt_role    = "base"
-    bt_env     = "master"
-  }
-  datacenter = {
-    name = "bunker"
-    id   = "gb00"
-  }
-}
-
 module "rhel9test" {
-  source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname            = "${local.hostname}01"
-  alias               = "${local.product}-${local.datacenter.id}-${local.facts.bt_role}01"
-  bt_infra_cluster    = "gb00-azc-ntnx-02"
-  bt_infra_network    = "gb00-saas-p-cea-services2"
-  os_version          = "rhel9"
-  cpus                = "2"
-  memory              = "4096"
-  external_facts      = local.facts
-  foreman_environment = local.environment
-  foreman_hostgroup   = local.hostgroup
-  datacenter          = local.datacenter.name
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlrhel901"
+  alias                = "dmts-rhel9-01"
+  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  cpus                 = 2
+  lob                  = "CLOUD"
+  memory               = 2048
+  os_version           = "rhel9"
+  foreman_environment  = "nonprod"
+  foreman_hostgroup    = "BT Base Server"
+  datacenter           = "ny2"
 }
 
 output "rhel9test" {
