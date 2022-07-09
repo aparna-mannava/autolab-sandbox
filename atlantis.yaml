@@ -32,7 +32,7 @@ projects:
   dir: sriramvaradhan/oracle19
   workflow: nutanix-backend
 - name: dgborcl19
-  dir: spatel/dgb
+  dir: spatel/dgb1
   workflow: nutanix-backend
 # T
 # U
