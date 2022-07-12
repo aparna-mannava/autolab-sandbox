@@ -30,7 +30,6 @@ module "mg-test-server" {
     1 = "20"
   }
 }
-
 output "mg-test-server" {
   value = {
     "fqdn"  = "${module.mg-test-server.fqdn}",
