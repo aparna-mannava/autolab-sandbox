@@ -15,7 +15,6 @@ locals {
 module "mg-test-server" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltestmg01"
-  hostgroup            = "BT Base Server"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
