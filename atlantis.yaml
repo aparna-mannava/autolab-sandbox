@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmcloud-elasticsearch-standalone-01
+  dir: makimov/elasticsearch/standalone/01
+  workflow: nutanix-backend
 # D
 - name: rhel8dm
   dir: dmorvan/test
