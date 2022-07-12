@@ -24,7 +24,9 @@ projects:
 # J
 # K
 # L
-# M
+- name: mg-test-server
+  dir: mgtest/server1
+  workflow: nutanix-backend
 # N
 # O
 # P
