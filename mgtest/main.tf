@@ -13,8 +13,8 @@ locals {
 }
 
 module "mg-test-server" {
-  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vltestmg01"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=feature/CLOUD-111117-test-nutanix-vm"
+  hostname             = "us01vllinx01"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
