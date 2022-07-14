@@ -11,7 +11,6 @@ locals {
     "bt_product" = "inf",
   }
 }
-
 module "mg-win-srv" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=feature/CLOUD-111117-test-nutanix-vm"
   hostname             = "us01win16"
