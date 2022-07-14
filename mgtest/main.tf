@@ -43,7 +43,7 @@ module "mg-test-winsrv" {
   hostname             = "us01win"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "win2019"
+  os_version           = "win2016"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT Base Server"
   datacenter           = local.datacenter
@@ -53,7 +53,7 @@ module "mg-test-winsrv" {
   external_facts       = local.facts
 
   additional_disks     = {
-    1 = "20"
+    1 = "50"
   }
 }
 output "mg-test-winsrv" {
