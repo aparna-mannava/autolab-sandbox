@@ -17,13 +17,13 @@ module "mg-test-server" {
   hostname             = "us01vllnxmg01"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "win2019"
+  os_version           = "rhel8"
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT Base Server"
   datacenter           = local.datacenter
   lob                  = local.lob
-  cpus                 = "4"
-  memory               = "8192"
+  cpus                 = "2"
+  memory               = "1024"
   external_facts       = local.facts
 
   additional_disks     = {
