@@ -12,6 +12,9 @@ projects:
 - name: cfrmcloud-elasticsearch-standalone-01
   dir: makimov/elasticsearch/standalone/01
   workflow: nutanix-backend
+- name: cfrmcloud-base-server-01
+  dir: makimov/base-servers/01
+  workflow: nutanix-backend
 # D
 - name: rhel8dm
   dir: dmorvan/test
