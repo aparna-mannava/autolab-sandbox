@@ -30,9 +30,9 @@ projects:
 - name: mg-test-server
   dir: mgtest
   workflow: nutanix-backend
-- name: mg-win-srv
-  dir: mgtest/win
-  workflow: nutanix-backend
+# - name: mg-win-srv
+#   dir: mgtest/win
+#   workflow: nutanix-backend
 
 # N
 # O
