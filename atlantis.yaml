@@ -22,6 +22,9 @@ projects:
 - name: rhel9test
   dir: dmorvan/rhel9
   workflow: nutanix-backend
+- name: rhel9testa
+  dir: dmorvan/rhel9a
+  workflow: nutanix-backend
 # E
 # F
 # G
