@@ -19,8 +19,8 @@ module "rhel9testa" {
 
 output "rhel9testa" {
   value = {
-    "fqdn"  = module.rhel9test.fqdn,
-    "alias" = module.rhel9test.alias,
-    "ip"    = module.rhel9test.ip,
+    "fqdn"  = module.rhel9testa.fqdn,
+    "alias" = module.rhel9testa.alias,
+    "ip"    = module.rhel9testa.ip,
   }
 }
