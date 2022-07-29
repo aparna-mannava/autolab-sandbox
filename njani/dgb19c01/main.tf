@@ -34,7 +34,7 @@ module "cloud_dbserver_1" {
   memory               = "8192"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT DGB Oradb 19c Server"
+  foreman_hostgroup    = "BT Base Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
@@ -47,7 +47,7 @@ module "cloud_dbserver_1" {
 module "cloud_dbserver_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldbsb98"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db99"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db98"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
@@ -55,9 +55,9 @@ module "cloud_dbserver_2" {
   memory               = "8192"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT DGB Oradb 19c Server"
+  foreman_hostgroup    = "BT Base Server"
   datacenter           = local.datacenter
-  external_facts       = local.facts
+  external_facts       = local.facts_2
   additional_disks     = {
     1 = "200",
     2 = "100",
