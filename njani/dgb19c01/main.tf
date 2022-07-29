@@ -5,7 +5,7 @@ terraform {
 locals {
   lob         = "dgb"
   product     = "dgb"
-  environment = "feature_CLOUD_109889"
+  environment = "master"
   datacenter  = "ny2"
   facts         = {
     "bt_customer"         = "fi9999" #ex: fiXXXX
