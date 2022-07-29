@@ -4,7 +4,7 @@ terraform {
 }
 
 module "testprism" {
-  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=feature/CLOUD-111733_vm_existence"
   hostname             = "us01vltest0001"
   alias                = "test-python-01"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
