@@ -55,6 +55,9 @@ projects:
 - name: savula-pgdemo
   dir: savula/pgdemo
   workflow: nutanix-backend
+- name: savula-postgres-primary-ETCD
+  dir: savula/postgres/primary/ETCD
+  workflow: nutanix-backend
 # T
 # U
 # V
