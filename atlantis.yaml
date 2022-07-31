@@ -61,6 +61,9 @@ projects:
 - name: savula-postgres-primary-HAPG
   dir: savula/postgres/primary/HAPG
   workflow: nutanix-backend
+- name: savula-postgres-primary-BACKREST
+  dir: savula/postgres/primary/BACKREST
+  workflow: nutanix-backend
 # T
 # U
 # V
