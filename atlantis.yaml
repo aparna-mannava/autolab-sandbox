@@ -9,22 +9,7 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmcloud-elasticsearch-standalone-01
-  dir: makimov/elasticsearch/standalone/01
-  workflow: nutanix-backend
-- name: cfrmcloud-base-server-01
-  dir: makimov/base-servers/01
-  workflow: nutanix-backend
 # D
-- name: rhel8dm
-  dir: dmorvan/test
-  workflow: nutanix-backend
-- name: rhel9test
-  dir: dmorvan/rhel9
-  workflow: nutanix-backend
-- name: rhel9testa
-  dir: dmorvan/rhel9a
-  workflow: nutanix-backend
 # E
 # F
 # G
@@ -33,49 +18,16 @@ projects:
 # J
 # K
 # L
-- name: mg-test-server
-  dir: mgtest
-  workflow: nutanix-backend
-# - name: mg-win-srv
-#   dir: mgtest/win
-#   workflow: nutanix-backend
-
+# M
 # N
 # O
 # P
 # Q
 # R
 # S
-- name: svoracle19
-  dir: sriramvaradhan/oracle19
-  workflow: nutanix-backend
-- name: dgborcl19
-  dir: spatel/dgb1
-  workflow: nutanix-backend
-- name: savula-pgdemo
-  dir: savula/pgdemo
-  workflow: nutanix-backend
-- name: savula-postgres-primary-ETCD
-  dir: savula/postgres/primary/ETCD
-  workflow: nutanix-backend
-- name: savula-postgres-primary-HAPG
-  dir: savula/postgres/primary/HAPG
-  workflow: nutanix-backend
-- name: savula-postgres-primary-BACKREST
-  dir: savula/postgres/primary/BACKREST
-  workflow: nutanix-backend
 # T
 # U
 # V
-- name: sanjayma22-pgsql-etcdd
-  dir: sanjaym/postgresql/primary/etcd
-  workflow: nutanix-backend
-- name: sanjayma22-pgsql-hapgd
-  dir: sanjaym/postgresql/primary/hapg
-  workflow: nutanix-backend
-- name: sanjayma22-pgsql-pgbackrest
-  dir: sanjaym/postgresql/primary/pgbackrest
-  workflow: nutanix-backend
 # W
 # X
 # Y
