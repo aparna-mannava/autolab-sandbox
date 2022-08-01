@@ -1,6 +1,7 @@
 terraform {
   backend "s3" {}
 }
+
 locals {
   product          = "inf"
   environment      = "master"
@@ -19,8 +20,7 @@ locals {
     "bt_tier"      = "autolab"
   }
 }
-
-module "rhel9test1" {
+module "dmrhel91" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}001"
   alias                = "${local.alias}-001"
@@ -35,7 +35,7 @@ module "rhel9test1" {
   foreman_hostgroup    = "${local.hostgroup}"
   datacenter           = "${local.datacenter}"
 }
-module "rhel9test2" {
+module "dmrhel92" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}002"
   alias                = "${local.alias}-002"
@@ -50,17 +50,17 @@ module "rhel9test2" {
   foreman_hostgroup    = "${local.hostgroup}"
   datacenter           = "${local.datacenter}"
 }
-output "rhel9test1" {
+output "dmrhel91" {
   value = {
-    "fqdn"  = module.rhel9test1.fqdn,
-    "alias" = module.rhel9test1.alias,
-    "ip"    = module.rhel9test1.ip,
+    "fqdn"  = module.dmrhel91.fqdn,
+    "alias" = module.dmrhel91.alias,
+    "ip"    = module.dmrhel91.ip,
   }
 }
-output "rhel9test2" {
+output "dmrhel92" {
   value = {
-    "fqdn"  = module.rhel9test2.fqdn,
-    "alias" = module.rhel9test2.alias,
-    "ip"    = module.rhel9test2.ip,
+    "fqdn"  = module.dmrhel92.fqdn,
+    "alias" = module.dmrhel92.alias,
+    "ip"    = module.dmrhel92.ip,
   }
 }
