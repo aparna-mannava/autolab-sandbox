@@ -10,6 +10,9 @@ projects:
 # B
 # C
 # D
+- name: rhel9test
+  dir: dmorvan/rhel9
+  workflow: nutanix-backend
 # E
 # F
 # G
