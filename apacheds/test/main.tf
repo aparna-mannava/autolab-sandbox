@@ -21,7 +21,7 @@ locals {
  
 module "devops1_apacheds" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrxq"
+  hostname             = "us01vlcfrmrx"
   alias                = "cfrmx-apacheds"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
@@ -46,4 +46,3 @@ output "devops1_apacheds" {
     "ip"    = module.devops1_apacheds.ip,
   }
 } 
-
