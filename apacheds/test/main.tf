@@ -21,7 +21,7 @@ locals {
  
 module "devops1_apacheds" {
   source               = "https://bitbucket.bottomline.tech/scm/trrfrm/terraform-module-infrastructure.git"
-  hostname             = "us01vlcfrmrq"
+  hostname             = "us01vlcfrmrqx"
   alias                = "cfrmx-apacheds"
   bt_infra_network     = "ny2-dgb-development"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
