@@ -20,7 +20,7 @@ locals {
 }
  
 module "devops1_apacheds" {
-  source               = "https://bitbucket.bottomline.tech/scm/trrfrm/terraform-module-infrastructure.git"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrqx"
   alias                = "cfrmx-apacheds"
   bt_infra_network     = "ny2-dgb-development"
