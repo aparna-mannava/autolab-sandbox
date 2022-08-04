@@ -46,4 +46,3 @@ output "devops1_apacheds" {
     "ip"    = module.devops1_apacheds.ip,
   }
 } 
-
