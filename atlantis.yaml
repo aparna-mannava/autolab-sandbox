@@ -26,9 +26,9 @@ projects:
 - name: dgb19c01
   dir: njani/dgb19c01
   workflow: nutanix-backend
-  - name: dgb19c02
-    dir: njani/dgb19c02
-    workflow: nutanix-backend
+- name: dgb19c02
+  dir: njani/dgb19c02
+  workflow: nutanix-backend
 # O
 # P
 # Q
