@@ -7,7 +7,7 @@ locals {
   environment      = "master"
   datacenter       = "ny2"
   hostname         = "us01vldmts"
-  alias            = "dm-rhel9-lab"
+  alias            = "dm-rhel9-a"
   hostgroup        = "BT Base Server"
   lob              = "CLOUD"
   bt_infra_cluster = "ny5-azc-ntnx-16"

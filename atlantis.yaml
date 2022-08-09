@@ -10,7 +10,7 @@ projects:
 # B
 # C
 # D
-- name: dmrhel9
+- name: dmrhel9a
   dir: dmorvan/rhel9
   workflow: nutanix-backend
 # E
