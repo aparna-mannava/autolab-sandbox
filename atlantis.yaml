@@ -35,6 +35,9 @@ projects:
 - name: dgb19c02
   dir: njani/dgb19c02
   workflow: nutanix-backend
+- name: cfrm19cnoncdb
+  dir: njani/cfrm19cnoncdb
+  workflow: nutanix-backend
 # O
 # P
 # Q
