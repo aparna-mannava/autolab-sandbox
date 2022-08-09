@@ -24,7 +24,7 @@ module "devops1_apacheds" {
   hostname             = "us01vlcfrmrdx"
   alias                = "cfrmx-apacheds"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny2-aze-ntnx-12"
+  bt_infra_cluster     = "ny2-azd-ntnx-10"
   cpus                 = "2"
   memory               = "8192"
   os_version           = "rhel7"
