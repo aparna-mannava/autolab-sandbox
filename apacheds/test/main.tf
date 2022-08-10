@@ -45,4 +45,5 @@ output "devops1_apacheds" {
     "alias" = module.devops1_apacheds.alias,
     "ip"    = module.devops1_apacheds.ip,
   }
-} 
+}
+ 
