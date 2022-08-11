@@ -27,6 +27,9 @@ projects:
 # J
 # K
 # L
+- name: lemery-test
+  dir: lemery/test
+  workflow: nutanix-backend
 # M
 # N
 - name: dgb19c01
