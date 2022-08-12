@@ -25,4 +25,4 @@ output "rhel8dm" {
     "ip"    = module.testprism.ip,
   }
 }
-#
+
