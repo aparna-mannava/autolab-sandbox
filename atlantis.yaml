@@ -8,6 +8,9 @@ projects:
   dir: apacheds/test
   workflow: nutanix-backend
 # B
+- name: base-servers-01
+  dir: dshine/base-servers/01
+  workflow: nutanix-backend
 # C
 # D
 - name: dmrhel9a
