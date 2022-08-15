@@ -20,10 +20,6 @@ projects:
   dir: dmorvan/rhel9c
   workflow: nutanix-backend
 # E
-- name: test-prism
-  dir: ebouzinis/test-prism
-  workflow: nutanix-backend
-
 # F
 # G
 # H
