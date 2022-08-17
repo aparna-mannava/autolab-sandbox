@@ -48,6 +48,9 @@ projects:
   dir: njani/cfrm19cdb
   workflow: nutanix-backend
 # O
+- name: opensearch03
+  dir: dshine/opensearch
+  workflow: nutanix-backend
 # P
 # Q
 # R
