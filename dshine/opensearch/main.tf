@@ -22,7 +22,6 @@ locals {
       name = "ny2"
       id   = "ny2"
   }
-}
 
 module "opsdev_ny2_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
