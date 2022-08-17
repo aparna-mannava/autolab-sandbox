@@ -9,7 +9,7 @@ locals {
       bt_product         = "cfrmcloud"  // mandatory
       bt_lob             = "CFRM"       // mandatory
       bt_tier            = "dev"        // mandatory
-      bt_env             = "03"         // mandatory
+      bt_env             = "04"         // mandatory
       bt_role            = "opensearch"       // mandatory
       bt_infra_network   = "ny2-autolab-app-ahv" //
       bt_infra_cluster   = "ny2-aze-ntnx-12"
@@ -25,8 +25,8 @@ locals {
 
 module "basedev_ny2_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.hostname}ops${local.facts.bt_env}" // us01vlcfrmops03 , maximum of 15 characters
-  alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-${local.facts.bt_env}"//   cfrmcloud-ny2-dev-base-01.autolab.saas-n.com
+  hostname             = "${local.facts.hostname}ops${local.facts.bt_env}" // us01vlcfrmops04 , maximum of 15 characters
+  alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-${local.facts.bt_env}"//   cfrmcloud-ny2-dev-opensearch-04.autolab.saas-n.com
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   //firewall_group       = local.facts.firewall_group
