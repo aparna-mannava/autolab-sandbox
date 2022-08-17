@@ -12,7 +12,7 @@ locals {
       bt_env             = "03"         // mandatory
       bt_role            = "opensearch"       // mandatory
       bt_infra_network   = "ny2-autolab-app-ahv" //
-      bt_infra_cluster   = "ny2-aze-ntnx-12"
+      bt_infra_cluster   = "ch07-azb-ntnx-02"
       hostgroup          = "BT Base Server" // Foreman hostgroup for BT base servers in Autolab.saas-n domain
       environment        = "master" // Bitbucket Puppet controlrepo branch name
       hostname           = "us01vlcfrm"
