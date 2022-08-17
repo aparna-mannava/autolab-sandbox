@@ -10,12 +10,13 @@ locals {
       bt_lob             = "CFRM"       // mandatory
       bt_tier            = "dev"        // mandatory
       bt_env             = "04"         // mandatory
-      bt_role            = "opensearch"       // mandatory
+      bt_role            = "standalone"       // mandatory
       bt_infra_network   = "ny2-autolab-app-ahv" //
-      bt_infra_cluster   = "ny2-aze-ntnx-12"
-      hostgroup          = "cfrmcloud opensearch" // Foreman hostgroup for BT base servers in Autolab.saas-n domain
+      bt_infra_cluster   = "ny5-aze-ntnx-21"
+      hostgroup          = "BT CFRMRD Opensearch Standalone" // Foreman hostgroup for BT base servers in Autolab.saas-n domain
       environment        = "master" // Bitbucket Puppet controlrepo branch name
-      hostname           = "us01vlcfrm"
+      hostname           = "us04vlcfrm"
+    }
     }
     datacenter = {
       name = "ny2"
@@ -23,7 +24,7 @@ locals {
   }
 }
 
-module "basedev_ny2_1" {
+module "opsdev_ny2_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.hostname}ops${local.facts.bt_env}" // us01vlcfrmops04 , maximum of 15 characters
   alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-${local.facts.bt_env}"//   cfrmcloud-ny2-dev-opensearch-04.autolab.saas-n.com
@@ -43,10 +44,10 @@ module "basedev_ny2_1" {
   }
 }
 
-output "basedev_ny2_1" {
+output "opsdev_ny2_1" {
   value = {
-    "fqdn"  = module.basedev_ny2_1.fqdn,
-    "alias" = module.basedev_ny2_1.alias,
-    "ip"    = module.basedev_ny2_1.ip,
+    "fqdn"  = module.opsdev_ny2_1.fqdn,
+    "alias" = module.opsdev_ny2_1.alias,
+    "ip"    = module.opsdev_ny2_1.ip,
   }
 }
