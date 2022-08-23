@@ -8,6 +8,9 @@ projects:
   dir: apacheds/test
   workflow: nutanix-backend
 # B
+- name: apachedstest
+  dir: bapachedstest/test
+  workflow: nutanix-backend
 # C
 # D
 - name: dmrhel9
