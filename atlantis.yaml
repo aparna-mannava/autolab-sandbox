@@ -11,10 +11,19 @@ projects:
 - name: bapacheds
   dir: bapachedstest/test
   workflow: nutanix-backend
+- name: base-servers-01
+  dir: dshine/base-servers/01
+  workflow: nutanix-backend
 # C
 # D
-- name: dmrhel9
+- name: dmrhel9a
   dir: dmorvan/rhel9
+  workflow: nutanix-backend
+- name: dmrhel9b
+  dir: dmorvan/rhel9b
+  workflow: nutanix-backend
+- name: dmrhel9c
+  dir: dmorvan/rhel9c
   workflow: nutanix-backend
 # E
 # F
@@ -24,12 +33,27 @@ projects:
 # J
 # K
 # L
+- name: lemery-test
+  dir: lemery/test
+  workflow: nutanix-backend
 # M
 # N
 - name: dgb19c01
   dir: njani/dgb19c01
   workflow: nutanix-backend
+- name: dgb19c02
+  dir: njani/dgb19c02
+  workflow: nutanix-backend
+- name: cfrm19cnoncdb
+  dir: njani/cfrm19cnoncdb
+  workflow: nutanix-backend
+- name: cfrm19cdb
+  dir: njani/cfrm19cdb
+  workflow: nutanix-backend
 # O
+- name: opensearch03
+  dir: dshine/opensearch
+  workflow: nutanix-backend
 # P
 # Q
 # R

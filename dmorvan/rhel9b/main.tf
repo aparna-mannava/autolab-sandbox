@@ -6,8 +6,8 @@ locals {
   product          = "inf"
   environment      = "master"
   datacenter       = "ny2"
-  hostname         = "us01vldmts"
-  alias            = "dm-rhel9-a"
+  hostname         = "us01vldmzz"
+  alias            = "dm-rhel9-b"
   hostgroup        = "BT Base Server"
   lob              = "CLOUD"
   bt_infra_cluster = "ny5-azc-ntnx-16"
@@ -20,7 +20,7 @@ locals {
     "bt_tier"      = "autolab"
   }
 }
-module "dmrhel91" {
+module "dmrhelb91" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}001"
   alias                = "${local.alias}-001"
@@ -35,7 +35,7 @@ module "dmrhel91" {
   foreman_hostgroup    = "${local.hostgroup}"
   datacenter           = "${local.datacenter}"
 }
-module "dmrhel92" {
+module "dmrhelb92" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}002"
   alias                = "${local.alias}-002"
@@ -50,17 +50,17 @@ module "dmrhel92" {
   foreman_hostgroup    = "${local.hostgroup}"
   datacenter           = "${local.datacenter}"
 }
-output "dmrhel91" {
+output "dmrhelb91" {
   value = {
-    "fqdn"  = module.dmrhel91.fqdn,
-    "alias" = module.dmrhel91.alias,
-    "ip"    = module.dmrhel91.ip,
+    "fqdn"  = module.dmrhelb91.fqdn,
+    "alias" = module.dmrhelb91.alias,
+    "ip"    = module.dmrhelb91.ip,
   }
 }
-output "dmrhel92" {
+output "dmrhelb92" {
   value = {
-    "fqdn"  = module.dmrhel92.fqdn,
-    "alias" = module.dmrhel92.alias,
-    "ip"    = module.dmrhel92.ip,
+    "fqdn"  = module.dmrhelb92.fqdn,
+    "alias" = module.dmrhelb92.alias,
+    "ip"    = module.dmrhelb92.ip,
   }
 }
