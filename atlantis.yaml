@@ -8,7 +8,7 @@ projects:
   dir: apacheds/test
   workflow: nutanix-backend
 # B
-- name: bapacheds7
+- name: bapacheds8
   dir: bapachedstest/test
   workflow: nutanix-backend
 - name: base-servers-01
