@@ -21,8 +21,8 @@ locals {
  
 module "devops1_apacheds" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd13"
-  alias                = "cfrmx-apachedso"
+  hostname             = "us01vlcfrmrd14"
+  alias                = "cfrmx-apachedsi"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   cpus                 = "2"
