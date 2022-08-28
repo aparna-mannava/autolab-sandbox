@@ -37,4 +37,4 @@ output "inf_test_1" {
     "ip"    = module.inf_test_1.ip,
   }
 }
-#Decommision
+#Decommision-
