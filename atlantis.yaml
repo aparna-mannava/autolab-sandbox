@@ -54,6 +54,9 @@ projects:
   dir: njani/cfrm19cdb
   workflow: nutanix-backend
 # O
+- name: oracledb1
+  dir: oracledb/test
+  workflow: nutanix-backend
 - name: opensearch03
   dir: dshine/opensearch
   workflow: nutanix-backend
