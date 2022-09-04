@@ -21,6 +21,9 @@ projects:
 # M
 # N
 # O
+- name: oracle1
+  dir: oracle/test
+  workflow: nutanix-backend
 # P
 # Q
 # R
