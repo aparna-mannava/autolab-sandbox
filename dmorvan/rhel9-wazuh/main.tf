@@ -10,7 +10,6 @@ locals {
   bt_infra_cluster = "ny2-aze-ntnx-12"
   bt_infra_network = "ny2-autolab-app-ahv"
   os_version       = "rhel9"
-  bt_lob           = "CLOUD"
   cpus             = "2"
   memory           = "4096"
   facts            = {
@@ -18,6 +17,7 @@ locals {
                      bt_tier    = "pr"
                      bt_role    = "base"
                      bt_env     = "master"
+                     bt_lob     = "CLOUD"
                    }
   datacenter       = {
                      name = "ny2"
@@ -32,7 +32,6 @@ module "rhel9ts01" {
   bt_infra_cluster    = local.bt_infra_cluster
   bt_infra_network    = local.bt_infra_network
   os_version          = local.os_version
-  bt_lob              = local.bt_lob
   cpus                = local.cpus
   memory              = local.memory
   external_facts      = local.facts
@@ -55,7 +54,6 @@ module "rhel9ts02" {
   bt_infra_cluster    = local.bt_infra_cluster
   bt_infra_network    = local.bt_infra_network
   os_version          = local.os_version
-  bt_lob              = local.bt_lob
   cpus                = local.cpus
   memory              = local.memory
   external_facts      = local.facts
