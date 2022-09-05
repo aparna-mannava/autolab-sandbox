@@ -37,6 +37,7 @@ module "rhel9ts01" {
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
+  bt_lob              = local.bt_lob
   datacenter          = local.datacenter.name
 }
 
@@ -59,6 +60,7 @@ module "rhel9ts02" {
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
+  bt_lob              = local.bt_lob
   datacenter          = local.datacenter.name
 }
 
