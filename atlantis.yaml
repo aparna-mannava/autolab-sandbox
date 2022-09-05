@@ -13,6 +13,9 @@ projects:
   dir: cfrmcloud/artemis/standalone/02
   workflow: nutanix-backend
 # D
+- name: rhel9-wazuh
+  dir: dmorvan/rhel9-wazuh
+  workflow: nutanix-backend
 # E
 # F
 # G
