@@ -7,7 +7,7 @@ locals {
   environment      = "master"
   hostname         = "us01vl9wazuh"
   hostgroup        = "BT Base Server"
-  bt_infra_cluster = "us01-azc-ntnx-02"
+  bt_infra_cluster = "ny2-aze-ntnx-12"
   bt_infra_network = "ny2-autolab-app-ahv"
   os_version       = "rhel9"
   cpus             = "2"
