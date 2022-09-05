@@ -29,7 +29,7 @@ module "rhel9ts01" {
   hostname            = "${local.hostname}01"
   alias               = "${local.datacenter.id}-${local.product}-wzh01"
   bt_infra_cluster    = local.bt_infra_cluster
-  bt_infra_network    = local_bt_infra_network
+  bt_infra_network    = local.bt_infra_network
   os_version          = local.os_version
   cpus                = local.cpus
   memory              = local.memory
@@ -51,7 +51,7 @@ module "rhel9ts02" {
   hostname            = "${local.hostname}02"
   alias               = "${local.datacenter.id}-${local.product}-wzh02"
   bt_infra_cluster    = local.bt_infra_cluster
-  bt_infra_network    = local_bt_infra_network
+  bt_infra_network    = local.bt_infra_network
   os_version          = local.os_version
   cpus                = local.cpus
   memory              = local.memory
