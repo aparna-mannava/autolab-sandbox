@@ -12,6 +12,9 @@ projects:
 - name: cfrmcloud-artemis-standalone-02
   dir: cfrmcloud/artemis/standalone/02
   workflow: nutanix-backend
+- name: cfrmcloud-artemis-cluster-03
+  dir: cfrmcloud/artemis/cluster/03
+  workflow: nutanix-backend
 # D
 # E
 # F
