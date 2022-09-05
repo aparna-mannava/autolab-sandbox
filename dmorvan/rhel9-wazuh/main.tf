@@ -12,12 +12,12 @@ locals {
   os_version       = "rhel9"
   cpus             = "2"
   memory           = "4096"
+  lob              = "CLOUD"
   facts            = {
                      bt_product = "inf"
                      bt_tier    = "pr"
                      bt_role    = "base"
                      bt_env     = "master"
-                     bt_lob     = "CLOUD"
                    }
   datacenter       = {
                      name = "ny2"
@@ -37,6 +37,7 @@ module "rhel9ts01" {
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
+  lob                 = local.lob
   datacenter          = local.datacenter.name
 }
 
@@ -59,6 +60,7 @@ module "rhel9ts02" {
   external_facts      = local.facts
   foreman_environment = local.environment
   foreman_hostgroup   = local.hostgroup
+  lob                 = local.lob
   datacenter          = local.datacenter.name
 }
 
