@@ -9,8 +9,8 @@ locals {
       "bt_tier"     = "dev"
       "bt_role"     = "standalone"
     }
-    devops1_apacheds_facts    = {
-      "bt_env"      = "devops1"
+    dynamic_scan_apacheds_facts    = {
+      "bt_env"      = "dynamic-scan"
       "bt_role"     = local.facts.bt_role
       "bt_customer" = local.facts.bt_customer
       "bt_product"  = local.facts.bt_product
@@ -19,16 +19,16 @@ locals {
      }    
 }
  
-module "devops1_apacheds" {
+module "dynamic_scan_apacheds" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdx5"
-  alias                = "cfrmx-oracledb4"
+  hostname             = "us01vlcfrmrdx6"
+  alias                = "cfrmx-oracledb5"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   cpus                 = "2"
   memory               = "8192"
   os_version           = "rhel7"
-  external_facts       = local.devops1_apacheds_facts
+  external_facts       = local.dynamic_scan_apacheds_facts
   foreman_environment  = "feature_CFRMX_8541"
   foreman_hostgroup    = "CFRMRD OpenSearch"
   lob                  = "CFRM"
@@ -39,10 +39,10 @@ module "devops1_apacheds" {
   }
 }
 
-output "devops1_apacheds" {
+output "dynamic_scan_apacheds" {
   value = {
-    "fqdn"  = module.devops1_apacheds.fqdn,
-    "alias" = module.devops1_apacheds.alias,
-    "ip"    = module.devops1_apacheds.ip,
+    "fqdn"  = module.dynamic_scan_apacheds.fqdn,
+    "alias" = module.dynamic_scan_apacheds.alias,
+    "ip"    = module.dynamic_scan_apacheds.ip,
   }
 }
