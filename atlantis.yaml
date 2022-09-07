@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -11,6 +11,9 @@ projects:
 # C
 - name: cfrmcloud-artemis-standalone-02
   dir: cfrmcloud/artemis/standalone/02
+  workflow: nutanix-backend
+- name: cfrmcloud-artemis-cluster-03
+  dir: cfrmcloud/artemis/cluster/03
   workflow: nutanix-backend
 # D
 - name: rhel9-wazuh
