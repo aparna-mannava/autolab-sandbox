@@ -21,8 +21,8 @@ locals {
  
 module "dynamic_scan_apacheds" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdx11"
-  alias                = "cfrmx-oracledb10"
+  hostname             = "us01vlcfrmrdx12"
+  alias                = "cfrmx-oracledb11"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   cpus                 = "2"

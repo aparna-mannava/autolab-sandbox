@@ -33,7 +33,7 @@ projects:
 # M
 # N
 # O
-- name: oracle7
+- name: oracle8
   dir: oracle/test
   workflow: nutanix-backend
 # P
