@@ -30,6 +30,9 @@ projects:
 # J
 # K
 # L
+- name: lemery-tlstest1-etcd
+  dir: lemery/tlstest1/etcd
+  workflow: nutanix-backend
 # M
 # N
 # O
