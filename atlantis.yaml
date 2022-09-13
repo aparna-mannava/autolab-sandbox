@@ -33,6 +33,9 @@ projects:
 - name: lemery-tlstest1-etcd
   dir: lemery/tlstest1/etcd
   workflow: nutanix-backend
+- name: lemery-tlstest1-hapg
+  dir: lemery/tlstest1/hapg
+  workflow: nutanix-backend
 # M
 # N
 # O
