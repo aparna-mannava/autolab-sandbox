@@ -21,10 +21,10 @@ locals {
  
 module "devops1_apacheds" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdx15"
-  alias                = "cfrmx-oracledb14"
+  hostname             = "us01vlcfrmrdx16"
+  alias                = "cfrmx-oracledb15"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-aza-ntnx-19"
+  bt_infra_cluster     = "ny2-azd-ntnx-10"
   cpus                 = "2"
   memory               = "8192"
   os_version           = "rhel7"
