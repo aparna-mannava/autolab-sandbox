@@ -1,6 +1,6 @@
 module "app_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlsndbxoradb01"
+  hostname             = "us01vlsndbxdb01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel7"
