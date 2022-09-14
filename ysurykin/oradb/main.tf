@@ -1,5 +1,5 @@
 terraform {
-  backend "S3" {}
+  backend "s3" {}
 }
 
 module "app_server_1" {
