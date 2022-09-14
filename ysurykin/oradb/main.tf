@@ -7,7 +7,6 @@ module "app_server_1" {
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
   datacenter           = "ny2"
-  lob                  = "PMX" # Replace this with your own line of business
   additional_disks     = {
     1 = "20"
   }
