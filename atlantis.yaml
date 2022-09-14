@@ -36,6 +36,9 @@ projects:
 - name: oracle5
   dir: oracle/test
   workflow: nutanix-backend
+- name: ysurykin-oradb
+  dir: ysurykin/oradb
+
 # P
 # Q
 # R
