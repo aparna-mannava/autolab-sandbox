@@ -3,7 +3,7 @@ terraform {
 }
 
 module "app_server_1" {
-  source               = “git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master”
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlsndbxoradb01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
