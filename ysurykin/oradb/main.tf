@@ -1,3 +1,7 @@
+terraform {
+  backend "http" {}
+}
+
 module "app_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlsndbxoradb01"
