@@ -38,7 +38,7 @@ projects:
   workflow: nutanix-backend
 - name: ysurykin-oradb
   dir: ysurykin/oradb
-
+  workflow: nutanix-backend
 # P
 # Q
 # R
