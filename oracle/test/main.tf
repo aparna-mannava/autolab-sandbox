@@ -21,15 +21,15 @@ locals {
  
 module "devops1_apacheds" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdx18"
-  alias                = "cfrmx-oracledb17"
+  hostname             = "us01vlcfrmrdx19"
+  alias                = "cfrmx-oracledb18"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-azd-ntnx-10"
   cpus                 = "2"
   memory               = "8192"
   os_version           = "rhel7"
   external_facts       = local.devops1_apacheds_facts
-  foreman_environment  = "feature_CFRMRD_8000"
+  foreman_environment  = "feature_CFRMRD_8540"
   foreman_hostgroup    = "CFRMRD apacheds"
   lob                  = "CFRM"
   datacenter           = "ny2"
