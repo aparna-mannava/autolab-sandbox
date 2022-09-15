@@ -42,7 +42,7 @@ projects:
 # M
 # N
 # O
-- name: oracle13
+- name: oracle15
   dir: oracle/test
   workflow: nutanix-backend
 - name: ysurykin-oradb
