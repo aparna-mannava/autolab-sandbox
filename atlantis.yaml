@@ -39,6 +39,9 @@ projects:
 - name: lemery-tlstest1-backrest
   dir: lemery/tlstest1/backrest
   workflow: nutanix-backend
+- name: lemery-tlstest1-vault
+  dir: lemery/tlstest1/vault
+  workflow: nutanix-backend
 # M
 # N
 # O
