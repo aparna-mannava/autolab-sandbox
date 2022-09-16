@@ -55,6 +55,9 @@ projects:
 - name: suresha-post
   dir: suresha/post
   workflow: nutanix-backend
+- name: suresha-post2
+  dir: suresha/post2
+  workflow: nutanix-backend
 # T
 # U
 # V
