@@ -14,7 +14,7 @@ locals {
   bt_product      = "cea"
   lob             = "CEA"
   hostgroup       = "BT ETCD for PostgreSQL Server"
-  environment     = "master"
+  environment     = "feature_CEA_13854_etcd_client_server_tls"
   cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-db-ahv"
   facts = {
@@ -39,7 +39,7 @@ module "ny2_autolab_etcd_0" {
   lob                 = local.lob
   foreman_hostgroup   = local.hostgroup
   foreman_environment = local.environment
-  os_version          = "rhel8"
+  os_version          = "rhel7"
   cpus                = "1"
   memory              = "4096"
   external_facts      = local.facts
@@ -57,7 +57,7 @@ module "ny2_autolab_etcd_1" {
   foreman_hostgroup   = local.hostgroup
   foreman_environment = local.environment
   lob                 = local.lob
-  os_version          = "rhel8"
+  os_version          = "rhel7"
   cpus                = "1"
   memory              = "4096"
   external_facts      = local.facts
@@ -75,7 +75,7 @@ module "ny2_autolab_etcd_2" {
   foreman_hostgroup   = local.hostgroup
   lob                 = local.lob
   foreman_environment = local.environment
-  os_version          = "rhel8"
+  os_version          = "rhel7"
   cpus                = "1"
   memory              = "4096"
   external_facts      = local.facts
