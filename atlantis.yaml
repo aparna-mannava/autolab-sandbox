@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -17,6 +17,9 @@ projects:
   workflow: nutanix-backend
 - name: cfrmcloud-artemis-cluster-04
   dir: cfrmcloud/artemis/cluster/04
+  workflow: nutanix-backend
+- name: cfrmcloud-opensearch-cluster
+  dir: cfrmcloud/opensearch/cluster
   workflow: nutanix-backend
 # D
 - name: rhel9-wazuh
