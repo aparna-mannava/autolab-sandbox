@@ -13,7 +13,7 @@ locals {
       bt_role            = "opensearch"       // mandatory
       bt_infra_network   = "ny2-autolab-app-ahv" //
       bt_infra_cluster   = "ny5-aza-ntnx-19"
-      hostgroup          = "cfrmcloud opensearch" // Foreman hostgroup for BT base servers in Autolab.saas-n domain
+      hostgroup          = "BT CFRM CLOUD opensearch" // Foreman hostgroup for BT base servers in Autolab.saas-n domain
       environment        = "master" // Bitbucket Puppet controlrepo branch name
       hostname           = "us01vlcfrm"
     }
