@@ -18,13 +18,11 @@ projects:
 - name: cfrmcloud-artemis-cluster-04
   dir: cfrmcloud/artemis/cluster/04
   workflow: nutanix-backend
-<<<<<<< HEAD
 - name: cfrmcloud-opensearch-cluster
   dir: cfrmcloud/opensearch/cluster
-=======
-- name: cfrmcloud-opensearch
-  dir: dshine/opensearch
->>>>>>> 69a7d343659099e9010deed2f32b622b3b09f646
+  workflow: nutanix-backend
+- name: cfrmcloud-opensearch-standalone
+  dir: cfrmcloud/opensearch/cluster/standalone
   workflow: nutanix-backend
 # D
 - name: rhel9-wazuh
