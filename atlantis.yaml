@@ -24,6 +24,9 @@ projects:
 - name: cfrmcloud-opensearch-standalone
   dir: cfrmcloud/opensearch/cluster/standalone
   workflow: nutanix-backend
+- name: cfrmcloud-nfs-standalone
+  dir: cfrmcloud/nfs/01
+  workflow: nutanix-backend
 # D
 - name: rhel9-wazuh
   dir: dmorvan/rhel9-wazuh
