@@ -46,7 +46,7 @@ module "nfsdev_autolab_1" {
   cpus                 = "4"
   memory         	     = "8192"
   additional_disks     = {
-    1 = "70"
+    1 = "150"
   }
 }
 
