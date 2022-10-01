@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -9,28 +9,7 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmcloud-artemis-standalone-02
-  dir: cfrmcloud/artemis/standalone/02
-  workflow: nutanix-backend
-- name: cfrmcloud-artemis-cluster-03
-  dir: cfrmcloud/artemis/cluster/03
-  workflow: nutanix-backend
-- name: cfrmcloud-artemis-cluster-04
-  dir: cfrmcloud/artemis/cluster/04
-  workflow: nutanix-backend
-- name: cfrmcloud-opensearch-cluster
-  dir: cfrmcloud/opensearch/cluster
-  workflow: nutanix-backend
-- name: cfrmcloud-opensearch-standalone
-  dir: cfrmcloud/opensearch/cluster/standalone
-  workflow: nutanix-backend
-- name: cfrmcloud-nfs-standalone
-  dir: cfrmcloud/nfs/01
-  workflow: nutanix-backend
 # D
-- name: rhel9-wazuh
-  dir: dmorvan/rhel9-wazuh
-  workflow: nutanix-backend
 # E
 # F
 # G
@@ -39,38 +18,13 @@ projects:
 # J
 # K
 # L
-- name: lemery-tlstest1-etcd
-  dir: lemery/tlstest1/etcd
-  workflow: nutanix-backend
-- name: lemery-tlstest1-hapg
-  dir: lemery/tlstest1/hapg
-  workflow: nutanix-backend
-- name: lemery-tlstest1-backrest
-  dir: lemery/tlstest1/backrest
-  workflow: nutanix-backend
-- name: lemery-tlstest1-vault
-  dir: lemery/tlstest1/vault
-  workflow: nutanix-backend
-# LAE empty commit to reopen PR for more destroy operations
 # M
 # N
 # O
-- name: oracle18
-  dir: oracle/test
-  workflow: nutanix-backend
-- name: ysurykin-oradb
-  dir: ysurykin/oradb
-  workflow: nutanix-backend
 # P
 # Q
 # R
 # S
-- name: suresha-post
-  dir: suresha/post
-  workflow: nutanix-backend
-- name: suresha-post2
-  dir: suresha/post2
-  workflow: nutanix-backend
 # T
 # U
 # V

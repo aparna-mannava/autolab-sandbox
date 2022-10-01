@@ -1,8 +1,0 @@
----
-version: 3
-automerge: false 
-projects:
-- name: ysurykin-oradb
-  dir: ysurykin/oradb
-  terraform_version: 0.12.0
-
