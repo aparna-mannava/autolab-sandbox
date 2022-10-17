@@ -5,7 +5,7 @@ terraform {
 locals {
   base_vm = ["us01vlfmvm011", "us01vlfmvm012", "us01vlfmvm013"]
   domain = "auto.saas-n.com"
-  tier = "dev"
+  tier = "autolab"
   bt_env = "3"
   bt_product = "fmcloud"
   lob = "FMCLOUD"
