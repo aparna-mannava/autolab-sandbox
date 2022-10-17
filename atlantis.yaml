@@ -18,6 +18,9 @@ projects:
 # J
 # K
 # L
+- name: lemery-quay
+  dir: lemery/quay
+  workflow: nutanix-backend
 # M
 # N
 - name: nmey-vm-perftest
