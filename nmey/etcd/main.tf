@@ -10,7 +10,7 @@ locals {
     domain = "auto.saas-n.com"
     tier = "dev"
     bt_env = "3"
-    bt_product = "FMCLOUD"
+    bt_product = "fmcloud"
     lob = "FMCLOUD"
     hostgroup = "BT ETCD for PostgreSQL Server"
     environment = "master"

@@ -11,7 +11,7 @@ locals {
     domain = "auto.saas-n.com"
     tier = "dev"
     bt_env = "3"
-    bt_product = "FMCLOUD"
+    bt_product = "fmcloud"
     lob = "FMCLOUD"
     hostgroup = "BT HA PG Server" #######. HOST GROUP
     environment = "master"
