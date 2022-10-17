@@ -100,6 +100,7 @@ module "ny2_autolab_etcd_3" {
     }
 }
 
+
 output "ny2_autolab_etcd_0" {
     value = {
         "fqdn" = "${module.ny2_autolab_etcd_0.fqdn}",
