@@ -19,7 +19,7 @@ module "quay_server_1" {
   hostname             = "us01vlquay01"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   cpus                 = "4"
   memory               = "8192"
   foreman_environment  = local.environment
