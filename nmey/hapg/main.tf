@@ -2,15 +2,16 @@ terraform {
 backend "s3" {}
 }
 
+
 locals {
     etcd_servers = ["us01vlfmed011","us01vlfmed012","us01vlfmed013","us01vlfmed014"]
     hapg_servers = ["us01vlfmpg011","us01vlfmpg012","us01vlfmpg013","us01vlfmpg014"]
     haproxy_server = ["us01vlfmpxy011"]
     etcd_hosts_p = ["'us01vlfmed011.auto.saas-n.com','us01vlfmed012.auto.saas-n.com','us01vlfmed013.auto.saas-n.com','us01vlfmed014.auto.saas-n.com'"]
     domain = "auto.saas-n.com"
-    tier = "dev"
+    tier = "autolab"
     bt_env = "3"
-    bt_product = "FMCLOUD"
+    bt_product = "fmcloud"
     lob = "FMCLOUD"
     hostgroup = "BT HA PG Server" #######. HOST GROUP
     environment = "master"

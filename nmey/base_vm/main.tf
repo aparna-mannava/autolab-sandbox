@@ -5,9 +5,9 @@ terraform {
 locals {
   base_vm = ["us01vlfmvm011", "us01vlfmvm012", "us01vlfmvm013"]
   domain = "auto.saas-n.com"
-  tier = "dev"
+  tier = "autolab"
   bt_env = "3"
-  bt_product = "FMCLOUD"
+  bt_product = "fmcloud"
   lob = "FMCLOUD"
   hostgroup = "BT FMCLOUD perftest" #######. HOST GROUP
   environment = "master"
@@ -20,7 +20,8 @@ locals {
     "bt_product" = "${local.bt_product}"
   }
 }
- 
+
+
 module "vm_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   os_version = "rhel8"
