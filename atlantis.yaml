@@ -37,6 +37,9 @@ projects:
 # Q
 # R
 # S
+- name: suresha-SQL-server1
+  dir: suresha/SQL/server1
+  workflow: nutanix-backend
 # T
 # U
 # V
