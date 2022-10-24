@@ -12,7 +12,7 @@ locals {
     bt_env = "3"
     bt_product = "fmcloud"
     lob = "FMCLOUD"
-    hostgroup = "BT ETCD for PostgreSQL Server"
+    hostgroup = "BT FMCLOUD ETCD for PostgreSQL Server"
     environment = "master"
     cluster = "ny2-aze-ntnx-12"
     network = "ny2-autolab-app-ahv"
