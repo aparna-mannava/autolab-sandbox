@@ -10,7 +10,7 @@ locals {
   bt_product = "fmcloud"
   lob = "FMCLOUD"
   hostgroup = "BT FMCLOUD perftest" #######. HOST GROUP
-  environment = "master"
+  environment = "feature_UAMES_000_FMCLOUD_temporal_perf_test"
   cluster = "ny2-aze-ntnx-12"
   network = "ny2-autolab-app-ahv"
   datacenter = "ny2"
