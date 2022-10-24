@@ -29,6 +29,7 @@ locals {
     }
 }
 
+
 module "ny2_autolab_etcd_0" {
     source = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
     hostname = "${local.etcd_servers[0]}"
