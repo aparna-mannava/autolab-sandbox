@@ -18,9 +18,6 @@ projects:
 # J
 # K
 # L
-- name: lemery-quay
-  dir: lemery/quay
-  workflow: nutanix-backend
 # M
 # N
 # O
@@ -28,9 +25,6 @@ projects:
 # Q
 # R
 # S
-- name: suresha-SQL-server1
-  dir: suresha/SQL/server1
-  workflow: nutanix-backend
 # T
 # U
 # V
@@ -38,4 +32,3 @@ projects:
 # X
 # Y
 # Z
-# foo
