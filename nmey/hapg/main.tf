@@ -39,7 +39,7 @@ module "ny2_autolab_hapg_0" {
     lob = local.lob
     foreman_hostgroup = "BT HA PG Server"
     foreman_environment = local.environment
-    os_version = "rhel7"
+    os_version = "rhel8"
     cpus = "8"
     memory = "16384"
     external_facts = local.facts
@@ -59,7 +59,7 @@ module "ny2_autolab_hapg_1" {
     foreman_hostgroup = "BT HA PG Server"
     foreman_environment = local.environment
     lob = local.lob
-    os_version = "rhel7"
+    os_version = "rhel8"
     cpus = "8"
     memory = "16384"
     external_facts = local.facts
@@ -79,7 +79,7 @@ module "ny2_autolab_hapg_2" {
     foreman_hostgroup = "BT HA PG Server"
     foreman_environment = local.environment
     lob = local.lob
-    os_version = "rhel7"
+    os_version = "rhel8"
     cpus = "8"
     memory = "16384"
     external_facts = local.facts
@@ -99,7 +99,7 @@ module "ny2_autolab_hapg_3" {
     foreman_hostgroup = "BT HA PG Server"
     foreman_environment = local.environment
     lob = local.lob
-    os_version = "rhel7"
+    os_version = "rhel8"
     cpus = "8"
     memory = "16384"
     external_facts = local.facts
