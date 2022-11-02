@@ -20,6 +20,18 @@ projects:
 # L
 # M
 # N
+- name: nmey-vm-perftest
+  dir: nmey/base_vm
+  workflow: nutanix-backend
+- name: nmey-monitoring-perftest
+  dir: nmey/monitoring_vm
+  workflow: nutanix-backend
+- name: nmey-etcd-perftest
+  dir: nmey/etcd
+  workflow: nutanix-backend
+- name: nmey-hapg-perftest
+  dir: nmey/hapg
+  workflow: nutanix-backend
 # O
 # P
 # Q
