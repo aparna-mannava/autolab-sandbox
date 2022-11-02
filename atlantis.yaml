@@ -26,6 +26,9 @@ projects:
 - name: nmey-vm-perftest
   dir: nmey/base_vm
   workflow: nutanix-backend
+- name: nmey-temporal-perftest
+  dir: nmey/temporal_vm
+  workflow: nutanix-backend
 - name: nmey-monitoring-perftest
   dir: nmey/monitoring_vm
   workflow: nutanix-backend
