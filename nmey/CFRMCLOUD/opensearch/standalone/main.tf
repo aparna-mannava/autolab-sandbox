@@ -14,7 +14,7 @@ locals {
       bt_infra_network      = "ny2-autolab-app-ahv" //
       bt_infra_cluster      = "ny5-aza-ntnx-19"
       hostgroup             = "BT CFRM CLOUD opensearch" // Foreman hostgroup for BT base servers in Autolab.saas-n domain
-      environment           = "feature_CFRMCLOUD_2629"
+      environment           = "origin_feature_CFRMCLOUD_2629"
       bt_opensearch_version = "1.2.3"
       bt_opensearch_nodes   = ["us01vlcfrmops03"]
       hostname              = "us01vlcfrm"
