@@ -37,7 +37,7 @@ module "basedev_ny2_1" {
   foreman_hostgroup     = local.facts.hostgroup
   datacenter            = local.datacenter.name
   external_facts        = local.facts
-  os_version            = "rhel7"
+  os_version            = "rhel8"
   cpus                  = "2"
   memory         	      = "2048"
   additional_disks     = {
