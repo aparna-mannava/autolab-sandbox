@@ -14,7 +14,7 @@ locals {
       bt_infra_network      = "ny2-autolab-app-ahv" //
       bt_infra_cluster      = "ny5-aza-ntnx-19"
       hostgroup             = "BT CFRM CLOUD opensearch" // Foreman hostgroup for BT base servers in Autolab.saas-n domain
-      environment           = "origin_feature_CFRMCLOUD_2629"
+      environment           = "feature_CFRMCLOUD_2629"
       bt_opensearch_version = "1.2.3"
       bt_opensearch_nodes   = ["us01vlcfrmops03"]
       hostname              = "us01vlcfrm"
@@ -26,7 +26,7 @@ locals {
 }
 
 module "basedev_ny2_1" {
-  source                = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
+  source                = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=feature/CLOUD-2629"
   hostname              = "${local.facts.hostname}ops${local.facts.bt_env}" // us01vlcfrmops03 ,  maximum of 15 characters
   alias                 = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-${local.facts.bt_env}"//   cfrmcloud-ny2-dev-opensearch-04.autolab.saas-n.com
   bt_infra_cluster      = local.facts.bt_infra_cluster
