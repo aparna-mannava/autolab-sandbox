@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: opensearch-standalone
+  dir: nmey/CFRMCLOUD/opensearch/standalone
+  workflow: nutanix-backend
 # D
 # E
 # F
