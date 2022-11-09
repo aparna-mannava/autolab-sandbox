@@ -35,7 +35,7 @@ module "vm_1" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "20"
+    1 = "100"
   }
 }
 
@@ -53,7 +53,7 @@ module "vm_2" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "20"
+    1 = "100"
   }
 }
 
@@ -72,7 +72,7 @@ module "vm_3" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "20"
+    1 = "100"
   }
 }
 
