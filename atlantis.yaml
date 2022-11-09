@@ -29,6 +29,9 @@ projects:
 - name: nmey-temporal-perftest
   dir: nmey/temporal_vm
   workflow: nutanix-backend
+- name: nmey-cassandra-perftest
+  dir: nmey/cassandra_vm
+  workflow: nutanix-backend
 - name: nmey-monitoring-perftest
   dir: nmey/monitoring_vm
   workflow: nutanix-backend
