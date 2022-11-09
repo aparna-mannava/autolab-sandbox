@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-////retry build
+//retry build
     facts       = {
       bt_customer           = "ny2"        // mandatory
       bt_product            = "cfrmcloud"  // mandatory
