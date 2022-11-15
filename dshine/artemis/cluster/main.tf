@@ -58,7 +58,7 @@ locals {
  
 module "artemisdev_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.hostname}artc1" // us01vlcfrmartc1
+  hostname             = "${local.hostname}artc1" // us01vlcfrmartc1
   alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-cluster-01"//   cfrmcloud-ny2-dev-artemis-cluster-01.autolab.saas-n.com
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
@@ -78,7 +78,7 @@ module "artemisdev_1" {
 
 module "artemisdev_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.hostname}artc2" // us01vlcfrmartc2
+  hostname             = "${local.hostname}artc2" // us01vlcfrmartc2
   alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-cluster-02"//   cfrmcloud-ny2-dev-artemis-cluster-02.autolab.saas-n.com
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
@@ -98,7 +98,7 @@ module "artemisdev_2" {
 
 module "artemisdev_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.facts.hostname}artc3" // us01vlcfrmartc3
+  hostname             = "${local.hostname}artc3" // us01vlcfrmartc3
   alias                = "${local.facts.bt_product}-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_role}-cluster-03"//   cfrmcloud-ny2-dev-artemis-cluster-03.autolab.saas-n.com
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
