@@ -69,7 +69,7 @@ module "artemisdev_1" {
   datacenter           = local.datacenter.name
   external_facts       = local.facts
   os_version           = "rhel8"
-  cpus                 = "4"
+  cpus                 = "2"
   memory               = "4096"
   additional_disks     = {
     1 = "100"
@@ -89,7 +89,7 @@ module "artemisdev_2" {
   datacenter           = local.datacenter.name
   external_facts       = local.facts
   os_version           = "rhel8"
-  cpus                 = "4"
+  cpus                 = "2"
   memory               = "4096"
   additional_disks     = {
     1 = "100"
@@ -109,7 +109,7 @@ module "artemisdev_3" {
   datacenter           = local.datacenter.name
   external_facts       = local.facts
   os_version           = "rhel8"
-  cpus                 = "4"
+  cpus                 = "2"
   memory               = "4096"
   additional_disks     = {
     1 = "100"
