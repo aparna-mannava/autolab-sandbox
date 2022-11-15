@@ -4,7 +4,7 @@ terraform {
  
 locals {
  
-    hostname           = "us01vlcfrmc"
+    hostname           = "us01vlcfrm"
     facts       = {
       bt_customer        = "ny2"
       bt_product         = "cfrmcloud"
