@@ -4,6 +4,7 @@ terraform {
  
 locals {
  
+    hostname           = "us01vlcfrmc"
     facts       = {
       bt_customer        = "ny2"
       bt_product         = "cfrmcloud"
@@ -17,7 +18,6 @@ locals {
       bt_infra_cluster   = "ny2-aze-ntnx-12"
       hostgroup          = "BT CFRM CLOUD Artemis Standalone Servers" // Foreman hostgroup for Standalone Artemis only servers
       environment        = "feature_CFRMCLOUD_2629_opensearch_rhel8" // Bitbucket Puppet controlrepo branch name
-      hostname           = "us01vlcfrmc"
       bt_artemis1_fqdn   = "${local.hostname}01-dv" //us01vlcfrmc01 
       bt_artemis2_fqdn   = "${local.hostname}02-dv" //us01vlcfrmc02
       bt_artemis3_fqdn   = "${local.hostname}03-dv" //us01vlcfrmc03
