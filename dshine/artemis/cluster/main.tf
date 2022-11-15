@@ -10,8 +10,8 @@ locals {
       bt_product         = "cfrmcloud"
       bt_lob             = "CFRM"
       bt_ic_version      = "660_SP2"
-      bt_tier            = "dev" ///
-      bt_env             = "01" ///
+      bt_tier            = "dev" //
+      bt_env             = "01" //
       bt_role            = "artemis" //
       bt_artemis_version = "2.16.0" // Artemis service version
       bt_infra_network   = "ny2-autolab-app-ahv" //
