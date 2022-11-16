@@ -9,9 +9,12 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-# D
+# D #
 - name: dshine-artemis-standalone
   dir: dshine/artemis/standalone
+  workflow: nutanix-backend
+- name: dshine-artemis-cluster
+  dir: dshine/artemis/cluster
   workflow: nutanix-backend
 # E
 # F
