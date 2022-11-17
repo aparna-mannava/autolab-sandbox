@@ -6,7 +6,7 @@ locals {
  
     hostname           = "us01vlcfrm"
     facts       = {
-      bt_customer        = "ny2"
+      bt_customer        = "fml"
       bt_product         = "cfrmcloud"
       bt_lob             = "CFRM"
       bt_ic_version      = "690_GA"
