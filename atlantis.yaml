@@ -16,6 +16,9 @@ projects:
 - name: dshine-artemis-cluster
   dir: dshine/artemis/cluster
   workflow: nutanix-backend
+- name: dshine-reg
+  dir: dshine/artemis/reg
+  workflow: nutanix-backend
 # E
 # F
 # G
