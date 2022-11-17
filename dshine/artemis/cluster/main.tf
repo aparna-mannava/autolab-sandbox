@@ -16,8 +16,9 @@ locals {
       bt_artemis_version = "2.16.0" // Artemis service version
       bt_infra_network   = "ny2-autolab-app-ahv" //
       bt_infra_cluster   = "ny2-aze-ntnx-12"
+      bt_artemis_ha      = "MasterSlave"
       hostgroup          = "BT CFRM CLOUD Artemis Cluster Servers" // Foreman hostgroup for Standalone Artemis only servers
-      environment        = "feature_CFRMCLOUD_2629_opensearch_rhel8" // Bitbucket Puppet controlrepo branch name
+      environment        = "master" // Bitbucket Puppet controlrepo branch name
       bt_artemis1_fqdn   = "${local.hostname}01-dv" //us01vlcfrmc01 
       bt_artemis2_fqdn   = "${local.hostname}02-dv" //us01vlcfrmc02
       bt_artemis3_fqdn   = "${local.hostname}03-dv" //us01vlcfrmc03
