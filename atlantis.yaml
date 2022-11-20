@@ -19,9 +19,6 @@ projects:
 - name: dshine-reg
   dir: dshine/artemis/reg
   workflow: nutanix-backend
-- name: dshine-opensearch-standalone
-  dir: dshine/opensearch/standalone
-  workflow: nutanix-backend
 # E
 # F
 # G
