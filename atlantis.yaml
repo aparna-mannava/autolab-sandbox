@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmcloud-opensearch
+  dir: cfrmcloud/opensearch
+  workflow: nutanix-backend
 # D #
 - name: dshine-artemis-standalone
   dir: dshine/artemis/standalone
