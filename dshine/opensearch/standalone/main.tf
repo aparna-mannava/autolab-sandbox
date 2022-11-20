@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-//destroy
+//rebuild
     facts       = {
       bt_customer           = "ny2"
       bt_product            = "cfrmcloud"
