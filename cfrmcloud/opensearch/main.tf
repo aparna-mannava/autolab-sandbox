@@ -2,7 +2,7 @@ terraform {
   backend "s3" {}
 }
  
- 
+ //
 locals {
     hostname    = "us01vlcfrm"
     facts       = {
