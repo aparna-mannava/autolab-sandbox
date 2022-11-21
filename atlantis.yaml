@@ -9,22 +9,7 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmcloud-opensearch-cluster
-  dir: cfrmcloud/opensearch
-  workflow: nutanix-backend
-# D #
-- name: dshine-artemis-standalone
-  dir: dshine/artemis/standalone
-  workflow: nutanix-backend
-- name: dshine-artemis-cluster
-  dir: dshine/artemis/cluster
-  workflow: nutanix-backend
-- name: dshine-reg
-  dir: dshine/artemis/reg
-  workflow: nutanix-backend
-- name: dshine-opensearch-standalone2
-  dir: dshine/opensearch/standalone
-  workflow: nutanix-backend
+# D 
 # E
 # F
 # G
