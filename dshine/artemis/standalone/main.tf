@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {}
 }
- 
+//destroy 
  
 locals {
  
