@@ -20,7 +20,6 @@ locals {
     "bt_product" = "${local.bt_product}"
   }
 }
-
 module "vm_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   os_version = "rhel8"
