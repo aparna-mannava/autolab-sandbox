@@ -9,7 +9,10 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-# D 
+# D
+- name: dgb_rhel8
+  dir: njani/dgb_rhel8
+  workflow: nutanix-backend
 # E
 # F
 # G
