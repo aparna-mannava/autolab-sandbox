@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmcloud_base_server3_rhel8
+  dir: cfrmcloud/base_servers/03
+  workflow: nutanix-backend
 # D
 - name: dgb_rhel8
   dir: njani/dgb_rhel8
