@@ -45,6 +45,9 @@ module "dev_autolab_3" {
   os_version           = "rhel8"
   cpus                 = "2"
   memory         	     = "4096"
+  additional_disks     = {
+    1 = "70"
+  }
 }
 
 output "dev_autolab_3" {
