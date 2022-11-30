@@ -8,8 +8,8 @@ locals {
       bt_product       = "cfrmcloud"
       bt_lob           = "CFRM"  
       bt_tier          = "dev"
-      bt_env           = "01"
-      bt_role          = "mgmt"
+      bt_env           = "01" //
+      bt_role          = "mgmt" //
       bt_infra_network = "ny2-autolab-app-ahv"
       bt_infra_cluster = "ny2-aze-ntnx-12"
       hostgroup        = "BT CFRM CLOUD SQL Exporter Test Servers"
