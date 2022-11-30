@@ -21,12 +21,13 @@ locals {
       id   = "ny2"
   }
     mgmt_nfs_01 = {
-      "bt_customer" = local.facts.bt_customer
-      "bt_product"  = local.facts.bt_product
-      "bt_tier"     = local.facts.bt_tier
-      "bt_env"      = local.facts.bt_env
-      "bt_role"     = local.facts.bt_role
-      "bt_lob"      = local.facts.bt_lob
+      "bt_customer"   = local.facts.bt_customer
+      "bt_product"    = local.facts.bt_product
+      "bt_tier"       = local.facts.bt_tier
+      "bt_env"        = local.facts.bt_env
+      "bt_role"       = local.facts.bt_role
+      "bt_lob"        = local.facts.bt_lob
+      "sql_exporter"  = true
      }
 }
 
