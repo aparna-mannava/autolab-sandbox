@@ -9,16 +9,10 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmcloud_base_server3_rhel8
-  dir: cfrmcloud/base_servers/03
-  workflow: nutanix-backend
 - name: cfrmcloud_sqlexporter_rhel8
   dir: cfrmcloud/base_servers/04
   workflow: nutanix-backend
 # D
-- name: dgb_rhel8
-  dir: njani/dgb_rhel8
-  workflow: nutanix-backend
 # E
 # F
 # G
@@ -29,24 +23,6 @@ projects:
 # L
 # M
 # N
-- name: nmey-vm-perftest
-  dir: nmey/base_vm
-  workflow: nutanix-backend
-- name: nmey-temporal-perftest
-  dir: nmey/temporal_vm
-  workflow: nutanix-backend
-- name: nmey-cassandra-perftest
-  dir: nmey/cassandra_vm
-  workflow: nutanix-backend
-- name: nmey-monitoring-perftest
-  dir: nmey/monitoring_vm
-  workflow: nutanix-backend
-- name: nmey-etcd-perftest
-  dir: nmey/etcd
-  workflow: nutanix-backend
-- name: nmey-hapg-perftest
-  dir: nmey/hapg
-  workflow: nutanix-backend
 # O
 # P
 # Q
