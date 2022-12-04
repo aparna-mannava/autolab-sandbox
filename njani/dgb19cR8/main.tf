@@ -74,7 +74,7 @@ module "cloud_dbserver_2" {
 
 module "cloud_dbserver_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbpr01"
+  hostname             = "us01vldbdr01"
   alias                = "${local.lob}-${local.facts_3.bt_tier}${local.facts_3.bt_env}-${local.facts_3.bt_customer}-db01"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
