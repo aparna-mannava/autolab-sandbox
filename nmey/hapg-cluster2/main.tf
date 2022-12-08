@@ -3,7 +3,7 @@ backend "s3" {}
 }
 
 locals {
-    etcd_servers = ["us01vlfmed011","us01vlfmed022","us01vlfmed023"]
+    etcd_servers = ["us01vlfmed021","us01vlfmed022","us01vlfmed023"]
     hapg_servers = ["us01vlfmpg021","us01vlfmpg022","us01vlfmpg023"]
     haproxy_server = ["us01vlfmpxy021"]
     etcd_hosts_p = ["'us01vlfmed021.auto.saas-n.com','us01vlfmed022.auto.saas-n.com','us01vlfmed023.auto.saas-n.com'"]
