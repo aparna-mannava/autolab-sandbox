@@ -23,6 +23,18 @@ projects:
 # L
 # M
 # N
+- name: nmey-etcd-cluster1
+  dir: nmey/etcd-cluster1
+  workflow: nutanix-backend
+- name: nmey-hapg-cluster1
+  dir: nmey/hapg-cluster1
+  workflow: nutanix-backend
+- name: nmey-etcd-cluster2
+  dir: nmey/etcd-cluster2
+  workflow: nutanix-backend
+- name: nmey-hapg-cluster2
+  dir: nmey/hapg-cluster2
+  workflow: nutanix-backend
 # O
 # P
 # Q
