@@ -13,6 +13,9 @@ projects:
   dir: cfrmcloud/base_servers/04
   workflow: nutanix-backend
 # D
+- name: dgb_rhel7
+  dir: dgbdb/test
+  workflow: nutanix-backend
 # E
 # F
 # G
