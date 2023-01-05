@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmcloud_nfs_server_rhel8
+  dir: cfrmcloud/base_servers/01
+  workflow: nutanix-backend
 # D
 # E
 # F
