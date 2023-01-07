@@ -28,6 +28,9 @@ projects:
 # Q
 # R
 # S
+- name: postgrs-test
+  dir: spatel/postgres
+  workflow: nutanix-backend
 # T
 # U
 # V
