@@ -11,9 +11,9 @@ locals {
   tier            = "nonprod"
   bt_env          = "1"
   bt_product      = "cloud"
-  bt_role		      = "pgbackrest"
+  bt_role		      = "postgresql"
   lob             = "CLOUD"
-  hostgroup       = "BT PG Backrest Server"
+  hostgroup       = "BT HA PG Server"
   environment     = "feature_CLOUD_115963"
   cluster         = "ny2-aze-ntnx-12"
   network         = "ny2-autolab-app-ahv"
@@ -33,12 +33,12 @@ locals {
   }
 }
 
-module "ny2_cdb_backrest_1" {
+module "hapg_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.backrest_server[0]}"
+  hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
-  foreman_hostgroup    = "BT PG Backrest Server"
+  foreman_hostgroup    = "BT HA PG Server"
   external_facts       = local.facts
   foreman_environment  = local.environment
   datacenter           = local.datacenter
@@ -52,10 +52,64 @@ module "ny2_cdb_backrest_1" {
   }
 }
 
-output "ny2_cdb_backrest_1" {
+module "hapg_2" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "${local.hapg_servers[1]}"
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  foreman_hostgroup    = "BT HA PG Server"
+  external_facts       = local.facts
+  foreman_environment  = local.environment
+  datacenter           = local.datacenter
+  lob                  = local.lob
+  os_version           = "rhel8"
+  cpus                 = "2"
+  memory               = "4096"
+  additional_disks     = {
+    1 = "100",
+    2 = "160",
+  }
+}
+
+module "hapg_3" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "${local.hapg_servers[2]}"
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
+  foreman_hostgroup    = "BT HA PG Server"
+  external_facts       = local.facts
+  foreman_environment  = local.environment
+  datacenter           = local.datacenter
+  lob                  = local.lob
+  os_version           = "rhel8"
+  cpus                 = "2"
+  memory               = "4096"
+  additional_disks     = {
+    1 = "100",
+    2 = "160",
+  }
+}
+
+output "hapg_1" {
   value = {
-    "fqdn"  = "module.ny2_cdb_backrest_1.fqdn",
-    "alias" = "module.ny2_cdb_backrest_1.alias",
-    "ip"    = "module.ny2_cdb_backrest_1.ip",
+    "fqdn"  = "module.hapg_1.fqdn",
+    "alias" = "module.hapg_1.alias",
+    "ip"    = "module.hapg_1.ip",
+  }
+}
+
+output "hapg_2" {
+  value = {
+    "fqdn"  = "module.hapg_2.fqdn",
+    "alias" = "module.hapg_2.alias",
+    "ip"    = "module.hapg_2.ip",
+  }
+}
+
+output "hapg_3" {
+  value = {
+    "fqdn"  = "module.hapg_3.fqdn",
+    "alias" = "module.hapg_3.alias",
+    "ip"    = "module.hapg_3.ip",
   }
 }
