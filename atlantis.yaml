@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -9,8 +9,8 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmcloud_sqlexporter_rhel8
-  dir: cfrmcloud/base_servers/04
+- name: cfrmcloud_nfs_server_rhel8
+  dir: cfrmcloud/base_servers/01
   workflow: nutanix-backend
 # D
 # E
@@ -31,6 +31,9 @@ projects:
 # Q
 # R
 # S
+- name: postgrs-test
+  dir: spatel/postgres
+  workflow: nutanix-backend
 # T
 # U
 # V
