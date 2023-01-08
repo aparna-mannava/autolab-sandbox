@@ -8,21 +8,21 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   facts         = {
-    "bt_customer"         = "fi6789" #ex: fiXXXXXXX
+    "bt_customer"         = "fi3456" #ex: fiXXXXXXX
     "bt_tier"             = "sbx" #ex: sbx, tst, td, demo
     "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
     "bt_product_version"  = "3.6"
   }
   facts_2         = {
-    "bt_customer"         = "fi6789" #ex: fiXXXXXXX
+    "bt_customer"         = "fi3456" #ex: fiXXXXXXX
     "bt_tier"             = "pr" #ex: sbx, tst, td, demo
     "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
     "bt_product_version"  = "3.6"
   }
   facts_3         = {
-    "bt_customer"         = "fi6789" #ex: fiXXXXXXX
+    "bt_customer"         = "fi3456" #ex: fiXXXXXXX
     "bt_tier"             = "dr" #ex: sbx, tst, td, demo
     "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
@@ -32,8 +32,8 @@ locals {
 
 module "cloud_dbserver_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsb01"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db01"
+  hostname             = "us01vldbsr811"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db11"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
@@ -53,8 +53,8 @@ module "cloud_dbserver_1" {
 
 module "cloud_dbserver_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbpr01"
-  alias                = "${local.lob}-${local.facts_2.bt_tier}${local.facts_2.bt_env}-${local.facts_2.bt_customer}-db01"
+  hostname             = "us01vldbpr811"
+  alias                = "${local.lob}-${local.facts_2.bt_tier}${local.facts_2.bt_env}-${local.facts_2.bt_customer}-db12"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
@@ -74,8 +74,8 @@ module "cloud_dbserver_2" {
 
 module "cloud_dbserver_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbdr01"
-  alias                = "${local.lob}-${local.facts_3.bt_tier}${local.facts_3.bt_env}-${local.facts_3.bt_customer}-db01"
+  hostname             = "us01vldbdr811"
+  alias                = "${local.lob}-${local.facts_3.bt_tier}${local.facts_3.bt_env}-${local.facts_3.bt_customer}-db13"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
