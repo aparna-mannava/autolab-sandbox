@@ -32,6 +32,7 @@ module "app_server_1" {
     1 = "50",
     2 = "100"
   }
+
 }
 
 output "app_server_1" {
