@@ -23,7 +23,7 @@ projects:
 # L
 - name: lushaj-project1
   dir: lushaj/project1
-  workflow: terraform-upgrade
+  workflow: nutanix-backend
 # M
 # N
 # O
