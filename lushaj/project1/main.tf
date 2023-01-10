@@ -13,12 +13,13 @@ locals {
 }
  
 module "app_server_1" {
-#  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   source 	       = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vltferin03"
   alias                = "${local.product} -${local.facts.bt_tier}${local.facts.bt_env}-app01"
   bt_infra_network     = "ny2-autolab-app"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
+  lob                  = local.product
+  external_facts       = local.facts
   os_version           = "rhel7"
   cpus                 = "4"
   memory               = "8192"
@@ -49,9 +50,9 @@ module "app_server_1" {
  
 output "app_server_1" {
   value = {
-    "fqdn"  = "${module.app_server_1.fqdn}",
-    "alias" = "${module.app_server_1.alias}",
-    "ip"    = "${module.app_server_1.ip}",
+    "fqdn"  = module.app_server_1.fqdn,
+    "alias" = module.app_server_1.alias,
+    "ip"    = module.app_server_1.ip,
   }
 }
  
