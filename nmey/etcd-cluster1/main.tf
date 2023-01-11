@@ -4,7 +4,7 @@ terraform {
 
 locals {
     etcd_servers = ["us01vlfmed011","us01vlfmed012","us01vlfmed013"]
-    hapg_servers = ["us01vlfmpg011","us01vlfmpg012","us01vlfmpg013"]
+    hapg_servers = ["is_ahv_cluster_enabled","us01vlfmpg012","us01vlfmpg013"]
     haproxy_server = ["us01vlfmpxy011"]
     etcd_hosts_p = ["'us01vlfmed011.auto.saas-n.com','us01vlfmed012.auto.saas-n.com','us01vlfmed013.auto.saas-n.com'"]
     domain = "auto.saas-n.com"
@@ -14,7 +14,7 @@ locals {
     lob = "FMCLOUD"
     hostgroup = "BT FMCLOUD ETCD for PostgreSQL Server"
     environment = "master"
-    cluster = "ny2-aze-ntnx-12"
+    cluster = "ny5-aza-ntnx-19"
     network = "ny2-autolab-app-ahv"
     facts = {
         "bt_env" = "${local.bt_env}"

@@ -14,7 +14,7 @@ locals {
     lob = "FMCLOUD"
     hostgroup = "BT HA PG Server" #######. HOST GROUP
     environment = "master"
-    cluster = "ny2-aze-ntnx-12"
+    cluster = "ny5-aza-ntnx-19"
     network = "ny2-autolab-app-ahv"
     facts = {
         "bt_pg_version"           = "12"

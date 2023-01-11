@@ -14,7 +14,7 @@ locals {
     lob = "FMCLOUD"
     hostgroup = "BT FMCLOUD ETCD for PostgreSQL Server"
     environment = "master"
-    cluster = "ny2-aze-ntnx-12"
+    cluster = "ny5-aza-ntnx-19"
     network = "ny2-autolab-app-ahv"
     facts = {
         "bt_env" = "${local.bt_env}"
