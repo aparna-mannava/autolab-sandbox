@@ -3,10 +3,10 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vlsaetcd01"]
-  hapg_servers    = ["us01vlsahapg01","us01vlsahapg02"]
-  haproxy_server  = ["us01vlsapx01"]
-  backrest_server = ["us01vlsabk01"]
+  etcd_servers    = ["us01vlasetcd01"]
+  hapg_servers    = ["us01vlashapg01","us01vlashapg02"]
+  haproxy_server  = ["us01vlaspx01"]
+  backrest_server = ["us01vlasbk01"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "pg_ny2test"
@@ -28,7 +28,7 @@ locals {
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "pgclstrdm"
+    "bt_cluster_name"         = "pgclstrdm1"
     "bt_pg_version"           = "15"
   }
   haproxyfacts    = {
@@ -41,12 +41,12 @@ locals {
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "pgclstrdm"
+    "bt_cluster_name"         = "pgclstrdm1"
     "bt_pg_version"           = "15"
   }
 }
 
-module "pgclstrdm_hapg_0" {
+module "pgclstrdm1_hapg_0" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -65,7 +65,7 @@ module "pgclstrdm_hapg_0" {
   }
 }
 
-module "pgclstrdm_hapg_1" {
+module "pgclstrdm1_hapg_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -84,7 +84,7 @@ module "pgclstrdm_hapg_1" {
   }
 }
 
-module "pgclstrdm_haproxy_1" {
+module "pgclstrdm1_haproxy_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -103,26 +103,26 @@ module "pgclstrdm_haproxy_1" {
   }
 }
 
-output "pgclstrdm_hapg_0" {
+output "pgclstrdm1_hapg_0" {
   value = {
-    "fqdn"  = "${module.pgclstrdm_hapg_0.fqdn}",
-    "alias" = "${module.pgclstrdm_hapg_0.alias}",
-    "ip"    = "${module.pgclstrdm_hapg_0.ip}",
+    "fqdn"  = "${module.pgclstrdm1_hapg_0.fqdn}",
+    "alias" = "${module.pgclstrdm1_hapg_0.alias}",
+    "ip"    = "${module.pgclstrdm1_hapg_0.ip}",
   }
 }
 
-output "pgclstrdm_hapg_1" {
+output "pgclstrdm1_hapg_1" {
   value = {
-    "fqdn"  = "${module.pgclstrdm_hapg_1.fqdn}",
-    "alias" = "${module.pgclstrdm_hapg_1.alias}",
-    "ip"    = "${module.pgclstrdm_hapg_1.ip}",
+    "fqdn"  = "${module.pgclstrdm1_hapg_1.fqdn}",
+    "alias" = "${module.pgclstrdm1_hapg_1.alias}",
+    "ip"    = "${module.pgclstrdm1_hapg_1.ip}",
   }
 }
 
-output "pgclstrdm_haproxy_1" {
+output "pgclstrdm1_haproxy_1" {
   value = {
-    "fqdn"  = "${module.pgclstrdm_haproxy_1.fqdn}",
-    "alias" = "${module.pgclstrdm_haproxy_1.alias}",
-    "ip"    = "${module.pgclstrdm_haproxy_1.ip}",
+    "fqdn"  = "${module.pgclstrdm1_haproxy_1.fqdn}",
+    "alias" = "${module.pgclstrdm1_haproxy_1.alias}",
+    "ip"    = "${module.pgclstrdm1_haproxy_1.ip}",
   }
 }

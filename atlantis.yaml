@@ -40,14 +40,14 @@ projects:
 - name: postgrs-test
   dir: spatel/postgres
   workflow: nutanix-backend
-- name: savula-postgresql-PR-hapg
-  dir: savula/postgresql/PR/hapg
+- name: savula-postgres-PR-hapg
+  dir: savula/postgres/PR/hapg
   workflow: nutanix-backend
-- name: savula-postgresql-PR-etcd
-  dir: savula/postgresql/PR/etcd
+- name: savula-postgres-PR-etcd
+  dir: savula/postgres/PR/etcd
   workflow: nutanix-backend
-- name: savula-postgresql-PR-backrest
-  dir: savula/postgresql/PR/backrest
+- name: savula-postgres-PR-backrest
+  dir: savula/postgres/PR/backrest
   workflow: nutanix-backend
 # T
 # U
