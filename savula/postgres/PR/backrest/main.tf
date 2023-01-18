@@ -3,10 +3,10 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vlsaetcd01"]
-  hapg_servers    = ["us01vlsahapg01","us01vlsahapg02"]
-  haproxy_server  = ["us01vlsapx01"]
-  backrest_server = ["us01vlsabk01"]
+  etcd_servers    = ["us01vlasetcd01"]
+  hapg_servers    = ["us01vlashapg01","us01vlashapg02"]
+  haproxy_server  = ["us01vlaspx01"]
+  backrest_server = ["us01vlasbk01"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "pg_ny2test"
@@ -32,7 +32,7 @@ locals {
   }
 }
 
-module "pgclstrdm_backrest_1" {
+module "pgclstrdm1_backrest_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -51,10 +51,10 @@ module "pgclstrdm_backrest_1" {
   }
 }
 
-output "pgclstrdm_backrest_1" {
+output "pgclstrdm1_backrest_1" {
   value = {
-    "fqdn"  = "module.pgclstrdm_backrest_1.fqdn",
-    "alias" = "module.pgclstrdm_backrest_1.alias",
-    "ip"    = "module.pgclstrdm_backrest_1.ip",
+    "fqdn"  = "module.pgclstrdm1_backrest_1.fqdn",
+    "alias" = "module.pgclstrdm1_backrest_1.alias",
+    "ip"    = "module.pgclstrdm1_backrest_1.ip",
   }
 }
