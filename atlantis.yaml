@@ -49,6 +49,15 @@ projects:
 - name: savula-postgres-PR-backrest
   dir: savula/postgres/PR/backrest
   workflow: nutanix-backend
+- name: savula-postgres-DR-hapg
+  dir: savula/postgres/DR/hapg
+  workflow: nutanix-backend
+- name: savula-postgres-DR-etcd
+  dir: savula/postgres/DR/etcd
+  workflow: nutanix-backend
+- name: savula-postgres-DR-backrest
+  dir: savula/postgres/DR/backrest
+  workflow: nutanix-backend
 # T
 # U
 # V
