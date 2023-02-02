@@ -38,3 +38,11 @@ projects:
 # X
 # Y
 # Z
+- name: postgres-pr-hapg
+  dir: postgres/PR/hapg
+  workflow: nutanix-backend
+- name: postgres-pr-etcd
+  dir: postgres/PR/etcd
+  workflow: nutanix-backend
+- name: postgres-pr-backrest
+  dir: postgres/PR/backrest
