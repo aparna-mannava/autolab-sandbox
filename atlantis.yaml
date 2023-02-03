@@ -24,6 +24,9 @@ projects:
   dir: njani/dgb19cR8
   workflow: nutanix-backend
 # O
+- name: njani_ora19cr8
+  dir: njani/ora19cr8
+  workflow: nutanix-backend
 # P
 # Q
 # R
