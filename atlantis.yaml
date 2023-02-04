@@ -22,6 +22,9 @@ projects:
 - name: mohanpg
   dir: Mohan/postgres/PR/hapg
   workflow: nutanix-backend
+- name: mohanetcd
+  dir: Mohan/postgres/PR/etcd
+  workflow: nutanix-backend
 # N
 - name: njani_dgb19cR8
   dir: njani/dgb19cR8
