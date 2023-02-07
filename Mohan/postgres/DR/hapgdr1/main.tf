@@ -3,10 +3,10 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vlmrdretcd01"]
-  hapg_servers    = ["us01vlmrdrhapg01","us01vlmrdrhapg02"]
-  haproxy_server  = ["us01vlmrdrpx01"]
-  backrest_server = ["us01vlmrdrbk01"]
+  etcd_servers    = ["us01vlmdretcd01"]
+  hapg_servers    = ["us01vlmdrhapg01","us01vlmdrhapg02"]
+  haproxy_server  = ["us01vlmdrpx01"]
+  backrest_server = ["us01vlmdrbk01"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "pg_ny2test"
