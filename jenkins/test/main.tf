@@ -21,7 +21,7 @@ locals {
 
 module "app_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd1188"
+  hostname             = "us01vlcfrmrd110"
   alias                = "dynamic-scan-standalones"
   bt_infra_network     = "ny2-dgb-development"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
