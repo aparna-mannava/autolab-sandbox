@@ -9,6 +9,9 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cjenkins
+  dir: cjenkins
+  workflow: nutanix-backend
 # D
 # E
 # F
