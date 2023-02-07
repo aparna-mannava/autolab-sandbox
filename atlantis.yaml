@@ -28,6 +28,9 @@ projects:
 - name: mohanbackrest
   dir: Mohan/postgres/PR/pgbackrest
   workflow: nutanix-backend
+- name: mohanpgdr
+  dir: Mohan/postgres/DR/hapgdr1
+  workflow: nutanix-backend
 # N
 - name: njani_dgb19cR8
   dir: njani/dgb19cR8
