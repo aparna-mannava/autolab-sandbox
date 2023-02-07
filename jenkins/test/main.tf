@@ -30,6 +30,7 @@ module "app_server_1" {
   os_version           = "rhel7"
   foreman_environment  = "feature_CFRMRD_37888"
   foreman_hostgroup    = "CFRMRD OpenSearch"
+  lob                  = "CFRM"
   datacenter           = "ny2"
   external_facts       = local.app_server_1_facts
   additional_disks     = {
