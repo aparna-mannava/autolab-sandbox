@@ -55,6 +55,9 @@ projects:
 - name: spatel_dgbpatch
   dir: spatel/dgb
   workflow: nutanix-backend
+- name: spatel_dgbdbpatch
+  dir: spatel/dgb_db
+  workflow: nutanix-backend
 # T
 # U
 # V
