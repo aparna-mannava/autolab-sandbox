@@ -3,116 +3,67 @@ terraform {
 }
 
 locals {
-  lob         = "dgb"
-  product     = "dgb"
+  product     = "cfrm"
   environment = "feature_CLOUD_116758"
   datacenter  = "ny2"
-  facts         = {
-    "bt_customer"         = "fi1234" #ex: fiXXXX
-    "bt_tier"             = "sbx" #ex: sbx, tst, td, demo
-    "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
-    "bt_product"          = "dgb"
-    "bt_product_version"  = "3.6"
+  facts       = {
+    "bt_product"         = "cfrm"
+    "bt_customer"        = "bfs"
+    "bt_tier"            = "prod"
+    "bt_env"             = "1"
+    "bt_role"            = "oradb"
+    "bt_deployment_mode" = "live"
+    "bt_infra_network"   = "ny2-autolab-app-ahv"
+    "bt_infra_cluster"   = "ny5-aza-ntnx-14"
+    "db_memory"          = "4096"
+    "obs_memory"         = "4096"
+    "db_cpus"            = "4"
+    "obs_cpus"           = "2"
+    "os_version"         = "rhel7"
+    "db01_hostname"      = "us01vlautdbs30"
+
+
   }
-  facts_2         = {
-    "bt_customer"         = "fi1234" #ex: fiXXXX
-    "bt_tier"             = "pr" #ex: sbx, tst, td, demo
-    "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
-    "bt_product"          = "dgb"
-    "bt_product_version"  = "3.6"
-  }
-  facts_3         = {
-    "bt_customer"         = "fi1234" #ex: fiXXXX
-    "bt_tier"             = "dr" #ex: sbx, tst, td, demo
-    "bt_env"              = "" #ex: leave blank for first env, or non-zero-padded number
-    "bt_product"          = "dgb"
-    "bt_product_version"  = "3.6"
+  db01facts    = {
+    "bt_product" = "${local.facts.bt_product}"
+    "bt_customer" = "${local.facts.bt_customer}"
+    "bt_tier" = "${local.facts.bt_tier}"
+    "bt_role" = "${local.facts.bt_role}"
+    "bt_env" = "${local.facts.bt_env}"
+    "bt_server_mode" = "db"
+    "bt_server_number" = "84"
+    "bt_deployment_mode" = "${local.facts.bt_deployment_mode}"
+    "bt_alias" = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-bs30-${local.facts.bt_deployment_mode}"
   }
 }
 
-module "cloud_dbserver_1" {
-  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsb39"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db39"
-  bt_infra_cluster     = "ny5-aza-ntnx-14"
-  bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel7"
-  cpus                 = "4"
-  memory               = "8192"
+module "oradb_server_1" {
+  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  hostname             = "${local.facts.db01_hostname}"
+  alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.db01facts.bt_server_mode}${local.db01facts.bt_server_number}-${local.facts.bt_deployment_mode}"
+  bt_infra_network     = "${local.facts.bt_infra_network}"
+  bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
+  os_version           = "${local.facts.os_version}"
+  cpus                 = "${local.facts.db_cpus}"
+  memory               = "${local.facts.db_memory}"
+  lob                  = "CFRM"
   foreman_environment  = local.environment
-  lob                  = "CLOUD"
   foreman_hostgroup    = "BT Base Server"
   datacenter           = local.datacenter
-  external_facts       = local.facts
+  external_facts       = local.db01facts
   additional_disks     = {
     1 = "200",
-    2 = "200",
-    3 = "200"
+    2 = "100",
+    3 = "100",
+    4 = "100"
   }
 }
 
-module "cloud_dbserver_2" {
-  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsb40"
-  alias                = "${local.lob}-${local.facts_2.bt_tier}${local.facts_2.bt_env}-${local.facts_2.bt_customer}-db40"
-  bt_infra_cluster     = "ny5-aza-ntnx-14"
-  bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel7"
-  cpus                 = "4"
-  memory               = "8192"
-  foreman_environment  = local.environment
-  lob                  = "CLOUD"
-  foreman_hostgroup    = "BT Base Server"
-  datacenter           = local.datacenter
-  external_facts       = local.facts_2
-  additional_disks     = {
-    1 = "200",
-    2 = "200",
-    3 = "200"
-  }
-}
 
-module "cloud_dbserver_3" {
-  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsb41"
-  alias                = "${local.lob}-${local.facts_3.bt_tier}${local.facts_3.bt_env}-${local.facts_3.bt_customer}-db41"
-  bt_infra_cluster     = "ny5-aza-ntnx-14"
-  bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel7"
-  cpus                 = "4"
-  memory               = "8192"
-  foreman_environment  = local.environment
-  lob                  = "CLOUD"
-  foreman_hostgroup    = "BT Base Server"
-  datacenter           = local.datacenter
-  external_facts       = local.facts_3
-  additional_disks     = {
-    1 = "200",
-    2 = "200",
-    3 = "200"
-  }
-}
-
-output "cloud_dbserver_1" {
+output "oradb_server_1" {
   value = {
-    "fqdn"  = module.cloud_dbserver_1.fqdn,
-    "alias" = module.cloud_dbserver_1.alias,
-    "ip"    = module.cloud_dbserver_1.ip
-  }
-}
-
-output "cloud_dbserver_2" {
-  value = {
-    "fqdn"  = module.cloud_dbserver_2.fqdn,
-    "alias" = module.cloud_dbserver_2.alias,
-    "ip"    = module.cloud_dbserver_2.ip
-  }
-}
-
-output "cloud_dbserver_3" {
-  value = {
-    "fqdn"  = module.cloud_dbserver_3.fqdn,
-    "alias" = module.cloud_dbserver_3.alias,
-    "ip"    = module.cloud_dbserver_3.ip
+    "fqdn"  = "${module.oradb_server_1.fqdn}",
+    "alias" = "${module.oradb_server_1.alias}",
+    "ip"    = "${module.oradb_server_1.ip}",
   }
 }
