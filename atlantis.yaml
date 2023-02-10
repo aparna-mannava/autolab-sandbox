@@ -53,7 +53,7 @@ projects:
 # R
 # S
 - name: sarathpg
-  dir: sarath/PR
+  dir: Sarath/PR
   workflow: nutanix-backend
 - name: spatel_dgbpatch
   dir: spatel/dgb
