@@ -61,6 +61,9 @@ projects:
 - name: spatel_dgbdbpatch
   dir: spatel/dgb_db
   workflow: nutanix-backend
+- name: spatel_frmdbpatch
+  dir: spatel/cfrm_patch
+  workflow: nutanix-backend
 # T
 # U
 # V
