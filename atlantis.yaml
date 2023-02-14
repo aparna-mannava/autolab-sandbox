@@ -67,6 +67,9 @@ projects:
 - name: postgres-SAVULA-pg1
   dir: postgres/SAVULA/pg1
   workflow: nutanix-backend
+- name: postgres-SAVULA-pg2
+  dir: postgres/SAVULA/pg2
+  workflow: nutanix-backend
 # T
 # U
 # V
