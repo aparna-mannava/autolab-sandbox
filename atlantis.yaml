@@ -64,6 +64,9 @@ projects:
 - name: spatel_frmdbpatch
   dir: spatel/cfrm_patch
   workflow: nutanix-backend
+- name: postgres-SAVULA-pg1
+  dir: postgres/SAVULA/pg1
+  workflow: nutanix-backend
 # T
 # U
 # V
