@@ -52,6 +52,12 @@ projects:
 # Q
 # R
 # S
+- name: sarath1etcd
+  dir: sarath1/postgres/PR/etcd
+  workflow: nutanix-backend
+- name: sarath1backrest
+  dir: sarath1/postgres/PR/pgbackrest
+  workflow: nutanix-backend
 - name: sarathpg
   dir: Sarath/PR
   workflow: nutanix-backend
