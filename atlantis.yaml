@@ -61,6 +61,15 @@ projects:
 - name: sarathpg
   dir: Sarath/PR
   workflow: nutanix-backend
+- name: sarathpgdr
+  dir: Sarath/postgres/DR/hapgdr
+  workflow: nutanix-backend
+- name: sarathetcdr
+  dir: Sarath/postgres/DR/etcddr
+  workflow: nutanix-backend
+- name: sarathbackrestdr
+  dir: Sarath/postgres/DR/pgbackrestdr
+  workflow: nutanix-backend
 - name: spatel_dgbpatch
   dir: spatel/dgb
   workflow: nutanix-backend
