@@ -85,6 +85,9 @@ projects:
 - name: postgres-SAVULA-pg2
   dir: postgres/SAVULA/pg2
   workflow: nutanix-backend
+- name: dgb-demo1
+  dir: saumilp/dgb
+  workflow: nutanix-backend
 # T
 # U
 # V
