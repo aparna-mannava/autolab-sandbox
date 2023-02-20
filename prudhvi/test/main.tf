@@ -21,8 +21,8 @@ locals {
 
 module "app_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd121"
-  alias                = "dynamic-scan-standalonew"
+  hostname             = "us01vlcfrmrd122"
+  alias                = "dynamic-scan-standaloner"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   cpus                 = 6
