@@ -24,7 +24,7 @@ module "app_server_1" {
   hostname             = "us01vlcfrmrd119"
   alias                = "dynamic-scan-standalonet"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-aza-ntnx-19"
+  bt_infra_cluster     = "ny5-aze-ntnx-21"
   cpus                 = 6
   memory               = 24000
   os_version           = "rhel7"
