@@ -49,6 +49,9 @@ projects:
   dir: njani/ora19cr8
   workflow: nutanix-backend
 # P
+- name: prudhvi
+  dir: prudhvi/test
+  workflow: nutanix-backend
 # Q
 # R
 # S
