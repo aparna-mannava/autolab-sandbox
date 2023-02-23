@@ -274,9 +274,9 @@ module "artemis_backup_1" {
   }
 }
 
-module "artemis_2" {
+module "artemis_backup_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.artemis_primary[2]
+  hostname             = local.artemis_backup[2]
   alias                = "fm-${local.facts.bt_country}-${local.facts.bt_tier}-backup-${local.facts.bt_role}3"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
@@ -305,9 +305,9 @@ module "artemis_2" {
   }
 }
 
-module "artemis_3" {
+module "artemis_backup_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.artemis_primary[3]
+  hostname             = local.artemis_backup[3]
   alias                = "fm-${local.facts.bt_country}-${local.facts.bt_tier}-backup-${local.facts.bt_role}4"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
@@ -336,9 +336,9 @@ module "artemis_3" {
   }
 }
 
-module "artemis_4" {
+module "artemis_backup_4" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.artemis_primary[4]
+  hostname             = local.artemis_backup[4]
   alias                = "fm-${local.facts.bt_country}-${local.facts.bt_tier}-backup-${local.facts.bt_role}5"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
@@ -367,9 +367,9 @@ module "artemis_4" {
   }
 }
 
-module "artemis_5" {
+module "artemis_backup_5" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = local.artemis_primary[5]
+  hostname             = local.artemis_backup[5]
   alias                = "fm-${local.facts.bt_country}-${local.facts.bt_tier}-backup-${local.facts.bt_role}6"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
