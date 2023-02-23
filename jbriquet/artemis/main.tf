@@ -7,7 +7,7 @@ locals {
   artemis_backup        = ["us01vlfmamqbk01","us01vlfmamqbk02","us01vlfmamqbk03", "us01vlfmamqbk04","us01vlfmamqbk05","us01vlfmamqbk06"]
   os_version            = "rhel8"
   lob                   = "FMCLOUD"
-  cluster               = "ny5-azc-ntnx-16"
+  cluster               = "ny5-aza-ntnx-19"
   network               = "ny2-autolab-app-ahv"
   product               = "fmcloud"
   environment           = "master"
