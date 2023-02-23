@@ -10,7 +10,7 @@ locals {
   cluster               = "ny5-azc-ntnx-16"
   network               = "ny2-autolab-app-ahv"
   product               = "fmcloud"
-  environment           = "feature_FMDO_4762"
+  environment           = "master"
   domain                = "auto.saas-n.com"
   artemis_datacenter    = "ny2"
 
