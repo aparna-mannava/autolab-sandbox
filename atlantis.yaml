@@ -25,6 +25,9 @@ projects:
 - name: artemis
   dir: jenkins/test
   workflow: nutanix-backend
+- name: jbriquetartemis
+  dir: jbriquet/artemis
+  workflow: nutanix-backend
 # K
 # L
 # M
