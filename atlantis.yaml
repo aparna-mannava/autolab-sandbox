@@ -9,9 +9,6 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cjenkins
-  dir: cjenkins
-  workflow: nutanix-backend
 # D
 # E
 # F
@@ -19,84 +16,15 @@ projects:
 # H
 # I
 # J
-- name: java
-  dir: java/test
-  workflow: nutanix-backend
-- name: artemis
-  dir: jenkins/test
-  workflow: nutanix-backend
-- name: jbriquetartemis
-  dir: jbriquet/artemis
-  workflow: nutanix-backend
 # K
 # L
 # M
-- name: mohanpg
-  dir: Mohan/postgres/PR/hapg
-  workflow: nutanix-backend
-- name: mohanetcd
-  dir: Mohan/postgres/PR/etcd
-  workflow: nutanix-backend
-- name: mohanbackrest
-  dir: Mohan/postgres/PR/pgbackrest
-  workflow: nutanix-backend
-- name: mohanpgdr
-  dir: Mohan/postgres/DR/hapgdr1
-  workflow: nutanix-backend
-- name: mohanetcdr
-  dir: Mohan/postgres/DR/etcddr
-  workflow: nutanix-backend
 # N
-- name: njani_dgb19cR8
-  dir: njani/dgb19cR8
-  workflow: nutanix-backend
 # O
-- name: njani_ora19cr8
-  dir: njani/ora19cr8
-  workflow: nutanix-backend
 # P
-- name: prudhvi
-  dir: prudhvi/test
-  workflow: nutanix-backend
 # Q
 # R
 # S
-- name: sarath1etcd
-  dir: sarath1/postgres/PR/etcd
-  workflow: nutanix-backend
-- name: sarath1backrest
-  dir: sarath1/postgres/PR/pgbackrest
-  workflow: nutanix-backend
-- name: sarathpg
-  dir: Sarath/PR
-  workflow: nutanix-backend
-- name: sarathpgdr
-  dir: Sarath/postgres/DR/hapgdr
-  workflow: nutanix-backend
-- name: sarathetcdr
-  dir: Sarath/postgres/DR/etcddr
-  workflow: nutanix-backend
-- name: sarathbackrestdr
-  dir: Sarath/postgres/DR/pgbackrestdr
-  workflow: nutanix-backend
-- name: spatel_dgbpatch
-  dir: spatel/dgb
-  workflow: nutanix-backend
-- name: spatel_dgbdbpatch
-  dir: spatel/dgb_db
-  workflow: nutanix-backend
-- name: spatel_frmdbpatch
-  dir: spatel/cfrm_patch
-  workflow: nutanix-backend
-- name: postgres-SAVULA-pg1
-  dir: postgres/SAVULA/pg1
-  workflow: nutanix-backend
-- name: postgres-SAVULA-pg2
-  dir: postgres/SAVULA/pg2
-  workflow: nutanix-backend
-- name: dgb-demo1
-  dir: saumilp/dgb
-  workflow: nutanix-backend
 # T
 # U
 # V
@@ -104,11 +32,3 @@ projects:
 # X
 # Y
 # Z
-- name: postgres-pr-hapg
-  dir: postgres/PR/hapg
-  workflow: nutanix-backend
-- name: postgres-pr-etcd
-  dir: postgres/PR/etcd
-  workflow: nutanix-backend
-- name: postgres-pr-backrest
-  dir: postgres/PR/backrest
