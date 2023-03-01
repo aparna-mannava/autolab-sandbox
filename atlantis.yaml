@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -16,9 +16,6 @@ projects:
 # H
 # I
 # J
-- name: jbriquetartemis
-  dir: jbriquet/artemis
-  workflow: nutanix-backend
 # K
 # L
 # M
