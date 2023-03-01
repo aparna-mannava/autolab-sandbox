@@ -16,9 +16,6 @@ projects:
 # H
 # I
 # J
-- name: jbriquetartemis
-  dir: jbriquet/artemis
-  workflow: nutanix-backend
 # K
 # L
 # M
