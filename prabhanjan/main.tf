@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {}
 }
-​
+
 module "rhel9srea1" {
 source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
 hostname            = "us01vlr9srea2"
