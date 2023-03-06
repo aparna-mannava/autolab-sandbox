@@ -16,7 +16,7 @@ foreman_environment = "master"
 foreman_hostgroup   = "BT Base Server"
 datacenter          = "ny2"
 }
-​
+
 output "rhel9srea1" {
 value = {
 "fqdn"  = module.rhel9srea1.fqdn,
