@@ -6,7 +6,7 @@ terraform {
 module "rhel9srea1" {
 source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
 hostname            = "us01vlr9srea2"
-bt_infra_cluster    = "ny5-azf-ntnx-24"
+bt_infra_cluster    = "ny5-azc-ntnx-16"
 bt_infra_network    = "ny2-autolab-app-ahv"
 cpus                = 2
 lob                 = "CLOUD"
