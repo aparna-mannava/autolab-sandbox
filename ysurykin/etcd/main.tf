@@ -13,7 +13,7 @@ locals {
   db_env          = "ny2-aze-ntnx-11"
   cluster         = "ny2-autolab-app-ahv"
   hostgroup       = "BT PMX ETCD for PostgreSQL Server"
-  etcd_servers    = ["us01vlsndbxdmo11","us01vlsndbxdmo12","us01vlsndbxdmo13"]
+  etcd_servers    = ["us01vlsndbxd11","us01vlsndbxd12","us01vlsndbxd13"]
   facts           = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
