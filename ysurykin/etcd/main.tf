@@ -7,7 +7,7 @@ locals {
   lob             = "PBS"
   tier            = "dev"
   bt_env          = ""
-  domain          = ""
+  domain          = "auto.saas-n.com"
   environment     = "master"
   datacenter      = "ny2"
   db_env          = "ny2-aze-ntnx-11"
@@ -25,7 +25,7 @@ locals {
 }
 
 module "pmx_etcd_0" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = local.etcd_servers[0]
   alias                = "${local.bt_product}-${local.tier}${local.bt_env}-etcd01"
   bt_infra_network     = local.db_env
@@ -52,7 +52,7 @@ output "pmx_etcd_0" {
 }
 
 module "pmx_etcd_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = local.etcd_servers[1]
   alias                = "${local.bt_product}-${local.tier}${local.bt_env}-etcd02"
   bt_infra_network     = local.db_env
@@ -79,7 +79,7 @@ output "pmx_etcd_1" {
 }
 
 module "pmx_etcd_2" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = local.etcd_servers[2]
   alias                = "${local.bt_product}-${local.tier}${local.bt_env}-etcd03"
   bt_infra_network     = local.db_env
