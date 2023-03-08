@@ -10,8 +10,8 @@ locals {
   domain          = "auto.saas-n.com"
   environment     = "master"
   datacenter      = "ny2"
-  db_env          = "ny2-aze-ntnx-11"
-  cluster         = "ny2-autolab-app-ahv"
+  db_env          = "ny2-autolab-app-ahv"
+  cluster         = "ny5-aza-ntnx-19"
   hostgroup       = "BT PMX ETCD for PostgreSQL Server"
   etcd_servers    = ["us01vlsndbxd11","us01vlsndbxd12","us01vlsndbxd13"]
   facts           = {
