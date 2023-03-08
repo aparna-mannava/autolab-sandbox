@@ -12,7 +12,7 @@ locals {
   datacenter      = "ny2"
   db_env          = "ny2-autolab-app-ahv"
   cluster         = "ny5-aza-ntnx-19"
-  hostgroup       = "BT PMX ETCD for PostgreSQL Server"
+  hostgroup       = "BT ETCD for PostgreSQL Server"
   etcd_servers    = ["us01vlsndbxd11","us01vlsndbxd12","us01vlsndbxd13"]
   facts           = {
     "bt_env"                  = local.bt_env
