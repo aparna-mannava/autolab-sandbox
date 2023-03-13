@@ -1,6 +1,18 @@
 terraform {
   backend "s3" {}
 }
+locals {
+  product     = "inf"
+  environment = "master"
+  hostgroup   = "BT Base Server"
+  facts = {
+    bt_product = "inf"
+    bt_role    = "base"
+    bt_env     = "master"
+    bt_tier    = "dev"
+  }
+  datacenter = "ny2"
+}
 
 module "dmts05" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
@@ -12,8 +24,9 @@ module "dmts05" {
   lob                 = "CLOUD"
   memory              = 2048
   os_version          = "rhel9"
-  foreman_environment = "master"
-  foreman_hostgroup   = "BT Base Server"
+  external_facts      = local.facts
+  foreman_environment = local.environment
+  foreman_hostgroup   = local.hostgroup
   datacenter          = "ny2"
 }
 
