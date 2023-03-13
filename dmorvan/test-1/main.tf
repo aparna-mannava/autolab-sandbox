@@ -6,7 +6,7 @@ module "dmts05" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = "us01vldmts05"
   alias               = "dmts-ts-05"
-  bt_infra_cluster    = "ny5-azf-ntnx-23"
+  bt_infra_cluster    = "ny5-aza-ntnx-14"
   bt_infra_network    = "ny2-autolab-app-ahv"
   cpus                = 2
   lob                 = "CLOUD"
