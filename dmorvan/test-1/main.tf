@@ -11,7 +11,7 @@ module "dmts05" {
   cpus                = 2
   lob                 = "CLOUD"
   memory              = 2048
-  os_version          = "rhel8"
+  os_version          = "rhel9"
   foreman_environment = "nonprod"
   foreman_hostgroup   = "BT Base Server"
   datacenter          = "ny2"
