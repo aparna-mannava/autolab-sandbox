@@ -10,6 +10,9 @@ projects:
 # B
 # C
 # D
+- name: dmtest1
+  dir: dmorvan/test-1
+  workflow: nutanix-backend
 # E
 # F
 # G
