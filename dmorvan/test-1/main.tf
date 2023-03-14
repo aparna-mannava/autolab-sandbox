@@ -11,7 +11,6 @@ locals {
     bt_env     = "master"
     bt_tier    = "dev"
   }
-  datacenter = "ny2"
 }
 
 module "dmts05" {
