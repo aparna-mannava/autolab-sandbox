@@ -5,7 +5,9 @@ terraform {
 locals {
     facts       = {
       bt_lob           = "CLOUD"
-      bt_tier          = "dev"
+      bt_tier          = "pr"
+      bt_env           = "1"
+      bt_jenkins_mode  = "agent"
       hostgroup        = "BT Database Jenkins Server"
       environment      = "master"
       datacenter       = "ny2"
