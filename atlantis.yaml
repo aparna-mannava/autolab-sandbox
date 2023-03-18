@@ -25,12 +25,15 @@ projects:
 # N
 # O
 # P
-  - name: prabhanjan
-    dir: prabhanjan
-    workflow: nutanix-backend
+- name: prabhanjan
+  dir: prabhanjan
+  workflow: nutanix-backend
 # Q
 # R
 # S
+- name: jenkins8
+  dir: spatel/jenkins
+  workflow: nutanix-backend
 # T
 # U
 # V
