@@ -32,7 +32,7 @@ projects:
 # R
 # S
 - name: jenkins8
-  dir: spatel/dgb
+  dir: spatel/jenkins
   workflow: nutanix-backend
 # T
 # U
