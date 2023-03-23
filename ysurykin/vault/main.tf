@@ -10,7 +10,7 @@ locals {
 
 module "vault_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01tstvlt01"
+  hostname             = "us01vlvlt01"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "PBS"
