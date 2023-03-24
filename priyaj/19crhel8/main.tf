@@ -17,7 +17,7 @@ locals {
 module "cloud_dbserver_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01fmlora19c8"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-sb90"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
