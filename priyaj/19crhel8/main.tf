@@ -30,7 +30,7 @@ module "cloud_dbserver_1" {
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "200",
+    1 = "250",
     2 = "200",
     3 = "200"
   }
