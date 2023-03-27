@@ -26,11 +26,11 @@ module "cloud_dbserver_1" {
   memory               = "8192"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
-  foreman_hostgroup    = "BT FMLGT Oracle Server"
+  foreman_hostgroup    = "BT Base Server"
   datacenter           = local.datacenter
   external_facts       = local.facts
   additional_disks     = {
-    1 = "250",
+    1 = "300",
     2 = "200",
     3 = "200"
   }
