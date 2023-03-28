@@ -13,7 +13,7 @@ locals {
   bt_role         = "postgres"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "master"
-  cluster         = "ny2-aze-ntnx-12"
+  cluster         = "ny2-azd-ntnx-10"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   facts           = {
@@ -26,7 +26,7 @@ locals {
 }
 
 module "ny2_cdb_etcd_0" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
