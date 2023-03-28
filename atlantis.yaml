@@ -26,6 +26,9 @@ projects:
 # L
 # M
 # N
+- name: pgsql14-etcd1
+  dir: njani/pgsql14/etcd
+  workflow: nutanix-backend
 # O
 # P
 - name: prabhanjan
@@ -50,7 +53,7 @@ projects:
 - name: ysurykin_vault
   dir: ysurykin/vault
   workflow: nutanix-backend
-  
+
 - name: priyaj_19crhel8
   dir: priyaj/19crhel8
   workflow: nutanix-backend
