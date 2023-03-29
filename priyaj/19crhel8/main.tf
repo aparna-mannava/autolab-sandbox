@@ -4,7 +4,7 @@ terraform {
 
 locals {
   environment = "master"
-  lob         = "fml"
+  lob         = "CLOUD"
   datacenter  = "ny2"
   facts         = {
     "bt_lob"              = "fml"
