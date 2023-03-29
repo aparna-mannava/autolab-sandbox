@@ -22,7 +22,7 @@ module "cloud_120573" {
   hostname             = "${local.hostname}"
   alias                = "sql-2019-dba01"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
-  bt_infra_network     = "ny2-autolab-db"
+  bt_infra_network     = "ny2-autolab-db-ahv"
   lob                  = "DGB"
   os_version           = "win2019"
   cpus                 = "4"
