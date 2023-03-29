@@ -29,6 +29,9 @@ projects:
 - name: pgsql14-etcd1
   dir: njani/pgsql14/etcd
   workflow: nutanix-backend
+- name: pgsql14-etcdr8
+  dir: njani/pgsql14/etcdr8
+  workflow: nutanix-backend
 # O
 # P
 - name: prabhanjan
