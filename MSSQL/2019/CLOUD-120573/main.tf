@@ -7,7 +7,7 @@ locals {
   environment    = "feature_CLOUD_120573"
   datacenter     = "ny2"
   hostname       = "us01vwhsp20191"
-  hostgroup      = "BT Base Windows Server"
+  hostgroup      = "BT MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
     "bt_product"      = "cloud"
