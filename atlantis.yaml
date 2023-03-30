@@ -43,9 +43,7 @@ projects:
 - name: jenkins8
   dir: spatel/jenkins
   workflow: nutanix-backend
-- name: sql-2019
-  dir: MSSQL/2019/CLOUD-120573
-  workflow: nutanix-backend
+
 - name: sql-20191
   dir: MSSQL/2019/CLOUD-1205730
   workflow: nutanix-backend
