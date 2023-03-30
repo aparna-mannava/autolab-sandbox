@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product        = "cloud"
-  environment    = "feature_CLOUD_120573"
+  environment    = "feature_CLOUD_120665"
   datacenter     = "ny2"
   hostname       = "us01vwdba03"
   hostgroup      = "BT MSSQL 2019 Server"
