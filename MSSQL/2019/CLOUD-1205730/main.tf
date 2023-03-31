@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product        = "cloud"
-  environment    = "master"
+  environment    = "feature_CLOUD_120573"
   datacenter     = "ny2"
   hostname       = "us01vwdba03"
   hostgroup      = "BT MSSQL 2019 Server"
@@ -33,7 +33,7 @@ module "cloud_120573" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "250",
+    2 = "260",
     3 = "200",
     4 = "200",
     5 = "200",
