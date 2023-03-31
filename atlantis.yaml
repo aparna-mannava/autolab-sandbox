@@ -10,9 +10,15 @@ projects:
 # B
 # C
 # D
+- name: dmtest1
+  dir: dmorvan/test-1
+  workflow: nutanix-backend
 # E
 # F
 # G
+- name: gaurav
+  dir: gaurav
+  workflow: nutanix-backend
 # H
 # I
 # J
@@ -20,11 +26,27 @@ projects:
 # L
 # M
 # N
+- name: pgsql14-etcd1
+  dir: njani/pgsql14/etcd
+  workflow: nutanix-backend
+- name: pgsql14-etcdr8
+  dir: njani/pgsql14/etcdr8
+  workflow: nutanix-backend
 # O
 # P
+- name: prabhanjan
+  dir: prabhanjan
+  workflow: nutanix-backend
 # Q
 # R
 # S
+- name: jenkins8
+  dir: spatel/jenkins
+  workflow: nutanix-backend
+
+- name: sql-20191
+  dir: MSSQL/2019/CLOUD-1205730
+  workflow: nutanix-backend
 # T
 # U
 # V
@@ -41,5 +63,8 @@ projects:
 
 - name: ysurykin_hapg
   dir: ysurykin/hapg
+
+- name: priyaj_19crhel8
+  dir: priyaj/19crhel8
   workflow: nutanix-backend
 # Z
