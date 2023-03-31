@@ -6,7 +6,7 @@ locals {
   product        = "cloud"
   environment    = "feature_CLOUD_120573"
   datacenter     = "ny2"
-  hostname       = "us01vwdba03"
+  hostname       = "us01vwssms04"
   hostgroup      = "BT MSSQL 2019 Server"
   facts          = {
     "bt_env"          = "1"
@@ -20,7 +20,7 @@ locals {
 module "cloud_120573" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
-  alias                = "sql-2019-dba03"
+  alias                = "sql-ssms04"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-db-ahv"
   lob                  = "DGB"
