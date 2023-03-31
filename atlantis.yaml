@@ -38,4 +38,8 @@ projects:
 - name: ysurykin_vault
   dir: ysurykin/vault
   workflow: nutanix-backend
+
+- name: ysurykin_hapg
+  dir: ysurykin/hapg
+  workflow: nutanix-backend
 # Z
