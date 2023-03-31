@@ -33,9 +33,9 @@ module "cloud_120573" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "200",
-    2 = "200",
+    2 = "250",
     3 = "200",
-    4 = "200",
+    4 = "210",
     5 = "200",
     6 = "200"
   }
