@@ -31,4 +31,18 @@ projects:
 # W
 # X
 # Y
+- name: ysurykin_etcd
+  dir: ysurykin/etcd
+  workflow: nutanix-backend
+
+- name: ysurykin_vault
+  dir: ysurykin/vault
+  workflow: nutanix-backend
+
+- name: ysurykin_hapg
+  dir: ysurykin/hapg
+
+- name: priyaj_19crhel8
+  dir: priyaj/19crhel8
+  workflow: nutanix-backend
 # Z
