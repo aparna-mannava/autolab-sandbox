@@ -17,6 +17,7 @@ locals {
   hapg_servers    = ["us01vlsndbpg11","us01vlsndbpg12","us01vlsndbpg13"]
   haproxy_server  = ["us01vlsndbpxy1"]
   backrest_server = ["us01vllkp1"]
+  fw_group        = "PMX_QA_63_DB"
   facts           = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
