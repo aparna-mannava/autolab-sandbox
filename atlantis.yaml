@@ -31,9 +31,9 @@ projects:
 # W
 # X
 # Y
-#- name: ysurykin_etcd
-#  dir: ysurykin/etcd
-#  workflow: nutanix-backend
+- name: ysurykin_etcd
+  dir: ysurykin/etcd
+  workflow: nutanix-backend
 
 - name: ysurykin_vault
   dir: ysurykin/vault
