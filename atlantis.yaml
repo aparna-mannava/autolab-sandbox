@@ -22,6 +22,9 @@ projects:
 # N
 # O
 # P
+- name: hsp_mssql
+  dir: MSSQL-2019/SSMS
+  workflow: nutanix-backend
 # Q
 # R
 # S
