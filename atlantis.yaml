@@ -41,6 +41,7 @@ projects:
 
 - name: ysurykin_hapg
   dir: ysurykin/hapg
+  workflow: nutanix-backend
 
 - name: priyaj_19crhel8
   dir: priyaj/19crhel8
