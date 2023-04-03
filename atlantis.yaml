@@ -43,6 +43,10 @@ projects:
   dir: ysurykin/hapg
   workflow: nutanix-backend
 
+- name: ysurykin_backrest
+  dir: ysurykin/backrest
+  workflow: nutanix-backend
+
 - name: priyaj_19crhel8
   dir: priyaj/19crhel8
   workflow: nutanix-backend
