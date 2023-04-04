@@ -28,6 +28,9 @@ projects:
 - name: pgsql-rhel8-etcdnodes
   dir: njani/pgsql-rhel8/etcdnodes
   workflow: nutanix-backend
+- name: pgsql-rhel8-hapgnodes
+  dir: njani/pgsql-rhel8/hapgnodes
+  workflow: nutanix-backend
 - name: hsp_mssql
   dir: MSSQL-2019/SSMS
   workflow: nutanix-backend
