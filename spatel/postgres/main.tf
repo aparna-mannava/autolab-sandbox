@@ -15,7 +15,7 @@ locals {
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
   environment     = "feature_CLOUD_104855"
-  cluster         = "ny2-aze-ntnx-12"
+  cluster         = "ny5-aza-ntnx-19"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   facts           = {
