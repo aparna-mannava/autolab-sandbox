@@ -25,9 +25,18 @@ projects:
 - name: pgsql-rhel8-etcdnodes
   dir: njani/pgsql-rhel8/etcdnodes
   workflow: nutanix-backend
+- name: hsp_mssql
+  dir: MSSQL-2019/SSMS
+  workflow: nutanix-backend
+- name: hsp_mssql4
+  dir: MSSQL-2019/SSMS4
+  workflow: nutanix-backend
 # Q
 # R
 # S
+- name: postgres_ciscat
+  dir: spatel/postgres
+  workflow: nutanix-backend
 # T
 # U
 # V
@@ -44,6 +53,11 @@ projects:
 
 - name: ysurykin_hapg
   dir: ysurykin/hapg
+  workflow: nutanix-backend
+
+- name: ysurykin_backrest
+  dir: ysurykin/backrest
+  workflow: nutanix-backend
 
 - name: priyaj_19crhel8
   dir: priyaj/19crhel8

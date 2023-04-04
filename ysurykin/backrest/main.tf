@@ -16,6 +16,7 @@ locals {
   environment     = "master"
   cluster         = "ny5-aza-ntnx-19"
   network         = "ny2-autolab-db-ahv"
+  fw_group        = "PMX_QA_63_DB"
   facts = {
     "bt_env"                  = "${local.bt_env}"
     "bt_tier"                 = "${local.tier}"
@@ -26,7 +27,8 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "tlstest1"
+    "bt_cluster_name"         = "tlshapg1"
+    "bt_override_date"        = "2023-03-01"
   }
 }
 
