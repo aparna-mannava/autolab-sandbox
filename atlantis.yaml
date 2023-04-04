@@ -8,6 +8,9 @@ projects:
 #  dir: abc/123
 #  workflow: nutanix-backend
 # B
+- name: Bhanu
+  dir: Bhanu
+  workflow: nutanix-backend
 # C
 # D
 # E
