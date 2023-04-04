@@ -28,6 +28,9 @@ projects:
 # Q
 # R
 # S
+- name: postgres_ciscat
+  dir: spatel/postgres
+  workflow: nutanix-backend
 # T
 # U
 # V
