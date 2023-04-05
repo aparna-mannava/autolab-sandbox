@@ -19,9 +19,9 @@ locals {
   backrest_server = ["us01vllkp1"]
   fw_group        = "PMX_QA_63_DB"
   facts           = {
-    "bt_env"                  = local.bt_env
-    "bt_tier"                 = local.tier
-    "bt_product"              = local.bt_product
+    "bt_env"                  = "${local.bt_env}"
+    "bt_tier"                 = "${local.tier}"
+    "bt_product"              = "${local.bt_product}"
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
     "bt_pg_version"           = "12"
     "bt_cluster_name"         = "pmx-qa"
