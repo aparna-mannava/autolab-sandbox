@@ -12,7 +12,7 @@ locals {
   tier            = "nonprod"
   bt_env          = "1"
   bt_product      = "cloud"
-  bt_role         = "postgresql"
+  bt_role         = "pgbackrest"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
   environment     = "master"
@@ -53,6 +53,20 @@ locals {
     "bt_product"              = local.bt_product
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
   }
+  backrestfacts   = {
+    "bt_env"                  = local.bt_env
+    "bt_tier"                 = local.tier
+    "bt_product"              = local.bt_product
+    "bt_role"				          = local.bt_role
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
+    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
+    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
+    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
+    "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
+    "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
+    "bt_cluster_name"         = "hapgatpg14"
+    "bt_pg_version"           = "14"
+  }
 }
 
 
@@ -62,7 +76,7 @@ module "ny2_cdb_backrest_1" {
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   foreman_hostgroup    = "BT PG Backrest Server"
-  external_facts       = local.facts
+  external_facts       = local.backrestfacts
   foreman_environment  = local.environment
   datacenter           = local.datacenter
   lob                  = local.lob
