@@ -38,6 +38,7 @@ locals {
 
 }
 
+
 module "pulp_client01" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = local.pulp_client01.hostname
