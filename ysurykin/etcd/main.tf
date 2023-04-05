@@ -6,7 +6,7 @@ locals {
   bt_product      = "pmx"
   lob             = "PBS"
   tier            = "dev"
-  bt_env          = ""
+  bt_env          = "1"
   domain          = "auto.saas-n.com"
   environment     = "master"
   datacenter      = "ny2"
