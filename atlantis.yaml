@@ -1,15 +1,12 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: pulp-clients
-  dir: aarvelo/pulp-clients
-  workflow: nutanix-backend
 # B
 - name: Bhanu
   dir: Bhanu
