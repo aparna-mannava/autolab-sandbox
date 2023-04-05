@@ -7,6 +7,9 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: pulp-clients
+  dir: aarvelo/pulp-clients
+  workflow: nutanix-backend
 # B
 - name: Bhanu
   dir: Bhanu
