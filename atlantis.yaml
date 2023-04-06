@@ -25,6 +25,9 @@ projects:
 # N
 # O
 # P
+- name: prudhvi
+  dir: prudhvi/test
+  workflow: nutanix-backend
 - name: pgsql-rhel8-etcdnodes
   dir: njani/pgsql-rhel8/etcdnodes
   workflow: nutanix-backend
