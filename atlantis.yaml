@@ -50,6 +50,9 @@ projects:
   dir: spatel/postgres
   workflow: nutanix-backend
 # T
+- name: test
+  dir: test/prudhvi
+  workflow: nutanix-backend
 # U
 # V
 # W
