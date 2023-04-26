@@ -53,6 +53,9 @@ projects:
 - name: test
   dir: test/prudhvi
   workflow: nutanix-backend
+- name: tests
+  dir: tests/prudhvi
+  workflow: nutanix-backend
 # U
 # V
 # W
