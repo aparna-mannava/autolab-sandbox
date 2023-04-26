@@ -29,7 +29,7 @@ module "app_server_1" {
   memory               = 24000
   os_version           = "rhel7"
   foreman_environment  = "feature_CFRMRD_39527"
-  foreman_hostgroup    = "CFRMRD OpenSearch Cluster"
+  foreman_hostgroup    = "CFRMRD OpenSearch"
   lob                  = "CFRM"
   datacenter           = "ny2"
   external_facts       = local.app_server_1_facts
