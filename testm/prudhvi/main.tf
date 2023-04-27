@@ -15,6 +15,7 @@ locals {
       "bt_tier" = local.facts.bt_tier
       "bt_env" = local.facts.bt_env
       "bt_role" = "standalone"
+      "bt_opensearch_mode" = "cluster"
      }
     es02facts    = {
       "bt_customer" = local.facts.bt_customer
