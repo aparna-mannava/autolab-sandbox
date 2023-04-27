@@ -34,8 +34,8 @@ locals {
 
 module "elasticsearch_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd31"
-  alias                = "cfrmx-standalone11"
+  hostname             = "us01vlcfrmrd41"
+  alias                = "cfrmx-standaloneq"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   os_version           = "rhel7"
@@ -54,8 +54,8 @@ module "elasticsearch_1" {
 
 module "elasticsearch_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd32"
-  alias                = "cfrmx-opensearch9"
+  hostname             = "us01vlcfrmrd42"
+  alias                = "cfrmx-opensearchw"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   os_version           = "rhel7"
@@ -74,8 +74,8 @@ module "elasticsearch_2" {
 
 module "elasticsearch_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd033"
-  alias                = "cfrmx-opensearch5"
+  hostname             = "us01vlcfrmrd043"
+  alias                = "cfrmx-opensearche"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   os_version           = "rhel7"
