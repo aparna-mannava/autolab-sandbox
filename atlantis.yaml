@@ -52,6 +52,9 @@ projects:
 - name: saumil_oracle
   dir: spatel/oracle
   workflow: nutanix-backend
+- name: saumil_oracle12c
+  dir: spatel/oracle_12c
+  workflow: nutanix-backend
 # T
 - name: test
   dir: test/prudhvi
