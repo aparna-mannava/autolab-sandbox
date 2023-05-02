@@ -22,6 +22,9 @@ projects:
 # N
 # O
 # P
+- name: prudhvi
+  dir: prudhvi
+  workflow: nutanix-backend
 # Q
 # R
 # S
