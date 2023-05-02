@@ -39,7 +39,7 @@ locals {
 }
 
 module "oradb_server_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.db01_hostname}"
   alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.db01facts.bt_server_mode}db56-${local.facts.bt_deployment_mode}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
@@ -61,7 +61,7 @@ module "oradb_server_1" {
 }
 
 module "oradb_server_2" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.db02_hostname}"
   alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.db01facts.bt_server_mode}db57-${local.facts.bt_deployment_mode}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
