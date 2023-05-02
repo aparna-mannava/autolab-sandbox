@@ -28,6 +28,9 @@ projects:
 # Q
 # R
 # S
+- name: cfrmtt
+  dir: spatel/cfrm
+  workflow: nutanix-backend
 # T
 - name: test
   dir: test
