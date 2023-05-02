@@ -1,8 +1,7 @@
-
 terraform {
   backend "s3" {}
 }
-​
+
 locals {
   product     = "cfrm"
   environment = "master"
@@ -23,9 +22,8 @@ locals {
     "os_version"         = "rhel7"
     "db01_hostname"      = "us01vldbsdp56"
 ​    "db02_hostname"      = "us01vldbsdp57"
-
-​
   }
+
   db01facts    = {
     "bt_product" = "${local.facts.bt_product}"
     "bt_customer" = "${local.facts.bt_customer}"
@@ -61,7 +59,6 @@ module "oradb_server_1" {
     4 = "100"
   }
 }
-​
 
 module "oradb_server_2" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
@@ -92,11 +89,11 @@ output "oradb_server_1" {
     "ip"    = "${module.oradb_server_1.ip}",
   }
 }
-​
+
 output "oradb_server_2" {
   value = {
-    "fqdn"  = "${module.oradb_server_1.fqdn}",
-    "alias" = "${module.oradb_server_1.alias}",
-    "ip"    = "${module.oradb_server_1.ip}",
+    "fqdn"  = "${module.oradb_server_2.fqdn}",
+    "alias" = "${module.oradb_server_2.alias}",
+    "ip"    = "${module.oradb_server_2.ip}",
   }
 }
