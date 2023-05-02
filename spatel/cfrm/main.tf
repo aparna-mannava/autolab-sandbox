@@ -21,7 +21,7 @@ locals {
     "obs_cpus"           = "2"
     "os_version"         = "rhel7"
     "db01_hostname"      = "us01vldbsdp56"
-​    "db02_hostname"      = "us01vldbsdp57"
+    "db02_hostname"      = "us01vldbsdp57"
   }
 
   db01facts    = {
@@ -37,7 +37,7 @@ locals {
     "bt1_alias" = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-db57-${local.facts.bt_deployment_mode}"
   }
 }
-​
+
 module "oradb_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.db01_hostname}"
