@@ -40,6 +40,9 @@ projects:
 - name: skola-mssql
   dir: skola/mssql
   workflow: nutanix-backend
+- name: savula-standrd
+  dir: savula/standrd
+  workflow: nutanix-backend
 # T
 - name: testm
   dir: testm
