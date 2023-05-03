@@ -16,15 +16,15 @@ projects:
 # H
 # I
 # J
+- name: java17
+  dir: java17
+  workflow: nutanix-backend
 # K
 # L
 # M
 # N
 # O
 # P
-- name: prudhvi
-  dir: prudhvi
-  workflow: nutanix-backend
 # Q
 # R
 # S
@@ -32,9 +32,6 @@ projects:
   dir: spatel/cfrm
   workflow: nutanix-backend
 # T
-- name: tests
-  dir: tests
-  workflow: nutanix-backend
 - name: testm
   dir: testm
   workflow: nutanix-backend
