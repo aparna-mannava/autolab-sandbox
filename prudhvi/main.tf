@@ -6,7 +6,7 @@ locals {
   facts       = {
     "bt_customer" = "cfrmrd"
     "bt_product" = "cfrmrd"
-    "bt_role" = "standalone"  
+    "bt_role" = "opensearch"  
     "bt_tier" = "dev"
     "bt_env" = "devops"
   }
@@ -21,15 +21,15 @@ locals {
 
 module "app_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd111"
-  alias                = "test-jdks"
+  hostname             = "us01vlcfrmrd116"
+  alias                = "test-jdks5"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = 6
   memory               = 24000
   os_version           = "rhel7"
   foreman_environment  = "feature_CFRMRD_39527"
-  foreman_hostgroup    = "CFRMRD OpenSearch"
+  foreman_hostgroup    = "BT CFRMRD Opensearch Alone"
   lob                  = "CFRM"
   datacenter           = "ny2"
   external_facts       = local.app_server_1_facts
