@@ -22,24 +22,12 @@ projects:
 # N
 # O
 # P
-- name: prudhvi
-  dir: prudhvi
-  workflow: nutanix-backend
 # Q
 # R
 # S
 # T
-- name: tests
-  dir: tests
-  workflow: nutanix-backend
 - name: testm
   dir: testm
-  workflow: nutanix-backend
-- name: testx
-  dir: testx
-  workflow: nutanix-backend
-- name: testq
-  dir: testq
   workflow: nutanix-backend
 # U
 # V
