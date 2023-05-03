@@ -27,9 +27,6 @@ projects:
 - name: opensearch
   dir: opensearch
   workflow: nutanix-backend
-- name: opensearch1
-  dir: opensearch1
-  workflow: nutanix-backend
 # P
 # Q
 # R
