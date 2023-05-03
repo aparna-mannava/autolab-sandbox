@@ -34,6 +34,9 @@ projects:
 - name: cfrmtt
   dir: spatel/cfrm
   workflow: nutanix-backend
+- name: skola-mssql
+  dir: skola/mssql
+  workflow: nutanix-backend
 # T
 - name: testm
   dir: testm
