@@ -35,6 +35,9 @@ projects:
 - name: testm
   dir: testm
   workflow: nutanix-backend
+- name: testx
+  dir: testx
+  workflow: nutanix-backend
 # U
 # V
 # W
