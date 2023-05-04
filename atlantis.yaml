@@ -43,6 +43,9 @@ projects:
 - name: savula-standrd
   dir: savula/standrd
   workflow: nutanix-backend
+- name: savula-standrd-mssql
+  dir: savula/standrd/mssql
+  workflow: nutanix-backend
 # T
 - name: testm
   dir: testm
