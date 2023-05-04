@@ -17,7 +17,7 @@ locals {
 }
 
 
-module "stanard_121970_1" {
+module "stanard_121970_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}"
   alias                = "auto-sa-stnd-db01"
@@ -33,7 +33,7 @@ module "stanard_121970_1" {
   datacenter           = "${local.datacenter}"
   additional_disks     = {
     1 = "50",
-    2 = "20",
+    2 = "30",
     3 = "40",
     4 = "40",
     5 = "20",
@@ -41,10 +41,10 @@ module "stanard_121970_1" {
   }
 }
 
-output "stanard_121970_1" {
+output "stanard_121970_3" {
   value = {
-    "fqdn"  = "${module.stanard_121970_1.fqdn}",
-    "alias" = "${module.stanard_121970_1.alias}",
-    "ip"    = "${module.stanard_121970_1.ip}",
+    "fqdn"  = "${module.stanard_121970_3.fqdn}",
+    "alias" = "${module.stanard_121970_3.alias}",
+    "ip"    = "${module.stanard_121970_3.ip}",
   }
 }
