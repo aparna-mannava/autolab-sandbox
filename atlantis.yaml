@@ -32,6 +32,9 @@ projects:
 # R
 # S
 # T
+- name: opensearch10
+  dir: test/opensearch
+  workflow: nutanix-backend
 # U
 # V
 # W
