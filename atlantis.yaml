@@ -16,9 +16,6 @@ projects:
 # H
 # I
 # J
-- name: java17
-  dir: java17
-  workflow: nutanix-backend
 # K
 # L
 # M
@@ -35,9 +32,6 @@ projects:
 # R
 # S
 # T
-- name: testm
-  dir: testm
-  workflow: nutanix-backend
 # U
 # V
 # W
