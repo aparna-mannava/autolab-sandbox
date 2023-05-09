@@ -43,12 +43,6 @@ projects:
 - name: savula-standrd
   dir: savula/standrd
   workflow: nutanix-backend
-- name: savula-devloper-mssql
-  dir: savula/devloper/mssql
-  workflow: nutanix-backend
-- name: savula-entrp-mssql
-  dir: savula/entrp/mssql
-  workflow: nutanix-backend
 # T
 - name: opensearch10
   dir: test/opensearch
