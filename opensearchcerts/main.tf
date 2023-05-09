@@ -6,9 +6,9 @@ locals {
   facts       = {
     "bt_customer" = "cfrmrd"
     "bt_product" = "cfrmrd"
-    "bt_role" = "standalone"  
+    "bt_role" = "app"  
     "bt_tier" = "dev"
-    "bt_env" = "devops"
+    "bt_env" = "devops1"
   }
   app_server_1_facts   = {
     "bt_role" = local.facts.bt_role
@@ -21,15 +21,15 @@ locals {
 
 module "app_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrd191"
-  alias                = "test-jdks44"
+  hostname             = "us01vlcfrmrd700"
+  alias                = "test-jdks55"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = 6
   memory               = 24000
   os_version           = "rhel7"
   foreman_environment  = "feature_CFRMRD_39527"
-  foreman_hostgroup    = "CFRMRD apacheds"
+  foreman_hostgroup    = "CFRMRD App"
   lob                  = "CFRM"
   datacenter           = "ny2"
   external_facts       = local.app_server_1_facts
