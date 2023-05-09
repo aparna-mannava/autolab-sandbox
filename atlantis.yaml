@@ -21,6 +21,9 @@ projects:
 # M
 # N
 # O
+- name: opensearchcert
+  dir: opensearchcerts
+  workflow: nutanix-backend
 # P
 # Q
 # R
