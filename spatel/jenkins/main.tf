@@ -14,7 +14,7 @@ locals {
       datacenter       = "ny2"
     }
 }
-​
+
 module "jnks" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vljkns1888"
