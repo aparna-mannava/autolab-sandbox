@@ -46,6 +46,9 @@ projects:
 - name: dgb19c
   dir: spatel/dgb19c
   workflow: nutanix-backend
+- name: jnks8
+  dir: spatel/jenkins
+  workflow: nutanix-backend
 # T
 - name: opensearch10
   dir: test/opensearch
