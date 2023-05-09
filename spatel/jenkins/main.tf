@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {}
 }
-​
+
 locals {
     facts       = {
       bt_lob           = "CLOUD"
@@ -34,8 +34,7 @@ module "jnks" {
       2 = "100"
   }
 }
-​
-​
+
 output "jnks" {
   value = {
     "fqdn"  = module.jnks.fqdn,
