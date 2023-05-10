@@ -10,6 +10,9 @@ projects:
 # B
 # C
 # D
+- name: reboot-test
+  dir: dmorvan/reboot
+  workflow: nutanix-backend
 # E
 # F
 # G
