@@ -55,6 +55,9 @@ projects:
 - name: jnks8
   dir: spatel/jenkins
   workflow: nutanix-backend
+- name: cfrm19c
+  dir: spatel/cfrm19c
+  workflow: nutanix-backend
 # T
 - name: opensearch10
   dir: test/opensearch
