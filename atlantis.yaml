@@ -52,7 +52,6 @@ projects:
 - name: jnks8
   dir: spatel/jenkins
   workflow: nutanix-backend
-  workflow: nutanix-backend
 - name: jnks88
   dir: spatel/jenkins8
   workflow: nutanix-backend
