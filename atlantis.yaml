@@ -4,6 +4,19 @@ automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
+-name: aj_hapg_etcd_node
+dir:aj_hapg/pgsql/Primary/etcd
+workflow: nutanix-backend
+
+-name: aj_hapg_hapgd_node
+dir:aj_hapg/pgsql/Primary/hapgd
+workflow: nutanix-backend
+
+-name: aj_hapg_pgbackrest
+dir:aj_hapg/pgsql/Primary/pgbackrest
+workflow: nutanix-backend
+
+
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
