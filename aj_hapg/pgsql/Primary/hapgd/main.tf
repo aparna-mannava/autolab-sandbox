@@ -31,6 +31,7 @@ locals {
     "bt_cluster_name"         = "hapgautolab"
     "bt_pg_version"           = "12"
   }
+  
   haproxyfacts    = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier

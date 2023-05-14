@@ -24,6 +24,7 @@ locals {
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
   }
 }
+
 module "ny2_cdb_etcd_0" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[0]}"
