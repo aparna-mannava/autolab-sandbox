@@ -7,6 +7,9 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: autolab
+  dir: autolab
+  workflow: nutanix-backend
 # B
 # C
 # D
