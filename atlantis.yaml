@@ -4,16 +4,15 @@ automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
--name: postgres_etcd_node
-dir: postgres/pgsql/Primary/etcd
+-name: test_pg_etcd_node
+dir: test_pg/pgsql/Primary/etcd
 workflow: nutanix-backend
--name: postgres_hapgd_node
-dir: postgres/pgsql/Primary/hapgd
+-name: test_pg_hapgd_node
+dir: test_pg/pgsql/Primary/hapgd
 workflow: nutanix-backend
--name: postgres_pgbackrest
-dir: postgres/pgsql/Primary/pgbackrest
+-name: test_pg_pgbackrest
+dir: test_pg/pgsql/Primary/pgbackrest
 workflow: nutanix-backend
-
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
