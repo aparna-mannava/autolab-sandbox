@@ -15,7 +15,7 @@ locals {
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"
   environment     = "feature_CLOUD_121562"
-  cluster         = "ny2-aze-ntnx-12"
+  cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   facts           = {
@@ -33,7 +33,7 @@ locals {
   }
 }
 module "ny2_cdb_backrest_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network

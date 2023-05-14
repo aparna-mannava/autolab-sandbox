@@ -4,7 +4,7 @@ automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
-#- name: abc-test123
+#-name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
 # B

@@ -15,7 +15,7 @@ locals {
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
   environment     = "feature_CLOUD_121562"
-  cluster         = "ny2-aze-ntnx-12"
+  cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   hapgfacts       = {
@@ -51,7 +51,7 @@ locals {
 
 
 module "ny2_cdb_hapg_0" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
@@ -70,7 +70,7 @@ module "ny2_cdb_hapg_0" {
 }
 
 module "ny2_cdb_hapg_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CEA-4699_add_csr_attributes"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
@@ -89,7 +89,7 @@ module "ny2_cdb_hapg_1" {
 }
 
 module "ny2_cdb_hapg_2" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=feature/CEA-4699_add_csr_attributes"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[2]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
@@ -108,7 +108,7 @@ module "ny2_cdb_hapg_2" {
 }
 
 module "ny2_cdb_haproxy_1" {
-  source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
