@@ -5,7 +5,7 @@ projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
 -name: aj_hapg_etcd_node
-dir:aj_hapg/pgsql/Primary/etcd
+dir: aj_hapg/pgsql/Primary/etcd
 workflow: nutanix-backend
 -name: aj_hapg_hapgd_node
 dir:aj_hapg/pgsql/Primary/hapgd
