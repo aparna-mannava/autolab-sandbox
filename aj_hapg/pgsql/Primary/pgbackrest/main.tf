@@ -32,7 +32,6 @@ locals {
     "bt_pg_version"           = "12"
   }
 }
-
 module "ny2_cdb_backrest_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
@@ -51,7 +50,6 @@ module "ny2_cdb_backrest_1" {
     2 = "160",
   }
 }
-
 output "ny2_cdb_backrest_1" {
   value = {
     "fqdn"  = "module.ny2_cdb_backrest_1.fqdn",

@@ -1,6 +1,7 @@
 terraform {
   backend "s3" {}
 }
+
 locals {
   etcd_servers    = ["us01vletcdraw01"]
   hapg_servers    = ["us01vlhapgraw01","us01vlhapgraw02","us01vlhapgraw03"]
@@ -31,7 +32,7 @@ locals {
     "bt_cluster_name"         = "hapgautolab"
     "bt_pg_version"           = "12"
   }
-  
+
   haproxyfacts    = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
@@ -47,6 +48,7 @@ locals {
     "bt_pg_version"           = "12"
   }
 }
+
 
 module "ny2_cdb_hapg_0" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"

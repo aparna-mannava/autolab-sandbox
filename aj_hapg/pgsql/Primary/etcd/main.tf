@@ -42,6 +42,8 @@ module "ny2_cdb_etcd_0" {
     1 = "200",
   }
 }
+
+
 output "ny2_cdb_etcd_0" {
   value = {
     "fqdn"  = "${module.ny2_cdb_etcd_0.fqdn}",
