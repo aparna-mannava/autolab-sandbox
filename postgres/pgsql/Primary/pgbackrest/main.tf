@@ -3,10 +3,10 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vlatetd01"]
-  hapg_servers    = ["us01vlathpg01","us01vlathpg02","us01vlathpg03"]
-  haproxy_server  = ["us01vlathpx01"]
-  backrest_server = ["us01vlatpbk01"]
+  etcd_servers    = ["us01vletcdraw01"]
+  hapg_servers    = ["us01vlhapgraw01","us01vlhapgraw02","us01vlhapgraw03"]
+  haproxy_server  = ["us01vlpgprxyraw01"]
+  backrest_server = ["us01vlpgbkpraw01"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "1"
@@ -14,7 +14,7 @@ locals {
   bt_role		  = "pgbackrest"
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"
-  environment     = "master"
+  environment     = "feature_CLOUD_121562"
   cluster         = "ny2-aze-ntnx-12"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
@@ -32,7 +32,6 @@ locals {
     "bt_pg_version"           = "12"
   }
 }
-
 module "ny2_cdb_backrest_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
@@ -51,7 +50,6 @@ module "ny2_cdb_backrest_1" {
     2 = "160",
   }
 }
-
 output "ny2_cdb_backrest_1" {
   value = {
     "fqdn"  = "module.ny2_cdb_backrest_1.fqdn",
