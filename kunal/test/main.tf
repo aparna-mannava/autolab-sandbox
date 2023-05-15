@@ -1,5 +1,5 @@
 terraform {
-  backend "http" {}
+  backend "s3" {}
 }
 module "app_server_1" {
   source               = "git::https://us-pr-stash.saas-p.com/scm/trrfrm/terraform-module-infrastructure.git?ref=master"
