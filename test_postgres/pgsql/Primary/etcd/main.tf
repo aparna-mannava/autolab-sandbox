@@ -34,7 +34,7 @@ module "ny2_cdb_etcd_0" {
   foreman_hostgroup    = local.hostgroup
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
