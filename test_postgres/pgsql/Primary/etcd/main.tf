@@ -16,7 +16,7 @@ locals {
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
-  facts           = {
+  facts           = { 
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
@@ -34,7 +34,7 @@ module "ny2_cdb_etcd_0" {
   foreman_hostgroup    = local.hostgroup
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
