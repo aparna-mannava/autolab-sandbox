@@ -16,7 +16,7 @@ locals {
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
-  facts           = {
+  facts           = { 
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
