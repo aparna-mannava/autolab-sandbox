@@ -22,6 +22,9 @@ projects:
 # H
 # I
 # J
+- name: javaks
+  dir: jkstest
+  workflow: nutanix-backend
 # K
 # L
 # M
