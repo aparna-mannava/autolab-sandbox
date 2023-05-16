@@ -92,13 +92,13 @@ projects:
 - name: opensearch10
   dir: test/opensearch
   workflow: nutanix-backend
-- name: test_pg_etcd_node
+- name: tst_pg_etcd_node
   dir: test_postgres/pgsql/Primary/etcd
   workflow: nutanix-backend
-- name: test_pg_hapgd_node
+- name: tst_pg_hapgd_node
   dir: test_postgres/pgsql/Primary/hapgd
   workflow: nutanix-backend
-- name: test_pg_pgbackrest
+- name: tst_pg_pgbackrest
   dir: test_postgres/pgsql/Primary/pgbackrest
   workflow: nutanix-backend
 # U
