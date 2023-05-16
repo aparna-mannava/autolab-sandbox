@@ -12,13 +12,13 @@ projects:
   workflow: nutanix-backend
 # B
 # C
-- name: cloud_121562_test
+- name: cloud_121562_test_etcd
   dir: cloud_121562/pgsql/Primary/etcd
   workflow: nutanix-backend
-- name: test_pg_hapgd_node
+- name: cloud_121562_test_hapgd_node
   dir:  cloud_121562/pgsql/Primary/hapgd
   workflow: nutanix-backend
-- name: test_pg_pgbackrest
+- name: cloud_121562_test_pgbackrest
   dir:  cloud_121562/pgsql/Primary/pgbackrest
   workflow: nutanix-backend
 # D
