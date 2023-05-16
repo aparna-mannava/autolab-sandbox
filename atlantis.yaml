@@ -12,6 +12,15 @@ projects:
   workflow: nutanix-backend
 # B
 # C
+- name: cloud_121562_test
+  dir: cloud_121562/pgsql/Primary/etcd
+  workflow: nutanix-backend
+- name: test_pg_hapgd_node
+  dir:  cloud_121562/pgsql/Primary/hapgd
+  workflow: nutanix-backend
+- name: test_pg_pgbackrest
+  dir:  cloud_121562/pgsql/Primary/pgbackrest
+  workflow: nutanix-backend
 # D
 - name: reboot-test
   dir: dmorvan/reboot
