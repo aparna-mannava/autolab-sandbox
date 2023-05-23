@@ -4,13 +4,13 @@ terraform {
  
 locals {
     facts       = {
-      bt_customer         = ""
+      bt_customer         = "base01"
       bt_product          = "cfrmcloud"
       bt_lob              = "CFRM"
       bt_tier             = "dev"
       bt_env              = "master"
       bt_role             = "base"
-      bt_infra_cluster    = "ny5-azg-ntnx-25"
+      bt_infra_cluster    = "ny5-aza-ntnx-14"
       bt_infra_network    = "ny2-autolab-app-ahv"
       hostgroup           = "BT CFRM CLOUD Linux base servers"
       environment         = "master"
