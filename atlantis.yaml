@@ -40,7 +40,7 @@ projects:
 # G
 # H
 - name: harik
-  dir: harik
+  dir: autolab/harik
   workflow: nutanix-backend
 # I
 # J
