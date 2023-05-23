@@ -39,6 +39,9 @@ projects:
 # F
 # G
 # H
+- name: harik
+  dir: harik
+  workflow: nutanix-backend
 # I
 # J
 - name: javaks
