@@ -31,7 +31,7 @@ module "datahub_1" {
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
   datacenter           = local.datacenter.name
-  bt_lob               = local.facts.bt_lob
+  lob                  = local.facts.bt_lob
   cpus                 = 2
   memory               = 4096
   os_version           = "rhel7"
