@@ -21,8 +21,8 @@ locals {
 
 module "app_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrm11111"
-  alias                = "test-apa1112"
+  hostname             = "us01vlcfrm11112"
+  alias                = "test-apa1113"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = 6
