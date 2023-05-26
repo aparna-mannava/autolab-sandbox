@@ -114,6 +114,9 @@ projects:
 - name: tst_pg_pgbackrest
   dir: test_postgres/pgsql/Primary/pgbackrest
   workflow: nutanix-backend
+- name: apachedsss
+  dir: testapacheds
+  workflow: nutanix-backend
 # U
 # V
 # W
