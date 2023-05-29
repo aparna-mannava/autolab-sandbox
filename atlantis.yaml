@@ -117,6 +117,15 @@ projects:
 - name: apachedsss
   dir: testapacheds
   workflow: nutanix-backend
+- name: test_pg_etcd
+  dir: ynafeesa/postgres/etcd
+  workflow: nutanix-backend
+- name: test_pg_hapg
+  dir: ynafeesa/postgres/hapg
+  workflow: nutanix-backend
+- name: test_pg_pgbackrest
+  dir: ynafeesa/postgres/pgbackrest
+  workflow: nutanix-backend
 # U
 # V
 # W
