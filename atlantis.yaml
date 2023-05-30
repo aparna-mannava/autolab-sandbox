@@ -35,6 +35,9 @@ projects:
 # R
 # S
 # T
+- name: test_jenkins
+  dir: test_jenkins
+  workflow: nutanix-backend
 # U
 # V
 # W
