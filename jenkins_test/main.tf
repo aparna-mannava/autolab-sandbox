@@ -21,8 +21,8 @@ locals {
  
 module "staging_jenkins" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdj11"
-  alias                = "cfrmx-jenkin1"
+  hostname             = "us01vlcfrmrdj12"
+  alias                = "cfrmx-jenkin2"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = "4"
