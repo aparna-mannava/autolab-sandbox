@@ -10,6 +10,15 @@ projects:
 - name: autolab
   dir: autolab
   workflow: nutanix-backend
+- name: algondaa_uat_pg_etcd
+  dir: algondaa/postgres/etcd
+  workflow: nutanix-backend
+- name: algondaa_uat_pg_etcd
+  dir: algondaa/postgres/hapg
+  workflow: nutanix-backend
+- name: algondaa_uat_pg_etcd
+  dir: algondaa/postgres/pgbackrest
+  workflow: nutanix-backend
 # B
 # C
 - name: cloud_121562_test_etcd
