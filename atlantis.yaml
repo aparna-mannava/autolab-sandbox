@@ -13,10 +13,10 @@ projects:
 - name: algondaa_uat_pg_etcd
   dir: algondaa/postgres/etcd
   workflow: nutanix-backend
-- name: algondaa_uat_pg_etcd
+- name: algondaa_uat_hapg
   dir: algondaa/postgres/hapg
   workflow: nutanix-backend
-- name: algondaa_uat_pg_etcd
+- name: algondaa_uat_pgbackrest
   dir: algondaa/postgres/pgbackrest
   workflow: nutanix-backend
 # B
