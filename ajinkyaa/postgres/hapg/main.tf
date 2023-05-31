@@ -8,7 +8,7 @@ locals {
   haproxy_server  = ["us01vlprxyts02"]
   backrest_server = ["us01vlbkts02"]
   domain          = "auto.saas-n.com"
-  tier            = "nonprod"
+  tier            = "uat"
   bt_env          = "1"
   bt_product      = "fmcloud"
   bt_role         = "postgresql"
