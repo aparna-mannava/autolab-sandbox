@@ -3,8 +3,8 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcddem01"]
-  etcd_hosts_p    = ["us01vletcddem10.auto.saas-n.com"]
+  etcd_servers    = ["us01vletcdts02"]
+  etcd_hosts_p    = ["us01vletcdts02.auto.saas-n.com"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "1"
@@ -12,7 +12,7 @@ locals {
   bt_product      = "fmcloud"
   bt_role         = "postgres"
   hostgroup       = "BT ETCD for PostgreSQL Server"
-  environment     = "feature_Cloud_121562_sudoers"
+  environment     = "feature_cloud_121562_test_uat"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
@@ -24,7 +24,8 @@ locals {
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
   }
 }
-module "ny2_cdb_etcd_0" {
+
+module "us01vletcdts01" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -35,7 +36,7 @@ module "ny2_cdb_etcd_0" {
   datacenter           = local.datacenter
   os_version           = "rhel8"
   cpus                 = "2"
-  memory               = "4096"
+  memory               = "2048"
   external_facts       = local.facts
   additional_disks     = {
     1 = "200",
@@ -43,10 +44,10 @@ module "ny2_cdb_etcd_0" {
 }
 
 
-output "ny2_cdb_etcd_0" {
+output "us01vletcdts01" {
   value = {
-    "fqdn"  = "${module.ny2_cdb_etcd_0.fqdn}",
-    "alias" = "${module.ny2_cdb_etcd_0.alias}",
-    "ip"    = "${module.ny2_cdb_etcd_0.ip}",
+    "fqdn"  = "${module.us01vletcdts01.fqdn}",
+    "alias" = "${module.us01vletcdts01.alias}",
+    "ip"    = "${module.us01vletcdts01.ip}",
   }
 }
