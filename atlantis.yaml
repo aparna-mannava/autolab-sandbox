@@ -47,6 +47,9 @@ projects:
 - name: javaks
   dir: jkstest
   workflow: nutanix-backend
+- name: jenkinstest
+  dir: jenkins_test
+  workflow: nutanix-backend
 # K
 - name: kunal
   dir: kunal/test
