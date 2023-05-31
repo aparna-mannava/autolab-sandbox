@@ -21,7 +21,7 @@ locals {
   hapgfacts       = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
-    "bt_product"              = local.bt_product
+    "bt_product"              = local.bt_product 
     "bt_role"                 = local.bt_role
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]

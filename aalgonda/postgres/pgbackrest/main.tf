@@ -29,7 +29,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_pg_version"           = "12"
+    "bt_pg_version"           = "12" 
   }
 }
 module "us01vlbkts01" {

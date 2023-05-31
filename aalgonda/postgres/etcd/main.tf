@@ -15,7 +15,7 @@ locals {
   environment     = "feature_cloud_121562_test_uat"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
-  datacenter      = "ny2"
+  datacenter      = "ny2" 
   facts           = { 
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
