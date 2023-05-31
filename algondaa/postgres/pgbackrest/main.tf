@@ -1,19 +1,20 @@
 terraform {
   backend "s3" {}
 }
+
 locals {
-  etcd_servers    = ["us01vletcddem10"]
-  hapg_servers    = ["us01vlhapgdem10","us01vlhapgdem11","us01vlhapgdem12"]
-  haproxy_server  = ["us01vlprxydem10"]
-  backrest_server = ["us01vlbkdem10"]
+  etcd_servers    = ["us01vletcdts02"]
+  hapg_servers    = ["us01vlhapgts04","us01vlhapgts05","us01vlhapgts06"]
+  haproxy_server  = ["us01vlprxyts02"]
+  backrest_server = ["us01vlbkts02"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "1"
   bt_product      = "fmcloud"
-  bt_role		  = "pgbackrest"
+  bt_role		      = "pgbackrest"
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"
-  environment     = "feature_Cloud_121562_sudoers"
+  environment     = "feature_cloud_121562_test_uat"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
@@ -21,17 +22,17 @@ locals {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
-	"bt_role"				  = local.bt_role
+	  "bt_role"				          = local.bt_role
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}","${local.hapg_servers[2]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_pg_version"           = "12"
+    "bt_pg_version"           = "12" 
   }
 }
-module "ny2_cdb_backrest_1" {
+module "us01vlbkts01" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -49,10 +50,10 @@ module "ny2_cdb_backrest_1" {
     2 = "160",
   }
 }
-output "ny2_cdb_backrest_1" {
+output "us01vlbkts01" {
   value = {
-    "fqdn"  = "module.ny2_cdb_backrest_1.fqdn",
-    "alias" = "module.ny2_cdb_backrest_1.alias",
-    "ip"    = "module.ny2_cdb_backrest_1.ip",
+    "fqdn"  = "${module.us01vlbkts01.fqdn}",
+    "alias" = "${module.us01vlbkts01.alias}",
+    "ip"    = "${module.us01vlbkts01.ip}",
   }
 }
