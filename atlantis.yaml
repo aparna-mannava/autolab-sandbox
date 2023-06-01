@@ -4,140 +4,28 @@ automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
-#-name: abc-test123
+#- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: autolab
-  dir: autolab
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_pg_etcd
-  dir: ajinkyaa/postgres/etcd
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_hapg
-  dir: ajinkyaa/postgres/hapg
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_pgbackrest
-  dir: ajinkyaa/postgres/pgbackrest
-  workflow: nutanix-backend
 # B
 # C
-- name: cloud_121562_test_etcd
-  dir: cloud_121562/pgsql/Primary/etcd
-  workflow: nutanix-backend
-- name: cloud_121562_test_hapgd_node
-  dir:  cloud_121562/pgsql/Primary/hapgd
-  workflow: nutanix-backend
-- name: cloud_121562_test_pgbackrest
-  dir:  cloud_121562/pgsql/Primary/pgbackrest
-  workflow: nutanix-backend
-- name: cloud_121562_sandbox_etcd
-  dir: Cloud_121562_Sandbox/pgsql/Primary/etcd
-  workflow: nutanix-backend
-- name: cloud_121562_sandbox_hapgd_node
-  dir:  Cloud_121562_Sandbox/pgsql/Primary/hapgd
-  workflow: nutanix-backend
-- name: cloud_121562_sandbox_pgbackrest
-  dir:  Cloud_121562_Sandbox/pgsql/Primary/pgbackrest
-  workflow: nutanix-backend
-
 # D
-- name: reboot-test
-  dir: dmorvan/reboot
-  workflow: nutanix-backend
 # E
 # F
 # G
 # H
-- name: harik2
-  dir: harik2
-  workflow: nutanix-backend
 # I
 # J
-- name: javaks
-  dir: jkstest
-  workflow: nutanix-backend
-- name: jenkinstest
-  dir: jenkins_test
-  workflow: nutanix-backend
 # K
-- name: kunal
-  dir: kunal/test
-  workflow: nutanix-backend
 # L
 # M
 # N
 # O
-- name: opensearchcert
-  dir: opensearchcerts
-  workflow: nutanix-backend
 # P
 # Q
 # R
 # S
-- name: cfrmtt
-  dir: spatel/cfrm
-  workflow: nutanix-backend
-- name: skola-mssql
-  dir: skola/mssql
-  workflow: nutanix-backend
-- name: savula-standrd
-  dir: savula/standrd
-  workflow: nutanix-backend
-- name: savula-devloper-mssql
-  dir: savula/devloper/mssql
-  workflow: nutanix-backend
-- name: savula-entrp-mssql
-  dir: savula/entrp/mssql
-  workflow: nutanix-backend
-- name: suresha-stndrd
-  dir: suresha/stndrd
-  workflow: nutanix-backend
-- name: suresha-entrpr
-  dir: suresha/entrpr
-  workflow: nutanix-backend
-- name: suresha-devlpr
-  dir: suresha/devlpr
-  workflow: nutanix-backend
-- name: dgb19c
-  dir: spatel/dgb19c
-  workflow: nutanix-backend
-- name: jnks8
-  dir: spatel/jenkins
-  workflow: nutanix-backend
-- name: cfrm19c
-  dir: spatel/cfrm19c
-  workflow: nutanix-backend
-- name: jnks888
-  dir: spatel/jenkins88
-  workflow: nutanix-backend
-- name: sprudhvi
-  dir: sprudhvi
-  workflow: nutanix-backend
 # T
-- name: opensearch10
-  dir: test/opensearch
-  workflow: nutanix-backend
-- name: tst_pg_etcd_node
-  dir: test_postgres/pgsql/Primary/etcd
-  workflow: nutanix-backend
-- name: tst_pg_hapgd_node
-  dir: test_postgres/pgsql/Primary/hapgd
-  workflow: nutanix-backend
-- name: tst_pg_pgbackrest
-  dir: test_postgres/pgsql/Primary/pgbackrest
-  workflow: nutanix-backend
-- name: apachedsss
-  dir: testapacheds
-  workflow: nutanix-backend
-- name: test_pg_etcd
-  dir: ynafeesa/postgres/etcd
-  workflow: nutanix-backend
-- name: test_pg_hapg
-  dir: ynafeesa/postgres/hapg
-  workflow: nutanix-backend
-- name: test_pg_pgbackrest
-  dir: ynafeesa/postgres/pgbackrest
-  workflow: nutanix-backend
 # U
 # V
 # W
