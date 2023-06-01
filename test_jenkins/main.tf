@@ -16,9 +16,17 @@ locals {
       "bt_product"  = local.facts.bt_product
       "bt_tier"     = local.facts.bt_tier
      
-     }    
+     }
+    test_jenkins_slave_facts    = {
+      "bt_env"      = "devops"
+      "bt_role"     = "jenkins_devops_slave"
+      "bt_customer" = local.facts.bt_customer
+      "bt_product"  = local.facts.bt_product
+      "bt_tier"     = local.facts.bt_tier
+      "jenkins_master_url" = "http://cfrmrd-jnks1.auto.saas-n.com:8080"
+     }   
 }
- 
+
 module "test_jenkins" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd666"
@@ -39,10 +47,37 @@ module "test_jenkins" {
   }
 }
 
+module "test_jenkins_slave" {
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vlcfrmrd777"
+  alias                = "cfrmrd-jnks2"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  bt_infra_cluster     = "ny5-aza-ntnx-14"
+  cpus                 = "2"
+  memory               = "4096"
+  os_version           = "rhel8"
+  external_facts       = local.test_jenkins_slave_facts
+  foreman_environment  = "feature_CFRMRD_40239"
+  foreman_hostgroup    = "BT CFRMRD Jenkins DevOps Agent"
+  lob                  = "CFRM"
+  datacenter           = "ny2"
+  additional_disks     = {
+    1 = "100",
+	2 = "100"
+  }
+}
+
 output "test_jenkins" {
   value = {
     "fqdn"  = module.test_jenkins.fqdn,
     "alias" = module.test_jenkins.alias,
     "ip"    = module.test_jenkins.ip,
+  }
+}
+output "test_jenkins_slave" {
+  value = {
+    "fqdn"  = module.test_jenkins_slave.fqdn,
+    "alias" = module.test_jenkins_slave.alias,
+    "ip"    = module.test_jenkins_slave.ip,
   }
 } 
