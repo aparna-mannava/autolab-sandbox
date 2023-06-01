@@ -8,13 +8,13 @@ projects:
 #  dir: abc/123
 #  workflow: nutanix-backend
 - name: ajinkyaa_uat_pg_etcd
-  dir: algondaa/postgres/etcd
+  dir: ajinkyaa/postgres/etcd
   workflow: nutanix-backend
 - name: ajinkyaa_uat_hapg
-  dir: algondaa/postgres/hapg
+  dir: ajinkyaa/postgres/hapg
   workflow: nutanix-backend
 - name: ajinkyaa_uat_pgbackrest
-  dir: algondaa/postgres/pgbackrest
+  dir: ajinkyaa/postgres/pgbackrest
   workflow: nutanix-backend
 # B
 # C
