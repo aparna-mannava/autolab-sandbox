@@ -19,6 +19,9 @@ projects:
 # B
 # C
 # D
+- name: danielsh_base
+  dir: danielsh/base
+  workflow: nutanix-backend
 # E
 # F
 # G
