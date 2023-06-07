@@ -31,8 +31,9 @@ module "cfrm_ny2_dev_01" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = local.hostname
   alias               = "cfrmcloud-${local.datacenter.id}-${local.facts.bt_tier}-${local.facts.bt_customer}-${local.facts.bt_env}-${local.host_number}"//
+  bt_infra_cluster    = "ny5-aza-ntnx-14"
   bt_infra_network    = "ny2-autolab-app-ahv"
-  bt_infra_cluster    = "ny2-aze-ntnx-12"
+
   os_version          = "rhel7"
   //firewall_group      = local.facts.firewall_group//
   cpus                = "8"
