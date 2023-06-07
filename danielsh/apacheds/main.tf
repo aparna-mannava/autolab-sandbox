@@ -16,9 +16,9 @@ locals {
       bt_apacheds_version = "2.0.0_M24"
       bt_apacheds_install = "true"
     }
-    hostname              = "us01vlcfrm${local.host_number}" //us01vlcfrm01.saas-n.com us01vlcfrmbs
+    hostname              = "us01vlcfrm${local.host_number}" //us01vlcfrm01.saas-n.com
     hostgroup             = "BT CFRM CLOUD Apacheds Standalone Servers"
-    environment           = "feature_CFRMCLOUD_2664_devops_apacheds_fix"
+    environment           = "master"
    
     datacenter = {
       name = "ny2"
