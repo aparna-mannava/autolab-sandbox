@@ -16,6 +16,24 @@ projects:
 - name: ajinkyaa_uat_pgbackrest
   dir: ajinkyaa/postgres/pgbackrest
   workflow: nutanix-backend
+
+
+
+
+  - name: aparna_non-prod_pg_etcd
+  dir: aparna/etcd
+  workflow: nutanix-backend
+- name: aparna_non-prod_hapg
+  dir: aparna/hapg
+  workflow: nutanix-backend
+- name: aparna_non-prod_pgbackrest
+  dir: aparna/pgbackrest
+  workflow: nutanix-backend
+
+
+
+
+
 # B
 # C
 # D
