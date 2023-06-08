@@ -2,10 +2,10 @@ terraform {
   backend "s3" {}
 }
 
-module "us01vwnxstest01" {
+module "us01vwnxste01" {
 source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-hostname            = "us01vwnxstest01"
-bt_infra_cluster    = "ny5-azc-ntnx-24"
+hostname            = "us01vwnxste01"
+bt_infra_cluster    = "ny2-aza-vmw-autolab"
 bt_infra_network    = "ny2-autolab-app-ahv"
 cpus                = 4
 lob                 = "CLOUD"
@@ -16,10 +16,10 @@ foreman_hostgroup   = "BT Base Server"
 datacenter          = "ny2"
 }
 
-output "us01vwnxstest01" {
+output "us01vwnxste01" {
 value = {
-"fqdn"  = module.us01vwnxstest01.fqdn,
-"alias" = module.us01vwnxstest01.alias,
-"ip"    = module.us01vwnxstest01.ip,
+"fqdn"  = module.us01vwnxste01.fqdn,
+"alias" = module.us01vwnxste01.alias,
+"ip"    = module.us01vwnxste01.ip,
 }
 }
