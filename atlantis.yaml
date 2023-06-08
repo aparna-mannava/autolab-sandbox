@@ -16,7 +16,7 @@ projects:
 - name: ajinkyaa_uat_pgbackrest
   dir: ajinkyaa/postgres/pgbackrest
   workflow: nutanix-backend
-# B
+# B 
 # C
 # D
 - name: danielsh_apacheds
@@ -25,7 +25,7 @@ projects:
 - name: danielsh_base
   dir: danielsh/base
   workflow: nutanix-backend
-
+  
 # F  
 # G
 # H
@@ -35,6 +35,15 @@ projects:
 # L
 # M
 # N
+- name: ynafeesa_test_server_etcd
+  dir: ynafeesa/postgres/etcd
+  workflow: nutanix-backend
+- name: ynafeesa_test_server_hapg
+  dir: ynafeesa/postgres/hapg
+  workflow: nutanix-backend
+- name: ynafeesa_test_server_pgbackrest
+  dir: ynafeesa/postgres/pgbackrest
+  workflow: nutanix-backend
 # O
 # P
 # Q
