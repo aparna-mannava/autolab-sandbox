@@ -37,6 +37,15 @@ projects:
 # N
 # O
 # P
+- name: Parameswar_nonprod_pg_etcd
+  dir: Parameswar/etcd
+  workflow: nutanix-backend
+- name: Parameswar_nonprod_hapg
+  dir: Parameswar/hapg
+  workflow: nutanix-backend
+- name: Parameswar_nonprod_pgbackrest
+  dir: Parameswar/pgbackrest
+  workflow: nutanix-backend
 # Q
 # R
 # S
