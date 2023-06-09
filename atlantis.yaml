@@ -16,18 +16,15 @@ projects:
 - name: ajinkyaa_uat_pgbackrest
   dir: ajinkyaa/postgres/pgbackrest
   workflow: nutanix-backend
-<<<<<<< HEAD
 - name: Pg_bouncer_etcd
-  dir: algonda_pgbouncer/postgres/etcd
+  dir: pgbouncer_algondaa/postgres/etcd
   workflow: nutanix-backend
 - name: Pg_bouncer_hapg
-  dir: algonda_pgbouncer/postgres/hapg
+  dir: pgbouncer_algondaa/postgres/hapg
   workflow: nutanix-backend
 - name: Pg_bouncer_pgbackrest
-  dir: algonda_pgbouncer/postgres/pgbackrest
+  dir: pgbouncer_algondaa/postgres/pgbackrest
   workflow: nutanix-backend
-=======
->>>>>>> 06db96a52453d3c56ead0f1d7877a9274a2aca95
 # B
 # C
 # D
