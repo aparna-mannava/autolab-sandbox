@@ -37,6 +37,9 @@ projects:
   
 # F  
 # G
+- name: gaurav_windows
+  dir: Gaurav/windows
+  workflow: nutanix-backend
 # H
 # I
 # J
