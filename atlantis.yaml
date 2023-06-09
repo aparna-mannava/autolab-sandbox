@@ -16,7 +16,7 @@ projects:
 - name: ajinkyaa_uat_pgbackrest
   dir: ajinkyaa/postgres/pgbackrest
   workflow: nutanix-backend
-# B 
+# B
 # C
 # D
 - name: danielsh_apacheds
