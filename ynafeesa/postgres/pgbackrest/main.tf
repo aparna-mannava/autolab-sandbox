@@ -3,12 +3,12 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts20"]
-  hapg_servers    = ["us01vlhapgts20","us01vlhapgts21","us01vlhapgts22"]
-  haproxy_server  = ["us01vlprxyts20"]
-  backrest_server = ["us01vlbkts20"]
+  etcd_servers    = ["us01vletcdts01"]
+  hapg_servers    = ["us01vlhapgts01","us01vlhapgts02","us01vlhapgts03"]
+  haproxy_server  = ["us01vlprxyts01"]
+  backrest_server = ["us01vlbkts01"]
   domain          = "auto.saas-n.com"
-  tier            = "uat"
+  tier            = "nonprod"
   bt_env          = "1"
   bt_product      = "cloud"
   bt_role		      = "pgbackrest"
@@ -29,7 +29,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_pg_version"           = "12" 
+    "bt_pg_version"           = "12"
   }
 }
 module "us01vlbkts01" {

@@ -3,12 +3,12 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts20"]
-  hapg_servers    = ["us01vlhapgts20","us01vlhapgts21","us01vlhapgts22"]
-  haproxy_server  = ["us01vlprxyts20"]
-  backrest_server = ["us01vlbkts20"]
+  etcd_servers    = ["us01vletcdts01"]
+  hapg_servers    = ["us01vlhapgts01","us01vlhapgts02","us01vlhapgts03"]
+  haproxy_server  = ["us01vlprxyts01"]
+  backrest_server = ["us01vlbkts01"]
   domain          = "auto.saas-n.com"
-  tier            = "uat"
+  tier            = "nonprod"
   bt_env          = "1"
   bt_product      = "cloud"
   bt_role         = "postgresql"
@@ -21,7 +21,7 @@ locals {
   hapgfacts       = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
-    "bt_product"              = local.bt_product 
+    "bt_product"              = local.bt_product
     "bt_role"                 = local.bt_role
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]

@@ -3,10 +3,10 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts20"]
-  etcd_hosts_p    = ["us01vletcdts20.auto.saas-n.com"]
+  etcd_servers    = ["us01vletcdts01"]
+  etcd_hosts_p    = ["us01vletcdts01.auto.saas-n.com"]
   domain          = "auto.saas-n.com"
-  tier            = "uat"
+  tier            = "nonprod"
   bt_env          = "1"
   lob             = "CLOUD"
   bt_product      = "cloud"
@@ -15,7 +15,7 @@ locals {
   environment     = "master"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
-  datacenter      = "ny2" 
+  datacenter      = "ny2"
   facts           = { 
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
