@@ -44,6 +44,15 @@ projects:
 - name: ynafeesa_test_server_pgbackrest
   dir: ynafeesa/postgres/pgbackrest
   workflow: nutanix-backend
+- name: ynafeesa_pgb_test_server_etcd
+  dir: PgBouncer/postgres/etcd
+  workflow: nutanix-backend
+- name: ynafeesa_pgb_test_server_hapg
+  dir: PgBouncer/postgres/hapg
+  workflow: nutanix-backend
+- name: ynafeesa_pgb_test_server_pgbackrest
+  dir: PgBouncer/postgres/pgbackrest
+  workflow: nutanix-backend
 # O
 # P
 # Q
