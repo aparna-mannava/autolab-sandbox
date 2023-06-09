@@ -16,15 +16,18 @@ projects:
 - name: ajinkyaa_uat_pgbackrest
   dir: ajinkyaa/postgres/pgbackrest
   workflow: nutanix-backend
+<<<<<<< HEAD
 - name: Pg_bouncer_etcd
-  dir: PgBouncer_test/postgres/etcd
+  dir: algonda_pgbouncer/postgres/etcd
   workflow: nutanix-backend
 - name: Pg_bouncer_hapg
-  dir: PgBouncer_test/postgres/hapg
+  dir: algonda_pgbouncer/postgres/hapg
   workflow: nutanix-backend
 - name: Pg_bouncer_pgbackrest
-  dir: PgBouncer_test/postgres/pgbackrest
+  dir: algonda_pgbouncer/postgres/pgbackrest
   workflow: nutanix-backend
+=======
+>>>>>>> 06db96a52453d3c56ead0f1d7877a9274a2aca95
 # B
 # C
 # D
@@ -34,8 +37,8 @@ projects:
 - name: danielsh_base
   dir: danielsh/base
   workflow: nutanix-backend
-# E
-# F
+  
+# F  
 # G
 # H
 # I
@@ -44,8 +47,14 @@ projects:
 # L
 # M
 # N
-- name: njani_rhel8tst
-  dir: njani/rhel8tst
+- name: ynafeesa_test_server_etcd
+  dir: ynafeesa/postgres/etcd
+  workflow: nutanix-backend
+- name: ynafeesa_test_server_hapg
+  dir: ynafeesa/postgres/hapg
+  workflow: nutanix-backend
+- name: ynafeesa_test_server_pgbackrest
+  dir: ynafeesa/postgres/pgbackrest
   workflow: nutanix-backend
 # O
 # P
