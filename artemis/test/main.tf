@@ -7,7 +7,7 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product"  = "cfrmrd"
       "bt_tier"     = "dev"
-      "bt_role"     = "opensearch"
+      "bt_role"     = "standalone"
     }
     test_jenkins_facts    = {
       "bt_env"      = "devops"
@@ -18,11 +18,12 @@ locals {
      
      }
     test_jenkins_slave_facts    = {
-      "bt_env"      = "devops"
-      "bt_role"     = local.facts.bt_role
-      "bt_customer" = local.facts.bt_customer
-      "bt_product"  = local.facts.bt_product
-      "bt_tier"     = local.facts.bt_tier
+      "bt_env"          = "devops"
+      "bt_role"         = local.facts.bt_role
+      "bt_customer"     = local.facts.bt_customer
+      "bt_product"      = local.facts.bt_product
+      "bt_tier"         = local.facts.bt_tier
+      "bt_artemis_mode" = cluster
      }   
 }
 
