@@ -10,6 +10,9 @@ projects:
 - name: ajinkyaa_uat_pg_etcd
   dir: ajinkyaa/postgres/etcd
   workflow: nutanix-backend
+- name: artemis
+  dir: artemis/test
+  workflow: nutanix-backend
 - name: ajinkyaa_uat_hapg
   dir: ajinkyaa/postgres/hapg
   workflow: nutanix-backend
