@@ -44,7 +44,7 @@ module "us01vletcdtst20" {
 }
 
 
-output "us01vletcdtst20" 
+output "us01vletcdtst20" {
   value = {
     "fqdn"  = "${module.us01vletcdtst20.fqdn}",
     "alias" = "${module.us01vletcdtst20.alias}",
