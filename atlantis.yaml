@@ -71,10 +71,10 @@ projects:
 - name: ynafeesa_Test_server_etcd
   dir: Pgtest/postgres/etcd
   workflow: nutanix-backend
-- name: ynafeesa_Test_server_hapg
+- name: ynafeesa_Testing_server_hapg
   dir: Pgtest/postgres/hapg
   workflow: nutanix-backend
-- name: ynafeesa_Test_server_pgbackrest
+- name: ynafeesa_Testing_server_pgbackrest
   dir: Pgtest/postgres/pgbackrest
   workflow: nutanix-backend
 # O
