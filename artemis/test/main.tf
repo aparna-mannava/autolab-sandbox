@@ -23,7 +23,7 @@ locals {
       "bt_customer"     = local.facts.bt_customer
       "bt_product"      = local.facts.bt_product
       "bt_tier"         = local.facts.bt_tier
-      "bt_artemis_mode" = cluster
+      "bt_artemis_mode" = "cluster"
      }   
 }
 
