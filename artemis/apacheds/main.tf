@@ -24,7 +24,7 @@ module "app_server_1" {
   hostname             = "us01vlcfrmrd000"
   alias                = "cfrm-dynamic"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-aza-ntnx-14"
+  bt_infra_cluster     = "ny5-azc-ntnx-16"
   cpus                 = 6
   memory               = 24000
   os_version           = "rhel8"
