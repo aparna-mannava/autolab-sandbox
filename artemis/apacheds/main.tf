@@ -31,6 +31,7 @@ module "app_server_1" {
   foreman_environment  = "feature_CFRMRD_40239"
   foreman_hostgroup    = "BT CFRMRD apacheds standalone"
   datacenter           = "ny2"
+  lob                  = "CFRM"
   external_facts       = local.app_server_1_facts
   additional_disks     = {
     1 = "100",
