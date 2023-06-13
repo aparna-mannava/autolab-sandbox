@@ -21,11 +21,11 @@ module "cloud_dbserver_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldgbdb9876"
   alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-dba"
-  bt_infra_cluster     = "ny5-aza-ntnx-14"
+  bt_infra_cluster     = "ny5-azd-ntnx-27"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
   cpus                 = "4"
-  memory               = "16384"
+  memory               = "8192"
   foreman_environment  = local.environment
   lob                  = "CLOUD"
   foreman_hostgroup    = "BT Base Server"
