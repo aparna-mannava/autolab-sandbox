@@ -37,8 +37,8 @@ projects:
 - name: danielsh_base
   dir: danielsh/base
   workflow: nutanix-backend
-  
-# F  
+
+# F
 # G
 - name: gaurav_windows
   dir: Gaurav/windows
@@ -87,6 +87,9 @@ projects:
   workflow: nutanix-backend
 - name: jenkins88_dgb1
   dir: spatel/jenkins88
+  workflow: nutanix-backend
+- name: jenkins8_dgb8
+  dir: spatel/jenkins8
   workflow: nutanix-backend
 # T
 # U
