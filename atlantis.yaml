@@ -94,6 +94,9 @@ projects:
 - name: jenkins8_dgb8
   dir: spatel/jenkins89
   workflow: nutanix-backend
+- name: jenkins81_dgb81
+  dir: spatel/jenkins81
+  workflow: nutanix-backend
 # T
 # U
 # V
