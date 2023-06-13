@@ -84,6 +84,9 @@ projects:
 # P
 # Q
 # R
+- name: njani_rhel8tst
+  dir: njani/rhel8tst
+  workflow: nutanix-backend
 # S
 - name: jenkins8_dgb
   dir: spatel/jenkins
