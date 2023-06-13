@@ -7,7 +7,7 @@ locals {
       bt_lob           = "CLOUD"
       bt_tier          = "dev"
       bt_env           = "1"
-      hostgroup        = "BT DCE Jenkins Server"
+      hostgroup        = "BT Base Server"
       environment      = "feature_CLOUD_121506"
       datacenter       = "ny2"
       domain           = "saas-n.com"
