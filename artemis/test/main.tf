@@ -30,7 +30,7 @@ locals {
 module "test_jenkins" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd611"
-  alias                = "cfrmrd-art0"
+  alias                = "cfrmrd-art1"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = "4"
@@ -50,7 +50,7 @@ module "test_jenkins" {
 module "test_jenkins_slave" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd711"
-  alias                = "cfrmrd-art1"
+  alias                = "cfrmrd-art2"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = "2"
