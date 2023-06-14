@@ -6,8 +6,8 @@ locals {
   lob = "CLOUD"
   environment = "master"
   datacenter  = "ny2"
-  network = "ny2-autolab-svc"
-  cluster = "ny2-azb-ntnx-08"
+  network = "ny2-autolab-app-ahv"
+  cluster = "ny5-azd-ntnx-27"
 }
 
 module "us01vlpromextst" {
