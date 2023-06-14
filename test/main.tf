@@ -7,7 +7,7 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   network = "ny2-autolab-svc"
-  cluster = "ny5-azd-ntnx-27"
+  cluster = "ny2-azb-ntnx-08"
 }
 
 module "us01vlpromextst" {
