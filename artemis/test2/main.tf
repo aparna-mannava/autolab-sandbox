@@ -25,7 +25,7 @@ module "app_server_1" {
   alias                = "testing-dynamicscan"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
-  cpus                 = "4"
+  cpus                 = "6"
   memory               = "12000"
   os_version           = "rhel8"
   foreman_environment  = "feature_CFRMRD_40239"
