@@ -107,6 +107,9 @@ projects:
   dir: spatel/jenkins81
   workflow: nutanix-backend
 # T
+- name: test_promex
+  dir: test/promex
+  workflow: nutanix-backend
 # U
 # V
 # W
