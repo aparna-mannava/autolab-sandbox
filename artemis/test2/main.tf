@@ -26,7 +26,7 @@ module "app_server_1" {
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = "6"
-  memory               = "24000"
+  memory               = "12000"
   os_version           = "rhel8"
   foreman_environment  = "feature_CFRMRD_40239"
   foreman_hostgroup    = "BT CFRMRD Opensearch apacheds standalone"
