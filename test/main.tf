@@ -24,7 +24,7 @@ module "us01vlpromextst" {
   datacenter = local.datacenter
   }
 
-output "rhel9srea1" {
+output "us01vlpromextst" {
   value = {
     "fqdn"  = module.us01vlpromextst.fqdn,
     "ip"    = module.us01vlpromextst.ip,
