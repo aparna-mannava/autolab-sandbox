@@ -12,7 +12,7 @@ locals {
   bt_env          = "1"
   bt_product      = "pmx"
   lob             = "PBS"
-  hostgroup       = "BT PMX HA PG for PostgreSQL Server"
+  hostgroup       = "feature_PXDVOP-24317"
   environment     = "feature_PXDVOP_24317"
   cluster         = "ny5-aza-ntnx-19"
   network         = "ny2-autolab-db-ahv"
