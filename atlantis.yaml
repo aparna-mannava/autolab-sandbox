@@ -88,6 +88,9 @@ projects:
   workflow: nutanix-backend
 # O
 # P
+- name: prabhanjandesai
+  dir: prabhanjandesai
+  workflow: nutanix-backend
 # Q
 # R
 - name: njani_rhel8tst
