@@ -25,7 +25,7 @@ locals {
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}", "${local.etcd_servers[2]}.${local.domain}"]
     "bt_pg_version"           = "12"
     "bt_cluster_name"         = "pmx-o2p"
-    "bt_override_date"        = "2023-03-01"
+ #   "bt_override_date"        = "2023-03-01"
   }
 }
 
