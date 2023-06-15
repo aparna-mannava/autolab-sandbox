@@ -88,8 +88,8 @@ projects:
   workflow: nutanix-backend
 # O
 # P
-- name: Prabhanjan
-  dir: Prabhanjan
+- name: prabhanjandesai
+  dir: prabhanjandesai
   workflow: nutanix-backend
 # Q
 # R
