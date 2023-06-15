@@ -121,11 +121,9 @@ projects:
 - name: ysurykin_etcd
   dir: ysurykin/etcd
   workflow: nutanix-backend
-
 - name: ysurykin_hapg
   dir: ysurykin/hapg
   workflow: nutanix-backend
-
 - name: ysurykin_backrest
   dir: ysurykin/backrest
   workflow: nutanix-backend

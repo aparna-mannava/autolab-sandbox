@@ -28,7 +28,7 @@ locals {
     "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "pmx-o2p"
-    "bt_override_date"        = "2023-03-01"
+ #   "bt_override_date"        = "2023-03-01"
   }
 }
 
