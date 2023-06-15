@@ -8,7 +8,7 @@ module "us01vwnxste01" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = "us01vwnxste03"
   bt_infra_cluster    = "ny5-azd-ntnx-27"
-  bt_infra_network    = "ny2-inf-nonprod-services"
+  bt_infra_network    = "ny2-autolab-app-ahv"
   cpus                = 4
   lob                 = "CLOUD"
   memory              = 8192
