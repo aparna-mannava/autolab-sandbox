@@ -18,6 +18,7 @@ module "us01vwnxste01" {
   datacenter          = "ny2"
 }
 
+
 output "us01vwnxste01" {
   value = {
     "fqdn"  = module.us01vwnxste01.fqdn,
