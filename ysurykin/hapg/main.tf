@@ -12,8 +12,8 @@ locals {
   bt_env          = "1"
   bt_product      = "pmx"
   lob             = "PBS"
-  hostgroup       = "BT ETCD for PostgreSQL Server"
-  environment     = "master"
+  hostgroup       = "BT PMX HA PG for PostgreSQL Server"
+  environment     = "feature_PXDVOP_24317"
   cluster         = "ny5-aza-ntnx-19"
   network         = "ny2-autolab-db-ahv"
   fw_group        = "PMX_QA_63_DB"
@@ -38,7 +38,7 @@ module "ny2_autolab_hapg_0" {
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   lob                 = local.lob
-  foreman_hostgroup   = "BT HA PG Server"
+  foreman_hostgroup   = local.hostgroup
   foreman_environment = local.environment
   os_version          = "rhel7"
   cpus                = "2"
@@ -57,7 +57,7 @@ module "ny2_autolab_hapg_1" {
   hostname            = local.hapg_servers[1]
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
-  foreman_hostgroup   = "BT HA PG Server"
+  foreman_hostgroup   = local.hostgroup
   foreman_environment = local.environment
   lob                 = local.lob
   os_version          = "rhel7"
@@ -77,7 +77,7 @@ module "ny2_autolab_hapg_2" {
   hostname            = local.hapg_servers[2]
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
-  foreman_hostgroup   = "BT HA PG Server"
+  foreman_hostgroup   = local.hostgroup
   foreman_environment = local.environment
   lob                 = local.lob
   os_version          = "rhel7"
