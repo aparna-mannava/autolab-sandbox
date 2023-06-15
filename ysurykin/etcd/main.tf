@@ -12,7 +12,7 @@ locals {
   datacenter      = "ny2"
   db_env          = "ny2-autolab-app-ahv"
   cluster         = "ny5-aza-ntnx-19"
-  hostgroup       = "BT ETCD for PostgreSQL Server"
+  hostgroup       = "feature_PXDVOP-24317_etcd"
   etcd_servers    = ["us01vlsndbxd11","us01vlsndbxd12","us01vlsndbxd13"]
   hapg_servers    = ["us01vlsndbpg11","us01vlsndbpg12","us01vlsndbpg13"]
   haproxy_server  = ["us01vlsndbpxy1"]
