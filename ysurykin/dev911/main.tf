@@ -8,6 +8,8 @@ locals {
   datacenter  = "ny2"
   db_env      = "ny2-autolab-db-ahv"
   cluster     = "ny5-aza-ntnx-19"
+  domain      = "auto.saas-n.com"
+  lob         = "PBS"
   facts       = {
     "bt_tier"          = "dev"
     "bt_env"           = "911"
