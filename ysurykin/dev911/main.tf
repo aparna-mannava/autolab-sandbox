@@ -17,7 +17,7 @@ locals {
 
 module "pmx_pgdb_9" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlpmxpgdb911"
+  hostname             = "us01vlpgdb911"
   alias                = "${local.product}-${local.facts.bt_tier}${local.facts.bt_env}-pgdb01"
   bt_infra_network     = local.db_env
   bt_infra_cluster     = local.cluster
