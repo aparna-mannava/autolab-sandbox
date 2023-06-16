@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "pmx"
-  environment = "master"
+  environment = "feature_PXDVOP_24317"
   datacenter  = "ny2"
   db_env      = "ny2-autolab-db-ahv"
   cluster     = "ny5-aza-ntnx-19"
