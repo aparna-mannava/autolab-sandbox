@@ -121,4 +121,7 @@ projects:
 - name: ysurykin_backrest
   dir: ysurykin/backrest
   workflow: nutanix-backend
+- name: ysurykin_dev911
+  dir: ysurykin/dev911
+  workflow: nutanix-backend
 # Z
