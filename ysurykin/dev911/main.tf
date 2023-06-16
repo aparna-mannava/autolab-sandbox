@@ -45,3 +45,4 @@ output "pmx_pgdb_1" {
     "ip"    = module.pmx_pgdb_9.ip,
   }
 }
+
