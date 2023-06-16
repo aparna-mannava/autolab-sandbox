@@ -28,7 +28,6 @@ module "pmx_pgdb_9" {
   memory               = 12000
   foreman_environment  = local.environment
   foreman_hostgroup    = "BT PMX PG"
-  firewall_group       = "PMX_QA_63_DB"
   datacenter           = local.datacenter
   external_facts       = local.facts
   lob                  = local.lob
