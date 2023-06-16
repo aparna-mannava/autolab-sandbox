@@ -31,6 +31,7 @@ module "pmx_pgdb_9" {
   firewall_group       = "PMX_QA_63_DB"
   datacenter           = local.datacenter
   external_facts       = local.facts
+  lob                  = local.lob
   additional_disks     = {
     1 = "100",
     2 = "300",
