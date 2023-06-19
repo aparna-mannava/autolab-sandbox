@@ -23,3 +23,4 @@ value = {
 "ip"    = module.us01vwnxste02.ip,
 }
 }
+# destroy
