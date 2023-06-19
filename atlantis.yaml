@@ -60,8 +60,10 @@ projects:
 # J
 # K
 # L
-# M
-# N
+- name: mg-test
+  dir: mg-test/test
+  workflow: nutanix-backend
+  # N
 - name: ynafeesa_test_server_etcd
   dir: ynafeesa/postgres/etcd
   workflow: nutanix-backend
