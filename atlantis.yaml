@@ -122,6 +122,9 @@ projects:
 # V
 # W
 # X
+- name: njani-patstd12
+  dir: njani/patronistd12/etcdnodes
+  workflow: nutanix-backend
 # Y
 - name: ysurykin_etcd
   dir: ysurykin/etcd
