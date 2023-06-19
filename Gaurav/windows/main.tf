@@ -12,7 +12,7 @@ lob                 = "CLOUD"
 memory              = 8192
 os_version          = "win2019"
 foreman_environment = "master"
-foreman_hostgroup   = "BT Base Server"
+foreman_hostgroup   = "BT Base Windows Server"
 datacenter          = "ny2"
 }
 

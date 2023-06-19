@@ -52,9 +52,6 @@ projects:
 - name: gaurav_windows
   dir: Gaurav/windows
   workflow: nutanix-backend
-- name: gaurav_windows2
-  dir: Gaurav/windows/windows2
-  workflow: nutanix-backend
 # H
 # I
 # J
