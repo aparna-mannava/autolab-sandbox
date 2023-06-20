@@ -19,6 +19,9 @@ projects:
 - name: testing
   dir: artemis/test2
   workflow: nutanix-backend
+- name: artemis4
+  dir: artemis/test3
+  workflow: nutanix-backend
 - name: apachedz
   dir: artemis/apacheds
   workflow: nutanix-backend
