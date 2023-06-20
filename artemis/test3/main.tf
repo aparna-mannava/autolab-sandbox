@@ -48,7 +48,7 @@ module "test_jenkins" {
   os_version           = "rhel7"
   external_facts       = local.test_jenkins_facts
   foreman_environment  = "feature_CFRMRD_40239"
-  foreman_hostgroup    = "CFRMRD Artemis"
+  foreman_hostgroup    = "CFRMRD artemis"
   lob                  = "CFRM"
   datacenter           = "ny2"
   additional_disks     = {
@@ -68,7 +68,7 @@ module "test_jenkins_slave" {
   os_version           = "rhel7"
   external_facts       = local.test_jenkins_slave_facts
   foreman_environment  = "feature_CFRMRD_40239"
-  foreman_hostgroup    = "BT CFRMRD Artemis"
+  foreman_hostgroup    = "CFRMRD artemis"
   lob                  = "CFRM"
   datacenter           = "ny2"
   additional_disks     = {
