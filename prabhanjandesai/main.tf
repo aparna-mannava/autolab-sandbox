@@ -6,7 +6,7 @@ terraform {
 
 module "us01vwnxste01" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname            = "us01vwnxste03"
+  hostname            = "us01vwnxste04"
   bt_infra_cluster    = "ny5-azd-ntnx-27"
   bt_infra_network    = "ny2-autolab-app-ahv"
   cpus                = 4
@@ -14,7 +14,7 @@ module "us01vwnxste01" {
   memory              = 8192
   os_version          = "win2019"
   foreman_environment = "master"
-  foreman_hostgroup   = "BT Base Server"
+  foreman_hostgroup   = "BT Base Windows Server"
   datacenter          = "ny2"
 }
 
