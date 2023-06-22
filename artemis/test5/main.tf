@@ -7,7 +7,7 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product"  = "cfrmrd"
       "bt_tier"     = "dev"
-      "bt_role"     = "artemis"
+      "bt_role"     = "standalone"
     }
     test_jenkins_facts    = {
       "bt_env"                 = "devops"
