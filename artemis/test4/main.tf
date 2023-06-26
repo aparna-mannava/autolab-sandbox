@@ -31,6 +31,8 @@ locals {
     }   
 }
 
+# have to delete us01vlcfrmrd516.auto.saas-n.com, because it is conflicting with a networking router IP
+
 module "test_jenkins" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmrd516"
