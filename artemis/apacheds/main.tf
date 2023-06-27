@@ -46,3 +46,4 @@ output "app_server_1" {
     "ip"    = module.app_server_1.ip,
   }
 }
+
