@@ -16,7 +16,7 @@ locals {
       "bt_product" = local.facts.bt_product
       "bt_tier" = local.facts.bt_tier
       "bt_env" = local.facts.bt_env
-      "bt_role" = "standalone"
+      "bt_role" = local.facts.bt_role
       "bt_opensearch_mode" = "cluster"
       "bt_opensearch_nodes" = local.facts.bt_opensearch_nodes
       "bt_artemis_mode"        = "cluster"
@@ -81,7 +81,7 @@ module "opensearch_2" {
   external_facts       = local.os02facts
   lob                  = "CFRM"
   foreman_environment  = "feature_CFRMRD_40239"
-  foreman_hostgroup    = "BT CFRMRD Opensearch"
+  foreman_hostgroup    = "BT CFRMRD Opensearch artemis"
   datacenter           = "ny2"
   cpus                 = "4"
   memory         	   = "16192"
