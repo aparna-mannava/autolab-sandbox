@@ -9,7 +9,7 @@ locals {
       "bt_tier" = "dev"
       "bt_env" = "devops"
       "bt_role" = "opensearch"
-      "bt_opensearch_nodes" = ["us01vlcfrmrdall1.auto.saas-n.com", "us01vlcfrmrdall2.auto.saas-n.com","us01vlcfrmrdall3.auto.saas-n.com"]
+      "bt_opensearch_nodes" = ["us01vlcfrmrdal1.auto.saas-n.com", "us01vlcfrmrdal2.auto.saas-n.com","us01vlcfrmrdal3.auto.saas-n.com"]
     } 
     os01facts    = {
       "bt_customer" = local.facts.bt_customer
@@ -21,7 +21,7 @@ locals {
       "bt_opensearch_nodes" = local.facts.bt_opensearch_nodes
       "bt_artemis_mode"        = "cluster"
       "bt_artemis_server_mode" = "master"
-      "bt_slave_fdqn"          = "us01vlcfrmrdall2.auto.saas-n.com"
+      "bt_slave_fdqn"          = "us01vlcfrmrdal2.auto.saas-n.com"
      }
     os02facts    = {
       "bt_customer" = local.facts.bt_customer
@@ -32,7 +32,7 @@ locals {
       "bt_opensearch_nodes" = local.facts.bt_opensearch_nodes
       "bt_artemis_mode"        = "cluster"
       "bt_artemis_server_mode" = "slave"
-      "bt_master_fdqn"         = "us01vlcfrmrdall1.auto.saas-n.com"
+      "bt_master_fdqn"         = "us01vlcfrmrdal1.auto.saas-n.com"
      }
     os03facts    = {
       "bt_customer" = local.facts.bt_customer
@@ -53,7 +53,7 @@ locals {
 
 module "artemis_apacheds_opensearch_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdall1"
+  hostname             = "us01vlcfrmrdal1"
   alias                = "cfrmrd-all1"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
@@ -73,7 +73,7 @@ module "artemis_apacheds_opensearch_1" {
 
 module "opensearch_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdall2"
+  hostname             = "us01vlcfrmrdal2"
   alias                = "cfrmrd-all2"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
@@ -93,7 +93,7 @@ module "opensearch_2" {
 
 module "opensearch_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdall3"
+  hostname             = "us01vlcfrmrdal3"
   alias                = "cfrmrd-all3"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
@@ -113,7 +113,7 @@ module "opensearch_3" {
 
 module "opensearch_4" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrall4"
+  hostname             = "us01vlcfrmral4"
   alias                = "cfrmrd-all4"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
