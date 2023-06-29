@@ -21,7 +21,6 @@ locals {
       "bt_master_fdqn"         = "us01vlcfrmrd515.saas-n.com"
       "bt_slave_host"          = "us01vlcfrmrd615"
       "bt_slave_fdqn"          = "us01vlcfrmrd615.saas-n.com"
-      
     }
     test_jenkins_slave_facts    = {
       "bt_env"                 = "devops"
