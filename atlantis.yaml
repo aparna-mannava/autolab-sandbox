@@ -19,6 +19,9 @@ projects:
 - name: artemis6
   dir: artemis/test5
   workflow: nutanix-backend
+- name: artemis8
+  dir: artemis/test7
+  workflow: nutanix-backend
 - name: rhel8_deployment
   dir: artemis/test6
   workflow: nutanix-backend
