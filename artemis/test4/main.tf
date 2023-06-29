@@ -17,6 +17,7 @@ locals {
       "bt_tier"                = local.facts.bt_tier
       "bt_artemis_mode"        = "cluster"
       "bt_artemis_server_mode" = "master"
+     
       "bt_slave_fdqn"          = "us01vlcfrmrd616.saas-n.com"
     }
     test_jenkins_slave_facts    = {
