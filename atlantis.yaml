@@ -7,135 +7,28 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: ajinkyaa_uat_pg_etcd
-  dir: ajinkyaa/postgres/etcd
-  workflow: nutanix-backend
-- name: artemis4
-  dir: artemis/test3
-  workflow: nutanix-backend
-- name: artemis5
-  dir: artemis/test4
-  workflow: nutanix-backend
-- name: artemis6
-  dir: artemis/test5
-  workflow: nutanix-backend
-- name: artemis8
-  dir: artemis/test7
-  workflow: nutanix-backend
-- name: rhel8_deployment
-  dir: artemis/test6
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_hapg
-  dir: ajinkyaa/postgres/hapg
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_pgbackrest
-  dir: ajinkyaa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: Pg_bouncer_etcd
-  dir: pgbouncer_algondaa/postgres/etcd
-  workflow: nutanix-backend
-- name: Pg_bouncer_hapg
-  dir: pgbouncer_algondaa/postgres/hapg
-  workflow: nutanix-backend
-- name: Pg_bouncer_pgbackrest
-  dir: pgbouncer_algondaa/postgres/pgbackrest
-  workflow: nutanix-backend
 # B
 # C
 # D
-- name: danielsh_apacheds
-  dir: danielsh/apacheds
-  workflow: nutanix-backend
-- name: danielsh_base
-  dir: danielsh/base
-  workflow: nutanix-backend
-
+# E
 # F
 # G
-- name: gaurav_windows
-  dir: Gaurav/windows
-  workflow: nutanix-backend
 # H
 # I
 # J
 # K
 # L
-- name: mg-test
-  dir: mg-test/test
-  workflow: nutanix-backend
-  # N
-- name: ynafeesa_test_server_etcd
-  dir: ynafeesa/postgres/etcd
-  workflow: nutanix-backend
-- name: ynafeesa_test_server_hapg
-  dir: ynafeesa/postgres/hapg
-  workflow: nutanix-backend
-- name: ynafeesa_test_server_pgbackrest
-  dir: ynafeesa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_etcd
-  dir: PgBouncer/postgres/etcd
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_hapg
-  dir: PgBouncer/postgres/hapg
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_pgbackrest
-  dir: PgBouncer/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: ynafeesa_Test_server_etcd
-  dir: Pgtest/postgres/etcd
-  workflow: nutanix-backend
-- name: ynafeesa_Testing_server_hapg
-  dir: Pgtest/postgres/hapg
-  workflow: nutanix-backend
-- name: ynafeesa_Testing_server_pgbackrest
-  dir: Pgtest/postgres/pgbackrest
-  workflow: nutanix-backend
+# M
+# N
 # O
 # P
-- name: prabhanjandesai
-  dir: prabhanjandesai
-  workflow: nutanix-backend
 # Q
 # R
-- name: njani_rhel8tst
-  dir: njani/rhel8tst
-  workflow: nutanix-backend
 # S
-- name: jenkins8_dgb
-  dir: spatel/jenkins
-  workflow: nutanix-backend
-- name: jenkins88_dgb1
-  dir: spatel/jenkins88
-  workflow: nutanix-backend
-- name: jenkins8_dgb8
-  dir: spatel/jenkins89
-  workflow: nutanix-backend
-- name: jenkins81_dgb81
-  dir: spatel/jenkins81
-  workflow: nutanix-backend
 # T
-- name: test_promex
-  dir: test/promex
-  workflow: nutanix-backend
 # U
 # V
 # W
 # X
-- name: njani-patstd12
-  dir: njani/patronistd12/etcdnodes
-  workflow: nutanix-backend
 # Y
-- name: ysurykin_etcd
-  dir: ysurykin/etcd
-  workflow: nutanix-backend
-- name: ysurykin_hapg
-  dir: ysurykin/hapg
-  workflow: nutanix-backend
-- name: ysurykin_backrest
-  dir: ysurykin/backrest
-  workflow: nutanix-backend
-- name: ysurykin_dev911
-  dir: ysurykin/dev911
-  workflow: nutanix-backend
 # Z
