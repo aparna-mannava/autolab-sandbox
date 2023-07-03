@@ -25,6 +25,9 @@ projects:
 # Q
 # R
 # S
+- name: suresha-stndrd
+  dir: suresha/stndrd
+  workflow: nutanix-backend
 # T
 # U
 # V
