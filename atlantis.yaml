@@ -28,6 +28,9 @@ projects:
 - name: suresha-stndrd
   dir: suresha/stndrd
   workflow: nutanix-backend
+- name: suresha-entrpr
+  dir: suresha/entrpr
+  workflow: nutanix-backend
 # T
 # U
 # V
