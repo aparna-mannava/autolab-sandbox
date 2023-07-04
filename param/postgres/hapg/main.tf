@@ -12,7 +12,7 @@ locals {
   bt_env          = "1"
   bt_product      = "cloud"
   bt_role         = "postgresql"
-  lob             = "cloud"
+  lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
   environment     = "production"
   cluster         = "ny5-aza-ntnx-14"
