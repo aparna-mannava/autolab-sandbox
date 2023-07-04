@@ -20,6 +20,16 @@ projects:
 # L
 # M
 # N
+- name: Naf_Testing_server1_etcd
+  dir: Naf/postgres/etcd
+  workflow: nutanix-backend
+- name: Naf_Testing_server1_hapg
+  dir: Naf/postgres/hapg
+  workflow: nutanix-backend
+- name: Naf_Testing_server1_pgbackrest
+  dir: Naf/postgres/pgbackrest
+  workflow: nutanix-backend
+
 # O
 # P
 # Q
