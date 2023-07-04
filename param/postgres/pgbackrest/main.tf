@@ -10,7 +10,7 @@ locals {
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "1"
-  bt_product      = "fmcloud"
+  bt_product      = "cloud"
   bt_role		      = "pgbackrest"
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"

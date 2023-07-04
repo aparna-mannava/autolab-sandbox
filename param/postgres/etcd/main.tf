@@ -9,7 +9,7 @@ locals {
   tier            = "nonprod"
   bt_env          = "1"
   lob             = "CLOUD"
-  bt_product      = "fmcloud"
+  bt_product      = "cloud"
   bt_role         = "postgres"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "production"
