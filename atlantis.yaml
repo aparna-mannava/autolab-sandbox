@@ -37,6 +37,24 @@ projects:
 # N
 # O
 # P
+- name: param_uat_pg_etcd
+  dir: param/postgres/etcd
+  workflow: nutanix-backend
+- name: param_uat_hapg
+  dir: param/postgres/hapg
+  workflow: nutanix-backend
+- name: param_uat_pgbackrest
+  dir: param/postgres/pgbackrest
+  workflow: nutanix-backend
+- name: param_param_etcd
+  dir: param/postgres/etcd
+  workflow: nutanix-backend
+- name: param_param_hapg
+  dir: param/postgres/hapg
+  workflow: nutanix-backend
+- name: param_param_pgbackrest
+  dir: param/postgres/pgbackrest
+  workflow: nutanix-backend
 # Q
 # R
 # S
