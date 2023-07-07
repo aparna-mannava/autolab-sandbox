@@ -29,7 +29,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgdevt"
+    "bt_cluster_name"         = "us01vlhapgdev"
     "bt_pg_version"           = "12"
   }
 
@@ -44,7 +44,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgdevt"
+    "bt_cluster_name"         = "us01vlhapgdev"
     "bt_pg_version"           = "12"
   }
 }
@@ -157,3 +157,4 @@ output "us01vlprxyts50" {
     "ip"    = "${module.us01vlprxyts50.ip}",
   }
 }
+# REBUILDING 
