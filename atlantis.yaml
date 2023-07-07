@@ -49,6 +49,9 @@ projects:
   workflow: nutanix-backend
 # Q
 # R
+- name: rehl8
+  dir: rehl8
+  workflow: nutanix-backend
 # S
 - name: suresha-stndrd
   dir: suresha/stndrd
