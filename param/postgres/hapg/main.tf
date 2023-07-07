@@ -3,18 +3,18 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts02"]
-  hapg_servers    = ["us01vlhapgts04","us01vlhapgts05","us01vlhapgts06"]
-  haproxy_server  = ["us01vlprxyts02"]
-  backrest_server = ["us01vlbkts02"]
+  etcd_servers    = ["us01vletcdts201"]
+  hapg_servers    = ["us01vlhapgts201","us01vlhapgts202","us01vlhapgts203"]
+  haproxy_server  = ["us01vlprxyts201"]
+  backrest_server = ["us01vlbkts201"]
   domain          = "auto.saas-n.com"
-  tier            = "uat"
+  tier            = "nonprod"
   bt_env          = "1"
-  bt_product      = "fmcloud"
+  bt_product      = "cloud"
   bt_role         = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
-  environment     = "feature_cloud_121562_test_uat"
+  environment     = "production"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
@@ -50,7 +50,7 @@ locals {
 }
 
 
-module "us01vlhapgts01" {
+module "us01vlhapgts201" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -69,7 +69,7 @@ module "us01vlhapgts01" {
   }
 }
 
-module "us01vlhapgts02" {
+module "us01vlhapgts202" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -88,7 +88,7 @@ module "us01vlhapgts02" {
   }
 }
 
-module "us01vlhapgts03" {
+module "us01vlhapgts203" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[2]}"
   bt_infra_cluster     = local.cluster
@@ -107,7 +107,7 @@ module "us01vlhapgts03" {
   }
 }
 
-module "us01vlprxyts01" {
+module "us01vlprxyts201" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -126,34 +126,34 @@ module "us01vlprxyts01" {
   }
 }
 
-output "us01vlhapgts01" {
+output "us01vlhapgts201" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts01.fqdn}",
-    "alias" = "${module.us01vlhapgts01.alias}",
-    "ip"    = "${module.us01vlhapgts01.ip}",
+    "fqdn"  = "${module.us01vlhapgts201.fqdn}",
+    "alias" = "${module.us01vlhapgts201.alias}",
+    "ip"    = "${module.us01vlhapgts201.ip}",
   }
 }
 
-output "us01vlhapgts02" {
+output "us01vlhapgts202" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts02.fqdn}",
-    "alias" = "${module.us01vlhapgts02.alias}",
-    "ip"    = "${module.us01vlhapgts02.ip}",
+    "fqdn"  = "${module.us01vlhapgts202.fqdn}",
+    "alias" = "${module.us01vlhapgts202.alias}",
+    "ip"    = "${module.us01vlhapgts202.ip}",
   }
 }
 
-output "us01vlhapgts03" {
+output "us01vlhapgts203" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts03.fqdn}",
-    "alias" = "${module.us01vlhapgts03.alias}",
-    "ip"    = "${module.us01vlhapgts03.ip}",
+    "fqdn"  = "${module.us01vlhapgts203.fqdn}",
+    "alias" = "${module.us01vlhapgts203.alias}",
+    "ip"    = "${module.us01vlhapgts203.ip}",
   }
 }
 
-output "us01vlprxyts01" {
+output "us01vlprxyts201" {
   value = {
-    "fqdn"  = "${module.us01vlprxyts01.fqdn}",
-    "alias" = "${module.us01vlprxyts01.alias}",
-    "ip"    = "${module.us01vlprxyts01.ip}",
+    "fqdn"  = "${module.us01vlprxyts201.fqdn}",
+    "alias" = "${module.us01vlprxyts201.alias}",
+    "ip"    = "${module.us01vlprxyts201.ip}",
   }
 }

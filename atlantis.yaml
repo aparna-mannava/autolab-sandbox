@@ -7,24 +7,6 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: ajinkyaa_uat_pg_etcd
-  dir: ajinkyaa/postgres/etcd
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_hapg
-  dir: ajinkyaa/postgres/hapg
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_pgbackrest
-  dir: ajinkyaa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: Pg_bouncer_etcd
-  dir: pgbouncer_algondaa/postgres/etcd
-  workflow: nutanix-backend
-- name: Pg_bouncer_hapg
-  dir: pgbouncer_algondaa/postgres/hapg
-  workflow: nutanix-backend
-- name: Pg_bouncer_pgbackrest
-  dir: pgbouncer_algondaa/postgres/pgbackrest
-  workflow: nutanix-backend
 - name: aparna_cloud_121562_dev_etcd
   dir: aparna/postgres/etcd
   workflow: nutanix-backend
@@ -34,21 +16,14 @@ projects:
 - name: aparna_cloud_121562_dev_pgbackrest
   dir: aparna/postgres/pgbackrest
   workflow: nutanix-backend
-
 # B
 # C
 # D
-- name: danielsh_apacheds
-  dir: danielsh/apacheds
-  workflow: nutanix-backend
-- name: danielsh_base
-  dir: danielsh/base
-  workflow: nutanix-backend
-  
-# F  
+# E
+# F
 # G
-- name: gaurav_windows
-  dir: Gaurav/windows
+- name: gaurav
+  dir: gaurav
   workflow: nutanix-backend
 # H
 # I
@@ -57,31 +32,35 @@ projects:
 # L
 # M
 # N
-- name: ynafeesa_test_server_etcd
-  dir: ynafeesa/postgres/etcd
+- name: Naf_Testing_server1_etcd
+  dir: Naf/postgres/etcd
   workflow: nutanix-backend
-- name: ynafeesa_test_server_hapg
-  dir: ynafeesa/postgres/hapg
+- name: Naf_Testing_server1_hapg
+  dir: Naf/postgres/hapg
   workflow: nutanix-backend
-- name: ynafeesa_test_server_pgbackrest
-  dir: ynafeesa/postgrs/pgbackrest
+- name: Naf_Testing_server1_pgbackrest
+  dir: Naf/postgres/pgbackrest
   workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_etcd
-  dir: PgBouncer/postgres/etcd
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_hapg
-  dir: PgBouncer/postgres/hapg
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_pgbackrest
-  dir: PgBouncer/postgres/pgbackrest
-  workflow: nutanix-backend
+
 # O
 # P
+- name: param_param_etcd
+  dir: param/postgres/etcd
+  workflow: nutanix-backend
+- name: param_param_hapg
+  dir: param/postgres/hapg
+  workflow: nutanix-backend
+- name: param_param_pgbackrest
+  dir: param/postgres/pgbackrest
+  workflow: nutanix-backend
 # Q
 # R
 # S
-- name: jenkins8_dgb
-  dir: spatel/jenkins
+- name: suresha-stndrd
+  dir: suresha/stndrd
+  workflow: nutanix-backend
+- name: suresha-entrpr
+  dir: suresha/entrpr
   workflow: nutanix-backend
 # T
 # U
