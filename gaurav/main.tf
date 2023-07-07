@@ -10,9 +10,9 @@ network = "ny2-autolab-app-ahv"
 cluster = "ny5-azd-ntnx-27"
 }
 
-module "us01vlr7srea1" {
+module "us01vlr8srea1" {
 source = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-hostname = "us01vlr7srea1"
+hostname = "us01vlr8srea1"
 bt_infra_cluster = local.cluster
 bt_infra_network = local.network
 lob = local.lob
@@ -25,10 +25,9 @@ datacenter = local.datacenter
 
 }
 
-output "us01vlr7srea1" {
+output "us01vlr8srea1" {
 value = {
-"fqdn" = module.us01vlr7srea1.fqdn,
-"ip" = module.us01vlr7srea1.ip,
+"fqdn" = module.us01vlr8srea1.fqdn,
+"ip" = module.us01vlr8srea1.ip,
 }
 }
-#destroy
