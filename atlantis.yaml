@@ -16,9 +16,6 @@ projects:
 - name: gaurav
   dir: gaurav
   workflow: nutanix-backend
-- name: gaurav
-  dir: gaurav/rehl8
-  workflow: nutanix-backend
 # H
 # I
 # J
