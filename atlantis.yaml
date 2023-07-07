@@ -13,9 +13,6 @@ projects:
 # E
 # F
 # G
-- name: gaurav
-  dir: gaurav
-  workflow: nutanix-backend
 # H
 # I
 # J
