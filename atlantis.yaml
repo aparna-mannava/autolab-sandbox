@@ -25,6 +25,16 @@ projects:
 - name: Pg_bouncer_pgbackrest
   dir: pgbouncer_algondaa/postgres/pgbackrest
   workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_etcd
+  dir: aparna/postgres/etcd
+  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_hapg
+  dir: aparna/postgres/hapg
+  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_pgbackrest
+  dir: aparna/postgres/pgbackrest
+  workflow: nutanix-backend
+
 # B
 # C
 # D
@@ -54,7 +64,7 @@ projects:
   dir: ynafeesa/postgres/hapg
   workflow: nutanix-backend
 - name: ynafeesa_test_server_pgbackrest
-  dir: ynafeesa/postgres/pgbackrest
+  dir: ynafeesa/postgrs/pgbackrest
   workflow: nutanix-backend
 - name: ynafeesa_pgb_test_server_etcd
   dir: PgBouncer/postgres/etcd
