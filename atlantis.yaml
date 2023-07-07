@@ -7,6 +7,15 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_etcd
+  dir: aparna/postgres/etcd
+  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_hapg
+  dir: aparna/postgres/hapg
+  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_pgbackrest
+  dir: aparna/postgres/pgbackrest
+  workflow: nutanix-backend
 # B
 # C
 # D
