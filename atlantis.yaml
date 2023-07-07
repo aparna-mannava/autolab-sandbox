@@ -74,6 +74,9 @@ projects:
 - name: suresha-entrpr
   dir: suresha/entrpr
   workflow: nutanix-backend
+- name: jenkins-agent
+  dir: spatel/jenkins
+  workflow: nutanix-backend
 # T
 # U
 # V
