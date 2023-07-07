@@ -52,7 +52,7 @@ module "us01vlbkts90" {
 }
 output "us01vlbkts90" {
   value = {
-    "fqdn"  = "${module.us01vlbkt90.fqdn}",
+    "fqdn"  = "${module.us01vlbkts90.fqdn}",
     "alias" = "${module.us01vlbkts90.alias}",
     "ip"    = "${module.us01vlbkts90.ip}",
   }
