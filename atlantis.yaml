@@ -77,6 +77,9 @@ projects:
 - name: jenkins-sam
   dir: spatel/jenkinss
   workflow: nutanix-backend
+- name: SRE-3835
+  dir: SRE-3835
+  workflow: nutanix-backend
 # T
 # U
 # V
