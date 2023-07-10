@@ -31,3 +31,4 @@ value = {
 "ip" = module.us01vlr8srea1.ip,
 }
 }
+#destroy
