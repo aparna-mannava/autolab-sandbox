@@ -25,8 +25,8 @@ module "staging_jenkins" {
   alias                = "cfrmws-jenkins"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
-  cpus                 = "4"
-  memory               = "8192"
+  cpus                 = "8"
+  memory               = "24000"
   os_version           = "rhel8"
   external_facts       = local.staging_jenkins_facts
   foreman_environment  = "feature_CFRMRD_40239"
