@@ -80,6 +80,9 @@ projects:
 - name: SRE-3835
   dir: SRE-3835
   workflow: nutanix-backend
+- name: suresha-postgres-pg1
+  dir: suresha/postgres/pg1
+  workflow: nutanix-backend
 # T
 # U
 # V
