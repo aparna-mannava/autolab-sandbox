@@ -83,6 +83,9 @@ projects:
 - name: suresha-postgres-pg1
   dir: suresha/postgres/pg1
   workflow: nutanix-backend
+- name: suresha-postgres-HA-etcd
+  dir: suresha/postgres/HA/etcd
+  workflow: nutanix-backend
 # T
 # U
 # V
