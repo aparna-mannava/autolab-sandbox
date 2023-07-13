@@ -88,7 +88,7 @@ projects:
   workflow: nutanix-backend
 - name: shkelqim-test-vm
   dir: shkelqim/testvm
-  workfllow: nutanix-backend
+  workflow: nutanix-backend
 # T
 # U
 # V
