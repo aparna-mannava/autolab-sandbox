@@ -86,6 +86,9 @@ projects:
 - name: suresha-postgres-HA-etcd
   dir: suresha/postgres/HA/etcd
   workflow: nutanix-backend
+- name: shkelqim-test-vm
+  dir: shkelqim/testvm
+  workfllow: nutanix-backend
 # T
 # U
 # V
