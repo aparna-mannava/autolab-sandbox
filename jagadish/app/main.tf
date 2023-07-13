@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrm"
-  environment = "feature/jagadish-learning-provisioning"
+  environment = "master"
   datacenter  = "ny2"
   facts       = {
   	"bt_active"  = "false"
