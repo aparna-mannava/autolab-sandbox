@@ -17,7 +17,7 @@ locals {
     "bt_ic_version" = "6.9.1.SP"
     "bt_server_number" = "01"
     "bt_infra_cluster" = "ny5-azh-ntnx-26"
-    "bt_infra_network" = "ny2-dgb-dgb-preprod-app2"
+    "bt_infra_network" = "ny2-autolab-app-ahv"
     "bt_product" = "cfrm"
     "bt_server_mode_be" = "icbe"
     "bt_role_be" = "backend"
