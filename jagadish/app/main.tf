@@ -42,7 +42,7 @@ module "backend_1" {
   foreman_environment  = local.environment
   foreman_hostgroup    = local.facts.foreman_hostgroup
   datacenter           = local.datacenter
-  lob                  = cfrm
+  lob                  = "cfrm"
   external_facts       = local.facts
   additional_disks     = {
     1 = "50",
