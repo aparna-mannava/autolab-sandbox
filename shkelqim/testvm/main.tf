@@ -3,14 +3,14 @@ terraform {
 }
 module "app_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vltfshkelqim01"
+  hostname             = "us01vltfshkl01"
   bt_infra_cluster     = "ny2-aze-ntnx-11"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
   foreman_environment  = "master"
   foreman_hostgroup    = "BT Base Server"
   datacenter           = "ny2"
-  lob                  = "cea" # Replace this with your own line of business
+  lob                  = "CEA" # Replace this with your own line of business
   additional_disks     = {
     1 = "20"
   }
