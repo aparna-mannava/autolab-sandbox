@@ -23,7 +23,7 @@ locals {
     "bt_tier" = "dev"
     "be_cpus" = "2"
     "foreman_hostgroup" = "BT CFRM SP Server"
-    "be01_hostname"= "us01vlapp07060"
+    "be01_hostname"= "us01vlapp00404"
     "memory" = "10000"
     "os_version" = "rhel8"
   }
