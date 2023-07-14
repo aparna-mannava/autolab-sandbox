@@ -19,7 +19,7 @@ locals {
     "bt_infra_cluster" = "ny5-azh-ntnx-26"
     "bt_infra_network" = "ny2-autolab-app-ahv"
     "bt_product" = "cfrm"
-    "bt_server_mode_be" = "ICBE"
+    "bt_server_mode" = "ICBE"
     "bt_role_be" = "backend"
     "bt_tier" = "dev"
     "be_cpus" = "2"
