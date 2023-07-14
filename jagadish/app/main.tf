@@ -33,7 +33,7 @@ locals {
 module "backend_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = local.facts.be01_hostname
-  alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_server_mode_be}${local.facts.bt_server_number}-${local.facts.bt_deployment_mode}"
+  alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_server_mode}${local.facts.bt_server_number}-${local.facts.bt_deployment_mode}"
   bt_infra_network     = local.facts.bt_infra_network
   bt_infra_cluster     = local.facts.bt_infra_cluster
   os_version           = local.facts.os_version
