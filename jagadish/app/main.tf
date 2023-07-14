@@ -9,7 +9,7 @@ locals {
   facts       = {
   	"bt_active"  = "false"
     "bt_ach_nutanix_mount" = "on"
-    "bt_customer" = "dgbcs"
+    "bt_customer" = "USBANK"
     "bt_deployment_mode" = "blue"
     "bt_env" = ""
     "bt_groovy_version" = "2.5.8"
