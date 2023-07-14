@@ -34,8 +34,8 @@ module "staging_jenkins" {
   lob                  = "CFRM"
   datacenter           = "ny2"
   additional_disks     = {
-    1 = "50",
-	2 = "100"
+    1 = "100",
+	2 = "200"
   }
 }
 
