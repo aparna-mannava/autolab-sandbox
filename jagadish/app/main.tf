@@ -8,7 +8,7 @@ locals {
   datacenter  = "ny2"
   facts       = {
   	"bt_active"  = "false"
-    "bt_ach_nutanix_mount" = "on"
+    "bt_ach_nutanix_mount" = "off"
     "bt_customer" = "USBANK"
     "bt_deployment_mode" = "blue"
     "bt_env" = ""
@@ -20,7 +20,7 @@ locals {
     "bt_infra_network" = "ny2-autolab-app-ahv"
     "bt_product" = "cfrm"
     "bt_server_mode" = "ICBE"
-    "bt_role_be" = "backend"
+    "bt_role" = "backend"
     "bt_tier" = "dev"
     "be_cpus" = "2"
     "foreman_hostgroup" = "BT CFRM SP Server"
