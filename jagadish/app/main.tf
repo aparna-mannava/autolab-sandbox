@@ -9,7 +9,7 @@ locals {
   facts       = {
   	"bt_active"  = "false"
     "bt_ach_nutanix_mount" = "off"
-    "bt_customer" = "USBANK"
+    "bt_customer" = "usbank"
     "bt_deployment_mode" = "blue"
     "bt_env" = ""
     "bt_groovy_version" = "2.5.8"
@@ -21,11 +21,11 @@ locals {
     "bt_product" = "cfrm"
     "bt_server_mode" = "ICBE"
     "bt_role" = "backend"
-    "bt_tier" = "STG"
+    "bt_tier" = "dev"
     "be_cpus" = "2"
     "foreman_hostgroup" = "BT CFRM SP Server"
     "be01_hostname"= "us01vlapp00404"
-    "os_version" = "rhel8"
+    "os_version" = "rhel7"
   }
 }
 
