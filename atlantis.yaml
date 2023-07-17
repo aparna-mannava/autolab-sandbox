@@ -40,6 +40,9 @@ projects:
 - name: jenkins
   dir: jenkins
   workflow: nutanix-backend
+- name: jagadish
+  dir: jagadish/app
+  workflow: nutanix-backend
 # K
 # L
 # M
