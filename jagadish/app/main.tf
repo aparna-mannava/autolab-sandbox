@@ -25,7 +25,6 @@ locals {
     "be_cpus" = "2"
     "foreman_hostgroup" = "BT CFRM SP Server"
     "be01_hostname"= "us01vlapp00404"
-    "memory" = "8192"
     "os_version" = "rhel8"
   }
 }
@@ -38,7 +37,6 @@ module "backend_1" {
   bt_infra_cluster     = local.facts.bt_infra_cluster
   os_version           = local.facts.os_version
   cpus                 = local.facts.be_cpus
-  memory               = local.facts.memory
   foreman_environment  = local.environment
   foreman_hostgroup    = local.facts.foreman_hostgroup
   datacenter           = local.datacenter
