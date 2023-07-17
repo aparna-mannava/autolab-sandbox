@@ -7,7 +7,7 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product" = "cfrmrd"
       "bt_tier" = "dev"
-      "bt_env" = "devops"
+      "bt_env" = "dgbs"
       "bt_role" = "opensearch"
       "bt_opensearch_nodes" = ["us01vlcfrm1.auto.saas-n.com", "us01vlcfrm2.auto.saas-n.com","us01vlcfrm3.auto.saas-n.com"]
     } 
