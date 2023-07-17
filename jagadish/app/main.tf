@@ -21,7 +21,7 @@ locals {
     "bt_product" = "cfrm"
     "bt_server_mode" = "ICBE"
     "bt_role" = "backend"
-    "bt_tier" = "STG"
+    "bt_tier" = "dev"
     "be_cpus" = "2"
     "foreman_hostgroup" = "BT CFRM SP Server"
     "be01_hostname"= "us01vlapp00404"
