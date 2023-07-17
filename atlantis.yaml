@@ -16,6 +16,9 @@ projects:
 - name: aparna_cloud_121562_dev_pgbackrest
   dir: aparna/postgres/pgbackrest
   workflow: nutanix-backend
+- name: app
+  dir: app
+  workflow: nutanix-backend
 # B
 # C
 - name: cloud_121562_test_etcd
