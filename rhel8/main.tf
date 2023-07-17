@@ -162,3 +162,4 @@ output "opensearch_4" {
     "ip"    = module.opensearch_4.ip,
   }
 }
+
