@@ -11,7 +11,7 @@ cpus                = 4
 lob                 = "CLOUD"
 memory              = 8192
 os_version          = "win2019"
-foreman_environment = "master"
+foreman_environment = "feature_SRE_3835_windows_exportert_deployment_test"
 foreman_hostgroup   = "BT Base Windows Server"
 datacenter          = "ny2"
 }
