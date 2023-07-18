@@ -57,3 +57,4 @@ output "us01vlbkts40" {
     "ip"    = "${module.us01vlbkts40.ip}",
   }
 }
+#Decommission
