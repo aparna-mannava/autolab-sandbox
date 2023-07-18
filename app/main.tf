@@ -24,7 +24,7 @@ module "opensearch_4" {
   hostname             = "us01vlcfrm14"
   alias                = "cfrm-5"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-14"
   os_version           = "rhel8"
   external_facts       = local.os04facts
   lob                  = "CFRM"
