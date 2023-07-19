@@ -19,6 +19,15 @@ projects:
 - name: app
   dir: app
   workflow: nutanix-backend
+- name: aparna_non-prod_pg_etcd
+  dir: aparna/etcd
+  workflow: nutanix-backend
+- name: aparna_non-prod_hapg
+  dir: aparna/hapg
+  workflow: nutanix-backend
+- name: aparna_non-prod_pgbackrest
+  dir: aparna/pgbackrest
+  workflow: nutanix-backend
 # B
 # C
 - name: cloud_121562_test_etcd
