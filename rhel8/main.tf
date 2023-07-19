@@ -56,7 +56,7 @@ module "artemis_apacheds_opensearch_1" {
   hostname             = "us01vlcfrm1"
   alias                = "cfrm-1"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   os_version           = "rhel8"
   external_facts       = local.os01facts
   lob                  = "CFRM"
@@ -76,7 +76,7 @@ module "opensearch_2" {
   hostname             = "us01vlcfrm2"
   alias                = "cfrm-2"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   os_version           = "rhel8"
   external_facts       = local.os02facts
   lob                  = "CFRM"
@@ -96,7 +96,7 @@ module "opensearch_3" {
   hostname             = "us01vlcfrm3"
   alias                = "cfrm-3"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   os_version           = "rhel8"
   external_facts       = local.os03facts
   lob                  = "CFRM"
@@ -116,7 +116,7 @@ module "opensearch_4" {
   hostname             = "us01vlcfrm4"
   alias                = "cfrm-4"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  bt_infra_cluster     = "ny5-azc-ntnx-16"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   os_version           = "rhel8"
   external_facts       = local.os04facts
   lob                  = "CFRM"
