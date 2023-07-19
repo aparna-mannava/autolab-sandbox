@@ -7,49 +7,83 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_etcd
+  dir: aparna/postgres/etcd
+  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_hapg
+  dir: aparna/postgres/hapg
+  workflow: nutanix-backend
+- name: aparna_cloud_121562_dev_pgbackrest
+  dir: aparna/postgres/pgbackrest
+  workflow: nutanix-backend
+- name: app
+  dir: app
+  workflow: nutanix-backend
 # B
 # C
-# D
-- name: reboot-test
-  dir: dmorvan/reboot
+- name: cloud_121562_test_etcd
+  dir: Cloud_121562_dev/postgres/etcd
   workflow: nutanix-backend
+- name: cloud_121562_test_hapg
+  dir: Cloud_121562_dev/postgres/hapg
+  workflow: nutanix-backend
+- name: cloud_121562_test_pgbackrest
+  dir: Cloud_121562_dev/postgres/pgbackrest
+  workflow: nutanix-backend
+# D
 # E
 # F
+- name: rhel8-testinf-deployment
+  dir: full-rhel8-testing
+  workflow: nutanix-backend
 # G
 # H
 # I
 # J
+- name: jenkins
+  dir: jenkins
+  workflow: nutanix-backend
+- name: jagadish
+  dir: jagadish/app
+  workflow: nutanix-backend
 # K
 # L
 # M
 # N
-# O
-- name: opensearchcert
-  dir: opensearchcerts
+- name: Naf_Testing_server1_etcd
+  dir: Naf/postgres/etcd
   workflow: nutanix-backend
+- name: Naf_Testing_server1_hapg
+  dir: Naf/postgres/hapg
+  workflow: nutanix-backend
+- name: Naf_Testing_server1_pgbackrest
+  dir: Naf/postgres/pgbackrest
+  workflow: nutanix-backend
+
+# O
 # P
+- name: param_param_etcd
+  dir: param/postgres/etcd
+  workflow: nutanix-backend
+- name: param_param_hapg
+  dir: param/postgres/hapg
+  workflow: nutanix-backend
+- name: param_param_pgbackrest
+  dir: param/postgres/pgbackrest
+  workflow: nutanix-backend
 # Q
 # R
+- name: rhel8-deployment 
+  dir: rhel8
+  workflow: nutanix-backend
 # S
-- name: cfrmtt
-  dir: spatel/cfrm
+- name: suresha-stndrd
+  dir: suresha/stndrd
   workflow: nutanix-backend
-- name: skola-mssql
-  dir: skola/mssql
+- name: suresha-entrpr
+  dir: suresha/entrpr
   workflow: nutanix-backend
-- name: savula-standrd
-  dir: savula/standrd
-  workflow: nutanix-backend
-- name: savula-devloper-mssql
-  dir: savula/devloper/mssql
-  workflow: nutanix-backend
-- name: savula-entrp-mssql
-  dir: savula/entrp/mssql
-  workflow: nutanix-backend
-- name: dgb19c
-  dir: spatel/dgb19c
-  workflow: nutanix-backend
-- name: jnks8
+- name: jenkins-agent
   dir: spatel/jenkins
   workflow: nutanix-backend
 - name: jnks88
@@ -58,7 +92,22 @@ projects:
 # T
 - name: opensearch10
   dir: test/opensearch
+- name: jenkins-sam
+  dir: spatel/jenkinss
   workflow: nutanix-backend
+- name: SRE-3835
+  dir: SRE-3835
+  workflow: nutanix-backend
+- name: suresha-postgres-pg1
+  dir: suresha/postgres/pg1
+  workflow: nutanix-backend
+- name: suresha-postgres-HA-etcd
+  dir: suresha/postgres/HA/etcd
+  workflow: nutanix-backend
+- name: shkelqim-test-vm
+  dir: shkelqim/testvm
+  workflow: nutanix-backend
+# T
 # U
 # V
 # W
