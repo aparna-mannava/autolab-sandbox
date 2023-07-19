@@ -86,6 +86,12 @@ projects:
 - name: jenkins-agent
   dir: spatel/jenkins
   workflow: nutanix-backend
+- name: jnks88
+  dir: spatel/jenkins8
+  workflow: nutanix-backend
+# T
+- name: opensearch10
+  dir: test/opensearch
 - name: jenkins-sam
   dir: spatel/jenkinss
   workflow: nutanix-backend
