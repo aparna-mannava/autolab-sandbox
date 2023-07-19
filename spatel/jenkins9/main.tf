@@ -1,3 +1,4 @@
+
 terraform {
   backend "s3" {}
 }
@@ -5,21 +6,19 @@ terraform {
 locals {
     facts       = {
       bt_lob           = "CLOUD"
-      bt_tier          = "dev"
+      bt_tier          = "pr"
       bt_env           = "1"
-      hostgroup        = "BT Base Server"
+      hostgroup        = "BT Database Jenkins Server"
       environment      = "feature_CLOUD_121506"
       datacenter       = "ny2"
-      domain           = "saas-n.com"
-      bt_jenkins_mode  = "agent"
     }
 }
 
 module "jnks" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vljkns0444"
-  alias                = "cloud-dba-dev-jkns444"
-  bt_infra_cluster     = "ny5-aza-ntnx-14"
+  hostname             = "us01vljkns1819"
+  alias                = "cloud-dba-pr-jnks1819"
+  bt_infra_cluster     = "ny5-aza-ntnx-19"
   bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "${local.facts.bt_lob}"
   foreman_environment  = "${local.facts.environment}"

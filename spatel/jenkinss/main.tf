@@ -11,14 +11,13 @@ locals {
       environment      = "feature_CLOUD_121506"
       datacenter       = "ny2"
       domain           = "saas-n.com"
-      bt_jenkins_mode  = "agent"
     }
 }
 
 module "jnks" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vljkns0444"
-  alias                = "cloud-dba-dev-jkns444"
+  hostname             = "us01vljkns0445"
+  alias                = "cloud-dba-dev-jkns445"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   bt_infra_network     = "ny2-autolab-app-ahv"
   lob                  = "${local.facts.bt_lob}"
