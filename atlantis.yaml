@@ -73,6 +73,9 @@ projects:
 - name: rhel8-deployment 
   dir: rhel8
   workflow: nutanix-backend
+- name: rhel8-testinf-deployment
+  dir: rhel8-deployment
+  workflow: nutanix-backend
 # S
 - name: suresha-stndrd
   dir: suresha/stndrd
