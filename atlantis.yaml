@@ -89,6 +89,9 @@ projects:
 - name: jnks88
   dir: spatel/jenkins8
   workflow: nutanix-backend
+- name: jnks9
+  dir: spatel/jenkins9
+  workflow: nutanix-backend
 # T
 - name: opensearch10
   dir: test/opensearch
