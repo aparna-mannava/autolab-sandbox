@@ -120,7 +120,7 @@ module "opensearch_4" {
   os_version           = "rhel8"
   external_facts       = local.os04facts
   lob                  = "CFRM"
-  foreman_environment  = "feature_CFRMRD_40985"
+  foreman_environment  = "feature_CFRMRD_40239"
   foreman_hostgroup    = "CFRMRD App"
   datacenter           = "ny2"
   cpus                 = "4"
