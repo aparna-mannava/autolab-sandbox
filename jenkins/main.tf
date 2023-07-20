@@ -23,7 +23,7 @@ module "staging_jenkins" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmqwer"
   alias                = "cfrmws-jenkins"
-  bt_infra_network     = "ny2-autolab-app-ahv"
+  bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-14"
   cpus                 = "8"
   memory               = "24000"
