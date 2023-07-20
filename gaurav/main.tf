@@ -4,7 +4,7 @@ terraform {
 
 locals {
   lob = "CLOUD"
-  environment = "feature_SRE_3835_windows_exportert_deployment_test"
+  environment = "master"
   datacenter  = "ny2"
   network     = "ny2-autolab-app-ahv"
   cluster     = "ny2-azb-ntnx-08"
