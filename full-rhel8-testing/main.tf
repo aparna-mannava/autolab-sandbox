@@ -55,7 +55,7 @@ module "artemis_apacheds_opensearch_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmx1"
   alias                = "cfrmx-1"
-  bt_infra_network     = "ny2-autolab-app-ahv"
+  bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   os_version           = "rhel8"
   external_facts       = local.os01facts
@@ -75,7 +75,7 @@ module "opensearch_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmx2"
   alias                = "cfrmx-2"
-  bt_infra_network     = "ny2-autolab-app-ahv"
+  bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   os_version           = "rhel8"
   external_facts       = local.os02facts
@@ -95,7 +95,7 @@ module "opensearch_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmx3"
   alias                = "cfrmx-3"
-  bt_infra_network     = "ny2-autolab-app-ahv"
+  bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   os_version           = "rhel8"
   external_facts       = local.os03facts
@@ -115,7 +115,7 @@ module "opensearch_4" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vlcfrmx4"
   alias                = "cfrmx-4"
-  bt_infra_network     = "ny2-autolab-app-ahv"
+  bt_infra_network     = "ny2-autolab-db-ahv"
   bt_infra_cluster     = "ny5-azc-ntnx-16"
   os_version           = "rhel8"
   external_facts       = local.os04facts
