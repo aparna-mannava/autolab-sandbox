@@ -14,7 +14,7 @@ locals {
     "bt_role"            = "oradb"
     "bt_deployment_mode" = "live"
     "bt_infra_network"   = "ny2-autolab-app-ahv"
-    "bt_infra_cluster"   = "ny2-azd-ntnx-10"
+    "bt_infra_cluster"   = "ny2-azb-ntnx-08"
     "db_memory"          = "4096"
     "obs_memory"         = "4096"
     "db_cpus"            = "4"
