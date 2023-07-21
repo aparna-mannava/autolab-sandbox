@@ -4,7 +4,7 @@ terraform {
 
 locals {
   lob = "CLOUD"
-  environment = "master"
+  environment = "feature_SRE_3835_windows_exportert_deployment_test"
   datacenter  = "ny2"
   network     = "ny2-autolab-app-ahv"
   cluster     = "ny2-azb-ntnx-08"
@@ -25,6 +25,7 @@ os_version          = "win2019"
 foreman_environment = local.environment
 foreman_hostgroup   = "BT Base Windows Server"
 datacenter          = local.datacenter
+external_facts      = local.facts
 }
 
 output "us01vwnxsre03" {
