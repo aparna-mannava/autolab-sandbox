@@ -42,8 +42,8 @@ projects:
 # D
 # E
 # F
-- name: rhel8-testinf-deployment
-  dir: full-rhel8-testing
+- name: cloud_124681_cfrm_test
+  dir: freddy/cfrm
   workflow: nutanix-backend
 # G
 - name: gaurav
