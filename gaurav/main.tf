@@ -25,6 +25,7 @@ os_version          = "win2019"
 foreman_environment = local.environment
 foreman_hostgroup   = "BT Base Windows Server"
 datacenter          = local.datacenter
+external_facts      = local.facts
 }
 
 output "us01vwnxsre03" {
