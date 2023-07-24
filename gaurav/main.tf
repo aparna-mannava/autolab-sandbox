@@ -35,4 +35,3 @@ value = {
 "ip"    = module.us01vwnxsre03.ip,
 }
 }
-#
