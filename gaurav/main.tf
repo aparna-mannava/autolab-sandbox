@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  lob = "SRE"
+  lob = "CLOUD"
   environment = "master"
   datacenter  = "ny2"
   network     = "ny2-autolab-app-ahv"
