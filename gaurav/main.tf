@@ -25,9 +25,10 @@ os_version          = "win2019"
 foreman_environment = local.environment
 foreman_hostgroup   = "BT Base Windows Server"
 datacenter          = local.datacenter
-external_facts      = local.facts
+external_facts = {
+    bt_product = "sre"
 }
-
+}
 output "us01vwnxsre03" {
 value = {
 "fqdn"  = module.us01vwnxsre03.fqdn,
@@ -35,4 +36,3 @@ value = {
 "ip"    = module.us01vwnxsre03.ip,
 }
 }
-#
