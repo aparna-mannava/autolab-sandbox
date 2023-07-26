@@ -11,6 +11,7 @@ locals {
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "1"
+  bt_role         = "postgresql"
   bt_product      = "cloud"
   lob             = "CLOUD"
   hostgroup       = "BT ETCD for PostgreSQL Server"
