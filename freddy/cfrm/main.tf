@@ -4,7 +4,7 @@ terraform {
 
 locals {
   product     = "cfrm"
-  environment = "feature_CLOUD_124681"
+  environment = "feature_CLOUD_125043"
   datacenter  = "ny2"
   facts       = {
     "bt_product"         = "cfrm"
@@ -20,7 +20,7 @@ locals {
     "db_cpus"            = "4"
     "obs_cpus"           = "2"
     "os_version"         = "rhel8"
-    "db01_hostname"      = "us01vldbfrd58"
+    "db01_hostname"      = "us01vldbfrd57"
   }
 
   db01facts    = {
@@ -32,14 +32,14 @@ locals {
     "bt_server_mode" = "db"
     "bt_server_number" = "84"
     "bt_deployment_mode" = "${local.facts.bt_deployment_mode}"
-    "bt_alias" = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-rd58-${local.facts.bt_deployment_mode}"
+    "bt_alias" = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-rd57-${local.facts.bt_deployment_mode}"
   }
 }
 
 module "oradb_server_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.facts.db01_hostname}"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.db01facts.bt_server_mode}db58-${local.facts.bt_deployment_mode}"
+  alias                = "${local.facts.bt_product}-${local.facts.bt_customer}-${local.facts.bt_tier}${local.facts.bt_env}-${local.db01facts.bt_server_mode}db57-${local.facts.bt_deployment_mode}"
   bt_infra_network     = "${local.facts.bt_infra_network}"
   bt_infra_cluster     = "${local.facts.bt_infra_cluster}"
   os_version           = "${local.facts.os_version}"

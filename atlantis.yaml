@@ -42,7 +42,7 @@ projects:
 # D
 # E
 # F
-- name: cloud_124681_cfrm_test
+- name: cloud_125043_cfrm_test
   dir: freddy/cfrm
   workflow: nutanix-backend
 # G
