@@ -20,7 +20,7 @@ locals {
     "db_cpus"            = "4"
     "obs_cpus"           = "2"
     "os_version"         = "rhel8"
-    "db01_hostname"      = "us01vldbfrd58"
+    "db01_hostname"      = "us01vldbfrd57"
   }
 
   db01facts    = {
