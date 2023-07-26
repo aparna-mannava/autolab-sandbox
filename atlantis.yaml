@@ -71,7 +71,9 @@ projects:
 - name: Naf_Testing_server1_pgbackrest
   dir: Naf/postgres/pgbackrest
   workflow: nutanix-backend
-
+- name: pg14wotde_etcds_cloud_124278
+  dir: nirmalj/pg14nontde/etcdnodes
+  workflow: nutanix-backend
 # O
 # P
 - name: Parameswar_nonprod_pg_etcd
@@ -93,7 +95,7 @@ projects:
   workflow: nutanix-backend
 # Q
 # R
-- name: rhel8-deployment 
+- name: rhel8-deployment
   dir: rhel8
   workflow: nutanix-backend
 # S
