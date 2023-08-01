@@ -7,6 +7,7 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+<<<<<<< HEAD
 - name: ajinkyaa_uat_pg_etcd
   dir: ajinkyaa/postgres/etcd
   workflow: nutanix-backend
@@ -34,21 +35,14 @@ projects:
 - name: aparna-auto-test-server-aug-pgbackrest
   dir: autolab-sandbox/aparna/pgbackrest
   workflow: nutanix-backend
+=======
+>>>>>>> 3f79545fc001e72f0bd264acab00ee228c7440dd
 # B
 # C
 # D
-- name: danielsh_apacheds
-  dir: danielsh/apacheds
-  workflow: nutanix-backend
-- name: danielsh_base
-  dir: danielsh/base
-  workflow: nutanix-backend
-  
-# F  
+# E
+# F
 # G
-- name: gaurav_windows
-  dir: Gaurav/windows
-  workflow: nutanix-backend
 # H
 # I
 # J
@@ -56,32 +50,11 @@ projects:
 # L
 # M
 # N
-- name: ynafeesa_test_server_etcd
-  dir: ynafeesa/postgres/etcd
-  workflow: nutanix-backend
-- name: ynafeesa_test_server_hapg
-  dir: ynafeesa/postgres/hapg
-  workflow: nutanix-backend
-- name: ynafeesa_test_server_pgbackrest
-  dir: ynafeesa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_etcd
-  dir: PgBouncer/postgres/etcd
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_hapg
-  dir: PgBouncer/postgres/hapg
-  workflow: nutanix-backend
-- name: ynafeesa_pgb_test_server_pgbackrest
-  dir: PgBouncer/postgres/pgbackrest
-  workflow: nutanix-backend
 # O
 # P
 # Q
 # R
 # S
-- name: jenkins8_dgb
-  dir: spatel/jenkins
-  workflow: nutanix-backend
 # T
 # U
 # V
