@@ -7,6 +7,14 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: aparna-auto-test-server-aug-etcd
+  dir: autolab-sandbox/aparna/etcd
+  workflow: nutanix-backend
+- name: aparna-auto-test-server-aug-hapg
+  dir: autolab-sandbox/aparna/hapg
+  workflow: nutanix-backend
+- name: aparna-auto-test-server-aug-pgbackrest
+  dir: autolab-sandbox/aparna/pgbackrest
 # B
 # C
 # D
