@@ -26,15 +26,6 @@ projects:
 - name: Pg_bouncer_pgbackrest
   dir: pgbouncer_algondaa/postgres/pgbackrest
   workflow: nutanix-backend
-- name: aparna-auto-test-server-aug-etcd
-  dir: autolab-sandbox/aparna/etcd
-  workflow: nutanix-backend
-- name: aparna-auto-test-server-aug-hapg
-  dir: autolab-sandbox/aparna/hapg
-  workflow: nutanix-backend
-- name: aparna-auto-test-server-aug-pgbackrest
-  dir: autolab-sandbox/aparna/pgbackrest
-  workflow: nutanix-backend
 =======
 >>>>>>> 3f79545fc001e72f0bd264acab00ee228c7440dd
 # B
