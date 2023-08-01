@@ -7,138 +7,25 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: aparna_cloud_121562_dev_etcd
-  dir: aparna/postgres/etcd
-  workflow: nutanix-backend
-- name: aparna_cloud_121562_dev_hapg
-  dir: aparna/postgres/hapg
-  workflow: nutanix-backend
-- name: aparna_cloud_121562_dev_pgbackrest
-  dir: aparna/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: app
-  dir: app
-  workflow: nutanix-backend
-- name: aparna_non-prod_pg_etcd
-  dir: aparna/etcd
-  workflow: nutanix-backend
-- name: aparna_non-prod_hapg
-  dir: aparna/hapg
-  workflow: nutanix-backend
-- name: aparna_non-prod_pgbackrest
-  dir: aparna/pgbackrest
-  workflow: nutanix-backend
 # B
 # C
-- name: cloud_121562_test_etcd
-  dir: Cloud_121562_dev/postgres/etcd
-  workflow: nutanix-backend
-- name: cloud_121562_test_hapg
-  dir: Cloud_121562_dev/postgres/hapg
-  workflow: nutanix-backend
-- name: cloud_121562_test_pgbackrest
-  dir: Cloud_121562_dev/postgres/pgbackrest
-  workflow: nutanix-backend
 # D
 # E
 # F
-- name: cloud_125043_cfrm_test
-  dir: freddy/cfrm
-  workflow: nutanix-backend
 # G
-- name: gaurav
-  dir: gaurav
-  workflow: nutanix-backend
 # H
 # I
 # J
-- name: jenkins
-  dir: jenkins
-  workflow: nutanix-backend
-- name: jagadish
-  dir: jagadish/app
-  workflow: nutanix-backend
 # K
 # L
 # M
 # N
-- name: Naf_Testing_server1_etcd
-  dir: Naf/postgres/etcd
-  workflow: nutanix-backend
-- name: Naf_Testing_server1_hapg
-  dir: Naf/postgres/hapg
-  workflow: nutanix-backend
-- name: Naf_Testing_server1_pgbackrest
-  dir: Naf/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: pg14wotde_etcds_cloud_124278
-  dir: nirmalj/pg14nontde/etcdnodes
-  workflow: nutanix-backend
 # O
 # P
-- name: Parameswar_nonprod_pg_etcd
-  dir: Parameswar/etcd
-  workflow: nutanix-backend
-- name: Parameswar_nonprod_hapg
-  dir: Parameswar/hapg
-  workflow: nutanix-backend
-- name: Parameswar_nonprod_pgbackrest
-  dir: Parameswar/pgbackrest
-- name: param_param_etcd
-  dir: param/postgres/etcd
-  workflow: nutanix-backend
-- name: param_param_hapg
-  dir: param/postgres/hapg
-  workflow: nutanix-backend
-- name: param_param_pgbackrest
-  dir: param/postgres/pgbackrest
-  workflow: nutanix-backend
 # Q
 # R
-- name: rhel8-deployment
-  dir: rhel8
-  workflow: nutanix-backend
 # S
-- name: suresha-stndrd
-  dir: suresha/stndrd
-  workflow: nutanix-backend
-- name: suresha-entrpr
-  dir: suresha/entrpr
-  workflow: nutanix-backend
-- name: jenkins-agent
-  dir: spatel/jenkins
-  workflow: nutanix-backend
-- name: jnks88
-  dir: spatel/jenkins8
-  workflow: nutanix-backend
-- name: jnks9
-  dir: spatel/jenkins9
-  workflow: nutanix-backend
 # T
-- name: opensearch10
-  dir: test/opensearch
-- name: jenkins-sam
-  dir: spatel/jenkinss
-  workflow: nutanix-backend
-- name: SRE-3835
-  dir: SRE-3835
-  workflow: nutanix-backend
-- name: SRE-3835-test2
-  dir: SRE-3835/test2
-  workflow: nutanix-backend
-- name: suresha-postgres-pg1
-  dir: suresha/postgres/pg1
-  workflow: nutanix-backend
-- name: suresha-postgres-HA-etcd
-  dir: suresha/postgres/HA/etcd
-  workflow: nutanix-backend
-- name: shkelqim-test-vm
-  dir: shkelqim/testvm
-  workflow: nutanix-backend
-# T
-- name: test_jenkins
-  dir: test_jenkins
-  workflow: nutanix-backend
 # U
 # V
 # W
