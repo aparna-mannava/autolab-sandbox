@@ -17,15 +17,7 @@ projects:
 - name: aparna-auto-test-server-aug-pgbackrest
   dir: autolab-sandbox/aparna/pgbackrest
 =======
-- name: aparna_auto_lab_test_server_august_etcd
-  dir: aparna/etcd
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_hapg
-  dir: aparna/hapg
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_pgbackrest
-  dir: aparna/pgbackrest
-  workflow: nutanix-backend
+
 >>>>>>> a6a3caa828f0e478752ed518f5116646542cd80a
 # B
 # C
