@@ -55,6 +55,9 @@ projects:
 # Q
 # R
 # S
+- name: dgboradb
+  dir: saumilp/dgb
+  workflow: nutanix-backend
 # T
 # U
 # V
