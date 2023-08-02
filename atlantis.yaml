@@ -7,6 +7,7 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+<<<<<<< HEAD
 - name: aparna_auto_lab_test_server_august_etcd
   dir: aparna/etcd
   workflow: nutanix-backend
@@ -15,6 +16,10 @@ projects:
   workflow: nutanix-backend
 - name: aparna_auto_lab_test_server_august_pgbackrest
   dir: aparna/pgbackrest
+=======
+- name: app-testing
+  dir: app
+>>>>>>> 8256fd817e6b766fe49daf4132618edb3b2715e0
   workflow: nutanix-backend
 # B
 # C
@@ -22,9 +27,6 @@ projects:
 # E
 # F
 # G
-- name: gaurav
-  dir: gaurav
-  workflow: nutanix-backend
 # H
 # I
 # J
@@ -32,35 +34,13 @@ projects:
 # L
 # M
 # N
-- name: Naf_Testing_server1_etcd
-  dir: Naf/postgres/etcd
-  workflow: nutanix-backend
-- name: Naf_Testing_server1_hapg
-  dir: Naf/postgres/hapg
-  workflow: nutanix-backend
-- name: Naf_Testing_server1_pgbackrest
-  dir: Naf/postgres/pgbackrest
-  workflow: nutanix-backend
-
 # O
 # P
-- name: param_param_etcd
-  dir: param/postgres/etcd
-  workflow: nutanix-backend
-- name: param_param_hapg
-  dir: param/postgres/hapg
-  workflow: nutanix-backend
-- name: param_param_pgbackrest
-  dir: param/postgres/pgbackrest
-  workflow: nutanix-backend
 # Q
 # R
 # S
-- name: suresha-stndrd
-  dir: suresha/stndrd
-  workflow: nutanix-backend
-- name: suresha-entrpr
-  dir: suresha/entrpr
+- name: dgboradb
+  dir: saumilp/dgb
   workflow: nutanix-backend
 # T
 # U
