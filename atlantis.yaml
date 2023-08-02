@@ -8,6 +8,7 @@ projects:
 #  dir: abc/123
 #  workflow: nutanix-backend
 <<<<<<< HEAD
+<<<<<<< HEAD
 - name: ajinkyaa_uat_pg_etcd
   dir: ajinkyaa/postgres/etcd
   workflow: nutanix-backend
@@ -28,6 +29,11 @@ projects:
   workflow: nutanix-backend
 =======
 >>>>>>> 3f79545fc001e72f0bd264acab00ee228c7440dd
+=======
+- name: app-testing
+  dir: app
+  workflow: nutanix-backend
+>>>>>>> 8256fd817e6b766fe49daf4132618edb3b2715e0
 # B
 # C
 # D
