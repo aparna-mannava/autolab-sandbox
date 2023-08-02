@@ -7,13 +7,13 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: mannava_test_server_august_etcd
+- name: mannava_auto_test_server_august_etcd
   dir: mannava/etcd
   workflow: nutanix-backend
-- name: mannava_test_server_august_hapg
+- name: mannava_auto_test_server_august_hapg
   dir: mannava/hapg
   workflow: nutanix-backend
-- name: mannava_test_server_august_pgbackrest
+- name: mannava_auto_test_server_august_pgbackrest
   dir: mannava/pgbackrest
   workflow: nutanix-backend
 - name: ajinkyaa_uat_pg_etcd

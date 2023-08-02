@@ -157,3 +157,4 @@ output "us01vlprxy001" {
     "ip"    = "${module.us01vlprxy001.ip}",
   }
 }
+# altered 
