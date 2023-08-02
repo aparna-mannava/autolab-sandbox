@@ -3,18 +3,18 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts357"]
-  hapg_servers    = ["us01vlhapgts35","us01vlhapgts36","us01vlhapgts37"]
-  haproxy_server  = ["us01vlprxyts357"]
-  backrest_server = ["us01vlbkts357"]
+  etcd_servers    = ["us01vlbkts81"]
+  hapg_servers    = ["us01vlhapgts81","us01vlhapgts82","us01vlhapgts83"]
+  haproxy_server  = ["us01vlprxyts81"]
+  backrest_server = ["us01vlbkts81"]
   domain          = "auto.saas-n.com"
-  tier            = "n0n-prod"
+  tier            = "nonpod"
   bt_env          = "1"
   bt_product      = "cloud"
   bt_role		      = "pgbackrest"
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"
-  environment     = "master"
+  environment     = "production"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
@@ -32,7 +32,7 @@ locals {
     "bt_pg_version"           = "12" 
   }
 }
-module "us01vlbkts357" {
+module "us01vlbkts81" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -50,10 +50,11 @@ module "us01vlbkts357" {
     2 = "160",
   }
 }
-output "us01vlbkts357" {
+output "us01vlbkts81" {
   value = {
-    "fqdn"  = "${module.us01vlbkts357.fqdn}",
-    "alias" = "${module.us01vlbkts357.alias}",
-    "ip"    = "${module.us01vlbkts357.ip}",
+    "fqdn"  = "${module.us01vlbkts81.fqdn}",
+    "alias" = "${module.us01vlbkts81.alias}",
+    "ip"    = "${module.us01vlbkts81.ip}",
   }
 }
+#changes happen

@@ -21,8 +21,8 @@ locals {
 
 module "opensearch_4" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrm14"
-  alias                = "cfrm-5"
+  hostname             = "us01vlcfrm15"
+  alias                = "cfrm-6"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-aza-ntnx-19"
   os_version           = "rhel8"
@@ -46,11 +46,3 @@ output "opensearch_4" {
     "ip"    = module.opensearch_4.ip,
   }
 }
-
-
-
-
-
-
-
-

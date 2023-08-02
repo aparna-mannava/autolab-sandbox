@@ -3,16 +3,16 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts357"]
-  etcd_hosts_p    = ["us01vletcdts357.auto.saas-n.com"]
+  etcd_servers    = ["us01vletcdts81"]
+  etcd_hosts_p    = ["us01vletcdts81.auto.saas-n.com"]
   domain          = "auto.saas-n.com"
-  tier            = "non-prod"
+  tier            = "nonprod"
   bt_env          = "1"
   lob             = "CLOUD"
   bt_product      = "cloud"
   bt_role         = "postgres"
   hostgroup       = "BT ETCD for PostgreSQL Server"
-  environment     = "master"
+  environment     = "production"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2" 
@@ -25,7 +25,7 @@ locals {
   }
 }
 
-module "us01vletcdts357" {
+module "us01vletcdts81" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -44,10 +44,11 @@ module "us01vletcdts357" {
 }
 
 
-output "us01vletcdts357" {
+output "us01vletcdts81" {
   value = {
-    "fqdn"  = "${module.us01vletcdts357.fqdn}",
-    "alias" = "${module.us01vletcdts357.alias}",
-    "ip"    = "${module.us01vletcdts357.ip}",
+    "fqdn"  = "${module.us01vletcdts81.fqdn}",
+    "alias" = "${module.us01vletcdts81.alias}",
+    "ip"    = "${module.us01vletcdts81.ip}",
   }
 }
+#changes happen
