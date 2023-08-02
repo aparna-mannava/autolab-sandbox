@@ -8,6 +8,7 @@ projects:
 #  dir: abc/123
 #  workflow: nutanix-backend
 <<<<<<< HEAD
+<<<<<<< HEAD
 - name: aparna_auto_lab_test_server_august_etcd
   dir: aparna/etcd
   workflow: nutanix-backend
@@ -20,7 +21,19 @@ projects:
 - name: app-testing
   dir: app
 >>>>>>> 8256fd817e6b766fe49daf4132618edb3b2715e0
+=======
+- name: aparna-auto-test-server-aug-etcd
+  dir: autolab-sandbox/aparna/etcd
   workflow: nutanix-backend
+- name: aparna-auto-test-server-aug-hapg
+  dir: autolab-sandbox/aparna/hapg
+>>>>>>> 5bfb2629f68232f358bc50b48d1819566472f27b
+  workflow: nutanix-backend
+- name: aparna-auto-test-server-aug-pgbackrest
+  dir: autolab-sandbox/aparna/pgbackrest
+=======
+
+>>>>>>> a6a3caa828f0e478752ed518f5116646542cd80a
 # B
 # C
 # D
