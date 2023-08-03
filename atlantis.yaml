@@ -37,6 +37,9 @@ projects:
   dir: app
 # B
 # C
+- name: etcd-testing
+  dir: etcd-test/etcd
+  workflow: nutanix-backend
 # D
 # E
 # F
