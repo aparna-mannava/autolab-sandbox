@@ -25,6 +25,8 @@ projects:
 - name: Pg_bouncer_pgbackrest
   dir: pgbouncer_algondaa/postgres/pgbackrest
   workflow: nutanix-backend
+#<<<<<<< HEAD
+#<<<<<<< HEAD
 - name: aparna_auto_lab_test_server_august_etcd
   dir: aparna/etcd
   workflow: nutanix-backend
@@ -60,6 +62,14 @@ projects:
   dir: mannava/pgbackrest
   workflow: nutanix-backend
 # N
+- name: NYA_Rebuilding_server_etcd
+  dir: NYA/postgres/etcd
+  workflow: nutanix-backend
+- name: NYA_Rebuilding_server_hapg
+  dir: NYA/postgres/hapg
+  workflow: nutanix-backend
+- name: NYA_Rebuilding_server_pgbackrest
+  dir: NYA/postgres/pgbackrest
 # O
 # P
 # Q
