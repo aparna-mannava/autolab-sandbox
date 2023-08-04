@@ -104,4 +104,7 @@ projects:
   workflow: nutanix-backend
 - name: YNA_Rebuilding_server2_pgbackrest
   dir: YNA/postgres/pgbackrest
+- name: priyaj_postgres_etcd
+  dir: priyaj/postgres/etcd
+  workflow: nutanix-backend
 # Z
