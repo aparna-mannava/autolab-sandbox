@@ -8,7 +8,7 @@ locals {
   domain          = "auto.saas-n.com"
   tier            = "dv"
   bt_env          = "1"
-  lob             = "cloud"
+  lob             = "CLOUD"
   bt_product      = "fmlsaas"
   bt_role         = "postgres"
   hostgroup       = "BT ETCD for PostgreSQL Server"
