@@ -51,3 +51,4 @@ output "us01vletcdts60" {
     "ip"    = "${module.us01vletcdts60.ip}",
   }
 }
+#new
