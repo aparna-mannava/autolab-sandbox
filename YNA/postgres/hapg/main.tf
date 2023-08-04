@@ -4,9 +4,9 @@ terraform {
 
 locals {
   etcd_servers    = ["us01vletcdts60"]
-  hapg_servers    = ["us01vlhapgtst61","us01vlhapgtst62","us01vlhapgtst63"]
-  haproxy_server  = ["us01vlprxytst60"]
-  backrest_server = ["us01vlbktst60"]
+  hapg_servers    = ["us01vlhapgts61","us01vlhapgts62","us01vlhapgts63"]
+  haproxy_server  = ["us01vlprxyts60"]
+  backrest_server = ["us01vlbkts60"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "1"
@@ -50,7 +50,7 @@ locals {
 }
 
 
-module "us01vlhapgtst61" {
+module "us01vlhapgts61" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -69,7 +69,7 @@ module "us01vlhapgtst61" {
   }
 }
 
-module "us01vlhapgtst62" {
+module "us01vlhapgts62" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -88,7 +88,7 @@ module "us01vlhapgtst62" {
   }
 }
 
-module "us01vlhapgtst63" {
+module "us01vlhapgts63" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[2]}"
   bt_infra_cluster     = local.cluster
@@ -107,7 +107,7 @@ module "us01vlhapgtst63" {
   }
 }
 
-module "us01vlprxytst60" {
+module "us01vlprxyts60" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -126,35 +126,34 @@ module "us01vlprxytst60" {
   }
 }
 
-output "us01vlhapgtst61" {
+output "us01vlhapgts61" {
   value = {
-    "fqdn"  = "${module.us01vlhapgtst61.fqdn}",
-    "alias" = "${module.us01vlhapgtst61.alias}",
-    "ip"    = "${module.us01vlhapgtst61.ip}",
+    "fqdn"  = "${module.us01vlhapgts61.fqdn}",
+    "alias" = "${module.us01vlhapgts61.alias}",
+    "ip"    = "${module.us01vlhapgts61.ip}",
   }
 }
 
-output "us01vlhapgtst62" {
+output "us01vlhapgts62" {
   value = {
-    "fqdn"  = "${module.us01vlhapgtst62.fqdn}",
-    "alias" = "${module.us01vlhapgtst62.alias}",
-    "ip"    = "${module.us01vlhapgtst62.ip}",
+    "fqdn"  = "${module.us01vlhapgts62.fqdn}",
+    "alias" = "${module.us01vlhapgts62.alias}",
+    "ip"    = "${module.us01vlhapgts62.ip}",
   }
 }
 
-output "us01vlhapgtst63" {
+output "us01vlhapgts63" {
   value = {
-    "fqdn"  = "${module.us01vlhapgtst63.fqdn}",
-    "alias" = "${module.us01vlhapgtst63.alias}",
-    "ip"    = "${module.us01vlhapgtst63.ip}",
+    "fqdn"  = "${module.us01vlhapgts63.fqdn}",
+    "alias" = "${module.us01vlhapgts63.alias}",
+    "ip"    = "${module.us01vlhapgts63.ip}",
   }
 }
 
-output "us01vlprxytst60" {
+output "us01vlprxyts60" {
   value = {
-    "fqdn"  = "${module.us01vlprxytst60.fqdn}",
-    "alias" = "${module.us01vlprxytst60.alias}",
-    "ip"    = "${module.us01vlprxytst60.ip}",
+    "fqdn"  = "${module.us01vlprxyts60.fqdn}",
+    "alias" = "${module.us01vlprxyts60.alias}",
+    "ip"    = "${module.us01vlprxyts60.ip}",
   }
 }
-#New
