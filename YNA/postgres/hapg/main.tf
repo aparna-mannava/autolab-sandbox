@@ -144,7 +144,7 @@ output "us01vlhapgtst2" {
 
 output "us01vlhapgtst63" {
   value = {
-    "fqdn"  = "${module.us01vlhapgtst3.fqdn}",
+    "fqdn"  = "${module.us01vlhapgtst63.fqdn}",
     "alias" = "${module.us01vlhapgtst63.alias}",
     "ip"    = "${module.us01vlhapgtst63.ip}",
   }
