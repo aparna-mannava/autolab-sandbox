@@ -96,4 +96,12 @@ projects:
 - name: NY_August_test_server_pgbackrest
   dir: NY/postgres/pgbackrest
   workflow: nutanix-backend
+- name: YNA_Rebuilding_server2_etcd
+  dir: YNA/postgres/etcd
+  workflow: nutanix-backend
+- name: YNA_Rebuilding_server2_hapg
+  dir: YNA/postgres/hapg
+  workflow: nutanix-backend
+- name: YNA_Rebuilding_server2_pgbackrest
+  dir: YNA/postgres/pgbackrest
 # Z
