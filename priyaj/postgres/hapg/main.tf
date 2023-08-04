@@ -3,25 +3,25 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcd01"]
-  hapg_servers    = ["us01vlhapgaug01","us01vlhapgaug02","us01vlhapgaug03"]
-  haproxy_server  = ["us01vlprxy01"]
-  backrest_server = ["us01vlbk01"]
+  etcd_servers    = ["gb03vletcd01"]
+  hapg_servers    = ["gb03vlhapgaug01","gb03vlhapgaug02","gb03vlhapgaug03"]
+  haproxy_server  = ["gb03vlprxy01"]
+  backrest_server = ["gb03vlbk01"]
   domain          = "auto.saas-n.com"
-  tier            = "nonprod"
+  tier            = "dv"
   bt_env          = "1"
-  bt_product      = "cloud"
+  bt_product      = "fmlsaas"
   bt_role         = "postgresql"
-  lob             = "CLOUD"
+  lob             = "FML"
   hostgroup       = "BT HA PG Server"
-  environment     = "production"
+  environment     = "master"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   hapgfacts       = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
-    "bt_product"              = local.bt_product 
+    "bt_product"              = local.bt_product
     "bt_role"                 = local.bt_role
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
@@ -29,8 +29,8 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgaug"
-    "bt_pg_version"           = "12"
+    "bt_cluster_name"         = "gb03vlhapgaug"
+    "bt_pg_version"           = "14"
   }
 
   haproxyfacts = {
@@ -44,13 +44,13 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgaug"
-    "bt_pg_version"           = "12"
+    "bt_cluster_name"         = "gb03vlhapgaug"
+    "bt_pg_version"           = "14"
   }
 }
 
 
-module "us01vlhapgaug01" {
+module "gb03vlhapgaug01" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -69,7 +69,7 @@ module "us01vlhapgaug01" {
   }
 }
 
-module "us01vlhapgaug02" {
+module "gb03vlhapgaug02" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -88,7 +88,7 @@ module "us01vlhapgaug02" {
   }
 }
 
-module "us01vlhapgaug03" {
+module "gb03vlhapgaug03" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[2]}"
   bt_infra_cluster     = local.cluster
@@ -107,7 +107,7 @@ module "us01vlhapgaug03" {
   }
 }
 
-module "us01vlprxy01" {
+module "gb03vlprxy01" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -126,34 +126,34 @@ module "us01vlprxy01" {
   }
 }
 
-output "us01vlhapgaug01" {
+output "gb03vlhapgaug01" {
   value = {
-    "fqdn"  = "${module.us01vlhapgaug01.fqdn}",
-    "alias" = "${module.us01vlhapgaug01.alias}",
-    "ip"    = "${module.us01vlhapgaug01.ip}",
+    "fqdn"  = "${module.gb03vlhapgaug01.fqdn}",
+    "alias" = "${module.gb03vlhapgaug01.alias}",
+    "ip"    = "${module.gb03vlhapgaug01.ip}",
   }
 }
 
-output "us01vlhapgaug02" {
+output "gb03vlhapgaug02" {
   value = {
-    "fqdn"  = "${module.us01vlhapgaug02.fqdn}",
-    "alias" = "${module.us01vlhapgaug02.alias}",
-    "ip"    = "${module.us01vlhapgaug02.ip}",
+    "fqdn"  = "${module.gb03vlhapgaug02.fqdn}",
+    "alias" = "${module.gb03vlhapgaug02.alias}",
+    "ip"    = "${module.gb03vlhapgaug02.ip}",
   }
 }
 
-output "us01vlhapgaug03" {
+output "gb03vlhapgaug03" {
   value = {
-    "fqdn"  = "${module.us01vlhapgaug03.fqdn}",
-    "alias" = "${module.us01vlhapgaug03.alias}",
-    "ip"    = "${module.us01vlhapgaug03.ip}",
+    "fqdn"  = "${module.gb03vlhapgaug03.fqdn}",
+    "alias" = "${module.gb03vlhapgaug03.alias}",
+    "ip"    = "${module.gb03vlhapgaug03.ip}",
   }
 }
 
-output "us01vlprxy01" {
+output "gb03vlprxy01" {
   value = {
-    "fqdn"  = "${module.us01vlprxy01.fqdn}",
-    "alias" = "${module.us01vlprxy01.alias}",
-    "ip"    = "${module.us01vlprxy01.ip}",
+    "fqdn"  = "${module.gb03vlprxy01.fqdn}",
+    "alias" = "${module.gb03vlprxy01.alias}",
+    "ip"    = "${module.gb03vlprxy01.ip}",
   }
 }
