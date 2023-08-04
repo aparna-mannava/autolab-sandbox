@@ -134,7 +134,7 @@ output "us01vlhapgtst61" {
   }
 }
 
-output "us01vlhapgtst2" {
+output "us01vlhapgtst62" {
   value = {
     "fqdn"  = "${module.us01vlhapgtst62.fqdn}",
     "alias" = "${module.us01vlhapgtst62.alias}",
