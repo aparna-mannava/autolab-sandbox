@@ -107,4 +107,7 @@ projects:
 - name: priyaj_postgres_etcd
   dir: priyaj/postgres/etcd
   workflow: nutanix-backend
+name: priyaj_postgres_hapg
+  dir: priyaj/postgres/hapg
+  workflow: nutanix-backend
 # Z
