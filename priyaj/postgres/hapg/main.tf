@@ -9,7 +9,7 @@ locals {
   backrest_server = ["us01vlbkp1"]
   domain          = "auto.saas-n.com"
   tier            = "dv"
-  bt_env          = "1"
+  bt_env          = "2"
   bt_product      = "fmlsaas"
   bt_role         = "postgresql"
   lob             = "FML"
@@ -29,7 +29,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "gb03vlhapgaug"
+    "bt_cluster_name"         = "us01vlhapgts"
     "bt_pg_version"           = "15"
   }
 
