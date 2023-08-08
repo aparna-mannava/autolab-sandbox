@@ -32,8 +32,7 @@ locals {
     "bt_cluster_name"         = "us01vlhapgts50"
     "bt_pg_version"           = "15"
   }
-}
-haproxyfacts = {
+    haproxyfacts = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
@@ -44,10 +43,10 @@ haproxyfacts = {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgts50"
+    "bt_cluster_name"         = "us01vlhapgts70"
     "bt_pg_version"           = "15"
   }
-
+}
 module "us01vlhapgts70" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
