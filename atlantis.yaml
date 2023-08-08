@@ -7,25 +7,40 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: aparna_cloud_121562_dev_etcd
-  dir: aparna/postgres/etcd
+- name: ajinkyaa_uat_pg_etcd
+  dir: ajinkyaa/postgres/etcd
   workflow: nutanix-backend
-- name: aparna_cloud_121562_dev_hapg
-  dir: aparna/postgres/hapg
+- name: ajinkyaa_uat_hapg
+  dir: ajinkyaa/postgres/hapg
   workflow: nutanix-backend
-- name: aparna_cloud_121562_dev_pgbackrest
-  dir: aparna/postgres/pgbackrest
+- name: ajinkyaa_uat_pgbackrest
+  dir: ajinkyaa/postgres/pgbackrest
   workflow: nutanix-backend
+- name: Pg_bouncer_etcd
+  dir: pgbouncer_algondaa/postgres/etcd
+  workflow: nutanix-backend
+- name: Pg_bouncer_hapg
+  dir: pgbouncer_algondaa/postgres/hapg
+  workflow: nutanix-backend
+- name: Pg_bouncer_pgbackrest
+  dir: pgbouncer_algondaa/postgres/pgbackrest
+  workflow: nutanix-backend
+#<<<<<<< HEAD
+#<<<<<<< HEAD
+- name: aparna_auto_lab_test_server_august_etcd
+  dir: aparna/etcd
+  workflow: nutanix-backend
+- name: aparna_auto_lab_test_server_august_hapg
+  dir: aparna/hapg
+  workflow: nutanix-backend
+- name: aparna_auto_lab_test_server_august_pgbackrest
+  dir: aparna/pgbackrest
+- name: app-testing
+  dir: app
 # B
 # C
-- name: cloud_121562_test_etcd
-  dir: Cloud_121562_dev/postgres/etcd
-  workflow: nutanix-backend
-- name: cloud_121562_test_hapg
-  dir: Cloud_121562_dev/postgres/hapg
-  workflow: nutanix-backend
-- name: cloud_121562_test_pgbackrest
-  dir: Cloud_121562_dev/postgres/pgbackrest
+- name: etcd-testing
+  dir: etcd-test/etcd
   workflow: nutanix-backend
 # D
 # E
@@ -34,57 +49,37 @@ projects:
 # H
 # I
 # J
-- name: jenkins
-  dir: jenkins
-  workflow: nutanix-backend
 # K
 # L
 # M
+- name: mannava_auto_test_server_august_etcd
+  dir: mannava/etcd
+  workflow: nutanix-backend
+- name: mannava_auto_test_server_august_hapg
+  dir: mannava/hapg
+  workflow: nutanix-backend
+- name: mannava_auto_test_server_august_pgbackrest
+  dir: mannava/pgbackrest
+  workflow: nutanix-backend
 # N
-- name: Naf_Testing_server1_etcd
-  dir: Naf/postgres/etcd
+- name: NYA_Rebuilding_server_etcd
+  dir: NYA/postgres/etcd
   workflow: nutanix-backend
-- name: Naf_Testing_server1_hapg
-  dir: Naf/postgres/hapg
+- name: NYA_Rebuilding_server_hapg
+  dir: NYA/postgres/hapg
   workflow: nutanix-backend
-- name: Naf_Testing_server1_pgbackrest
-  dir: Naf/postgres/pgbackrest
-  workflow: nutanix-backend
-
+- name: NYA_Rebuilding_server_pgbackrest
+  dir: NYA/postgres/pgbackrest
 # O
 # P
-- name: param_param_etcd
-  dir: param/postgres/etcd
-  workflow: nutanix-backend
-- name: param_param_hapg
-  dir: param/postgres/hapg
-  workflow: nutanix-backend
-- name: param_param_pgbackrest
-  dir: param/postgres/pgbackrest
-  workflow: nutanix-backend
 # Q
 # R
 # S
-- name: suresha-stndrd
-  dir: suresha/stndrd
+- name: dgboradb
+  dir: saumilp/dgb
   workflow: nutanix-backend
-- name: suresha-entrpr
-  dir: suresha/entrpr
-  workflow: nutanix-backend
-- name: jenkins-agent
-  dir: spatel/jenkins
-  workflow: nutanix-backend
-- name: jenkins-sam
-  dir: spatel/jenkinss
-  workflow: nutanix-backend
-- name: SRE-3835
-  dir: SRE-3835
-  workflow: nutanix-backend
-- name: suresha-postgres-pg1
-  dir: suresha/postgres/pg1
-  workflow: nutanix-backend
-- name: suresha-postgres-HA-etcd
-  dir: suresha/postgres/HA/etcd
+- name: shkelqimvm
+  dir: shkelqim/testvm
   workflow: nutanix-backend
 # T
 # U
@@ -92,4 +87,24 @@ projects:
 # W
 # X
 # Y
+- name: NY_August_test_server_etcd
+  dir: NY/postgres/etcd
+  workflow: nutanix-backend
+- name: NY_August_test_server_hapg
+  dir: NY/postgres/hapg
+  workflow: nutanix-backend
+- name: NY_August_test_server_pgbackrest
+  dir: NY/postgres/pgbackrest
+  workflow: nutanix-backend
+- name: YNA_Rebuilding_server2_etcd
+  dir: YNA/postgres/etcd
+  workflow: nutanix-backend
+- name: YNA_Rebuilding_server2_hapg
+  dir: YNA/postgres/hapg
+  workflow: nutanix-backend
+- name: YNA_Rebuilding_server2_pgbackrest
+  dir: YNA/postgres/pgbackrest
+- name: priyaj_postgres_etcd
+  dir: priyaj/postgres/etcd
+  workflow: nutanix-backend
 # Z
