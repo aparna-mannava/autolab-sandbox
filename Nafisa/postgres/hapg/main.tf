@@ -27,7 +27,6 @@ locals {
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "us01vlhapgts50"
     "bt_pg_version"           = "15"
@@ -41,7 +40,6 @@ locals {
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-	  "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "us01vlhapgts70"
     "bt_pg_version"           = "15"
