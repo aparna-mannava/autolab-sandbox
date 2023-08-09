@@ -74,7 +74,7 @@ projects:
   dir: Nafisa/postgres/hapg
   workflow: nutanix-backend
 - name: Nafisa_test_postgres_15_pgbackrest
-  dir: Nafisa/postgres/hapg
+  dir: Nafisa/postgres/pgbackrest
   workflow: nutanix-backend
 # O
 # P
