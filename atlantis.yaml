@@ -113,4 +113,10 @@ projects:
 - name: priyaj_postgres_etcd
   dir: priyaj/postgres/etcd
   workflow: nutanix-backend
+- name: ny2_test_postgres_15_hapg
+  dir: ny2/postgres/hapg
+  workflow: nutanix-backend
+- name: ny2_test_postgres_15_pgbackrest
+  dir: ny2/postgres/pgbackrest
+  workflow: nutanix-backend
 # Z
