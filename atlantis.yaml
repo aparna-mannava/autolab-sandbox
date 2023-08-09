@@ -87,6 +87,9 @@ projects:
 - name: shkelqimvm
   dir: shkelqim/testvm
   workflow: nutanix-backend
+- name: dgboradbru
+  dir: saumilp/dgb19c
+  workflow: nutanix-backend
 # T
 # U
 # V
