@@ -14,7 +14,7 @@ locals {
   bt_role         = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
-  environment     = "feature-Cloud-000-test-postgres"
+  environment     = "feature_CLOUD_000_test_postgres"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
@@ -28,7 +28,7 @@ locals {
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgts50"
+    "bt_cluster_name"         = "us01vlhapgts70"
     "bt_pg_version"           = "15"
   }
     haproxyfacts = {
