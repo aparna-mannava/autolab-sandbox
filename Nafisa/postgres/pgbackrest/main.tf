@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vlbkts50"]
+  etcd_servers    = ["us01vletcdts50"]
   hapg_servers    = ["us01vlhapgts70","us01vlhapgts71"]
   haproxy_server  = ["us01vlprxyts70"]
   backrest_server = ["us01vlbkts70"]
@@ -56,4 +56,4 @@ output "us01vlbkts70" {
     "ip"    = "${module.us01vlbkts70.ip}",
   }
 }
-#Rebuilding 
+#Rebuilding1
