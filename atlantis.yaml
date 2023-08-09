@@ -70,6 +70,12 @@ projects:
   workflow: nutanix-backend
 - name: NYA_Rebuilding_server_pgbackrest
   dir: NYA/postgres/pgbackrest
+- name: Nafisa_test_postgres_15_hapg
+  dir: Nafisa/postgres/hapg
+  workflow: nutanix-backend
+- name: Nafisa_test_postgres_15_pgbackrest
+  dir: Nafisa/postgres/hapg
+  workflow: nutanix-backend
 # O
 # P
 # Q
