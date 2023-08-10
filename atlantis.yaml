@@ -49,6 +49,9 @@ projects:
 # H
 # I
 # J
+- name: jenk
+  dir: jenk
+  workflow: nutanix-backend
 # K
 # L
 # M
