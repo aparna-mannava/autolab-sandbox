@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -49,6 +49,9 @@ projects:
 # H
 # I
 # J
+- name: jenk
+  dir: jenk
+  workflow: nutanix-backend
 # K
 # L
 # M
@@ -70,6 +73,12 @@ projects:
   workflow: nutanix-backend
 - name: NYA_Rebuilding_server_pgbackrest
   dir: NYA/postgres/pgbackrest
+- name: Nafisa_test_postgres_15_hapg
+  dir: Nafisa/postgres/hapg
+  workflow: nutanix-backend
+- name: Nafisa_test_postgres_15_pgbackrest
+  dir: Nafisa/postgres/pgbackrest
+  workflow: nutanix-backend
 # O
 # P
 # Q
@@ -80,6 +89,9 @@ projects:
   workflow: nutanix-backend
 - name: shkelqimvm
   dir: shkelqim/testvm
+  workflow: nutanix-backend
+- name: dgboradbru
+  dir: saumilp/dgb19c
   workflow: nutanix-backend
 # T
 # U
@@ -109,5 +121,11 @@ projects:
   workflow: nutanix-backend
 - name: priyaj_postgres_hapg
   dir: priyaj/postgres/hapg
+  workflow: nutanix-backend
+- name: ny2_test_postgres_15_hapg
+  dir: ny2/postgres/hapg
+  workflow: nutanix-backend
+- name: ny2_test_postgres_15_pgbackrest
+  dir: ny2/postgres/pgbackrest
   workflow: nutanix-backend
 # Z
