@@ -7,7 +7,7 @@ locals {
       "bt_customer" = "cfrmrd"
       "bt_product"  = "cfrmrd"
       "bt_tier"     = "dev"
-      "bt_role"     = "jenkins"
+      "bt_role"     = "standalone"
     }
     staging_jenkins_facts    = {
       "bt_env"      = "devops"
@@ -21,8 +21,8 @@ locals {
  
 module "staging_jenkins" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmtest"
-  alias                = "cfrmws-test"
+  hostname             = "us01vlcfrmart"
+  alias                = "cfrmws-art"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny5-azd-ntnx-27"
   cpus                 = "8"
@@ -30,7 +30,7 @@ module "staging_jenkins" {
   os_version           = "rhel8"
   external_facts       = local.staging_jenkins_facts
   foreman_environment  = "feature_CFRMRD_40239"
-  foreman_hostgroup    = "BT CFRMRD Jenkins"
+  foreman_hostgroup    = "BT CFRMRD Artemis Opensearch"
   lob                  = "CFRM"
   datacenter           = "ny2"
   additional_disks     = {
