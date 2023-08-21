@@ -30,7 +30,7 @@ module "staging_jenkins" {
   os_version           = "rhel8"
   external_facts       = local.staging_jenkins_facts
   foreman_environment  = "feature_CFRMRD_40239"
-  foreman_hostgroup    = "BT CFRMRD Artemis Opensearch"
+  foreman_hostgroup    = "BT CFRMRD Artemis"
   lob                  = "CFRM"
   datacenter           = "ny2"
   additional_disks     = {
