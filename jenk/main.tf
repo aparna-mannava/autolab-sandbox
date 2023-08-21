@@ -45,4 +45,4 @@ output "staging_jenkins" {
     "alias" = module.staging_jenkins.alias,
     "ip"    = module.staging_jenkins.ip,
   }
-} 
+}
