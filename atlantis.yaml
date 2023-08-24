@@ -52,6 +52,9 @@ projects:
 - name: jenk
   dir: jenk
   workflow: nutanix-backend
+- name: test-jen
+  dir: jen-test
+  workflow: nutanix-backend
 # K
 # L
 # M
