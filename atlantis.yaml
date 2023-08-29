@@ -25,8 +25,6 @@ projects:
 - name: Pg_bouncer_pgbackrest
   dir: pgbouncer_algondaa/postgres/pgbackrest
   workflow: nutanix-backend
-#<<<<<<< HEAD
-#<<<<<<< HEAD
 - name: aparna_auto_lab_test_server_august_etcd
   dir: aparna/etcd
   workflow: nutanix-backend
@@ -41,6 +39,9 @@ projects:
 # C
 - name: etcd-testing
   dir: etcd-test/etcd
+  workflow: nutanix-backend
+- name: cfrmcloud-metro-autolab-artemisrr-green
+  dir: cfrmcloud/saasn/metro/dev/artemisrr/green
   workflow: nutanix-backend
 # D
 # E
