@@ -50,6 +50,7 @@ locals {
       bt_java_arg_min_heap = local.facts.bt_java_arg_min_heap
       bt_java_arg_max_heap = local.facts.bt_java_arg_max_heap
     }
+
     artemis02facts    = {
       bt_artemis_ha      = local.facts.bt_artemis_ha
       bt_active          = local.facts.bt_active
@@ -66,7 +67,8 @@ locals {
       bt_is_secured      = local.facts.bt_is_secured      
       bt_java_arg_min_heap = local.facts.bt_java_arg_min_heap
       bt_java_arg_max_heap = local.facts.bt_java_arg_max_heap
-     }
+    }
+
     artemis03facts    = {
       bt_artemis_ha      = local.facts.bt_artemis_ha
       bt_active          = local.facts.bt_active
