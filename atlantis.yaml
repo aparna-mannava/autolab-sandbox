@@ -40,7 +40,7 @@ projects:
 - name: etcd-testing
   dir: etcd-test/etcd
   workflow: nutanix-backend
-- name: cfrmcloud-metro-autolab-artemisrr-green
+- name: cfrmcloud_metro_autolab_artemisrr_green
   dir: cfrmcloud/saasn/metro/dev/artemisrr/green
   workflow: nutanix-backend
 # D
