@@ -15,7 +15,7 @@ locals {
         bt_deployment_mode = "green"
         bt_env             = ""
         bt_infra_cluster   = "ny5-azd-ntnx-27"
-        bt_infra_network   = "ny2-autolab-app-ahv"
+        bt_infra_network   = "ny2-autolab-db-ahv"
         bt_product         = "cfrm"
         bt_active          = "false"
         bt_tier            = "dev"
