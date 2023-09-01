@@ -60,16 +60,16 @@ module "cloud_odbserver_2" {
 
 output "cloud_odbserver_1" {
   value = {
-    "fqdn"  = module.cloud_dbserver_1.fqdn,
-    "alias" = module.cloud_dbserver_1.alias,
-    "ip"    = module.cloud_dbserver_1.ip
+    "fqdn"  = module.cloud_odbserver_1.fqdn,
+    "alias" = module.cloud_odbserver_1.alias,
+    "ip"    = module.cloud_odbserver_1.ip
   }
 }
 
 output "cloud_odbserver_2" {
   value = {
-    "fqdn"  = module.cloud_dbserver_2.fqdn,
-    "alias" = module.cloud_dbserver_2.alias,
-    "ip"    = module.cloud_dbserver_2.ip
+    "fqdn"  = module.cloud_odbserver_2.fqdn,
+    "alias" = module.cloud_odbserver_2.alias,
+    "ip"    = module.cloud_odbserver_2.ip
   }
 }
