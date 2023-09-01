@@ -25,6 +25,9 @@ projects:
 # Q
 # R
 # S
+- name: sporadb
+  dir: spatel/mysql
+  workflow: nutanix-backend
 # T
 # U
 # V
