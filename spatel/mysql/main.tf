@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {}
 }
-​
+
 locals {
   lob         = "dgb"
   product     = "dgb"
@@ -16,7 +16,7 @@ locals {
     "bt_product_version"  = "3.6"
   }
 }
-​
+
 module "cloud_dbserver_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldbsdp80"
@@ -37,8 +37,7 @@ module "cloud_dbserver_1" {
     3 = "200"
   }
 }
-​
-​
+
 module "cloud_dbserver_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldbsdp81"
@@ -60,7 +59,6 @@ module "cloud_dbserver_2" {
   }
 }
 
-
 module "cloud_dbserver_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "us01vldbsdp82"
@@ -81,7 +79,6 @@ module "cloud_dbserver_3" {
     3 = "200"
   }
 }
-​
 
 module "cloud_dbserver_4" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
@@ -103,7 +100,6 @@ module "cloud_dbserver_4" {
     3 = "200"
   }
 }
-​
 
 output "cloud_dbserver_1" {
   value = {
@@ -112,7 +108,7 @@ output "cloud_dbserver_1" {
     "ip"    = module.cloud_dbserver_1.ip
   }
 }
-​
+
 output "cloud_dbserver_2" {
   value = {
     "fqdn"  = module.cloud_dbserver_2.fqdn,
@@ -128,7 +124,6 @@ output "cloud_dbserver_3" {
     "ip"    = module.cloud_dbserver_3.ip
   }
 }
-
 
 output "cloud_dbserver_4" {
   value = {
