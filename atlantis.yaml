@@ -26,6 +26,9 @@ projects:
 # O
 # P
 # Q
+- name: oracledbnodes
+  dir: nirmalj/oracledbnodes
+  workflow: nutanix-backend
 # R
 # S
 - name: sporadb
