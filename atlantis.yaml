@@ -1,48 +1,14 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: ajinkyaa_uat_pg_etcd
-  dir: ajinkyaa/postgres/etcd
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_hapg
-  dir: ajinkyaa/postgres/hapg
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_pgbackrest
-  dir: ajinkyaa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: Pg_bouncer_etcd
-  dir: pgbouncer_algondaa/postgres/etcd
-  workflow: nutanix-backend
-- name: Pg_bouncer_hapg
-  dir: pgbouncer_algondaa/postgres/hapg
-  workflow: nutanix-backend
-- name: Pg_bouncer_pgbackrest
-  dir: pgbouncer_algondaa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_etcd
-  dir: aparna/etcd
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_hapg
-  dir: aparna/hapg
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_pgbackrest
-  dir: aparna/pgbackrest
-- name: app-testing
-  dir: app
 # B
 # C
-- name: etcd-testing
-  dir: etcd-test/etcd
-  workflow: nutanix-backend
-- name: cfrmcloud_metro_autolab_artemisrr_green
-  dir: cfrmcloud/saasn/metro/dev/artemisrr/green
-  workflow: nutanix-backend
 # D
 # E
 # F
@@ -50,86 +16,19 @@ projects:
 # H
 # I
 # J
-- name: jenk
-  dir: jenk
-  workflow: nutanix-backend
-- name: test-jen
-  dir: jen-test
-  workflow: nutanix-backend
 # K
 # L
 # M
-- name: mannava_auto_test_server_august_etcd
-  dir: mannava/etcd
-  workflow: nutanix-backend
-- name: mannava_auto_test_server_august_hapg
-  dir: mannava/hapg
-  workflow: nutanix-backend
-- name: mannava_auto_test_server_august_pgbackrest
-  dir: mannava/pgbackrest
-  workflow: nutanix-backend
 # N
-- name: NYA_Rebuilding_server_etcd
-  dir: NYA/postgres/etcd
-  workflow: nutanix-backend
-- name: NYA_Rebuilding_server_hapg
-  dir: NYA/postgres/hapg
-  workflow: nutanix-backend
-- name: NYA_Rebuilding_server_pgbackrest
-  dir: NYA/postgres/pgbackrest
-- name: Nafisa_test_postgres_15_hapg
-  dir: Nafisa/postgres/hapg
-  workflow: nutanix-backend
-- name: Nafisa_test_postgres_15_pgbackrest
-  dir: Nafisa/postgres/pgbackrest
-  workflow: nutanix-backend
 # O
 # P
 # Q
 # R
 # S
-- name: dgboradb
-  dir: saumilp/dgb
-  workflow: nutanix-backend
-- name: shkelqimvm
-  dir: shkelqim/testvm
-  workflow: nutanix-backend
-- name: dgboradbru
-  dir: saumilp/dgb19c
-  workflow: nutanix-backend
 # T
 # U
 # V
 # W
 # X
 # Y
-- name: NY_August_test_server_etcd
-  dir: NY/postgres/etcd
-  workflow: nutanix-backend
-- name: NY_August_test_server_hapg
-  dir: NY/postgres/hapg
-  workflow: nutanix-backend
-- name: NY_August_test_server_pgbackrest
-  dir: NY/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: YNA_Rebuilding_server2_etcd
-  dir: YNA/postgres/etcd
-  workflow: nutanix-backend
-- name: YNA_Rebuilding_server2_hapg
-  dir: YNA/postgres/hapg
-  workflow: nutanix-backend
-- name: YNA_Rebuilding_server2_pgbackrest
-  dir: YNA/postgres/pgbackrest
-- name: priyaj_postgres_etcd
-  dir: priyaj/postgres/etcd
-  workflow: nutanix-backend
-- name: priyaj_postgres_hapg
-  dir: priyaj/postgres/hapg
-  workflow: nutanix-backend
-- name: ny2_test_postgres_15_hapg
-  dir: ny2/postgres/hapg
-  workflow: nutanix-backend
-- name: ny2_test_postgres_15_pgbackrest
-  dir: ny2/postgres/pgbackrest
-  workflow: nutanix-backend
 # Z
