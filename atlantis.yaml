@@ -10,6 +10,9 @@ projects:
 # B
 # C
 # D
+- name: dtoradb
+  dir: dthirunee/mysql
+  workflow: nutanix-backend
 # E
 # F
 # G
