@@ -25,10 +25,10 @@ projects:
 - name: maparna_testing_server_etcd
   dir: maparna/etcd
   workflow: nutanix-backend
-  name: maparna_testing_server_hapg
+- name: maparna_testing_server_hapg
   dir: maparna/hapg
   workflow: nutanix-backend
-  name: maparna_testing_server_pgbackrest
+- name: maparna_testing_server_pgbackrest
   dir: maparna/pgbackrest
   workflow: nutanix-backend
 # N
