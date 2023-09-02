@@ -7,37 +7,12 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: ajinkyaa_uat_pg_etcd
-  dir: ajinkyaa/postgres/etcd
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_hapg
-  dir: ajinkyaa/postgres/hapg
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_pgbackrest
-  dir: ajinkyaa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: Pg_bouncer_etcd
-  dir: pgbouncer_algondaa/postgres/etcd
-  workflow: nutanix-backend
-- name: Pg_bouncer_hapg
-  dir: pgbouncer_algondaa/postgres/hapg
-  workflow: nutanix-backend
-- name: Pg_bouncer_pgbackrest
-  dir: pgbouncer_algondaa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_etcd
-  dir: aparna/etcd
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_hapg
-  dir: aparna/hapg
-  workflow: nutanix-backend
-- name: aparna_auto_lab_test_server_august_pgbackrest
-  dir: aparna/pgbackrest
-- name: app-testing
-  dir: app
 # B
 # C
 # D
+- name: dtoradb
+  dir: dthirunee/mysql
+  workflow: nutanix-backend
 # E
 # F
 # G
@@ -47,32 +22,17 @@ projects:
 # K
 # L
 # M
-- name: mannava_auto_test_server_august_etcd
-  dir: mannava/etcd
-  workflow: nutanix-backend
-- name: mannava_auto_test_server_august_hapg
-  dir: mannava/hapg
-  workflow: nutanix-backend
-- name: mannava_auto_test_server_august_pgbackrest
-  dir: mannava/pgbackrest
-  workflow: nutanix-backend
 # N
 # O
 # P
 # Q
+- name: oracledbnodes
+  dir: nirmalj/oracledbnodes
+  workflow: nutanix-backend
 # R
 # S
-- name: september_test_server_sep_etcd
-  dir: september/etcd
-  workflow: nutanix-backend
-- name: september_test_server_sep_hapg
-  dir: september/hapg
-  workflow: nutanix-backend
-- name: september_test_server_sep_pgbackrest
-  dir: september/pgbackrest
-  workflow: nutanix-backend
-- name: dgboradb
-  dir: saumilp/dgb
+- name: sporadb
+  dir: spatel/mysql
   workflow: nutanix-backend
 # T
 # U
@@ -80,13 +40,4 @@ projects:
 # W
 # X
 # Y
-- name: NY_August_test_server_etcd
-  dir: NY/postgres/etcd
-  workflow: nutanix-backend
-- name: NY_August_test_server_hapg
-  dir: NY/postgres/hapg
-  workflow: nutanix-backend
-- name: NY_August_test_server_pgbackrest
-  dir: NY/postgres/pgbackrest
-  workflow: nutanix-backend
 # Z

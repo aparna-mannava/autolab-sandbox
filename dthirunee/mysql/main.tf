@@ -8,7 +8,7 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   facts         = {
-    "bt_customer"         = "fi1234" #ex: fiXXXX
+    "bt_customer"         = "fi1221" #ex: fiXXXX
     "bt_tier"             = "pr" #ex: sbx, tst, td, demo
     "bt_env"              = "1" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
@@ -16,35 +16,13 @@ locals {
   }
 }
 
-module "cloud_dbserver_1" {
+module "cloud_odbserver_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsdp37"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db37"
-  bt_infra_cluster     = "ny5-aza-ntnx-19"
-  bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel7"
-  cpus                 = "4"
-  memory               = "8192"
-  foreman_environment  = local.environment
-  lob                  = "CLOUD"
-  foreman_hostgroup    = "BT Base Server"
-  datacenter           = local.datacenter
-  external_facts       = local.facts
-  additional_disks     = {
-    1 = "200",
-    2 = "200",
-    3 = "200"
-  }
-}
-
-
-module "cloud_dbserver_2" {
-  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsdp38"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db38"
+  hostname             = "us01vldbsdp16"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db16"
   bt_infra_cluster     = "ny2-azb-ntnx-08"
   bt_infra_network     = "ny2-autolab-app-ahv"
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   cpus                 = "4"
   memory               = "8192"
   foreman_environment  = local.environment
@@ -59,18 +37,39 @@ module "cloud_dbserver_2" {
   }
 }
 
-output "cloud_dbserver_1" {
-  value = {
-    "fqdn"  = module.cloud_dbserver_1.fqdn,
-    "alias" = module.cloud_dbserver_1.alias,
-    "ip"    = module.cloud_dbserver_1.ip
+module "cloud_odbserver_2" {
+  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
+  hostname             = "us01vldbsdp17"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db17"
+  bt_infra_cluster     = "ny2-azb-ntnx-08"
+  bt_infra_network     = "ny2-autolab-app-ahv"
+  os_version           = "rhel8"
+  cpus                 = "4"
+  memory               = "8192"
+  foreman_environment  = local.environment
+  lob                  = "CLOUD"
+  foreman_hostgroup    = "BT Base Server"
+  datacenter           = local.datacenter
+  external_facts       = local.facts
+  additional_disks     = {
+    1 = "200",
+    2 = "200",
+    3 = "200"
   }
 }
 
-output "cloud_dbserver_2" {
+output "cloud_odbserver_1" {
   value = {
-    "fqdn"  = module.cloud_dbserver_2.fqdn,
-    "alias" = module.cloud_dbserver_2.alias,
-    "ip"    = module.cloud_dbserver_2.ip
+    "fqdn"  = module.cloud_odbserver_1.fqdn,
+    "alias" = module.cloud_odbserver_1.alias,
+    "ip"    = module.cloud_odbserver_1.ip
+  }
+}
+
+output "cloud_odbserver_2" {
+  value = {
+    "fqdn"  = module.cloud_odbserver_2.fqdn,
+    "alias" = module.cloud_odbserver_2.alias,
+    "ip"    = module.cloud_odbserver_2.ip
   }
 }
