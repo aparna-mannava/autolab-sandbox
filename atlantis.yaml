@@ -31,18 +31,6 @@ projects:
   workflow: nutanix-backend
 # R
 # S
-- name: app_test_server_sep_etcd
-  dir: app/etcd
-  workflow: nutanix-backend
-  name: app_test_server_sep_hapg
-  dir: app/hapg
-  workflow: nutanix-backend
-  name: app_test_server_sep_pgbackrest
-  dir: app/pgbackrest
-  workflow: nutanix-backend
-- name: sporadb
-  dir: spatel/mysql
-  workflow: nutanix-backend
 # T
 # U
 # V
