@@ -38,6 +38,12 @@ projects:
 - name: backrestnodes_env9
   dir: nirmalj/backrestnodes
   workflow: nutanix-backend
+- name: pgnontde15_hapg_env9
+  dir: nirmalj/pgnontde15/hapgnodes
+  workflow: nutanix-backend
+- name: pgnontde15_backrest_env9
+  dir: nirmalj/pgnontde15/backrestnode
+  workflow: nutanix-backend
 # R
 # S
 - name: september_test_server_sep_etcd
