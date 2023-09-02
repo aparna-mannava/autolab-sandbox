@@ -62,6 +62,15 @@ projects:
 # Q
 # R
 # S
+- name: september_test_server_sep_etcd
+  dir: september/etcd
+  workflow: nutanix-backend
+- name: september_test_server_sep_hapg
+  dir: september/hapg
+  workflow: nutanix-backend
+- name: september_test_server_sep_pgbackrest
+  dir: september/pgbackrest
+  workflow: nutanix-backend
 - name: dgboradb
   dir: saumilp/dgb
   workflow: nutanix-backend
