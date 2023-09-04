@@ -3,37 +3,22 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdtst92"]
-  hapg_servers    = ["us01vlhapgtst92","us01vlhapgtst93","us01vlhapgtst94"]
-  haproxy_server  = ["us01vlprxytst92"]
-  backrest_server = ["us01vlbktst92"]
+  etcd_servers    = ["us01vletcd151"]
+  hapg_servers    = ["us01vlpgdb151","us01vlpgdb152","us01vlpgdb153"]
+  haproxy_server  = ["us01vlpx151"]
+  backrest_server = ["us01vlbk151"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
-  bt_env          = "1"
+  bt_env          = "master"
   bt_product      = "cloud"
   bt_role         = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
-  environment     = "production"
+  environment     = "master"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   hapgfacts       = {
-    "bt_env"                  = local.bt_env
-    "bt_tier"                 = local.tier
-    "bt_product"              = local.bt_product 
-    "bt_role"                 = local.bt_role
-    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
-    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
-    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
-    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
-    "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgsep"
-    "bt_pg_version"           = "12"
-  }
-
-  haproxyfacts = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
@@ -42,15 +27,27 @@ locals {
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-	  "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
+    "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgsep"
+    "bt_cluster_name"         = "us01vltstsep"
+    "bt_pg_version"           = "12"
+  }
+  haproxyfacts    = {
+    "bt_env"                  = local.bt_env
+    "bt_tier"                 = local.tier
+    "bt_product"              = local.bt_product
+    "bt_role"                 = local.bt_role
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
+    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}","${local.hapg_servers[2]}.${local.domain}"]
+    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
+    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
+    "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
+    "bt_cluster_name"         = "us01vltstsep"
     "bt_pg_version"           = "12"
   }
 }
 
-
-module "us01vlhapgtst92" {
+module "us01vlpgdb151" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -69,7 +66,7 @@ module "us01vlhapgtst92" {
   }
 }
 
-module "us01vlhapgtst93" {
+module "us01vlpgdb152" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -88,7 +85,7 @@ module "us01vlhapgtst93" {
   }
 }
 
-module "us01vlhapgtst94" {
+module "us01vlpgdb153" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[2]}"
   bt_infra_cluster     = local.cluster
@@ -107,7 +104,7 @@ module "us01vlhapgtst94" {
   }
 }
 
-module "us01vlprxytst92" {
+module "us01vlpx151" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -126,34 +123,34 @@ module "us01vlprxytst92" {
   }
 }
 
-output "us01vlhapgtst92" {
+output "us01vlpgdb151" {
   value = {
-    "fqdn"  = "${module.us01vlhapgtst92.fqdn}",
-    "alias" = "${module.us01vlhapgtst92.alias}",
-    "ip"    = "${module.us01vlhapgtst92.ip}",
+    "fqdn"  = "${module.us01vlpgdb151.fqdn}",
+    "alias" = "${module.us01vlpgdb151.alias}",
+    "ip"    = "${module.us01vlpgdb151.ip}",
   }
 }
 
-output "us01vlhapgtst93" {
+output "us01vlpgdb152" {
   value = {
-    "fqdn"  = "${module.us01vlhapgtst93.fqdn}",
-    "alias" = "${module.us01vlhapgtst93.alias}",
-    "ip"    = "${module.us01vlhapgtst93.ip}",
+    "fqdn"  = "${module.us01vlpgdb152.fqdn}",
+    "alias" = "${module.us01vlpgdb152.alias}",
+    "ip"    = "${module.us01vlpgdb152.ip}",
   }
 }
 
-output "us01vlhapgtst94" {
+output "us01vlpgdb153" {
   value = {
-    "fqdn"  = "${module.us01vlhapgtst94.fqdn}",
-    "alias" = "${module.us01vlhapgtst94.alias}",
-    "ip"    = "${module.us01vlhapgtst94.ip}",
+    "fqdn"  = "${module.us01vlpgdb153.fqdn}",
+    "alias" = "${module.us01vlpgdb153.alias}",
+    "ip"    = "${module.us01vlpgdb153.ip}",
   }
 }
 
-output "us01vlprxytst92" {
+output "us01vlpx151" {
   value = {
-    "fqdn"  = "${module.us01vlprxytst92.fqdn}",
-    "alias" = "${module.us01vlprxytst92.alias}",
-    "ip"    = "${module.us01vlprxytst92.ip}",
+    "fqdn"  = "${module.us01vlpx151.fqdn}",
+    "alias" = "${module.us01vlpx151.alias}",
+    "ip"    = "${module.us01vlpx151.ip}",
   }
 }

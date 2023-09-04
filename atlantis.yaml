@@ -22,6 +22,15 @@ projects:
 # K
 # L
 # M
+- name: maparna_testing_server_etcd
+  dir: maparna/etcd
+  workflow: nutanix-backend
+- name: maparna_testing_server_hapg
+  dir: maparna/hapg
+  workflow: nutanix-backend
+- name: maparna_testing_server_pgbackrest
+  dir: maparna/pgbackrest
+  workflow: nutanix-backend
 # N
 # O
 # P
@@ -46,18 +55,6 @@ projects:
   workflow: nutanix-backend
 # R
 # S
-- name: september_test_server_sep_etcd
-  dir: september/etcd
-  workflow: nutanix-backend
-- name: september_test_server_sep_hapg
-  dir: september/hapg
-  workflow: nutanix-backend
-- name: september_test_server_sep_pgbackrest
-  dir: september/pgbackrest
-  workflow: nutanix-backend
-- name: sporadb
-  dir: spatel/mysql
-  workflow: nutanix-backend
 # T
 # U
 # V
