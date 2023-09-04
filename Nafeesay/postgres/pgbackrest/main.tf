@@ -8,10 +8,10 @@ locals {
   haproxy_server  = ["us01vlprxytst12"]
   backrest_server = ["us01vlbktst12"]
   domain          = "auto.saas-n.com"
-  tier            = "nonpod"
+  tier            = "uat"
   bt_env          = "1"
-  bt_product      = "cloud"
-  bt_role		      = "pgbackrest"
+  bt_product      = "ces"
+  bt_role		      = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"
   environment     = "production"
