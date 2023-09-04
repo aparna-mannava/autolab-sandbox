@@ -3,8 +3,8 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vltetcd151"]
-  etcd_hosts_p    = ["us01vltetcd151.auto.saas-n.com"]
+  etcd_servers    = ["us01vletcd151"]
+  etcd_hosts_p    = ["us01vletcd151.auto.saas-n.com"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "master"
@@ -25,7 +25,7 @@ locals {
   }
 }
 
-module "us01vltetcd151" {
+module "us01vletcd151" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.etcd_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -42,10 +42,10 @@ module "us01vltetcd151" {
     1 = "200",
   }
 }
-output "us01vltetcd151" {
+output "us01vletcd151" {
   value = {
-    "fqdn"  = "${module.us01vltetcd151.fqdn}",
-    "alias" = "${module.us01vltetcd151.alias}",
-    "ip"    = "${module.us01vltetcd151.ip}",
+    "fqdn"  = "${module.us01vletcd151.fqdn}",
+    "alias" = "${module.us01vletcd151.alias}",
+    "ip"    = "${module.us01vletcd151.ip}",
   }
 }
