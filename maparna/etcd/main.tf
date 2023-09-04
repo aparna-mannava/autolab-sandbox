@@ -13,7 +13,7 @@ locals {
   bt_role         = "postgres"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "master"
-  cluster         = "ny2-aza-ntnx-14"
+  cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   facts           = {
@@ -34,7 +34,7 @@ module "us01vltetcd151" {
   foreman_hostgroup    = local.hostgroup
   foreman_environment  = local.environment
   datacenter           = local.datacenter
-  os_version           = "rhel7"
+  os_version           = "rhel8"
   cpus                 = "2"
   memory               = "4096"
   external_facts       = local.facts
