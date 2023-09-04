@@ -6,7 +6,7 @@ locals {
   etcd_servers    = ["us01vltetcd151"]
   etcd_hosts_p    = ["us01vltetcd151.auto.saas-n.com"]
   domain          = "auto.saas-n.com"
-  tier            = "production"
+  tier            = "nonprod"
   bt_env          = "master"
   lob             = "CLOUD"
   bt_product      = "cloud"
@@ -49,4 +49,3 @@ output "us01vltetcd151" {
     "ip"    = "${module.us01vltetcd151.ip}",
   }
 }
-# coomment
