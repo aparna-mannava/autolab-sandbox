@@ -38,8 +38,38 @@ projects:
 - name: oracledbnodes
   dir: nirmalj/oracledbnodes
   workflow: nutanix-backend
+- name: etcdnodes_env9
+  dir: nirmalj/etcdnodes
+  workflow: nutanix-backend
+- name: hgpgnontde14_env9
+  dir: nirmalj/hapgnontde14
+  workflow: nutanix-backend
+- name: backrestnodes_env9
+  dir: nirmalj/backrestnodes
+  workflow: nutanix-backend
+- name: pgnontde15_hapg_env9
+  dir: nirmalj/pgnontde15/hapgnodes
+  workflow: nutanix-backend
+- name: pgnontde15_backrest_env9
+  dir: nirmalj/pgnontde15/backrestnode
+  workflow: nutanix-backend
 # R
 # S
+<<<<<<< HEAD
+=======
+- name: september_test_server_sep_etcd
+  dir: september/etcd
+  workflow: nutanix-backend
+- name: september_test_server_sep_hapg
+  dir: september/hapg
+  workflow: nutanix-backend
+- name: september_test_server_sep_pgbackrest
+  dir: september/pgbackrest
+  workflow: nutanix-backend
+- name: sporadb
+  dir: spatel/mysql
+  workflow: nutanix-backend
+>>>>>>> 76dd6a9d8c7c7179dafdab9bf27c5f58f093bc86
 # T
 # U
 # V
