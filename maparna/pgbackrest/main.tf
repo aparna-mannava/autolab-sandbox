@@ -4,7 +4,7 @@ terraform {
 
 locals {
   etcd_servers    = ["us01vltetcd151"]
-  hapg_servers    = ["us01vltpgdb151","us01vltpgdb152","us01vltpgdb152"]
+  hapg_servers    = ["us01vltpgdb151","us01vltpgdb152","us01vltpgdb153"]
   haproxy_server  = ["us01vltpx151"]
   backrest_server = ["us01vltbk151"]
   domain          = "auto.saas-n.com"
