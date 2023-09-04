@@ -6,11 +6,11 @@ locals {
   etcd_servers    = ["us01vletcdtst12"]
   etcd_hosts_p    = ["us01vletcdtst12.auto.saas-n.com"]
   domain          = "auto.saas-n.com"
-  tier            = "nonprod"
+  tier            = "uat"
   bt_env          = "1"
-  lob             = "CLOUD"
+  lob             = "ces"
   bt_product      = "cloud"
-  bt_role         = "postgres"
+  bt_role         = "postgresql"
   hostgroup       = "BT ETCD for PostgreSQL Server"
   environment     = "production"
   cluster         = "ny5-aza-ntnx-14"
