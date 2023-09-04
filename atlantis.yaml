@@ -23,6 +23,15 @@ projects:
 # L
 # M
 # N
+- name: Nafeesay_September_new_server_etcd
+  dir: Nafeesay/postgres/etcd
+  workflow: nutanix-backend
+- name: Nafeesay_September_new_server_hapg
+  dir: Nafeesay/postgres/hapg
+  workflow: nutanix-backend
+- name: Nafeesay_September_new_server_pgbackrest
+  dir: Nafeesay/postgres/pgbackrest
+  workflow: nutanix-backend
 # O
 # P
 # Q
