@@ -7,6 +7,7 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+<<<<<<< HEAD
 - name: ajinkyaa_uat_pg_etcd
   dir: ajinkyaa/postgres/etcd
   workflow: nutanix-backend
@@ -25,14 +26,13 @@ projects:
 - name: aparna_pgts_server_pgbackrest
   dir: aparna/pgbackrest
   workflow: nutanix-backend
+=======
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3
 # B
 # C
 # D
-- name: danielsh_apacheds
-  dir: danielsh/apacheds
-  workflow: nutanix-backend
-- name: danielsh_base
-  dir: danielsh/base
+- name: dtoradb
+  dir: dthirunee/mysql
   workflow: nutanix-backend
 # E
 # F
@@ -43,15 +43,39 @@ projects:
 # K
 # L
 # M
+- name: maparna_testing_server_etcd
+  dir: maparna/etcd
+  workflow: nutanix-backend
+- name: maparna_testing_server_hapg
+  dir: maparna/hapg
+  workflow: nutanix-backend
+- name: maparna_testing_server_pgbackrest
+  dir: maparna/pgbackrest
+  workflow: nutanix-backend
 # N
 # O
 # P
 # Q
+- name: oracledbnodes
+  dir: nirmalj/oracledbnodes
+  workflow: nutanix-backend
+- name: etcdnodes_env9
+  dir: nirmalj/etcdnodes
+  workflow: nutanix-backend
+- name: hgpgnontde14_env9
+  dir: nirmalj/hapgnontde14
+  workflow: nutanix-backend
+- name: backrestnodes_env9
+  dir: nirmalj/backrestnodes
+  workflow: nutanix-backend
+- name: pgnontde15_hapg_env9
+  dir: nirmalj/pgnontde15/hapgnodes
+  workflow: nutanix-backend
+- name: pgnontde15_backrest_env9
+  dir: nirmalj/pgnontde15/backrestnode
+  workflow: nutanix-backend
 # R
 # S
-- name: jenkins8_dgb
-  dir: spatel/jenkins
-  workflow: nutanix-backend
 # T
 # U
 # V

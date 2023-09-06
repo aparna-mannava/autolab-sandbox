@@ -3,54 +3,57 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts02"]
-  hapg_servers    = ["us01vlhapgts04","us01vlhapgts05","us01vlhapgts06"]
-  haproxy_server  = ["us01vlprxyts02"]
-  backrest_server = ["us01vlbkts02"]
+  etcd_servers    = ["us01vletcd098","us01vletcd099"]
+  hapg_servers    = ["us01vlhapg915","us01vlhapg916"]
+  haproxy_server  = ["us01vlhapx915"]
+  backrest_server = ["us01vlpgbk915"]
+  etcd_hosts_p    = ["'us01vletcd098.auto.saas-n.com','us01vletcd099.auto.saas-n.com'"]
   domain          = "auto.saas-n.com"
-  tier            = "uat"
-  bt_env          = "1"
-  bt_product      = "fmcloud"
+  tier            = "sbx"
+  bt_env          = "9"
+  bt_product      = "ir"
   bt_role         = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
   environment     = "master"
-  cluster         = "ny5-aza-ntnx-14"
+  cluster         = "ny2-azb-ntnx-08"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
   hapgfacts       = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
-    "bt_product"              = local.bt_product 
+    "bt_product"              = local.bt_product
     "bt_role"                 = local.bt_role
-    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
-    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}"]
+    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlpgtsep"
-    "bt_pg_version"           = "12"
+    "bt_cluster_name"         = "hapgnontde15"
+    "bt_pg_version"           = "15"
   }
-
-  haproxyfacts = {
+  haproxyfacts    = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
     "bt_role"                 = local.bt_role
-    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
-    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}"]
+    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
-	  "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlpgtsep"
-    "bt_pg_version"           = "12"
+    "bt_cluster_name"         = "hapgnontde15"
+    "bt_pg_version"           = "15"
+  }
+  etcdfacts       = {
+    "bt_env"                  = local.bt_env
+    "bt_tier"                 = local.tier
+    "bt_product"              = local.bt_product
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}", "${local.etcd_servers[1]}.${local.domain}"]
   }
 }
 
-
-module "us01vlhapgts04" {
+module "autolab_pg15nontde_hapg_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -69,7 +72,7 @@ module "us01vlhapgts04" {
   }
 }
 
-module "us01vlhapgts05" {
+module "autolab_pg15nontde_hapg_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -88,26 +91,7 @@ module "us01vlhapgts05" {
   }
 }
 
-module "us01vlhapgts06" {
-  source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "${local.hapg_servers[2]}"
-  bt_infra_cluster     = local.cluster
-  bt_infra_network     = local.network
-  foreman_hostgroup    = local.hostgroup
-  foreman_environment  = local.environment
-  datacenter           = local.datacenter
-  lob                  = local.lob
-  os_version           = "rhel8"
-  cpus                 = "2"
-  memory               = "4096"
-  external_facts       = local.hapgfacts
-  additional_disks     = {
-    1 = "100",
-    2 = "100",
-  }
-}
-
-module "us01vlprxyts02" {
+module "autolab_pg15nontde_hapx_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -116,7 +100,7 @@ module "us01vlprxyts02" {
   foreman_environment  = local.environment
   os_version           = "rhel8"
   cpus                 = "2"
-  memory               = "4096"
+  memory               = "2048"
   external_facts       = local.haproxyfacts
   datacenter           = local.datacenter
   lob                  = local.lob
@@ -126,34 +110,26 @@ module "us01vlprxyts02" {
   }
 }
 
-output "us01vlhapgts04" {
+output "autolab_pg15nontde_hapg_1" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts04.fqdn}",
-    "alias" = "${module.us01vlhapgts04.alias}",
-    "ip"    = "${module.us01vlhapgts04.ip}",
+    "fqdn"  = "${module.autolab_pg15nontde_hapg_1.fqdn}",
+    "alias" = "${module.autolab_pg15nontde_hapg_1.alias}",
+    "ip"    = "${module.autolab_pg15nontde_hapg_1.ip}",
   }
 }
 
-output "us01vlhapgts05" {
+output "autolab_pg15nontde_hapg_2" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts05.fqdn}",
-    "alias" = "${module.us01vlhapgts05.alias}",
-    "ip"    = "${module.us01vlhapgts05.ip}",
+    "fqdn"  = "${module.autolab_pg15nontde_hapg_2.fqdn}",
+    "alias" = "${module.autolab_pg15nontde_hapg_2.alias}",
+    "ip"    = "${module.autolab_pg15nontde_hapg_2.ip}",
   }
 }
 
-output "us01vlhapgts06" {
+output "autolab_pg15nontde_hapx_1" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts06.fqdn}",
-    "alias" = "${module.us01vlhapgts06.alias}",
-    "ip"    = "${module.us01vlhapgts06.ip}",
-  }
-}
-
-output "us01vlprxyts02" {
-  value = {
-    "fqdn"  = "${module.us01vlprxyts02.fqdn}",
-    "alias" = "${module.us01vlprxyts02.alias}",
-    "ip"    = "${module.us01vlprxyts02.ip}",
+    "fqdn"  = "${module.autolab_pg15nontde_hapx_1.fqdn}",
+    "alias" = "${module.autolab_pg15nontde_hapx_1.alias}",
+    "ip"    = "${module.autolab_pg15nontde_hapx_1.ip}",
   }
 }
