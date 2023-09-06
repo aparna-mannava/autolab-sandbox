@@ -3,6 +3,16 @@ terraform {
 }
 
 locals {
+<<<<<<< HEAD:aparna/pgbackrest/main.tf
+  etcd_servers    = ["us01vletcdts02"]
+  hapg_servers    = ["us01vlhapgts04","us01vlhapgts05","us01vlhapgts06"]
+  haproxy_server  = ["us01vlprxyts02"]
+  backrest_server = ["us01vlbkts02"]
+  domain          = "auto.saas-n.com"
+  tier            = "uat"
+  bt_env          = "1"
+  bt_product      = "fmcloud"
+=======
   etcd_servers    = ["us01vletcd151"]
   hapg_servers    = ["us01vlpgdb151","us01vlpgdb152","us01vlpgdb153"]
   haproxy_server  = ["us01vlpx151"]
@@ -11,6 +21,7 @@ locals {
   tier            = "nonprod"
   bt_env          = "master"
   bt_product      = "cloud"
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/pgbackrest/main.tf
   bt_role		      = "pgbackrest"
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"
@@ -32,8 +43,12 @@ locals {
     "bt_pg_version"           = "12"
   }
 }
+<<<<<<< HEAD:aparna/pgbackrest/main.tf
+module "us01vlbkts02" {
+=======
 
 module "us01vlbk151" {
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/pgbackrest/main.tf
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -51,11 +66,19 @@ module "us01vlbk151" {
     2 = "160",
   }
 }
+<<<<<<< HEAD:aparna/pgbackrest/main.tf
+output "us01vlbkts02" {
+  value = {
+    "fqdn"  = "${module.us01vlbkts02.fqdn}",
+    "alias" = "${module.us01vlbkts02.alias}",
+    "ip"    = "${module.us01vlbkts02.ip}",
+=======
 
 output "us01vlbk151" {
   value = {
     "fqdn"  = "module.us01vlbk151.fqdn",
     "alias" = "module.us01vlbk151.alias",
     "ip"    = "module.us01vlbk151.ip",
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/pgbackrest/main.tf
   }
 }

@@ -3,6 +3,16 @@ terraform {
 }
 
 locals {
+<<<<<<< HEAD:aparna/hapg/main.tf
+  etcd_servers    = ["us01vletcdts02"]
+  hapg_servers    = ["us01vlhapgts04","us01vlhapgts05","us01vlhapgts06"]
+  haproxy_server  = ["us01vlprxyts02"]
+  backrest_server = ["us01vlbkts02"]
+  domain          = "auto.saas-n.com"
+  tier            = "uat"
+  bt_env          = "1"
+  bt_product      = "fmcloud"
+=======
   etcd_servers    = ["us01vletcd151"]
   hapg_servers    = ["us01vlpgdb151","us01vlpgdb152","us01vlpgdb153"]
   haproxy_server  = ["us01vlpx151"]
@@ -11,6 +21,7 @@ locals {
   tier            = "nonprod"
   bt_env          = "master"
   bt_product      = "cloud"
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
   bt_role         = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
@@ -21,6 +32,24 @@ locals {
   hapgfacts       = {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
+<<<<<<< HEAD:aparna/hapg/main.tf
+    "bt_product"              = local.bt_product 
+    "bt_role"                 = local.bt_role
+    "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
+    "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}", "${local.hapg_servers[2]}.${local.domain}"]
+    "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
+    "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
+	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
+    "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
+    "bt_cluster_name"         = "us01vlpgtsep"
+    "bt_pg_version"           = "12"
+  }
+
+  haproxyfacts = {
+    "bt_env"                  = local.bt_env
+    "bt_tier"                 = local.tier
+=======
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
     "bt_product"              = local.bt_product
     "bt_role"                 = local.bt_role
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
@@ -29,6 +58,9 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
+<<<<<<< HEAD:aparna/hapg/main.tf
+    "bt_cluster_name"         = "us01vlpgtsep"
+=======
     "bt_cluster_name"         = "us01vltstsep"
     "bt_pg_version"           = "12"
   }
@@ -43,11 +75,17 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
     "bt_cluster_name"         = "us01vltstsep"
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
     "bt_pg_version"           = "12"
   }
 }
 
+<<<<<<< HEAD:aparna/hapg/main.tf
+
+module "us01vlhapgts04" {
+=======
 module "us01vlpgdb151" {
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -66,7 +104,11 @@ module "us01vlpgdb151" {
   }
 }
 
+<<<<<<< HEAD:aparna/hapg/main.tf
+module "us01vlhapgts05" {
+=======
 module "us01vlpgdb152" {
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -85,7 +127,11 @@ module "us01vlpgdb152" {
   }
 }
 
+<<<<<<< HEAD:aparna/hapg/main.tf
+module "us01vlhapgts06" {
+=======
 module "us01vlpgdb153" {
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[2]}"
   bt_infra_cluster     = local.cluster
@@ -104,7 +150,11 @@ module "us01vlpgdb153" {
   }
 }
 
+<<<<<<< HEAD:aparna/hapg/main.tf
+module "us01vlprxyts02" {
+=======
 module "us01vlpx151" {
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -123,6 +173,37 @@ module "us01vlpx151" {
   }
 }
 
+<<<<<<< HEAD:aparna/hapg/main.tf
+output "us01vlhapgts04" {
+  value = {
+    "fqdn"  = "${module.us01vlhapgts04.fqdn}",
+    "alias" = "${module.us01vlhapgts04.alias}",
+    "ip"    = "${module.us01vlhapgts04.ip}",
+  }
+}
+
+output "us01vlhapgts05" {
+  value = {
+    "fqdn"  = "${module.us01vlhapgts05.fqdn}",
+    "alias" = "${module.us01vlhapgts05.alias}",
+    "ip"    = "${module.us01vlhapgts05.ip}",
+  }
+}
+
+output "us01vlhapgts06" {
+  value = {
+    "fqdn"  = "${module.us01vlhapgts06.fqdn}",
+    "alias" = "${module.us01vlhapgts06.alias}",
+    "ip"    = "${module.us01vlhapgts06.ip}",
+  }
+}
+
+output "us01vlprxyts02" {
+  value = {
+    "fqdn"  = "${module.us01vlprxyts02.fqdn}",
+    "alias" = "${module.us01vlprxyts02.alias}",
+    "ip"    = "${module.us01vlprxyts02.ip}",
+=======
 output "us01vlpgdb151" {
   value = {
     "fqdn"  = "${module.us01vlpgdb151.fqdn}",
@@ -152,5 +233,6 @@ output "us01vlpx151" {
     "fqdn"  = "${module.us01vlpx151.fqdn}",
     "alias" = "${module.us01vlpx151.alias}",
     "ip"    = "${module.us01vlpx151.ip}",
+>>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3:maparna/hapg/main.tf
   }
 }
