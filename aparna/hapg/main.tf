@@ -3,14 +3,14 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcdts357"]
-  hapg_servers    = ["us01vlhapgts35","us01vlhapgts36","us01vlhapgts37"]
-  haproxy_server  = ["us01vlprxyts357"]
-  backrest_server = ["us01vlbkts357"]
+  etcd_servers    = ["us01vletcdts02"]
+  hapg_servers    = ["us01vlhapgts04","us01vlhapgts05","us01vlhapgts06"]
+  haproxy_server  = ["us01vlprxyts02"]
+  backrest_server = ["us01vlbkts02"]
   domain          = "auto.saas-n.com"
-  tier            = "non-prod"
+  tier            = "uat"
   bt_env          = "1"
-  bt_product      = "cloud"
+  bt_product      = "fmcloud"
   bt_role         = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
@@ -29,7 +29,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgts"
+    "bt_cluster_name"         = "us01vlpgtsep"
     "bt_pg_version"           = "12"
   }
 
@@ -44,13 +44,13 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
 	  "bt_hapg_node3"           = "${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vlhapgts"
+    "bt_cluster_name"         = "us01vlpgtsep"
     "bt_pg_version"           = "12"
   }
 }
 
 
-module "us01vlhapgts35" {
+module "us01vlhapgts04" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[0]}"
   bt_infra_cluster     = local.cluster
@@ -69,7 +69,7 @@ module "us01vlhapgts35" {
   }
 }
 
-module "us01vlhapgts36" {
+module "us01vlhapgts05" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[1]}"
   bt_infra_cluster     = local.cluster
@@ -88,7 +88,7 @@ module "us01vlhapgts36" {
   }
 }
 
-module "us01vlhapgts37" {
+module "us01vlhapgts06" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hapg_servers[2]}"
   bt_infra_cluster     = local.cluster
@@ -107,7 +107,7 @@ module "us01vlhapgts37" {
   }
 }
 
-module "us01vlprxyts357" {
+module "us01vlprxyts02" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.haproxy_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -126,34 +126,34 @@ module "us01vlprxyts357" {
   }
 }
 
-output "us01vlhapgts35" {
+output "us01vlhapgts04" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts35.fqdn}",
-    "alias" = "${module.us01vlhapgts35.alias}",
-    "ip"    = "${module.us01vlhapgts35.ip}",
+    "fqdn"  = "${module.us01vlhapgts04.fqdn}",
+    "alias" = "${module.us01vlhapgts04.alias}",
+    "ip"    = "${module.us01vlhapgts04.ip}",
   }
 }
 
-output "us01vlhapgts36" {
+output "us01vlhapgts05" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts36.fqdn}",
-    "alias" = "${module.us01vlhapgts36.alias}",
-    "ip"    = "${module.us01vlhapgts36.ip}",
+    "fqdn"  = "${module.us01vlhapgts05.fqdn}",
+    "alias" = "${module.us01vlhapgts05.alias}",
+    "ip"    = "${module.us01vlhapgts05.ip}",
   }
 }
 
-output "us01vlhapgts37" {
+output "us01vlhapgts06" {
   value = {
-    "fqdn"  = "${module.us01vlhapgts37.fqdn}",
-    "alias" = "${module.us01vlhapgts37.alias}",
-    "ip"    = "${module.us01vlhapgts37.ip}",
+    "fqdn"  = "${module.us01vlhapgts06.fqdn}",
+    "alias" = "${module.us01vlhapgts06.alias}",
+    "ip"    = "${module.us01vlhapgts06.ip}",
   }
 }
 
-output "us01vlprxyts357" {
+output "us01vlprxyts02" {
   value = {
-    "fqdn"  = "${module.us01vlprxyts357.fqdn}",
-    "alias" = "${module.us01vlprxyts357.alias}",
-    "ip"    = "${module.us01vlprxyts357.ip}",
+    "fqdn"  = "${module.us01vlprxyts02.fqdn}",
+    "alias" = "${module.us01vlprxyts02.alias}",
+    "ip"    = "${module.us01vlprxyts02.ip}",
   }
 }
