@@ -7,27 +7,6 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-<<<<<<< HEAD
-- name: ajinkyaa_uat_pg_etcd
-  dir: ajinkyaa/postgres/etcd
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_hapg
-  dir: ajinkyaa/postgres/hapg
-  workflow: nutanix-backend
-- name: ajinkyaa_uat_pgbackrest
-  dir: ajinkyaa/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: aparna_pgts_server_etcd
-  dir: aparna/etcd
-  workflow: nutanix-backend
-- name: aparna_pgts_server_hapg
-  dir: aparna/hapg
-  workflow: nutanix-backend
-- name: aparna_pgts_server_pgbackrest
-  dir: aparna/pgbackrest
-  workflow: nutanix-backend
-=======
->>>>>>> 9355441a114f9e0b9bdb76be1871a85e834e4ed3
 # B
 # C
 # D
@@ -43,6 +22,15 @@ projects:
 # K
 # L
 # M
+- name: ma_test_server_etcd
+  dir: MA/etcd
+  workflow: nutanix-backend
+- name: ma_test_server_hapg
+  dir: MA/hapg
+  workflow: nutanix-backend
+- name: ma_test_server_pgbackrest
+  dir: MA/pgbackrest
+  workflow: nutanix-backend
 - name: maparna_testing_server_etcd
   dir: maparna/etcd
   workflow: nutanix-backend
@@ -51,7 +39,7 @@ projects:
   workflow: nutanix-backend
 - name: maparna_testing_server_pgbackrest
   dir: maparna/pgbackrest
-  workflow: nutanix-backend
+  workflow: nutanix-backend  
 # N
 - name: Nafeesay_September_new_server_etcd
   dir: Nafeesay/postgres/etcd
