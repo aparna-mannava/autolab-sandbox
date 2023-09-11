@@ -50,6 +50,15 @@ projects:
 - name: Nafeesay_September_new_server_pgbackrest
   dir: Nafeesay/postgres/pgbackrest
   workflow: nutanix-backend
+- name: Naya_postgres_server_etcd
+  dir: Naya/postgres/etcd
+  workflow: nutanix-backend
+- name: Naya_postgres_server_etcd_hapg
+  dir: Naya/postgres/hapg
+  workflow: nutanix-backend
+- name: Naya_postgres_server_etcd_pgbackrest
+  dir: Naya/postgres/pgbackrest
+  workflow: nutanix-backend
 # O
 # P
 # Q
