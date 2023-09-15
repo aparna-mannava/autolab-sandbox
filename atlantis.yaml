@@ -82,6 +82,9 @@ projects:
   workflow: nutanix-backend
 # R
 # S
+- name: oracledb
+  dir: spatel/oradb
+  workflow: nutanix-backend
 # T
 # U
 # V
