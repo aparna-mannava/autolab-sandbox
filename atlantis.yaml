@@ -39,7 +39,7 @@ projects:
   workflow: nutanix-backend
 - name: maparna_testing_server_pgbackrest
   dir: maparna/pgbackrest
-  workflow: nutanix-backend  
+  workflow: nutanix-backend
 # N
 - name: Nafeesay_September_new_server_etcd
   dir: Nafeesay/postgres/etcd
@@ -61,6 +61,9 @@ projects:
   workflow: nutanix-backend
 # O
 # P
+- name: partha_oracle
+  dir: partha/oracle
+  workflow: nutanix-backend
 # Q
 - name: oracledbnodes
   dir: nirmalj/oracledbnodes
