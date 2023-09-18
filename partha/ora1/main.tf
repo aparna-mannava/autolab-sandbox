@@ -7,6 +7,7 @@ locals {
   puppet_env    = "master"
   datacenter    = "ny2"
   domain        = "auto.saas-n.com"
+  environment   = "master"
   facts         = {
 
 
