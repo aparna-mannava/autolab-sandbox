@@ -21,8 +21,8 @@ locals {
 module "test" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "ydel1"
-  bt_infra_cluster     = local.infra_cluster
-  bt_infra_network     = local.infra_network
+  bt_infra_cluster     = local.cluster
+  bt_infra_network     = local.network
   os_version           = local.image
   foreman_environment  = local.environment
   foreman_hostgroup    = local.hostgroup
