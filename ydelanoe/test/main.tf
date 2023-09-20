@@ -20,7 +20,7 @@ locals {
 
 module "test" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "ydel1"
+  hostname             = "us01vwydel1"
   bt_infra_cluster     = local.cluster
   bt_infra_network     = local.network
   os_version           = local.image
@@ -30,7 +30,7 @@ module "test" {
   external_facts       = local.facts
   cpus                 = "1"
   memory               = "2048"
-  lob                  = local.lob
+  lob                  = ""
 }
 
 output "test" {
