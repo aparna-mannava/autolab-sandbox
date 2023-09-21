@@ -73,6 +73,9 @@ projects:
 - name: partha_oracle4
   dir: partha/ora4
   workflow: nutanix-backend
+- name: partha_oracle5
+  dir: partha/ora5
+  workflow: nutanix-backend
 # Q
 - name: oracledbnodes
   dir: nirmalj/oracledbnodes
