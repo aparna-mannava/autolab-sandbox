@@ -13,6 +13,9 @@ projects:
 - name: dtoradb
   dir: dthirunee/mysql
   workflow: nutanix-backend
+- name: dtoradb_test
+  dir: dthirunee/oracle
+  workflow: nutanix-backend
 # E
 - name: ebouzinis-test
   dir: ebouzinis/puppet-auto
