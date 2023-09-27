@@ -15,7 +15,7 @@ locals {
   bt_deployment_mode  = "green"
   owner               = "cfrmclouddevopsteam@bottomline.com"
   os_version          = "rhel8"
-  environment         = "feature_CFRMCLOUD_3253_postgresql_ha_cluster"
+  environment         = "master"
   datacenter          = "ny2"
   cluster             = "ny2-azb-ntnx-08"
   network             = "ny2-autolab-app-ahv"
