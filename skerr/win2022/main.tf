@@ -26,7 +26,7 @@ locals {
 module "servicemm" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.hostname}"
-  alias               = "fm-mm-${local.facts.bt_role}-${local.facts.bt_tier}"
+  alias               = "fml-skerr-${local.facts.bt_role}-${local.facts.bt_tier}"
   bt_infra_cluster    = "ny5-aza-ntnx-14"
   bt_infra_network    = "ny2-autolab-app-ahv"
   os_version          = "win2022"
