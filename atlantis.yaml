@@ -103,6 +103,9 @@ projects:
   workflow: nutanix-backend
 # R
 # S
+- name: skerr_win2022
+  dir: skerr/win2022
+  workflow: nutanix-backend
 - name: oracledb
   dir: spatel/oradb
   workflow: nutanix-backend
