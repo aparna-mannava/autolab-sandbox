@@ -32,6 +32,7 @@ locals {
     bt_role                 = local.bt_role
     bt_lob                  = local.lob
     bt_customer             = local.bt_customer
+    bt_deployment_mode      = local.bt_deployment_mode
     bt_etcd_cluster_members = local.etcd_hosts_p
   }
 }
@@ -39,7 +40,7 @@ locals {
 module "metro_autolab_pg_etcd_0" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.etcd_servers[0]}"
-  alias               = "${local.bt_product}-${local.bt_customer}-${local.bt_tier}-${local.bt_server_mode}01-${local.facts.bt_deployment_mode}"
+  alias               = "${local.bt_product}-${local.bt_customer}-${local.bt_tier}-${local.bt_server_mode}01-${local.bt_deployment_mode}"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   os_version          = local.os_version
@@ -58,7 +59,7 @@ module "metro_autolab_pg_etcd_0" {
 module "metro_autolab_pg_etcd_1" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.etcd_servers[1]}"
-  alias               = "${local.bt_product}-${local.bt_customer}-${local.bt_tier}-${local.bt_server_mode}02-${local.facts.bt_deployment_mode}"
+  alias               = "${local.bt_product}-${local.bt_customer}-${local.bt_tier}-${local.bt_server_mode}02-${local.bt_deployment_mode}"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   os_version          = local.os_version
@@ -77,7 +78,7 @@ module "metro_autolab_pg_etcd_1" {
 module "metro_autolab_pg_etcd_2" {
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.etcd_servers[2]}"
-  alias               = "${local.bt_product}-${local.bt_customer}-${local.bt_tier}-${local.bt_server_mode}03-${local.facts.bt_deployment_mode}"
+  alias               = "${local.bt_product}-${local.bt_customer}-${local.bt_tier}-${local.bt_server_mode}03-${local.bt_deployment_mode}"
   bt_infra_cluster    = local.cluster
   bt_infra_network    = local.network
   os_version          = local.os_version
