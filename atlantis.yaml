@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -9,6 +9,15 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
+- name: cfrmgbscloud_postgresql_ha_cluster_etcd
+  dir: cfrmgbscloud/postgresql_ha_cluster/etcd
+  workflow: nutanix-backend
+# - name: cfrmgbscloud_postgresql_ha_cluster_hapg
+#   dir: cfrmgbscloud/postgresql_ha_cluster/hapg
+#   workflow: nutanix-backend
+# - name: cfrmgbscloud_postgresql_ha_cluster_pgbackrest
+#   dir: cfrmgbscloud/postgresql_ha_cluster/pgbackrest
+#   workflow: nutanix-backend
 # D
 - name: dtoradb
   dir: dthirunee/mysql
