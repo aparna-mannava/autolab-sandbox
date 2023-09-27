@@ -3,6 +3,7 @@ terraform {
 }
 
 locals {
+  lob         = "GBS"
   product     = "fmlsaas"
   environment = "master"
   hostname    = "us01vwskerr01"
@@ -24,6 +25,7 @@ locals {
 }
 
 module "servicemm" {
+  lob                  = local.lob
   source              = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname            = "${local.hostname}"
   alias               = "fml-skerr-${local.facts.bt_role}-${local.facts.bt_tier}"
