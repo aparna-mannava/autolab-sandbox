@@ -19,7 +19,7 @@ locals {
     cpu       = "2"
     memory    = "8192"
     os        = "win2022"
-    cluster   = "ny5-azh-ntnx-26"
+    cluster   = "ny2-azb-ntnx-08"
     network   = "ny2-autolab-app-ahv"
     facts     = merge(local.facts, { "bt_tier" = "autolab"})
   }
