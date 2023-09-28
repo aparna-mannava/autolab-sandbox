@@ -7,6 +7,9 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: ivanti-tests
+  dir: aarvelo/ivanti
+  workflow: nutanix-backend
 # B
 # C
 - name: cfrmgbscloud_postgresql_ha_cluster_etcd
