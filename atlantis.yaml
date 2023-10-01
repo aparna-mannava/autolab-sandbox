@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -9,26 +9,8 @@ projects:
 #  workflow: nutanix-backend
 # B
 # C
-- name: cfrmgbscloud_postgresql_ha_cluster_etcd
-  dir: cfrmgbscloud/postgresql_ha_cluster/etcd
-  workflow: nutanix-backend
-# - name: cfrmgbscloud_postgresql_ha_cluster_hapg
-#   dir: cfrmgbscloud/postgresql_ha_cluster/hapg
-#   workflow: nutanix-backend
-# - name: cfrmgbscloud_postgresql_ha_cluster_pgbackrest
-#   dir: cfrmgbscloud/postgresql_ha_cluster/pgbackrest
-#   workflow: nutanix-backend
 # D
-- name: dtoradb
-  dir: dthirunee/mysql
-  workflow: nutanix-backend
-- name: dtoradb_test
-  dir: dthirunee/oracle
-  workflow: nutanix-backend
 # E
-- name: ebouzinis-test
-  dir: ebouzinis/puppet-auto
-  workflow: nutanix-backend
 # F
 # G
 # H
@@ -37,93 +19,16 @@ projects:
 # K
 # L
 # M
-- name: ma_test_server_etcd
-  dir: MA/etcd
-  workflow: nutanix-backend
-- name: ma_test_server_hapg
-  dir: MA/hapg
-  workflow: nutanix-backend
-- name: ma_test_server_pgbackrest
-  dir: MA/pgbackrest
-  workflow: nutanix-backend
-- name: maparna_testing_server_etcd
-  dir: maparna/etcd
-  workflow: nutanix-backend
-- name: maparna_testing_server_hapg
-  dir: maparna/hapg
-  workflow: nutanix-backend
-- name: maparna_testing_server_pgbackrest
-  dir: maparna/pgbackrest
-  workflow: nutanix-backend
 # N
-- name: Nafeesay_September_new_server_etcd
-  dir: Nafeesay/postgres/etcd
-  workflow: nutanix-backend
-- name: Nafeesay_September_new_server_hapg
-  dir: Nafeesay/postgres/hapg
-  workflow: nutanix-backend
-- name: Nafeesay_September_new_server_pgbackrest
-  dir: Nafeesay/postgres/pgbackrest
-  workflow: nutanix-backend
-- name: Naya_postgres_server_etcd
-  dir: Naya/postgres/etcd
-  workflow: nutanix-backend
-- name: Naya_postgres_server_etcd_hapg
-  dir: Naya/postgres/hapg
-  workflow: nutanix-backend
-- name: Naya_postgres_server_etcd_pgbackrest
-  dir: Naya/postgres/pgbackrest
-  workflow: nutanix-backend
 # O
 # P
-- name: partha_oracle
-  dir: partha/oracle
-  workflow: nutanix-backend
-- name: partha_oracle1
-  dir: partha/ora1
-  workflow: nutanix-backend
-- name: partha_oracle3
-  dir: partha/ora3
-  workflow: nutanix-backend
-- name: partha_oracle4
-  dir: partha/ora4
-  workflow: nutanix-backend
-- name: partha_oracle5
-  dir: partha/ora5
-  workflow: nutanix-backend
 # Q
-- name: oracledbnodes
-  dir: nirmalj/oracledbnodes
-  workflow: nutanix-backend
-- name: etcdnodes_env9
-  dir: nirmalj/etcdnodes
-  workflow: nutanix-backend
-- name: hgpgnontde14_env9
-  dir: nirmalj/hapgnontde14
-  workflow: nutanix-backend
-- name: backrestnodes_env9
-  dir: nirmalj/backrestnodes
-  workflow: nutanix-backend
-- name: pgnontde15_hapg_env9
-  dir: nirmalj/pgnontde15/hapgnodes
-  workflow: nutanix-backend
-- name: pgnontde15_backrest_env9
-  dir: nirmalj/pgnontde15/backrestnode
-  workflow: nutanix-backend
 # R
 # S
-- name: skerr_win2022
-  dir: skerr/win2022
-  workflow: nutanix-backend
-- name: oracledb
-  dir: spatel/oradb
-  workflow: nutanix-backend
 # T
 # U
 # V
 # W
 # X
 # Y
-- name: ydel1
-  dir: ydelanoe/test
 # Z
