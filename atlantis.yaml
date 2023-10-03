@@ -34,6 +34,9 @@ projects:
 # L
 # M
 # N
+- name: Oracle_server_oradb
+  dir: Naf/oracle
+  workflow: nutanix-backend
 # O
 # P
 # Q
