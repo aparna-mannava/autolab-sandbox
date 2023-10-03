@@ -9,13 +9,13 @@ projects:
 #  workflow: nutanix-backend
 - name: aparna_october_new_server_etcd
   dir: aparna/etcd
-  workflow: nutanix_backend
+  workflow: nutanix-backend
 - name: aparna_october_new_server_hapg
   dir: aparna/hapg
-  workflow: nutanix_backend
+  workflow: nutanix-backend
 - name: aparna_october_new_server_pgbackrest
   dir: aparna/pgbackrest
-  workflow: nutanix_backend
+  workflow: nutanix-backend
 # B
 # C
 # D
