@@ -19,6 +19,9 @@ projects:
 # B
 # C
 # D
+- name: dtoradb
+  dir: dthirunee/oracle
+  workflow: nutanix-backend
 # E
 # F
 # G
