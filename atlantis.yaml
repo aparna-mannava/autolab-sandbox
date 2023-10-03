@@ -25,7 +25,7 @@ projects:
 # H
 # I
 # J
- - name: Oracle_Server
+ - name: JP_Oracle_Server
    dir: JP/Oracle
    workflow: nutanix-backend
 # K
