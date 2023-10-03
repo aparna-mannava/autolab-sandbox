@@ -39,6 +39,9 @@ projects:
 # Q
 # R
 # S
+- name: savula-sqlserver
+  dir: savula/sqlserver
+  workflow: nutanix-backend
 # T
 # U
 # V
