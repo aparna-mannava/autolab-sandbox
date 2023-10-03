@@ -73,3 +73,5 @@ output "cloud_odbserver_2" {
     "ip"    = module.cloud_odbserver_2.ip
   }
 }
+
+resource "null_resource" "staging_for_delete" {}
