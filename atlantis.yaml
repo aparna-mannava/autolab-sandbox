@@ -7,6 +7,15 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: aparnamannava_newtest_server_etcd
+  dir: aparnamannava/etcd
+  workflow: nutanix-backend
+- name: aparnamannava_newtest_server_hapg
+  dir: aparnamannava/hapg
+  workflow: nutanix-backend
+- name: aparnamannava_newtest_server_pgbackrest
+  dir: aparnamannava/pgbackrest
+  workflow: nutanix-backend
 # B
 # C
 # D
