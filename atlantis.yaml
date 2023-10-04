@@ -16,6 +16,7 @@ projects:
 - name: aparnamannava_newtest_server_pgbackrest
   dir: aparnamannava/pgbackrest
   workflow: nutanix-backend
+
 # B
 # C
 # D
@@ -30,6 +31,9 @@ projects:
 # G
 # H
 # I
+- name: ivanti-tests
+  dir: aarvelo/ivanti
+  workflow: nutanix-backend
 - name: JP_Oracle_Server
   dir: JP/Oracle
   workflow: nutanix-backend
