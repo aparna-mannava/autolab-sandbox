@@ -30,7 +30,7 @@ module "stanard_127391_2" {
   foreman_hostgroup    = "${local.hostgroup}"
   datacenter           = "${local.datacenter}"
   additional_disks     = {
-    1 = "50",
+    1 = "60",
     2 = "30",
     3 = "40",
     4 = "40",
