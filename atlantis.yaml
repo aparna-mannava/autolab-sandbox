@@ -22,6 +22,9 @@ projects:
 - name: dtoradb
   dir: dthirunee/oracle
   workflow: nutanix-backend
+- name: dtmysqldb
+  dir: dthirunee/mysql
+  workflow: nutanix-backend
 # E
 # F
 # G
