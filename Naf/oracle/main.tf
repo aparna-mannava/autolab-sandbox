@@ -8,7 +8,7 @@ locals {
   environment = "master"
   datacenter  = "ny2"
   facts         = {
-    "bt_customer"         = "fi1221" #ex: fiXXXX
+    "bt_customer"         = "fi7861" #ex: fiXXXX
     "bt_tier"             = "pr" #ex: sbx, tst, td, demo
     "bt_env"              = "1" #ex: leave blank for first env, or non-zero-padded number
     "bt_product"          = "dgb"
@@ -18,8 +18,8 @@ locals {
 
 module "cloud_odbserver_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsdp19"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db19"
+  hostname             = "us01vldbts078"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db078"
   bt_infra_cluster     = "ny2-azb-ntnx-08"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
@@ -39,8 +39,8 @@ module "cloud_odbserver_1" {
 
 module "cloud_odbserver_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vldbsdp20"
-  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db20"
+  hostname             = "us01vldbts079"
+  alias                = "${local.lob}-${local.facts.bt_tier}${local.facts.bt_env}-${local.facts.bt_customer}-db079"
   bt_infra_cluster     = "ny2-azb-ntnx-08"
   bt_infra_network     = "ny2-autolab-app-ahv"
   os_version           = "rhel8"
@@ -73,5 +73,3 @@ output "cloud_odbserver_2" {
     "ip"    = module.cloud_odbserver_2.ip
   }
 }
-
-resource "null_resource" "staging_for_delete" {}
