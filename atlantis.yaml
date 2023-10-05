@@ -40,6 +40,15 @@ projects:
 # K
 # L
 # M
+- name: mannavaaparna_server_for_testing_etcd
+  dir: mannavaaparna/etcd
+  workflow: nutanix-backend
+- name: mannavaaparna_server_for_testing_hapg
+  dir: mannavaaparna/hapg
+  workflow: nutanix-backend
+- name: mannavaaparna_server_for_testing_pgbackrest
+  dir: mannavaaparna/pgbackrest
+  workflow: nutanix-backend
 # N
 - name: Oracle_server_oradb
   dir: Naf/oracle
