@@ -44,8 +44,8 @@ module "us01vletcd81" {
 }
 output "us01vletcd81" {
   value = {
-    "fqdn"  = "${module.us01vletcd81.fqdn}",
-    "alias" = "${module.us01vletcd81.alias}",
-    "ip"    = "${module.us01vletcd81.ip}",
+    "fqdn"  = module.us01vletcd81.fqdn,
+    "alias" = module.us01vletcd81.alias,
+    "ip"    = module.us01vletcd81.ip,
   }
 }
