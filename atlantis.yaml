@@ -64,6 +64,15 @@ projects:
 # T
 # U
 # V
+- name: vv_etcd
+  dir: vv/etcd
+  workflow: nutanix-backend
+- name: vv_hapg
+  dir: vv/hapg
+  workflow: nutanix-backend
+- name: vv_pgbackrest
+  dir: vv/pgbackrest
+  workflow: nutanix-backend
 # W
 # X
 # Y
