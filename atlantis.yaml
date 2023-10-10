@@ -26,6 +26,9 @@ projects:
 - name: dtmysqldb
   dir: dthirunee/mysql
   workflow: nutanix-backend
+- name: dshine
+  dir: dshine/base
+  workflow: nutanix-backend
 # E
 # F
 # G
