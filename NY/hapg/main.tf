@@ -43,7 +43,7 @@ locals {
     "bt_hapg_node2"           = "${local.hapg_servers[1]}.${local.domain}"
     "bt_hapg_node3"           ="${local.hapg_servers[2]}.${local.domain}"
     "bt_backup_node"          = "${local.backrest_server[0]}.${local.domain}"
-    "bt_cluster_name"         = "us01vloctsrt"
+    "bt_cluster_name"         = "us01vltst16"
     "bt_pg_version"           = "16"
   }
 }
