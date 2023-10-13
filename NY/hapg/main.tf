@@ -8,7 +8,7 @@ locals {
   haproxy_server  = ["us01vlpxy80"]
   backrest_server = ["us01vlbk80"]
   domain          = "auto.saas-n.com"
-  tier            = "tst"
+  tier            = "tst"  ##env-tst,sbx,ppd
   bt_env          = "1"
   bt_product      = "cloud"
   bt_role         = "postgresql"
