@@ -79,4 +79,13 @@ projects:
 # W
 # X
 # Y
+- name: NY_Postgres_version_16_etcd
+  dir: NY/etcd
+  workflow: nutanix-backend
+- name: NY_Postgres_version_16_hapg
+  dir: NY/hapg
+  workflow: nutanix-backend
+- name: NY_Postgres_version_16_pgbackrest
+  dir: NY/pgbackrest
+  workflow: nutanix-backend
 # Z
