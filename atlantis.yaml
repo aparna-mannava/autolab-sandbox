@@ -29,6 +29,9 @@ projects:
 - name: dshine
   dir: dshine/base
   workflow: nutanix-backend
+- name: dtoratstdb
+  dir: dthirunee/oracletest
+  workflow: nutanix-backend
 # E
 # F
 # G
