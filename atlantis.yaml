@@ -34,6 +34,9 @@ projects:
   workflow: nutanix-backend
 # E
 # F
+- name: freddy_oracle
+  dir: freddy/oracle
+  workflow: nutanix-backend
 # G
 # H
 # I
