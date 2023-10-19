@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {}
 }
- 
+
 locals {
-    hostname    = "us01vlcfel"  
+    hostname    = "us01vlcfel"   //destroy
     facts       = {
       bt_customer             = "na"
       bt_product              = "cfrmcloud"
@@ -20,6 +20,7 @@ locals {
       bt_es_version           = "7.8.0"
       bt_apacheds_version     = "2.0.0_M24"
       bt_jmx_prometheus_version = "0.14.0"
+      //bt_ic_version           = "660_SP2"
       bt_artemis1_fqdn        = "${local.hostname}01-dv"
       bt_artemis2_fqdn        = "${local.hostname}02-dv"
       bt_artemis3_fqdn        = "${local.hostname}03-dv"
@@ -38,6 +39,7 @@ locals {
       "bt_artemis_version"        = local.facts.bt_artemis_version
       "bt_apacheds_version"       = local.facts.bt_apacheds_version
       "bt_jmx_prometheus_version" = local.facts.bt_jmx_prometheus_version
+      //"bt_ic_version"             = local.facts.bt_ic_version
       "bt_artemis1_fqdn"          = local.facts.bt_artemis1_fqdn
      }
     es02facts    = {
@@ -50,6 +52,7 @@ locals {
       "bt_artemis_version"        = local.facts.bt_artemis_version
       "bt_apacheds_version"       = local.facts.bt_apacheds_version
       "bt_jmx_prometheus_version" = local.facts.bt_jmx_prometheus_version
+      //"bt_ic_version"             = local.facts.bt_ic_version
       "bt_artemis2_fqdn"          = local.facts.bt_artemis2_fqdn
      }
     es03facts    = {
@@ -62,6 +65,7 @@ locals {
       "bt_artemis_version"        = local.facts.bt_artemis_version
       "bt_apacheds_version"       = local.facts.bt_apacheds_version
       "bt_jmx_prometheus_version" = local.facts.bt_jmx_prometheus_version
+      //"bt_ic_version"             = local.facts.bt_ic_version
       "bt_artemis3_fqdn"          = local.facts.bt_artemis3_fqdn
     }
 }
