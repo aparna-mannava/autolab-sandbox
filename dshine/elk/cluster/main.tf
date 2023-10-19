@@ -3,7 +3,7 @@ terraform {
 }
 
 locals {
-    hostname    = "us01vlcfel"   //destroy
+    hostname    = "us01vlcfel"
     facts       = {
       bt_customer             = "na"
       bt_product              = "cfrmcloud"
@@ -11,8 +11,8 @@ locals {
       bt_tier                 = "dev" //PROD
       bt_env                  = "01"
       bt_role                 = "elastic"
-      bt_infra_cluster    = "ny5-aza-ntnx-14"
-      bt_infra_network    = "ny2-autolab-app-ahv"
+      bt_infra_cluster        = "ny5-aza-ntnx-14"
+      bt_infra_network        = "ny2-autolab-app-ahv"
       //firewall_group          = "CFRMRD_PR_ES"
       hostgroup               = "BT CFRM CLOUD ElasticSearch Cluster"
       environment             = "master" //
@@ -20,7 +20,8 @@ locals {
       bt_es_version           = "7.8.0"
       bt_apacheds_version     = "2.0.0_M24"
       bt_jmx_prometheus_version = "0.14.0"
-      //bt_ic_version           = "660_SP2"
+      bt_ic_version           = "660_SP2"
+      bt_es_curator_install   = "false"
       bt_artemis1_fqdn        = "${local.hostname}01-dv"
       bt_artemis2_fqdn        = "${local.hostname}02-dv"
       bt_artemis3_fqdn        = "${local.hostname}03-dv"
@@ -39,7 +40,8 @@ locals {
       "bt_artemis_version"        = local.facts.bt_artemis_version
       "bt_apacheds_version"       = local.facts.bt_apacheds_version
       "bt_jmx_prometheus_version" = local.facts.bt_jmx_prometheus_version
-      //"bt_ic_version"             = local.facts.bt_ic_version
+      "bt_ic_version"             = local.facts.bt_ic_version
+      "bt_es_curator_install"     = local.facts.bt_es_curator_install
       "bt_artemis1_fqdn"          = local.facts.bt_artemis1_fqdn
      }
     es02facts    = {
@@ -52,7 +54,8 @@ locals {
       "bt_artemis_version"        = local.facts.bt_artemis_version
       "bt_apacheds_version"       = local.facts.bt_apacheds_version
       "bt_jmx_prometheus_version" = local.facts.bt_jmx_prometheus_version
-      //"bt_ic_version"             = local.facts.bt_ic_version
+      "bt_ic_version"             = local.facts.bt_ic_version
+      "bt_es_curator_install"     = local.facts.bt_es_curator_install
       "bt_artemis2_fqdn"          = local.facts.bt_artemis2_fqdn
      }
     es03facts    = {
@@ -65,7 +68,8 @@ locals {
       "bt_artemis_version"        = local.facts.bt_artemis_version
       "bt_apacheds_version"       = local.facts.bt_apacheds_version
       "bt_jmx_prometheus_version" = local.facts.bt_jmx_prometheus_version
-      //"bt_ic_version"             = local.facts.bt_ic_version
+      "bt_ic_version"             = local.facts.bt_ic_version
+      "bt_es_curator_install"     = local.facts.bt_es_curator_install
       "bt_artemis3_fqdn"          = local.facts.bt_artemis3_fqdn
     }
 }
