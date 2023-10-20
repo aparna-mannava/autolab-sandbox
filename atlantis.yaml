@@ -97,4 +97,7 @@ projects:
 - name: NY_Postgres_version_16_pgbackrest
   dir: NY/pgbackrest
   workflow: nutanix-backend
+- name: Postgres_version_15_hapg
+  dir: NY/hapg15
+  workflow: nutanix-backend
 # Z
