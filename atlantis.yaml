@@ -66,6 +66,9 @@ projects:
 # P
 # Q
 # R
+- name: rishu_test
+  dir: rishu/test
+  workflow: nutanix-backend
 # S
 - name: savula-sqlserver
   dir: savula/sqlserver
