@@ -11,11 +11,11 @@ locals {
       bt_tier                 = "autolab"
       bt_env                  = "01"
       bt_role                 = "elastic"
-      bt_infra_cluster        = "ny5-azg-ntnx-25"
+      bt_infra_cluster        = "ny5-aze-ntnx-21"
       bt_infra_network        = "ny2-autolab-app-ahv"
       firewall_group          = "CFRMCLOUD_NY2N_AUTOLAB"
-      hostgroup               = "BT Base Server" # "BT CFRM CLOUD ElasticSearch Cluster"
-      environment             = "master" //
+      hostgroup               = "BT Base Server"
+      environment             = "master"
       bt_artemis_version      = "2.16.0"
       bt_es_version           = "7.10.2"
       bt_apacheds_version     = "2.0.0_M24"
@@ -77,7 +77,7 @@ locals {
 module "elasticsearch_1" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}01-dv"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk01"// cfrmcloud-dev-ny2-elk01
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk01"// cfrmcloud-autolab-ny2-elk01
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   firewall_group       = local.facts.firewall_group
@@ -90,15 +90,14 @@ module "elasticsearch_1" {
   cpus                 = "4"
   memory               = "8192"
   additional_disks     = {
-    1 = "150",
-    2 = "150"
+    1 = "50",
   }
 }
  
 module "elasticsearch_2" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}02-dv"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk02"// cfrmcloud-dev-gb00-elk02
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk02"// cfrmcloud-autolab-ny2-elk02
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   firewall_group       = local.facts.firewall_group
@@ -111,15 +110,14 @@ module "elasticsearch_2" {
   cpus                 = "4"
   memory               = "8192"
   additional_disks     = {
-    1 = "150",
-    2 = "150"
+    1 = "50",
   }
 }
  
 module "elasticsearch_3" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.hostname}03-dv"
-  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk03"//cfrmcloud-dev-gb00-elk03
+  alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk03"//cfrmcloud-autolab-ny2-elk03
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
   firewall_group       = local.facts.firewall_group
@@ -132,8 +130,7 @@ module "elasticsearch_3" {
   cpus                 = "4"
   memory               = "8192"
   additional_disks     = {
-    1 = "150",
-    2 = "150"
+    1 = "50",
   }
 }
  
