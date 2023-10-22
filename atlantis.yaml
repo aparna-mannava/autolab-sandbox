@@ -1,6 +1,6 @@
 ---
 version: 3
-automerge: true
+automerge: false
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
@@ -28,6 +28,9 @@ projects:
   workflow: nutanix-backend
 - name: dshine
   dir: dshine/base
+  workflow: nutanix-backend
+- name: dshine_elk
+  dir: dshine/elk/cluster
   workflow: nutanix-backend
 - name: dtoratstdb
   dir: dthirunee/oracletest
