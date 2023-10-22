@@ -14,7 +14,7 @@ locals {
       bt_infra_cluster        = "ny5-azh-ntnx-26"
       bt_infra_network        = "ny2-autolab-app-ahv"
       firewall_group          = "CFRMCLOUD_NY2N_AUTOLAB"
-      hostgroup               = "BT Base Server"
+      hostgroup               = "BT CFRM CLOUD ElasticSearch Cluster" //"BT Base Server"
       environment             = "master"
       bt_artemis_version      = "2.16.0"
       bt_es_version           = "7.10.2"
@@ -80,7 +80,7 @@ module "elasticsearch_1" {
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk01"// cfrmcloud-autolab-ny2-elk01
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
-  firewall_group       = local.facts.firewall_group
+  //firewall_group       = local.facts.firewall_group
   lob                  = local.facts.bt_lob
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
@@ -100,7 +100,7 @@ module "elasticsearch_2" {
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk02"// cfrmcloud-autolab-ny2-elk02
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
-  firewall_group       = local.facts.firewall_group
+  //firewall_group       = local.facts.firewall_group
   lob                  = local.facts.bt_lob
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
@@ -120,7 +120,7 @@ module "elasticsearch_3" {
   alias                = "${local.facts.bt_product}-${local.facts.bt_tier}-${local.datacenter.id}-elk03"//cfrmcloud-autolab-ny2-elk03
   bt_infra_cluster     = local.facts.bt_infra_cluster
   bt_infra_network     = local.facts.bt_infra_network
-  firewall_group       = local.facts.firewall_group
+  //firewall_group       = local.facts.firewall_group
   lob                  = local.facts.bt_lob
   foreman_environment  = local.facts.environment
   foreman_hostgroup    = local.facts.hostgroup
