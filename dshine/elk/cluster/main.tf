@@ -11,7 +11,7 @@ locals {
       bt_tier                 = "autolab"
       bt_env                  = "01"
       bt_role                 = "elastic"
-      bt_infra_cluster        = "ny5-aze-ntnx-21"
+      bt_infra_cluster        = "ny5-azh-ntnx-26"
       bt_infra_network        = "ny2-autolab-app-ahv"
       firewall_group          = "CFRMCLOUD_NY2N_AUTOLAB"
       hostgroup               = "BT Base Server"
