@@ -19,6 +19,9 @@ projects:
 
 # B
 # C
+- name: cfrm_opensearch_test
+  dir: Alon.Kahana/opensearch
+  workflow: nutanix-backend
 # D
 - name: dtoradb
   dir: dthirunee/oracle
