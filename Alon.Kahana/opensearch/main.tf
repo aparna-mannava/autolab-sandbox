@@ -29,7 +29,7 @@ module "devops1_opensearch" {
   memory               = "16384"
   os_version           = "rhel8"
   external_facts       = local.devops1_opensearch_facts
-  foreman_environment  = "feature_CFRMRD_42717"
+  foreman_environment  = "feature_CFRMRD_43048"
   foreman_hostgroup    = "BT CFRMRD Opensearch"
   lob                  = "CFRM"
   datacenter           = "ny2"
