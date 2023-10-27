@@ -21,7 +21,7 @@ locals {
  
 module "devops1_opensearch" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
-  hostname             = "us01vlcfrmrdx153"
+  hostname             = "us01vlcfrmrdx53"
   alias                = "cfrmx-os-test1"
   bt_infra_network     = "ny2-autolab-app-ahv"
   bt_infra_cluster     = "ny2-aze-ntnx-12"
