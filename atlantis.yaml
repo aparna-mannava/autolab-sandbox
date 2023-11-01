@@ -1,112 +1,34 @@
 ---
 version: 3
-automerge: false
+automerge: true
 projects:
 # To reduce conflicts, please add your new project to the relevant alphabetical section below:
 # A
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-- name: aparnamannava_newtest_server_etcd
-  dir: aparnamannava/etcd
-  workflow: nutanix-backend
-- name: aparnamannava_newtest_server_hapg
-  dir: aparnamannava/hapg
-  workflow: nutanix-backend
-- name: aparnamannava_newtest_server_pgbackrest
-  dir: aparnamannava/pgbackrest
-  workflow: nutanix-backend
-
 # B
 # C
-- name: cfrm_opensearch_test
-  dir: Alon.Kahana/opensearch
-  workflow: nutanix-backend
 # D
-- name: dtoradb
-  dir: dthirunee/oracle
-  workflow: nutanix-backend
-- name: dtmysqldb
-  dir: dthirunee/mysql
-  workflow: nutanix-backend
-- name: dshine
-  dir: dshine/base
-  workflow: nutanix-backend
-- name: dshine_elk
-  dir: dshine/elk/cluster
-  workflow: nutanix-backend
-- name: dtoratstdb
-  dir: dthirunee/oracletest
-  workflow: nutanix-backend
 # E
 # F
-- name: freddy_oracle
-  dir: freddy/oracle
-  workflow: nutanix-backend
 # G
 # H
 # I
-- name: ivanti-tests
-  dir: aarvelo/ivanti
-  workflow: nutanix-backend
-- name: JP_Oracle_Server
-  dir: JP/Oracle
-  workflow: nutanix-backend
+# J
 # K
 # L
 # M
-- name: mannavaaparna_server_for_testing_etcd
-  dir: mannavaaparna/etcd
-  workflow: nutanix-backend
-- name: mannavaaparna_server_for_testing_hapg
-  dir: mannavaaparna/hapg
-  workflow: nutanix-backend
-- name: mannavaaparna_server_for_testing_pgbackrest
-  dir: mannavaaparna/pgbackrest
-  workflow: nutanix-backend
 # N
-- name: Oracle_server_oradb
-  dir: Naf/oracle
-  workflow: nutanix-backend
 # O
 # P
 # Q
 # R
-- name: rishu_test
-  dir: rishu/test
-  workflow: nutanix-backend
 # S
-- name: savula-sqlserver
-  dir: savula/sqlserver
-  workflow: nutanix-backend
-- name: shkelqim-rhel
-  dir: shkelqim/testvm
-  workflow: nutanix-backend
 # T
 # U
 # V
-- name: vv_etcd
-  dir: vv/etcd
-  workflow: nutanix-backend
-- name: vv_hapg
-  dir: vv/hapg
-  workflow: nutanix-backend
-- name: vv_pgbackrest
-  dir: vv/pgbackrest
-  workflow: nutanix-backend
 # W
 # X
 # Y
-- name: NY_Postgres_version_16_etcd
-  dir: NY/etcd
-  workflow: nutanix-backend
-- name: NY_Postgres_version_16_hapg
-  dir: NY/hapg
-  workflow: nutanix-backend
-- name: NY_Postgres_version_16_pgbackrest
-  dir: NY/pgbackrest
-  workflow: nutanix-backend
-- name: Postgres_version_15_hapg
-  dir: NY/hapg15
-  workflow: nutanix-backend
 # Z
