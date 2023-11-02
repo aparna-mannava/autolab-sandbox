@@ -14,7 +14,7 @@ locals {
   bt_role         = "postgresql"
   lob             = "CLOUD"
   hostgroup       = "BT HA PG Server"
-  environment     = "feature_CLOUD_126964"
+  environment     = "master"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"

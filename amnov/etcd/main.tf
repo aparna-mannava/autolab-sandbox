@@ -13,7 +13,7 @@ locals {
   bt_product      = "cloud"
   bt_role         = "postgres"
   hostgroup       = "BT ETCD for PostgreSQL Server"
-  environment     = "feature_CLOUD_126964"
+  environment     = "master"
   cluster         = "ny5-aza-ntnx-14"
   network         = "ny2-autolab-app-ahv"
   datacenter      = "ny2"
