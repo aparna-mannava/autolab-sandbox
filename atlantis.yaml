@@ -7,6 +7,15 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
+- name: amnov_version_pgdump_etcd
+  dir: amnov/etcd
+  workflow: nutanix-backend
+- name: amnov_version_pgdump_hapg
+  dir: amnov/hapg
+  workflow: nutanix-backend
+- name: amnov_version_pgdump_pgbackrest
+  dir: amnov/pgbackrest
+  workflow: nutanix-backend
 # B
 # C
 # D
