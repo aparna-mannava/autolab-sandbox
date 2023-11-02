@@ -7,25 +7,6 @@ projects:
 #- name: abc-test123
 #  dir: abc/123
 #  workflow: nutanix-backend
-<<<<<<< HEAD
-- name: aparna_server_pgdump_activity_etcd
-  dir: aparna/etcd
-  workflow: nutanix-backend
-- name: aparna_server_pgdump_activity_hapg
-  dir: aparna/hapg
-  workflow: nutanix-backend
-- name: aparna_server_pgdump_activity_pgbackrest
-=======
-- name: aparna_test_server_etcd
-  dir: aparna/etcd
-  workflow: nutanix-backend
-- name: aparna_test_server_hapg
-  dir: aparna/hapg
-  workflow: nutanix-backend
-- name: aparna_test_server_pgbackrest
->>>>>>> 9ed1dc312ba4ac3e2efc06016d4af7eadee7a486
-  dir: aparna/pgbackrest
-  workflow: nutanix-backend
 # B
 # C
 # D
@@ -38,6 +19,15 @@ projects:
 # K
 # L
 # M
+- name: manov_server_pgdump_activity_etcd
+  dir: manov/etcd
+  workflow: nutanix-backend
+- name: manov_server_pgdump_activity_hapg
+  dir: manov/hapg
+  workflow: nutanix-backend
+- name: manov_server_pgdump_activity_pgbackrest
+  dir: manov/pgbackrest
+  workflow: nutanix-backend
 # N
 # O
 # P

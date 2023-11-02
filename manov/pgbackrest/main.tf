@@ -3,15 +3,15 @@ terraform {
 }
 
 locals {
-  etcd_servers    = ["us01vletcd01"]
-  hapg_servers    = ["us01vlpgdb01","us01vlpgdb02","us01vlpgdb03"]
-  haproxy_server  = ["us01vlpx01"]
-  backrest_server = ["us01vlbk01"]
+  etcd_servers    = ["us01vletcd10"]
+  hapg_servers    = ["us01vlpgdb08","us01vlpgdb09","us01vlpgdb10"]
+  haproxy_server  = ["us01vlpx10"]
+  backrest_server = ["us01vlbk10"]
   domain          = "auto.saas-n.com"
   tier            = "nonprod"
   bt_env          = "1"
   bt_product      = "cloud"
-  bt_role		      = "pgbackrest"
+  bt_role		  = "pgbackrest"
   lob             = "CLOUD"
   hostgroup       = "BT PG Backrest Server"
   environment     = "master"
@@ -22,7 +22,7 @@ locals {
     "bt_env"                  = local.bt_env
     "bt_tier"                 = local.tier
     "bt_product"              = local.bt_product
-	  "bt_role"				          = local.bt_role
+	"bt_role"				  = local.bt_role
     "bt_etcd_cluster_members" = ["${local.etcd_servers[0]}.${local.domain}"]
     "bt_hapg_cluster_members" = ["${local.hapg_servers[0]}.${local.domain}", "${local.hapg_servers[1]}.${local.domain}","${local.hapg_servers[2]}.${local.domain}"]
     "bt_hapg_node1"           = "${local.hapg_servers[0]}.${local.domain}"
@@ -33,7 +33,7 @@ locals {
   }
 }
 
-module "us01vlbk01" {
+module "us01vlbk10" {
   source               = "git::https://gitlab.saas-p.com/shared/terraform-modules/terraform-module-infrastructure.git?ref=master"
   hostname             = "${local.backrest_server[0]}"
   bt_infra_cluster     = local.cluster
@@ -52,10 +52,10 @@ module "us01vlbk01" {
   }
 }
 
-output "us01vlbk01" {
+output "us01vlbk10" {
   value = {
-    "fqdn"  = "module.us01vlbk01.fqdn",
-    "alias" = "module.us01vlbk01.alias",
-    "ip"    = "module.us01vlbk01.ip",
+    "fqdn"  = "module.us01vlbk10.fqdn",
+    "alias" = "module.us01vlbk10.alias",
+    "ip"    = "module.us01vlbk10.ip",
   }
 }
