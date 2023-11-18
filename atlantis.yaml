@@ -45,6 +45,15 @@ projects:
 # S
 # T
 # U
+- name: upgrade_os_etcd
+  dir: upgrade/etcd
+  workflow: nutanix-backend
+- name: upgrade_os_hapg
+  dir: upgrade/hapg
+  workflow: nutanix-backend
+- name: upgrade_os_pgbackrest
+  dir: upgrade/pgbackrest
+  workflow: nutanix-backend
 # V
 # W
 # X
