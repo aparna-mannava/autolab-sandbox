@@ -44,15 +44,6 @@ projects:
 # R
 # S
 # T
-- name: testupgrade_os_etcd
-  dir: testupgrade/etcd
-  workflow: nutanix-backend
-- name: testupgrade_os_hapg
-  dir: testupgrade/hapg
-  workflow: nutanix-backend
-- name: testupgrade_os_pgbackrest
-  dir: testupgrade/pgbackrest
-  workflow: nutanix-backend
 # U
 # V
 # W
