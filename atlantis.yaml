@@ -16,6 +16,15 @@ projects:
 - name: amnov_version_pgdump_pgbackrest
   dir: amnov/pgbackrest
   workflow: nutanix-backend
+- name: aparna_rhel9_test_etcd
+  dir: aparna/etcd
+  workflow: nutanix-backend
+- name: aparna_rhel9_test_hapg
+  dir: aparna/hapg
+  workflow: nutanix-backend
+- name: aparna_rhel9_test_pgbackrest
+  dir: aparna/pgbackrest
+  workflow: nutanix-backend
 # B
 # C
 # D
