@@ -6,7 +6,7 @@ locals {
   etcd_servers    = ["us01vletcd1"]
   etcd_hosts_p    = ["us01vletcd1.auto.saas-n.com"]
   domain          = "auto.saas-n.com"
-  tier            = "nonprod"
+  tier            = "tst"
   bt_env          = "1"
   lob             = "CLOUD"
   bt_product      = "cloud"
